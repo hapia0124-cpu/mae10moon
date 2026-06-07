@@ -682,6 +682,14 @@
     <div class="quiz-card" style="text-align:center;cursor:pointer" onclick="openModal('faq')" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
       <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">❓ FAQ ▶</div>
     </div>
+
+    <div class="quiz-card" style="text-align:left;border-left:6px solid var(--yellow)">
+      <div style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.85rem;color:var(--navy);margin-bottom:0.6rem">📢 공지사항</div>
+      <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;color:#444;line-height:2">
+        · 퀴즈는 <strong>2026년 5월 1일</strong>부터 제공됩니다.<br>
+        · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.
+      </div>
+    </div>
   </div>
 
   <!-- 팝업 모달 -->
@@ -794,6 +802,15 @@
           2. 4지선다 문제 10개 풀기<br>
           3. 정답 후 해설로 개념 정리<br>
           4. DATE 버튼으로 과거 날짜 퀴즈도 OK
+        </div>`;
+    } else if (type === 'notice') {
+      content.innerHTML = `
+        <div style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;color:var(--navy);margin-bottom:1rem">📢 공지사항</div>
+        <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.9rem;color:var(--navy);line-height:2">
+          · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.<br>
+          · 이전 날짜 퀴즈는 뉴스 링크 없이 문제·해설만 제공됩니다.<br><br>
+          문의·건의사항은 아래 메일로 보내주세요 😊<br>
+          <a href="mailto:mae10mooon@gmail.com" style="color:#8b5cf6;font-weight:700">mae10mooon@gmail.com</a>
         </div>`;
     } else {
       content.innerHTML = `
