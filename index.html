@@ -200,7 +200,7 @@
 
   .category-tag {
     display: inline-block;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.8rem;
     font-size: 0.6rem;
     margin-bottom: 1rem;
     border: 3px solid;
@@ -389,14 +389,41 @@
   }
 
   .result-score {
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--yellow);
     text-shadow: 4px 4px 0 var(--yellow-dark), 8px 8px 0 #000;
     margin-bottom: 0.5rem;
     display: block;
   }
 
-  .result-total { font-size: 0.9rem; color: var(--navy); margin-bottom: 1.5rem; }
+  .result-total { font-size: 0.5rem; color: var(--navy); margin-bottom: 1.5rem; }
+
+  .result-msg {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .coin-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .coin {
+    width: 24px; height: 24px;
+    background: var(--yellow);
+    border: 3px solid var(--yellow-dark);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+  }
 
   .coin.empty { background: #ddd; border-color: #aaa; }
 
@@ -524,7 +551,7 @@
 
 <script>
   const SUPABASE_URL = 'https://yhmswitflnujcwpkibso.supabase.co';
-  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobXN3aXRmbG51amN3cGtpYnNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA3OTIwMDksImV4cCI6MjA5NjM2ODAwOX0.K8HGusLahpyKYqn2vkuxjwBFLIu1w_kCSCyZP75MXfc';
+  const SUPABASE_KEY = 'YOUR_ANON_KEY_HERE';
 
   let quizzes = [];
   let current = 0;
@@ -698,13 +725,15 @@
     else if (pct >= 50) { msg = '절반 이상! 계속 도전! 📚'; grade = 'B'; }
     else { msg = '오늘은 어려웠군요. 내일 또 도전! 🌱'; grade = 'C'; }
 
+    const coins = Array.from({length: total}, (_, i) => `<div class="coin ${i < correct ? '' : 'empty'}">💰</div>`).join('');
+
     const r = document.getElementById('resultCard');
     r.innerHTML = `
       <div class="result-title">GAME CLEAR!</div>
       <span class="result-score">${grade}</span>
       <div class="result-total">${correct} / ${total} 정답 · ${pct}%</div>
-      <div style="display:flex;gap:0.8rem">
-     <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
+      <div style="display:flex;gap:0.8rem;margin-top:1.5rem">
+        <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
       </div>
     `;
     r.classList.add('show');
