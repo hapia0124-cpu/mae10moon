@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서비스 소개 - 매십문</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #5bc8f5; font-family: 'Noto Sans KR', sans-serif; min-height: 100vh; }
+  .ground { position: fixed; bottom: 0; left: 0; right: 0; height: 32px; background: #5d8a3c; border-top: 8px solid #7ab648; z-index: 0; }
+  .wrapper { max-width: 680px; margin: 0 auto; padding: 2rem 1.5rem 5rem; position: relative; z-index: 1; }
+  .back-btn { font-family: 'Press Start 2P', monospace; font-size: 0.45rem; color: #1a1a6e; background: #fff8e7; border: 4px solid #1a1a6e; box-shadow: 4px 4px 0 #000; padding: 0.6rem 1rem; cursor: pointer; display: inline-block; margin-bottom: 1.5rem; text-decoration: none; }
+  .card { background: #fff8e7; border: 6px solid #1a1a6e; box-shadow: 8px 8px 0 #1a1a6e; padding: 2rem; margin-bottom: 1rem; }
+  .title { font-family: 'Press Start 2P', monospace; font-size: 0.7rem; color: #1a1a6e; margin-bottom: 1.5rem; line-height: 1.8; }
+  .hero-title { font-family: 'Black Han Sans', sans-serif; font-size: 2.5rem; color: #5bc8f5; -webkit-text-stroke: 3px #1a1a6e; text-shadow: 4px 4px 0 #1a1a6e; margin-bottom: 0.5rem; }
+  .hero-sub { font-family: 'Press Start 2P', monospace; font-size: 0.4rem; color: #8b5cf6; letter-spacing: 1px; margin-bottom: 1.5rem; }
+  h2 { font-size: 1rem; color: #1a1a6e; margin: 0 0 0.8rem; font-weight: 700; }
+  p, li { font-size: 0.9rem; color: #333; line-height: 1.9; }
+  ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+  .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 0.5rem; }
+  .feature-item { background: #1a1a6e; border: 3px solid #ffd700; padding: 0.8rem; text-align: center; }
+  .feature-item .icon { font-size: 1.5rem; margin-bottom: 0.3rem; }
+  .feature-item .label { font-family: 'Press Start 2P', monospace; font-size: 0.35rem; color: #ffd700; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="ground"></div>
+<div class="wrapper">
+  <a href="index.html" class="back-btn">◀ 돌아가기</a>
+
+  <div class="card" style="text-align:center">
+    <div class="hero-title">매십문</div>
+    <div class="hero-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <p>금융권 취업 준비생을 위한 매일 10문제 금융 시사 퀴즈 서비스입니다.<br>매일 오전 11시, 오늘의 경제 뉴스 기반 퀴즈가 업데이트됩니다.</p>
+  </div>
+
+  <div class="card">
+    <div class="title">⚡ 주요 기능</div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="icon">📰</div>
+        <div class="label">매일 뉴스 기반<br>퀴즈 출제</div>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🗓</div>
+        <div class="label">날짜별 퀴즈<br>아카이브</div>
+      </div>
+      <div class="feature-item">
+        <div class="icon">💡</div>
+        <div class="label">정답 후<br>해설 제공</div>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🆓</div>
+        <div class="label">완전<br>무료</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">🤖 출제 방식</div>
+    <p>한국경제·연합뉴스 경제 RSS를 매일 수집하고, Google Gemini AI가 뉴스 흐름을 분석해 금융 시사 퀴즈를 출제합니다.</p>
+    <ul>
+      <li>금융 용어 맞추기</li>
+      <li>금융상품·제도 세부 지식</li>
+      <li>시사 경제 이해 문제</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="title">🎯 이런 분께 추천</div>
+    <ul>
+      <li>은행·증권·보험 취업 준비생</li>
+      <li>금융 자격증 준비생 (AFPK, CFP 등)</li>
+      <li>금융 시사 상식을 키우고 싶은 분</li>
+      <li>매일 꾸준히 공부 습관을 만들고 싶은 분</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
