@@ -101,6 +101,13 @@
     font-size: 0.5rem;
     image-rendering: pixelated;
     box-shadow: 4px 4px 0 #000;
+    transition: transform 0.1s steps(2), box-shadow 0.1s steps(2);
+  }
+
+  .hud-box:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+    background: #2a2a8e;
   }
 
   .score-val { color: var(--white); font-size: 0.6rem; }
@@ -521,7 +528,11 @@
 <div class="wrapper">
   <div class="hud">
     <div class="hud-box">💰 SCORE<br><span class="score-val" id="scoreDisplay">0</span></div>
-    <div class="hud-box">📅 TODAY<br><span class="score-val" id="dateDisplay">-</span></div>
+    <div class="hud-box" onclick="document.getElementById('datePicker').showPicker()" style="cursor:pointer;border-color:#ffd700;position:relative">
+      📅 DATE ▼<br>
+      <span class="score-val" id="dateDisplay">-</span>
+      <input type="date" id="datePicker" style="position:absolute;opacity:0;width:0;height:0" onchange="changeDate(this.value)">
+    </div>
 
   </div>
 
@@ -551,7 +562,7 @@
 
 <script>
   const SUPABASE_URL = 'https://yhmswitflnujcwpkibso.supabase.co';
-  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobXN3aXRmbG51amN3cGtpYnNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA3OTIwMDksImV4cCI6MjA5NjM2ODAwOX0.K8HGusLahpyKYqn2vkuxjwBFLIu1w_kCSCyZP75MXfc';
+  const SUPABASE_KEY = 'YOUR_ANON_KEY_HERE';
 
   let quizzes = [];
   let current = 0;
@@ -742,6 +753,41 @@
       setTimeout(() => {
         spawnStars(Math.random() * window.innerWidth, Math.random() * window.innerHeight * 0.5, true);
       }, i * 150);
+    }
+  }
+
+  function changeDate(newDate) {
+    current = 0;
+    score = 0;
+    answered = false;
+    document.getElementById('scoreDisplay').textContent = 0;
+    document.getElementById('dateDisplay').textContent = newDate.slice(5);
+    document.getElementById('quizArea').style.display = 'none';
+    document.getElementById('resultCard').className = 'result-card';
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('errorMsg').style.display = 'none';
+    loadQuizzesByDate(newDate);
+  }
+
+  async function loadQuizzesByDate(date) {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/Quiz?date=eq.${date}&order=id.asc`, {
+        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+      });
+      const data = await res.json();
+      if (!data || data.length === 0) {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('errorMsg').style.display = 'block';
+        document.getElementById('errorMsg').textContent = '해당 날짜의 퀴즈가 없습니다.';
+        return;
+      }
+      quizzes = data;
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('quizArea').style.display = 'block';
+      renderQuiz();
+    } catch(e) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('errorMsg').style.display = 'block';
     }
   }
 
