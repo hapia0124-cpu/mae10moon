@@ -533,7 +533,6 @@
       <span class="score-val" id="dateDisplay">-</span>
       <input type="date" id="datePicker" style="position:absolute;opacity:0;width:0;height:0" onchange="changeDate(this.value)">
     </div>
-
   </div>
 
   <div class="title-card">
@@ -541,23 +540,57 @@
     <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
   </div>
 
-  <div class="progress-wrap">
-    <div class="progress-fill" id="progressBar" style="width:0%"></div>
-    <span class="progress-label" id="progressLabel">0/10</span>
-  </div>
-
-  <div class="loading" id="loading">
-    <div class="pixel-loader">
-      <div class="pixel-dot"></div>
-      <div class="pixel-dot"></div>
-      <div class="pixel-dot"></div>
+  <!-- 스타트 화면 -->
+  <div id="startScreen">
+    <div class="quiz-card" style="text-align:center;margin-bottom:1rem">
+      <div style="font-family:'Noto Sans KR',sans-serif;font-size:1.3rem;font-weight:900;color:var(--navy);line-height:1.6;margin-bottom:1rem">
+        금융권 취업<br>매일 10문제로 대비하자!
+      </div>
+      <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.9rem;color:#555;margin-bottom:1.5rem;line-height:2">
+        📅 매일 오전 11시 업데이트
+      </div>
+      <button class="btn btn-next" style="display:block;max-width:300px;margin:0 auto;font-size:0.6rem;padding:1rem" onclick="startQuiz()">
+        ▶ START GAME
+      </button>
     </div>
-    <div class="loading-text">LOADING...</div>
+
+    <div class="quiz-card" style="text-align:center;margin-bottom:1rem;cursor:pointer" onclick="openModal('how')" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
+      <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">📖 HOW TO PLAY ▶</div>
+    </div>
+
+    <div class="quiz-card" style="text-align:center;cursor:pointer" onclick="openModal('faq')" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
+      <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">❓ FAQ ▶</div>
+    </div>
   </div>
 
-  <div id="quizArea" style="display:none"></div>
-  <div class="result-card" id="resultCard"></div>
-  <div class="error-msg" id="errorMsg" style="display:none">ERROR: 오늘의 퀴즈를 불러올 수 없습니다.</div>
+  <!-- 팝업 모달 -->
+  <div id="modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:999;align-items:center;justify-content:center;padding:1rem">
+    <div style="background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;position:relative">
+      <button onclick="closeModal()" style="position:absolute;top:0.8rem;right:0.8rem;background:var(--red);border:3px solid #b91c1c;color:white;font-family:'Press Start 2P',monospace;font-size:0.4rem;padding:0.3rem 0.6rem;cursor:pointer;box-shadow:2px 2px 0 #000">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- 퀴즈 영역 -->
+  <div id="quizGame" style="display:none">
+    <div class="progress-wrap">
+      <div class="progress-fill" id="progressBar" style="width:0%"></div>
+      <span class="progress-label" id="progressLabel">0/10</span>
+    </div>
+
+    <div class="loading" id="loading" style="display:none">
+      <div class="pixel-loader">
+        <div class="pixel-dot"></div>
+        <div class="pixel-dot"></div>
+        <div class="pixel-dot"></div>
+      </div>
+      <div class="loading-text">LOADING...</div>
+    </div>
+
+    <div id="quizArea" style="display:none"></div>
+    <div class="result-card" id="resultCard"></div>
+    <div class="error-msg" id="errorMsg" style="display:none">ERROR: 퀴즈를 불러올 수 없습니다.</div>
+  </div>
 </div>
 
 <script>
@@ -621,6 +654,46 @@
       osc.start(ctx.currentTime);
       osc.stop(ctx.currentTime + 0.4);
     } catch(e) {}
+  }
+
+  function openModal(type) {
+    const modal = document.getElementById('modal');
+    const content = document.getElementById('modalContent');
+    if (type === 'how') {
+      content.innerHTML = `
+        <div style="font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--navy);margin-bottom:1rem">📖 HOW TO PLAY</div>
+        <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.9rem;color:var(--navy);line-height:2">
+          1. 매일 오전 11시 새 퀴즈 업데이트<br>
+          2. 4지선다 문제 10개 풀기<br>
+          3. 정답 후 해설로 개념 정리<br>
+          4. DATE 버튼으로 과거 날짜 퀴즈도 OK
+        </div>`;
+    } else {
+      content.innerHTML = `
+        <div style="font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--navy);margin-bottom:1rem">❓ FAQ</div>
+        <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.9rem;color:var(--navy);line-height:2">
+          <strong>Q. 문제 출제는 어떻게 되나요?</strong><br>
+          한국경제·연합경제 뉴스를 매일 수집해 Gemini AI가 금융 시사 퀴즈를 출제합니다.<br><br>
+          <strong>Q. 퀴즈는 며칠꺼부터 있나요?</strong><br>
+          2026년 5월 1일부터 제공됩니다.<br><br>
+          <strong>Q. 매일 새 문제가 올라오나요?</strong><br>
+          네, 매일 오전 11시에 새 퀴즈가 업데이트됩니다.<br><br>
+          <strong>Q. 무료인가요?</strong><br>
+          완전 무료입니다.
+        </div>`;
+    }
+    modal.style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  function startQuiz() {
+    document.getElementById('startScreen').style.display = 'none';
+    document.getElementById('quizGame').style.display = 'block';
+    document.getElementById('loading').style.display = 'block';
+    loadQuizzes();
   }
 
   async function loadQuizzes() {
@@ -791,7 +864,6 @@
     }
   }
 
-  loadQuizzes();
 </script>
 </body>
 </html>
