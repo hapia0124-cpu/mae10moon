@@ -54,15 +54,70 @@
     background: white;
   }
 
-  .c1 { width: 80px; height: 24px; top: 8%; left: 5%; animation: cloudMove 20s linear infinite; }
-  .c1::before { width: 48px; height: 24px; top: -16px; left: 16px; }
-  .c2 { width: 96px; height: 24px; top: 15%; left: 60%; animation: cloudMove 25s linear infinite 5s; }
-  .c2::before { width: 56px; height: 24px; top: -16px; left: 20px; }
-  .c3 { width: 64px; height: 16px; top: 5%; left: 35%; animation: cloudMove 18s linear infinite 10s; }
+  /* 작은 구름 */
+  .c1 { width: 48px; height: 16px; top: 12%; left: 5%; animation: cloudMove 18s linear infinite; }
+  .c1::before { width: 24px; height: 16px; top: -12px; left: 8px; }
+  .c1::after { width: 16px; height: 12px; top: -8px; left: 24px; }
+
+  /* 중간 구름 */
+  .c2 { width: 96px; height: 24px; top: 8%; left: 55%; animation: cloudMove 26s linear infinite 4s; }
+  .c2::before { width: 48px; height: 24px; top: -18px; left: 16px; }
+  .c2::after { width: 32px; height: 16px; top: -10px; left: 52px; }
+
+  /* 큰 구름 */
+  .c3 { width: 140px; height: 32px; top: 18%; left: 20%; animation: cloudMove 35s linear infinite 10s; }
+  .c3::before { width: 72px; height: 32px; top: -24px; left: 24px; }
+  .c3::after { width: 48px; height: 20px; top: -14px; left: 72px; }
+
+  /* 아주 작은 구름 */
+  .c4 { width: 32px; height: 12px; top: 5%; left: 40%; animation: cloudMove 14s linear infinite 7s; }
+  .c4::before { width: 16px; height: 12px; top: -8px; left: 8px; }
+
+  /* 중대형 구름 */
+  .c5 { width: 112px; height: 28px; top: 25%; left: 70%; animation: cloudMove 30s linear infinite 2s; }
+  .c5::before { width: 56px; height: 28px; top: -20px; left: 20px; }
+  .c5::after { width: 40px; height: 18px; top: -12px; left: 60px; }
+
+  /* 소형 구름 */
+  .c6 { width: 64px; height: 20px; top: 3%; left: 80%; animation: cloudMove 22s linear infinite 15s; }
+  .c6::before { width: 32px; height: 20px; top: -14px; left: 12px; }
 
   @keyframes cloudMove {
-    from { transform: translateX(-200px); }
+    from { transform: translateX(-250px); }
     to { transform: translateX(110vw); }
+  }
+
+  /* 해 */
+  .sun {
+    position: fixed;
+    top: 10%;
+    right: 12%;
+    width: 48px;
+    height: 48px;
+    background: #ffd700;
+    z-index: 0;
+    image-rendering: pixelated;
+    box-shadow:
+      -8px 0 0 #ffd700, 8px 0 0 #ffd700,
+      0 -8px 0 #ffd700, 0 8px 0 #ffd700,
+      -16px -16px 0 8px #ffd700,
+      16px -16px 0 8px #ffd700,
+      -16px 16px 0 8px #ffd700,
+      16px 16px 0 8px #ffd700,
+      0 0 0 56px rgba(255,220,0,0.15);
+    animation: sunPulse 3s ease-in-out infinite;
+  }
+  @keyframes sunPulse {
+    0%, 100% { box-shadow: -8px 0 0 #ffd700, 8px 0 0 #ffd700, 0 -8px 0 #ffd700, 0 8px 0 #ffd700, -16px -16px 0 8px #ffd700, 16px -16px 0 8px #ffd700, -16px 16px 0 8px #ffd700, 16px 16px 0 8px #ffd700, 0 0 0 56px rgba(255,220,0,0.15); }
+    50% { box-shadow: -8px 0 0 #ffd700, 8px 0 0 #ffd700, 0 -8px 0 #ffd700, 0 8px 0 #ffd700, -16px -16px 0 8px #ffd700, 16px -16px 0 8px #ffd700, -16px 16px 0 8px #ffd700, 16px 16px 0 8px #ffd700, 0 0 0 68px rgba(255,220,0,0.25); }
+  }
+
+  /* 픽셀 나무 */
+  .pixel-tree {
+    position: fixed;
+    bottom: 32px;
+    z-index: 0;
+    image-rendering: pixelated;
   }
 
   /* 바닥 잔디 */
@@ -528,7 +583,62 @@
   <div class="cloud c1"></div>
   <div class="cloud c2"></div>
   <div class="cloud c3"></div>
+  <div class="cloud c4"></div>
+  <div class="cloud c5"></div>
+  <div class="cloud c6"></div>
 </div>
+<div class="sun"></div>
+
+<!-- 픽셀 나무 SVG -->
+<svg class="pixel-tree" style="left:1%;width:96px;height:144px" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect x="6" y="0" width="4" height="2" fill="#2d8a2d"/>
+  <rect x="4" y="2" width="8" height="2" fill="#3aaa3a"/>
+  <rect x="3" y="4" width="10" height="2" fill="#2d8a2d"/>
+  <rect x="2" y="6" width="12" height="2" fill="#3aaa3a"/>
+  <rect x="4" y="8" width="8" height="2" fill="#2d8a2d"/>
+  <rect x="3" y="10" width="10" height="2" fill="#3aaa3a"/>
+  <rect x="2" y="12" width="12" height="2" fill="#2d8a2d"/>
+  <rect x="1" y="14" width="14" height="2" fill="#3aaa3a"/>
+  <rect x="6" y="16" width="4" height="6" fill="#7b4f2e"/>
+  <rect x="5" y="16" width="1" height="6" fill="#5a3720"/>
+</svg>
+
+<svg class="pixel-tree" style="right:2%;width:120px;height:160px" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect x="6" y="0" width="4" height="2" fill="#1a6e1a"/>
+  <rect x="4" y="2" width="8" height="2" fill="#2d8a2d"/>
+  <rect x="3" y="4" width="10" height="2" fill="#1a6e1a"/>
+  <rect x="2" y="6" width="12" height="2" fill="#2d8a2d"/>
+  <rect x="5" y="8" width="6" height="2" fill="#1a6e1a"/>
+  <rect x="3" y="10" width="10" height="2" fill="#2d8a2d"/>
+  <rect x="2" y="12" width="12" height="2" fill="#1a6e1a"/>
+  <rect x="1" y="14" width="14" height="2" fill="#2d8a2d"/>
+  <rect x="6" y="16" width="4" height="6" fill="#5a3720"/>
+  <rect x="10" y="16" width="1" height="6" fill="#7b4f2e"/>
+</svg>
+
+<svg class="pixel-tree" style="left:9%;width:72px;height:108px" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect x="6" y="2" width="4" height="2" fill="#3aaa3a"/>
+  <rect x="4" y="4" width="8" height="2" fill="#2d8a2d"/>
+  <rect x="3" y="6" width="10" height="2" fill="#3aaa3a"/>
+  <rect x="2" y="8" width="12" height="2" fill="#2d8a2d"/>
+  <rect x="4" y="10" width="8" height="2" fill="#3aaa3a"/>
+  <rect x="2" y="12" width="12" height="2" fill="#2d8a2d"/>
+  <rect x="1" y="14" width="14" height="2" fill="#3aaa3a"/>
+  <rect x="6" y="16" width="4" height="6" fill="#7b4f2e"/>
+</svg>
+
+<svg class="pixel-tree" style="right:11%;width:88px;height:128px" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect x="5" y="0" width="6" height="2" fill="#2d8a2d"/>
+  <rect x="4" y="2" width="8" height="2" fill="#3aaa3a"/>
+  <rect x="3" y="4" width="10" height="2" fill="#2d8a2d"/>
+  <rect x="2" y="6" width="12" height="2" fill="#3aaa3a"/>
+  <rect x="3" y="8" width="10" height="2" fill="#2d8a2d"/>
+  <rect x="2" y="10" width="12" height="2" fill="#3aaa3a"/>
+  <rect x="1" y="12" width="14" height="2" fill="#2d8a2d"/>
+  <rect x="6" y="14" width="4" height="8" fill="#5a3720"/>
+  <rect x="5" y="14" width="1" height="8" fill="#7b4f2e"/>
+</svg>
+
 <div class="ground"></div>
 
 <div class="stars" id="starsContainer"></div>
