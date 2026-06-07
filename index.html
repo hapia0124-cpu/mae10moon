@@ -698,17 +698,13 @@
     else if (pct >= 50) { msg = '절반 이상! 계속 도전! 📚'; grade = 'B'; }
     else { msg = '오늘은 어려웠군요. 내일 또 도전! 🌱'; grade = 'C'; }
 
-    const coins = Array.from({length: total}, (_, i) => `<div class="coin ${i < correct ? '' : 'empty'}">💰</div>`).join('');
-
     const r = document.getElementById('resultCard');
     r.innerHTML = `
       <div class="result-title">GAME CLEAR!</div>
       <span class="result-score">${grade}</span>
       <div class="result-total">${correct} / ${total} 정답 · ${pct}%</div>
-      <div class="coin-row">${coins}</div>
-      <div class="result-msg">${msg}</div>
       <div style="display:flex;gap:0.8rem">
-        <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
+     <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
       </div>
     `;
     r.classList.add('show');
