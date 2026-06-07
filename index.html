@@ -504,6 +504,14 @@
     font-weight: 900;
   }
 
+  @keyframes dragonBall {
+    0% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 8px #ffd700); }
+    25% { transform: scale(1.2) rotate(10deg); filter: drop-shadow(0 0 20px #ff6eb4); }
+    50% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 8px #ffd700); }
+    75% { transform: scale(1.2) rotate(-10deg); filter: drop-shadow(0 0 20px #8b5cf6); }
+    100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 8px #ffd700); }
+  }
+
   @keyframes coinUp {
     0%   { opacity: 1; transform: translateY(0) scaleX(1); }
     25%  { transform: translateY(-30px) scaleX(0.3); }
@@ -807,32 +815,81 @@
     const correct = score / 100;
     const total = quizzes.length;
     const pct = Math.round((correct / total) * 100);
+    const isPerfect = correct === total;
 
-    let msg = '';
     let grade = '';
-    if (pct >= 90) { msg = '완벽해요! 금융 전문가! 🏆'; grade = 'S'; }
-    else if (pct >= 70) { msg = '대단해요! 거의 다 왔어요! 💪'; grade = 'A'; }
-    else if (pct >= 50) { msg = '절반 이상! 계속 도전! 📚'; grade = 'B'; }
-    else { msg = '오늘은 어려웠군요. 내일 또 도전! 🌱'; grade = 'C'; }
-
-    const coins = Array.from({length: total}, (_, i) => `<div class="coin ${i < correct ? '' : 'empty'}">💰</div>`).join('');
+    if (pct >= 90) grade = 'S';
+    else if (pct >= 70) grade = 'A';
+    else if (pct >= 50) grade = 'B';
+    else grade = 'C';
 
     const r = document.getElementById('resultCard');
-    r.innerHTML = `
-      <div class="result-title">GAME CLEAR!</div>
-      <span class="result-score">${grade}</span>
-      <div class="result-total">${correct} / ${total} 정답 · ${pct}%</div>
-      <div style="display:flex;gap:0.8rem;margin-top:1.5rem">
-        <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
-      </div>
-    `;
-    r.classList.add('show');
 
-    for (let i = 0; i < 20; i++) {
-      setTimeout(() => {
-        spawnStars(Math.random() * window.innerWidth, Math.random() * window.innerHeight * 0.5, true);
-      }, i * 150);
+    if (isPerfect) {
+      r.innerHTML = `
+        <div style="background:#08081e;padding:1.5rem 1rem 2rem;text-align:center;position:relative;overflow:hidden;border:4px solid #ffd700;box-shadow:4px 4px 0 #000;margin:-2rem;border-radius:0">
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,0.12) 0px,rgba(0,0,0,0.12) 1px,transparent 1px,transparent 4px);pointer-events:none;z-index:0"></div>
+          <div style="position:relative;z-index:1">
+            <div style="font-family:'Press Start 2P',monospace;font-size:clamp(0.5rem,2vw,0.8rem);color:#ffd700;margin-bottom:1rem;letter-spacing:2px;line-height:2">★ PERFECT CLEAR ★</div>
+            <div style="position:relative;display:inline-block;margin:0.5rem 0">
+              <span style="position:absolute;top:-18px;left:-8px;font-size:1.2rem">✨</span>
+              <span style="position:absolute;top:-14px;right:-8px;font-size:1.2rem">⭐</span>
+              <span style="position:absolute;bottom:-4px;left:-14px;font-size:1.2rem">💫</span>
+              <span style="position:absolute;bottom:-4px;right:-14px;font-size:1.2rem">✨</span>
+              <span style="position:absolute;top:42%;left:-26px;font-size:1.2rem">⭐</span>
+              <span style="position:absolute;top:42%;right:-26px;font-size:1.2rem">💫</span>
+              <svg style="width:min(180px,48vw);height:min(180px,48vw)" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="pg1" cx="35%" cy="30%" r="65%">
+                    <stop offset="0%" stop-color="#fff8c0"/>
+                    <stop offset="15%" stop-color="#ffdd44"/>
+                    <stop offset="45%" stop-color="#ff8800"/>
+                    <stop offset="80%" stop-color="#e04400"/>
+                    <stop offset="100%" stop-color="#882200"/>
+                  </radialGradient>
+                  <radialGradient id="psh" cx="28%" cy="22%" r="38%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+                    <stop offset="55%" stop-color="#ffffff" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="psd" cx="50%" cy="50%" r="50%">
+                    <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="#000" stop-opacity="0.22"/>
+                  </radialGradient>
+                </defs>
+                <ellipse cx="140" cy="268" rx="85" ry="10" fill="#000" opacity="0.2"/>
+                <circle cx="140" cy="136" r="126" fill="url(#pg1)"/>
+                <circle cx="140" cy="136" r="126" fill="url(#psd)"/>
+                <ellipse cx="98" cy="82" rx="46" ry="34" fill="url(#psh)"/>
+                <circle cx="140" cy="136" r="125" fill="none" stroke="#ffcc44" stroke-width="1.5" opacity="0.3"/>
+                <polygon points="140,100 149,124 175,124 154,140 162,165 140,150 118,165 126,140 105,124 131,124" fill="#cc2200" opacity="0.95"/>
+                <polygon points="140,105 148,126 170,126 152,139 159,161 140,148 121,161 128,139 110,126 132,126" fill="#ee3300" opacity="0.45"/>
+                <polygon points="72,72 77,87 93,87 81,96 85,111 72,102 59,111 63,96 51,87 67,87" fill="#cc2200" opacity="0.9"/>
+                <polygon points="208,72 213,87 229,87 217,96 221,111 208,102 195,111 199,96 187,87 203,87" fill="#cc2200" opacity="0.9"/>
+                <polygon points="72,176 77,191 93,191 81,200 85,215 72,206 59,215 63,200 51,191 67,191" fill="#cc2200" opacity="0.9"/>
+                <polygon points="208,176 213,191 229,191 217,200 221,215 208,206 195,215 199,200 187,191 203,191" fill="#cc2200" opacity="0.9"/>
+              </svg>
+            </div>
+            <div style="display:flex;justify-content:center;gap:0.4rem;margin:0.8rem 0">
+              <span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span>
+            </div>
+            <div style="font-family:'Noto Sans KR',sans-serif;font-size:clamp(0.95rem,3.5vw,1.3rem);font-weight:900;color:#ffd700;margin-bottom:0.5rem">소원이 이뤄질 거예요</div>
+            <div style="font-family:'Press Start 2P',monospace;font-size:clamp(0.38rem,1.3vw,0.5rem);color:#ff6eb4;line-height:2.5">10 / 10 PERFECT!</div>
+            <button class="btn btn-next" style="display:block;margin:1.2rem auto 0;max-width:200px" onclick="location.reload()">▶ RETRY</button>
+          </div>
+        </div>
+      `;
+    } else {
+      r.innerHTML = `
+        <div class="result-title">GAME CLEAR!</div>
+        <span class="result-score">${grade}</span>
+        <div class="result-total">${correct} / ${total} 정답 · ${pct}%</div>
+        <div style="display:flex;gap:0.8rem;margin-top:1.5rem">
+          <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
+        </div>
+      `;
     }
+    r.classList.add('show');
   }
 
   function changeDate(newDate) {
