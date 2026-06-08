@@ -899,9 +899,22 @@
     setTimeout(() => popup.remove(), 900);
   }
 
+  let audioCtx = null;
+
+  function getAudioCtx() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    return audioCtx;
+  }
+
+  document.addEventListener('click', () => {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  }, { once: true });
+
   function playBeep(correct) {
     try {
-      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = getAudioCtx();
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.connect(gain);
@@ -970,7 +983,7 @@
 
   function playTick(urgent) {
     try {
-      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = getAudioCtx();
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.connect(gain);
