@@ -1044,6 +1044,7 @@
   function selectOption(e, el, selected, answer) {
     if (answered) return;
     answered = true;
+    stopTimer();
 
     const rect = el.getBoundingClientRect();
     const cx = rect.left + rect.width / 2;
