@@ -654,6 +654,7 @@
     100% { opacity: 0; transform: translateY(-110px) scaleX(1); }
   }
 </style>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -763,6 +764,7 @@
       <div style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.85rem;color:var(--navy);margin-bottom:0.6rem">📢 공지사항</div>
       <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;color:#444;line-height:2">
         · 퀴즈는 <strong>2026년 5월 1일</strong>부터 제공됩니다.<br>
+        · 카카오톡 공유하기 기능 추가 🎉<br>
         · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.
       </div>
     </div>
@@ -809,6 +811,33 @@
 </div>
 
 <script>
+
+  // 카카오 초기화
+  Kakao.init('28918717eb1177ee9a42fcfeff4e5b5b');
+
+  function shareKakao(score, total) {
+    Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '내 경제 시사상식 점수는?',
+        description: '매일 오전! 당일 뉴스 기반 금융 퀴즈 10문제로 공부하자',
+        imageUrl: 'https://mae10moon.com/og-image.png',
+        link: {
+          mobileWebUrl: 'https://mae10moon.com',
+          webUrl: 'https://mae10moon.com',
+        },
+      },
+      buttons: [
+        {
+          title: '나도 풀어보기 →',
+          link: {
+            mobileWebUrl: 'https://mae10moon.com',
+            webUrl: 'https://mae10moon.com',
+          },
+        },
+      ],
+    });
+  }
   const SUPABASE_URL = 'https://yhmswitflnujcwpkibso.supabase.co';
   const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobXN3aXRmbG51amN3cGtpYnNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA3OTIwMDksImV4cCI6MjA5NjM2ODAwOX0.K8HGusLahpyKYqn2vkuxjwBFLIu1w_kCSCyZP75MXfc';
 
@@ -888,7 +917,8 @@
       content.innerHTML = `
         <div style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;color:var(--navy);margin-bottom:1rem">📢 공지사항</div>
         <div style="font-family:'Noto Sans KR',sans-serif;font-size:0.9rem;color:var(--navy);line-height:2">
-          · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.<br>
+          · 카카오톡 공유하기 기능 추가 🎉<br>
+        · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.<br>
           · 이전 날짜 퀴즈는 뉴스 링크 없이 문제·해설만 제공됩니다.<br><br>
           문의·건의사항은 아래 메일로 보내주세요 😊<br>
           <a href="mailto:mae10mooon@gmail.com" style="color:#8b5cf6;font-weight:700">mae10mooon@gmail.com</a>
