@@ -1008,6 +1008,7 @@
     const q = quizzes[current];
     const options = Array.isArray(q.options) ? q.options : Object.values(q.options);
     answered = false;
+    startTimer();
 
     const pct = (current / quizzes.length) * 100;
     document.getElementById('progressBar').style.width = pct + '%';
