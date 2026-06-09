@@ -830,6 +830,7 @@
     else if (pct >= 50) grade = 'B';
     else grade = 'C';
     const title = `오늘 매십문 ${grade}등급! ${correct}/${total} 🎯 너도 풀어봐`;
+    gtag('event', 'kakao_share', { grade: grade, score: correct, total: total });
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
