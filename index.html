@@ -753,6 +753,24 @@
       </button>
     </div>
 
+    <div class="quiz-card" id="streakCard" style="margin-bottom:1rem">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+        <span id="streakBadge" style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;background:#1a1a6e;color:#ffd700;border:3px solid #ffd700;box-shadow:2px 2px 0 #000;padding:5px 10px">🔥 0일 연속</span>
+        <span id="totalBadge" style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;background:#fff8e7;color:#1a1a6e;border:3px solid #1a1a6e;box-shadow:2px 2px 0 #000;padding:5px 10px">📅 누적 0일</span>
+      </div>
+      <div id="gaugeWrap" style="display:none">
+        <div style="display:flex;justify-content:space-between;margin-bottom:5px">
+          <span style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;color:#1a1a6e">🎯 취뽀까지</span>
+          <span id="ddayLabel" style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;color:#ff6eb4"></span>
+        </div>
+        <div style="width:100%;height:14px;background:#d0cfc0;border:3px solid #1a1a6e;box-shadow:2px 2px 0 #000">
+          <div id="gaugeFill" style="height:100%;background:repeating-linear-gradient(90deg,#22c55e 0px,#22c55e 10px,#16a34a 10px,#16a34a 14px);width:0%;transition:width 0.4s"></div>
+        </div>
+        <div id="gaugeText" style="font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;color:#888;text-align:right;margin-top:3px"></div>
+      </div>
+      <button id="ddaySetBtn" onclick="openDdayModal()" style="display:none;width:100%;background:none;border:2px dashed #bbb;color:#999;font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:0.8rem;padding:7px;cursor:pointer;margin-top:8px">🎯 취뽀 D-day 설정하기 ▶</button>
+    </div>
+
     <div class="quiz-card" style="text-align:center;margin-bottom:1rem;cursor:pointer" onclick="location.href='archive.html'" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
       <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">📅 QUIZ ARCHIVE ▶</div>
     </div>
@@ -866,6 +884,92 @@
   const urlDate = urlParams.get('date');
   let selectedDate = urlDate || today;
   document.getElementById('dateDisplay').textContent = selectedDate.slice(5);
+  renderStreakCard();
+
+  // ── 스트릭 & 디데이 ──────────────────────
+  function getKSTDate() {
+    return new Date(new Date().toLocaleString('en-US', {timeZone:'Asia/Seoul'})).toISOString().split('T')[0];
+  }
+  function getStreakData() {
+    try { return JSON.parse(localStorage.getItem('mae10_streak') || '{}'); } catch { return {}; }
+  }
+  function saveStreakData(d) { localStorage.setItem('mae10_streak', JSON.stringify(d)); }
+  function updateStreak() {
+    const t = getKSTDate();
+    const d = getStreakData();
+    if (d.lastDate === t) return d;
+    const yest = new Date(new Date(t).getTime()-86400000).toISOString().split('T')[0];
+    d.streak = d.lastDate === yest ? (d.streak||0)+1 : 1;
+    if (!d.firstDate) d.firstDate = t;
+    d.total = (d.total||0)+1;
+    d.lastDate = t;
+    saveStreakData(d);
+    return d;
+  }
+  function getDday() {
+    try {
+      const target = localStorage.getItem('mae10_dday');
+      if (!target) return null;
+      const diff = Math.ceil((new Date(target)-new Date(getKSTDate()))/86400000);
+      return {date:target, diff};
+    } catch { return null; }
+  }
+  function renderStreakCard() {
+    const t = getKSTDate();
+    const d = getStreakData();
+    const yest = new Date(new Date(t).getTime()-86400000).toISOString().split('T')[0];
+    const streak = (d.lastDate===t||d.lastDate===yest) ? (d.streak||0) : 0;
+    const total = d.total||0;
+    const sb = document.getElementById('streakBadge');
+    const tb = document.getElementById('totalBadge');
+    if (sb) sb.textContent = `🔥 ${streak}일 연속`;
+    if (tb) tb.textContent = `📅 누적 ${total}일`;
+    const dday = getDday();
+    const gw = document.getElementById('gaugeWrap');
+    const db = document.getElementById('ddaySetBtn');
+    if (dday) {
+      if (gw) gw.style.display = 'block';
+      if (db) db.style.display = 'none';
+      const label = dday.diff>0?`D-${dday.diff}`:dday.diff===0?'D-DAY':`D+${Math.abs(dday.diff)}`;
+      const dl = document.getElementById('ddayLabel');
+      if (dl) dl.textContent = label;
+      const start = d.firstDate || t;
+      const totalDays = Math.max(1, Math.ceil((new Date(dday.date)-new Date(start))/86400000));
+      const pct = Math.min(100, Math.round((total/totalDays)*100));
+      const gf = document.getElementById('gaugeFill');
+      if (gf) gf.style.width = pct+'%';
+      const gt = document.getElementById('gaugeText');
+      if (gt) gt.textContent = `${total} / ${totalDays}일 달성`;
+    } else {
+      if (gw) gw.style.display = 'none';
+      if (db) db.style.display = 'block';
+    }
+  }
+  function openDdayModal() {
+    const cur = localStorage.getItem('mae10_dday')||'';
+    document.getElementById('modalContent').innerHTML = `
+      <div style="font-family:'Noto Sans KR',sans-serif">
+        <div style="font-weight:900;font-size:1rem;color:#1a1a6e;margin-bottom:0.8rem">🎯 취뽀 D-day 설정</div>
+        <div style="font-size:0.85rem;color:#555;margin-bottom:1rem;line-height:1.8">목표 시험일을 설정하면<br>메인화면에서 D-day와 진행률을 확인할 수 있어요.</div>
+        <input type="date" id="ddayInput" value="${cur}" style="width:100%;padding:0.7rem;border:3px solid #1a1a6e;font-size:0.9rem;font-family:'Noto Sans KR',sans-serif;margin-bottom:1rem;box-sizing:border-box">
+        <button onclick="confirmDday()" style="width:100%;background:#1a1a6e;color:#ffd700;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.9rem;padding:0.8rem;border:3px solid #ffd700;box-shadow:3px 3px 0 #000;cursor:pointer">설정하기</button>
+        ${cur?`<button onclick="removeDday()" style="width:100%;background:white;color:#e04444;font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:0.85rem;padding:0.6rem;border:2px solid #e04444;margin-top:0.5rem;cursor:pointer">D-day 삭제</button>`:''}
+      </div>`;
+    document.getElementById('modal').style.display = 'flex';
+  }
+  function confirmDday() {
+    const v = document.getElementById('ddayInput').value;
+    if (!v) return;
+    localStorage.setItem('mae10_dday', v);
+    closeModal();
+    renderStreakCard();
+  }
+  function removeDday() {
+    localStorage.removeItem('mae10_dday');
+    closeModal();
+    renderStreakCard();
+  }
+  // ─────────────────────────────────────────
 
   if (urlDate) {
     window.addEventListener('DOMContentLoaded', () => {
@@ -1167,6 +1271,9 @@
     else grade = 'C';
 
     const r = document.getElementById('resultCard');
+    const sd = updateStreak();
+    const streakMsg = sd ? `<div style="display:flex;gap:8px;justify-content:center;margin:10px 0;flex-wrap:wrap"><span style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;background:#1a1a6e;color:#ffd700;border:2px solid #ffd700;box-shadow:2px 2px 0 #000;padding:5px 10px">🔥 ${sd.streak}일 연속!</span><span style="font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.8rem;background:#fff8e7;color:#1a1a6e;border:2px solid #1a1a6e;box-shadow:2px 2px 0 #000;padding:5px 10px">📅 누적 ${sd.total}일</span></div>` : '';
+    renderStreakCard();
 
     if (isPerfect) {
       r.innerHTML = `
@@ -1218,6 +1325,7 @@
             </div>
             <div style="font-family:'Noto Sans KR',sans-serif;font-size:clamp(0.95rem,3.5vw,1.3rem);font-weight:900;color:#ffd700;margin-bottom:0.5rem">소원이 이뤄질 거예요</div>
             <div style="font-family:'Press Start 2P',monospace;font-size:clamp(0.38rem,1.3vw,0.5rem);color:#ff6eb4;line-height:2.5">10 / 10 PERFECT!</div>
+            ${streakMsg}
             <div style="display:flex;gap:0.8rem;margin:1.2rem auto 0;max-width:400px">
               <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
               <button class="btn btn-next" style="display:block;flex:1;background:#8b5cf6;border-color:#6d28d9;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.75rem" onclick="location.href='news.html?date='+selectedDate">📰 오늘의 뉴스</button>
@@ -1231,6 +1339,7 @@
         <div class="result-title">GAME CLEAR!</div>
         <span class="result-score">${grade}</span>
         <div class="result-total">${correct} / ${total} 정답 · ${pct}%</div>
+        ${streakMsg}
         <div style="display:flex;gap:0.8rem;margin-top:1.5rem">
           <button class="btn btn-next" style="display:block;flex:1" onclick="location.reload()">▶ RETRY</button>
           <button class="btn btn-next" style="display:block;flex:1;background:#8b5cf6;border-color:#6d28d9;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:0.75rem" onclick="location.href='news.html?date='+selectedDate">📰 오늘의 뉴스</button>
