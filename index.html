@@ -890,7 +890,14 @@
   let score = 0;
   let answered = false;
 
-  const today = new Date().toISOString().split('T')[0];
+  function getTodayKST() {
+    const kst = new Date(new Date().toLocaleString('en-US', {timeZone:'Asia/Seoul'}));
+    if (kst.getHours() < 8) {
+      kst.setDate(kst.getDate() - 1);
+    }
+    return kst.toISOString().split('T')[0];
+  }
+  const today = getTodayKST();
   const urlParams = new URLSearchParams(window.location.search);
   const urlDate = urlParams.get('date');
   let selectedDate = urlDate || today;
