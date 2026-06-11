@@ -1303,11 +1303,17 @@
       const rateEl = document.getElementById('answerRate');
       if (rateEl) rateEl.textContent = `👥 이 문제 정답률 ${pct}%`;
 
-      // 선지 버튼에도 정답률 표시
-      for (let i = 0; i < 4; i++) {
-        const el = document.getElementById(`opt-rate-${i}`);
-        if (el) { el.textContent = `(정답률 ${pct}%)`; el.style.opacity = '0.7'; }
-      }
+      // 정답 선지에만 정답률 표시
+      const q = quizzes[current];
+      const options = Array.isArray(q.options) ? q.options : Object.values(q.options);
+      const getNum = str => (str.match(/[①②③④]/) || [''])[0];
+      const ansNum = getNum(q.answer);
+      options.forEach((opt, i) => {
+        if (getNum(opt) === ansNum) {
+          const el = document.getElementById(`opt-rate-${i}`);
+          if (el) { el.textContent = `(정답률 ${pct}%)`; el.style.opacity = '0.7'; }
+        }
+      });
     } catch(e) {}
   }
 
