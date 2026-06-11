@@ -891,9 +891,11 @@
   let answered = false;
 
   function getTodayKST() {
-    const kst = new Date(new Date().toLocaleString('en-US', {timeZone:'Asia/Seoul'}));
-    if (kst.getHours() < 8) {
-      kst.setDate(kst.getDate() - 1);
+    const now = new Date();
+    const kstOffset = 9 * 60;
+    const kst = new Date(now.getTime() + kstOffset * 60000);
+    if (kst.getUTCHours() < 9) {
+      kst.setUTCDate(kst.getUTCDate() - 1);
     }
     return kst.toISOString().split('T')[0];
   }
@@ -1223,6 +1225,7 @@
           📖 EXPLANATION
           <div class="exp-body">${q.explanation}</div>
           ${q.news_context ? `<div class="news-ctx">📰 ${q.news_context}</div>` : ''}
+          <div id="answerRate" style="margin-top:0.5rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;color:#ffd700;opacity:0.9"></div>
         </div>
       </div>
       <div class="nav-buttons">
@@ -1268,6 +1271,34 @@
 
     document.getElementById('explanation').classList.add('show');
     document.getElementById('nextBtn').style.display = 'block';
+
+    const q = quizzes[current];
+    saveResponseAndShowRate(q.id, isCorrect);
+  }
+
+  async function saveResponseAndShowRate(quiz_id, isCorrect) {
+    try {
+      await fetch(`${SUPABASE_URL}/rest/v1/responses`, {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ quiz_id, is_correct: isCorrect })
+      });
+
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/responses?quiz_id=eq.${quiz_id}&select=is_correct`, {
+        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+      });
+      const data = await res.json();
+      const total = data.length;
+      const correct = data.filter(r => r.is_correct).length;
+      const pct = Math.round((correct / total) * 100);
+
+      const rateEl = document.getElementById('answerRate');
+      if (rateEl) rateEl.textContent = `👥 이 문제 정답률 ${pct}%`;
+    } catch(e) {}
   }
 
   function nextQuiz() { current++; renderQuiz(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
