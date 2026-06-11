@@ -384,6 +384,8 @@
     transition: transform 0.1s steps(2), box-shadow 0.1s steps(2);
     position: relative;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
   }
 
   .option:hover:not(:disabled) {
@@ -799,7 +801,8 @@
         · 퀴즈는 <strong>2026년 5월 1일</strong>부터 제공됩니다.<br>
         · 뉴스 원문 링크는 <strong>2026년 6월 7일</strong>부터 제공됩니다.<br>
         · 카카오톡 공유하기 기능 추가 🎉<br>
-        · 취뽀 D-day 설정하고 누적 학습일을 확인해보세요 🎯
+        · 취뽀 D-day 설정하고 누적 학습일을 확인해보세요 🎯<br>
+        · 답 선택 후 <strong>이 문제 정답률</strong>을 확인할 수 있어요 📊
       </div>
     </div>
   </div>
@@ -1216,11 +1219,11 @@
         <div class="question-text">${q.question}</div>
         <div class="options">
           ${options.map((opt, i) => `
-            <button class="option" onclick="selectOption(event, this, \`${opt.replace(/`/g,'\\`')}\`, \`${q.answer.replace(/`/g,'\\`')}\`)">
-              ${opt}
+            <button class="option" id="opt-${i}" onclick="selectOption(event, this, \`${opt.replace(/`/g,'\\`')}\`, \`${q.answer.replace(/`/g,'\\`')}\`, ${i})">
+              <span style="flex:1">${opt}</span>
+              <span id="opt-rate-${i}" style="min-width:90px;text-align:right;font-family:'Noto Sans KR',sans-serif;font-size:0.7rem;opacity:0;color:inherit"></span>
             </button>
-          `).join('')}
-        </div>
+          `).join('')}        </div>
         <div class="explanation" id="explanation">
           📖 EXPLANATION
           <div class="exp-body">${q.explanation}</div>
@@ -1299,6 +1302,12 @@
 
       const rateEl = document.getElementById('answerRate');
       if (rateEl) rateEl.textContent = `👥 이 문제 정답률 ${pct}%`;
+
+      // 선지 버튼에도 정답률 표시
+      for (let i = 0; i < 4; i++) {
+        const el = document.getElementById(`opt-rate-${i}`);
+        if (el) { el.textContent = `(정답률 ${pct}%)`; el.style.opacity = '0.7'; }
+      }
     } catch(e) {}
   }
 
