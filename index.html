@@ -1276,19 +1276,20 @@
     saveResponseAndShowRate(q.id, isCorrect);
   }
 
-  async function saveResponseAndShowRate(quiz_id, isCorrect) {
+  async function saveResponseAndShowRate(quizId, isCorrect) {
     try {
       await fetch(`${SUPABASE_URL}/rest/v1/response`, {
         method: 'POST',
         headers: {
           'apikey': SUPABASE_KEY,
           'Authorization': `Bearer ${SUPABASE_KEY}`,
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
         },
-        body: JSON.stringify({ quiz_id, is_correct: isCorrect })
+        body: JSON.stringify({ quiz_id: quizId, is_correct: isCorrect })
       });
 
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/response?quiz_id=eq.${quiz_id}&select=is_correct`, {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/response?quiz_id=eq.${quizId}&select=is_correct`, {
         headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
       });
       const data = await res.json();
