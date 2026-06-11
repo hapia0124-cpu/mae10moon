@@ -1223,7 +1223,6 @@
           📖 EXPLANATION
           <div class="exp-body">${q.explanation}</div>
           ${q.news_context ? `<div class="news-ctx">📰 ${q.news_context}</div>` : ''}
-          <div id="answerRate" style="margin-top:0.5rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;color:#ffd700;opacity:0.9"></div>
         </div>
       </div>
       <div class="nav-buttons">
@@ -1269,37 +1268,6 @@
 
     document.getElementById('explanation').classList.add('show');
     document.getElementById('nextBtn').style.display = 'block';
-
-    // 응답 저장 및 정답률 표시
-    const q = quizzes[current];
-    saveResponseAndShowRate(q.quiz_id, isCorrect);
-  }
-
-  async function saveResponseAndShowRate(quiz_id, isCorrect) {
-    try {
-      // 응답 저장
-      await fetch(`${SUPABASE_URL}/rest/v1/responses`, {
-        method: 'POST',
-        headers: {
-          'apikey': SUPABASE_KEY,
-          'Authorization': `Bearer ${SUPABASE_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ quiz_id, is_correct: isCorrect })
-      });
-
-      // 이 문제 정답률 조회
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/responses?quiz_id=eq.${quiz_id}&select=is_correct`, {
-        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
-      });
-      const data = await res.json();
-      const total = data.length;
-      const correct = data.filter(r => r.is_correct).length;
-      const pct = Math.round((correct / total) * 100);
-
-      const rateEl = document.getElementById('answerRate');
-      if (rateEl) rateEl.textContent = `👥 이 문제 정답률 ${pct}%`;
-    } catch(e) {}
   }
 
   function nextQuiz() { current++; renderQuiz(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
