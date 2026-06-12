@@ -823,7 +823,7 @@
     </div>
     <div class="timer-wrap" id="timerWrap" style="display:none">
       <div class="timer-fill" id="timerBar"></div>
-      <span class="timer-label" id="timerLabel">20</span>
+      <span class="timer-label" id="timerLabel">40</span>
     </div>
 
     <div class="loading" id="loading" style="display:none">
@@ -1113,7 +1113,7 @@
   }
 
   let timerInterval = null;
-  let timeLeft = 20;
+  let timeLeft = 40;
 
   function playTick(urgent) {
     try {
@@ -1133,21 +1133,21 @@
 
   function startTimer() {
     clearInterval(timerInterval);
-    timeLeft = 20;
+    timeLeft = 40;
     const bar = document.getElementById('timerBar');
     const label = document.getElementById('timerLabel');
     document.getElementById('timerWrap').style.display = 'block';
     bar.style.width = '100%';
     bar.classList.remove('warning', 'danger');
-    label.textContent = '20';
+    label.textContent = '40';
     timerInterval = setInterval(() => {
       timeLeft--;
-      const pct = (timeLeft / 20) * 100;
+      const pct = (timeLeft / 40) * 100;
       bar.style.width = pct + '%';
       label.textContent = timeLeft;
       bar.classList.remove('warning', 'danger');
-      if (timeLeft <= 5) { bar.classList.add('danger'); playTick(true); }
-      else if (timeLeft <= 10) { bar.classList.add('warning'); playTick(false); }
+      if (timeLeft <= 10) { bar.classList.add('danger'); playTick(true); }
+      else if (timeLeft <= 20) { bar.classList.add('warning'); playTick(false); }
       else { playTick(false); }
       if (timeLeft <= 0) {
         clearInterval(timerInterval);
