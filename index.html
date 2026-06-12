@@ -1229,7 +1229,7 @@
           <div class="exp-body">${(() => {
             const parts = (q.explanation || '').split('[오답해설]');
             if (parts.length === 2) {
-              return parts[0].trim() + '<br><br><span style="opacity:0.85;font-size:0.88em">' + parts[1].trim() + '</span>';
+              return parts[0].trim() + '<br><br><span style="opacity:0.85;font-size:0.88em"><strong>[오답해설]</strong><br>' + parts[1].trim() + '</span>';
             }
             return q.explanation;
           })()}</div>
