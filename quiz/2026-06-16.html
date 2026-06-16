@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-16 금융 퀴즈 10문제 - 매십문</title>
+<meta name="description" content="2026-06-16 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-06-16</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1242,"category":"금융용어","question":"최근 인터넷 은행들이 가계 대출 규제 강화의 일환으로 특정 상품 판매를 중단하는 등 '빚투' 차단에 나서고 있습니다. 여기서 '빚투'란 무엇을 의미하는 용어인가요?","answer":"① 레버리지 투자","explanation":"빚투는 '빚을 내서 투자한다'는 의미로, 자기 자본 외에 차입금을 활용하여 투자하는 레버리지 투자를 일컫습니다. [오답해설] ② 스캘핑은 초단타 매매 기법을 의미합니다. ③ 공매도는 주식을 빌려 매도한 뒤 주가 하락 시 재매수하여 차익을 얻는 투자 기법입니다. ④ 랩어카운트는 증권사 등 금융기관이 고객의 자산을 통합 관리해주는 맞춤형 자산 관리 서비스를 말합니다.","news_context":"인터넷은행들이 가계대출 증가세에 대응하기 위해 신용대출 및 마이너스 통장 판매를 중단하는 등 빚투 차단에 나섰습니다.","news_url":"https://www.yna.co.kr/view/AKR20260616031200002","options":["① 레버리지 투자","② 스캘핑","③ 공매도","④ 랩어카운트"]},{"id":1243,"category":"금융용어","question":"최근 한국은행은 좀비기업의 퇴출이 국가 생산성 개선에 도움이 될 수 있다고 발표했습니다. 여기서 '좀비기업'에 대한 설명으로 가장 적절한 것은 무엇인가요?","answer":"② 영업이익으로 이자 비용도 감당하지 못해 정부나 채권단의 지원으로 연명하는 기업","explanation":"좀비기업은 영업이익으로 이자 비용도 감당하지 못하면서도 정부 지원이나 금융권의 대출 연장 등으로 생존하는 한계기업을 일컫는 말입니다. [오답해설] ① 혁신적인 기술력을 가진 기업은 일반적으로 스타트업이나 벤처기업으로 분류됩니다. ③ 특정 산업 분야에서 독점적 지위를 가진 대기업은 독과점 기업이라 할 수 있습니다. ④ 상장된 지 얼마 안 된 기업은 신규 상장 기업 또는 상장 초 기업으로 불립니다.","news_context":"한국은행은 영업이익으로 이자도 갚지 못하는 좀비기업 25%가 퇴출되면 국가 전체 생산성이 개선될 수 있다고 분석했습니다.","news_url":"https://www.mk.co.kr/news/economy/12074666","options":["① 혁신적인 기술력을 바탕으로 고성장을 기대하는 기업","② 영업이익으로 이자 비용도 감당하지 못해 정부나 채권단의 지원으로 연명하는 기업","③ 특정 산업 분야에서 독점적 지위를 가진 대기업","④ 상장된 지 얼마 되지 않은 신생 기업"]},{"id":1244,"category":"금융용어","question":"중동 리스크 해소와 이란 종전 소식에 원화 가치가 강세를 보이는 가운데, 증권가에서는 주식 시장의 '서머랠리' 가능성을 언급하고 있습니다. 여기서 '서머랠리'에 대한 설명으로 가장 적절한 것은 무엇인가요?","answer":"③ 여름 휴가 시즌을 전후하여 주식 시장이 강세를 보이는 현상","explanation":"서머랠리는 여름 휴가 시즌을 전후하여 주식 시장이 강세를 보이는 현상을 의미합니다. [오답해설] ① 겨울 휴가 시즌을 전후하여 주식 시장이 강세를 보이는 현상은 '산타 랠리'라고 합니다. ② 주식 시장이 지속적으로 약세를 보이는 침체기는 '베어 마켓(하락장)'이라고 합니다. ④ 기업 실적 발표 직후 주가가 급등하는 것은 실적 서프라이즈 등의 영향으로 나타날 수 있으나, 서머랠리와는 다른 개념입니다.","news_context":"미국-이란 휴전 합의에 중동 리스크가 해소되며 원화 강세와 함께 월가 랠리가 이어지는 가운데, 증권가에서는 증시의 서머랠리 가능성을 언급했습니다.","news_url":"https://www.yna.co.kr/view/AKR20260616025500008","options":["① 겨울 휴가 시즌을 전후하여 주식 시장이 강세를 보이는 현상","② 주식 시장이 지속적으로 약세를 보이는 침체기","③ 여름 휴가 시즌을 전후하여 주식 시장이 강세를 보이는 현상","④ 기업 실적 발표 직후 일시적으로 주가가 급등하는 현상"]},{"id":1245,"category":"금융용어","question":"농협금융이 탄소중립 목표 달성을 위해 고탄소 산업의 저탄소 전환을 지원하는 '전환금융' 선도 사례를 만들고 3개월 만에 122억 원을 집행했습니다. 여기서 '전환금융(Transition Finance)'에 대한 설명으로 가장 적절한 것은 무엇인가요?","answer":"③ 탄소 중립 목표 달성을 위해 고탄소 산업의 저탄소 전환을 지원하는 금융 활동","explanation":"전환금융은 탄소 중립 목표 달성을 위해 온실가스 배출량이 많은 고탄소 산업의 저탄소 구조로의 전환을 지원하는 금융 활동을 의미합니다. [오답해설] ① 기업이 친환경 이미지를 위해 실제보다 과장된 친환경 활동을 홍보하는 행위는 '그린워싱(Greenwashing)'에 해당합니다. ② 특정 기업이나 프로젝트의 사회적, 환경적 성과를 고려하여 투자하는 방식은 '임팩트 투자(Impact Investing)' 또는 '사회책임투자(SRI)'의 일종입니다. ④ 사회적 취약 계층이나 소상공인에게 금융 서비스를 제공하는 것은 '포용금융(Inclusive Finance)'입니다.","news_context":"농협금융이 탄소중립 목표 달성을 위해 고탄소 산업의 저탄소 전환을 지원하는 전환금융 선도 사례를 만들고 122억 원을 집행했습니다.","news_url":"https://n.news.naver.com/mnews/article/008/0005372365?sid=101","options":["① 기업이 친환경 이미지를 위해 실제보다 과장된 친환경 활동을 홍보하는 행위","② 특정 기업이나 프로젝트의 사회적, 환경적 성과를 고려하여 투자하는 방식","③ 탄소 중립 목표 달성을 위해 고탄소 산업의 저탄소 전환을 지원하는 금융 활동","④ 사회적 취약 계층이나 소상공인 등 금융 소외 계층에게 금융 서비스를 제공하는 것"]},{"id":1246,"category":"세부지식","question":"5월 COFIX가 두 달 연속 상승하면서 주택담보대출 변동금리가 또 오를 것으로 예상됩니다. COFIX(자금조달비용지수)에 대한 설명 중 옳지 않은 것은 무엇인가요?","answer":"③ 은행의 조달금리 상승은 COFIX 상승으로 이어져 대출금리에 하방 압력을 가한다.","explanation":"은행의 조달금리 상승은 COFIX 상승으로 이어져 대출금리에 상방(인상) 압력을 가합니다. [오답해설] ① COFIX는 한국의 주요 은행들이 실제 자금을 조달한 금리를 가중평균하여 산출하는 지수입니다. ② COFIX는 주택담보대출 등 은행의 변동금리 대출 상품의 기준금리로 널리 활용됩니다. ④ 잔액기준 COFIX는 과거 취급된 모든 대출의 조달금리를 반영하므로 신규취급액기준 COFIX보다 변동성이 낮습니다.","news_context":"5월 COFIX가 두 달 연속 상승하면서 주택담보대출 변동금리도 상승 압력을 받을 것으로 전망됩니다.","news_url":"https://www.mk.co.kr/news/economy/12074630","options":["① 국내 8개 은행의 자금조달 관련 정보를 취합하여 산출한다.","② 은행의 주택담보대출 변동금리의 기준이 되는 주요 지표 중 하나이다.","③ 은행의 조달금리 상승은 COFIX 상승으로 이어져 대출금리에 하방 압력을 가한다.","④ 잔액기준 COFIX는 신규취급액기준 COFIX보다 변동성이 낮은 특징이 있다."]},{"id":1247,"category":"세부지식","question":"은행들이 은퇴 시니어 고객 유치를 위해 레지던스 입주부터 유언신탁까지 다양한 서비스를 분주하게 선보이고 있습니다. 이 중 '유언신탁'에 대한 설명으로 가장 적절한 것은 무엇인가요?","answer":"② 피상속인이 생전에 은행에 재산을 맡겨 사망 후 유언에 따라 상속인에게 재산을 분배하도록 하는 제도","explanation":"유언신탁은 피상속인이 생전에 은행에 재산을 맡기고 사망 후 자신의 유언에 따라 상속인에게 재산을 분배하도록 하는 제도입니다. [오답해설] ① 고령층의 주택을 담보로 노후 생활 자금을 연금처럼 지급받는 제도는 '주택연금'입니다. ③ 치매 등으로 인해 의사 결정 능력이 저하될 경우를 대비하여 후견인을 지정하는 제도는 '성년후견제도'입니다. ④ 여러 투자자의 자금을 모아 전문가가 운용하는 제도는 '집합투자증권(펀드)'입니다.","news_context":"은행들이 은퇴 시니어 고객들을 대상으로 레지던스 입주, 유언신탁 등 맞춤형 금융 서비스를 강화하고 있습니다.","news_url":"","options":["① 고령층의 주택을 담보로 노후 생활 자금을 연금처럼 지급받는 제도","② 피상속인이 생전에 은행에 재산을 맡겨 사망 후 유언에 따라 상속인에게 재산을 분배하도록 하는 제도","③ 치매 등 정신 능력 저하 시 본인의 의사 결정을 대신할 후견인을 지정하는 제도","④ 특정 목적 달성을 위해 여러 투자자의 자금을 모아 전문가가 운용하는 제도"]},{"id":1248,"category":"세부지식","question":"한국 증시의 MSCI 선진국 지수 편입 여부가 24일 결정됩니다. 한국 증시의 MSCI 선진국 지수 편입과 관련하여 일반적으로 논의되는 요소에 대한 설명으로 옳지 않은 것은 무엇인가요?","answer":"④ 정부의 적극적인 시장 개입은 시장의 예측 가능성을 높여 지수 편입에 유리하게 작용한다.","explanation":"정부의 적극적인 시장 개입은 오히려 시장의 자율성과 예측 가능성을 저해하여 MSCI 선진국 지수 편입에 불리하게 작용합니다. [오답해설] ① 역외 원화 시장 부재는 MSCI가 지적하는 한국 시장의 접근성 문제 중 하나입니다. ② 공매도 제도의 선진화 및 투명성 강화는 MSCI 선진국 지수 편입을 위한 주요 개선 과제로 꼽힙니다. ③ 외국인 투자자 등록 의무 폐지는 외국인 투자자들의 한국 시장 접근성을 높여 긍정적인 요소로 작용합니다.","news_context":"한국 증시의 MSCI 선진국 지수 편입 여부가 24일 결정될 예정인 가운데, 관련 제도 개선 노력이 주목받고 있습니다.","news_url":"http://www.dailypop.kr/news/articleView.html?idxno=99673","options":["① 역외 원화 시장의 부재는 한국 증시의 선진국 지수 편입에 걸림돌로 작용한다.","② 공매도 제도의 선진화는 MSCI 선진국 지수 편입을 위한 중요한 과제 중 하나이다.","③ 외국인 투자자 등록 의무 폐지는 지수 편입에 긍정적인 영향을 미친다.","④ 정부의 적극적인 시장 개입은 시장의 예측 가능성을 높여 지수 편입에 유리하게 작용한다."]},{"id":1249,"category":"시사","question":"일본이 31년 만에 기준금리를 1%로 인상했습니다. 이와 같은 일본의 기준금리 인상이 한국 금융시장에 미칠 수 있는 영향으로 가장 적절한 것은 무엇인가요?","answer":"② 일본으로 자본 유출 가능성이 증가하여 국내 채권 금리 상승 요인으로 작용할 수 있다.","explanation":"일본의 금리 인상은 일본 내 투자 수익률 상승을 유도하여 한국에 투자되었던 자본이 일본으로 유출될 가능성을 높이며, 이는 국내 채권 금리 상승 요인으로 작용할 수 있습니다. [오답해설] ① 일본의 금리 인상은 엔화 가치를 상승시키는 요인으로 작용하여 원/엔 환율은 하락 압력을 받을 수 있습니다. ③ 일본 기업의 투자 심리는 금리 인상으로 인한 차입 비용 증가로 위축될 수 있으나, 한국 수출 감소로 직결된다고 보기는 어렵습니다. ④ 한국은행은 일본의 금리 인상으로 인한 국내 자본 유출 및 환율 불안정 등을 방어하기 위해 기준금리 인하보다는 인상 압력을 받거나 동결 기조를 유지할 가능성이 높습니다.","news_context":"일본이 31년 만에 기준금리를 1%로 인상함에 따라 한국을 비롯한 주변국 금융시장에 미칠 영향이 주목됩니다.","news_url":"","options":["① 엔화 가치 하락 압력이 가중되어 원/엔 환율이 상승할 수 있다.","② 일본으로 자본 유출 가능성이 증가하여 국내 채권 금리 상승 요인으로 작용할 수 있다.","③ 일본 기업의 투자 심리 위축으로 한국 수출 기업의 대일 수출이 감소할 수 있다.","④ 한국은행은 일본의 금리 인상에 대응하여 선제적으로 기준금리 인하를 고려할 것이다."]},{"id":1250,"category":"시사","question":"'고점 쳤다'는 원/달러 환율이 최근 중동 리스크 해소 등으로 원화 강세 흐름을 보이고 있습니다. 원/달러 환율이 하락(원화 강세)하는 추세가 나타날 때, 국내 기업 경영에 미치는 영향으로 옳은 것은 무엇인가요?","answer":"① 원자재 수입 비중이 높은 기업은 원가 부담이 감소하여 수익성이 개선될 수 있다.","explanation":"원/달러 환율 하락(원화 강세)은 달러 대비 원화의 가치가 높아지는 것으로, 원자재 수입 시 더 적은 원화로 같은 양의 달러를 구매할 수 있어 수입 원가 부담이 감소합니다. [오답해설] ② 해외여행 비즈니스를 주력으로 하는 항공사 및 여행사는 원화 강세로 해외 여행 비용이 저렴해져 수요가 증가하고 수익성이 개선될 수 있습니다. ③ 수출 비중이 높은 국내 제조 기업은 원화 강세로 인해 수출품의 달러 표시 가격이 상승하여 가격 경쟁력이 약화되고, 환차손이 발생하여 실적에 부정적인 영향을 받을 수 있습니다. ④ 원화 강세는 외국인 투자자에게 국내 자산의 달러 가치 상승을 의미하므로, 국내 주식 시장에 대한 투자 매력을 높여 외국인 투자가 활발해질 가능성이 있습니다.","news_context":"중동 리스크 해소와 원화 강세 흐름 속에 원/달러 환율이 하락하며 원화 강세 수혜주에 대한 관심이 높아지고 있습니다.","news_url":"","options":["① 원자재 수입 비중이 높은 기업은 원가 부담이 감소하여 수익성이 개선될 수 있다.","② 해외여행 비즈니스를 주력으로 하는 항공사 및 여행사는 비용 증가 효과를 볼 수 있다.","③ 수출 비중이 높은 국내 제조 기업은 가격 경쟁력 확보 및 환차익 발생으로 실적 개선을 기대할 수 있다.","④ 외국인 투자자의 국내 주식 시장 투자는 더욱 위축되어 증시가 약세를 보일 것이다."]},{"id":1251,"category":"시사","question":"정부가 농협중앙회에 대한 개혁을 추진하며 '외부 감사위원회 신설' 등 감사 독립성 강화를 요구하고 있습니다. 정부가 추진하는 농협중앙회 감사 독립성 강화 방안에 대한 설명으로 옳지 않은 것은 무엇인가요?","answer":"④ 현재 농협중앙회 감사위원회가 외부 전문가 위주로 구성되어 있어 독립성이 충분히 확보되었다는 평가를 받는다.","explanation":"정부가 감사 독립성 강화를 추진하는 것은 현재 농협중앙회의 감사 독립성이 충분히 확보되지 못했다는 인식에 기반한 것입니다. [오답해설] ① 정부는 농협중앙회의 공공성과 투명성을 제고하기 위해 감사 독립성 강화를 추진하고 있습니다. ② 외부 전문가를 포함한 독립적인 감사위원회 설치는 내부 통제 및 견제 기능을 강화하기 위한 주요 방안입니다. ③ 감사 기능이 경영진으로부터 독립적이지 못하면 효율적인 견제와 감독이 어려워져 여러 문제점이 발생할 수 있습니다.","news_context":"정부가 농협중앙회에 대해 감사 독립성 강화를 요구하며 외부 감사위원회 신설을 핵심 개혁 과제로 추진하고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/030/0003437885?sid=101","options":["① 농협중앙회의 공공성과 투명성을 높이기 위한 목적으로 논의되고 있다.","② 외부 전문가가 참여하는 독립적인 감사위원회 설치가 핵심 내용 중 하나이다.","③ 감사 기능이 중앙회 경영진에 종속될 경우 발생할 수 있는 문제점 해결을 목표로 한다.","④ 현재 농협중앙회 감사위원회가 외부 전문가 위주로 구성되어 있어 독립성이 충분히 확보되었다는 평가를 받는다."]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
