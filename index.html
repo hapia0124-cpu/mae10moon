@@ -1233,8 +1233,8 @@
           📖 EXPLANATION
           <div class="exp-body">${(() => {
             const parts = (q.explanation || '').split('[오답해설]');
-            if (parts.length === 2) {
-              return parts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + parts[1].trim().replace(/② /g,'<br>② ').replace(/③ /g,'<br>③ ').replace(/④ /g,'<br>④ ');
+            if (parts.length > 1) {
+              rconst main = parts[0].trim(); const wrongs = parts.slice(1).map(p => p.trim()).join('<br>'); return main + '<br><br><strong>[오답해설]</strong><br>' + wrongs;
             }
             return q.explanation;
           })()}</div>
