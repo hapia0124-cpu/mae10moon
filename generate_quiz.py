@@ -4,6 +4,7 @@ import requests
 import feedparser
 from datetime import datetime, timezone, timedelta
 import base64
+import time
 
 # === 설정 ===
 GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
@@ -16,34 +17,31 @@ GITHUB_REPO = 'mae10moon'
 # KST 오늘 날짜
 kst = datetime.now(timezone.utc) + timedelta(hours=9)
 today = kst.strftime('%Y-%m-%d')
-
 print(f"오늘 날짜: {today}")
 
 # === 1. RSS 뉴스 수집 ===
 RSS_FEEDS = [
-    'https://www.hankyung.com/feed/economy',
-    'https://www.yonhapnewstv.co.kr/category/news/economy/feed/',
-    'https://www.mk.co.kr/rss/30000001/',
-    'https://openapi.naver.com/v1/news/today.json',  # 네이버는 별도 처리
-]
-
-RSS_FEEDS_SIMPLE = [
-    'https://www.hankyung.com/feed/economy',
-    'https://www.yonhapnewstv.co.kr/category/news/economy/feed/',
-    'https://www.mk.co.kr/rss/30000001/',
+    ('한국경제', 'https://www.hankyung.com/feed/economy', 25),
+    ('연합경제', 'https://www.yonhapnewstv.co.kr/category/news/economy/feed/', 25),
+    ('매일경제', 'https://www.mk.co.kr/rss/30000001/', 25),
 ]
 
 articles = []
-for url in RSS_FEEDS_SIMPLE:
+for name, url, limit in RSS_FEEDS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:5]:
+        count = 0
+        for entry in feed.entries:
+            if count >= limit:
+                break
             title = entry.get('title', '').replace('<![CDATA[', '').replace(']]>', '').strip()
             link = entry.get('link', '')
             if title:
                 articles.append({'title': title, 'link': link})
+                count += 1
+        print(f"{name}: {count}개 수집")
     except Exception as e:
-        print(f"RSS 오류 {url}: {e}")
+        print(f"RSS 오류 {name}: {e}")
 
 # 네이버 경제 뉴스
 try:
@@ -56,24 +54,23 @@ try:
                 'X-Naver-Client-Id': naver_client_id,
                 'X-Naver-Client-Secret': naver_client_secret
             },
-            params={'category': 'economic', 'count': 10}
+            params={'category': 'economic', 'count': 30}
         )
         if res.status_code == 200:
             items = res.json().get('channel', {}).get('item', [])
-            for item in items[:5]:
+            for item in items:
                 title = item.get('title', '').replace('<b>', '').replace('</b>', '')
                 link = item.get('link', '')
                 if title:
                     articles.append({'title': title, 'link': link})
+            print(f"네이버: {len(items)}개 수집")
 except Exception as e:
     print(f"네이버 오류: {e}")
 
-articles = articles[:20]
-print(f"수집된 기사: {len(articles)}개")
-
+print(f"총 수집된 기사: {len(articles)}개")
 title_list = '\n'.join([f"{i}. {a['title']} | {a['link']}" for i, a in enumerate(articles)])
 
-# === 2. Gemini로 퀴즈 생성 ===
+# === 2. Gemini로 퀴즈 생성 (재시도 포함) ===
 prompt = f"""너는 금융권 취업 준비생을 위한 퀴즈 출제자야.
 아래 오늘의 경제 뉴스 제목들을 보고 퀴즈 10개를 만들어줘.
 퀴즈 구성 우선순위:
@@ -86,7 +83,18 @@ prompt = f"""너는 금융권 취업 준비생을 위한 퀴즈 출제자야.
 - "옳은 것은?" 또는 "옳지 않은 것은?" 유형은 최대 3개로 제한
 - 선지는 최대한 간결하게
 - JSON 형식으로만 출력 (마크다운 기호 쓰지 마)
-- date는 반드시 "{today}"를 사용할 것
+- date는 반드시 "{today}"를 사용할 것. 뉴스 날짜를 참고하지 말 것.
+- 아래는 실제 금융권 필기시험 기출 유형 예시입니다. 이 수준과 스타일을 참고해서 출제하세요:
+  [금융용어 출제 예시]
+  - COFIX: 은행 대출금리의 기준이 되는 자금조달비용지수
+  - 스무딩오퍼레이션: 환율이 한 방향으로 급격히 움직일 때 중앙은행이 개입해 완화하는 것
+  - 핫머니: 선진국 저금리 정책으로 조달비용이 낮아진 유동성 자금
+  - 빅배스: 부실요소를 한 회계연도에 모두 반영하는 것
+  - 필립스 곡선: 실업률과 물가상승률의 반비례 관계
+  - 투키디데스 함정: 신흥 세력이 지배 세력을 위협할 때 발생하는 구조적 긴장
+  [세부지식 출제 예시]
+  - KIKO(Knock-In Knock-Out) 통화옵션: 옵션 구조, 조건, 리스크에 대한 세부 지식 문제
+  - 레버리지 ETF: 2배 레버리지 구조, 장단점에 대한 세부 지식 문제
 JSON 형식:
 [
   {{
@@ -103,38 +111,49 @@ JSON 형식:
 뉴스 제목:
 {title_list}"""
 
-gemini_res = requests.post(
-    f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}',
-    json={'contents': [{'parts': [{'text': prompt}]}]},
-    timeout=120
-)
+quizzes = None
+for attempt in range(5):
+    try:
+        print(f"Gemini 호출 시도 {attempt+1}/5")
+        gemini_res = requests.post(
+            f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}',
+            json={{'contents': [{{'parts': [{{'text': prompt}}]}}]}},
+            timeout=120
+        )
+        if gemini_res.status_code == 200:
+            raw = gemini_res.json()['candidates'][0]['content']['parts'][0]['text'].strip()
+            if raw.startswith('```'):
+                raw = raw.split('\n', 1)[1].rsplit('```', 1)[0]
+            quizzes = json.loads(raw)
+            print(f"퀴즈 생성 성공: {len(quizzes)}개")
+            break
+        elif gemini_res.status_code == 503:
+            wait = 60 * (attempt + 1)
+            print(f"503 과부하, {wait}초 후 재시도...")
+            time.sleep(wait)
+        else:
+            raise Exception(f"Gemini 오류: {gemini_res.status_code} {gemini_res.text}")
+    except json.JSONDecodeError as e:
+        print(f"JSON 파싱 오류: {e}, 재시도...")
+        time.sleep(30)
 
-if gemini_res.status_code != 200:
-    raise Exception(f"Gemini 오류: {gemini_res.status_code} {gemini_res.text}")
-
-raw = gemini_res.json()['candidates'][0]['content']['parts'][0]['text']
-raw = raw.strip()
-if raw.startswith('```'):
-    raw = raw.split('\n', 1)[1]
-    raw = raw.rsplit('```', 1)[0]
-
-quizzes = json.loads(raw)
-print(f"생성된 퀴즈: {len(quizzes)}개")
+if not quizzes:
+    raise Exception("Gemini 5회 시도 모두 실패")
 
 # === 3. Supabase 저장 ===
-headers = {
+headers = {{
     'apikey': SUPABASE_KEY,
-    'Authorization': f'Bearer {SUPABASE_KEY}',
+    'Authorization': f'Bearer {{SUPABASE_KEY}}',
     'Content-Type': 'application/json',
     'Prefer': 'return=representation'
-}
+}}
 
 saved_quizzes = []
 for q in quizzes:
     res = requests.post(
-        f'{SUPABASE_URL}/rest/v1/Quiz',
+        f'{{SUPABASE_URL}}/rest/v1/Quiz',
         headers=headers,
-        json={
+        json={{
             'date': q['date'],
             'category': q['category'],
             'question': q['question'],
@@ -143,15 +162,15 @@ for q in quizzes:
             'explanation': q['explanation'],
             'news_context': q.get('news_context', ''),
             'news_url': q.get('news_url', None)
-        }
+        }}
     )
     if res.status_code in [200, 201]:
         saved_quizzes.append(res.json()[0] if res.json() else q)
     else:
-        print(f"Supabase 저장 오류: {res.status_code} {res.text}")
+        print(f"Supabase 저장 오류: {{res.status_code}}")
         saved_quizzes.append(q)
 
-print(f"Supabase 저장 완료: {len(saved_quizzes)}개")
+print(f"Supabase 저장 완료: {{len(saved_quizzes)}}개")
 
 # === 4. quiz HTML 생성 ===
 quizzes_json = json.dumps(saved_quizzes, ensure_ascii=False).replace('<', '\\u003c').replace('>', '\\u003e')
@@ -161,8 +180,8 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{today} 금융 퀴즈 10문제 - 매십문</title>
-<meta name="description" content="{today} 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
+<title>{{today}} 금융 퀴즈 10문제 - 매십문</title>
+<meta name="description" content="{{today}} 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
 <style>
 :root{{--sky:#5bc8f5;--pink:#ff6eb4;--pink-dark:#d94f96;--yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;--purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;}}
@@ -213,8 +232,8 @@ body{{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:10
 .btn-main{{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}}
 .btn-main:hover{{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}}
 .stars{{position:fixed;pointer-events:none;z-index:999;}}
-.coin-item{{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}}
-.coin-item::before{{content:'₩';font-size:0.55rem;font-weight:900;color:var(--navy);display:flex;align-items:center;justify-content:center;height:100%;}}
+.coin-item{{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;display:flex;align-items:center;justify-content:center;}}
+.coin-item::before{{content:'₩';font-size:0.55rem;font-weight:900;color:var(--navy);}}
 @keyframes coinUp{{0%{{opacity:1;transform:translateY(0)}}100%{{opacity:0;transform:translateY(-100px)}}}}
 .score-popup{{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}}
 @keyframes popUp{{0%{{opacity:1;transform:translateY(0)}}100%{{opacity:0;transform:translateY(-60px)}}}}
@@ -226,7 +245,7 @@ body{{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:10
   <div class="title-card">
     <div class="title-main">매십문</div>
     <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
-    <div class="date-badge">{today}</div>
+    <div class="date-badge">{{today}}</div>
   </div>
   <div class="progress-wrap">
     <div class="progress-bar" id="progressBar" style="width:0%"></div>
@@ -242,33 +261,30 @@ body{{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:10
 </div>
 <div class="stars" id="stars"></div>
 <script>
-var quizzes = {quizzes_json};
-var current = 0; var score = 0; var answered = false; var audioCtx = null;
-function getTagClass(cat) {{ if(cat==='금융용어') return 'tag-금융용어'; if(cat==='시사') return 'tag-시사'; if(cat==='세부지식') return 'tag-세부지식'; return 'tag-default'; }}
-function render() {{
+var quizzes={{quizzes_json}};
+var current=0;var score=0;var answered=false;var audioCtx=null;
+function getTagClass(cat){{if(cat==='금융용어')return 'tag-금융용어';if(cat==='시사')return 'tag-시사';if(cat==='세부지식')return 'tag-세부지식';return 'tag-default';}}
+function render(){{
   if(current>=quizzes.length){{showResult();return;}}
   var q=quizzes[current];
   document.getElementById('progressBar').style.width=(current/quizzes.length*100)+'%';
   document.getElementById('progressLabel').textContent=current+'/'+quizzes.length;
-  var optHtml='';
-  for(var i=0;i<q.options.length;i++) optHtml+='<button class="option" onclick="selectOpt(this,'+i+')">'+q.options[i]+'</button>';
+  var optHtml='';for(var i=0;i<q.options.length;i++)optHtml+='<button class="option" onclick="selectOpt(this,'+i+')">'+q.options[i]+'</button>';
   var expParts=(q.explanation||'').split('[오답해설]');
   var expHtml=expParts.length>1?expParts[0].trim()+'<br><br><strong>[오답해설]</strong><br>'+expParts.slice(1).map(function(p){{return p.trim();}}).join('<br>'):q.explanation||'';
-  var newsHtml='';
-  if(q.news_context) {{ newsHtml='<div class="news-ctx">📰 '+q.news_context; if(q.news_url) newsHtml+=' <a href="'+q.news_url+'" target="_blank" class="news-link">[원문]</a>'; newsHtml+='</div>'; }}
+  var newsHtml='';if(q.news_context){{newsHtml='<div class="news-ctx">📰 '+q.news_context;if(q.news_url)newsHtml+=' <a href="'+q.news_url+'" target="_blank" class="news-link">[원문]</a>';newsHtml+='</div>';}}
   document.getElementById('quizArea').innerHTML='<div class="quiz-card"><span class="category-tag '+getTagClass(q.category)+'">'+q.category+'</span><div class="question-text">'+q.question+'</div><div class="options">'+optHtml+'</div><div class="explanation" id="exp"><div class="exp-label">📖 EXPLANATION</div>'+expHtml+newsHtml+'</div></div><div class="nav-buttons"><button class="btn" id="nextBtn" onclick="nextQ()">'+(current===quizzes.length-1?'RESULT ▶':'NEXT ▶')+'</button></div>';
   answered=false;
 }}
-function selectOpt(el,idx) {{
-  if(answered) return; answered=true;
-  var q=quizzes[current];
-  var opts=document.querySelectorAll('.option');
-  var getNum=function(s){{var m=s.match(/[①②③④]/);return m?m[0]:''; }};
+function selectOpt(el,idx){{
+  if(answered)return;answered=true;
+  var q=quizzes[current];var opts=document.querySelectorAll('.option');
+  var getNum=function(s){{var m=s.match(/[①②③④]/);return m?m[0]:''}};
   var isCorrect=getNum(el.textContent)&&getNum(q.answer)&&getNum(el.textContent)===getNum(q.answer);
   for(var i=0;i<opts.length;i++){{opts[i].disabled=true;if(getNum(opts[i].textContent)===getNum(q.answer))opts[i].classList.add('correct');else if(opts[i]===el&&!isCorrect)opts[i].classList.add('wrong');}}
-  if(isCorrect) score++;
-  var rect=el.getBoundingClientRect(); spawnCoins(rect.left+rect.width/2,rect.top+rect.height/2,isCorrect); showScorePopup(isCorrect); playBeep(isCorrect);
-  document.getElementById('exp').classList.add('show'); document.getElementById('nextBtn').style.display='block';
+  if(isCorrect)score++;
+  var rect=el.getBoundingClientRect();spawnCoins(rect.left+rect.width/2,rect.top+rect.height/2,isCorrect);showScorePopup(isCorrect);playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');document.getElementById('nextBtn').style.display='block';
 }}
 function nextQ(){{current++;render();}}
 function showResult(){{document.getElementById('quizArea').style.display='none';document.getElementById('progressBar').style.width='100%';document.getElementById('progressLabel').textContent=quizzes.length+'/'+quizzes.length;document.getElementById('resultCard').classList.add('show');document.getElementById('resultScore').textContent=score;}}
@@ -281,78 +297,46 @@ render();
 </body>
 </html>"""
 
-# === 5. GitHub에 quiz HTML 푸시 ===
+# === 5. GitHub 파일 푸시 ===
 def github_push(path, content, message):
-    url = f'https://api.github.com/repos/{GITHUB_OWNER}/{GITHUB_REPO}/contents/{path}'
-    headers = {
-        'Authorization': f'token {GITHUB_TOKEN}',
-        'Accept': 'application/vnd.github.v3+json'
-    }
-    # 기존 파일 SHA 확인
+    url = f'https://api.github.com/repos/{{GITHUB_OWNER}}/{{GITHUB_REPO}}/contents/{{path}}'
+    headers = {{'Authorization': f'token {{GITHUB_TOKEN}}', 'Accept': 'application/vnd.github.v3+json'}}
     res = requests.get(url, headers=headers)
     sha = res.json().get('sha') if res.status_code == 200 else None
-    
-    data = {
-        'message': message,
-        'content': base64.b64encode(content.encode('utf-8')).decode('utf-8')
-    }
+    data = {{'message': message, 'content': base64.b64encode(content.encode('utf-8')).decode('utf-8')}}
     if sha:
         data['sha'] = sha
-    
     res = requests.put(url, headers=headers, json=data)
     return res.status_code in [200, 201]
 
-# quiz HTML 푸시
-result = github_push(f'quiz/{today}.html', html, f'Add quiz {today}')
-print(f"quiz HTML 푸시: {'성공' if result else '실패'}")
+result = github_push(f'quiz/{{today}}.html', html, f'Add quiz {{today}}')
+print(f"quiz HTML 푸시: {{'성공' if result else '실패'}}")
 
 # === 6. sitemap 업데이트 ===
-# Supabase에서 전체 날짜 가져오기
 res = requests.get(
-    f'{SUPABASE_URL}/rest/v1/Quiz?select=date&order=date.desc',
-    headers={**headers, 'Prefer': 'return=representation'},
-    params={'limit': 1000}
+    f'{{SUPABASE_URL}}/rest/v1/Quiz?select=date&order=date.desc',
+    headers={{**headers, 'Prefer': 'return=representation'}},
+    params={{'limit': 1000}}
 )
 all_dates = list(set([r['date'] for r in res.json()])) if res.status_code == 200 else [today]
 all_dates.sort(reverse=True)
 
 urls_xml = '\n'.join([f"""  <url>
-    <loc>https://mae10moon.com/quiz/{d}.html</loc>
+    <loc>https://mae10moon.com/quiz/{{d}}.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>""" for d in all_dates])
 
 sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mae10moon.com/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://mae10moon.com/news.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://mae10moon.com/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mae10moon.com/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mae10moon.com/privacy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-{urls_xml}
+  <url><loc>https://mae10moon.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mae10moon.com/news.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mae10moon.com/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mae10moon.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://mae10moon.com/privacy.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+{{urls_xml}}
 </urlset>"""
 
-result = github_push('sitemap.xml', sitemap, f'Update sitemap {today}')
-print(f"sitemap 푸시: {'성공' if result else '실패'}")
-
+result = github_push('sitemap.xml', sitemap, f'Update sitemap {{today}}')
+print(f"sitemap 푸시: {{'성공' if result else '실패'}}")
 print("완료!")
