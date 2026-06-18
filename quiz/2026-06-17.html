@@ -7,26 +7,15 @@
 <meta name="description" content="2026-06-17 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
 <style>
-:root{
-  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
-  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
-  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
-}
+:root{--sky:#5bc8f5;--pink:#ff6eb4;--pink-dark:#d94f96;--yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;--purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
 .wrap{max-width:640px;margin:0 auto;padding:1rem;}
 .bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
-.cloud{position:absolute;background:white;}
-.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
-.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
-.c1::before{width:24px;height:16px;top:-12px;left:8px;}
-.c1::after{width:16px;height:12px;top:-8px;left:24px;}
-.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
-.c2::before{width:48px;height:24px;top:-18px;left:16px;}
-.c2::after{width:32px;height:16px;top:-10px;left:52px;}
-.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
-.c3::before{width:72px;height:32px;top:-24px;left:24px;}
-.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+.cloud{position:absolute;background:white;}.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}.c1::before{width:24px;height:16px;top:-12px;left:8px;}.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}.c2::before{width:48px;height:24px;top:-18px;left:16px;}.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}.c3::before{width:72px;height:32px;top:-24px;left:24px;}.c3::after{width:48px;height:20px;top:-14px;left:72px;}
 @keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
 .content{position:relative;z-index:1;}
 .title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
@@ -40,17 +29,13 @@ body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100
 .quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
 @keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
 .category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
-.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
-.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
-.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
-.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
 .question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
 .options{display:flex;flex-direction:column;gap:0.8rem;}
-.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);line-height:1.5;}
 .option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
-.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
-.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
-.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;animation:wrongShake 0.3s steps(3);}
 .option:disabled{cursor:default;}
 @keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
 @keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
@@ -62,27 +47,23 @@ body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100
 .nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
 .btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
-.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;}
 .result-card.show{display:block;}
-.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);margin-bottom:1rem;}
 .result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
 .result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
 .btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
 .btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
 .stars{position:fixed;pointer-events:none;z-index:999;}
-.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
-.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
-@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;display:flex;align-items:center;justify-content:center;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;color:var(--navy);}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-100px)}}
 .score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
 @keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
 </style>
 </head>
 <body>
-<div class="bg">
-  <div class="cloud c1"></div>
-  <div class="cloud c2"></div>
-  <div class="cloud c3"></div>
-</div>
+<div class="bg"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
 <div class="wrap content">
   <div class="title-card">
     <div class="title-main">매십문</div>
@@ -103,144 +84,37 @@ body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100
 </div>
 <div class="stars" id="stars"></div>
 <script>
-var quizzes = [{"id":1252,"category":"금융용어","question":"기업의 활발한 경제 활동을 나타내는 지표 중 하나로, 일정 기간 동안 당좌예금 잔액 대비 당좌수표 및 어음의 결제 금액 비중을 나타내는 용어는 무엇인가?","answer":"① 당좌예금 회전율","explanation":"당좌예금 회전율은 기업의 자금 유통 속도와 활발한 영업 활동을 나타내는 지표입니다. [오답해설] ② 총통화 회전율은 경제 전체의 통화 유통 속도를 나타냅니다. [오답해설] ③ 예대율은 은행의 예금 대비 대출 비율을 의미합니다. [오답해설] ④ 지급준비율은 은행이 고객 예금 중 중앙은행에 의무적으로 예치해야 하는 비율입니다.","news_context":"기업 투자·소비 살아나나…당좌예금 회전율 9년 만에 최고","news_url":"https://www.yna.co.kr/view/AKR20260616142300002","options":["① 당좌예금 회전율","② 총통화 회전율","③ 예대율","④ 지급준비율"]},{"id":1253,"category":"금융용어","question":"저금리 통화로 자금을 빌려 고금리 통화 자산에 투자하는 '캐리 트레이드' 중, 특히 일본 엔화를 빌려 투자했던 포지션을 종료하고 엔화를 되갚는 현상을 지칭하는 용어는 무엇인가?","answer":"① 엔 캐리 청산","explanation":"엔 캐리 청산은 일본의 금리 인상 등으로 인해 엔화를 빌려 고금리 자산에 투자했던 포지션을 정리하고 엔화를 상환하는 현상을 의미합니다. [오답해설] ② 엔화 약세 유도는 일본 중앙은행의 정책이나 시장 상황에 따라 엔화 가치가 하락하는 현상을 의미합니다. [오답해설] ③ 자금 유출 가속화는 특정 국가에서 자본이 빠르게 빠져나가는 현상을 통칭하는 것으로, 엔 캐리 청산은 그 원인 중 하나일 수 있습니다. [오답해설] ④ 환차익 실현은 환율 변동으로 인한 이익을 확정하는 것으로, 엔 캐리 청산 과정에서 나타날 수 있는 결과 중 하나입니다.","news_context":"日 31년 만에 기준금리 1%대…\"엔 캐리 청산 가능성은 제한적\"","news_url":"https://www.tfmedia.co.kr/news/article.html?no=205170","options":["① 엔 캐리 청산","② 엔화 약세 유도","③ 자금 유출 가속화","④ 환차익 실현"]},{"id":1254,"category":"금융용어","question":"국가 간의 통화 교환을 수반하며, 둘 이상의 서로 다른 통화로 이루어지는 결제를 의미하는 용어는 무엇인가?","answer":"① 크로스보더 결제","explanation":"크로스보더 결제는 국경을 넘어 다른 국가의 통화로 이루어지는 결제를 포괄적으로 지칭합니다. [오답해설] ② 역외 결제는 특정 통화가 해당 통화 발행국이 아닌 다른 국가에서 이루어지는 결제를 의미할 수 있으나, 크로스보더 결제가 더 광범위한 개념입니다. [오답해설] ③ 스위프트(SWIFT)는 국제 금융 통신망으로, 크로스보더 결제를 위한 인프라 중 하나이지 결제 자체를 의미하지 않습니다. [오답해설] ④ 다자간 결제는 여러 당사자 간에 이루어지는 결제를 의미하며, 반드시 국경을 넘는 것을 전제하지 않습니다.","news_context":"이선재 KG이니시스 대표, 크로스보더 결제·디지털자산으로 성장 축 확...","news_url":"http://www.fntimes.com/html/view.php?ud=2026061215454497489efc5ce4ae_18","options":["① 크로스보더 결제","② 역외 결제","③ 스위프트 결제","④ 다자간 결제"]},{"id":1255,"category":"금융용어","question":"투자자들이 높은 수익을 기대하며 상대적으로 위험도가 높은 자산에 투자하려는 경향을 나타내는 금융 용어는 무엇인가?","answer":"① 위험 선호","explanation":"위험 선호는 투자자가 기대수익률이 높다면 위험을 감수하고 더 모험적인 투자를 하려는 경향을 말합니다. [오답해설] ② 위험 회피는 위험을 최소화하고 안정적인 수익을 추구하는 투자 경향입니다. [오답해설] ③ 위험 중립은 위험 수준과 상관없이 기대수익률이 동일하면 두 대안을 동일하게 여기는 투자 경향입니다. [오답해설] ④ 폰지 사기는 투자자들에게 고수익을 약속하고, 나중에 들어온 투자자의 돈으로 먼저 들어온 투자자에게 수익을 지급하는 방식의 투자 사기입니다.","news_context":"달러-원, 이란 종전 합의에 위험 선호 유지…1,508.30원 마감","news_url":"https://www.yna.co.kr/view/AKR20260617003900002","options":["① 위험 선호","② 위험 회피","③ 위험 중립","④ 폰지 사기"]},{"id":1256,"category":"세부지식","question":"마이너스 통장(한도대출)에 대한 설명 중, 금융당국의 가계부채 규제 강화와 관련하여 특히 주목받는 특징은?","answer":"③ 미사용 한도도 DSR 산정 시 부채로 간주","explanation":"금융당국의 가계대출 규제 강화에 따라 사용하지 않은 마이너스 통장 한도 역시 총부채원리금상환비율(DSR) 산정 시 부채로 간주되어 대출 가능 금액에 영향을 미칩니다. [오답해설] ① 약정한 한도 내 자유로운 입출금은 마이너스 통장의 편리성이지만, 규제 강화의 직접적인 초점은 아닙니다. [오답해설] ② 금리 변동 시 대출 금리가 변동하는 것은 일반적인 변동금리 상품의 특징입니다. [오답해설] ④ 낮은 담보 요구 조건은 신용대출의 특성이지만, 가계부채 규제와 직접적인 관련성은 약합니다.","news_context":"안쓴 마통한도만 53조…빚투 사각지대 되나","news_url":"https://www.mk.co.kr/news/economy/12075654","options":["① 약정한 한도 내 자유로운 입출금","② 금리 변동 시 대출 금리 변동","③ 미사용 한도도 DSR 산정 시 부채로 간주","④ 낮은 담보 요구 조건"]},{"id":1257,"category":"세부지식","question":"다음 중 근로자가 적립금 운용 책임을 지고, 운용 결과에 따라 퇴직급여가 달라지는 퇴직연금 제도는 무엇인가?","answer":"② 확정기여형(DC) 퇴직연금","explanation":"확정기여형(DC) 퇴직연금은 회사가 매년 일정 금액을 근로자 계좌에 적립하면 근로자가 직접 운용하여 퇴직급여가 운용 성과에 따라 달라지는 제도입니다. [오답해설] ① 확정급여형(DB) 퇴직연금은 회사가 운용 책임을 지고 퇴직 시 미리 정해진 급여를 지급하는 제도입니다. [오답해설] ③ 개인형 퇴직연금(IRP)은 퇴직연금 가입자뿐만 아니라 자영업자 등도 추가 납입을 통해 노후 자금을 마련할 수 있는 제도로, 운용 책임은 가입자에게 있으나 문제에서 묻는 제도와는 구분됩니다. [오답해설] ④ 퇴직보험은 퇴직연금 제도 도입 이전의 퇴직금 지급을 위한 보험 상품입니다.","news_context":"BNK 퇴직연금 투자 … AI가 자동으로 관리","news_url":"https://www.mk.co.kr/news/economy/12075656","options":["① 확정급여형(DB) 퇴직연금","② 확정기여형(DC) 퇴직연금","③ 개인형 퇴직연금(IRP)","④ 퇴직보험"]},{"id":1258,"category":"세부지식","question":"국민연금 노령연금 수급자가 연금 수급 개시 연령 이후에도 일정 수준 이상의 소득 활동을 할 경우, 연금액이 감액될 수 있는 제도적 근거는 무엇인가?","answer":"② 소득 활동에 따른 연금액 조정","explanation":"국민연금 노령연금은 소득 활동에 따라 연금액이 조정될 수 있으며, 일정 기준금액을 초과하는 소득이 발생하면 연금액이 감액됩니다. [오답해설] ① 건강보험료와의 연계는 국민연금액 감액의 직접적인 근거가 아닙니다. [오답해설] ③ 국세청의 과세 정책은 연금 소득에 대한 세금 부과와 관련이 있으나, 연금액 자체의 감액과는 다릅니다. [오답해설] ④ 물가 상승률 연동 규정은 연금액의 실질 가치를 보전하기 위한 것으로, 소득 활동에 따른 감액과는 관계가 없습니다.","news_context":"“아버님, 연금 걱정말고 일하세요”…월 519만원 벌어도 노령연금 안깎인다","news_url":"https://www.mk.co.kr/news/economy/12075400","options":["① 건강보험료와의 연계","② 소득 활동에 따른 연금액 조정","③ 국세청의 과세 정책","④ 물가 상승률 연동 규정"]},{"id":1259,"category":"시사","question":"미국 연방준비제도(Fed)의 연방공개시장위원회(FOMC)가 기준금리 결정 시 고려하는 요인에 대한 설명으로 옳지 않은 것은?","answer":"③ 주식 시장의 특정 종목(예: 기술주)의 등락 폭이 과도할 경우 즉각적인 금리 조정의 주된 이유","explanation":"FOMC는 거시경제 전반의 안정성(물가, 고용, 금융 시스템)을 목표로 하며, 특정 주식 종목의 등락은 직접적인 금리 조정의 주된 이유가 되지 않습니다. [오답해설] ① 물가 안정은 연준의 주요 책무 중 하나이며, 인플레이션 지표를 매우 중요하게 여깁니다. [오답해설] ② 완전 고용 또한 연준의 주요 책무 중 하나로, 고용 지표는 금리 결정의 핵심 요소입니다. [오답해설] ④ 글로벌 금융 허브로서 미국의 역할과 달러화의 위상을 고려하여 국제 금융 시장의 안정성도 중요하게 판단합니다.","news_context":"“이번 FOMC서 금리인하 언급 사라질 것 … 연내 인상 가능성 커져”","news_url":"https://www.mk.co.kr/news/economy/12075516","options":["① 물가 안정 목표 달성 여부, 특히 근원 인플레이션 추이","② 고용 상황, 실업률, 노동 시장 참여율 등 완전 고용 목표 달성 여부","③ 주식 시장의 특정 종목(예: 기술주)의 등락 폭이 과도할 경우 즉각적인 금리 조정의 주된 이유","④ 국제 금융 시장의 안정성, 달러화의 가치 변동 등 대외 경제 여건"]},{"id":1260,"category":"시사","question":"이란 종전 합의 등으로 국제유가가 급락했을 때, 가계 경제에 일반적으로 미치는 직접적인 긍정적 영향은?","answer":"③ 가계의 에너지 비용 부담 감소와 실질 구매력 증가","explanation":"국제유가가 하락하면 가계의 유류비 등 에너지 관련 지출이 감소하여 가처분소득이 증가하고, 이는 실질 구매력 증가 및 소비 진작으로 이어질 수 있습니다. [오답해설] ① 국제유가 하락은 생산 및 운송 비용을 낮춰 물가 하락(디플레이션 압력) 요인으로 작용합니다. [오답해설] ② 원자재 수입 의존도가 높은 국가에서는 수입 비용이 줄어들어 무역수지가 개선될 가능성이 있습니다. [오답해설] ④ 유가 하락으로 인한 물가 안정 또는 하락 압력은 중앙은행이 금리 인상 대신 완화적 통화 정책을 고려할 유인을 제공할 수 있습니다.","news_context":"국제유가, 종전합의에 5%대 급락…브렌트 3달만에 70달러대 진입","news_url":"https://www.yna.co.kr/view/AKR20260617004500072","options":["① 생산자물가 및 소비자물가 동시 상승","② 원자재 수입 의존도가 높은 국가의 무역수지 악화","③ 가계의 에너지 비용 부담 감소와 실질 구매력 증가","④ 중앙은행의 긴축적 통화 정책 강화 유인"]},{"id":1261,"category":"시사","question":"증권사의 신용공여 증가와 개인의 '빚투'(빚내서 투자) 확산이 금융 시스템에 미칠 수 있는 주요 부정적 영향은?","answer":"③ 주식 시장 침체 시 반대매매 급증으로 인한 주가 하락 가속화 및 금융 시스템 불안정성 증대","explanation":"빚투 확대는 시장 하락 시 신용융자 잔고 반대매매로 이어져 주가 추가 하락을 유발하고, 이는 금융 시스템 전반의 불안정성을 높일 수 있습니다. [오답해설] ① 레버리지 투자가 늘어나면 주식 시장의 변동성은 오히려 확대될 가능성이 큽니다. [오답해설] ② 증권사의 대출 급증은 리스크 자산 증가로 이어져 건전성을 악화시킬 수 있으며, 유동성 위험을 증가시킬 수 있습니다. [오답해설] ④ '빚투' 규모는 증권사의 건전성 및 금융 시스템 리스크와 밀접하게 관련되어 있으며, 금융당국의 주요 규제 및 관리 대상입니다.","news_context":"돈빌려 '빚투'에 내준 증권사들…1분기 금융보험업 대출 180조원","news_url":"https://www.yna.co.kr/view/AKR20260616152800002","options":["① 개인 투자자의 레버리지 투자가 늘어나면서 주식 시장의 변동성 완화","② 증권사의 유동성 개선을 통한 신용 경색 위험 감소","③ 주식 시장 침체 시 반대매매 급증으로 인한 주가 하락 가속화 및 금융 시스템 불안정성 증대","④ 증권사의 건전성 지표 유지 및 금융당국 규제 대상에서 제외"]}];
-var current = 0;
-var score = 0;
-var answered = false;
-var audioCtx = null;
-
-function getTagClass(cat) {
-  if (cat === '금융용어') return 'tag-금융용어';
-  if (cat === '시사') return 'tag-시사';
-  if (cat === '세부지식') return 'tag-세부지식';
-  return 'tag-default';
+var quizzes=[{"id": 1269, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "시사", "question": "공정거래위원회가 담합 신고 포상금 상한을 없애겠다고 발표했다. 이러한 조치가 금융시장에 미칠 수 있는 긍정적인 영향은 무엇인가?", "options": ["① 금융 상품 금리 담합이 적발될 경우, 금융 시장의 공정한 경쟁 환경이 조성되어 소비자의 이익이 증대될 수 있다.", "② 공정거래위원회의 직접적인 금융사 건전성 감독이 강화된다.", "③ 담합을 통해 기업들의 시장 점유율이 안정적으로 유지된다.", "④ 금융 상품 출시가 더욱 다양해지고 혁신적인 상품 개발이 가속화된다."], "answer": "①", "explanation": "담합 신고 포상금 상한 폐지는 담합 행위 적발을 용이하게 하여 금융 시장 내 가격 경쟁을 촉진하고, 궁극적으로 소비자에게 더 유리한 금융 상품 및 서비스를 제공하게 됩니다. [오답해설] ② 공정거래위원회는 시장의 공정 경쟁 질서 확립을 주된 역할로 하며, 금융사 건전성 감독은 금융위원회의 주요 역할입니다. ③ 담합은 시장 경쟁을 저해하여 기업 간의 시장 점유율을 안정적으로 유지할 수 있지만, 이는 소비자에게 불리하며 긍정적인 영향이 아닙니다. ④ 담합 규제는 경쟁을 통한 가격 효율성을 높이는 데 기여할 수 있으나, 직접적으로 금융 상품 출시 다양성이나 혁신 속도에 미치는 영향은 제한적입니다.", "news_context": "신고하면 팔자 고친다 공정위, 담합 신고 포상금 상한 없애", "news_url": null}, {"id": 1270, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "시사", "question": "최근 금융당국이 가계부채 증가세에 대응하여 인터넷 은행의 신용대출 한도를 줄이고 금리도 올리는 등 규제를 강화하고 있다. 이러한 조치의 배경으로 가장 적절한 것은?", "options": ["① 경기 부양을 위해 소비를 촉진하고 가계의 구매력을 높이려는 목적이다.", "② 고금리 환경에서 취약 차주의 채무 상환 능력이 악화되어 금융 시스템 리스크가 커질 우려 때문이다.", "③ 은행의 대출 자산 규모를 확대하여 수익성을 높이려는 금융당국의 정책 방향이다.", "④ 기업 대출을 장려하여 생산성 향상과 고용 창출을 유도하기 위함이다."], "answer": "②", "explanation": "고금리 환경과 가계부채 증가는 취약 차주의 채무 상환 능력을 악화시키고, 이는 금융 시스템 전체의 리스크로 전이될 수 있어 금융당국이 선제적으로 신용대출 규제를 강화하는 것입니다. [오답해설] ① 가계부채 규제는 소비 억제를 통한 인플레이션 완화 및 금융 시스템 안정화가 주된 목적이므로 경기 부양과는 상반됩니다. ③ 대출 규제 강화는 은행의 대출 자산 성장 속도를 늦춰 수익성 확대보다는 리스크 관리에 중점을 두는 조치입니다. ④ 가계대출 규제와 기업 대출 장려는 별개의 정책 목표로, 가계대출 규제는 직접적으로 기업 대출 장려를 위한 것이 아닙니다.", "news_context": "마통 뚫으러 새벽부터 오픈런했는데 신용대출, 인뱅도 신용대출 확 조인다 한도 줄이고 금리도 올려, 안쓴 마통한도만 53조 빚투 사각지대 되나", "news_url": "https://www.mk.co.kr/news/economy/12076347"}, {"id": 1271, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "시사", "question": "금융당국이 채무자 부담을 가중하는 금융사의 '연체채권 장기 추심' 관행을 바로잡겠다고 밝혔다. 이러한 금융당국의 지시가 가져올 수 있는 긍정적인 효과로 보기 어려운 것은?", "options": ["① 채무자의 심리적 압박 완화 및 재기 지원 기회 확대", "② 금융사의 효율적인 채권 관리 시스템 구축 촉진", "③ 연체채권 매각 시장의 활성화 및 부실 채권 처리 신속화", "④ 금융사의 채권 회수율 감소로 인한 건전성 악화"], "answer": "④", "explanation": "금융당국의 연체채권 장기 추심 관행 개선은 채무자 보호와 금융사의 책임 있는 채권 관리를 유도하는 것이 주된 목적이며, 이는 채권 회수율을 일방적으로 감소시켜 금융사의 건전성을 직접적으로 악화시키려는 목적은 아닙니다. [오답해설] ① 과도한 장기 추심 관행 개선은 채무자의 심리적 압박을 줄이고 합리적인 채무 조정을 통해 재기할 수 있는 기회를 제공할 수 있습니다. ② 금융사는 장기 추심 대신 채무조정이나 채권 매각 등 효율적인 채권 관리 방안을 모색하게 되어 시스템 개선을 유도할 수 있습니다. ③ 불합리한 장기 추심 대신 채권 매각을 통한 처리가 활성화될 수 있어 연체채권 시장의 효율성을 높일 수 있습니다.", "news_context": "금융당국, 채무자 부담 가중 금융사 '연체채권 장기 추심' 관행 바로 잡...", "news_url": "https://www.autodaily.co.kr/news/articleView.html?idxno=544972"}, {"id": 1257, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "세부지식", "question": "다음 중 근로자가 적립금 운용 책임을 지고, 운용 결과에 따라 퇴직급여가 달라지는 퇴직연금 제도는 무엇인가?", "options": ["① 확정급여형(DB) 퇴직연금", "② 확정기여형(DC) 퇴직연금", "③ 개인형 퇴직연금(IRP)", "④ 퇴직보험"], "answer": "② 확정기여형(DC) 퇴직연금", "explanation": "확정기여형(DC) 퇴직연금은 회사가 매년 일정 금액을 근로자 계좌에 적립하면 근로자가 직접 운용하여 퇴직급여가 운용 성과에 따라 달라지는 제도입니다. [오답해설] ① 확정급여형(DB) 퇴직연금은 회사가 운용 책임을 지고 퇴직 시 미리 정해진 급여를 지급하는 제도입니다. [오답해설] ③ 개인형 퇴직연금(IRP)은 퇴직연금 가입자뿐만 아니라 자영업자 등도 추가 납입을 통해 노후 자금을 마련할 수 있는 제도로, 운용 책임은 가입자에게 있으나 문제에서 묻는 제도와는 구분됩니다. [오답해설] ④ 퇴직보험은 퇴직연금 제도 도입 이전의 퇴직금 지급을 위한 보험 상품입니다.", "news_context": "BNK 퇴직연금 투자 … AI가 자동으로 관리", "news_url": "https://www.mk.co.kr/news/economy/12075656"}, {"id": 1256, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "세부지식", "question": "마이너스 통장(한도대출)에 대한 설명 중, 금융당국의 가계부채 규제 강화와 관련하여 특히 주목받는 특징은?", "options": ["① 약정한 한도 내 자유로운 입출금", "② 금리 변동 시 대출 금리 변동", "③ 미사용 한도도 DSR 산정 시 부채로 간주", "④ 낮은 담보 요구 조건"], "answer": "③ 미사용 한도도 DSR 산정 시 부채로 간주", "explanation": "금융당국의 가계대출 규제 강화에 따라 사용하지 않은 마이너스 통장 한도 역시 총부채원리금상환비율(DSR) 산정 시 부채로 간주되어 대출 가능 금액에 영향을 미칩니다. [오답해설] ① 약정한 한도 내 자유로운 입출금은 마이너스 통장의 편리성이지만, 규제 강화의 직접적인 초점은 아닙니다. [오답해설] ② 금리 변동 시 대출 금리가 변동하는 것은 일반적인 변동금리 상품의 특징입니다. [오답해설] ④ 낮은 담보 요구 조건은 신용대출의 특성이지만, 가계부채 규제와 직접적인 관련성은 약합니다.", "news_context": "안쓴 마통한도만 53조…빚투 사각지대 되나", "news_url": "https://www.mk.co.kr/news/economy/12075654"}, {"id": 1255, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "금융용어", "question": "투자자들이 높은 수익을 기대하며 상대적으로 위험도가 높은 자산에 투자하려는 경향을 나타내는 금융 용어는 무엇인가?", "options": ["① 위험 선호", "② 위험 회피", "③ 위험 중립", "④ 폰지 사기"], "answer": "① 위험 선호", "explanation": "위험 선호는 투자자가 기대수익률이 높다면 위험을 감수하고 더 모험적인 투자를 하려는 경향을 말합니다. [오답해설] ② 위험 회피는 위험을 최소화하고 안정적인 수익을 추구하는 투자 경향입니다. [오답해설] ③ 위험 중립은 위험 수준과 상관없이 기대수익률이 동일하면 두 대안을 동일하게 여기는 투자 경향입니다. [오답해설] ④ 폰지 사기는 투자자들에게 고수익을 약속하고, 나중에 들어온 투자자의 돈으로 먼저 들어온 투자자에게 수익을 지급하는 방식의 투자 사기입니다.", "news_context": "달러-원, 이란 종전 합의에 위험 선호 유지…1,508.30원 마감", "news_url": "https://www.yna.co.kr/view/AKR20260617003900002"}, {"id": 1254, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "금융용어", "question": "국가 간의 통화 교환을 수반하며, 둘 이상의 서로 다른 통화로 이루어지는 결제를 의미하는 용어는 무엇인가?", "options": ["① 크로스보더 결제", "② 역외 결제", "③ 스위프트 결제", "④ 다자간 결제"], "answer": "① 크로스보더 결제", "explanation": "크로스보더 결제는 국경을 넘어 다른 국가의 통화로 이루어지는 결제를 포괄적으로 지칭합니다. [오답해설] ② 역외 결제는 특정 통화가 해당 통화 발행국이 아닌 다른 국가에서 이루어지는 결제를 의미할 수 있으나, 크로스보더 결제가 더 광범위한 개념입니다. [오답해설] ③ 스위프트(SWIFT)는 국제 금융 통신망으로, 크로스보더 결제를 위한 인프라 중 하나이지 결제 자체를 의미하지 않습니다. [오답해설] ④ 다자간 결제는 여러 당사자 간에 이루어지는 결제를 의미하며, 반드시 국경을 넘는 것을 전제하지 않습니다.", "news_context": "이선재 KG이니시스 대표, 크로스보더 결제·디지털자산으로 성장 축 확...", "news_url": "http://www.fntimes.com/html/view.php?ud=2026061215454497489efc5ce4ae_18"}, {"id": 1253, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "금융용어", "question": "저금리 통화로 자금을 빌려 고금리 통화 자산에 투자하는 '캐리 트레이드' 중, 특히 일본 엔화를 빌려 투자했던 포지션을 종료하고 엔화를 되갚는 현상을 지칭하는 용어는 무엇인가?", "options": ["① 엔 캐리 청산", "② 엔화 약세 유도", "③ 자금 유출 가속화", "④ 환차익 실현"], "answer": "① 엔 캐리 청산", "explanation": "엔 캐리 청산은 일본의 금리 인상 등으로 인해 엔화를 빌려 고금리 자산에 투자했던 포지션을 정리하고 엔화를 상환하는 현상을 의미합니다. [오답해설] ② 엔화 약세 유도는 일본 중앙은행의 정책이나 시장 상황에 따라 엔화 가치가 하락하는 현상을 의미합니다. [오답해설] ③ 자금 유출 가속화는 특정 국가에서 자본이 빠르게 빠져나가는 현상을 통칭하는 것으로, 엔 캐리 청산은 그 원인 중 하나일 수 있습니다. [오답해설] ④ 환차익 실현은 환율 변동으로 인한 이익을 확정하는 것으로, 엔 캐리 청산 과정에서 나타날 수 있는 결과 중 하나입니다.", "news_context": "日 31년 만에 기준금리 1%대…\"엔 캐리 청산 가능성은 제한적\"", "news_url": "https://www.tfmedia.co.kr/news/article.html?no=205170"}, {"id": 1252, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "금융용어", "question": "기업의 활발한 경제 활동을 나타내는 지표 중 하나로, 일정 기간 동안 당좌예금 잔액 대비 당좌수표 및 어음의 결제 금액 비중을 나타내는 용어는 무엇인가?", "options": ["① 당좌예금 회전율", "② 총통화 회전율", "③ 예대율", "④ 지급준비율"], "answer": "① 당좌예금 회전율", "explanation": "당좌예금 회전율은 기업의 자금 유통 속도와 활발한 영업 활동을 나타내는 지표입니다. [오답해설] ② 총통화 회전율은 경제 전체의 통화 유통 속도를 나타냅니다. [오답해설] ③ 예대율은 은행의 예금 대비 대출 비율을 의미합니다. [오답해설] ④ 지급준비율은 은행이 고객 예금 중 중앙은행에 의무적으로 예치해야 하는 비율입니다.", "news_context": "기업 투자·소비 살아나나…당좌예금 회전율 9년 만에 최고", "news_url": "https://www.yna.co.kr/view/AKR20260616142300002"}, {"id": 1259, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "시사", "question": "미국 연방준비제도(Fed)의 연방공개시장위원회(FOMC)가 기준금리 결정 시 고려하는 요인에 대한 설명으로 옳지 않은 것은?", "options": ["① 물가 안정 목표 달성 여부, 특히 근원 인플레이션 추이", "② 고용 상황, 실업률, 노동 시장 참여율 등 완전 고용 목표 달성 여부", "③ 주식 시장의 특정 종목(예: 기술주)의 등락 폭이 과도할 경우 즉각적인 금리 조정의 주된 이유", "④ 국제 금융 시장의 안정성, 달러화의 가치 변동 등 대외 경제 여건"], "answer": "③ 주식 시장의 특정 종목(예: 기술주)의 등락 폭이 과도할 경우 즉각적인 금리 조정의 주된 이유", "explanation": "FOMC는 거시경제 전반의 안정성(물가, 고용, 금융 시스템)을 목표로 하며, 특정 주식 종목의 등락은 직접적인 금리 조정의 주된 이유가 되지 않습니다. [오답해설] ① 물가 안정은 연준의 주요 책무 중 하나이며, 인플레이션 지표를 매우 중요하게 여깁니다. [오답해설] ② 완전 고용 또한 연준의 주요 책무 중 하나로, 고용 지표는 금리 결정의 핵심 요소입니다. [오답해설] ④ 글로벌 금융 허브로서 미국의 역할과 달러화의 위상을 고려하여 국제 금융 시장의 안정성도 중요하게 판단합니다.", "news_context": "“이번 FOMC서 금리인하 언급 사라질 것 … 연내 인상 가능성 커져”", "news_url": "https://www.mk.co.kr/news/economy/12075516"}, {"id": 1260, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "시사", "question": "이란 종전 합의 등으로 국제유가가 급락했을 때, 가계 경제에 일반적으로 미치는 직접적인 긍정적 영향은?", "options": ["① 생산자물가 및 소비자물가 동시 상승", "② 원자재 수입 의존도가 높은 국가의 무역수지 악화", "③ 가계의 에너지 비용 부담 감소와 실질 구매력 증가", "④ 중앙은행의 긴축적 통화 정책 강화 유인"], "answer": "③ 가계의 에너지 비용 부담 감소와 실질 구매력 증가", "explanation": "국제유가가 하락하면 가계의 유류비 등 에너지 관련 지출이 감소하여 가처분소득이 증가하고, 이는 실질 구매력 증가 및 소비 진작으로 이어질 수 있습니다. [오답해설] ① 국제유가 하락은 생산 및 운송 비용을 낮춰 물가 하락(디플레이션 압력) 요인으로 작용합니다. [오답해설] ② 원자재 수입 의존도가 높은 국가에서는 수입 비용이 줄어들어 무역수지가 개선될 가능성이 있습니다. [오답해설] ④ 유가 하락으로 인한 물가 안정 또는 하락 압력은 중앙은행이 금리 인상 대신 완화적 통화 정책을 고려할 유인을 제공할 수 있습니다.", "news_context": "국제유가, 종전합의에 5%대 급락…브렌트 3달만에 70달러대 진입", "news_url": "https://www.yna.co.kr/view/AKR20260617004500072"}, {"id": 1261, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "시사", "question": "증권사의 신용공여 증가와 개인의 '빚투'(빚내서 투자) 확산이 금융 시스템에 미칠 수 있는 주요 부정적 영향은?", "options": ["① 개인 투자자의 레버리지 투자가 늘어나면서 주식 시장의 변동성 완화", "② 증권사의 유동성 개선을 통한 신용 경색 위험 감소", "③ 주식 시장 침체 시 반대매매 급증으로 인한 주가 하락 가속화 및 금융 시스템 불안정성 증대", "④ 증권사의 건전성 지표 유지 및 금융당국 규제 대상에서 제외"], "answer": "③ 주식 시장 침체 시 반대매매 급증으로 인한 주가 하락 가속화 및 금융 시스템 불안정성 증대", "explanation": "빚투 확대는 시장 하락 시 신용융자 잔고 반대매매로 이어져 주가 추가 하락을 유발하고, 이는 금융 시스템 전반의 불안정성을 높일 수 있습니다. [오답해설] ① 레버리지 투자가 늘어나면 주식 시장의 변동성은 오히려 확대될 가능성이 큽니다. [오답해설] ② 증권사의 대출 급증은 리스크 자산 증가로 이어져 건전성을 악화시킬 수 있으며, 유동성 위험을 증가시킬 수 있습니다. [오답해설] ④ '빚투' 규모는 증권사의 건전성 및 금융 시스템 리스크와 밀접하게 관련되어 있으며, 금융당국의 주요 규제 및 관리 대상입니다.", "news_context": "돈빌려 '빚투'에 내준 증권사들…1분기 금융보험업 대출 180조원", "news_url": "https://www.yna.co.kr/view/AKR20260616152800002"}, {"id": 1258, "created_at": "2026-06-16T22:03:50.667383+00:00", "date": "2026-06-17", "category": "세부지식", "question": "국민연금 노령연금 수급자가 연금 수급 개시 연령 이후에도 일정 수준 이상의 소득 활동을 할 경우, 연금액이 감액될 수 있는 제도적 근거는 무엇인가?", "options": ["① 건강보험료와의 연계", "② 소득 활동에 따른 연금액 조정", "③ 국세청의 과세 정책", "④ 물가 상승률 연동 규정"], "answer": "② 소득 활동에 따른 연금액 조정", "explanation": "국민연금 노령연금은 소득 활동에 따라 연금액이 조정될 수 있으며, 일정 기준금액을 초과하는 소득이 발생하면 연금액이 감액됩니다. [오답해설] ① 건강보험료와의 연계는 국민연금액 감액의 직접적인 근거가 아닙니다. [오답해설] ③ 국세청의 과세 정책은 연금 소득에 대한 세금 부과와 관련이 있으나, 연금액 자체의 감액과는 다릅니다. [오답해설] ④ 물가 상승률 연동 규정은 연금액의 실질 가치를 보전하기 위한 것으로, 소득 활동에 따른 감액과는 관계가 없습니다.", "news_context": "“아버님, 연금 걱정말고 일하세요”…월 519만원 벌어도 노령연금 안깎인다", "news_url": "https://www.mk.co.kr/news/economy/12075400"}, {"id": 1262, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "금융용어", "question": "다음 중 블록체인 상에서 부동산, 귀금속, 원자재 등 실물 자산을 토큰화하여 거래하는 것을 의미하는 용어는?", "options": ["① RWA (Real World Assets)", "② NFT (Non-Fungible Token)", "③ CBDC (Central Bank Digital Currency)", "④ DeFi (Decentralized Finance)"], "answer": "①", "explanation": "RWA(Real World Assets)는 부동산, 예술품, 원자재 등 실물 자산을 블록체인 상에서 토큰화하여 거래하는 것을 의미합니다. [오답해설] ② NFT는 대체 불가능한 토큰으로, 주로 디지털 예술품, 수집품 등 고유성을 지닌 디지털 자산의 소유권을 증명하는 데 사용됩니다. ③ CBDC는 중앙은행이 발행하는 디지털 화폐로, 법정 통화의 디지털 형태를 의미합니다. ④ DeFi는 탈중앙화 금융으로, 블록체인 기술을 기반으로 은행과 같은 중앙화된 기관 없이 금융 서비스를 제공하는 시스템입니다.", "news_context": "RWA는 기술보다 신뢰할 유통 레일이 문제다.", "news_url": "https://www.tokenpost.kr/news/insights/370244"}, {"id": 1263, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "금융용어", "question": "다음 중 특정 주식의 지배권 변동 시 소액주주 보호를 위해 의무적으로 모든 주식을 공개 매수하도록 하는 제도를 지칭하는 용어는?", "options": ["① 의무공개매수제도 (Mandatory Tender Offer System)", "② 자사주 매입 (Share Buyback)", "③ 블록딜 (Block Deal)", "④ 초과청약금 반환 (Refund of Excess Subscription)"], "answer": "①", "explanation": "의무공개매수제도는 특정 주식의 지배권 변동 시 소액주주 보호를 위해 의무적으로 모든 주식을 공개 매수하도록 하는 제도입니다. [오답해설] ② 자사주 매입은 기업이 자신의 주식을 시장에서 매입하는 행위로, 주가 안정이나 주주 가치 제고를 목적으로 합니다. ③ 블록딜은 기관투자자 간의 대량 주식 매매로, 시장에 충격을 주지 않기 위해 장 개시 전이나 장 마감 후 시간 외 거래로 이루어집니다. ④ 초과청약금 반환은 공모주 청약 등에서 배정받지 못한 주식에 대한 청약 증거금을 돌려주는 것을 의미합니다.", "news_context": "M&A시 의무공개매수제도 '전량 공개매수' 바람직", "news_url": "https://www.yna.co.kr/view/AKR20260617094600008"}, {"id": 1264, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "금융용어", "question": "저금리 통화인 일본 엔화를 빌려 고금리 통화 자산에 투자하여 환차익과 이자 수익을 동시에 추구하는 투자 전략을 무엇이라고 하는가?", "options": ["① 엔 캐리 트레이드 (Yen Carry Trade)", "② 엔 롤오버 (Yen Rollover)", "③ 숏 포지션 (Short Position)", "④ 스왑 포인트 (Swap Point)"], "answer": "①", "explanation": "엔 캐리 트레이드는 저금리 통화인 일본 엔화를 빌려 고금리 통화 자산에 투자하여 환차익과 이자 수익을 동시에 추구하는 투자 전략입니다. [오답해설] ② 엔 롤오버는 외환 선물이나 옵션 계약의 만기가 도래했을 때, 포지션을 청산하지 않고 다음 만기일까지 연장하는 것을 의미하며, 엔화 특정 용어는 아닙니다. ③ 숏 포지션은 특정 자산의 가격 하락에 베팅하여 매도하는 전략을 의미합니다. ④ 스왑 포인트는 외환 선물환율과 현물환율의 차이를 나타내는 것으로, 통화 간의 금리 차이를 반영합니다.", "news_context": "日 금리 인상, '엔 캐리 청산' 우려 넘어설 韓 경제 기회는", "news_url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=140173"}, {"id": 1265, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "금융용어", "question": "다음 중 자산 가격의 상승 또는 하락 방향성에 관계없이 시장 위험을 헤지(Hedge)하여 안정적인 수익을 추구하는 투자 전략은?", "options": ["① 시장중립 전략 (Market Neutral Strategy)", "② 모멘텀 전략 (Momentum Strategy)", "③ 가치 투자 전략 (Value Investing Strategy)", "④ 성장 투자 전략 (Growth Investing Strategy)"], "answer": "①", "explanation": "시장중립 전략은 자산 가격의 상승 또는 하락 방향성에 관계없이 시장 위험을 헤지(Hedge)하여 안정적인 수익을 추구하는 투자 전략입니다. [오답해설] ② 모멘텀 전략은 최근 좋은 성과를 보인 자산이 앞으로도 좋은 성과를 낼 것이라는 기대에 기반하여 투자하는 전략입니다. ③ 가치 투자 전략은 기업의 내재 가치보다 저평가된 주식을 찾아 투자하는 전략입니다. ④ 성장 투자 전략은 높은 성장 잠재력을 가진 기업의 주식에 투자하여 미래 가치 상승을 기대하는 전략입니다.", "news_context": "뉴트럴, 시장중립 전략 활용 수익형 스테이블코인 모델", "news_url": null}, {"id": 1266, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "세부지식", "question": "금융권에서 AI를 활용한 퇴직연금 관리 서비스가 확대되고 있다. 다음 중 확정기여형(DC형) 퇴직연금의 주요 특징은 무엇인가?", "options": ["① 회사가 근로자의 퇴직 시 지급할 급여 수준을 미리 정해두는 방식이다.", "② 근로자가 스스로 적립금 운용 방법을 선택하며, 운용 성과에 따라 퇴직급여가 달라진다.", "③ 근로자 개인이 별도로 가입하여 운용하며, 이직 시 퇴직급여를 이전할 수 없다.", "④ 기업의 도산 위험으로부터 퇴직급여가 가장 안전하게 보호받는 형태이다."], "answer": "②", "explanation": "확정기여형(DC형) 퇴직연금은 근로자가 스스로 적립금 운용 방법을 선택하며, 운용 성과에 따라 퇴직급여가 달라지는 방식입니다. [오답해설] ① 회사가 근로자의 퇴직 시 지급할 급여 수준을 미리 정해두는 방식은 확정급여형(DB형) 퇴직연금에 대한 설명입니다. ③ 근로자 개인이 별도로 가입하여 운용하며, 이직 시 퇴직급여를 이전할 수 있는 것은 개인형퇴직연금(IRP)에 대한 설명입니다. ④ 모든 퇴직연금 제도는 원칙적으로 퇴직급여를 사외에 적립하여 보호하지만, 운용 주체에 따라 위험 노출도는 달라질 수 있습니다.", "news_context": "BNK 퇴직연금 투자 … AI가 자동으로 관리, AI가 퇴직연금 관리", "news_url": "https://www.mk.co.kr/news/economy/12075656"}, {"id": 1267, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "세부지식", "question": "신한금융이 은행·증권·카드 등 계열사 서비스를 통합한 '슈퍼SOL'을 출시하며 금융권의 슈퍼앱 경쟁이 심화되고 있다. 금융 슈퍼앱의 주요 특징으로 가장 적절하지 않은 것은?", "options": ["① 하나의 앱에서 다양한 금융 계열사의 서비스를 한 번에 이용할 수 있다.", "② 고객의 데이터를 통합 분석하여 맞춤형 금융 상품 및 서비스를 추천한다.", "③ 각 계열사별로 독립적인 인증 절차를 거쳐야만 서비스 이용이 가능하다.", "④ 금융 서비스 외에 생활 편의 서비스 등 비금융 서비스와의 연계를 강화한다."], "answer": "③", "explanation": "금융 슈퍼앱은 고객 편의를 위해 통합 인증 시스템을 제공하여 각 계열사별 독립적인 인증 절차 없이 서비스를 이용할 수 있도록 합니다. [오답해설] ① 하나의 앱에서 다양한 금융 계열사의 서비스를 한 번에 이용하는 것은 슈퍼앱의 핵심 특징입니다. ② 고객의 데이터를 통합 분석하여 맞춤형 금융 상품 및 서비스를 추천하는 것은 슈퍼앱이 지향하는 개인화된 서비스의 한 형태입니다. ④ 금융 서비스 외에 생활 편의 서비스 등 비금융 서비스와의 연계를 강화하는 것은 슈퍼앱의 확장성 및 고객 Lock-in 전략입니다.", "news_context": "앱 경계 허문다…신한금융, 은행·증권·카드 통합 '슈퍼SOL' 출격, 진옥동 직접 홍보 나선 ‘신한 슈퍼쏠’…은행·증권 경계 허문다", "news_url": null}, {"id": 1268, "created_at": "2026-06-17T06:49:12.455134+00:00", "date": "2026-06-17", "category": "시사", "question": "한국은행 총재의 발언처럼 기준금리 인상은 금융시장에 큰 영향을 미친다. 다음 중 기준금리 인상으로 인해 은행의 대출 자산 성장이 둔화될 수 있는 가장 주된 이유는 무엇인가?", "options": ["① 예대마진이 감소하여 은행의 대출 여력이 축소되기 때문이다.", "② 대출 금리 상승으로 가계 및 기업의 자금 조달 비용이 증가하기 때문이다.", "③ 은행이 보유한 채권 가치 하락으로 자본 건전성이 악화되기 때문이다.", "④ 금융당국의 대출 규제가 강화되어 신규 대출이 어려워지기 때문이다."], "answer": "②", "explanation": "기준금리 인상으로 대출 금리가 상승하면 가계와 기업의 자금 조달 비용이 증가하여 대출 수요가 감소하고, 이는 대출 자산 성장의 둔화로 이어질 수 있습니다. [오답해설] ① 기준금리 인상은 일반적으로 예금 금리 인상 폭보다 대출 금리 인상 폭이 커 예대마진이 확대될 가능성이 높습니다. ③ 채권 가치 하락은 자본 건전성에 영향을 미치지만, 직접적으로 대출 자산 성장을 둔화시키는 주된 이유는 아닙니다. ④ 금융당국의 대출 규제 강화는 별도의 정책적 요인으로, 기준금리 인상 자체의 직접적인 영향은 아닙니다.", "news_context": "한은 총재 '빅스텝 거론될 땐 시장 어려웠다…오늘과는 대조'", "news_url": null}];
+var current=0;var score=0;var answered=false;var audioCtx=null;
+function getTagClass(cat){if(cat==='금융용어')return 'tag-금융용어';if(cat==='시사')return 'tag-시사';if(cat==='세부지식')return 'tag-세부지식';return 'tag-default';}
+function render(){
+  if(current>=quizzes.length){showResult();return;}
+  var q=quizzes[current];
+  document.getElementById('progressBar').style.width=(current/quizzes.length*100)+'%';
+  document.getElementById('progressLabel').textContent=current+'/'+quizzes.length;
+  var optHtml='';for(var i=0;i<q.options.length;i++)optHtml+='<button class="option" onclick="selectOpt(this,'+i+')">'+q.options[i]+'</button>';
+  var expParts=(q.explanation||'').split('[오답해설]');
+  var expHtml=expParts.length>1?expParts[0].trim()+'<br><br><strong>[오답해설]</strong><br>'+expParts.slice(1).map(function(p){return p.trim();}).join('<br>'):q.explanation||'';
+  var newsHtml='';if(q.news_context){newsHtml='<div class="news-ctx">📰 '+q.news_context;if(q.news_url)newsHtml+=' <a href="'+q.news_url+'" target="_blank" class="news-link">[원문]</a>';newsHtml+='</div>';}
+  document.getElementById('quizArea').innerHTML='<div class="quiz-card"><span class="category-tag '+getTagClass(q.category)+'">'+q.category+'</span><div class="question-text">'+q.question+'</div><div class="options">'+optHtml+'</div><div class="explanation" id="exp"><div class="exp-label">📖 EXPLANATION</div>'+expHtml+newsHtml+'</div></div><div class="nav-buttons"><button class="btn" id="nextBtn" onclick="nextQ()">'+(current===quizzes.length-1?'RESULT ▶':'NEXT ▶')+'</button></div>';
+  answered=false;
 }
-
-function render() {
-  if (current >= quizzes.length) { showResult(); return; }
-  var q = quizzes[current];
-  var pct = (current / quizzes.length) * 100;
-  document.getElementById('progressBar').style.width = pct + '%';
-  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
-  var optHtml = '';
-  for (var i = 0; i < q.options.length; i++) {
-    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
-  }
-  var expParts = (q.explanation || '').split('[오답해설]');
-  var expHtml = expParts.length === 2
-    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
-    : (q.explanation || '');
-  var newsHtml = '';
-  if (q.news_context) {
-    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
-    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
-    newsHtml += '</div>';
-  }
-  document.getElementById('quizArea').innerHTML =
-    '<div class="quiz-card">' +
-    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
-    '<div class="question-text">' + q.question + '</div>' +
-    '<div class="options" id="opts">' + optHtml + '</div>' +
-    '<div class="explanation" id="exp">' +
-    '<div class="exp-label">📖 EXPLANATION</div>' +
-    expHtml + newsHtml +
-    '</div>' +
-    '</div>' +
-    '<div class="nav-buttons">' +
-    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
-    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
-    '</button></div>';
-  answered = false;
+function selectOpt(el,idx){
+  if(answered)return;answered=true;
+  var q=quizzes[current];var opts=document.querySelectorAll('.option');
+  var getNum=function(s){var m=s.match(/[①②③④]/);return m?m[0]:''};
+  var isCorrect=getNum(el.textContent)&&getNum(q.answer)&&getNum(el.textContent)===getNum(q.answer);
+  for(var i=0;i<opts.length;i++){opts[i].disabled=true;if(getNum(opts[i].textContent)===getNum(q.answer))opts[i].classList.add('correct');else if(opts[i]===el&&!isCorrect)opts[i].classList.add('wrong');}
+  if(isCorrect)score++;
+  var rect=el.getBoundingClientRect();spawnCoins(rect.left+rect.width/2,rect.top+rect.height/2,isCorrect);showScorePopup(isCorrect);playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');document.getElementById('nextBtn').style.display='block';
 }
-
-function selectOpt(el, idx) {
-  if (answered) return;
-  answered = true;
-  var q = quizzes[current];
-  var opts = document.querySelectorAll('.option');
-  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
-  var selNum = getNum(el.textContent);
-  var ansNum = getNum(q.answer);
-  var isCorrect = selNum && ansNum && selNum === ansNum;
-  for (var i = 0; i < opts.length; i++) {
-    opts[i].disabled = true;
-    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
-    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
-  }
-  if (isCorrect) score++;
-  var rect = el.getBoundingClientRect();
-  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
-  showScorePopup(isCorrect);
-  playBeep(isCorrect);
-  document.getElementById('exp').classList.add('show');
-  document.getElementById('nextBtn').style.display = 'block';
-}
-
-function nextQ() { current++; render(); }
-
-function showResult() {
-  document.getElementById('quizArea').style.display = 'none';
-  document.getElementById('progressBar').style.width = '100%';
-  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
-  var r = document.getElementById('resultCard');
-  r.classList.add('show');
-  document.getElementById('resultScore').textContent = score;
-}
-
-function spawnCoins(x, y, correct) {
-  if (!correct) return;
-  var stars = document.getElementById('stars');
-  for (var i = 0; i < 5; i++) {
-    var coin = document.createElement('div');
-    coin.className = 'coin-item';
-    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
-    coin.style.top = (y - 12) + 'px';
-    coin.style.animationDelay = (i * 0.06) + 's';
-    stars.appendChild(coin);
-    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
-  }
-}
-
-function showScorePopup(correct) {
-  var popup = document.createElement('div');
-  popup.className = 'score-popup';
-  popup.style.left = '50%';
-  popup.style.top = '40%';
-  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
-  popup.textContent = correct ? '+1 !' : 'MISS!';
-  document.body.appendChild(popup);
-  setTimeout(function(){ document.body.removeChild(popup); }, 800);
-}
-
-function playBeep(correct) {
-  try {
-    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    if (audioCtx.state === 'suspended') audioCtx.resume();
-    var osc = audioCtx.createOscillator();
-    var gain = audioCtx.createGain();
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.type = 'square';
-    if (correct) {
-      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
-      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
-      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
-    } else {
-      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
-      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
-    }
-    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
-    osc.start(audioCtx.currentTime);
-    osc.stop(audioCtx.currentTime + 0.4);
-  } catch(e) {}
-}
-
-document.addEventListener('click', function() {
-  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  if (audioCtx.state === 'suspended') audioCtx.resume();
-}, { once: true });
-
+function nextQ(){current++;render();}
+function showResult(){document.getElementById('quizArea').style.display='none';document.getElementById('progressBar').style.width='100%';document.getElementById('progressLabel').textContent=quizzes.length+'/'+quizzes.length;document.getElementById('resultCard').classList.add('show');document.getElementById('resultScore').textContent=score;}
+function spawnCoins(x,y,correct){if(!correct)return;var s=document.getElementById('stars');for(var i=0;i<5;i++){var c=document.createElement('div');c.className='coin-item';c.style.left=(x-12+(Math.random()-0.5)*60)+'px';c.style.top=(y-12)+'px';c.style.animationDelay=(i*0.06)+'s';s.appendChild(c);setTimeout(function(cc){s.removeChild(cc);},800,c);}}
+function showScorePopup(correct){var p=document.createElement('div');p.className='score-popup';p.style.left='50%';p.style.top='40%';p.style.color=correct?'var(--yellow)':'var(--red)';p.textContent=correct?'+1 !':'MISS!';document.body.appendChild(p);setTimeout(function(){document.body.removeChild(p);},800);}
+function playBeep(correct){try{if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();var o=audioCtx.createOscillator();var g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.type='square';if(correct){o.frequency.setValueAtTime(523,audioCtx.currentTime);o.frequency.setValueAtTime(659,audioCtx.currentTime+0.1);o.frequency.setValueAtTime(784,audioCtx.currentTime+0.2);}else{o.frequency.setValueAtTime(200,audioCtx.currentTime);o.frequency.setValueAtTime(150,audioCtx.currentTime+0.15);}g.gain.setValueAtTime(0.15,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.4);o.start(audioCtx.currentTime);o.stop(audioCtx.currentTime+0.4);}catch(e){}}
+document.addEventListener('click',function(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();},{once:true});
 render();
 </script>
 </body>
