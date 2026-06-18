@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-05 금융 퀴즈 10문제 - 매십문</title>
+<meta name="description" content="2026-05-05 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#5bc8f5;--pink:#ff6eb4;--pink-dark:#d94f96;--yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;--purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}.c1::before{width:24px;height:16px;top:-12px;left:8px;}.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}.c2::before{width:48px;height:24px;top:-18px;left:16px;}.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}.c3::before{width:72px;height:32px;top:-24px;left:24px;}.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);margin-bottom:1rem;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;display:flex;align-items:center;justify-content:center;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;color:var(--navy);}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-100px)}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+<div class="bg"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-05-05</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes=[{"id": 56, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "시사", "question": "부동산, 미술품 등 실물 자산을 블록체인 기술을 활용하여 디지털 토큰 형태로 발행하는 자산은?", "options": ["① 가상자산", "② 토큰증권(ST)", "③ NFT", "④ 중앙은행 디지털화폐"], "answer": "②", "explanation": "토큰증권(Security Token)은 자본시장법 규율 내에서 실물 자산의 권리를 디지털화한 증권입니다.", "news_context": "2026년 토큰증권 발행(STO) 시장이 제도적으로 안착하며 은행권의 새로운 비이자 수익원으로 부상했습니다.", "news_url": null}, {"id": 57, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "시사", "question": "금융 사고 예방을 위해 임원별 내부통제 책임을 명확히 규정하고 미리 확정해두는 서류를 무엇이라 하는가?", "options": ["① 내부통제 기준안", "② 책무구조도(Responsibility Map)", "③ 준법감시 보고서", "④ 지배구조 연차보고서"], "answer": "②", "explanation": "책무구조도는 금융사 임원 개개인이 책임져야 할 내부통제 업무 범위를 사전에 확정해 놓은 지도입니다.", "news_context": "금융판 중대재해처벌법이라 불리는 지배구조법 개정안 시행 이후 은행권의 내부통제 문화 정착이 핵심 이슈입니다.", "news_url": null}, {"id": 52, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "금융용어", "question": "사용자의 개입 없이 인공지능이 스스로 금융 목표를 설정하고 자산 배분 및 매매를 수행하는 자율형 비서를 일컫는 용어는?", "options": ["① 생성형 AI", "② 로보어드바이저", "③ 에이전틱 AI(Agentic AI)", "④ 알고리즘 트레이딩"], "answer": "③", "explanation": "에이전틱 AI는 단순 상담을 넘어 스스로 판단하고 실행하는 기능을 갖춘 차세대 인공지능 기술입니다.", "news_context": "2026년 상반기 은행권이 단순 챗봇을 넘어 자율 업무 수행이 가능한 AI 뱅킹 에이전트를 전면 도입한 흐름을 반영했습니다.", "news_url": null}, {"id": 53, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "금융용어", "question": "중앙은행이 발행하는 디지털 화폐 중, 은행 등 금융기관 간의 거액 결제용으로 사용되는 형태를 무엇이라 하는가?", "options": ["① 소매용 CBDC", "② 도매용 CBDC", "③ 스테이블 코인", "④ 암호자산"], "answer": "②", "explanation": "도매용 CBDC는 금융기관 간 예금 토큰화 및 자산 토큰화 결제를 위해 중앙은행이 발행하는 디지털 화폐입니다.", "news_context": "한국은행의 CBDC 활용성 테스트가 실무 단계에 진입하며 금융기관 간 결제 시스템의 디지털 전환이 화두가 되었습니다.", "news_url": null}, {"id": 54, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "세부지식", "question": "2024년 이후 개정된 개인종합관리계좌(ISA)의 1인당 연간 납입 한도는 얼마인가?", "options": ["① 2,000만 원", "② 3,000만 원", "③ 4,000만 원", "④ 5,000만 원"], "answer": "③", "explanation": "정부의 자본시장 활성화 대책에 따라 ISA의 연간 납입 한도는 2,000만 원에서 4,000만 원으로 상향되었습니다.", "news_context": "국민 자산 형성 지원을 위해 확대된 ISA 제도가 안정기에 접어들며 은행권의 주요 마케팅 수단이 되었습니다.", "news_url": null}, {"id": 55, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "세부지식", "question": "미래 금리 인상 가능성을 반영하여 대출 한도를 산출하는 '스트레스 DSR' 제도가 2026년 현재 적용되는 단계는?", "options": ["① 1단계(일부 적용)", "② 2단계(가중치 상향)", "③ 3단계(전 금융권 전면 적용)", "④ 유예 단계"], "answer": "③", "explanation": "스트레스 DSR은 단계별 도입을 거쳐 2026년에는 전 금융권의 모든 대출 상품에 100% 가중치로 전면 적용되고 있습니다.", "news_context": "가계부채 관리 강화를 위해 도입된 스트레스 DSR 제도가 완전 시행되면서 대출 심사 역량이 중요해졌습니다.", "news_url": null}, {"id": 51, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "금융용어", "question": "금융기관이 고탄소 배출 산업군에 속한 기업의 저탄소 경제 전환을 돕기 위해 제공하는 금융 서비스를 무엇이라 하는가?", "options": ["① 그린본드", "② 전환금융(Transition Finance)", "③ 탄소배출권 거래", "④ ESG 워싱"], "answer": "②", "explanation": "전환금융은 친환경 기업뿐만 아니라 탄소 감축 노력을 하는 고탄소 배출 기업의 변화를 지원하는 금융 수단입니다.", "news_context": "2026년 탄소중립 중간 점검을 앞두고 기업의 실질적인 저탄소 전환을 돕는 금융 지원의 중요성이 대두되었습니다.", "news_url": null}, {"id": 58, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "금융용어", "question": "비금융 회사가 자사 플랫폼에 금융사의 서비스를 내재화하여 제공하는 금융 형태를 무엇이라 하는가?", "options": ["① 오픈뱅킹", "② 임베디드 금융(Embedded Finance)", "③ 마이데이터", "④ 플랫폼 뱅킹"], "answer": "②", "explanation": "임베디드 금융은 비금융 업종의 서비스 흐름 속에 금융 상품이 자연스럽게 포함되어 제공되는 형태를 말합니다.", "news_context": "유통, 제조 플랫폼과 결합된 은행의 임베디드 금융 전략이 고객 접점 확대의 핵심이 되었습니다.", "news_url": null}, {"id": 59, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "시사", "question": "초고령 사회 진입에 따라 은행이 고객의 노후 자산을 관리하고 사후 상속까지 집행하는 종합 서비스를 일컫는 용어는?", "options": ["① 실버 뱅킹", "② 신탁 기반 자산관리", "③ 에이지테크(Age-Tech)", "④ 웰스 매니지먼트"], "answer": "②", "explanation": "치매 신탁, 유언대용 신탁 등 신탁 상품을 활용한 고령층의 자산 보호 및 상속 서비스 수요가 급증하고 있습니다.", "news_context": "2026년 한국의 초고령 사회 진입과 함께 은행권의 미래 먹거리로 신탁 시장이 주목받고 있습니다.", "news_url": null}, {"id": 60, "created_at": "2026-06-07T06:00:13.031777+00:00", "date": "2026-05-05", "category": "금융용어", "question": "데이터를 기반으로 고객의 금융 행동을 예측하여 최적의 시점에 맞춤형 상품을 제안하는 초개인화 서비스의 핵심 기술은?", "options": ["① 하이퍼 퍼스널라이제이션", "② 매스 마케팅", "③ 옴니채널 전략", "④ 빅블러"], "answer": "①", "explanation": "초개인화(Hyper-personalization)는 실시간 상황과 맥락을 파악해 고객 한 명만을 위한 맞춤형 경험을 제공하는 기술입니다.", "news_context": "AI와 빅데이터 기술의 고도화로 은행 앱이 고객의 일상을 관리하는 초개인화 플랫폼으로 진화했습니다.", "news_url": null}];
+var current=0;var score=0;var answered=false;var audioCtx=null;
+function getTagClass(cat){if(cat==='금융용어')return 'tag-금융용어';if(cat==='시사')return 'tag-시사';if(cat==='세부지식')return 'tag-세부지식';return 'tag-default';}
+function render(){
+  if(current>=quizzes.length){showResult();return;}
+  var q=quizzes[current];
+  document.getElementById('progressBar').style.width=(current/quizzes.length*100)+'%';
+  document.getElementById('progressLabel').textContent=current+'/'+quizzes.length;
+  var optHtml='';for(var i=0;i<q.options.length;i++)optHtml+='<button class="option" onclick="selectOpt(this,'+i+')">'+q.options[i]+'</button>';
+  var expParts=(q.explanation||'').split('[오답해설]');
+  var expHtml=expParts.length>1?expParts[0].trim()+'<br><br><strong>[오답해설]</strong><br>'+expParts.slice(1).map(function(p){return p.trim();}).join('<br>'):q.explanation||'';
+  var newsHtml='';if(q.news_context){newsHtml='<div class="news-ctx">📰 '+q.news_context;if(q.news_url)newsHtml+=' <a href="'+q.news_url+'" target="_blank" class="news-link">[원문]</a>';newsHtml+='</div>';}
+  document.getElementById('quizArea').innerHTML='<div class="quiz-card"><span class="category-tag '+getTagClass(q.category)+'">'+q.category+'</span><div class="question-text">'+q.question+'</div><div class="options">'+optHtml+'</div><div class="explanation" id="exp"><div class="exp-label">📖 EXPLANATION</div>'+expHtml+newsHtml+'</div></div><div class="nav-buttons"><button class="btn" id="nextBtn" onclick="nextQ()">'+(current===quizzes.length-1?'RESULT ▶':'NEXT ▶')+'</button></div>';
+  answered=false;
+}
+function selectOpt(el,idx){
+  if(answered)return;answered=true;
+  var q=quizzes[current];var opts=document.querySelectorAll('.option');
+  var getNum=function(s){var m=s.match(/[①②③④]/);return m?m[0]:''};
+  var isCorrect=getNum(el.textContent)&&getNum(q.answer)&&getNum(el.textContent)===getNum(q.answer);
+  for(var i=0;i<opts.length;i++){opts[i].disabled=true;if(getNum(opts[i].textContent)===getNum(q.answer))opts[i].classList.add('correct');else if(opts[i]===el&&!isCorrect)opts[i].classList.add('wrong');}
+  if(isCorrect)score++;
+  var rect=el.getBoundingClientRect();spawnCoins(rect.left+rect.width/2,rect.top+rect.height/2,isCorrect);showScorePopup(isCorrect);playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');document.getElementById('nextBtn').style.display='block';
+}
+function nextQ(){current++;render();}
+function showResult(){document.getElementById('quizArea').style.display='none';document.getElementById('progressBar').style.width='100%';document.getElementById('progressLabel').textContent=quizzes.length+'/'+quizzes.length;document.getElementById('resultCard').classList.add('show');document.getElementById('resultScore').textContent=score;}
+function spawnCoins(x,y,correct){if(!correct)return;var s=document.getElementById('stars');for(var i=0;i<5;i++){var c=document.createElement('div');c.className='coin-item';c.style.left=(x-12+(Math.random()-0.5)*60)+'px';c.style.top=(y-12)+'px';c.style.animationDelay=(i*0.06)+'s';s.appendChild(c);setTimeout(function(cc){s.removeChild(cc);},800,c);}}
+function showScorePopup(correct){var p=document.createElement('div');p.className='score-popup';p.style.left='50%';p.style.top='40%';p.style.color=correct?'var(--yellow)':'var(--red)';p.textContent=correct?'+1 !':'MISS!';document.body.appendChild(p);setTimeout(function(){document.body.removeChild(p);},800);}
+function playBeep(correct){try{if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();var o=audioCtx.createOscillator();var g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.type='square';if(correct){o.frequency.setValueAtTime(523,audioCtx.currentTime);o.frequency.setValueAtTime(659,audioCtx.currentTime+0.1);o.frequency.setValueAtTime(784,audioCtx.currentTime+0.2);}else{o.frequency.setValueAtTime(200,audioCtx.currentTime);o.frequency.setValueAtTime(150,audioCtx.currentTime+0.15);}g.gain.setValueAtTime(0.15,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.4);o.start(audioCtx.currentTime);o.stop(audioCtx.currentTime+0.4);}catch(e){}}
+document.addEventListener('click',function(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();},{once:true});
+render();
+</script>
+</body>
+</html>
