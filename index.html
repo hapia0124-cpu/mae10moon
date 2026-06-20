@@ -858,7 +858,7 @@
   Kakao.init('28918717eb1177ee9a42fcfeff4e5b5b');
 
   async function openSummaryModal(type) {
-    const yesterday = new Date(new Date(today + 'T00:00:00+09:00').getTime() - 86400000).toISOString().split('T')[0];
+    const d = new Date(); d.setHours(d.getHours() + 9); d.setDate(d.getDate() - 1); const yesterday = d.toISOString().split('T')[0];
     const targetDate = type === 'yesterday' ? yesterday : selectedDate;
     const label = type === 'yesterday' ? '어제' : '오늘';
 
@@ -889,15 +889,15 @@
       }
       document.getElementById('summaryContent').innerHTML = `
         <div style="background:#e0f2fe;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:1rem;margin-bottom:1rem">
-          <div style="font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--navy);margin-bottom:0.6rem">📈 알아둬야 할 흐름</div>
+          <div style="font-family:'Noto Sans KR',sans-serif;font-size:1rem;font-weight:900;color:var(--navy);margin-bottom:0.6rem;border-bottom:3px solid var(--navy);padding-bottom:0.3rem">📈 알아둬야 할 흐름</div>
           <div style="font-family:'Noto Sans KR',sans-serif;line-height:1.8;font-size:0.88rem">${s.trend}</div>
         </div>
         <div style="background:#fef9c3;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:1rem;margin-bottom:1rem">
-          <div style="font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--navy);margin-bottom:0.6rem">🏦 은행에 미치는 영향</div>
+          <div style="font-family:'Noto Sans KR',sans-serif;font-size:1rem;font-weight:900;color:var(--navy);margin-bottom:0.6rem;border-bottom:3px solid var(--navy);padding-bottom:0.3rem">🏦 은행에 미치는 영향</div>
           <div style="font-family:'Noto Sans KR',sans-serif;line-height:1.8;font-size:0.88rem">${s.bank_impact}</div>
         </div>
         <div style="background:#fce7f3;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:1rem">
-          <div style="font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--navy);margin-bottom:0.6rem">🎯 면접/필기 주목 포인트</div>
+          <div style="font-family:'Noto Sans KR',sans-serif;font-size:1rem;font-weight:900;color:var(--navy);margin-bottom:0.6rem;border-bottom:3px solid var(--navy);padding-bottom:0.3rem">🎯 면접/필기 주목 포인트</div>
           <div style="font-family:'Noto Sans KR',sans-serif;line-height:1.8;font-size:0.88rem">${s.focus_point}</div>
         </div>
       `;
