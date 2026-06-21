@@ -784,6 +784,10 @@
       <button id="ddaySetBtn" onclick="openDdayModal()" style="display:none;width:100%;background:none;border:2px dashed #bbb;color:#999;font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:0.8rem;padding:7px;cursor:pointer;margin-top:8px">🎯 취뽀 D-day 설정하기 ▶</button>
     </div>
 
+    <div class="quiz-card" style="text-align:center;margin-bottom:1rem;cursor:pointer" onclick="location.href='wrongnote.html'" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
+      <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">🚩 MY NOTE ▶</div>
+    </div>
+
     <div class="quiz-card" style="text-align:center;margin-bottom:1rem;cursor:pointer" onclick="location.href='archive.html'" onmouseover="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='10px 10px 0 var(--navy)'" onmouseout="this.style.transform='';this.style.boxShadow='8px 8px 0 var(--navy)'">
       <div style="font-family:'Press Start 2P',monospace;font-size:0.55rem;color:var(--navy)">📅 QUIZ ARCHIVE ▶</div>
     </div>
@@ -971,6 +975,31 @@
     try { return JSON.parse(localStorage.getItem('mae10_streak') || '{}'); } catch { return {}; }
   }
   function saveStreakData(d) { localStorage.setItem('mae10_streak', JSON.stringify(d)); }
+
+  function getWrongNotes() {
+    try { return JSON.parse(localStorage.getItem('mae10_wrongnotes') || '[]'); } catch { return []; }
+  }
+  function saveWrongNotes(notes) { localStorage.setItem('mae10_wrongnotes', JSON.stringify(notes)); }
+
+  function toggleFlag() {
+    const q = quizzes[current];
+    const notes = getWrongNotes();
+    const idx = notes.findIndex(n => n.id === q.id);
+    const btn = document.getElementById('flagBtn');
+    if (idx === -1) {
+      notes.push({ id: q.id, date: q.date, category: q.category, question: q.question, options: q.options, answer: q.answer, explanation: q.explanation, savedAt: new Date().toISOString() });
+      saveWrongNotes(notes);
+      btn.textContent = '🚩 저장됨 (취소)';
+      btn.style.background = '#ffd700';
+      btn.style.color = '#1a1a6e';
+    } else {
+      notes.splice(idx, 1);
+      saveWrongNotes(notes);
+      btn.textContent = '🚩 오답노트에 저장';
+      btn.style.background = 'none';
+      btn.style.color = '#ffd700';
+    }
+  }
   function updateStreak() {
     const t = getKSTDate();
     const d = getStreakData();
@@ -1294,6 +1323,7 @@
           })()}</div>
           ${q.news_context ? `<div class="news-ctx">📰 ${q.news_context}</div>` : ''}
           <div id="answerRate" style="margin-top:0.5rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;color:#ffd700;opacity:0.9"></div>
+          <button id="flagBtn" onclick="toggleFlag()" style="display:none;margin-top:0.8rem;background:none;border:2px solid #ffd700;color:#ffd700;padding:0.4rem 0.8rem;font-family:'Noto Sans KR',sans-serif;font-size:0.8rem;font-weight:700;cursor:pointer;width:100%">🚩 오답노트에 저장</button>
         </div>
       </div>
       <div class="nav-buttons">
@@ -1339,6 +1369,20 @@
 
     document.getElementById('explanation').classList.add('show');
     document.getElementById('nextBtn').style.display = 'block';
+
+    // 깃발 버튼 표시
+    const flagBtn = document.getElementById('flagBtn');
+    if (flagBtn) {
+      flagBtn.style.display = 'block';
+      const notes = getWrongNotes();
+      const q = quizzes[current];
+      const already = notes.findIndex(n => n.id === q.id) !== -1;
+      if (already) {
+        flagBtn.textContent = '🚩 저장됨 (취소)';
+        flagBtn.style.background = '#ffd700';
+        flagBtn.style.color = '#1a1a6e';
+      }
+    }
 
     const q = quizzes[current];
     saveResponseAndShowRate(q.id, isCorrect);

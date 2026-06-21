@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오답노트 - 매십문</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#5bc8f5;--pink:#ff6eb4;--pink-dark:#d94f96;--yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;--purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:3rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}.c1::before{width:24px;height:16px;top:-12px;left:8px;}.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}.c2::before{width:48px;height:24px;top:-18px;left:16px;}.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:1rem;}
+.header{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.2rem 1.5rem;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;}
+.header-left{display:flex;align-items:center;gap:1rem;}
+.back-btn{background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);box-shadow:3px 3px 0 #000;padding:0.6rem 1.2rem;font-family:'Press Start 2P',monospace;font-size:0.8rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;}
+.notice-box{background:var(--navy);color:var(--cream);border:3px solid #000;padding:0.8rem 1rem;margin-bottom:1.2rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;line-height:1.8;}
+.header-title{font-size:0.7rem;color:var(--navy);}
+.count-badge{background:var(--pink);color:white;border:3px solid var(--pink-dark);box-shadow:3px 3px 0 var(--navy);padding:3px 10px;font-size:0.55rem;}
+.clear-btn{background:var(--red);color:white;border:4px solid #b91c1c;box-shadow:3px 3px 0 #7f1d1d;padding:0.5rem 0.8rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;font-weight:900;cursor:pointer;}
+.empty-state{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:3rem;text-align:center;}
+.empty-state p{font-family:'Noto Sans KR',sans-serif;font-size:1rem;color:var(--navy);margin-top:1rem;font-weight:700;}
+.empty-state small{font-family:'Noto Sans KR',sans-serif;font-size:0.8rem;color:#888;margin-top:0.5rem;display:block;}
+.note-card{background:var(--cream);border:4px solid var(--navy);box-shadow:6px 6px 0 var(--navy);margin-bottom:0.8rem;overflow:hidden;}
+.note-header{display:flex;align-items:center;gap:0.6rem;padding:0.9rem 1rem;cursor:pointer;user-select:none;}
+.note-header:active{transform:translate(2px,2px);box-shadow:none;}
+.category-tag{display:inline-block;padding:2px 8px;font-size:0.5rem;border:2px solid;flex-shrink:0;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-preview{font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.toggle-arrow{font-size:0.6rem;color:var(--navy);flex-shrink:0;transition:transform 0.2s;}
+.toggle-arrow.open{transform:rotate(90deg);}
+.note-detail{display:none;border-top:3px solid var(--navy);padding:1rem;}
+.note-detail.open{display:block;}
+.question-full{font-family:'Noto Sans KR',sans-serif;font-size:0.88rem;font-weight:700;color:var(--navy);line-height:1.7;margin-bottom:0.8rem;}
+.answer-box{background:var(--navy);color:var(--yellow);padding:0.5rem 0.8rem;font-family:'Noto Sans KR',sans-serif;font-size:0.8rem;font-weight:700;margin-bottom:0.8rem;border:2px solid #000;}
+.exp-box{background:#1a1a6e;color:var(--cream);padding:0.8rem;font-family:'Noto Sans KR',sans-serif;font-size:0.78rem;line-height:1.7;margin-bottom:0.8rem;}
+.exp-title{font-family:'Press Start 2P',monospace;font-size:0.45rem;color:var(--yellow);margin-bottom:0.5rem;}
+.note-date{font-family:'Noto Sans KR',sans-serif;font-size:0.7rem;color:#888;margin-bottom:0.5rem;}
+.remove-btn{background:none;border:2px solid var(--red);color:var(--red);padding:0.4rem;font-family:'Noto Sans KR',sans-serif;font-size:0.75rem;font-weight:700;cursor:pointer;width:100%;}
+.remove-btn:hover{background:var(--red);color:white;}
+</style>
+</head>
+<body>
+<div class="bg"><div class="cloud c1"></div><div class="cloud c2"></div></div>
+<div class="content">
+  <div class="header">
+    <div class="header-left">
+      <a href="index.html" class="back-btn">◀ 홈</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.5rem">
+      <span class="count-badge" id="totalCount">0개</span>
+      <button class="clear-btn" onclick="clearAll()">전체삭제</button>
+    </div>
+  </div>
+  <div class="notice-box">
+    ⚠️ <strong>저장 주의사항</strong><br>
+    · 오답노트는 <strong>브라우저에 저장</strong>돼요. 캐시/방문기록 삭제 시 오답노트도 함께 삭제됩니다.<br>
+    · <strong>시크릿 모드</strong>에서는 저장되지 않아요.<br>
+    · 다른 기기나 다른 브라우저에서는 불러올 수 없어요.
+  </div>
+  <div id="noteList"></div>
+</div>
+<script>
+function getWrongNotes() {
+  try { return JSON.parse(localStorage.getItem('mae10_wrongnotes') || '[]'); } catch { return []; }
+}
+function saveWrongNotes(notes) { localStorage.setItem('mae10_wrongnotes', JSON.stringify(notes)); }
+
+function getTagClass(cat) {
+  if(cat==='금융용어') return 'tag-금융용어';
+  if(cat==='시사') return 'tag-시사';
+  if(cat==='세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function toggleCard(id) {
+  const detail = document.getElementById('detail-' + id);
+  const arrow = document.getElementById('arrow-' + id);
+  detail.classList.toggle('open');
+  arrow.classList.toggle('open');
+}
+
+function removeNote(id) {
+  const notes = getWrongNotes().filter(n => n.id !== id);
+  saveWrongNotes(notes);
+  render();
+}
+
+function clearAll() {
+  if (!confirm('오답노트를 전체 삭제할까요?')) return;
+  saveWrongNotes([]);
+  render();
+}
+
+function render() {
+  const notes = [...getWrongNotes()].reverse();
+  document.getElementById('totalCount').textContent = notes.length + '개';
+
+  const list = document.getElementById('noteList');
+  if (notes.length === 0) {
+    list.innerHTML = `
+      <div class="empty-state">
+        <div style="font-size:2rem">🚩</div>
+        <p>저장된 오답노트가 없어요</p>
+        <small>퀴즈 풀다가 🚩 버튼을 누르면 여기 저장돼요</small>
+      </div>`;
+    return;
+  }
+
+  list.innerHTML = notes.map(n => {
+    const expParts = (n.explanation || '').split('[오답해설]');
+    const expHtml = expParts.length > 1
+      ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts.slice(1).map(p => p.trim()).join('<br>')
+      : (n.explanation || '');
+    const savedDate = n.savedAt ? n.savedAt.split('T')[0] : n.date;
+    return `
+      <div class="note-card">
+        <div class="note-header" onclick="toggleCard(${n.id})">
+          <span class="category-tag ${getTagClass(n.category)}">${n.category}</span>
+          <span class="question-preview">${n.question}</span>
+          <span class="toggle-arrow" id="arrow-${n.id}">▶</span>
+        </div>
+        <div class="note-detail" id="detail-${n.id}">
+          <div class="note-date">📅 ${savedDate} 저장</div>
+          <div class="question-full">${n.question}</div>
+          <div class="answer-box">✅ 정답: ${n.answer}</div>
+          <div class="exp-box">
+            <div class="exp-title">📖 EXPLANATION</div>
+            ${expHtml}
+          </div>
+          <button class="remove-btn" onclick="removeNote(${n.id})">🗑 삭제</button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+render();
+</script>
+</body>
+</html>
