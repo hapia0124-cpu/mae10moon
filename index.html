@@ -1459,44 +1459,118 @@
           <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,0.12) 0px,rgba(0,0,0,0.12) 1px,transparent 1px,transparent 4px);pointer-events:none;z-index:0"></div>
           <div style="position:relative;z-index:1">
             <div style="font-family:'Press Start 2P',monospace;font-size:clamp(0.5rem,2vw,0.8rem);color:#ffd700;margin-bottom:1rem;letter-spacing:2px;line-height:2">★ PERFECT CLEAR ★</div>
+            <style>
+              @keyframes crystalPop {
+                0%   { transform: scale(0); opacity: 0; }
+                60%  { transform: scale(1.18); opacity: 1; }
+                80%  { transform: scale(0.94); }
+                100% { transform: scale(1); }
+              }
+              @keyframes crystalFloat {
+                0%, 100% { transform: translateY(0px); }
+                50%       { transform: translateY(-8px); }
+              }
+              @keyframes shineSwipe {
+                0%   { opacity: 0; transform: translateX(-60px) skewX(-20deg); }
+                30%  { opacity: 0.7; }
+                60%  { opacity: 0; transform: translateX(80px) skewX(-20deg); }
+                100% { opacity: 0; }
+              }
+              @keyframes orbitStar {
+                0%   { transform: rotate(0deg)   translateX(110px) rotate(0deg);   opacity:1; }
+                100% { transform: rotate(360deg) translateX(110px) rotate(-360deg); opacity:1; }
+              }
+              @keyframes twinkle {
+                0%,100% { opacity:1; transform: scale(1); }
+                50%      { opacity:0.3; transform: scale(0.6); }
+              }
+              .crystal-wrap {
+                display: inline-block;
+                position: relative;
+                animation: crystalPop 0.6s cubic-bezier(.36,1.56,.64,1) forwards,
+                           crystalFloat 3s ease-in-out 0.6s infinite;
+              }
+              .crystal-shine {
+                position: absolute;
+                top: 10%; left: 15%;
+                width: 40%; height: 55%;
+                background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100%);
+                border-radius: 50%;
+                animation: shineSwipe 2.5s ease-in-out 0.8s infinite;
+                pointer-events: none;
+              }
+              .orbit-container {
+                position: absolute;
+                top: 50%; left: 50%;
+                width: 0; height: 0;
+                pointer-events: none;
+              }
+              .orbit-star {
+                position: absolute;
+                font-size: 1.1rem;
+                top: -10px; left: -10px;
+              }
+              .os1 { animation: orbitStar 2.8s linear 0.6s infinite; }
+              .os2 { animation: orbitStar 2.8s linear 1.53s infinite; }
+              .os3 { animation: orbitStar 2.8s linear 2.46s infinite; }
+              .twinkle-star {
+                position: absolute;
+                font-size: 1.2rem;
+                animation: twinkle 1.4s ease-in-out infinite;
+              }
+              .ts1 { top:-18px; left:-8px;  animation-delay:0s; }
+              .ts2 { top:-14px; right:-8px; animation-delay:0.3s; }
+              .ts3 { bottom:-4px; left:-14px; animation-delay:0.6s; }
+              .ts4 { bottom:-4px; right:-14px; animation-delay:0.9s; }
+              .ts5 { top:42%; left:-26px; animation-delay:0.45s; }
+              .ts6 { top:42%; right:-26px; animation-delay:0.75s; }
+            </style>
             <div style="position:relative;display:inline-block;margin:0.5rem 0">
-              <span style="position:absolute;top:-18px;left:-8px;font-size:1.2rem">✨</span>
-              <span style="position:absolute;top:-14px;right:-8px;font-size:1.2rem">⭐</span>
-              <span style="position:absolute;bottom:-4px;left:-14px;font-size:1.2rem">💫</span>
-              <span style="position:absolute;bottom:-4px;right:-14px;font-size:1.2rem">✨</span>
-              <span style="position:absolute;top:42%;left:-26px;font-size:1.2rem">⭐</span>
-              <span style="position:absolute;top:42%;right:-26px;font-size:1.2rem">💫</span>
-              <svg style="width:min(180px,48vw);height:min(180px,48vw)" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <radialGradient id="pg1" cx="35%" cy="30%" r="65%">
-                    <stop offset="0%" stop-color="#fff8c0"/>
-                    <stop offset="15%" stop-color="#ffdd44"/>
-                    <stop offset="45%" stop-color="#ff8800"/>
-                    <stop offset="80%" stop-color="#e04400"/>
-                    <stop offset="100%" stop-color="#882200"/>
-                  </radialGradient>
-                  <radialGradient id="psh" cx="28%" cy="22%" r="38%">
-                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
-                    <stop offset="55%" stop-color="#ffffff" stop-opacity="0.2"/>
-                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-                  </radialGradient>
-                  <radialGradient id="psd" cx="50%" cy="50%" r="50%">
-                    <stop offset="55%" stop-color="#000" stop-opacity="0"/>
-                    <stop offset="100%" stop-color="#000" stop-opacity="0.22"/>
-                  </radialGradient>
-                </defs>
-                <ellipse cx="140" cy="268" rx="85" ry="10" fill="#000" opacity="0.2"/>
-                <circle cx="140" cy="136" r="126" fill="url(#pg1)"/>
-                <circle cx="140" cy="136" r="126" fill="url(#psd)"/>
-                <ellipse cx="98" cy="82" rx="46" ry="34" fill="url(#psh)"/>
-                <circle cx="140" cy="136" r="125" fill="none" stroke="#ffcc44" stroke-width="1.5" opacity="0.3"/>
-                <polygon points="140,100 149,124 175,124 154,140 162,165 140,150 118,165 126,140 105,124 131,124" fill="#cc2200" opacity="0.95"/>
-                <polygon points="140,105 148,126 170,126 152,139 159,161 140,148 121,161 128,139 110,126 132,126" fill="#ee3300" opacity="0.45"/>
-                <polygon points="72,72 77,87 93,87 81,96 85,111 72,102 59,111 63,96 51,87 67,87" fill="#cc2200" opacity="0.9"/>
-                <polygon points="208,72 213,87 229,87 217,96 221,111 208,102 195,111 199,96 187,87 203,87" fill="#cc2200" opacity="0.9"/>
-                <polygon points="72,176 77,191 93,191 81,200 85,215 72,206 59,215 63,200 51,191 67,191" fill="#cc2200" opacity="0.9"/>
-                <polygon points="208,176 213,191 229,191 217,200 221,215 208,206 195,215 199,200 187,191 203,191" fill="#cc2200" opacity="0.9"/>
-              </svg>
+              <div class="orbit-container">
+                <span class="orbit-star os1">⭐</span>
+                <span class="orbit-star os2">✨</span>
+                <span class="orbit-star os3">💫</span>
+              </div>
+              <div class="crystal-wrap">
+                <span class="twinkle-star ts1">✨</span>
+                <span class="twinkle-star ts2">⭐</span>
+                <span class="twinkle-star ts3">💫</span>
+                <span class="twinkle-star ts4">✨</span>
+                <span class="twinkle-star ts5">⭐</span>
+                <span class="twinkle-star ts6">💫</span>
+                <svg style="width:min(180px,48vw);height:min(180px,48vw);display:block" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="pg1" cx="35%" cy="30%" r="65%">
+                      <stop offset="0%" stop-color="#fff8c0"/>
+                      <stop offset="15%" stop-color="#ffdd44"/>
+                      <stop offset="45%" stop-color="#ff8800"/>
+                      <stop offset="80%" stop-color="#e04400"/>
+                      <stop offset="100%" stop-color="#882200"/>
+                    </radialGradient>
+                    <radialGradient id="psh" cx="28%" cy="22%" r="38%">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+                      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.2"/>
+                      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="psd" cx="50%" cy="50%" r="50%">
+                      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+                      <stop offset="100%" stop-color="#000" stop-opacity="0.22"/>
+                    </radialGradient>
+                  </defs>
+                  <ellipse cx="140" cy="268" rx="85" ry="10" fill="#000" opacity="0.2"/>
+                  <circle cx="140" cy="136" r="126" fill="url(#pg1)"/>
+                  <circle cx="140" cy="136" r="126" fill="url(#psd)"/>
+                  <ellipse cx="98" cy="82" rx="46" ry="34" fill="url(#psh)"/>
+                  <circle cx="140" cy="136" r="125" fill="none" stroke="#ffcc44" stroke-width="1.5" opacity="0.3"/>
+                  <polygon points="140,100 149,124 175,124 154,140 162,165 140,150 118,165 126,140 105,124 131,124" fill="#cc2200" opacity="0.95"/>
+                  <polygon points="140,105 148,126 170,126 152,139 159,161 140,148 121,161 128,139 110,126 132,126" fill="#ee3300" opacity="0.45"/>
+                  <polygon points="72,72 77,87 93,87 81,96 85,111 72,102 59,111 63,96 51,87 67,87" fill="#cc2200" opacity="0.9"/>
+                  <polygon points="208,72 213,87 229,87 217,96 221,111 208,102 195,111 199,96 187,87 203,87" fill="#cc2200" opacity="0.9"/>
+                  <polygon points="72,176 77,191 93,191 81,200 85,215 72,206 59,215 63,200 51,191 67,191" fill="#cc2200" opacity="0.9"/>
+                  <polygon points="208,176 213,191 229,191 217,200 221,215 208,206 195,215 199,200 187,191 203,191" fill="#cc2200" opacity="0.9"/>
+                </svg>
+                <div class="crystal-shine"></div>
+              </div>
             </div>
             <div style="display:flex;justify-content:center;gap:0.4rem;margin:0.8rem 0">
               <span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span><span style="font-size:1.2rem">⭐</span>
