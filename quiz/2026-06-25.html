@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-25 금융 퀴즈 10문제 - 매십문</title>
+<meta name="description" content="2026-06-25 매십문 금융 퀴즈 10문제. 매일 업데이트되는 금융/경제 퀴즈로 금융 자격증을 준비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-06-25</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1362,"category":"금융용어","question":"다음 설명에 해당하는 금융 용어는? \"주식의 내재가치와 관계없이 온라인 커뮤니티 등에서 개인 투자자들의 강력한 매수세에 의해 단기간에 비정상적으로 가격이 급등락하는 주식.\"","answer":"① 밈주식","explanation":"밈주식은 SNS 등 대중의 관심으로 가격이 급등락하는 주식입니다. [오답해설] ② 가치주는 기업의 내재가치에 비해 주가가 저평가된 주식입니다. ③ 우량주는 재무구조가 건전하고 수익성이 좋은 기업의 주식입니다. ④ 테마주는 특정 이슈나 산업 흐름에 따라 관련 기업들의 주가가 동반 상승하는 경향을 보이는 주식입니다.","news_context":"웬디스, 美 X세대 추억 소환하며 밈주식으로 떴다","news_url":"","options":["① 밈주식","② 가치주","③ 우량주","④ 테마주"]},{"id":1363,"category":"금융용어","question":"다음 중 공매도 세력이 주가 상승으로 인해 손실 위험이 커지자 포지션을 청산하기 위해 주식을 다시 매수하면서 주가가 급등하는 현상을 의미하는 용어는?","answer":"① 숏스퀴즈","explanation":"숏스퀴즈는 공매도 투자자들이 주가 상승으로 인한 손실을 피하기 위해 대량으로 주식을 재매수하면서 주가가 더욱 급등하는 현상입니다. [오답해설] ② 롱스퀴즈는 선물 매수 포지션 투자자들이 가격 하락으로 인해 손실을 줄이기 위해 선물 매도 포지션을 취하며 가격이 더욱 하락하는 현상입니다. ③ 서킷브레이커는 주식시장의 가격 변동성이 과도할 때 주식 거래를 일시적으로 중단하는 제도입니다. ④ 공매도 쇼크는 일반적인 금융 용어가 아닙니다.","news_context":"스페이스X, 공매도 늘어…유통주식 적어 '숏스퀴즈' 위험 커","news_url":"","options":["① 숏스퀴즈","② 롱스퀴즈","③ 서킷브레이커","④ 공매도 쇼크"]},{"id":1364,"category":"금융용어","question":"한국 증시가 해당 지수에 편입되지 못하는 주요 이유로 지적되는 것은 외환시장 접근성, 역외 원화 거래 부재, 공매도 규제 등이 있습니다. 전 세계 기관 투자자들의 투자 기준으로 활용되며, 편입 시 외국인 투자 유치에 긍정적인 영향을 미칠 수 있는 이 지수의 명칭은?","answer":"③ MSCI 선진국지수","explanation":"MSCI 선진국지수는 모건스탠리캐피털인터내셔널이 발표하는 선진국 주가지수로, 한국은 여러 제도적 한계로 인해 아직 편입되지 못하고 있습니다. [오답해설] ① FTSE 선진국지수는 파이낸셜타임즈에서 발표하는 지수로 한국은 이미 편입되어 있습니다. ② 다우존스 산업평균지수는 미국 주식시장의 대표적인 지수 중 하나입니다. ④ S&P 500 지수는 미국의 500대 기업 주식으로 구성된 지수입니다.","news_context":"한국 증시, MSCI 선진지수 관찰대상국 등재 또 불발…이유가?","news_url":"https://www.mk.co.kr/news/economy/12081532","options":["① FTSE 선진국지수","② 다우존스 산업평균지수","③ MSCI 선진국지수","④ S&P 500 지수"]},{"id":1365,"category":"금융용어","question":"중앙은행이 기준금리를 통상적인 인상 폭(0.25%p)보다 두 배인 0.5%p 한 번에 인상하는 것을 의미하는 용어는?","answer":"② 빅스텝","explanation":"빅스텝은 기준금리를 0.5%p 인상하는 것을 의미합니다. [오답해설] ① 베이비스텝은 기준금리를 0.25%p 인상하는 통상적인 금리 인상 폭을 말합니다. ③ 자이언트스텝은 0.75%p 인상, ④ 메가스텝은 1.0%p 인상하는 것을 지칭합니다.","news_context":"[전문기자의 눈] ‘빅스텝’ 지금이 적기인 까닭","news_url":"https://www.etoday.co.kr/news/view/2596934","options":["① 베이비스텝","② 빅스텝","③ 자이언트스텝","④ 메가스텝"]},{"id":1366,"category":"세부지식","question":"중소·중견기업의 혁신 성장과 스케일업을 지원하기 위해 정부 주도하에 조성된 정책 펀드인 '국민성장펀드'에 대한 설명으로 옳지 않은 것은?","answer":"③ 금융기관의 직접 대출 방식으로 기업에 자금을 공급한다.","explanation":"국민성장펀드는 금융기관의 직접 대출 방식이 아니라 주로 벤처캐피탈 등을 통해 기업에 투자하여 자금을 공급합니다. [오답해설] ① 국민성장펀드는 중소기업의 설비투자 및 연구개발 등 혁신 성장을 지원합니다. ② 연기금 등 기관 투자자의 참여를 통해 조성됩니다. ④ 기업의 성장 단계에 맞춰 자금을 지원하는 것을 목표로 합니다.","news_context":"국민성장펀드 뒷받침하는 연기금…일주일만에 1100억 투자","news_url":"https://www.mk.co.kr/news/economy/12082244","options":["① 주로 중소기업의 설비투자 및 연구개발을 지원한다.","② 연기금 등 기관 투자자의 자금이 주로 유입된다.","③ 금융기관의 직접 대출 방식으로 기업에 자금을 공급한다.","④ 기업의 성장 단계별 맞춤형 투자 방안을 제공한다."]},{"id":1367,"category":"세부지식","question":"금융감독원이 소비자 경보를 발령한 '할부 또는 리스 계약이 진행 중인 차량을 담보로 대출받는 행위'와 관련하여 가장 큰 문제점으로 지적되는 것은?","answer":"① 차량의 실제 소유권이 대출자가 아닌 금융회사에 있기 때문에 불법 행위에 해당한다.","explanation":"할부나 리스 차량의 소유권은 해당 금융회사에 있으므로 이를 담보로 대출받는 것은 명의를 도용한 불법 행위가 될 수 있습니다. [오답해설] ② 복잡한 서류 작업이나 대출 승인 지연은 일반적인 대출 과정의 특징이며 가장 큰 문제점은 아닙니다. ③ 이러한 대출은 불법성을 내포하므로 금리가 낮지 않습니다. ④ 감가상각은 일반적인 차량 담보 대출에서도 고려되는 부분이나, 소유권 문제만큼 핵심적인 불법 행위 요인은 아닙니다.","news_context":"\"할부·리스차 담보 대출하면 형사처벌\"…금감원 소비자경보","news_url":"https://www.yna.co.kr/view/AKR20260624166100002","options":["① 차량의 실제 소유권이 대출자가 아닌 금융회사에 있기 때문에 불법 행위에 해당한다.","② 대출 시 복잡한 서류 작업이 필요하여 대출 승인이 오래 걸린다.","③ 금리가 일반 신용대출보다 현저히 낮아 금융사의 수익성이 악화된다.","④ 대출 상환 시 차량의 감가상각이 심해 채권 회수가 어렵다."]},{"id":1368,"category":"세부지식","question":"최근 개인카드 시장이 정체된 가운데 법인카드 승인액이 증가하며 카드사들의 새로운 수익원으로 주목받고 있습니다. 법인카드의 특징으로 옳지 않은 것은?","answer":"④ 개인 신용등급에 따라 발급 여부 및 한도가 결정된다.","explanation":"법인카드는 기업의 신용도와 재무 상태를 기준으로 발급 여부 및 한도가 결정되며, 개인의 신용등급과는 직접적인 관계가 없습니다. [오답해설] ① 법인카드는 기업의 사업 운영과 관련된 경비를 처리하는 데 주로 사용됩니다. ② 기업의 규모와 필요에 따라 높은 결제 한도가 부여되는 경우가 많습니다. ③ 법인카드 사용 내역은 법인세 신고 시 비용 처리의 투명한 증빙 자료로 활용됩니다.","news_context":"카드 시장 정체 속에도 법카 승인액은 6.7%↑…유치경쟁 불붙어","news_url":"https://www.yna.co.kr/view/AKR20260624172300002","options":["① 주로 기업의 경비 처리와 직원들의 업무 관련 지출에 사용된다.","② 개인카드보다 높은 결제 한도를 제공하는 경우가 많다.","③ 법인세 신고 시 비용 처리의 투명성을 확보할 수 있다.","④ 개인 신용등급에 따라 발급 여부 및 한도가 결정된다."]},{"id":1369,"category":"시사","question":"한국은행과 금융당국은 최근 가계부채 증가세와 주식·부동산 '빚투' 현상을 금융안정의 불안 요인으로 지목하고 있습니다. 이러한 상황이 국내 은행의 경영 및 여신 건전성에 미칠 수 있는 영향으로 가장 적절한 것은?","answer":"② 가계의 채무상환 능력이 저하되어 대출 연체율이 상승하고 건전성이 악화될 위험이 있다.","explanation":"가계부채와 빚투 증가는 금리 인상 시 가계의 상환 부담을 가중시켜 대출 연체율을 높이고 은행의 여신 건전성을 악화시킬 수 있습니다. [오답해설] ① 과도한 대출 증가는 장기적으로 부실 위험을 키워 은행의 지속 가능한 수익성을 저해할 수 있습니다. ③ 가계부채 증가는 오히려 인플레이션 압력과 금융안정 저해로 인해 금리 인상 압력을 높일 수 있습니다. ④ 빚투는 주식 투자와도 관련되며, 주택담보대출 증가는 부동산 가격 안정화에 저해될 수 있어 금융당국이 규제할 가능성이 높습니다.","news_context":"한은 \"집값 다시 오르고 빚투 늘어…금융안정 불안 요인\"(종합)","news_url":"https://www.yna.co.kr/view/AKR20260624018151002","options":["① 대출 자산의 성장으로 은행의 수익성이 단기적으로 크게 증가할 것이다.","② 가계의 채무상환 능력이 저하되어 대출 연체율이 상승하고 건전성이 악화될 위험이 있다.","③ 금리 인하 압력이 커져 은행의 조달 비용이 감소할 것이다.","④ 부동산 시장의 활성화로 신규 주택담보대출이 급증할 것이다."]},{"id":1370,"category":"시사","question":"최근 달러-원 환율이 급등하며 '강달러' 현상이 지속되고 있습니다. 이러한 고환율 상황이 국내 은행의 외환 업무 및 기업 여신 건전성에 미치는 영향으로 가장 거리가 먼 것은?","answer":"④ 은행의 해외 자산 가치가 원화 기준으로 하락하여 자산 건전성이 개선된다.","explanation":"강달러 상황에서 은행의 해외 자산(달러 자산 등)은 원화 환산 가치가 상승하여 자산 가치가 개선될 수 있으며, 하락하는 것은 아닙니다. [오답해설] ① 환율 상승은 수출 기업의 가격 경쟁력을 높여 수출 증가로 이어질 수 있고, 이는 기업 대출 수요 증가 요인이 됩니다. ② 환율 변동성 확대는 은행의 외환 포지션 관리 리스크를 증가시키고 외환 거래 손익의 불확실성을 높입니다. ③ 수입 물가를 상승시켜 전반적인 국내 인플레이션 압력을 가중시키고, 이는 금리 인상 압력으로 이어져 가계의 대출 상환 부담을 높일 수 있습니다.","news_context":"17년 만의 1540원…'뉴노멀' 된 강달러, 한국경제 시험대","news_url":"https://www.ebn.co.kr/news/articleView.html?idxno=1713811","options":["① 수출 기업의 가격 경쟁력 향상으로 기업 대출 수요가 증가할 수 있다.","② 외환 포지션 관리의 중요성이 더욱 커져 은행의 외환 거래 손익 변동성이 확대될 수 있다.","③ 수입 물가를 상승시켜 국내 인플레이션 압력을 가중시키고 이는 가계 상환 부담을 높일 수 있다.","④ 은행의 해외 자산 가치가 원화 기준으로 하락하여 자산 건전성이 개선된다."]},{"id":1371,"category":"시사","question":"최근 인공지능(AI) 수요 증가에 힘입어 반도체 산업이 호황을 맞고 있지만, 일각에서는 과열 및 불황에 대한 우려도 제기되고 있습니다. 이러한 반도체 산업의 상황이 국내 금융시장에 미치는 영향에 대한 설명으로 옳은 것은?","answer":"② 반도체 산업의 높은 변동성은 관련 기업 대출의 리스크를 증가시켜 은행의 건전성 관리를 더욱 중요하게 만든다.","explanation":"반도체 산업은 경기 변동에 민감하여 호황과 불황이 반복되는 경향이 있으므로, 은행은 관련 기업 대출의 리스크를 철저히 관리하여 건전성을 유지해야 합니다. [오답해설] ① 반도체 호황기에는 관련 기업의 신용등급이 개선될 수 있으며, 여신심사가 반드시 강화되는 것은 아닙니다. ③ 금융당국은 산업별로 특정 대출 규제를 완화하기보다는 금융시장 전체의 안정성을 고려합니다. ④ 반도체 산업의 호황이 모든 제조업 분야의 체감경기를 동반 상승시키는 것은 아니며, 특정 산업의 호황이 금융시장 전반의 안정성을 보장하지는 않습니다 (예: 쏠림 현상, 버블 우려).","news_context":"“AI 투자 열풍, 준버블 붕괴 조짐”…노벨경제학상 수상자, 반도체주 ...","news_url":"https://n.news.naver.com/mnews/article/025/0003533038?sid=101","options":["① 반도체 관련 기업의 신용등급이 하락하여 은행의 여신심사가 강화될 것이다.","② 반도체 산업의 높은 변동성은 관련 기업 대출의 리스크를 증가시켜 은행의 건전성 관리를 더욱 중요하게 만든다.","③ 금융당국은 반도체 산업의 안정적 성장을 위해 해당 기업에 대한 대출 규제를 완화할 것이다.","④ 반도체 산업의 호황은 모든 제조업 분야의 체감경기를 동반 상승시켜 금융시장 전반의 안정성을 크게 높인다."]},{"id":7,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
