@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /quiz/
+Sitemap: https://mae10moon.com/sitemap.xml
