@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-29 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-06-29 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-06-29 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 은행의 단기 자금조달 비용을 반영하며, 무위험 지표금리(RFR)의 일종으로 주로 변동금리 대출 및 파생상품의 준거금리로 활용되는 지표는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① CD금리</li><li>② COFIX</li><li>③ KOFR</li><li>④ LIBOR</li>
+      </ul>
+      <p><strong>정답:</strong> ③ KOFR</p>
+      <p><strong>해설:</strong> KOFR은 한국의 무위험 지표금리로, RP거래를 기반으로 산출되어 변동금리 금융상품의 준거금리로 활용됩니다. ① CD금리는 은행의 자금조달 금리 중 하나로, 과거 변동금리 대출의 준거금리였으나 실제 자금거래를 반영하지 못하는 한계가 있습니다. ② COFIX는 국내 은행들의 실제 자금조달 금리를 가중평균한 지수로, 주로 주택담보대출 변동금리의 기준이 됩니다. ④ LIBOR는 런던 은행 간 대출금리로 국제 금융시장의 기준금리였으나, 조작 스캔들 이후 폐지되고 RFR로 전환되고 있습니다.</p>
+      <p>관련 시사 뉴스: 금감원, 다음 달부터 은행권 'KOFR 변동금리채' 발행 유도</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 은행 예금을 블록체인 상의 디지털 토큰 형태로 발행하여, 법정통화와 1:1 교환이 가능하며 미래 결제 시스템 혁신의 핵심 요소로 주목받는 것은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스테이블코인</li><li>② CBDC (중앙은행 디지털 화폐)</li><li>③ 예금토큰</li><li>④ 전자화폐</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 예금토큰</p>
+      <p><strong>해설:</strong> 예금토큰은 은행 예금을 블록체인상에서 토큰화하여 유통시키는 것으로, 은행의 부채로 기록되는 디지털 자산입니다. ① 스테이블코인은 가치 안정화를 목표로 하는 암호화폐로, 법정화폐 등에 가치가 고정되나 발행 주체가 은행이 아닐 수 있습니다. ② CBDC는 중앙은행이 직접 발행하는 디지털 형태의 법정 화폐로, 민간 은행의 예금 토큰과는 발행 주체가 다릅니다. ④ 전자화폐는 IC칩이나 서버에 저장된 선불 형태로 사용되는 화폐로, 블록체인 기반의 토큰 형태와는 기술적 차이가 있습니다.</p>
+      <p>관련 시사 뉴스: 예금토큰 실험 하반기 50만, 감독 체계는 아직 논의 중</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음은 7월부터 시행되는 국내 원/달러 외환시장 개방 확대에 대한 설명이다. 옳지 않은 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 국내 은행 및 외환 중개기관의 참여 시간이 24시간으로 확대된다.</li><li>② 해외 금융기관도 국내 시장에 직접 참여하여 원화 거래가 가능해진다.</li><li>③ 외환시장 변동성 확대에 대비하여 금융당국의 모니터링이 강화될 예정이다.</li><li>④ 원화 국제화 촉진 및 국내 기업의 환전 편의 증진이 기대된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 국내 은행 및 외환 중개기관의 참여 시간이 24시간으로 확대된다.</p>
+      <p><strong>해설:</strong> 7월부터 원/달러 외환시장 거래 시간은 새벽 2시까지 확대되지만, 24시간은 아닙니다. ② 해외 금융기관의 국내 시장 직접 참여는 원화 국제화를 위한 중요한 요소입니다. ③ 외환시장의 변동성 확대 가능성에 대비하여 금융당국의 감독 및 모니터링 강화는 필수적입니다. ④ 거래 시간 확대와 해외 기관 참여는 원화의 국제적 위상을 높이고 국내 기업의 환전 편의를 증진할 수 있습니다.</p>
+      <p>관련 시사 뉴스: "실시간 환전 좋지만 변동성 우려"…7월부터 원·달러 24시간 거래</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. '청년미래적금'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 가입 가능 연령은 만 29세 이하의 청년으로 제한된다.</li><li>② 연간 총급여가 7,500만원 이하인 경우에만 가입할 수 있다.</li><li>③ 기본금리 외에 가입 기간 동안 우대금리와 정부 기여금을 추가로 지급받을 수 있다.</li><li>④ 적금 가입 기간은 3년 만기로 고정되어 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 기본금리 외에 가입 기간 동안 우대금리와 정부 기여금을 추가로 지급받을 수 있다.</p>
+      <p><strong>해설:</strong> 청년미래적금은 기본금리에 우대금리와 정부 기여금 혜택이 더해져 높은 수익률을 제공하는 상품입니다. ① 가입 가능 연령은 만 19세 이상 34세 이하 청년으로 제한됩니다. ② 연간 총급여 3,600만원 이하 (종합소득금액 2,600만원 이하)일 경우 가입 가능합니다. ④ 적금 가입 기간은 2년 만기로 고정되어 있습니다.</p>
+      <p>관련 시사 뉴스: '年19% 수익' 청년미래적금 닷새만에 100만명 가입</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 취약계층의 금융 부담 완화를 위한 정책 서민금융상품인 '새희망홀씨 대출'의 주요 특징으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 연 소득 3,500만원 이하이거나 신용평점 하위 20% 이내이면서 연 소득 4,500만원 이하인 경우 신청 가능하다.</li><li>② 제2금융권 대출 상품으로 분류되어 은행 대출 심사 기준이 적용되지 않는다.</li><li>③ 대출 상환 방식은 원리금 균등 분할 상환이 일반적이다.</li><li>④ 은행별로 대출 심사 기준 및 우대금리 조건이 상이할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 제2금융권 대출 상품으로 분류되어 은행 대출 심사 기준이 적용되지 않는다.</p>
+      <p><strong>해설:</strong> 새희망홀씨 대출은 시중은행에서 취급하는 정책 서민금융상품으로, 각 은행의 자체적인 대출 심사 기준이 적용됩니다. ① 새희망홀씨 대출의 일반적인 소득 및 신용도 기준입니다. ③ 원리금 균등 분할 상환은 새희망홀씨 대출의 주요 상환 방식 중 하나입니다. ④ 새희망홀씨는 시중은행에서 취급하며, 각 은행의 자체적인 심사 기준과 우대금리 정책이 적용될 수 있습니다.</p>
+      <p>관련 시사 뉴스: KB국민은행, '새희망홀씨 금융비용 지원'-취약차주 금융비용 부담 완화</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 은행권 가계대출이 급증하며 금융당국이 관리를 강화하는 추세이다. 이로 인해 은행의 여신 업무에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 신용대출 및 주택담보대출 심사 기준이 완화되어 대출 취급액이 더욱 증가할 것이다.</li><li>② 고신용자 위주의 대출 공급이 확대되고 중저신용자를 위한 상품은 축소될 것이다.</li><li>③ 총부채원리금상환비율(DSR) 등 대출 규제 준수를 위한 심사가 더욱 강화될 것이다.</li><li>④ 기업 대출 비중이 감소하고 가계 대출에 대한 영업 경쟁이 심화될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 총부채원리금상환비율(DSR) 등 대출 규제 준수를 위한 심사가 더욱 강화될 것이다.</p>
+      <p><strong>해설:</strong> 가계대출 급증과 금융당국의 관리 강화는 은행의 DSR 등 대출 규제 준수를 위한 심사 강화를 유도하여 대출을 억제하는 방향으로 작용합니다. ① 대출 급증 상황에서는 심사 기준이 강화되어 대출 취급액이 감소할 가능성이 높습니다. ② 대출 규제는 모든 차주에게 적용되며, 중저신용자 대출은 상생금융 차원에서 유지될 수 있습니다. ④ 가계대출 규제 강화는 은행이 기업 대출 비중을 늘리거나, 대출 성장세가 둔화될 수 있음을 의미합니다.</p>
+      <p>관련 시사 뉴스: 가계대출 8조 폭증에… 은행권 대출 옥죈다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 금융권의 해외부동산 투자 부실 우려가 커지면서 금융당국이 강조하는 은행의 리스크 관리 방안으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 해외 대체투자 자산에 대한 담보비율을 낮춰 투자 확대를 유도한다.</li><li>② 해외 부동산 익스포저에 대한 자산 건전성 분류 기준을 완화한다.</li><li>③ 해외 부동산 관련 대출 및 투자에 대한 충당금 적립을 강화한다.</li><li>④ 글로벌 경기 둔화 우려에도 불구하고 고수익 해외 투자 상품을 적극 개발한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 해외 부동산 관련 대출 및 투자에 대한 충당금 적립을 강화한다.</p>
+      <p><strong>해설:</strong> 해외부동산 부실 우려 상황에서 금융당국은 은행의 손실 흡수 능력을 높이기 위해 충당금 적립 강화를 요구합니다. ① 부실 우려 상황에서 담보비율을 낮추는 것은 리스크를 증대시키는 요인이 됩니다. ② 자산 건전성 분류 기준 완화는 부실을 은폐하는 행위로, 금융당국의 방향과 다릅니다. ④ 고수익 투자는 일반적으로 높은 위험을 수반하므로, 부실 우려 상황에서는 신중해야 합니다.</p>
+      <p>관련 시사 뉴스: 금융권 해외부동산 부실 우려 2조 넘어…"리스크 관리에 집중"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 뉴스에서 언급된 '새도약기금'으로의 연체채권 매각 및 '장기연체채권 소각'은 금융권 및 경제에 어떤 긍정적 영향을 미칠 수 있는가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 수익성 개선 및 자산 건전성 악화 방지에 기여한다.</li><li>② 채무자의 신용 회복을 지원하고 재기를 위한 기회를 제공한다.</li><li>③ 금융기관 간 대출 경쟁을 심화시켜 대출 금리 인하를 유도한다.</li><li>④ 정부의 재정 지출 확대로 시중 유동성을 증가시키는 효과가 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 채무자의 신용 회복을 지원하고 재기를 위한 기회를 제공한다.</p>
+      <p><strong>해설:</strong> 연체채권 매각 및 소각은 채무 부담을 경감시켜 채무자가 신용을 회복하고 경제적으로 재기할 수 있도록 돕는 사회적 안전망 역할을 합니다. ① 연체채권 매각은 일시적으로 은행의 자산 건전성을 개선할 수 있지만, 수익성 개선과는 직접적인 관련이 적습니다. ③ 연체채권 매각/소각은 대출 경쟁이나 금리 인하와는 직접적인 관계가 없습니다. ④ 정부의 재정 지출보다는 채무 조정 및 사회적 비용 절감 효과가 더 큽니다.</p>
+      <p>관련 시사 뉴스: 상록수 등 연체채권 1조원 새도약기금에 매각…11만명 추심 벗어나</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 미국 연방준비제도(FED) 위원이 "물가 너무 높은 상황"이라고 경고하는 것은 향후 연준의 통화정책 방향에 어떤 영향을 미칠 가능성이 높은가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 경기 부양을 위해 기준금리 인하를 적극적으로 고려할 것이다.</li><li>② 양적 완화 정책을 통해 시장에 유동성을 공급할 것이다.</li><li>③ 인플레이션 억제를 위해 긴축적인 통화정책 기조를 유지하거나 강화할 것이다.</li><li>④ 달러화 약세를 유도하여 수출 경쟁력을 강화하려 할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 인플레이션 억제를 위해 긴축적인 통화정책 기조를 유지하거나 강화할 것이다.</p>
+      <p><strong>해설:</strong> 높은 물가 상황에 대한 경고는 연준이 인플레이션을 최우선으로 보고 있으며, 이를 억제하기 위해 금리 인상이나 긴축 기조 유지 등의 정책을 펼칠 가능성이 높다는 의미입니다. ① 물가가 높은 상황에서는 금리 인하가 인플레이션을 더욱 악화시킬 수 있습니다. ② 양적 완화는 시장 유동성을 늘려 물가 상승 압력을 가중시킬 수 있으므로 적절치 않습니다. ④ 연준의 주요 목표는 물가 안정과 완전 고용이지, 특정 환율 수준을 유도하는 것이 아닙니다.</p>
+      <p>관련 시사 뉴스: 美 연준 바킨 위원 "물가 너무 높은 상황" 경고</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 금융감독원장이 최근 신용융자 증가와 '빚투' 현상에 대해 "심각하게 보고 있다"고 언급한 이유는 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 주식 시장에 활력을 불어넣어 경제 성장에 기여하기 위함이다.</li><li>② 금융기관의 대출 수익 확대를 통한 건전성 개선을 기대하기 때문이다.</li><li>③ 개인 투자자의 과도한 부채 증가가 금융 시스템 불안정으로 이어질 위험이 있기 때문이다.</li><li>④ 글로벌 투자 자금 유입을 촉진하여 국내 증시를 부양하기 위한 시그널이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 개인 투자자의 과도한 부채 증가가 금융 시스템 불안정으로 이어질 위험이 있기 때문이다.</p>
+      <p><strong>해설:</strong> 금감원장은 빚투로 인한 가계 부채 증가와 이로 인한 금융 시스템의 잠재적 불안정성 확대를 가장 큰 위험 요소로 판단하고 있습니다. ① 빚투는 단기적으로 증시 활성화에 기여할 수 있으나, 장기적인 관점에서 과열을 야기하고 건전성을 해칠 수 있습니다. ② 금융기관의 단기적 수익보다는 금융 시스템의 안정성을 우선합니다. ④ 빚투는 주로 국내 개인 투자자에 의해 이루어지며, 글로벌 자금 유입과는 직접적인 관련이 적습니다.</p>
+      <p>관련 시사 뉴스: 너도나도 ‘빚투’ 하더니 신용융자 벌써 38조…금감원장 “심각하게 보고 있다”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-06-29</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1412,"category":"금융용어","question":"은행의 단기 자금조달 비용을 반영하며, 무위험 지표금리(RFR)의 일종으로 주로 변동금리 대출 및 파생상품의 준거금리로 활용되는 지표는 무엇인가?","answer":"③ KOFR","explanation":"KOFR은 한국의 무위험 지표금리로, RP거래를 기반으로 산출되어 변동금리 금융상품의 준거금리로 활용됩니다. ① CD금리는 은행의 자금조달 금리 중 하나로, 과거 변동금리 대출의 준거금리였으나 실제 자금거래를 반영하지 못하는 한계가 있습니다. ② COFIX는 국내 은행들의 실제 자금조달 금리를 가중평균한 지수로, 주로 주택담보대출 변동금리의 기준이 됩니다. ④ LIBOR는 런던 은행 간 대출금리로 국제 금융시장의 기준금리였으나, 조작 스캔들 이후 폐지되고 RFR로 전환되고 있습니다.","news_context":"금감원, 다음 달부터 은행권 'KOFR 변동금리채' 발행 유도","news_url":"https://www.yna.co.kr/view/AKR20260628048100002","options":["① CD금리","② COFIX","③ KOFR","④ LIBOR"]},{"id":1413,"category":"금융용어","question":"은행 예금을 블록체인 상의 디지털 토큰 형태로 발행하여, 법정통화와 1:1 교환이 가능하며 미래 결제 시스템 혁신의 핵심 요소로 주목받는 것은 무엇인가?","answer":"③ 예금토큰","explanation":"예금토큰은 은행 예금을 블록체인상에서 토큰화하여 유통시키는 것으로, 은행의 부채로 기록되는 디지털 자산입니다. ① 스테이블코인은 가치 안정화를 목표로 하는 암호화폐로, 법정화폐 등에 가치가 고정되나 발행 주체가 은행이 아닐 수 있습니다. ② CBDC는 중앙은행이 직접 발행하는 디지털 형태의 법정 화폐로, 민간 은행의 예금 토큰과는 발행 주체가 다릅니다. ④ 전자화폐는 IC칩이나 서버에 저장된 선불 형태로 사용되는 화폐로, 블록체인 기반의 토큰 형태와는 기술적 차이가 있습니다.","news_context":"예금토큰 실험 하반기 50만, 감독 체계는 아직 논의 중","news_url":"http://www.hansbiz.co.kr/news/articleView.html?idxno=846045","options":["① 스테이블코인","② CBDC (중앙은행 디지털 화폐)","③ 예금토큰","④ 전자화폐"]},{"id":1414,"category":"금융용어","question":"다음은 7월부터 시행되는 국내 원/달러 외환시장 개방 확대에 대한 설명이다. 옳지 않은 것은?","answer":"① 국내 은행 및 외환 중개기관의 참여 시간이 24시간으로 확대된다.","explanation":"7월부터 원/달러 외환시장 거래 시간은 새벽 2시까지 확대되지만, 24시간은 아닙니다. ② 해외 금융기관의 국내 시장 직접 참여는 원화 국제화를 위한 중요한 요소입니다. ③ 외환시장의 변동성 확대 가능성에 대비하여 금융당국의 감독 및 모니터링 강화는 필수적입니다. ④ 거래 시간 확대와 해외 기관 참여는 원화의 국제적 위상을 높이고 국내 기업의 환전 편의를 증진할 수 있습니다.","news_context":"\"실시간 환전 좋지만 변동성 우려\"…7월부터 원·달러 24시간 거래","news_url":"https://www.mk.co.kr/news/economy/12085023","options":["① 국내 은행 및 외환 중개기관의 참여 시간이 24시간으로 확대된다.","② 해외 금융기관도 국내 시장에 직접 참여하여 원화 거래가 가능해진다.","③ 외환시장 변동성 확대에 대비하여 금융당국의 모니터링이 강화될 예정이다.","④ 원화 국제화 촉진 및 국내 기업의 환전 편의 증진이 기대된다."]},{"id":1415,"category":"세부지식","question":"'청년미래적금'에 대한 설명으로 옳은 것은?","answer":"③ 기본금리 외에 가입 기간 동안 우대금리와 정부 기여금을 추가로 지급받을 수 있다.","explanation":"청년미래적금은 기본금리에 우대금리와 정부 기여금 혜택이 더해져 높은 수익률을 제공하는 상품입니다. ① 가입 가능 연령은 만 19세 이상 34세 이하 청년으로 제한됩니다. ② 연간 총급여 3,600만원 이하 (종합소득금액 2,600만원 이하)일 경우 가입 가능합니다. ④ 적금 가입 기간은 2년 만기로 고정되어 있습니다.","news_context":"'年19% 수익' 청년미래적금 닷새만에 100만명 가입","news_url":"https://www.mk.co.kr/news/economy/12084372","options":["① 가입 가능 연령은 만 29세 이하의 청년으로 제한된다.","② 연간 총급여가 7,500만원 이하인 경우에만 가입할 수 있다.","③ 기본금리 외에 가입 기간 동안 우대금리와 정부 기여금을 추가로 지급받을 수 있다.","④ 적금 가입 기간은 3년 만기로 고정되어 있다."]},{"id":1416,"category":"세부지식","question":"취약계층의 금융 부담 완화를 위한 정책 서민금융상품인 '새희망홀씨 대출'의 주요 특징으로 옳지 않은 것은?","answer":"② 제2금융권 대출 상품으로 분류되어 은행 대출 심사 기준이 적용되지 않는다.","explanation":"새희망홀씨 대출은 시중은행에서 취급하는 정책 서민금융상품으로, 각 은행의 자체적인 대출 심사 기준이 적용됩니다. ① 새희망홀씨 대출의 일반적인 소득 및 신용도 기준입니다. ③ 원리금 균등 분할 상환은 새희망홀씨 대출의 주요 상환 방식 중 하나입니다. ④ 새희망홀씨는 시중은행에서 취급하며, 각 은행의 자체적인 심사 기준과 우대금리 정책이 적용될 수 있습니다.","news_context":"KB국민은행, '새희망홀씨 금융비용 지원'-취약차주 금융비용 부담 완화","news_url":"http://www.techholic.co.kr/news/articleView.html?idxno=221867","options":["① 연 소득 3,500만원 이하이거나 신용평점 하위 20% 이내이면서 연 소득 4,500만원 이하인 경우 신청 가능하다.","② 제2금융권 대출 상품으로 분류되어 은행 대출 심사 기준이 적용되지 않는다.","③ 대출 상환 방식은 원리금 균등 분할 상환이 일반적이다.","④ 은행별로 대출 심사 기준 및 우대금리 조건이 상이할 수 있다."]},{"id":1417,"category":"시사","question":"최근 은행권 가계대출이 급증하며 금융당국이 관리를 강화하는 추세이다. 이로 인해 은행의 여신 업무에 미칠 영향으로 가장 적절한 것은?","answer":"③ 총부채원리금상환비율(DSR) 등 대출 규제 준수를 위한 심사가 더욱 강화될 것이다.","explanation":"가계대출 급증과 금융당국의 관리 강화는 은행의 DSR 등 대출 규제 준수를 위한 심사 강화를 유도하여 대출을 억제하는 방향으로 작용합니다. ① 대출 급증 상황에서는 심사 기준이 강화되어 대출 취급액이 감소할 가능성이 높습니다. ② 대출 규제는 모든 차주에게 적용되며, 중저신용자 대출은 상생금융 차원에서 유지될 수 있습니다. ④ 가계대출 규제 강화는 은행이 기업 대출 비중을 늘리거나, 대출 성장세가 둔화될 수 있음을 의미합니다.","news_context":"가계대출 8조 폭증에… 은행권 대출 옥죈다","news_url":"https://www.mk.co.kr/news/economy/12085020","options":["① 신용대출 및 주택담보대출 심사 기준이 완화되어 대출 취급액이 더욱 증가할 것이다.","② 고신용자 위주의 대출 공급이 확대되고 중저신용자를 위한 상품은 축소될 것이다.","③ 총부채원리금상환비율(DSR) 등 대출 규제 준수를 위한 심사가 더욱 강화될 것이다.","④ 기업 대출 비중이 감소하고 가계 대출에 대한 영업 경쟁이 심화될 것이다."]},{"id":1418,"category":"시사","question":"금융권의 해외부동산 투자 부실 우려가 커지면서 금융당국이 강조하는 은행의 리스크 관리 방안으로 가장 적절한 것은?","answer":"③ 해외 부동산 관련 대출 및 투자에 대한 충당금 적립을 강화한다.","explanation":"해외부동산 부실 우려 상황에서 금융당국은 은행의 손실 흡수 능력을 높이기 위해 충당금 적립 강화를 요구합니다. ① 부실 우려 상황에서 담보비율을 낮추는 것은 리스크를 증대시키는 요인이 됩니다. ② 자산 건전성 분류 기준 완화는 부실을 은폐하는 행위로, 금융당국의 방향과 다릅니다. ④ 고수익 투자는 일반적으로 높은 위험을 수반하므로, 부실 우려 상황에서는 신중해야 합니다.","news_context":"금융권 해외부동산 부실 우려 2조 넘어…\"리스크 관리에 집중\"","news_url":"https://www.yna.co.kr/view/AKR20260628033700002","options":["① 해외 대체투자 자산에 대한 담보비율을 낮춰 투자 확대를 유도한다.","② 해외 부동산 익스포저에 대한 자산 건전성 분류 기준을 완화한다.","③ 해외 부동산 관련 대출 및 투자에 대한 충당금 적립을 강화한다.","④ 글로벌 경기 둔화 우려에도 불구하고 고수익 해외 투자 상품을 적극 개발한다."]},{"id":1419,"category":"시사","question":"뉴스에서 언급된 '새도약기금'으로의 연체채권 매각 및 '장기연체채권 소각'은 금융권 및 경제에 어떤 긍정적 영향을 미칠 수 있는가?","answer":"② 채무자의 신용 회복을 지원하고 재기를 위한 기회를 제공한다.","explanation":"연체채권 매각 및 소각은 채무 부담을 경감시켜 채무자가 신용을 회복하고 경제적으로 재기할 수 있도록 돕는 사회적 안전망 역할을 합니다. ① 연체채권 매각은 일시적으로 은행의 자산 건전성을 개선할 수 있지만, 수익성 개선과는 직접적인 관련이 적습니다. ③ 연체채권 매각/소각은 대출 경쟁이나 금리 인하와는 직접적인 관계가 없습니다. ④ 정부의 재정 지출보다는 채무 조정 및 사회적 비용 절감 효과가 더 큽니다.","news_context":"상록수 등 연체채권 1조원 새도약기금에 매각…11만명 추심 벗어나","news_url":"https://www.mk.co.kr/news/economy/12084911","options":["① 은행의 수익성 개선 및 자산 건전성 악화 방지에 기여한다.","② 채무자의 신용 회복을 지원하고 재기를 위한 기회를 제공한다.","③ 금융기관 간 대출 경쟁을 심화시켜 대출 금리 인하를 유도한다.","④ 정부의 재정 지출 확대로 시중 유동성을 증가시키는 효과가 있다."]},{"id":1420,"category":"시사","question":"미국 연방준비제도(FED) 위원이 \"물가 너무 높은 상황\"이라고 경고하는 것은 향후 연준의 통화정책 방향에 어떤 영향을 미칠 가능성이 높은가?","answer":"③ 인플레이션 억제를 위해 긴축적인 통화정책 기조를 유지하거나 강화할 것이다.","explanation":"높은 물가 상황에 대한 경고는 연준이 인플레이션을 최우선으로 보고 있으며, 이를 억제하기 위해 금리 인상이나 긴축 기조 유지 등의 정책을 펼칠 가능성이 높다는 의미입니다. ① 물가가 높은 상황에서는 금리 인하가 인플레이션을 더욱 악화시킬 수 있습니다. ② 양적 완화는 시장 유동성을 늘려 물가 상승 압력을 가중시킬 수 있으므로 적절치 않습니다. ④ 연준의 주요 목표는 물가 안정과 완전 고용이지, 특정 환율 수준을 유도하는 것이 아닙니다.","news_context":"美 연준 바킨 위원 \"물가 너무 높은 상황\" 경고","news_url":"https://www.yna.co.kr/view/AKR20260629014200009","options":["① 경기 부양을 위해 기준금리 인하를 적극적으로 고려할 것이다.","② 양적 완화 정책을 통해 시장에 유동성을 공급할 것이다.","③ 인플레이션 억제를 위해 긴축적인 통화정책 기조를 유지하거나 강화할 것이다.","④ 달러화 약세를 유도하여 수출 경쟁력을 강화하려 할 것이다."]},{"id":1421,"category":"시사","question":"금융감독원장이 최근 신용융자 증가와 '빚투' 현상에 대해 \"심각하게 보고 있다\"고 언급한 이유는 무엇인가?","answer":"③ 개인 투자자의 과도한 부채 증가가 금융 시스템 불안정으로 이어질 위험이 있기 때문이다.","explanation":"금감원장은 빚투로 인한 가계 부채 증가와 이로 인한 금융 시스템의 잠재적 불안정성 확대를 가장 큰 위험 요소로 판단하고 있습니다. ① 빚투는 단기적으로 증시 활성화에 기여할 수 있으나, 장기적인 관점에서 과열을 야기하고 건전성을 해칠 수 있습니다. ② 금융기관의 단기적 수익보다는 금융 시스템의 안정성을 우선합니다. ④ 빚투는 주로 국내 개인 투자자에 의해 이루어지며, 글로벌 자금 유입과는 직접적인 관련이 적습니다.","news_context":"너도나도 ‘빚투’ 하더니 신용융자 벌써 38조…금감원장 “심각하게 보고 있다”","news_url":"https://www.mk.co.kr/news/economy/12084875","options":["① 주식 시장에 활력을 불어넣어 경제 성장에 기여하기 위함이다.","② 금융기관의 대출 수익 확대를 통한 건전성 개선을 기대하기 때문이다.","③ 개인 투자자의 과도한 부채 증가가 금융 시스템 불안정으로 이어질 위험이 있기 때문이다.","④ 글로벌 투자 자금 유입을 촉진하여 국내 증시를 부양하기 위한 시그널이다."]},{"id":12,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
