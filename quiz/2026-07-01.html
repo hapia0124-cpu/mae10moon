@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-01 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-01 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-01 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 실물 자산의 소유권을 블록체인 상의 디지털 토큰 형태로 발행하여 거래하는 새로운 투자 방식을 의미한다. 이를 통해 부동산, 미술품 등 전통적인 자산부터 주식, 채권 등 금융 자산까지 분할 소유 및 유동성을 높일 수 있다. 이 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① NFT(Non-Fungible Token)</li><li>② 토큰화 주식 (Tokenized Stocks)</li><li>③ 증권형 토큰 (Security Token)</li><li>④ STO(Security Token Offering)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 토큰화 주식 (Tokenized Stocks)</p>
+      <p><strong>해설:</strong> 토큰화 주식은 주식 등 실물 자산의 소유권을 블록체인상의 디지털 토큰 형태로 발행하여 거래하는 방식입니다. [오답해설] ① NFT는 비대체성 토큰으로, 고유한 가치를 지니는 디지털 자산에 주로 사용됩니다. ③ 증권형 토큰은 주식 외에도 다양한 증권성 자산의 토큰화를 포괄하는 넓은 개념입니다. ④ STO는 증권형 토큰을 발행하고 공모하는 행위 자체를 의미합니다.</p>
+      <p>관련 시사 뉴스: 개미들 눈 돌리는 사이… 이더리움·BNB 삼킨 '토큰화 주식'이라는 시한...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 법정화폐, 금, 기타 암호자산 등 특정 자산의 가치에 연동되어 가격 변동성을 최소화하도록 설계된 암호화폐를 일컫는다. 이는 암호화폐 시장의 높은 변동성 문제를 해결하고, 실제 금융 거래에 활용될 가능성을 높이는 목적으로 개발된다. 이 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 알트코인 (Altcoin)</li><li>② 스테이블코인 (Stablecoin)</li><li>③ CBDC (Central Bank Digital Currency)</li><li>④ 밈코인 (Memecoin)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 스테이블코인 (Stablecoin)</p>
+      <p><strong>해설:</strong> 스테이블코인은 가격 변동성을 최소화하기 위해 특정 자산에 가치를 연동시킨 암호화폐를 말합니다. [오답해설] ① 알트코인은 비트코인을 제외한 모든 암호화폐를 통칭합니다. ③ CBDC는 각국 중앙은행이 발행하는 디지털 화폐로, 스테이블코인과는 발행 주체와 목적에서 차이가 있습니다. ④ 밈코인은 특정 밈이나 유머를 기반으로 발행된 암호화폐입니다.</p>
+      <p>관련 시사 뉴스: [단독] 비자·블랙록 ‘스테이블코인’에 삼성전자·신한금융·두나무 ...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 금융 서비스 접근성이 낮은 계층이나 중소기업 등에게 금융 기회를 확대하여 경제적 자립을 돕고 사회 통합을 촉진하는 금융 정책 및 활동을 의미한다. 대출, 보험, 저축 등 다양한 금융 상품 및 서비스 제공을 포함한다. 이 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 마이크로크레디트 (Microcredit)</li><li>② ESG 금융 (ESG Finance)</li><li>③ 포용적 금융 (Inclusive Finance)</li><li>④ 디지털 금융 (Digital Finance)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 포용적 금융 (Inclusive Finance)</p>
+      <p><strong>해설:</strong> 포용적 금융은 금융 소외 계층에게 금융 서비스 접근성을 확대하여 경제적 자립을 돕는 정책 및 활동입니다. [오답해설] ① 마이크로크레디트는 소액 무담보 대출에 한정되는 개념입니다. ② ESG 금융은 환경, 사회, 지배구조 요소를 고려하는 금융입니다. ④ 디지털 금융은 디지털 기술을 활용한 금융 서비스 전반을 의미합니다.</p>
+      <p>관련 시사 뉴스: [금융 라운지] "배달라이더·대리기사도 대출 쉬워집니다"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 청년들의 자산 형성을 지원하기 위한 개인종합자산관리계좌(ISA)의 일종으로, 특정 연령 조건을 충족하는 청년에게 일반 ISA보다 더 큰 세제 혜택을 제공하는 상품이다. 청년형 ISA에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 가입 대상은 만 19세 이상 34세 이하의 청년이다. (단, 직전년도 근로소득 또는 사업소득이 있는 경우 만 15세 이상 34세 이하)</li><li>② 의무 가입 기간은 3년이며, 만기 시 비과세 혜택과 함께 납입액의 일정 비율을 소득공제 받을 수 있다.</li><li>③ 연간 납입 한도는 2,000만원이며, 총 1억원까지 납입할 수 있다.</li><li>④ 계좌 내에서 발생한 이자 및 배당소득에 대해 일정 한도까지 비과세가 적용된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 의무 가입 기간은 3년이며, 만기 시 비과세 혜택과 함께 납입액의 일정 비율을 소득공제 받을 수 있다.</p>
+      <p><strong>해설:</strong> 청년형 ISA는 납입액에 대한 소득공제 혜택은 없으며, 의무 가입 기간은 5년(일반형과 동일)으로 3년 이상 유지 시 비과세 한도 확대 혜택을 제공합니다. [오답해설] ① 청년형 ISA의 가입 대상은 연령 및 소득 기준을 충족하는 청년입니다. ③ 청년형 ISA의 연간 납입 한도와 총 납입 한도는 일반 ISA와 동일합니다. ④ 청년형 ISA는 일반 ISA 대비 높은 한도(500만원)로 이자 및 배당소득에 대한 비과세 혜택을 제공합니다.</p>
+      <p>관련 시사 뉴스: 청년형 ISA 법제화 추진..."이자 · 배당소득 비과세·납입금 소득공제 ...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 농협은행에서 판매하는 'KRX골드채움신탁' 상품은 한국거래소(KRX) 금시장을 활용하여 금에 간접 투자하고 비과세 혜택을 받을 수 있는 금융상품이다. 이 상품에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 투자자는 신탁을 통해 실물 금을 직접 매매하는 방식으로 거래한다.</li><li>② 한국거래소(KRX) 금시장의 금 가격을 추종하여 투자된다.</li><li>③ 금 매매 시 발생하는 시세차익에 대해 소득세와 부가가치세가 면제된다.</li><li>④ 투자자는 필요시 실물 금 인출을 요청할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 투자자는 신탁을 통해 실물 금을 직접 매매하는 방식으로 거래한다.</p>
+      <p><strong>해설:</strong> KRX골드채움신탁은 신탁을 통해 금에 간접 투자하는 방식이며, 투자자가 실물 금을 직접 매매하는 것은 아닙니다. [오답해설] ② 이 상품은 KRX 금시장의 금 가격을 추종하여 금에 간접 투자합니다. ③ KRX 금시장에서의 금 매매차익에 대해서는 소득세 및 부가가치세가 면제됩니다. ④ 투자자는 신탁 계약을 통해 간접 투자하지만, 원한다면 일정한 절차를 거쳐 실물 금으로 인출할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 금 투자하며 비과세 혜택도 농협銀 KRX골드채움신탁</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 주택담보대출 관련 LTV(Loan To Value) 규제는 금융 안정성을 확보하고 가계 부채를 관리하기 위한 주요 정책 수단이다. LTV 규제에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택 가격 대비 대출 한도를 비율로 나타낸 것으로, 규제 지역에 따라 차등 적용된다.</li><li>② 주택담보대출 시 담보 가치 대비 최대 대출 가능 금액을 제한하는 역할을 한다.</li><li>③ 투기과열지구 및 조정대상지역에서는 비규제지역보다 높은 LTV가 적용되어 대출 한도가 확대된다.</li><li>④ 금융당국은 부동산 시장 과열 시 LTV를 하향 조정하여 대출을 억제하고, 시장 안정 시 상향 조정하여 경기 부양을 유도할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 투기과열지구 및 조정대상지역에서는 비규제지역보다 높은 LTV가 적용되어 대출 한도가 확대된다.</p>
+      <p><strong>해설:</strong> 투기과열지구 및 조정대상지역과 같은 규제지역에서는 부동산 시장 과열을 억제하기 위해 비규제지역보다 낮은 LTV가 적용되어 대출 한도가 축소됩니다. [오답해설] ① LTV는 주택 가격 대비 대출 한도를 비율로 나타내며, 정부 정책에 따라 규제 지역별로 다른 비율이 적용됩니다. ② LTV 규제는 담보 가치 대비 대출 가능한 금액의 상한을 설정하여 가계 부채 증가를 억제합니다. ④ 금융당국은 LTV 비율 조정을 통해 부동산 시장의 상황에 따라 유동성을 조절하는 정책 수단으로 활용합니다.</p>
+      <p>관련 시사 뉴스: ‘규제지역’ 동탄·기흥·구리 집살 때 대출한도 확 줄어…LTV 70%→40%로</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 2024년 하반기부터 국내 외환시장이 24시간 개방되는 등 외환시장 선진화가 추진된다. 이러한 변화가 국내 시중은행 업무에 미칠 영향으로 가장 거리가 먼 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 야간 및 새벽 시간대 해외 투자자들의 원화 거래 편의성이 증대되어 외환 거래량이 증가할 수 있다.</li><li>② 은행의 외환 트레이딩 업무 부담이 가중될 수 있으나, 심야 시간 외환 변동성 리스크가 완화될 수 있다.</li><li>③ 은행은 해외 금융기관과의 협력을 통해 새로운 외환 상품 및 서비스 개발 기회를 모색할 수 있다.</li><li>④ 국내 기업의 해외 투자 및 외국인 투자자의 국내 투자가 위축되어 외환 유동성이 감소할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 국내 기업의 해외 투자 및 외국인 투자자의 국내 투자가 위축되어 외환 유동성이 감소할 수 있다.</p>
+      <p><strong>해설:</strong> 외환시장 24시간 개방은 해외 투자자의 국내 투자 편의성을 높여 외환 유동성을 증대하고 거래를 활성화하는 데 기여할 것으로 기대됩니다. [오답해설] ① 24시간 개방은 해외 투자자들의 원화 거래 편의성을 높여 외환 거래량 증가로 이어질 수 있습니다. ② 은행은 야간 트레이딩 시스템 구축 등으로 업무 부담이 늘 수 있지만, 시장 개장 시간 확대는 심야 변동성 리스크 완화에 긍정적인 영향을 줄 수 있습니다. ③ 24시간 외환시장 환경은 은행이 글로벌 시장과의 연계를 통해 새로운 외환 상품 및 서비스를 개발할 기회를 제공합니다.</p>
+      <p>관련 시사 뉴스: "외환시장, 24시간 개방…아침 개장 변동성 41% 축소"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 저축은행 예금금리가 4%대 상품이 급증하며 시중은행과의 금리 경쟁이 심화되고 있다. 이러한 현상이 금융 소비자의 자금 운용에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 시중은행의 예금 금리 하락이 불가피해져 소비자의 이자 수익이 감소한다.</li><li>② 저축은행의 대출 금리도 함께 낮아져 소비자 대출 부담이 경감된다.</li><li>③ 저축은행 예금 상품을 통해 더 높은 이자 수익을 기대할 수 있으나, 잠재적 리스크에 대한 주의가 필요하다.</li><li>④ 시중은행은 자금 이탈을 방어하기 위해 예금 상품 종류를 축소하고 금리 경쟁을 회피한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 저축은행 예금 상품을 통해 더 높은 이자 수익을 기대할 수 있으나, 잠재적 리스크에 대한 주의가 필요하다.</p>
+      <p><strong>해설:</strong> 저축은행의 고금리 예금 상품은 소비자에게 더 높은 이자 수익 기회를 제공하지만, 시중은행에 비해 상대적으로 높은 신용 리스크가 존재할 수 있어 주의가 요구됩니다. [오답해설] ① 시중은행은 경쟁 심화로 예금 금리 인상 압박을 받을 수 있어 예금 금리 하락이 불가피하다고 보기는 어렵습니다. ② 저축은행은 고금리로 자금을 조달하므로 대출 금리도 함께 낮아지기보다는 인상될 압박이 더 클 수 있습니다. ④ 시중은행은 자금 이탈을 막기 위해 오히려 예금 금리를 인상하거나 특판 상품을 출시하는 등 금리 경쟁에 참여할 유인이 커집니다.</p>
+      <p>관련 시사 뉴스: 저축은행 예금금리 4%대 상품 급증…2주 만에 평균 0.24%p↑</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 두나무를 비롯한 여러 핀테크 기업 및 금융기관이 금융취약계층의 신용회복을 지원하는 프로젝트를 추진하고 있다. 이러한 활동이 금융권에 미치는 긍정적 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 핀테크 기업의 새로운 수익 모델 발굴을 통해 전통 금융기관의 시장 점유율이 급격히 감소할 수 있다.</li><li>② 금융취약계층의 경제적 자립을 돕고 사회적 안전망을 강화하여 금융 시스템의 전반적인 건전성을 향상시킬 수 있다.</li><li>③ 신용 회복 지원 과정에서 개인 정보 유출 위험이 증가하여 금융 소비자 보호에 대한 우려가 커질 수 있다.</li><li>④ 금융기관의 사회적 책임(CSR) 활동이 늘어나면서 본연의 금융 영업 활동이 위축될 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 금융취약계층의 경제적 자립을 돕고 사회적 안전망을 강화하여 금융 시스템의 전반적인 건전성을 향상시킬 수 있다.</p>
+      <p><strong>해설:</strong> 금융취약계층의 신용회복 지원은 사회적 안전망을 강화하고 개인의 경제적 자립을 도와 장기적으로 금융 시스템의 안정성과 건전성 향상에 기여합니다. [오답해설] ① 금융취약계층 지원 활동은 수익 모델 발굴보다는 사회적 가치 창출에 중점을 두며, 전통 금융기관의 시장 점유율 감소로 이어질 필연적인 이유는 없습니다. ③ 개인 정보 보호는 중요한 과제이나, 신용 회복 지원 자체의 긍정적 영향으로 보기는 어렵습니다. ④ 사회적 책임 활동은 금융기관의 이미지 개선 및 장기적인 고객 기반 확대에 긍정적인 영향을 미쳐, 본연의 영업 활동을 위축시키기보다 보완하는 역할을 합니다.</p>
+      <p>관련 시사 뉴스: 두나무, 금융취약계층 안전망 '디딤' 프로젝트 가동… 청년에서 중장년...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. AI 기술은 금융권의 다양한 업무 영역에서 혁신을 가져오고 있다. AI 기술 도입이 은행의 여신 업무에 미칠 영향으로 옳은 것을 모두 고른 것은? 
+가. 비정형 데이터를 활용한 신용평가 모델 고도화로 대출 심사 정확도를 높일 수 있다. 
+나. 대출 실행 후의 이상 거래 감지 및 사기 탐지 시스템을 강화하여 리스크 관리를 개선할 수 있다. 
+다. 챗봇, 로보어드바이저 등을 통해 고객 맞춤형 대출 상품 추천 및 상담 서비스를 제공할 수 있다. 
+라. AI 시스템 도입으로 인한 초기 투자 비용 증가와 윤리적 문제 발생 가능성은 고려 대상에서 제외된다.</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 가, 나</li><li>② 가, 다</li><li>③ 나, 라</li><li>④ 가, 나, 다</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 가, 나, 다</p>
+      <p><strong>해설:</strong> AI 기술은 비정형 데이터 기반 신용평가, 사기 탐지 및 리스크 관리, 맞춤형 대출 상품 추천 및 상담 등 다양한 여신 업무에서 긍정적인 영향을 미칠 수 있습니다. [오답해설] 라. AI 시스템 도입 시 초기 투자 비용 증가와 개인 정보 보호, 알고리즘의 편향성 등 윤리적 문제 발생 가능성은 반드시 고려해야 할 중요한 요소입니다.</p>
+      <p>관련 시사 뉴스: 카카오뱅크, ‘금융 AI 보안’ 세계서 인정 받아… 국제 학회 논문 4편 채택</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-01</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1432,"category":"금융용어","question":"실물 자산의 소유권을 블록체인 상의 디지털 토큰 형태로 발행하여 거래하는 새로운 투자 방식을 의미한다. 이를 통해 부동산, 미술품 등 전통적인 자산부터 주식, 채권 등 금융 자산까지 분할 소유 및 유동성을 높일 수 있다. 이 용어는 무엇인가?","answer":"② 토큰화 주식 (Tokenized Stocks)","explanation":"토큰화 주식은 주식 등 실물 자산의 소유권을 블록체인상의 디지털 토큰 형태로 발행하여 거래하는 방식입니다. [오답해설] ① NFT는 비대체성 토큰으로, 고유한 가치를 지니는 디지털 자산에 주로 사용됩니다. ③ 증권형 토큰은 주식 외에도 다양한 증권성 자산의 토큰화를 포괄하는 넓은 개념입니다. ④ STO는 증권형 토큰을 발행하고 공모하는 행위 자체를 의미합니다.","news_context":"개미들 눈 돌리는 사이… 이더리움·BNB 삼킨 '토큰화 주식'이라는 시한...","news_url":"https://www.pinpointnews.co.kr/news/articleView.html?idxno=464451","options":["① NFT(Non-Fungible Token)","② 토큰화 주식 (Tokenized Stocks)","③ 증권형 토큰 (Security Token)","④ STO(Security Token Offering)"]},{"id":1433,"category":"금융용어","question":"법정화폐, 금, 기타 암호자산 등 특정 자산의 가치에 연동되어 가격 변동성을 최소화하도록 설계된 암호화폐를 일컫는다. 이는 암호화폐 시장의 높은 변동성 문제를 해결하고, 실제 금융 거래에 활용될 가능성을 높이는 목적으로 개발된다. 이 용어는 무엇인가?","answer":"② 스테이블코인 (Stablecoin)","explanation":"스테이블코인은 가격 변동성을 최소화하기 위해 특정 자산에 가치를 연동시킨 암호화폐를 말합니다. [오답해설] ① 알트코인은 비트코인을 제외한 모든 암호화폐를 통칭합니다. ③ CBDC는 각국 중앙은행이 발행하는 디지털 화폐로, 스테이블코인과는 발행 주체와 목적에서 차이가 있습니다. ④ 밈코인은 특정 밈이나 유머를 기반으로 발행된 암호화폐입니다.","news_context":"[단독] 비자·블랙록 ‘스테이블코인’에 삼성전자·신한금융·두나무 ...","news_url":"https://n.news.naver.com/mnews/article/016/0002663915?sid=101","options":["① 알트코인 (Altcoin)","② 스테이블코인 (Stablecoin)","③ CBDC (Central Bank Digital Currency)","④ 밈코인 (Memecoin)"]},{"id":1434,"category":"금융용어","question":"금융 서비스 접근성이 낮은 계층이나 중소기업 등에게 금융 기회를 확대하여 경제적 자립을 돕고 사회 통합을 촉진하는 금융 정책 및 활동을 의미한다. 대출, 보험, 저축 등 다양한 금융 상품 및 서비스 제공을 포함한다. 이 용어는 무엇인가?","answer":"③ 포용적 금융 (Inclusive Finance)","explanation":"포용적 금융은 금융 소외 계층에게 금융 서비스 접근성을 확대하여 경제적 자립을 돕는 정책 및 활동입니다. [오답해설] ① 마이크로크레디트는 소액 무담보 대출에 한정되는 개념입니다. ② ESG 금융은 환경, 사회, 지배구조 요소를 고려하는 금융입니다. ④ 디지털 금융은 디지털 기술을 활용한 금융 서비스 전반을 의미합니다.","news_context":"[금융 라운지] \"배달라이더·대리기사도 대출 쉬워집니다\"","news_url":"https://www.mk.co.kr/news/economy/12086867","options":["① 마이크로크레디트 (Microcredit)","② ESG 금융 (ESG Finance)","③ 포용적 금융 (Inclusive Finance)","④ 디지털 금융 (Digital Finance)"]},{"id":1435,"category":"세부지식","question":"청년들의 자산 형성을 지원하기 위한 개인종합자산관리계좌(ISA)의 일종으로, 특정 연령 조건을 충족하는 청년에게 일반 ISA보다 더 큰 세제 혜택을 제공하는 상품이다. 청년형 ISA에 대한 설명으로 옳지 않은 것은?","answer":"② 의무 가입 기간은 3년이며, 만기 시 비과세 혜택과 함께 납입액의 일정 비율을 소득공제 받을 수 있다.","explanation":"청년형 ISA는 납입액에 대한 소득공제 혜택은 없으며, 의무 가입 기간은 5년(일반형과 동일)으로 3년 이상 유지 시 비과세 한도 확대 혜택을 제공합니다. [오답해설] ① 청년형 ISA의 가입 대상은 연령 및 소득 기준을 충족하는 청년입니다. ③ 청년형 ISA의 연간 납입 한도와 총 납입 한도는 일반 ISA와 동일합니다. ④ 청년형 ISA는 일반 ISA 대비 높은 한도(500만원)로 이자 및 배당소득에 대한 비과세 혜택을 제공합니다.","news_context":"청년형 ISA 법제화 추진...\"이자 · 배당소득 비과세·납입금 소득공제 ...","news_url":"https://www.pinpointnews.co.kr/news/articleView.html?idxno=464452","options":["① 가입 대상은 만 19세 이상 34세 이하의 청년이다. (단, 직전년도 근로소득 또는 사업소득이 있는 경우 만 15세 이상 34세 이하)","② 의무 가입 기간은 3년이며, 만기 시 비과세 혜택과 함께 납입액의 일정 비율을 소득공제 받을 수 있다.","③ 연간 납입 한도는 2,000만원이며, 총 1억원까지 납입할 수 있다.","④ 계좌 내에서 발생한 이자 및 배당소득에 대해 일정 한도까지 비과세가 적용된다."]},{"id":1436,"category":"세부지식","question":"농협은행에서 판매하는 'KRX골드채움신탁' 상품은 한국거래소(KRX) 금시장을 활용하여 금에 간접 투자하고 비과세 혜택을 받을 수 있는 금융상품이다. 이 상품에 대한 설명으로 옳지 않은 것은?","answer":"① 투자자는 신탁을 통해 실물 금을 직접 매매하는 방식으로 거래한다.","explanation":"KRX골드채움신탁은 신탁을 통해 금에 간접 투자하는 방식이며, 투자자가 실물 금을 직접 매매하는 것은 아닙니다. [오답해설] ② 이 상품은 KRX 금시장의 금 가격을 추종하여 금에 간접 투자합니다. ③ KRX 금시장에서의 금 매매차익에 대해서는 소득세 및 부가가치세가 면제됩니다. ④ 투자자는 신탁 계약을 통해 간접 투자하지만, 원한다면 일정한 절차를 거쳐 실물 금으로 인출할 수 있습니다.","news_context":"금 투자하며 비과세 혜택도 농협銀 KRX골드채움신탁","news_url":"https://www.mk.co.kr/news/economy/12086865","options":["① 투자자는 신탁을 통해 실물 금을 직접 매매하는 방식으로 거래한다.","② 한국거래소(KRX) 금시장의 금 가격을 추종하여 투자된다.","③ 금 매매 시 발생하는 시세차익에 대해 소득세와 부가가치세가 면제된다.","④ 투자자는 필요시 실물 금 인출을 요청할 수 있다."]},{"id":1437,"category":"세부지식","question":"주택담보대출 관련 LTV(Loan To Value) 규제는 금융 안정성을 확보하고 가계 부채를 관리하기 위한 주요 정책 수단이다. LTV 규제에 대한 설명으로 옳지 않은 것은?","answer":"③ 투기과열지구 및 조정대상지역에서는 비규제지역보다 높은 LTV가 적용되어 대출 한도가 확대된다.","explanation":"투기과열지구 및 조정대상지역과 같은 규제지역에서는 부동산 시장 과열을 억제하기 위해 비규제지역보다 낮은 LTV가 적용되어 대출 한도가 축소됩니다. [오답해설] ① LTV는 주택 가격 대비 대출 한도를 비율로 나타내며, 정부 정책에 따라 규제 지역별로 다른 비율이 적용됩니다. ② LTV 규제는 담보 가치 대비 대출 가능한 금액의 상한을 설정하여 가계 부채 증가를 억제합니다. ④ 금융당국은 LTV 비율 조정을 통해 부동산 시장의 상황에 따라 유동성을 조절하는 정책 수단으로 활용합니다.","news_context":"‘규제지역’ 동탄·기흥·구리 집살 때 대출한도 확 줄어…LTV 70%→40%로","news_url":"https://www.mk.co.kr/news/economy/12086770","options":["① 주택 가격 대비 대출 한도를 비율로 나타낸 것으로, 규제 지역에 따라 차등 적용된다.","② 주택담보대출 시 담보 가치 대비 최대 대출 가능 금액을 제한하는 역할을 한다.","③ 투기과열지구 및 조정대상지역에서는 비규제지역보다 높은 LTV가 적용되어 대출 한도가 확대된다.","④ 금융당국은 부동산 시장 과열 시 LTV를 하향 조정하여 대출을 억제하고, 시장 안정 시 상향 조정하여 경기 부양을 유도할 수 있다."]},{"id":1438,"category":"시사","question":"2024년 하반기부터 국내 외환시장이 24시간 개방되는 등 외환시장 선진화가 추진된다. 이러한 변화가 국내 시중은행 업무에 미칠 영향으로 가장 거리가 먼 것은?","answer":"④ 국내 기업의 해외 투자 및 외국인 투자자의 국내 투자가 위축되어 외환 유동성이 감소할 수 있다.","explanation":"외환시장 24시간 개방은 해외 투자자의 국내 투자 편의성을 높여 외환 유동성을 증대하고 거래를 활성화하는 데 기여할 것으로 기대됩니다. [오답해설] ① 24시간 개방은 해외 투자자들의 원화 거래 편의성을 높여 외환 거래량 증가로 이어질 수 있습니다. ② 은행은 야간 트레이딩 시스템 구축 등으로 업무 부담이 늘 수 있지만, 시장 개장 시간 확대는 심야 변동성 리스크 완화에 긍정적인 영향을 줄 수 있습니다. ③ 24시간 외환시장 환경은 은행이 글로벌 시장과의 연계를 통해 새로운 외환 상품 및 서비스를 개발할 기회를 제공합니다.","news_context":"\"외환시장, 24시간 개방…아침 개장 변동성 41% 축소\"","news_url":"","options":["① 야간 및 새벽 시간대 해외 투자자들의 원화 거래 편의성이 증대되어 외환 거래량이 증가할 수 있다.","② 은행의 외환 트레이딩 업무 부담이 가중될 수 있으나, 심야 시간 외환 변동성 리스크가 완화될 수 있다.","③ 은행은 해외 금융기관과의 협력을 통해 새로운 외환 상품 및 서비스 개발 기회를 모색할 수 있다.","④ 국내 기업의 해외 투자 및 외국인 투자자의 국내 투자가 위축되어 외환 유동성이 감소할 수 있다."]},{"id":1439,"category":"시사","question":"최근 저축은행 예금금리가 4%대 상품이 급증하며 시중은행과의 금리 경쟁이 심화되고 있다. 이러한 현상이 금융 소비자의 자금 운용에 미치는 영향으로 가장 적절한 것은?","answer":"③ 저축은행 예금 상품을 통해 더 높은 이자 수익을 기대할 수 있으나, 잠재적 리스크에 대한 주의가 필요하다.","explanation":"저축은행의 고금리 예금 상품은 소비자에게 더 높은 이자 수익 기회를 제공하지만, 시중은행에 비해 상대적으로 높은 신용 리스크가 존재할 수 있어 주의가 요구됩니다. [오답해설] ① 시중은행은 경쟁 심화로 예금 금리 인상 압박을 받을 수 있어 예금 금리 하락이 불가피하다고 보기는 어렵습니다. ② 저축은행은 고금리로 자금을 조달하므로 대출 금리도 함께 낮아지기보다는 인상될 압박이 더 클 수 있습니다. ④ 시중은행은 자금 이탈을 막기 위해 오히려 예금 금리를 인상하거나 특판 상품을 출시하는 등 금리 경쟁에 참여할 유인이 커집니다.","news_context":"저축은행 예금금리 4%대 상품 급증…2주 만에 평균 0.24%p↑","news_url":"https://www.yna.co.kr/view/AKR20260630184400002","options":["① 시중은행의 예금 금리 하락이 불가피해져 소비자의 이자 수익이 감소한다.","② 저축은행의 대출 금리도 함께 낮아져 소비자 대출 부담이 경감된다.","③ 저축은행 예금 상품을 통해 더 높은 이자 수익을 기대할 수 있으나, 잠재적 리스크에 대한 주의가 필요하다.","④ 시중은행은 자금 이탈을 방어하기 위해 예금 상품 종류를 축소하고 금리 경쟁을 회피한다."]},{"id":1440,"category":"시사","question":"두나무를 비롯한 여러 핀테크 기업 및 금융기관이 금융취약계층의 신용회복을 지원하는 프로젝트를 추진하고 있다. 이러한 활동이 금융권에 미치는 긍정적 영향으로 가장 적절한 것은?","answer":"② 금융취약계층의 경제적 자립을 돕고 사회적 안전망을 강화하여 금융 시스템의 전반적인 건전성을 향상시킬 수 있다.","explanation":"금융취약계층의 신용회복 지원은 사회적 안전망을 강화하고 개인의 경제적 자립을 도와 장기적으로 금융 시스템의 안정성과 건전성 향상에 기여합니다. [오답해설] ① 금융취약계층 지원 활동은 수익 모델 발굴보다는 사회적 가치 창출에 중점을 두며, 전통 금융기관의 시장 점유율 감소로 이어질 필연적인 이유는 없습니다. ③ 개인 정보 보호는 중요한 과제이나, 신용 회복 지원 자체의 긍정적 영향으로 보기는 어렵습니다. ④ 사회적 책임 활동은 금융기관의 이미지 개선 및 장기적인 고객 기반 확대에 긍정적인 영향을 미쳐, 본연의 영업 활동을 위축시키기보다 보완하는 역할을 합니다.","news_context":"두나무, 금융취약계층 안전망 '디딤' 프로젝트 가동… 청년에서 중장년...","news_url":"https://www.thefairnews.co.kr/news/articleView.html?idxno=80913","options":["① 핀테크 기업의 새로운 수익 모델 발굴을 통해 전통 금융기관의 시장 점유율이 급격히 감소할 수 있다.","② 금융취약계층의 경제적 자립을 돕고 사회적 안전망을 강화하여 금융 시스템의 전반적인 건전성을 향상시킬 수 있다.","③ 신용 회복 지원 과정에서 개인 정보 유출 위험이 증가하여 금융 소비자 보호에 대한 우려가 커질 수 있다.","④ 금융기관의 사회적 책임(CSR) 활동이 늘어나면서 본연의 금융 영업 활동이 위축될 수 있다."]},{"id":1441,"category":"시사","question":"AI 기술은 금융권의 다양한 업무 영역에서 혁신을 가져오고 있다. AI 기술 도입이 은행의 여신 업무에 미칠 영향으로 옳은 것을 모두 고른 것은? \n가. 비정형 데이터를 활용한 신용평가 모델 고도화로 대출 심사 정확도를 높일 수 있다. \n나. 대출 실행 후의 이상 거래 감지 및 사기 탐지 시스템을 강화하여 리스크 관리를 개선할 수 있다. \n다. 챗봇, 로보어드바이저 등을 통해 고객 맞춤형 대출 상품 추천 및 상담 서비스를 제공할 수 있다. \n라. AI 시스템 도입으로 인한 초기 투자 비용 증가와 윤리적 문제 발생 가능성은 고려 대상에서 제외된다.","answer":"④ 가, 나, 다","explanation":"AI 기술은 비정형 데이터 기반 신용평가, 사기 탐지 및 리스크 관리, 맞춤형 대출 상품 추천 및 상담 등 다양한 여신 업무에서 긍정적인 영향을 미칠 수 있습니다. [오답해설] 라. AI 시스템 도입 시 초기 투자 비용 증가와 개인 정보 보호, 알고리즘의 편향성 등 윤리적 문제 발생 가능성은 반드시 고려해야 할 중요한 요소입니다.","news_context":"카카오뱅크, ‘금융 AI 보안’ 세계서 인정 받아… 국제 학회 논문 4편 채택","news_url":"https://www.mk.co.kr/news/economy/12086783","options":["① 가, 나","② 가, 다","③ 나, 라","④ 가, 나, 다"]},{"id":14,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
