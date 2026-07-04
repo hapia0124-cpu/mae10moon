@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-05 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-05 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-05 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 주식시장에서 특정 종목의 주가가 일정 시간 동안 급변동할 경우 거래를 일시적으로 중단하여 시장의 과도한 변동성을 완화하는 제도를 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① VI (Volatility Interruption)</li><li>② 서킷브레이커 (Circuit Breakers)</li><li>③ 사이드카 (Sidecar)</li><li>④ 핫머니 (Hot Money)</li>
+      </ul>
+      <p><strong>정답:</strong> ① VI (Volatility Interruption)</p>
+      <p><strong>해설:</strong> VI는 개별 종목의 주가가 급변동할 때 거래를 일시적으로 중단시키는 제도를 의미합니다. [오답해설] ② 서킷브레이커는 코스피, 코스닥 등 전체 시장의 지수 변동폭이 일정 수준을 넘어설 때 모든 종목의 매매를 일시 정지시키는 조치입니다. ③ 사이드카는 선물시장의 급변동이 현물시장에 미치는 영향을 완화하기 위해 프로그램 매매를 일시적으로 제한하는 조치입니다. ④ 핫머니는 단기적인 이익을 찾아 국경을 넘나드는 투기성 자금을 뜻합니다.</p>
+      <p>관련 시사 뉴스: 상반기 코스피에서 변동성 완화장치(VI) 발동이 역대 최다를 기록하며 시장의 변동성이 컸던 것으로 나타났습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 투자자의 은퇴 시점을 목표(Target Date)로 설정하고, 목표 시점에 가까워질수록 위험자산 비중을 줄이고 안전자산 비중을 늘리는 등 자산 배분 전략을 자동으로 조절해주는 펀드 상품을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① TDF (Target Date Fund)</li><li>② ETF (Exchange Traded Fund)</li><li>③ MMF (Money Market Fund)</li><li>④ ELS (Equity Linked Securities)</li>
+      </ul>
+      <p><strong>정답:</strong> ① TDF (Target Date Fund)</p>
+      <p><strong>해설:</strong> TDF는 은퇴 시점을 목표로 자산 배분 전략을 자동으로 조정하는 연금 특화 펀드입니다. [오답해설] ② ETF는 특정 지수나 자산의 가격을 추종하도록 설계된 상품으로 주식처럼 거래소에서 매매되는 펀드입니다. ③ MMF는 단기 고수익을 추구하는 초단기 채권형 펀드로 주로 법인이나 기관이 이용합니다. ④ ELS는 주가 지수나 개별 주식의 변동에 연계하여 수익률이 결정되는 파생결합증권입니다.</p>
+      <p>관련 시사 뉴스: 최근 2030세대도 은퇴 자산 마련을 위해 ETF와 함께 TDF 상품을 적극적으로 활용하는 추세입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 최근 국내 외환시장의 거래 시간을 확대하여 원화의 국제화를 도모하고 해외 투자자들의 접근성을 높이고자 시행되는 제도를 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 24시간 외환시장</li><li>② 역외외환시장</li><li>③ 외환보유액 증대 정책</li><li>④ 통화 스와프(Currency Swap)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 24시간 외환시장</p>
+      <p><strong>해설:</strong> 24시간 외환시장은 국내 외환시장 개장 시간을 확대하여 해외 투자자들이 시차 제약 없이 원화 거래에 참여하도록 하는 제도입니다. [오답해설] ② 역외외환시장은 국내 통화가 해외에서 거래되는 시장을 의미하며, 주로 NDF(차액결제선물환) 거래가 이루어집니다. ③ 외환보유액 증대 정책은 국가가 보유한 외환을 늘리는 정책으로, 시장 거래 시간 확대와는 직접적인 관련이 적습니다. ④ 통화 스와프는 두 국가 중앙은행이 자국 통화를 교환하는 계약으로, 외환 시장의 유동성을 공급하는 수단입니다.</p>
+      <p>관련 시사 뉴스: 오는 6일부터 외환시장 24시간 거래가 전면 시행되어 원화의 국제화에 대한 기대감이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 미국 연방준비제도(Fed)가 통화정책 결정 시 주로 참고하는 인플레이션 지표로, 가계의 소비 지출 품목과 비중을 종합적으로 반영하며 변동성이 큰 식료품과 에너지 품목을 제외한 근원 지표가 더 중요하게 활용되는 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① PCE 물가지수 (Personal Consumption Expenditures price index)</li><li>② CPI 물가지수 (Consumer Price Index)</li><li>③ PPI 물가지수 (Producer Price Index)</li><li>④ Core CPI (근원 소비자물가지수)</li>
+      </ul>
+      <p><strong>정답:</strong> ① PCE 물가지수 (Personal Consumption Expenditures price index)</p>
+      <p><strong>해설:</strong> PCE 물가지수는 Fed가 선호하는 인플레이션 지표로, 소비 지출의 폭넓은 변화를 반영합니다. [오답해설] ② CPI 물가지수는 소비자가 구매하는 상품과 서비스의 가격 변동을 측정하지만, Fed는 PCE를 더 선호합니다. ③ PPI 물가지수는 생산자 판매가격의 변동을 측정하는 지표로, 소비자 물가와는 차이가 있습니다. ④ Core CPI는 CPI에서 변동성이 큰 식료품과 에너지를 제외한 지표지만, Fed가 주로 참고하는 것은 근원 PCE 물가지수입니다.</p>
+      <p>관련 시사 뉴스: 미국 정부가 PCE 산식 변경을 예고하며 향후 미국 인플레이션율이 낮아질 가능성에 대한 관측이 나오고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 청년층의 자산 형성을 지원하는 '청년미래적금'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 가입 대상은 만 19세 이상 29세 이하 청년이며, 소득 조건은 없다.</li><li>② 연 5% 이상의 높은 금리를 제공하며, 이자소득세가 전액 면제된다.</li><li>③ 만기는 3년 또는 5년 중 선택 가능하며, 만기 시 정부 기여금을 추가로 지급받을 수 있다.</li><li>④ 비과세 혜택과 함께, 일정 조건 충족 시 추가 금리 우대를 받을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 비과세 혜택과 함께, 일정 조건 충족 시 추가 금리 우대를 받을 수 있다.</p>
+      <p><strong>해설:</strong> 청년미래적금은 비과세 혜택과 더불어 은행별 우대금리 조건을 충족하면 추가적인 금리 혜택을 받을 수 있습니다. [오답해설] ① 가입 대상은 소득 요건을 충족하는 만 19세 이상 34세 이하 청년입니다. ② 이자소득세는 면제되지만, 연 5% 이상의 금리가 보장되는 것은 아니며 은행별로 다릅니다. ③ 만기는 2년 또는 3년으로 선택 가능하며, 정부 기여금은 별도로 지급되지 않습니다.</p>
+      <p>관련 시사 뉴스: 청년미래적금에 230만 명의 청년이 몰렸음에도 예산이 남는 상황이 발생하여 가입 연령 확대론이 제기되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 치매 등 의사 무능력 상태에 대비하여 생전에 미리 신탁 계약을 통해 자산 관리를 위임하고 사망 후 상속을 설계할 수 있는 금융 상품은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 유언대용신탁</li><li>② 재산관리신탁</li><li>③ 유동화신탁</li><li>④ 공익신탁</li>
+      </ul>
+      <p><strong>정답:</strong> ① 유언대용신탁</p>
+      <p><strong>해설:</strong> 유언대용신탁은 위탁자가 생전에 자산을 신탁하고, 본인이 살아있을 때에는 수익자로 지정하여 자산을 관리받다가 사망하면 미리 정해둔 수익자에게 자산을 승계하는 신탁 상품입니다. [오답해설] ② 재산관리신탁은 위탁자의 재산을 신탁기관이 관리, 운용하는 것이 목적이며 사후 상속 설계와는 다릅니다. ③ 유동화신탁은 특정 자산을 신탁하여 유동화증권 발행의 기반으로 활용하는 신탁입니다. ④ 공익신탁은 신탁 재산을 공익 목적에 사용하기 위한 신탁입니다.</p>
+      <p>관련 시사 뉴스: 최근 5년 만에 5조 원이 몰린 특정 통장은 치매 등 노년기 의사결정 능력이 저하될 경우에 대비해 자산을 미리 설계할 수 있는 상품으로 주목받고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 고환율 장기화로 수출 중소기업들이 어려움을 겪는 가운데, 정부 및 금융권의 대응 방안으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 중소기업 대상 환율 변동보험료 지원 확대</li><li>② 수출입은행 등 정책금융기관을 통한 저금리 대출 확대</li><li>③ 시중은행의 중소기업 환헤지(Hedging) 상품 수수료 인하 및 컨설팅 강화</li><li>④ 중소기업의 환율 리스크를 전적으로 기업 자율에 맡기고 정부 개입 최소화</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 중소기업의 환율 리스크를 전적으로 기업 자율에 맡기고 정부 개입 최소화</p>
+      <p><strong>해설:</strong> 정부는 고환율로 어려움을 겪는 중소기업을 위해 15조원 규모의 대출 및 보증을 지원하는 등 적극적으로 개입하고 있습니다. [오답해설] ① 환율 변동보험료 지원은 중소기업의 환율 위험 부담을 줄여주는 효과적인 정책입니다. ② 수출입은행 등의 저금리 대출은 자금난을 겪는 중소기업에 유동성을 공급하여 경영 안정에 기여합니다. ③ 은행의 환헤지 상품 수수료 인하 및 컨설팅 강화는 기업이 스스로 환율 변동에 대비할 수 있는 능력을 키우는 데 도움을 줍니다.</p>
+      <p>관련 시사 뉴스: 고환율 직격탄을 맞은 중소기업을 위해 정부가 15조원 규모의 대출과 보증 지원을 발표했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 반도체 등 특정 산업의 호황에도 불구하고 고용탄성치가 낮아지는 현상(경제 성장 대비 고용 창출 효과 감소)이 금융권에 미칠 영향으로 예상하기 어려운 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 가계의 소비 여력 위축으로 가계대출 연체율 증가 가능성</li><li>② 기업의 신규 투자 축소로 인한 기업 대출 수요 감소</li><li>③ 고용의 질 저하로 인한 비은행권 중금리 대출 수요 증가</li><li>④ 높은 고용 성장률에 따른 가계의 자산 증식 및 은행 수신 증대</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 높은 고용 성장률에 따른 가계의 자산 증식 및 은행 수신 증대</p>
+      <p><strong>해설:</strong> 고용탄성치가 낮아진다는 것은 경제 성장에 비해 고용 창출이 부진하다는 의미이므로, 가계의 자산 증식 및 은행 수신 증대와 같은 긍정적인 고용 성장 효과를 기대하기 어렵습니다. [오답해설] ① 고용 부진은 가계 소득 감소로 이어져 소비 위축과 대출 상환 능력 저하를 야기할 수 있습니다. ② 기업들은 자동화 및 효율성 증대를 통해 생산하므로 신규 채용 및 투자에 소극적일 수 있어 기업 대출 수요가 감소할 수 있습니다. ③ 고용의 질이 낮아지면 안정적인 소득 확보가 어려워져 은행 대출 대신 비은행권 중금리 대출에 의존하는 경향이 커질 수 있습니다.</p>
+      <p>관련 시사 뉴스: AI 붐과 반도체 호황에도 불구하고 청년 고용 부진이 이어지고 있으며, 고용탄성치가 8년 만에 최저치를 기록할 것으로 전망됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 코스피 지수가 8천포인트를 회복했음에도 불구하고, 실제 시장의 질적 성장이 미흡하다는 지적의 근거로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 1조클럽 종목 수가 과거 6천포인트대보다 현저히 적다.</li><li>② 외국인 투자자들의 매도세가 지속적으로 나타나고 있다.</li><li>③ 국내 기관투자자들의 투자 비중이 지나치게 높다.</li><li>④ 신규 상장 기업 수가 역대 최저치를 기록하고 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 1조클럽 종목 수가 과거 6천포인트대보다 현저히 적다.</p>
+      <p><strong>해설:</strong> 코스피 8천포인트 회복에도 불구하고 시가총액 1조원 이상 기업(1조클럽)의 수가 과거 6천포인트대보다 적다는 것은 소수의 대형주에 의해 지수 상승이 견인되었을 뿐, 시장 전반의 활력이나 종목 확산이 부족하다는 의미입니다. [오답해설] ② 외국인 투자자 매도세는 시장 하락 요인이지만, 질적 성장 미흡의 직접적 근거라기보다는 외부 수급 요인에 가깝습니다. ③ 기관투자자 비중이 높다고 해서 시장의 질이 반드시 낮다고 할 수는 없으며, 이는 시장의 특성 중 하나입니다. ④ 신규 상장 기업 수는 시장 활력의 지표일 수 있으나, 지수 회복 국면에서의 질적 평가를 판단하는 주된 근거는 아닙니다.</p>
+      <p>관련 시사 뉴스: 코스피가 8천포인트를 회복했음에도 시가총액 1조원 이상의 종목 수는 과거 6천포인트대보다 91개나 적어 시장의 질적 성장에 대한 우려가 제기됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 금융기관의 고객정보 유출 사고 발생 시, 금융기관이 우선적으로 취해야 할 대응 조치로 가장 거리가 먼 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 정보 유출 사실을 인지 즉시 고객에게 명확히 통보하고 피해 예방 조치 안내</li><li>② 관련 법규에 따라 금융당국에 신속하게 보고하고 협력</li><li>③ 시스템 보안 강화 및 재발 방지 대책 마련을 위한 전문 인력 확충</li><li>④ 유출된 정보의 가치를 분석하여 마케팅 자료로 활용하는 방안 검토</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 유출된 정보의 가치를 분석하여 마케팅 자료로 활용하는 방안 검토</p>
+      <p><strong>해설:</strong> 고객 정보 유출은 심각한 법적, 윤리적 문제를 야기하므로, 유출된 정보를 마케팅 자료로 활용하는 것은 절대 불가능하며, 이는 금융기관의 신뢰를 심각하게 훼손하는 행위입니다. [오답해설] ① 정보 유출 사실 통보 및 피해 예방 조치 안내는 고객의 권리를 보호하고 추가 피해를 막기 위한 필수적인 조치입니다. ② 금융당국 보고는 법적 의무이며, 규제 기관과의 협력을 통해 사고 수습 및 재발 방지 노력을 기울여야 합니다. ③ 시스템 보안 강화 및 전문 인력 확충은 향후 유사 사고를 방지하기 위한 근본적인 해결책입니다.</p>
+      <p>관련 시사 뉴스: 우리은행에서 고객정보 1만7000여건이 유출되는 사고가 발생했으나, 아직 확산이나 악용 사례는 없는 것으로 파악됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-05</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1472,"category":"금융용어","question":"주식시장에서 특정 종목의 주가가 일정 시간 동안 급변동할 경우 거래를 일시적으로 중단하여 시장의 과도한 변동성을 완화하는 제도를 지칭하는 용어는?","answer":"① VI (Volatility Interruption)","explanation":"VI는 개별 종목의 주가가 급변동할 때 거래를 일시적으로 중단시키는 제도를 의미합니다. [오답해설] ② 서킷브레이커는 코스피, 코스닥 등 전체 시장의 지수 변동폭이 일정 수준을 넘어설 때 모든 종목의 매매를 일시 정지시키는 조치입니다. ③ 사이드카는 선물시장의 급변동이 현물시장에 미치는 영향을 완화하기 위해 프로그램 매매를 일시적으로 제한하는 조치입니다. ④ 핫머니는 단기적인 이익을 찾아 국경을 넘나드는 투기성 자금을 뜻합니다.","news_context":"상반기 코스피에서 변동성 완화장치(VI) 발동이 역대 최다를 기록하며 시장의 변동성이 컸던 것으로 나타났습니다.","news_url":"https://www.yna.co.kr/view/AKR20260703157400008","options":["① VI (Volatility Interruption)","② 서킷브레이커 (Circuit Breakers)","③ 사이드카 (Sidecar)","④ 핫머니 (Hot Money)"]},{"id":1473,"category":"금융용어","question":"투자자의 은퇴 시점을 목표(Target Date)로 설정하고, 목표 시점에 가까워질수록 위험자산 비중을 줄이고 안전자산 비중을 늘리는 등 자산 배분 전략을 자동으로 조절해주는 펀드 상품을 무엇이라고 하는가?","answer":"① TDF (Target Date Fund)","explanation":"TDF는 은퇴 시점을 목표로 자산 배분 전략을 자동으로 조정하는 연금 특화 펀드입니다. [오답해설] ② ETF는 특정 지수나 자산의 가격을 추종하도록 설계된 상품으로 주식처럼 거래소에서 매매되는 펀드입니다. ③ MMF는 단기 고수익을 추구하는 초단기 채권형 펀드로 주로 법인이나 기관이 이용합니다. ④ ELS는 주가 지수나 개별 주식의 변동에 연계하여 수익률이 결정되는 파생결합증권입니다.","news_context":"최근 2030세대도 은퇴 자산 마련을 위해 ETF와 함께 TDF 상품을 적극적으로 활용하는 추세입니다.","news_url":"","options":["① TDF (Target Date Fund)","② ETF (Exchange Traded Fund)","③ MMF (Money Market Fund)","④ ELS (Equity Linked Securities)"]},{"id":1474,"category":"금융용어","question":"최근 국내 외환시장의 거래 시간을 확대하여 원화의 국제화를 도모하고 해외 투자자들의 접근성을 높이고자 시행되는 제도를 무엇이라고 하는가?","answer":"① 24시간 외환시장","explanation":"24시간 외환시장은 국내 외환시장 개장 시간을 확대하여 해외 투자자들이 시차 제약 없이 원화 거래에 참여하도록 하는 제도입니다. [오답해설] ② 역외외환시장은 국내 통화가 해외에서 거래되는 시장을 의미하며, 주로 NDF(차액결제선물환) 거래가 이루어집니다. ③ 외환보유액 증대 정책은 국가가 보유한 외환을 늘리는 정책으로, 시장 거래 시간 확대와는 직접적인 관련이 적습니다. ④ 통화 스와프는 두 국가 중앙은행이 자국 통화를 교환하는 계약으로, 외환 시장의 유동성을 공급하는 수단입니다.","news_context":"오는 6일부터 외환시장 24시간 거래가 전면 시행되어 원화의 국제화에 대한 기대감이 커지고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/421/0009040877?sid=101","options":["① 24시간 외환시장","② 역외외환시장","③ 외환보유액 증대 정책","④ 통화 스와프(Currency Swap)"]},{"id":1475,"category":"금융용어","question":"미국 연방준비제도(Fed)가 통화정책 결정 시 주로 참고하는 인플레이션 지표로, 가계의 소비 지출 품목과 비중을 종합적으로 반영하며 변동성이 큰 식료품과 에너지 품목을 제외한 근원 지표가 더 중요하게 활용되는 것은?","answer":"① PCE 물가지수 (Personal Consumption Expenditures price index)","explanation":"PCE 물가지수는 Fed가 선호하는 인플레이션 지표로, 소비 지출의 폭넓은 변화를 반영합니다. [오답해설] ② CPI 물가지수는 소비자가 구매하는 상품과 서비스의 가격 변동을 측정하지만, Fed는 PCE를 더 선호합니다. ③ PPI 물가지수는 생산자 판매가격의 변동을 측정하는 지표로, 소비자 물가와는 차이가 있습니다. ④ Core CPI는 CPI에서 변동성이 큰 식료품과 에너지를 제외한 지표지만, Fed가 주로 참고하는 것은 근원 PCE 물가지수입니다.","news_context":"미국 정부가 PCE 산식 변경을 예고하며 향후 미국 인플레이션율이 낮아질 가능성에 대한 관측이 나오고 있습니다.","news_url":"https://www.g-enews.com/view.php?ud=202607041420509681fbbec65dfb_1","options":["① PCE 물가지수 (Personal Consumption Expenditures price index)","② CPI 물가지수 (Consumer Price Index)","③ PPI 물가지수 (Producer Price Index)","④ Core CPI (근원 소비자물가지수)"]},{"id":1476,"category":"세부지식","question":"최근 청년층의 자산 형성을 지원하는 '청년미래적금'에 대한 설명으로 옳은 것은?","answer":"④ 비과세 혜택과 함께, 일정 조건 충족 시 추가 금리 우대를 받을 수 있다.","explanation":"청년미래적금은 비과세 혜택과 더불어 은행별 우대금리 조건을 충족하면 추가적인 금리 혜택을 받을 수 있습니다. [오답해설] ① 가입 대상은 소득 요건을 충족하는 만 19세 이상 34세 이하 청년입니다. ② 이자소득세는 면제되지만, 연 5% 이상의 금리가 보장되는 것은 아니며 은행별로 다릅니다. ③ 만기는 2년 또는 3년으로 선택 가능하며, 정부 기여금은 별도로 지급되지 않습니다.","news_context":"청년미래적금에 230만 명의 청년이 몰렸음에도 예산이 남는 상황이 발생하여 가입 연령 확대론이 제기되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/421/0009040865?sid=101","options":["① 가입 대상은 만 19세 이상 29세 이하 청년이며, 소득 조건은 없다.","② 연 5% 이상의 높은 금리를 제공하며, 이자소득세가 전액 면제된다.","③ 만기는 3년 또는 5년 중 선택 가능하며, 만기 시 정부 기여금을 추가로 지급받을 수 있다.","④ 비과세 혜택과 함께, 일정 조건 충족 시 추가 금리 우대를 받을 수 있다."]},{"id":1477,"category":"세부지식","question":"치매 등 의사 무능력 상태에 대비하여 생전에 미리 신탁 계약을 통해 자산 관리를 위임하고 사망 후 상속을 설계할 수 있는 금융 상품은 무엇인가?","answer":"① 유언대용신탁","explanation":"유언대용신탁은 위탁자가 생전에 자산을 신탁하고, 본인이 살아있을 때에는 수익자로 지정하여 자산을 관리받다가 사망하면 미리 정해둔 수익자에게 자산을 승계하는 신탁 상품입니다. [오답해설] ② 재산관리신탁은 위탁자의 재산을 신탁기관이 관리, 운용하는 것이 목적이며 사후 상속 설계와는 다릅니다. ③ 유동화신탁은 특정 자산을 신탁하여 유동화증권 발행의 기반으로 활용하는 신탁입니다. ④ 공익신탁은 신탁 재산을 공익 목적에 사용하기 위한 신탁입니다.","news_context":"최근 5년 만에 5조 원이 몰린 특정 통장은 치매 등 노년기 의사결정 능력이 저하될 경우에 대비해 자산을 미리 설계할 수 있는 상품으로 주목받고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12090331","options":["① 유언대용신탁","② 재산관리신탁","③ 유동화신탁","④ 공익신탁"]},{"id":1478,"category":"시사","question":"최근 고환율 장기화로 수출 중소기업들이 어려움을 겪는 가운데, 정부 및 금융권의 대응 방안으로 가장 적절하지 않은 것은?","answer":"④ 중소기업의 환율 리스크를 전적으로 기업 자율에 맡기고 정부 개입 최소화","explanation":"정부는 고환율로 어려움을 겪는 중소기업을 위해 15조원 규모의 대출 및 보증을 지원하는 등 적극적으로 개입하고 있습니다. [오답해설] ① 환율 변동보험료 지원은 중소기업의 환율 위험 부담을 줄여주는 효과적인 정책입니다. ② 수출입은행 등의 저금리 대출은 자금난을 겪는 중소기업에 유동성을 공급하여 경영 안정에 기여합니다. ③ 은행의 환헤지 상품 수수료 인하 및 컨설팅 강화는 기업이 스스로 환율 변동에 대비할 수 있는 능력을 키우는 데 도움을 줍니다.","news_context":"고환율 직격탄을 맞은 중소기업을 위해 정부가 15조원 규모의 대출과 보증 지원을 발표했습니다.","news_url":"https://www.mk.co.kr/news/economy/12090206","options":["① 중소기업 대상 환율 변동보험료 지원 확대","② 수출입은행 등 정책금융기관을 통한 저금리 대출 확대","③ 시중은행의 중소기업 환헤지(Hedging) 상품 수수료 인하 및 컨설팅 강화","④ 중소기업의 환율 리스크를 전적으로 기업 자율에 맡기고 정부 개입 최소화"]},{"id":1479,"category":"시사","question":"최근 반도체 등 특정 산업의 호황에도 불구하고 고용탄성치가 낮아지는 현상(경제 성장 대비 고용 창출 효과 감소)이 금융권에 미칠 영향으로 예상하기 어려운 것은?","answer":"④ 높은 고용 성장률에 따른 가계의 자산 증식 및 은행 수신 증대","explanation":"고용탄성치가 낮아진다는 것은 경제 성장에 비해 고용 창출이 부진하다는 의미이므로, 가계의 자산 증식 및 은행 수신 증대와 같은 긍정적인 고용 성장 효과를 기대하기 어렵습니다. [오답해설] ① 고용 부진은 가계 소득 감소로 이어져 소비 위축과 대출 상환 능력 저하를 야기할 수 있습니다. ② 기업들은 자동화 및 효율성 증대를 통해 생산하므로 신규 채용 및 투자에 소극적일 수 있어 기업 대출 수요가 감소할 수 있습니다. ③ 고용의 질이 낮아지면 안정적인 소득 확보가 어려워져 은행 대출 대신 비은행권 중금리 대출에 의존하는 경향이 커질 수 있습니다.","news_context":"AI 붐과 반도체 호황에도 불구하고 청년 고용 부진이 이어지고 있으며, 고용탄성치가 8년 만에 최저치를 기록할 것으로 전망됩니다.","news_url":"https://www.yna.co.kr/view/AKR20260704018500002","options":["① 가계의 소비 여력 위축으로 가계대출 연체율 증가 가능성","② 기업의 신규 투자 축소로 인한 기업 대출 수요 감소","③ 고용의 질 저하로 인한 비은행권 중금리 대출 수요 증가","④ 높은 고용 성장률에 따른 가계의 자산 증식 및 은행 수신 증대"]},{"id":1480,"category":"시사","question":"코스피 지수가 8천포인트를 회복했음에도 불구하고, 실제 시장의 질적 성장이 미흡하다는 지적의 근거로 가장 적절한 것은?","answer":"① 1조클럽 종목 수가 과거 6천포인트대보다 현저히 적다.","explanation":"코스피 8천포인트 회복에도 불구하고 시가총액 1조원 이상 기업(1조클럽)의 수가 과거 6천포인트대보다 적다는 것은 소수의 대형주에 의해 지수 상승이 견인되었을 뿐, 시장 전반의 활력이나 종목 확산이 부족하다는 의미입니다. [오답해설] ② 외국인 투자자 매도세는 시장 하락 요인이지만, 질적 성장 미흡의 직접적 근거라기보다는 외부 수급 요인에 가깝습니다. ③ 기관투자자 비중이 높다고 해서 시장의 질이 반드시 낮다고 할 수는 없으며, 이는 시장의 특성 중 하나입니다. ④ 신규 상장 기업 수는 시장 활력의 지표일 수 있으나, 지수 회복 국면에서의 질적 평가를 판단하는 주된 근거는 아닙니다.","news_context":"코스피가 8천포인트를 회복했음에도 시가총액 1조원 이상의 종목 수는 과거 6천포인트대보다 91개나 적어 시장의 질적 성장에 대한 우려가 제기됩니다.","news_url":"https://www.yna.co.kr/view/AKR20260703155300008","options":["① 1조클럽 종목 수가 과거 6천포인트대보다 현저히 적다.","② 외국인 투자자들의 매도세가 지속적으로 나타나고 있다.","③ 국내 기관투자자들의 투자 비중이 지나치게 높다.","④ 신규 상장 기업 수가 역대 최저치를 기록하고 있다."]},{"id":1481,"category":"시사","question":"최근 금융기관의 고객정보 유출 사고 발생 시, 금융기관이 우선적으로 취해야 할 대응 조치로 가장 거리가 먼 것은?","answer":"④ 유출된 정보의 가치를 분석하여 마케팅 자료로 활용하는 방안 검토","explanation":"고객 정보 유출은 심각한 법적, 윤리적 문제를 야기하므로, 유출된 정보를 마케팅 자료로 활용하는 것은 절대 불가능하며, 이는 금융기관의 신뢰를 심각하게 훼손하는 행위입니다. [오답해설] ① 정보 유출 사실 통보 및 피해 예방 조치 안내는 고객의 권리를 보호하고 추가 피해를 막기 위한 필수적인 조치입니다. ② 금융당국 보고는 법적 의무이며, 규제 기관과의 협력을 통해 사고 수습 및 재발 방지 노력을 기울여야 합니다. ③ 시스템 보안 강화 및 전문 인력 확충은 향후 유사 사고를 방지하기 위한 근본적인 해결책입니다.","news_context":"우리은행에서 고객정보 1만7000여건이 유출되는 사고가 발생했으나, 아직 확산이나 악용 사례는 없는 것으로 파악됩니다.","news_url":"https://www.mk.co.kr/news/economy/12090026","options":["① 정보 유출 사실을 인지 즉시 고객에게 명확히 통보하고 피해 예방 조치 안내","② 관련 법규에 따라 금융당국에 신속하게 보고하고 협력","③ 시스템 보안 강화 및 재발 방지 대책 마련을 위한 전문 인력 확충","④ 유출된 정보의 가치를 분석하여 마케팅 자료로 활용하는 방안 검토"]},{"id":18,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
