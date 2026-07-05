@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-06 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-06 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-06 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 주식이나 가상자산 등 위험자산에 투자하기 위해 대출 등을 통해 자금을 조달하는 행위를 일컫는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 영끌</li><li>② 빚투</li><li>③ 갭투자</li><li>④ 돌려막기</li>
+      </ul>
+      <p><strong>정답:</strong> ② 빚투</p>
+      <p><strong>해설:</strong> 빚투는 빚을 내서 투자하는 행위를 의미합니다. [오답해설] ① 영끌은 영혼까지 끌어모아 집이나 자산을 매수하는 행위를 지칭합니다. ③ 갭투자는 전세 끼고 주택을 매수하여 투자하는 방식입니다. ④ 돌려막기는 한 대출의 원리금을 다른 대출로 갚는 행위를 의미합니다.</p>
+      <p>관련 시사 뉴스: 예금 빼고 마통 뚫고…2분기 일평균 '빚투' 61조 사상 최대</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 기업이나 개인이 환율 변동이나 금융시장 불확실성 등에 대비하여 국내 원화 계좌가 아닌 외화 계좌에 달러 등 외화를 보관하는 행위를 일컫는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 환헷지</li><li>② 달러 파킹</li><li>③ 킹달러</li><li>④ 외화채권</li>
+      </ul>
+      <p><strong>정답:</strong> ② 달러 파킹</p>
+      <p><strong>해설:</strong> 달러 파킹은 외화 계좌에 달러를 보관하여 환율 변동에 대비하거나 수익을 추구하는 행위를 말합니다. [오답해설] ① 환헷지는 미래의 환율 변동 위험을 회피하기 위한 금융기법입니다. ③ 킹달러는 달러화 가치가 다른 통화 대비 매우 강세를 보이는 현상을 지칭합니다. ④ 외화채권은 외국에서 발행되는 채권으로, 외화로 표시되고 외화로 상환됩니다.</p>
+      <p>관련 시사 뉴스: “달러 들고 있어야 돈 된다”…역대급 수출에도 ‘$파킹’ 늘리는 기업들</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 주가지수나 특정 상품의 가격이 특정 수준에 도달하면 조기에 수익 지급이 확정되거나 상품이 종료되는 구조를 가진 예금 상품은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① ELS</li><li>② DLS</li><li>③ 녹아웃 예금</li><li>④ 원금보장형 ELD</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 녹아웃 예금</p>
+      <p><strong>해설:</strong> 녹아웃 예금은 주가지수 등 특정 조건을 충족하면 조기에 확정된 수익률로 상환되는 예금 상품입니다. [오답해설] ① ELS(주가연계증권)는 주가지수 등 기초자산의 변동에 따라 수익이 결정되는 증권입니다. ② DLS(파생결합증권)는 금리, 환율, 신용도 등 다양한 기초자산에 따라 수익이 결정되는 증권입니다. ④ 원금보장형 ELD(주가연계예금)는 원금은 보장되면서 주가지수에 따라 이자를 지급하는 예금 상품입니다.</p>
+      <p>관련 시사 뉴스: “연 10% 준다더니 실제론 2%” … 은행 예금 ‘녹아웃’ 주의보</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 경제 회복 과정에서 특정 산업이나 계층은 성장하지만, 다른 산업이나 계층은 오히려 침체되어 소득 및 자산 격차가 심화되는 현상을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① V자형 반등</li><li>② L자형 침체</li><li>③ K자형 호황</li><li>④ W자형 경기</li>
+      </ul>
+      <p><strong>정답:</strong> ③ K자형 호황</p>
+      <p><strong>해설:</strong> K자형 호황은 경제 회복기에 특정 부문은 빠르게 성장하나 다른 부문은 침체되어 전체적으로 양극화가 심화되는 현상을 의미합니다. [오답해설] ① V자형 반등은 경기 침체 후 빠른 속도로 경제가 회복되는 것을 말합니다. ② L자형 침체는 경기가 침체된 후 장기간 회복되지 못하고 낮은 수준을 유지하는 것을 의미합니다. ④ W자형 경기는 경기가 회복되었다가 다시 침체되고 재차 회복되는 패턴을 지칭합니다.</p>
+      <p>관련 시사 뉴스: 'K자형 호황'을 경계한다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 삼성전자가 최근 직원들을 대상으로 하는 사내 주택자금 대출 조건으로 발표한 내용 중 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 대출 대상은 주택 규모와 관계없이 최대 5억원까지 가능하다.</li><li>② 대출 대상 주택은 전용면적 85㎡ 초과 아파트도 포함된다.</li><li>③ 주택대출 한도가 기존 6억원에서 5억원으로 축소되었다.</li><li>④ 대출금리는 시중은행보다 높게 책정되어 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 주택대출 한도가 기존 6억원에서 5억원으로 축소되었다.</p>
+      <p><strong>해설:</strong> 삼성전자는 사내 주택대출 한도를 6억원에서 5억원으로 축소하고 대상을 전용면적 85㎡ 이하 '국민평형'으로 제한했습니다. [오답해설] ① 대출 대상은 주택 규모 85㎡ 이하로 제한됩니다. ② 대출 대상 주택은 전용면적 85㎡ 이하로 제한됩니다. ④ 사내 대출은 일반적으로 시중은행보다 유리한 조건으로 제공됩니다.</p>
+      <p>관련 시사 뉴스: 삼성전자, 5억원 사내 주택자금 대출 대상 '국평' 이하로 제한</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 개인투자용 국채에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 전용 계좌를 통해 발행 시장에서 매입할 수 있다.</li><li>② 이자 소득에 대해 분리과세가 적용될 수 있다.</li><li>③ 만기까지 보유 시 가산금리가 적용될 수 있다.</li><li>④ 중도에 매도할 경우에도 원금 손실 위험이 없다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 중도에 매도할 경우에도 원금 손실 위험이 없다.</p>
+      <p><strong>해설:</strong> 개인투자용 국채는 만기 보유 시 안정적인 수익을 기대할 수 있으나, 중도 매도 시 시장 금리 변동에 따라 원금 손실 위험이 존재합니다. [오답해설] ① 개인투자용 국채는 전용 계좌를 통해서만 매입할 수 있으며, 기존 국채와는 다른 방식으로 발행됩니다. ② 일정 조건 충족 시 이자 소득에 대한 분리과세 혜택이 주어집니다. ③ 만기까지 보유할 경우 표면금리 외에 가산금리가 적용되는 경우가 많아 매력이 높습니다.</p>
+      <p>관련 시사 뉴스: 금감원 "국채도 중도매도 땐 손실"…채권 투자 유의사항 공개</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 다음 중 금융 소외계층의 자활을 돕기 위해 담보나 신용등급 없이 창업자금, 운영자금 등을 지원하는 서민금융 상품은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 새희망홀씨대출</li><li>② 햇살론</li><li>③ 미소금융</li><li>④ 바꿔드림론</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 미소금융</p>
+      <p><strong>해설:</strong> 미소금융은 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 창업 및 운영 자금을 지원하는 대표적인 서민금융 상품입니다. [오답해설] ① 새희망홀씨대출은 신용등급이 낮거나 소득이 적은 사람에게 은행에서 제공하는 서민대출입니다. ② 햇살론은 저신용·저소득 근로자, 자영업자, 농림어업인에게 신용보증을 통해 저금리로 대출을 지원하는 서민금융 상품입니다. ④ 바꿔드림론은 고금리 대출을 저금리 대출로 전환해주는 상품으로, 한국자산관리공사에서 운영합니다.</p>
+      <p>관련 시사 뉴스: [단독] 李정부 '미소금융 3종세트' 희비 엇갈려</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 오늘(7월 6일)부터 시행되는 외환시장 개장 시간 확대가 국내 은행에 미칠 영향으로 예상되는 바가 아닌 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 야간 및 새벽 시간대의 환전, 해외 송금 등 외환 거래 편의성 증대</li><li>② 은행의 외환거래 시스템 안정화 및 인력 운영 부담 가중 가능성</li><li>③ 해외 투자자들의 한국물 투자 접근성 향상으로 국내 금융시장 활성화 기대</li><li>④ 원화의 기축통화 지위 확보에 필수적인 첫걸음이 될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 원화의 기축통화 지위 확보에 필수적인 첫걸음이 될 것이다.</p>
+      <p><strong>해설:</strong> 외환시장 24시간 개장은 원화 접근성을 높여 국제화에 기여하지만, 기축통화 지위 확보는 복합적인 경제력과 국제적 신뢰가 필요한 장기적인 과제입니다. [오답해설] ① 개장 시간 확대로 개인과 기업의 야간/새벽 외환 거래 편의성이 크게 향상됩니다. ② 24시간 거래를 위한 시스템 고도화 및 야간 근무 인력 배치 등으로 은행의 운영 부담이 증가할 수 있습니다. ③ 해외 투자자들이 시차 제약 없이 원화 자산을 거래할 수 있게 되어 한국물 투자가 활성화될 것으로 기대됩니다.</p>
+      <p>관련 시사 뉴스: 새벽에도 원화 사고 판다…외환시장 29년만에 대전환</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 금융권에서 사이버 위협 증가에 대응하기 위한 IT 투자를 확대하고 있다. 이러한 투자가 은행 경영에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 비용 효율성 증대로 인한 순이익률의 단기적 상승</li><li>② 데이터 유출 및 해킹 사고 방지를 통한 고객 신뢰도 제고 및 규제 준수 강화</li><li>③ 기존 레거시 시스템 유지보수 비용 절감 효과가 즉시 발생</li><li>④ 새로운 금융상품 개발 및 마케팅 활동에 전적으로 집중할 수 있게 됨</li>
+      </ul>
+      <p><strong>정답:</strong> ② 데이터 유출 및 해킹 사고 방지를 통한 고객 신뢰도 제고 및 규제 준수 강화</p>
+      <p><strong>해설:</strong> 사이버 보안 투자는 고객 정보 보호와 금융 시스템의 안정성을 확보하여 고객 신뢰를 높이고 금융당국의 규제를 준수하는 데 필수적입니다. [오답해설] ① IT 보안 투자는 초기 비용이 많이 들어 단기적으로는 순이익률에 부정적인 영향을 줄 수 있습니다. ③ 기존 레거시 시스템은 여전히 운영되어야 하므로 유지보수 비용 절감 효과가 즉시 나타나기 어렵습니다. ④ 보안 투자는 리스크 관리에 해당하며, 이것이 곧 신상품 개발이나 마케팅에 직접적으로 집중할 수 있게 하는 것은 아닙니다.</p>
+      <p>관련 시사 뉴스: 사이버 위협 증가에 은행권 투자 2천744억원…2년새 12%↑</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 뉴스에 따르면 최근 인터넷은행들이 고신용자 대출을 확대하면서 신규 대출 금리가 하락하는 반면, 저신용자 대출 금리는 오히려 상승하는 추세를 보인다고 한다. 이러한 현상이 금융시장에 미칠 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 신용 리스크 관리의 효율성이 증대되어 은행 건전성이 일제히 강화된다.</li><li>② 고신용자에게 대출이 집중되어 저신용자의 금융 접근성이 더욱 악화될 수 있다.</li><li>③ 인터넷은행의 전반적인 대출 포트폴리오의 수익성이 개선된다.</li><li>④ 시중은행들이 인터넷은행의 금리 정책을 즉각적으로 따라하게 되어 금리 경쟁이 완화된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 고신용자에게 대출이 집중되어 저신용자의 금융 접근성이 더욱 악화될 수 있다.</p>
+      <p><strong>해설:</strong> 인터넷은행이 고신용자 위주로 대출을 확대하고 저신용자 금리를 올리면, 금융 취약계층의 자금 조달이 더욱 어려워지는 '금융 양극화' 현상이 심화될 수 있습니다. [오답해설] ① 고신용자 대출 집중은 단기적인 리스크 관리에 도움이 될 수 있으나, 저신용자 대출의 리스크 상승은 은행 건전성에 부담을 줄 수 있습니다. ③ 저신용자 대출 금리 상승은 수익성 제고에 기여할 수 있지만, 전체 포트폴리오의 수익성 개선 여부는 대출 비중 등 복합적인 요인에 따라 달라집니다. ④ 시중은행은 자체적인 리스크 모델과 고객층을 가지고 있어 인터넷은행의 금리 정책을 무조건 따르기보다는 시장 상황에 맞춰 대응할 것입니다.</p>
+      <p>관련 시사 뉴스: 인뱅 고신용자 확대 속에 신규대출 금리↓…저신용자는 올라</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-06</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1482,"category":"금융용어","question":"주식이나 가상자산 등 위험자산에 투자하기 위해 대출 등을 통해 자금을 조달하는 행위를 일컫는 용어는?","answer":"② 빚투","explanation":"빚투는 빚을 내서 투자하는 행위를 의미합니다. [오답해설] ① 영끌은 영혼까지 끌어모아 집이나 자산을 매수하는 행위를 지칭합니다. ③ 갭투자는 전세 끼고 주택을 매수하여 투자하는 방식입니다. ④ 돌려막기는 한 대출의 원리금을 다른 대출로 갚는 행위를 의미합니다.","news_context":"예금 빼고 마통 뚫고…2분기 일평균 '빚투' 61조 사상 최대","news_url":"","options":["① 영끌","② 빚투","③ 갭투자","④ 돌려막기"]},{"id":1483,"category":"금융용어","question":"기업이나 개인이 환율 변동이나 금융시장 불확실성 등에 대비하여 국내 원화 계좌가 아닌 외화 계좌에 달러 등 외화를 보관하는 행위를 일컫는 용어는?","answer":"② 달러 파킹","explanation":"달러 파킹은 외화 계좌에 달러를 보관하여 환율 변동에 대비하거나 수익을 추구하는 행위를 말합니다. [오답해설] ① 환헷지는 미래의 환율 변동 위험을 회피하기 위한 금융기법입니다. ③ 킹달러는 달러화 가치가 다른 통화 대비 매우 강세를 보이는 현상을 지칭합니다. ④ 외화채권은 외국에서 발행되는 채권으로, 외화로 표시되고 외화로 상환됩니다.","news_context":"“달러 들고 있어야 돈 된다”…역대급 수출에도 ‘$파킹’ 늘리는 기업들","news_url":"https://www.mk.co.kr/news/economy/12090800","options":["① 환헷지","② 달러 파킹","③ 킹달러","④ 외화채권"]},{"id":1484,"category":"금융용어","question":"다음 중 주가지수나 특정 상품의 가격이 특정 수준에 도달하면 조기에 수익 지급이 확정되거나 상품이 종료되는 구조를 가진 예금 상품은?","answer":"③ 녹아웃 예금","explanation":"녹아웃 예금은 주가지수 등 특정 조건을 충족하면 조기에 확정된 수익률로 상환되는 예금 상품입니다. [오답해설] ① ELS(주가연계증권)는 주가지수 등 기초자산의 변동에 따라 수익이 결정되는 증권입니다. ② DLS(파생결합증권)는 금리, 환율, 신용도 등 다양한 기초자산에 따라 수익이 결정되는 증권입니다. ④ 원금보장형 ELD(주가연계예금)는 원금은 보장되면서 주가지수에 따라 이자를 지급하는 예금 상품입니다.","news_context":"“연 10% 준다더니 실제론 2%” … 은행 예금 ‘녹아웃’ 주의보","news_url":"https://www.mk.co.kr/news/economy/12090566","options":["① ELS","② DLS","③ 녹아웃 예금","④ 원금보장형 ELD"]},{"id":1485,"category":"금융용어","question":"경제 회복 과정에서 특정 산업이나 계층은 성장하지만, 다른 산업이나 계층은 오히려 침체되어 소득 및 자산 격차가 심화되는 현상을 무엇이라고 하는가?","answer":"③ K자형 호황","explanation":"K자형 호황은 경제 회복기에 특정 부문은 빠르게 성장하나 다른 부문은 침체되어 전체적으로 양극화가 심화되는 현상을 의미합니다. [오답해설] ① V자형 반등은 경기 침체 후 빠른 속도로 경제가 회복되는 것을 말합니다. ② L자형 침체는 경기가 침체된 후 장기간 회복되지 못하고 낮은 수준을 유지하는 것을 의미합니다. ④ W자형 경기는 경기가 회복되었다가 다시 침체되고 재차 회복되는 패턴을 지칭합니다.","news_context":"'K자형 호황'을 경계한다","news_url":"https://www.ebn.co.kr/news/articleView.html?idxno=1715136","options":["① V자형 반등","② L자형 침체","③ K자형 호황","④ W자형 경기"]},{"id":1486,"category":"세부지식","question":"삼성전자가 최근 직원들을 대상으로 하는 사내 주택자금 대출 조건으로 발표한 내용 중 옳은 것은?","answer":"③ 주택대출 한도가 기존 6억원에서 5억원으로 축소되었다.","explanation":"삼성전자는 사내 주택대출 한도를 6억원에서 5억원으로 축소하고 대상을 전용면적 85㎡ 이하 '국민평형'으로 제한했습니다. [오답해설] ① 대출 대상은 주택 규모 85㎡ 이하로 제한됩니다. ② 대출 대상 주택은 전용면적 85㎡ 이하로 제한됩니다. ④ 사내 대출은 일반적으로 시중은행보다 유리한 조건으로 제공됩니다.","news_context":"삼성전자, 5억원 사내 주택자금 대출 대상 '국평' 이하로 제한","news_url":"https://www.yna.co.kr/view/AKR20260705041400003","options":["① 대출 대상은 주택 규모와 관계없이 최대 5억원까지 가능하다.","② 대출 대상 주택은 전용면적 85㎡ 초과 아파트도 포함된다.","③ 주택대출 한도가 기존 6억원에서 5억원으로 축소되었다.","④ 대출금리는 시중은행보다 높게 책정되어 있다."]},{"id":1487,"category":"세부지식","question":"개인투자용 국채에 대한 설명으로 옳지 않은 것은?","answer":"④ 중도에 매도할 경우에도 원금 손실 위험이 없다.","explanation":"개인투자용 국채는 만기 보유 시 안정적인 수익을 기대할 수 있으나, 중도 매도 시 시장 금리 변동에 따라 원금 손실 위험이 존재합니다. [오답해설] ① 개인투자용 국채는 전용 계좌를 통해서만 매입할 수 있으며, 기존 국채와는 다른 방식으로 발행됩니다. ② 일정 조건 충족 시 이자 소득에 대한 분리과세 혜택이 주어집니다. ③ 만기까지 보유할 경우 표면금리 외에 가산금리가 적용되는 경우가 많아 매력이 높습니다.","news_context":"금감원 \"국채도 중도매도 땐 손실\"…채권 투자 유의사항 공개","news_url":"https://www.ajunews.com/view/20260703182457557","options":["① 전용 계좌를 통해 발행 시장에서 매입할 수 있다.","② 이자 소득에 대해 분리과세가 적용될 수 있다.","③ 만기까지 보유 시 가산금리가 적용될 수 있다.","④ 중도에 매도할 경우에도 원금 손실 위험이 없다."]},{"id":1488,"category":"세부지식","question":"다음 중 금융 소외계층의 자활을 돕기 위해 담보나 신용등급 없이 창업자금, 운영자금 등을 지원하는 서민금융 상품은?","answer":"③ 미소금융","explanation":"미소금융은 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 창업 및 운영 자금을 지원하는 대표적인 서민금융 상품입니다. [오답해설] ① 새희망홀씨대출은 신용등급이 낮거나 소득이 적은 사람에게 은행에서 제공하는 서민대출입니다. ② 햇살론은 저신용·저소득 근로자, 자영업자, 농림어업인에게 신용보증을 통해 저금리로 대출을 지원하는 서민금융 상품입니다. ④ 바꿔드림론은 고금리 대출을 저금리 대출로 전환해주는 상품으로, 한국자산관리공사에서 운영합니다.","news_context":"[단독] 李정부 '미소금융 3종세트' 희비 엇갈려","news_url":"https://www.mk.co.kr/news/economy/12090725","options":["① 새희망홀씨대출","② 햇살론","③ 미소금융","④ 바꿔드림론"]},{"id":1489,"category":"시사","question":"오늘(7월 6일)부터 시행되는 외환시장 개장 시간 확대가 국내 은행에 미칠 영향으로 예상되는 바가 아닌 것은?","answer":"④ 원화의 기축통화 지위 확보에 필수적인 첫걸음이 될 것이다.","explanation":"외환시장 24시간 개장은 원화 접근성을 높여 국제화에 기여하지만, 기축통화 지위 확보는 복합적인 경제력과 국제적 신뢰가 필요한 장기적인 과제입니다. [오답해설] ① 개장 시간 확대로 개인과 기업의 야간/새벽 외환 거래 편의성이 크게 향상됩니다. ② 24시간 거래를 위한 시스템 고도화 및 야간 근무 인력 배치 등으로 은행의 운영 부담이 증가할 수 있습니다. ③ 해외 투자자들이 시차 제약 없이 원화 자산을 거래할 수 있게 되어 한국물 투자가 활성화될 것으로 기대됩니다.","news_context":"새벽에도 원화 사고 판다…외환시장 29년만에 대전환","news_url":"https://www.mk.co.kr/news/economy/12090796","options":["① 야간 및 새벽 시간대의 환전, 해외 송금 등 외환 거래 편의성 증대","② 은행의 외환거래 시스템 안정화 및 인력 운영 부담 가중 가능성","③ 해외 투자자들의 한국물 투자 접근성 향상으로 국내 금융시장 활성화 기대","④ 원화의 기축통화 지위 확보에 필수적인 첫걸음이 될 것이다."]},{"id":1490,"category":"시사","question":"최근 금융권에서 사이버 위협 증가에 대응하기 위한 IT 투자를 확대하고 있다. 이러한 투자가 은행 경영에 미치는 영향으로 가장 적절한 것은?","answer":"② 데이터 유출 및 해킹 사고 방지를 통한 고객 신뢰도 제고 및 규제 준수 강화","explanation":"사이버 보안 투자는 고객 정보 보호와 금융 시스템의 안정성을 확보하여 고객 신뢰를 높이고 금융당국의 규제를 준수하는 데 필수적입니다. [오답해설] ① IT 보안 투자는 초기 비용이 많이 들어 단기적으로는 순이익률에 부정적인 영향을 줄 수 있습니다. ③ 기존 레거시 시스템은 여전히 운영되어야 하므로 유지보수 비용 절감 효과가 즉시 나타나기 어렵습니다. ④ 보안 투자는 리스크 관리에 해당하며, 이것이 곧 신상품 개발이나 마케팅에 직접적으로 집중할 수 있게 하는 것은 아닙니다.","news_context":"사이버 위협 증가에 은행권 투자 2천744억원…2년새 12%↑","news_url":"https://www.yna.co.kr/view/AKR20260705023000002","options":["① 비용 효율성 증대로 인한 순이익률의 단기적 상승","② 데이터 유출 및 해킹 사고 방지를 통한 고객 신뢰도 제고 및 규제 준수 강화","③ 기존 레거시 시스템 유지보수 비용 절감 효과가 즉시 발생","④ 새로운 금융상품 개발 및 마케팅 활동에 전적으로 집중할 수 있게 됨"]},{"id":1491,"category":"시사","question":"뉴스에 따르면 최근 인터넷은행들이 고신용자 대출을 확대하면서 신규 대출 금리가 하락하는 반면, 저신용자 대출 금리는 오히려 상승하는 추세를 보인다고 한다. 이러한 현상이 금융시장에 미칠 영향으로 옳은 것은?","answer":"② 고신용자에게 대출이 집중되어 저신용자의 금융 접근성이 더욱 악화될 수 있다.","explanation":"인터넷은행이 고신용자 위주로 대출을 확대하고 저신용자 금리를 올리면, 금융 취약계층의 자금 조달이 더욱 어려워지는 '금융 양극화' 현상이 심화될 수 있습니다. [오답해설] ① 고신용자 대출 집중은 단기적인 리스크 관리에 도움이 될 수 있으나, 저신용자 대출의 리스크 상승은 은행 건전성에 부담을 줄 수 있습니다. ③ 저신용자 대출 금리 상승은 수익성 제고에 기여할 수 있지만, 전체 포트폴리오의 수익성 개선 여부는 대출 비중 등 복합적인 요인에 따라 달라집니다. ④ 시중은행은 자체적인 리스크 모델과 고객층을 가지고 있어 인터넷은행의 금리 정책을 무조건 따르기보다는 시장 상황에 맞춰 대응할 것입니다.","news_context":"인뱅 고신용자 확대 속에 신규대출 금리↓…저신용자는 올라","news_url":"https://www.yna.co.kr/view/AKR20260705039300002","options":["① 신용 리스크 관리의 효율성이 증대되어 은행 건전성이 일제히 강화된다.","② 고신용자에게 대출이 집중되어 저신용자의 금융 접근성이 더욱 악화될 수 있다.","③ 인터넷은행의 전반적인 대출 포트폴리오의 수익성이 개선된다.","④ 시중은행들이 인터넷은행의 금리 정책을 즉각적으로 따라하게 되어 금리 경쟁이 완화된다."]},{"id":19,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
