@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-11 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-11 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-11 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 해외 기업이 자국 시장이 아닌 다른 국가의 투자자로부터 자금을 조달할 때 활용되는 금융상품으로, 해당 기업의 주식이 해외 주식시장에서 거래되도록 발행된 주식예탁증서를 의미하는 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① ADR (American Depository Receipt)</li><li>② GDR (Global Depository Receipt)</li><li>③ ETF (Exchange Traded Fund)</li><li>④ REITs (Real Estate Investment Trusts)</li>
+      </ul>
+      <p><strong>정답:</strong> ① ADR (American Depository Receipt)</p>
+      <p><strong>해설:</strong> ADR은 해외 기업의 주식이 미국 증권 시장에서 거래될 수 있도록 발행된 예탁증서입니다. [오답해설] ② GDR은 전 세계 여러 시장에서 거래될 수 있도록 발행된 예탁증서를 의미합니다. ③ ETF는 특정 지수의 성과를 추종하는 투자 상품입니다. ④ REITs는 부동산에 투자하여 수익을 배당하는 투자 상품입니다.</p>
+      <p>관련 시사 뉴스: SK하이닉스가 나스닥에 성공적으로 데뷔하며 ADR 상장에 대한 관심이 높아졌습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 일시적인 유동성 위기에 처한 기업이 채권단의 지원을 받아 재무구조를 개선하는 기업개선작업을 의미하며, 주로 채권단과의 협의를 통해 채무조정 및 자구노력을 병행하는 제도는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 워크아웃 (Workout)</li><li>② 기업회생절차 (Rehabilitation)</li><li>③ 기업공개 (IPO)</li><li>④ 상장폐지 (Delisting)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 워크아웃 (Workout)</p>
+      <p><strong>해설:</strong> 워크아웃은 일시적 유동성 위기에 처한 기업이 채권단의 지원을 받아 재무구조를 개선하는 기업개선작업입니다. [오답해설] ② 기업회생절차는 법원의 감독 아래 기업의 채무를 조정하고 정상화를 도모하는 법정관리입니다. ③ 기업공개(IPO)는 비상장 기업이 주식을 일반에 공개하여 상장하는 절차입니다. ④ 상장폐지는 상장된 주식이 거래 시장에서 퇴출되는 것을 의미합니다.</p>
+      <p>관련 시사 뉴스: 유동성 위기를 겪던 중앙일보가 채권자 75% 이상의 동의를 얻어 워크아웃 개시를 결정했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 기초자산 수익률의 일정 배수(예: 2배)를 추종하도록 설계된 상장지수펀드(ETF)로, 시장 변동성이 큰 경우 높은 수익을 기대할 수 있으나 동시에 원금 손실 위험도 크게 확대될 수 있는 상품은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 레버리지 ETF</li><li>② 인버스 ETF</li><li>③ 합성 ETF</li><li>④ 액티브 ETF</li>
+      </ul>
+      <p><strong>정답:</strong> ① 레버리지 ETF</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초자산 수익률의 일정 배수를 추종하도록 설계되어 높은 수익과 손실 위험을 동시에 가질 수 있는 상품입니다. [오답해설] ② 인버스 ETF는 기초자산 가격 하락에 투자하여 역방향 수익을 추구합니다. ③ 합성 ETF는 장외파생상품을 활용하여 기초지수를 추종합니다. ④ 액티브 ETF는 운용사의 적극적인 종목 선택을 통해 지수 이상의 수익을 추구합니다.</p>
+      <p>관련 시사 뉴스: 정부와 청와대가 급변하는 증시 상황에서 '삼전닉스' 레버리지 ETF 등 투자 상품에 대한 보완 검토를 언급했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 농협중앙회가 지역농협의 건전성 및 경쟁력 강화를 위해 추진하는 합병 지원 정책에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 합병 조합 수에 따라 지원 규모가 달라질 수 있다.</li><li>② 합병으로 인한 중복 투자를 방지하고 효율성을 높이는 목적이 있다.</li><li>③ 주로 경제 사업 활성화 및 금융 서비스 확대에 중점을 둔다.</li><li>④ 합병 지원은 농협 상호금융의 신규 대출 한도를 증액하는 방식으로 이루어진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 합병 지원은 농협 상호금융의 신규 대출 한도를 증액하는 방식으로 이루어진다.</p>
+      <p><strong>해설:</strong> 농협의 합병 지원은 합병에 따른 인센티브 지원, 부실채권 정리 등 재무 건전성 강화 및 사업 활성화에 중점을 두며, 상호금융의 신규 대출 한도를 직접 증액하는 방식은 아닙니다. [오답해설] ① 합병 조합 수 및 재무 상황에 따라 지원 규모가 달라지는 것이 일반적입니다. ② 합병은 중복 사업을 통합하고 운영 효율성을 높이는 중요한 목적을 가집니다. ③ 합병을 통해 지역 농축산물의 유통 및 판매를 강화하고, 조합원 대상 금융 서비스를 확대할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 농협중앙회가 지역 농협의 합병을 지원하기 위해 4개 조합 합병 시 1천500억 원을 지원하는 등 지원 규모를 확대했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 발표된 프리랜서 고용보험 가입 요건 개편과 관련하여, 고용보험 적용을 위한 보수 산정 기준 변화에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 보수액 기준이 폐지되고 근로 시간 기준으로만 가입이 가능하다.</li><li>② 기존 근로 시간 기준에서 보수액 기준으로 변경되었으나 가입 문턱은 동일하다.</li><li>③ 월 80만원 이상 보수를 받는 프리랜서도 고용보험에 가입할 수 있도록 요건이 완화된다.</li><li>④ 고용보험 가입 의무가 강화되어 모든 프리랜서는 소득과 관계없이 가입해야 한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 월 80만원 이상 보수를 받는 프리랜서도 고용보험에 가입할 수 있도록 요건이 완화된다.</p>
+      <p><strong>해설:</strong> 고용보험 가입 요건이 근로 시간 기준에서 보수액 기준으로 개편되어 월 80만원 이상 보수를 받는 프리랜서도 가입이 가능해지며 가입 문턱이 낮아졌습니다. [오답해설] ① 기존 근로 시간 기준이 폐지된 것이 아니라 보수액 기준으로 변경되어 가입이 확대됩니다. ② 근로 시간 기준에서 보수액 기준으로 변경된 것은 맞으나, '가입 문턱이 낮아진다'는 의미에서 ③이 더 정확한 설명입니다. ④ 모든 프리랜서가 소득과 관계없이 가입해야 하는 것은 아니며, 특정 보수액 기준을 충족해야 가입이 가능합니다.</p>
+      <p>관련 시사 뉴스: 프리랜서의 고용보험 가입 길이 열리며, 근로시간이 아닌 보수 기준으로 개편될 예정입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 중국의 반도체 핵심소재(헬륨 등) 수출 금지 조치가 국내 은행 여신 포트폴리오에 미칠 수 있는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 반도체 산업 내 기업들의 운전자금 수요 증가로 관련 대출 확대 기회 발생.</li><li>② 글로벌 공급망 불안정성 증가로 반도체 관련 기업의 신용 위험 증대 가능성.</li><li>③ 대체재 개발 및 공급망 다변화 노력으로 인한 기업의 신규 설비투자 대출 감소.</li><li>④ 수출 금지로 인한 국내 반도체 기업의 생산량 감소로 무역금융 여신이 급증.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 글로벌 공급망 불안정성 증가로 반도체 관련 기업의 신용 위험 증대 가능성.</p>
+      <p><strong>해설:</strong> 중국의 반도체 핵심소재 수출 금지는 국내 반도체 기업의 원자재 수급 불안정을 야기하여 생산 차질 및 비용 증가로 이어질 수 있으며, 이는 기업의 수익성 악화 및 신용 위험을 증대시켜 은행의 여신 포트폴리오 건전성에 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 공급망 불안정은 운전자금 수요를 증가시킬 수 있지만, 동시에 기업의 상환 능력에 대한 우려를 높여 은행이 대출 확대에 신중해질 수 있습니다. ③ 대체재 개발 및 공급망 다변화는 새로운 투자를 유발할 수 있으며, 기존 설비투자 대출 감소로 이어지기보다는 자금 조달 리스크가 커질 수 있습니다. ④ 수출 금지로 인한 생산량 감소는 무역금융 여신 감소로 이어질 가능성이 높습니다.</p>
+      <p>관련 시사 뉴스: 중국이 반도체 핵심소재인 헬륨 수출을 금지하면서 국내외 반도체 공급망에 대한 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 환율 하락과 일본 국채 금리 하락이 국내 국고채 금리에 미치는 영향에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 환율 하락은 외국인 투자자의 국내 채권 투자를 감소시켜 국고채 금리 상승 요인이 된다.</li><li>② 일본 국채 금리 하락은 상대적으로 국내 국고채의 투자 매력을 높여 금리 하락 압력으로 작용한다.</li><li>③ 달러 강세 기조가 심화되면서 안전자산 선호 심리로 국고채 금리가 하락한다.</li><li>④ 국내 국고채 금리 하락은 시중 금리 상승으로 이어져 은행의 예대마진을 개선시킨다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 일본 국채 금리 하락은 상대적으로 국내 국고채의 투자 매력을 높여 금리 하락 압력으로 작용한다.</p>
+      <p><strong>해설:</strong> 일본 국채 금리 하락은 상대적으로 한국 국고채의 금리가 매력적으로 인식되게 하여 외국인 자금 유입을 유도하고, 이는 국고채 수요 증가로 이어져 금리 하락 압력을 가합니다. [오답해설] ① 환율 하락(원화 강세)은 외국인 투자자의 환차익 기대감을 높여 국내 채권 투자를 유도할 수 있어, 일반적으로 국고채 금리 하락 요인으로 작용합니다. ③ 달러 강세 기조는 일반적으로 위험자산 선호 심리를 자극하여 국고채와 같은 안전자산의 금리가 상승할 수 있습니다. ④ 국고채 금리 하락은 시장 전반의 금리 하락으로 이어져 은행의 예대마진에 부정적인 영향을 미칠 수 있습니다.</p>
+      <p>관련 시사 뉴스: 환율과 일본 국채 금리의 하락이 국내 국고채 금리 하락을 견인했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. AI 기술 발전 및 빅테크 기업의 성장이 전통 은행의 수신 및 여신 업무에 미칠 수 있는 긍정적인 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 빅테크 기업의 간편결제 및 디지털 금융 서비스 확대로 은행 수신 이탈 가속화.</li><li>② AI 기반 신용 평가 모델 도입으로 중소기업 및 신용 취약 계층에 대한 여신 기회 확대.</li><li>③ AI 기술을 활용한 맞춤형 금융 상품 개발로 은행의 상품 경쟁력 약화.</li><li>④ 빅테크 기업의 직접 대출 시장 진출 확대로 은행의 전통적인 여신 시장 점유율 감소.</li>
+      </ul>
+      <p><strong>정답:</strong> ② AI 기반 신용 평가 모델 도입으로 중소기업 및 신용 취약 계층에 대한 여신 기회 확대.</p>
+      <p><strong>해설:</strong> AI 기반 신용 평가 모델은 기존 평가 방식으로는 대출이 어려웠던 중소기업이나 신용 이력 부족 고객에 대한 정교한 신용 평가를 가능하게 하여 은행의 여신 기회를 확대하고 포용적 금융을 실현하는 데 기여할 수 있습니다. [오답해설] ① 빅테크 기업의 간편결제 및 디지털 금융 서비스 확대는 은행 수신 이탈의 가속화로 이어질 수 있어 은행에게는 도전 과제입니다. ③ AI 기술을 활용한 맞춤형 금융 상품 개발은 은행의 경쟁력을 강화할 수 있으나, 선지에서는 '경쟁력 약화'로 표현되어 옳지 않습니다. ④ 빅테크 기업의 직접 대출 시장 진출은 은행의 전통적인 여신 시장 점유율을 감소시킬 수 있는 위협 요인입니다.</p>
+      <p>관련 시사 뉴스: 최태원 회장이 AI칩 수요의 기하급수적 증가를 언급하는 등 AI 산업의 성장이 지속되고 있으며, 농협상호금융은 AI 로봇을 활용해 금융 접근성을 높이려 합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 쿠팡 '로켓페이' 출시 등 간편결제 서비스 확대와 관련된 전자금융법 규제 환경에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 간편결제 서비스는 전자금융법의 규제를 받지 않아 자유로운 혁신이 가능하다.</li><li>② 전자금융법은 혁신적인 핀테크 서비스의 등장을 저해하는 주된 요인으로 지목된다.</li><li>③ 간편결제 서비스가 금융 서비스의 영역을 확장함에 따라 전자금융법 개정 필요성이 제기되고 있다.</li><li>④ 전자금융법은 오직 은행권에만 적용되며, 빅테크 기업에는 별도의 규제가 존재한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 간편결제 서비스가 금융 서비스의 영역을 확장함에 따라 전자금융법 개정 필요성이 제기되고 있다.</p>
+      <p><strong>해설:</strong> 쿠팡 로켓페이와 같은 간편결제 서비스는 단순 결제를 넘어 예금, 대출 등 금융 서비스 영역으로 확장되며, 이에 따라 기존 전자금융법의 규제 범위 및 방식이 빠르게 변화하는 핀테크 환경에 맞게 개정되어야 한다는 논의가 활발합니다. [오답해설] ① 간편결제 서비스도 전자금융업자로서 전자금융법의 규제를 받습니다. ② 전자금융법은 금융 안정과 소비자 보호를 위한 최소한의 규제이나, 혁신을 저해하는 측면이 있다는 지적과 함께 개정 논의가 진행 중입니다. ④ 전자금융법은 은행뿐만 아니라 전자금융업을 영위하는 모든 사업자에게 적용됩니다.</p>
+      <p>관련 시사 뉴스: 쿠팡이 하반기 간편결제 서비스 '로켓페이'를 출시할 예정이며, AI 기반 쇼핑 등 디지털 금융 시대에 전자금융법의 역할이 재조명되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 '로맨스 스캠'과 같은 신종 금융 사기 피해가 증가하는 가운데, 국내 은행이 이러한 사기 예방 및 피해자 보호를 위해 취할 수 있는 조치로 가장 거리가 먼 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 고객 대상의 금융 사기 유형 및 예방 수칙에 대한 주기적인 교육 및 홍보 강화.</li><li>② 인공지능 기반의 이상거래탐지시스템(FDS) 고도화를 통한 사기 거래 실시간 모니터링.</li><li>③ 사기 피해 발생 시 자금 동결 및 회수를 위한 신속한 사법기관 연계 및 협조 체계 구축.</li><li>④ 사기 피해자의 신용 등급 하락을 방지하기 위해 일괄적으로 피해 금액을 보전해주는 제도 도입.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 사기 피해자의 신용 등급 하락을 방지하기 위해 일괄적으로 피해 금액을 보전해주는 제도 도입.</p>
+      <p><strong>해설:</strong> 은행이 사기 피해 금액을 일괄적으로 보전해주는 제도는 도덕적 해이를 유발하고 막대한 손실을 야기할 수 있어 현실적으로 도입되기 어렵습니다. [오답해설] ① 고객 대상 교육 및 홍보는 가장 기본적인 예방 노력입니다. ② FDS 고도화는 신종 사기 패턴을 감지하고 이상 거래를 막는 데 필수적인 조치입니다. ③ 사기 발생 시 신속한 자금 동결 및 수사기관 협조는 피해 확대를 막고 회수율을 높이는 데 중요합니다.</p>
+      <p>관련 시사 뉴스: 10만 팔로워를 가진 인플루언서가 로맨스 스캠으로 미국 노인으로부터 120억 원을 챙기는 등 신종 금융 사기 피해가 발생했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-11</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1542,"category":"금융용어","question":"해외 기업이 자국 시장이 아닌 다른 국가의 투자자로부터 자금을 조달할 때 활용되는 금융상품으로, 해당 기업의 주식이 해외 주식시장에서 거래되도록 발행된 주식예탁증서를 의미하는 것은?","answer":"① ADR (American Depository Receipt)","explanation":"ADR은 해외 기업의 주식이 미국 증권 시장에서 거래될 수 있도록 발행된 예탁증서입니다. [오답해설] ② GDR은 전 세계 여러 시장에서 거래될 수 있도록 발행된 예탁증서를 의미합니다. ③ ETF는 특정 지수의 성과를 추종하는 투자 상품입니다. ④ REITs는 부동산에 투자하여 수익을 배당하는 투자 상품입니다.","news_context":"SK하이닉스가 나스닥에 성공적으로 데뷔하며 ADR 상장에 대한 관심이 높아졌습니다.","news_url":"","options":["① ADR (American Depository Receipt)","② GDR (Global Depository Receipt)","③ ETF (Exchange Traded Fund)","④ REITs (Real Estate Investment Trusts)"]},{"id":1543,"category":"금융용어","question":"일시적인 유동성 위기에 처한 기업이 채권단의 지원을 받아 재무구조를 개선하는 기업개선작업을 의미하며, 주로 채권단과의 협의를 통해 채무조정 및 자구노력을 병행하는 제도는?","answer":"① 워크아웃 (Workout)","explanation":"워크아웃은 일시적 유동성 위기에 처한 기업이 채권단의 지원을 받아 재무구조를 개선하는 기업개선작업입니다. [오답해설] ② 기업회생절차는 법원의 감독 아래 기업의 채무를 조정하고 정상화를 도모하는 법정관리입니다. ③ 기업공개(IPO)는 비상장 기업이 주식을 일반에 공개하여 상장하는 절차입니다. ④ 상장폐지는 상장된 주식이 거래 시장에서 퇴출되는 것을 의미합니다.","news_context":"유동성 위기를 겪던 중앙일보가 채권자 75% 이상의 동의를 얻어 워크아웃 개시를 결정했습니다.","news_url":"https://www.yna.co.kr/view/AKR20260710156652002","options":["① 워크아웃 (Workout)","② 기업회생절차 (Rehabilitation)","③ 기업공개 (IPO)","④ 상장폐지 (Delisting)"]},{"id":1544,"category":"금융용어","question":"기초자산 수익률의 일정 배수(예: 2배)를 추종하도록 설계된 상장지수펀드(ETF)로, 시장 변동성이 큰 경우 높은 수익을 기대할 수 있으나 동시에 원금 손실 위험도 크게 확대될 수 있는 상품은?","answer":"① 레버리지 ETF","explanation":"레버리지 ETF는 기초자산 수익률의 일정 배수를 추종하도록 설계되어 높은 수익과 손실 위험을 동시에 가질 수 있는 상품입니다. [오답해설] ② 인버스 ETF는 기초자산 가격 하락에 투자하여 역방향 수익을 추구합니다. ③ 합성 ETF는 장외파생상품을 활용하여 기초지수를 추종합니다. ④ 액티브 ETF는 운용사의 적극적인 종목 선택을 통해 지수 이상의 수익을 추구합니다.","news_context":"정부와 청와대가 급변하는 증시 상황에서 '삼전닉스' 레버리지 ETF 등 투자 상품에 대한 보완 검토를 언급했습니다.","news_url":"https://n.news.naver.com/mnews/article/008/0005384526?sid=101","options":["① 레버리지 ETF","② 인버스 ETF","③ 합성 ETF","④ 액티브 ETF"]},{"id":1545,"category":"세부지식","question":"농협중앙회가 지역농협의 건전성 및 경쟁력 강화를 위해 추진하는 합병 지원 정책에 대한 설명으로 옳지 않은 것은?","answer":"④ 합병 지원은 농협 상호금융의 신규 대출 한도를 증액하는 방식으로 이루어진다.","explanation":"농협의 합병 지원은 합병에 따른 인센티브 지원, 부실채권 정리 등 재무 건전성 강화 및 사업 활성화에 중점을 두며, 상호금융의 신규 대출 한도를 직접 증액하는 방식은 아닙니다. [오답해설] ① 합병 조합 수 및 재무 상황에 따라 지원 규모가 달라지는 것이 일반적입니다. ② 합병은 중복 사업을 통합하고 운영 효율성을 높이는 중요한 목적을 가집니다. ③ 합병을 통해 지역 농축산물의 유통 및 판매를 강화하고, 조합원 대상 금융 서비스를 확대할 수 있습니다.","news_context":"농협중앙회가 지역 농협의 합병을 지원하기 위해 4개 조합 합병 시 1천500억 원을 지원하는 등 지원 규모를 확대했습니다.","news_url":"https://www.yna.co.kr/view/AKR20260710165400030","options":["① 합병 조합 수에 따라 지원 규모가 달라질 수 있다.","② 합병으로 인한 중복 투자를 방지하고 효율성을 높이는 목적이 있다.","③ 주로 경제 사업 활성화 및 금융 서비스 확대에 중점을 둔다.","④ 합병 지원은 농협 상호금융의 신규 대출 한도를 증액하는 방식으로 이루어진다."]},{"id":1546,"category":"세부지식","question":"최근 발표된 프리랜서 고용보험 가입 요건 개편과 관련하여, 고용보험 적용을 위한 보수 산정 기준 변화에 대한 설명으로 옳은 것은?","answer":"③ 월 80만원 이상 보수를 받는 프리랜서도 고용보험에 가입할 수 있도록 요건이 완화된다.","explanation":"고용보험 가입 요건이 근로 시간 기준에서 보수액 기준으로 개편되어 월 80만원 이상 보수를 받는 프리랜서도 가입이 가능해지며 가입 문턱이 낮아졌습니다. [오답해설] ① 기존 근로 시간 기준이 폐지된 것이 아니라 보수액 기준으로 변경되어 가입이 확대됩니다. ② 근로 시간 기준에서 보수액 기준으로 변경된 것은 맞으나, '가입 문턱이 낮아진다'는 의미에서 ③이 더 정확한 설명입니다. ④ 모든 프리랜서가 소득과 관계없이 가입해야 하는 것은 아니며, 특정 보수액 기준을 충족해야 가입이 가능합니다.","news_context":"프리랜서의 고용보험 가입 길이 열리며, 근로시간이 아닌 보수 기준으로 개편될 예정입니다.","news_url":"https://www.mk.co.kr/news/economy/12095941","options":["① 보수액 기준이 폐지되고 근로 시간 기준으로만 가입이 가능하다.","② 기존 근로 시간 기준에서 보수액 기준으로 변경되었으나 가입 문턱은 동일하다.","③ 월 80만원 이상 보수를 받는 프리랜서도 고용보험에 가입할 수 있도록 요건이 완화된다.","④ 고용보험 가입 의무가 강화되어 모든 프리랜서는 소득과 관계없이 가입해야 한다."]},{"id":1547,"category":"시사","question":"중국의 반도체 핵심소재(헬륨 등) 수출 금지 조치가 국내 은행 여신 포트폴리오에 미칠 수 있는 영향으로 가장 적절한 것은?","answer":"② 글로벌 공급망 불안정성 증가로 반도체 관련 기업의 신용 위험 증대 가능성.","explanation":"중국의 반도체 핵심소재 수출 금지는 국내 반도체 기업의 원자재 수급 불안정을 야기하여 생산 차질 및 비용 증가로 이어질 수 있으며, 이는 기업의 수익성 악화 및 신용 위험을 증대시켜 은행의 여신 포트폴리오 건전성에 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 공급망 불안정은 운전자금 수요를 증가시킬 수 있지만, 동시에 기업의 상환 능력에 대한 우려를 높여 은행이 대출 확대에 신중해질 수 있습니다. ③ 대체재 개발 및 공급망 다변화는 새로운 투자를 유발할 수 있으며, 기존 설비투자 대출 감소로 이어지기보다는 자금 조달 리스크가 커질 수 있습니다. ④ 수출 금지로 인한 생산량 감소는 무역금융 여신 감소로 이어질 가능성이 높습니다.","news_context":"중국이 반도체 핵심소재인 헬륨 수출을 금지하면서 국내외 반도체 공급망에 대한 우려가 커지고 있습니다.","news_url":"","options":["① 반도체 산업 내 기업들의 운전자금 수요 증가로 관련 대출 확대 기회 발생.","② 글로벌 공급망 불안정성 증가로 반도체 관련 기업의 신용 위험 증대 가능성.","③ 대체재 개발 및 공급망 다변화 노력으로 인한 기업의 신규 설비투자 대출 감소.","④ 수출 금지로 인한 국내 반도체 기업의 생산량 감소로 무역금융 여신이 급증."]},{"id":1548,"category":"시사","question":"최근 환율 하락과 일본 국채 금리 하락이 국내 국고채 금리에 미치는 영향에 대한 설명으로 옳은 것은?","answer":"② 일본 국채 금리 하락은 상대적으로 국내 국고채의 투자 매력을 높여 금리 하락 압력으로 작용한다.","explanation":"일본 국채 금리 하락은 상대적으로 한국 국고채의 금리가 매력적으로 인식되게 하여 외국인 자금 유입을 유도하고, 이는 국고채 수요 증가로 이어져 금리 하락 압력을 가합니다. [오답해설] ① 환율 하락(원화 강세)은 외국인 투자자의 환차익 기대감을 높여 국내 채권 투자를 유도할 수 있어, 일반적으로 국고채 금리 하락 요인으로 작용합니다. ③ 달러 강세 기조는 일반적으로 위험자산 선호 심리를 자극하여 국고채와 같은 안전자산의 금리가 상승할 수 있습니다. ④ 국고채 금리 하락은 시장 전반의 금리 하락으로 이어져 은행의 예대마진에 부정적인 영향을 미칠 수 있습니다.","news_context":"환율과 일본 국채 금리의 하락이 국내 국고채 금리 하락을 견인했습니다.","news_url":"https://www.yna.co.kr/view/AKR20260710136951008","options":["① 환율 하락은 외국인 투자자의 국내 채권 투자를 감소시켜 국고채 금리 상승 요인이 된다.","② 일본 국채 금리 하락은 상대적으로 국내 국고채의 투자 매력을 높여 금리 하락 압력으로 작용한다.","③ 달러 강세 기조가 심화되면서 안전자산 선호 심리로 국고채 금리가 하락한다.","④ 국내 국고채 금리 하락은 시중 금리 상승으로 이어져 은행의 예대마진을 개선시킨다."]},{"id":1549,"category":"시사","question":"AI 기술 발전 및 빅테크 기업의 성장이 전통 은행의 수신 및 여신 업무에 미칠 수 있는 긍정적인 영향으로 가장 적절한 것은?","answer":"② AI 기반 신용 평가 모델 도입으로 중소기업 및 신용 취약 계층에 대한 여신 기회 확대.","explanation":"AI 기반 신용 평가 모델은 기존 평가 방식으로는 대출이 어려웠던 중소기업이나 신용 이력 부족 고객에 대한 정교한 신용 평가를 가능하게 하여 은행의 여신 기회를 확대하고 포용적 금융을 실현하는 데 기여할 수 있습니다. [오답해설] ① 빅테크 기업의 간편결제 및 디지털 금융 서비스 확대는 은행 수신 이탈의 가속화로 이어질 수 있어 은행에게는 도전 과제입니다. ③ AI 기술을 활용한 맞춤형 금융 상품 개발은 은행의 경쟁력을 강화할 수 있으나, 선지에서는 '경쟁력 약화'로 표현되어 옳지 않습니다. ④ 빅테크 기업의 직접 대출 시장 진출은 은행의 전통적인 여신 시장 점유율을 감소시킬 수 있는 위협 요인입니다.","news_context":"최태원 회장이 AI칩 수요의 기하급수적 증가를 언급하는 등 AI 산업의 성장이 지속되고 있으며, 농협상호금융은 AI 로봇을 활용해 금융 접근성을 높이려 합니다.","news_url":"","options":["① 빅테크 기업의 간편결제 및 디지털 금융 서비스 확대로 은행 수신 이탈 가속화.","② AI 기반 신용 평가 모델 도입으로 중소기업 및 신용 취약 계층에 대한 여신 기회 확대.","③ AI 기술을 활용한 맞춤형 금융 상품 개발로 은행의 상품 경쟁력 약화.","④ 빅테크 기업의 직접 대출 시장 진출 확대로 은행의 전통적인 여신 시장 점유율 감소."]},{"id":1550,"category":"시사","question":"쿠팡 '로켓페이' 출시 등 간편결제 서비스 확대와 관련된 전자금융법 규제 환경에 대한 설명으로 가장 적절한 것은?","answer":"③ 간편결제 서비스가 금융 서비스의 영역을 확장함에 따라 전자금융법 개정 필요성이 제기되고 있다.","explanation":"쿠팡 로켓페이와 같은 간편결제 서비스는 단순 결제를 넘어 예금, 대출 등 금융 서비스 영역으로 확장되며, 이에 따라 기존 전자금융법의 규제 범위 및 방식이 빠르게 변화하는 핀테크 환경에 맞게 개정되어야 한다는 논의가 활발합니다. [오답해설] ① 간편결제 서비스도 전자금융업자로서 전자금융법의 규제를 받습니다. ② 전자금융법은 금융 안정과 소비자 보호를 위한 최소한의 규제이나, 혁신을 저해하는 측면이 있다는 지적과 함께 개정 논의가 진행 중입니다. ④ 전자금융법은 은행뿐만 아니라 전자금융업을 영위하는 모든 사업자에게 적용됩니다.","news_context":"쿠팡이 하반기 간편결제 서비스 '로켓페이'를 출시할 예정이며, AI 기반 쇼핑 등 디지털 금융 시대에 전자금융법의 역할이 재조명되고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260710160500030","options":["① 간편결제 서비스는 전자금융법의 규제를 받지 않아 자유로운 혁신이 가능하다.","② 전자금융법은 혁신적인 핀테크 서비스의 등장을 저해하는 주된 요인으로 지목된다.","③ 간편결제 서비스가 금융 서비스의 영역을 확장함에 따라 전자금융법 개정 필요성이 제기되고 있다.","④ 전자금융법은 오직 은행권에만 적용되며, 빅테크 기업에는 별도의 규제가 존재한다."]},{"id":1551,"category":"시사","question":"최근 '로맨스 스캠'과 같은 신종 금융 사기 피해가 증가하는 가운데, 국내 은행이 이러한 사기 예방 및 피해자 보호를 위해 취할 수 있는 조치로 가장 거리가 먼 것은?","answer":"④ 사기 피해자의 신용 등급 하락을 방지하기 위해 일괄적으로 피해 금액을 보전해주는 제도 도입.","explanation":"은행이 사기 피해 금액을 일괄적으로 보전해주는 제도는 도덕적 해이를 유발하고 막대한 손실을 야기할 수 있어 현실적으로 도입되기 어렵습니다. [오답해설] ① 고객 대상 교육 및 홍보는 가장 기본적인 예방 노력입니다. ② FDS 고도화는 신종 사기 패턴을 감지하고 이상 거래를 막는 데 필수적인 조치입니다. ③ 사기 발생 시 신속한 자금 동결 및 수사기관 협조는 피해 확대를 막고 회수율을 높이는 데 중요합니다.","news_context":"10만 팔로워를 가진 인플루언서가 로맨스 스캠으로 미국 노인으로부터 120억 원을 챙기는 등 신종 금융 사기 피해가 발생했습니다.","news_url":"","options":["① 고객 대상의 금융 사기 유형 및 예방 수칙에 대한 주기적인 교육 및 홍보 강화.","② 인공지능 기반의 이상거래탐지시스템(FDS) 고도화를 통한 사기 거래 실시간 모니터링.","③ 사기 피해 발생 시 자금 동결 및 회수를 위한 신속한 사법기관 연계 및 협조 체계 구축.","④ 사기 피해자의 신용 등급 하락을 방지하기 위해 일괄적으로 피해 금액을 보전해주는 제도 도입."]},{"id":24,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
