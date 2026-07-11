@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-12 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-12 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-12 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 부동산(Property)과 정보기술(IT)을 결합한 서비스 산업을 통칭하는 용어로, 부동산 거래, 관리, 금융 등 다양한 분야에서 혁신적인 솔루션을 제공하는 것을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 프롭테크</li><li>② 핀테크</li><li>③ 빅테크</li><li>④ 리츠</li>
+      </ul>
+      <p><strong>정답:</strong> ① 프롭테크</p>
+      <p><strong>해설:</strong> 프롭테크는 부동산과 IT 기술을 결합하여 부동산 산업의 효율성을 높이는 서비스를 의미합니다. [오답해설] ② 핀테크는 금융(Finance)과 기술(Technology)을 결합한 서비스입니다. ③ 빅테크는 거대 IT 기업을 의미합니다. ④ 리츠는 부동산 투자 회사로, 투자자로부터 자금을 모아 부동산에 투자하고 수익을 배당하는 회사 형태입니다.</p>
+      <p>관련 시사 뉴스: '보름만에 집 샀다'…온라인 기반 프롭테크로 집매매 대폭 단축</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 가격 변동성을 최소화하도록 설계된 암호화폐로, 일반적으로 미국 달러와 같은 법정화폐나 금 등 실물 자산의 가치에 연동되는 특징을 가지는 것은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스테이블코인</li><li>② 알트코인</li><li>③ 중앙은행 디지털 화폐(CBDC)</li><li>④ 토큰증권(STO)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 스테이블코인</p>
+      <p><strong>해설:</strong> 스테이블코인은 가격 변동성을 줄이기 위해 법정화폐나 다른 자산에 연동되도록 설계된 암호화폐입니다. [오답해설] ② 알트코인은 비트코인을 제외한 모든 암호화폐를 지칭하는 용어입니다. ③ 중앙은행 디지털 화폐(CBDC)는 중앙은행이 발행하는 디지털 형태의 법정화폐입니다. ④ 토큰증권(STO)은 블록체인 기반의 디지털 증권으로, 실물 자산의 소유권을 나타냅니다.</p>
+      <p>관련 시사 뉴스: 코인이 된 달러 '스테이블코인'…달러 패권 강화할까?</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 특정 지수의 수익률을 추종하도록 발행된 파생결합증권으로, 발행 주체의 신용도에 따라 투자 위험이 달라지며, 증권 시장에 상장되어 주식처럼 거래되는 금융상품은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① ETN</li><li>② ETF</li><li>③ ELS</li><li>④ DLS</li>
+      </ul>
+      <p><strong>정답:</strong> ① ETN</p>
+      <p><strong>해설:</strong> ETN(Exchange Traded Note)은 특정 지수 성과를 추종하며 증권 시장에 상장되어 거래되는 파생결합증권으로, 발행 증권사의 신용 위험에 노출됩니다. [오답해설] ② ETF(Exchange Traded Fund)는 특정 지수나 자산의 가격을 추종하도록 설계된 펀드로, 주식처럼 거래되며 분산 투자 효과가 있습니다. ③ ELS(Equity Linked Securities)는 주가연계증권으로, 주가지수나 개별 주식 가격의 변동에 따라 수익이 결정되는 상품입니다. ④ DLS(Derivative Linked Securities)는 파생결합증권으로, 금리, 환율, 원자재 등 다양한 기초자산의 변동에 따라 수익이 결정됩니다.</p>
+      <p>관련 시사 뉴스: 여름철 엘니뇨 공습 관측에…농산물 ETN '들썩'</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 전 세계 주요 국가의 국채를 편입하여 산출되는 지수로, 이 지수에 편입될 경우 해당 국가의 국채 수요 증가와 국제 투자 자금 유입을 기대할 수 있는 것은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① WGBI</li><li>② MSCI</li><li>③ FTSE</li><li>④ S&P</li>
+      </ul>
+      <p><strong>정답:</strong> ① WGBI</p>
+      <p><strong>해설:</strong> WGBI(World Government Bond Index)는 세계 주요국 국채를 편입하여 산출되는 지수로, 여기에 편입될 경우 해당국 국채에 대한 외국인 투자가 증가할 수 있습니다. [오답해설] ② MSCI(Morgan Stanley Capital International)는 모건스탠리 캐피털 인터내셔널에서 발표하는 주가지수입니다. ③ FTSE(Financial Times Stock Exchange)는 파이낸셜 타임스에서 발행하는 주가지수입니다. ④ S&P(Standard & Poor's)는 신용평가 및 주가지수를 제공하는 기업입니다.</p>
+      <p>관련 시사 뉴스: WGBI 편입에 일본 공적연금 석 달간 한국 국채 9조 사들여</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 다음 중 레버리지 ETF에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 기초자산 수익률의 반대 방향으로 두 배의 수익을 추구한다.</li><li>② 장기 투자 시 복리 효과로 인해 목표 수익률 달성이 용이하다.</li><li>③ 주가 상승 시에는 기초자산보다 더 높은 수익을, 하락 시에는 더 큰 손실을 발생시킨다.</li><li>④ 증거금 없이 신용 거래를 통해 레버리지 효과를 얻을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 주가 상승 시에는 기초자산보다 더 높은 수익을, 하락 시에는 더 큰 손실을 발생시킨다.</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초자산 일일 수익률의 특정 배수(예: 2배)를 추종하므로, 주가 상승 시 더 큰 이익을 얻을 수 있지만, 하락 시에는 더 큰 손실을 보게 됩니다. [오답해설] ① 기초자산 수익률의 반대 방향으로 수익을 추구하는 것은 인버스(Inverse) ETF입니다. ② 레버리지 ETF는 일별 수익률을 추종하여 장기 투자 시 복리 효과로 인해 기초자산과의 괴리가 커질 수 있어 목표 수익률 달성이 어렵거나 오히려 손실이 확대될 위험이 있습니다. ④ 레버리지 ETF는 증권 시장에서 주식처럼 거래되므로 별도의 증거금이나 신용 거래 없이 일반 주식 매매와 동일하게 투자할 수 있습니다.</p>
+      <p>관련 시사 뉴스: '삼전닉스' 레버리지 덫에 靑 '제도 고민 중', 스페이스X 상장 한 달…개인투자자, '우주 ETF' 5천억 던졌다, "삼전닉스 레버리지? 지금은 비중 축소 권한다"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 다음 중 종합부동산세(종부세)에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 매년 6월 1일 현재 주택 및 토지 소유자에게 부과되는 국세이다.</li><li>② 재산세와 마찬가지로 지방세의 일종이며, 누진세율이 적용된다.</li><li>③ 공시가격 합산액이 일정 기준을 초과하는 고액 부동산 보유자에게 부과된다.</li><li>④ 다주택자에게는 높은 세율이 적용될 수 있으며, 최근 제도 개편 논의가 활발하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 재산세와 마찬가지로 지방세의 일종이며, 누진세율이 적용된다.</p>
+      <p><strong>해설:</strong> 종합부동산세는 국세이고, 재산세는 지방세입니다. [오답해설] ① 종부세는 매년 6월 1일을 과세 기준일로 하여 주택과 토지 소유자에게 부과되는 국세입니다. ③ 공시가격 합산액이 일정 기준을 초과하는 경우에만 부과되는 세금입니다. ④ 다주택자에게는 상대적으로 높은 세율이 적용될 수 있으며, 최근 정부 정책 방향에 따라 과세 기준 및 세율에 대한 개편 논의가 활발합니다.</p>
+      <p>관련 시사 뉴스: 작년 종부세 강남3구에서 3분의 1 내…더 센 보유세 예고, '30억 1채'가 '10억 3채'보다 적은 종부세…손질 임박, 李 대통령이 꺼낸 '보유세 6대 쟁점'</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 한국은행 금융통화위원회가 기준금리를 인상할 경우, 은행의 경영 환경에 미치는 영향으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 대출금리 상승으로 은행의 순이자마진(NIM)이 개선될 수 있다.</li><li>② 기업의 자금 조달 비용 증가로 신규 투자가 위축될 수 있다.</li><li>③ 고객의 대출 상환 부담 증가로 연체율이 상승할 위험이 있다.</li><li>④ 시중 유동성이 풍부해져 은행의 수신(예금) 유치 경쟁이 완화된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 시중 유동성이 풍부해져 은행의 수신(예금) 유치 경쟁이 완화된다.</p>
+      <p><strong>해설:</strong> 기준금리 인상은 일반적으로 시중 유동성을 흡수하여 감소시키므로, 은행들은 예금 유치를 위해 더 높은 금리를 제시해야 할 수 있어 수신 경쟁이 심화될 가능성이 높습니다. [오답해설] ① 기준금리 인상으로 대출금리가 더 빠르게 오르면 은행의 순이자마진(NIM)이 개선될 여지가 있습니다. ② 금리 인상은 기업의 대출 이자 부담을 늘려 자금 조달 비용을 증가시키고 투자 심리를 위축시킬 수 있습니다. ③ 대출금리가 오르면 차주의 이자 상환 부담이 커져 가계 및 기업의 연체율이 상승할 위험이 있습니다.</p>
+      <p>관련 시사 뉴스: 만장일치 인상 유력한 7월 금통위…관건은 '연속 인상' 시그널, 통화긴축 시작된다…전문가들 "7월 이어 8월이나 10월 인상"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 원/달러 환율이 1,500원을 돌파하는 등 고환율 상황이 지속될 때, 국내 시중은행의 외환 관련 업무에 나타날 수 있는 현상으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 외화 예금 해지가 급증하여 은행의 외화 유동성이 고갈될 위험이 커진다.</li><li>② 기업들의 환율 변동성 헤지(Hedge) 수요가 증가하여 은행의 외환 파생상품 거래가 활발해질 수 있다.</li><li>③ 해외 송금 및 환전 거래량이 감소하여 은행의 외환 관련 비이자수익이 크게 줄어든다.</li><li>④ 은행은 안정적인 환율 유지를 위해 정부의 외환시장 개입을 적극적으로 요구한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 기업들의 환율 변동성 헤지(Hedge) 수요가 증가하여 은행의 외환 파생상품 거래가 활발해질 수 있다.</p>
+      <p><strong>해설:</strong> 고환율과 환율 변동성 확대는 기업들이 미래의 환율 위험을 회피하기 위한 헤지 수요를 증가시켜 은행의 외환 파생상품 거래를 활발하게 만듭니다. [오답해설] ① 고환율은 오히려 달러 예금의 매력을 높여 달러 예금 증가로 이어질 수 있으며(뉴스 30번 참조), 외화 예금 해지가 급증하여 유동성이 고갈되는 경우는 드뭅니다. ③ 환율이 높다고 해서 해외 송금 및 환전 거래량이 반드시 감소하는 것은 아니며, 환율 변동성 자체로 거래가 늘어날 수도 있습니다. ④ 외환시장 개입은 중앙은행과 정부의 역할이며, 시중은행은 주로 고객의 외환 거래를 중개하고 환 리스크 관리 서비스를 제공합니다.</p>
+      <p>관련 시사 뉴스: 환율 1,500원 깨지며 달러예금 8.8조↑…3년반 만에 최대, 외환시장에 '통화스와프급' 달러 폭탄 퍼붓는 SK하이닉스</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 '티메프·레고랜드 후유증' 및 '홈플러스 전단채 사태' 등으로 2금융권의 부실 위험이 부각되고 있다. 이러한 상황이 국내 시중은행의 건전성 및 리스크 관리에 미칠 수 있는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 시중은행은 2금융권 부실과 무관하므로 건전성에는 직접적인 영향이 없다.</li><li>② 2금융권의 자금 조달이 어려워지면서 시중은행의 자금 경색 위험이 완화된다.</li><li>③ 은행들은 부동산 프로젝트파이낸싱(PF) 대출 등 고위험 자산에 대한 심사를 강화하고 잠재 부실에 대비한 충당금을 추가 적립할 수 있다.</li><li>④ 시중은행은 2금융권 부실 기업에 대한 구제금융 역할을 수행하여 시장 안정화에 기여할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행들은 부동산 프로젝트파이낸싱(PF) 대출 등 고위험 자산에 대한 심사를 강화하고 잠재 부실에 대비한 충당금을 추가 적립할 수 있다.</p>
+      <p><strong>해설:</strong> 2금융권의 부실 위험은 금융 시스템 전반의 불안정성을 높일 수 있으므로, 시중은행은 리스크 관리를 강화하고 부동산 PF 대출 등 취약 부문에 대한 충당금을 추가 적립하여 건전성 악화에 대비할 것입니다. [오답해설] ① 금융 시스템은 상호 연결되어 있어 2금융권의 부실은 시중은행에도 간접적인 영향을 미칠 수 있으며, 특히 PF 대출 등 동일한 자산에 대한 노출이 있을 경우 직접적인 영향도 배제할 수 없습니다. ② 2금융권의 자금 조달 어려움은 전체 금융 시장의 유동성을 위축시켜 시중은행에도 자금 경색 위험을 증가시킬 수 있습니다. ④ 시중은행은 자체적인 건전성 유지가 우선이며, 특정 기업이나 2금융권에 대한 구제금융은 정부 또는 정책 금융기관의 역할입니다.</p>
+      <p>관련 시사 뉴스: 티메프·레고랜드 후유증 아직인데…2금융권 홈플러스 사태 주시, 홈플 전단채 제재·분쟁조정 속도낸다…리스크 연착륙에도 총력, KB, '홈플러스 카드' 신규 발급 중단</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 금융당국의 가계대출 총량 관리 강화 및 은행의 연간 목표 초과 소식은 은행의 여신(대출) 업무에 어떤 영향을 미칠 것으로 예상되는가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행들은 새로운 대출 상품 출시를 통해 대출 규모를 확대할 것이다.</li><li>② 대출 심사를 완화하여 실수요자들의 대출 접근성을 높일 것이다.</li><li>③ 주택담보대출보다 신용대출 위주로 대출 포트폴리오를 재편할 것이다.</li><li>④ 대출 만기 연장이나 추가 대출에 대한 심사가 강화되어 실수요자의 자금 조달이 어려워질 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 대출 만기 연장이나 추가 대출에 대한 심사가 강화되어 실수요자의 자금 조달이 어려워질 수 있다.</p>
+      <p><strong>해설:</strong> 가계대출 총량 관리 강화 기조 하에서는 은행이 대출 한도를 채우거나 초과한 경우, 신규 대출뿐 아니라 기존 대출의 만기 연장이나 추가 대출에 대해서도 심사를 강화할 수밖에 없으므로 실수요자의 자금 조달이 어려워집니다. [오답해설] ① 대출 총량 관리 기조에서는 새로운 상품 출시보다는 기존 상품의 한도 축소 또는 금리 인상 등 대출 억제 정책이 주로 나타납니다. ② 대출 심사는 강화될 것이며, 완화될 가능성은 낮습니다. ③ 대출 포트폴리오 재편 시 특정 대출만 늘리기는 어려우며, 전체적인 대출 규모를 줄이는 방향으로 조정될 것입니다.</p>
+      <p>관련 시사 뉴스: 가계대출 '셧다운' 수순…5대 은행 3곳 연간 목표 초과, 이사철 앞두고 ‘날벼락’…하루아침에 수억 원 대출 깎인 실수요자들 ‘발동동’</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-12</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1552,"category":"금융용어","question":"부동산(Property)과 정보기술(IT)을 결합한 서비스 산업을 통칭하는 용어로, 부동산 거래, 관리, 금융 등 다양한 분야에서 혁신적인 솔루션을 제공하는 것을 무엇이라고 하는가?","answer":"① 프롭테크","explanation":"프롭테크는 부동산과 IT 기술을 결합하여 부동산 산업의 효율성을 높이는 서비스를 의미합니다. [오답해설] ② 핀테크는 금융(Finance)과 기술(Technology)을 결합한 서비스입니다. ③ 빅테크는 거대 IT 기업을 의미합니다. ④ 리츠는 부동산 투자 회사로, 투자자로부터 자금을 모아 부동산에 투자하고 수익을 배당하는 회사 형태입니다.","news_context":"'보름만에 집 샀다'…온라인 기반 프롭테크로 집매매 대폭 단축","news_url":"https://www.yna.co.kr/view/AKR20260710144000017","options":["① 프롭테크","② 핀테크","③ 빅테크","④ 리츠"]},{"id":1553,"category":"금융용어","question":"가격 변동성을 최소화하도록 설계된 암호화폐로, 일반적으로 미국 달러와 같은 법정화폐나 금 등 실물 자산의 가치에 연동되는 특징을 가지는 것은 무엇인가?","answer":"① 스테이블코인","explanation":"스테이블코인은 가격 변동성을 줄이기 위해 법정화폐나 다른 자산에 연동되도록 설계된 암호화폐입니다. [오답해설] ② 알트코인은 비트코인을 제외한 모든 암호화폐를 지칭하는 용어입니다. ③ 중앙은행 디지털 화폐(CBDC)는 중앙은행이 발행하는 디지털 형태의 법정화폐입니다. ④ 토큰증권(STO)은 블록체인 기반의 디지털 증권으로, 실물 자산의 소유권을 나타냅니다.","news_context":"코인이 된 달러 '스테이블코인'…달러 패권 강화할까?","news_url":"https://n.news.naver.com/mnews/article/008/0005384620?sid=101","options":["① 스테이블코인","② 알트코인","③ 중앙은행 디지털 화폐(CBDC)","④ 토큰증권(STO)"]},{"id":1554,"category":"금융용어","question":"특정 지수의 수익률을 추종하도록 발행된 파생결합증권으로, 발행 주체의 신용도에 따라 투자 위험이 달라지며, 증권 시장에 상장되어 주식처럼 거래되는 금융상품은 무엇인가?","answer":"① ETN","explanation":"ETN(Exchange Traded Note)은 특정 지수 성과를 추종하며 증권 시장에 상장되어 거래되는 파생결합증권으로, 발행 증권사의 신용 위험에 노출됩니다. [오답해설] ② ETF(Exchange Traded Fund)는 특정 지수나 자산의 가격을 추종하도록 설계된 펀드로, 주식처럼 거래되며 분산 투자 효과가 있습니다. ③ ELS(Equity Linked Securities)는 주가연계증권으로, 주가지수나 개별 주식 가격의 변동에 따라 수익이 결정되는 상품입니다. ④ DLS(Derivative Linked Securities)는 파생결합증권으로, 금리, 환율, 원자재 등 다양한 기초자산의 변동에 따라 수익이 결정됩니다.","news_context":"여름철 엘니뇨 공습 관측에…농산물 ETN '들썩'","news_url":"https://www.yna.co.kr/view/AKR20260710171500008","options":["① ETN","② ETF","③ ELS","④ DLS"]},{"id":1555,"category":"금융용어","question":"전 세계 주요 국가의 국채를 편입하여 산출되는 지수로, 이 지수에 편입될 경우 해당 국가의 국채 수요 증가와 국제 투자 자금 유입을 기대할 수 있는 것은 무엇인가?","answer":"① WGBI","explanation":"WGBI(World Government Bond Index)는 세계 주요국 국채를 편입하여 산출되는 지수로, 여기에 편입될 경우 해당국 국채에 대한 외국인 투자가 증가할 수 있습니다. [오답해설] ② MSCI(Morgan Stanley Capital International)는 모건스탠리 캐피털 인터내셔널에서 발표하는 주가지수입니다. ③ FTSE(Financial Times Stock Exchange)는 파이낸셜 타임스에서 발행하는 주가지수입니다. ④ S&P(Standard & Poor's)는 신용평가 및 주가지수를 제공하는 기업입니다.","news_context":"WGBI 편입에 일본 공적연금 석 달간 한국 국채 9조 사들여","news_url":"https://www.mk.co.kr/news/economy/12095532","options":["① WGBI","② MSCI","③ FTSE","④ S&P"]},{"id":1556,"category":"세부지식","question":"다음 중 레버리지 ETF에 대한 설명으로 옳은 것은?","answer":"③ 주가 상승 시에는 기초자산보다 더 높은 수익을, 하락 시에는 더 큰 손실을 발생시킨다.","explanation":"레버리지 ETF는 기초자산 일일 수익률의 특정 배수(예: 2배)를 추종하므로, 주가 상승 시 더 큰 이익을 얻을 수 있지만, 하락 시에는 더 큰 손실을 보게 됩니다. [오답해설] ① 기초자산 수익률의 반대 방향으로 수익을 추구하는 것은 인버스(Inverse) ETF입니다. ② 레버리지 ETF는 일별 수익률을 추종하여 장기 투자 시 복리 효과로 인해 기초자산과의 괴리가 커질 수 있어 목표 수익률 달성이 어렵거나 오히려 손실이 확대될 위험이 있습니다. ④ 레버리지 ETF는 증권 시장에서 주식처럼 거래되므로 별도의 증거금이나 신용 거래 없이 일반 주식 매매와 동일하게 투자할 수 있습니다.","news_context":"'삼전닉스' 레버리지 덫에 靑 '제도 고민 중', 스페이스X 상장 한 달…개인투자자, '우주 ETF' 5천억 던졌다, \"삼전닉스 레버리지? 지금은 비중 축소 권한다\"","news_url":"https://www.yna.co.kr/view/AKR20260711025900008","options":["① 기초자산 수익률의 반대 방향으로 두 배의 수익을 추구한다.","② 장기 투자 시 복리 효과로 인해 목표 수익률 달성이 용이하다.","③ 주가 상승 시에는 기초자산보다 더 높은 수익을, 하락 시에는 더 큰 손실을 발생시킨다.","④ 증거금 없이 신용 거래를 통해 레버리지 효과를 얻을 수 있다."]},{"id":1557,"category":"세부지식","question":"다음 중 종합부동산세(종부세)에 대한 설명으로 옳지 않은 것은?","answer":"② 재산세와 마찬가지로 지방세의 일종이며, 누진세율이 적용된다.","explanation":"종합부동산세는 국세이고, 재산세는 지방세입니다. [오답해설] ① 종부세는 매년 6월 1일을 과세 기준일로 하여 주택과 토지 소유자에게 부과되는 국세입니다. ③ 공시가격 합산액이 일정 기준을 초과하는 경우에만 부과되는 세금입니다. ④ 다주택자에게는 상대적으로 높은 세율이 적용될 수 있으며, 최근 정부 정책 방향에 따라 과세 기준 및 세율에 대한 개편 논의가 활발합니다.","news_context":"작년 종부세 강남3구에서 3분의 1 내…더 센 보유세 예고, '30억 1채'가 '10억 3채'보다 적은 종부세…손질 임박, 李 대통령이 꺼낸 '보유세 6대 쟁점'","news_url":"https://n.news.naver.com/mnews/article/421/0009054124?sid=101","options":["① 매년 6월 1일 현재 주택 및 토지 소유자에게 부과되는 국세이다.","② 재산세와 마찬가지로 지방세의 일종이며, 누진세율이 적용된다.","③ 공시가격 합산액이 일정 기준을 초과하는 고액 부동산 보유자에게 부과된다.","④ 다주택자에게는 높은 세율이 적용될 수 있으며, 최근 제도 개편 논의가 활발하다."]},{"id":1558,"category":"시사","question":"한국은행 금융통화위원회가 기준금리를 인상할 경우, 은행의 경영 환경에 미치는 영향으로 가장 적절하지 않은 것은?","answer":"④ 시중 유동성이 풍부해져 은행의 수신(예금) 유치 경쟁이 완화된다.","explanation":"기준금리 인상은 일반적으로 시중 유동성을 흡수하여 감소시키므로, 은행들은 예금 유치를 위해 더 높은 금리를 제시해야 할 수 있어 수신 경쟁이 심화될 가능성이 높습니다. [오답해설] ① 기준금리 인상으로 대출금리가 더 빠르게 오르면 은행의 순이자마진(NIM)이 개선될 여지가 있습니다. ② 금리 인상은 기업의 대출 이자 부담을 늘려 자금 조달 비용을 증가시키고 투자 심리를 위축시킬 수 있습니다. ③ 대출금리가 오르면 차주의 이자 상환 부담이 커져 가계 및 기업의 연체율이 상승할 위험이 있습니다.","news_context":"만장일치 인상 유력한 7월 금통위…관건은 '연속 인상' 시그널, 통화긴축 시작된다…전문가들 \"7월 이어 8월이나 10월 인상\"","news_url":"https://www.yna.co.kr/view/AKR20260710151400008","options":["① 대출금리 상승으로 은행의 순이자마진(NIM)이 개선될 수 있다.","② 기업의 자금 조달 비용 증가로 신규 투자가 위축될 수 있다.","③ 고객의 대출 상환 부담 증가로 연체율이 상승할 위험이 있다.","④ 시중 유동성이 풍부해져 은행의 수신(예금) 유치 경쟁이 완화된다."]},{"id":1559,"category":"시사","question":"최근 원/달러 환율이 1,500원을 돌파하는 등 고환율 상황이 지속될 때, 국내 시중은행의 외환 관련 업무에 나타날 수 있는 현상으로 가장 적절한 것은?","answer":"② 기업들의 환율 변동성 헤지(Hedge) 수요가 증가하여 은행의 외환 파생상품 거래가 활발해질 수 있다.","explanation":"고환율과 환율 변동성 확대는 기업들이 미래의 환율 위험을 회피하기 위한 헤지 수요를 증가시켜 은행의 외환 파생상품 거래를 활발하게 만듭니다. [오답해설] ① 고환율은 오히려 달러 예금의 매력을 높여 달러 예금 증가로 이어질 수 있으며(뉴스 30번 참조), 외화 예금 해지가 급증하여 유동성이 고갈되는 경우는 드뭅니다. ③ 환율이 높다고 해서 해외 송금 및 환전 거래량이 반드시 감소하는 것은 아니며, 환율 변동성 자체로 거래가 늘어날 수도 있습니다. ④ 외환시장 개입은 중앙은행과 정부의 역할이며, 시중은행은 주로 고객의 외환 거래를 중개하고 환 리스크 관리 서비스를 제공합니다.","news_context":"환율 1,500원 깨지며 달러예금 8.8조↑…3년반 만에 최대, 외환시장에 '통화스와프급' 달러 폭탄 퍼붓는 SK하이닉스","news_url":"https://www.yna.co.kr/view/AKR20260710171800002","options":["① 외화 예금 해지가 급증하여 은행의 외화 유동성이 고갈될 위험이 커진다.","② 기업들의 환율 변동성 헤지(Hedge) 수요가 증가하여 은행의 외환 파생상품 거래가 활발해질 수 있다.","③ 해외 송금 및 환전 거래량이 감소하여 은행의 외환 관련 비이자수익이 크게 줄어든다.","④ 은행은 안정적인 환율 유지를 위해 정부의 외환시장 개입을 적극적으로 요구한다."]},{"id":1560,"category":"시사","question":"최근 '티메프·레고랜드 후유증' 및 '홈플러스 전단채 사태' 등으로 2금융권의 부실 위험이 부각되고 있다. 이러한 상황이 국내 시중은행의 건전성 및 리스크 관리에 미칠 수 있는 영향으로 가장 적절한 것은?","answer":"③ 은행들은 부동산 프로젝트파이낸싱(PF) 대출 등 고위험 자산에 대한 심사를 강화하고 잠재 부실에 대비한 충당금을 추가 적립할 수 있다.","explanation":"2금융권의 부실 위험은 금융 시스템 전반의 불안정성을 높일 수 있으므로, 시중은행은 리스크 관리를 강화하고 부동산 PF 대출 등 취약 부문에 대한 충당금을 추가 적립하여 건전성 악화에 대비할 것입니다. [오답해설] ① 금융 시스템은 상호 연결되어 있어 2금융권의 부실은 시중은행에도 간접적인 영향을 미칠 수 있으며, 특히 PF 대출 등 동일한 자산에 대한 노출이 있을 경우 직접적인 영향도 배제할 수 없습니다. ② 2금융권의 자금 조달 어려움은 전체 금융 시장의 유동성을 위축시켜 시중은행에도 자금 경색 위험을 증가시킬 수 있습니다. ④ 시중은행은 자체적인 건전성 유지가 우선이며, 특정 기업이나 2금융권에 대한 구제금융은 정부 또는 정책 금융기관의 역할입니다.","news_context":"티메프·레고랜드 후유증 아직인데…2금융권 홈플러스 사태 주시, 홈플 전단채 제재·분쟁조정 속도낸다…리스크 연착륙에도 총력, KB, '홈플러스 카드' 신규 발급 중단","news_url":"https://www.yna.co.kr/view/AKR20260711047200002","options":["① 시중은행은 2금융권 부실과 무관하므로 건전성에는 직접적인 영향이 없다.","② 2금융권의 자금 조달이 어려워지면서 시중은행의 자금 경색 위험이 완화된다.","③ 은행들은 부동산 프로젝트파이낸싱(PF) 대출 등 고위험 자산에 대한 심사를 강화하고 잠재 부실에 대비한 충당금을 추가 적립할 수 있다.","④ 시중은행은 2금융권 부실 기업에 대한 구제금융 역할을 수행하여 시장 안정화에 기여할 것이다."]},{"id":1561,"category":"시사","question":"최근 금융당국의 가계대출 총량 관리 강화 및 은행의 연간 목표 초과 소식은 은행의 여신(대출) 업무에 어떤 영향을 미칠 것으로 예상되는가?","answer":"④ 대출 만기 연장이나 추가 대출에 대한 심사가 강화되어 실수요자의 자금 조달이 어려워질 수 있다.","explanation":"가계대출 총량 관리 강화 기조 하에서는 은행이 대출 한도를 채우거나 초과한 경우, 신규 대출뿐 아니라 기존 대출의 만기 연장이나 추가 대출에 대해서도 심사를 강화할 수밖에 없으므로 실수요자의 자금 조달이 어려워집니다. [오답해설] ① 대출 총량 관리 기조에서는 새로운 상품 출시보다는 기존 상품의 한도 축소 또는 금리 인상 등 대출 억제 정책이 주로 나타납니다. ② 대출 심사는 강화될 것이며, 완화될 가능성은 낮습니다. ③ 대출 포트폴리오 재편 시 특정 대출만 늘리기는 어려우며, 전체적인 대출 규모를 줄이는 방향으로 조정될 것입니다.","news_context":"가계대출 '셧다운' 수순…5대 은행 3곳 연간 목표 초과, 이사철 앞두고 ‘날벼락’…하루아침에 수억 원 대출 깎인 실수요자들 ‘발동동’","news_url":"https://www.yna.co.kr/view/AKR20260711044200002","options":["① 은행들은 새로운 대출 상품 출시를 통해 대출 규모를 확대할 것이다.","② 대출 심사를 완화하여 실수요자들의 대출 접근성을 높일 것이다.","③ 주택담보대출보다 신용대출 위주로 대출 포트폴리오를 재편할 것이다.","④ 대출 만기 연장이나 추가 대출에 대한 심사가 강화되어 실수요자의 자금 조달이 어려워질 수 있다."]},{"id":25,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
