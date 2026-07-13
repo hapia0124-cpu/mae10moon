@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-14 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-14 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-14 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 기초지수 일일 수익률의 일정 배수를 추종하도록 설계된 상장지수펀드(ETF)를 의미한다. 높은 수익을 기대할 수 있지만, 기초자산의 변동성이 클 경우 손실 위험이 확대될 수 있다. 최근 특정 반도체 기업에 투자한 이 상품의 개인 투자자들이 큰 손실을 보았다는 뉴스가 있었다. 이 금융 상품은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 레버리지 ETF</li><li>② 인버스 ETF</li><li>③ 액티브 ETF</li><li>④ 선물 ETF</li>
+      </ul>
+      <p><strong>정답:</strong> ① 레버리지 ETF</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초지수 일일 수익률의 일정 배수를 추종하며, 높은 수익률을 기대할 수 있으나 그만큼 손실 위험도 크다. [오답해설] ② 인버스 ETF는 기초지수와 반대 방향으로 수익을 추구하는 상품이다. ③ 액티브 ETF는 운용사의 적극적인 종목 선택을 통해 지수 이상의 수익을 추구하는 상품이다. ④ 선물 ETF는 선물을 주된 투자 대상으로 하는 ETF이다.</p>
+      <p>관련 시사 뉴스: “8000만원 쏟아부었는데”…삼전닉스 레버리지 개미 '비명', 삼전닉스 레버리지도 줄줄이 급락…‘안전장치’ 나오나, 삼전닉스는 뛰는데, 발목 잡는 정부의 ‘레버리지’</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 기존 금융거래 이력이 부족하거나 신용이 낮은 금융소외계층을 위해 통신요금 납부 내역, 온라인 쇼핑 기록, 건강보험 납부 기록 등 비금융 정보를 활용하여 신용도를 평가하는 방식을 의미한다. 서민금융진흥원 등에서 이러한 평가 시스템 개발 및 금융권 공유를 목표하고 있다. 이 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 대안신용평가</li><li>② 행동경제학 기반 평가</li><li>③ 머신러닝 신용평가</li><li>④ 신용점수제</li>
+      </ul>
+      <p><strong>정답:</strong> ① 대안신용평가</p>
+      <p><strong>해설:</strong> 대안신용평가는 기존 금융 이력이 부족한 이들을 위해 통신료, 공공요금 등 비금융 데이터를 활용하여 신용도를 평가하는 방식이다. [오답해설] ② 행동경제학 기반 평가는 소비자의 비합리적 행동 양상을 분석하여 신용도를 예측하는 방식이다. ③ 머신러닝 신용평가는 방대한 데이터를 학습하여 신용도를 예측하는 기술적 방식이나, 대안신용평가는 '비금융 정보' 활용에 초점이 맞춰져 있다. ④ 신용점수제는 기존 금융기관들이 활용하는 전통적인 신용평가 방식으로, 대안신용평가와는 대척점에 있는 개념이다.</p>
+      <p>관련 시사 뉴스: 서금원, 연내 비금융 서민 대안신용평가 개발…2금융권 공유목표</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 고액 자산가 가문을 대상으로 상속 및 증여, 세무, 부동산, 투자 관리뿐만 아니라 가업 승계, 자녀 교육, 자선 활동 등 비재무적 서비스까지 아우르는 맞춤형 종합 자산 관리 서비스를 제공하는 기관을 의미한다. 최근 승계가 최종 목표로 강조되면서 중요성이 부각되고 있다. 이 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 패밀리오피스</li><li>② 프라이빗 뱅킹(PB)</li><li>③ 헤지펀드</li><li>④ 자산운용사</li>
+      </ul>
+      <p><strong>정답:</strong> ① 패밀리오피스</p>
+      <p><strong>해설:</strong> 패밀리오피스는 초고액 자산가 가문을 위해 재무적, 비재무적 종합 자산 관리 서비스를 제공하는 조직이다. [오답해설] ② 프라이빗 뱅킹(PB)은 은행 등 금융기관에서 고액 자산가에게 제공하는 금융상품 및 투자 자문 서비스를 의미하나, 패밀리오피스보다 서비스 범위가 좁다. ③ 헤지펀드는 소수 투자자로부터 자금을 모아 다양한 투자 전략을 구사하는 사모펀드의 일종으로, 자산 관리 서비스와는 거리가 멀다. ④ 자산운용사는 고객의 자산을 위탁받아 투자 상품을 운용하는 회사이다.</p>
+      <p>관련 시사 뉴스: “패밀리오피스 종착점은 승계…지금 준비 안 하면 분쟁 난다”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 은행에서 판매하는 상장지수펀드(ETF) 투자 시 유의할 점으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행은 ETF 투자에 대한 원금 보전을 약속한다.</li><li>② 은행 판매 ETF는 일반 펀드보다 거래 수수료가 항상 더 저렴하다.</li><li>③ ETF는 주식처럼 실시간으로 가격이 변동하므로 투자 리스크 관리가 필요하다.</li><li>④ 은행 판매 ETF는 주식시장의 변동성과 무관하게 안정적인 수익을 보장한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ ETF는 주식처럼 실시간으로 가격이 변동하므로 투자 리스크 관리가 필요하다.</p>
+      <p><strong>해설:</strong> ETF는 주식처럼 증권시장에서 실시간으로 거래되며 가격이 변동하므로, 투자자는 시장 상황에 따른 리스크를 관리해야 한다. [오답해설] ① 은행은 ETF 투자에 대한 원금 보전을 약속하지 않으며, 투자 상품은 손실 위험이 있다. ② ETF는 일반 펀드에 비해 수수료가 저렴한 경우가 많지만, 모든 상황에서 항상 더 저렴하다고 단정할 수 없으며 거래 방식에 따라 비용이 발생한다. ④ ETF는 주식시장에 상장되어 거래되므로 주식시장의 변동성에 직접적인 영향을 받으며, 안정적인 수익을 보장하지 않는다.</p>
+      <p>관련 시사 뉴스: 은행들 ETF팔아 수수료만 5500억 챙겼다…근데 수익률 왜이래, 은행서 산 ETF 63조…7월폭락에 투자자 한숨</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 중저신용자 지원을 위한 은행-저축은행 공동대출에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 대출 심사 시 오직 은행의 신용 평가 기준만을 적용한다.</li><li>② 저축은행이 대출 중개 역할만 하고, 대출 원리금은 전액 은행이 부담한다.</li><li>③ 은행과 저축은행이 함께 대출을 실행하여 중저신용자의 자금 접근성을 높이는 방안이다.</li><li>④ 공동대출은 주로 대기업을 대상으로 하며, 중소기업이나 소상공인에게는 해당되지 않는다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행과 저축은행이 함께 대출을 실행하여 중저신용자의 자금 접근성을 높이는 방안이다.</p>
+      <p><strong>해설:</strong> 공동대출은 은행과 저축은행이 함께 대출 심사와 리스크 분담을 통해 중저신용자의 자금 접근성을 높이고 상환 부담을 완화하는 목적을 가지고 있다. [오답해설] ① 공동대출은 중저신용자 대출에 특화된 상품이므로, 은행과 저축은행이 각각의 평가 기준을 바탕으로 협력하여 심사를 진행한다. ② 은행과 저축은행이 리스크를 분담하는 구조이며, 저축은행도 대출 실행에 참여하고 원리금 상환 책임이 있다. ④ 공동대출은 중저신용자, 즉 금융 소외계층인 개인이나 소상공인, 중소기업 등을 주된 대상으로 한다.</p>
+      <p>관련 시사 뉴스: 중저신용자 자금융통 쉽게 … 은행-저축銀 공동대출 추진</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 5대 시중은행의 주택담보대출 한도 소진과 관련된 현상에 대한 설명으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 가계대출 총량 관리와 주택 시장 안정화를 위한 금융당국의 규제가 강화된 영향이다.</li><li>② 대출 한도 소진은 주로 주택 매매가격이 높은 서울 외곽 지역의 거래를 위축시킬 수 있다.</li><li>③ 대출 수요가 높은 상황에서 한도가 줄어들면, 규제 없는 P2P 대출 등으로 풍선효과가 발생할 수 있다.</li><li>④ 은행의 대출 한도 소진은 중저신용자들을 위한 신규 대출 상품 출시를 촉진하는 긍정적인 효과를 가져온다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 은행의 대출 한도 소진은 중저신용자들을 위한 신규 대출 상품 출시를 촉진하는 긍정적인 효과를 가져온다.</p>
+      <p><strong>해설:</strong> 은행의 대출 한도 소진은 금융당국의 가계대출 총량 규제 등으로 인한 것으로, 중저신용자 대상 신규 대출 상품 출시를 직접적으로 촉진하기보다는 대출 시장 전반의 경색을 초래할 수 있다. [오답해설] ① 정부의 가계대출 총량 규제는 대출 한도 소진의 주요 원인 중 하나이다. ② 대출이 어려워지면 특히 대출 의존도가 높은 지역의 주택 거래가 위축될 가능성이 크다. ③ 은행권 대출이 어려워질 경우, 대출 수요가 P2P나 다른 비제도권 금융으로 이동하는 풍선효과가 발생할 수 있다.</p>
+      <p>관련 시사 뉴스: 조여드는 주담대…'대출 절반'으로 집 사는 서울외곽 직격, 5대 시중 은행 주담대 한도 소진 가시권…하반기 서울 외곽 거래 절벽</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 중동 정세 불안이 국제 유가에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 중동 지역의 원유 생산량이 증가하여 유가가 하락한다.</li><li>② 호르무즈 해협 통행료 인상 및 봉쇄 우려로 국제유가가 급등한다.</li><li>③ 국제적인 정유 시설 증설로 공급량이 늘어나 유가가 안정된다.</li><li>④ 글로벌 경기 둔화 우려로 원유 수요가 급감하여 유가가 폭락한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 호르무즈 해협 통행료 인상 및 봉쇄 우려로 국제유가가 급등한다.</p>
+      <p><strong>해설:</strong> 중동 정세 불안은 원유 공급 차질 우려와 호르무즈 해협 봉쇄 가능성을 높여 국제 유가를 급등시키는 주요 원인이 된다. [오답해설] ① 중동 불안은 원유 생산에 불확실성을 가중시키거나 공급 차질을 유발하여 유가 상승 요인으로 작용한다. ③ 정유 시설 증설은 단기간에 이루어지기 어려우며, 중동 사태는 단기적인 공급 불안을 야기한다. ④ 글로벌 경기 둔화 우려가 유가 하락 요인이 될 수 있으나, 중동 정세 불안은 공급 측면의 충격으로 유가를 상승시키는 요인이 더 크다.</p>
+      <p>관련 시사 뉴스: 美 "이란 공습 개시…이란군에 막대한 타격 입힐 것", 국제유가, 美 대이란 재봉쇄에 급등…WTI 10% 가까이 수직상승</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 한국은행 금융통화위원회 의사록에서 '리스크 점검' 발언이 나온 배경으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기준금리 인하를 위한 전반적인 경기 침체 가능성 진단</li><li>② 경기 과열을 억제하고 물가 안정을 위한 기준금리 인상 가능성 시사</li><li>③ 글로벌 경제 불확실성이 해소되어 통화정책 방향 전환 필요성 강조</li><li>④ 국내 부동산 시장의 과열을 진정시키기 위한 대출 규제 완화 검토</li>
+      </ul>
+      <p><strong>정답:</strong> ② 경기 과열을 억제하고 물가 안정을 위한 기준금리 인상 가능성 시사</p>
+      <p><strong>해설:</strong> 한국은행의 '리스크 점검' 발언은 고물가 상황 지속 및 경기 과열 우려 속에 금리 인상 가능성을 시사하는 '매파적' 신호로 해석될 수 있다. [오답해설] ① '리스크 점검' 발언은 현재 인플레이션 압력이 높은 상황에서 기준금리 인하를 위한 신호로 보기 어렵다. ③ 글로벌 경제는 중동 정세 불안 등으로 불확실성이 여전히 높으며, 통화정책의 방향 전환을 뜻하는 것은 아니다. ④ '리스크 점검'은 주로 물가 안정과 금융 안정성에 초점을 맞춘 것이며, 부동산 대출 규제 완화와는 직접적인 관련이 없다.</p>
+      <p>관련 시사 뉴스: 증시·환율 출렁이는데 여유로운 한은…금리 인상 유력해도 더 봐야 할 것은, 한은 '금리 인상 신호' 나왔다 … 6월 의사록에 "리스크 점검", 매파로 돌변한 한은…7월·8월 연속 금리 인상 나설까</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최저임금 인상이 '점심값 2만원 시대' 등 물가 상승에 영향을 미치는 주요 원인은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기업의 생산성 향상으로 인한 생산 비용 절감</li><li>② 임금 상승이 소비 위축으로 이어져 물가 하락 압력 발생</li><li>③ 인건비 증가가 기업의 제품 및 서비스 가격 인상으로 전가되는 비용 인상 인플레이션 유발</li><li>④ 정부의 보조금 확대로 가계의 실질 구매력이 상승하여 물가가 안정화</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 인건비 증가가 기업의 제품 및 서비스 가격 인상으로 전가되는 비용 인상 인플레이션 유발</p>
+      <p><strong>해설:</strong> 최저임금 인상은 기업의 인건비 부담을 높이고, 이 증가된 비용이 제품이나 서비스 가격에 반영되어 전반적인 물가 상승(비용 인상 인플레이션)으로 이어질 수 있다. [오답해설] ① 최저임금 인상은 기업의 인건비 부담을 늘려 생산 비용을 증가시키는 경향이 있으며, 생산성 향상과 직접적인 관련이 적다. ② 임금 상승은 일반적으로 가계의 구매력 증가를 동반하여 수요를 자극할 수 있으며, 물가 하락 압력으로 작용하기보다는 상승 압력으로 작용할 가능성이 크다. ④ 정부 보조금 확대는 물가 안정에 기여할 수 있지만, 최저임금 인상으로 인한 직접적인 물가 상승 요인을 상쇄하는 데는 한계가 있으며 주요 원인이라고 볼 수 없다.</p>
+      <p>관련 시사 뉴스: 최저임금 인상이 '점심값 2만원 시대' 앞당긴다고?, 내년 최저임금, 오늘 최종 결정…'690원' 격차 막판 줄다리기</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. AI 반도체 산업의 급성장과 관련된 최근 동향이 금융권에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① AI 반도체 기업들의 대출 수요가 감소하여 은행의 여신 수익이 줄어든다.</li><li>② 금융기관들이 AI 반도체 관련 기업 투자 및 기술 개발에 적극적으로 참여하여 신규 수익원을 발굴한다.</li><li>③ AI 반도체 산업의 성장은 전통적인 산업의 가치를 하락시켜 금융권의 투자 포트폴리오 다양성을 저해한다.</li><li>④ 금융기관들은 AI 반도체 기술의 발달로 인해 인력 감축에만 집중하여 고용 시장이 위축된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 금융기관들이 AI 반도체 관련 기업 투자 및 기술 개발에 적극적으로 참여하여 신규 수익원을 발굴한다.</p>
+      <p><strong>해설:</strong> AI 반도체 산업의 성장은 관련 기술 기업들의 기업공개(IPO) 및 자금 조달 수요를 증가시켜 금융권이 새로운 투자 기회와 수익원을 발굴할 수 있는 기회를 제공한다. [오답해설] ① AI 반도체 산업의 성장은 시설 투자, 연구 개발 등으로 인해 관련 기업의 대출 수요를 증가시킬 수 있으며, 이는 은행 여신 확대에 긍정적인 영향을 미칠 수 있다. ③ AI 반도체 산업의 성장은 전통 산업과의 융합을 통해 새로운 가치를 창출하며, 금융권 투자 포트폴리오에 새로운 활력을 불어넣을 수 있다. ④ AI 기술 도입은 단순 반복 업무 자동화로 인력 구조 변화를 가져올 수 있지만, 신규 AI 관련 직무 창출 및 디지털 전환 전문 인력 수요 증가로 이어질 수도 있어 인력 감축에만 국한되지 않는다.</p>
+      <p>관련 시사 뉴스: AI 반도체 주문 폭발에…'월매출 신기록' 찍은 TSMC 돌풍, 월가,"SK하이닉스 美IPO성공,다른 기술기업들은 쉽지않아", 골드만삭스 “中 AI 이끌 기업 즈푸AI, 딥시크, 바이트댄스”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-14</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1572,"category":"금융용어","question":"기초지수 일일 수익률의 일정 배수를 추종하도록 설계된 상장지수펀드(ETF)를 의미한다. 높은 수익을 기대할 수 있지만, 기초자산의 변동성이 클 경우 손실 위험이 확대될 수 있다. 최근 특정 반도체 기업에 투자한 이 상품의 개인 투자자들이 큰 손실을 보았다는 뉴스가 있었다. 이 금융 상품은 무엇인가?","answer":"① 레버리지 ETF","explanation":"레버리지 ETF는 기초지수 일일 수익률의 일정 배수를 추종하며, 높은 수익률을 기대할 수 있으나 그만큼 손실 위험도 크다. [오답해설] ② 인버스 ETF는 기초지수와 반대 방향으로 수익을 추구하는 상품이다. ③ 액티브 ETF는 운용사의 적극적인 종목 선택을 통해 지수 이상의 수익을 추구하는 상품이다. ④ 선물 ETF는 선물을 주된 투자 대상으로 하는 ETF이다.","news_context":"“8000만원 쏟아부었는데”…삼전닉스 레버리지 개미 '비명', 삼전닉스 레버리지도 줄줄이 급락…‘안전장치’ 나오나, 삼전닉스는 뛰는데, 발목 잡는 정부의 ‘레버리지’","news_url":"","options":["① 레버리지 ETF","② 인버스 ETF","③ 액티브 ETF","④ 선물 ETF"]},{"id":1573,"category":"금융용어","question":"기존 금융거래 이력이 부족하거나 신용이 낮은 금융소외계층을 위해 통신요금 납부 내역, 온라인 쇼핑 기록, 건강보험 납부 기록 등 비금융 정보를 활용하여 신용도를 평가하는 방식을 의미한다. 서민금융진흥원 등에서 이러한 평가 시스템 개발 및 금융권 공유를 목표하고 있다. 이 용어는 무엇인가?","answer":"① 대안신용평가","explanation":"대안신용평가는 기존 금융 이력이 부족한 이들을 위해 통신료, 공공요금 등 비금융 데이터를 활용하여 신용도를 평가하는 방식이다. [오답해설] ② 행동경제학 기반 평가는 소비자의 비합리적 행동 양상을 분석하여 신용도를 예측하는 방식이다. ③ 머신러닝 신용평가는 방대한 데이터를 학습하여 신용도를 예측하는 기술적 방식이나, 대안신용평가는 '비금융 정보' 활용에 초점이 맞춰져 있다. ④ 신용점수제는 기존 금융기관들이 활용하는 전통적인 신용평가 방식으로, 대안신용평가와는 대척점에 있는 개념이다.","news_context":"서금원, 연내 비금융 서민 대안신용평가 개발…2금융권 공유목표","news_url":"https://www.yna.co.kr/view/AKR20260713136600002","options":["① 대안신용평가","② 행동경제학 기반 평가","③ 머신러닝 신용평가","④ 신용점수제"]},{"id":1574,"category":"금융용어","question":"고액 자산가 가문을 대상으로 상속 및 증여, 세무, 부동산, 투자 관리뿐만 아니라 가업 승계, 자녀 교육, 자선 활동 등 비재무적 서비스까지 아우르는 맞춤형 종합 자산 관리 서비스를 제공하는 기관을 의미한다. 최근 승계가 최종 목표로 강조되면서 중요성이 부각되고 있다. 이 용어는 무엇인가?","answer":"① 패밀리오피스","explanation":"패밀리오피스는 초고액 자산가 가문을 위해 재무적, 비재무적 종합 자산 관리 서비스를 제공하는 조직이다. [오답해설] ② 프라이빗 뱅킹(PB)은 은행 등 금융기관에서 고액 자산가에게 제공하는 금융상품 및 투자 자문 서비스를 의미하나, 패밀리오피스보다 서비스 범위가 좁다. ③ 헤지펀드는 소수 투자자로부터 자금을 모아 다양한 투자 전략을 구사하는 사모펀드의 일종으로, 자산 관리 서비스와는 거리가 멀다. ④ 자산운용사는 고객의 자산을 위탁받아 투자 상품을 운용하는 회사이다.","news_context":"“패밀리오피스 종착점은 승계…지금 준비 안 하면 분쟁 난다”","news_url":"","options":["① 패밀리오피스","② 프라이빗 뱅킹(PB)","③ 헤지펀드","④ 자산운용사"]},{"id":1575,"category":"세부지식","question":"은행에서 판매하는 상장지수펀드(ETF) 투자 시 유의할 점으로 가장 적절한 것은?","answer":"③ ETF는 주식처럼 실시간으로 가격이 변동하므로 투자 리스크 관리가 필요하다.","explanation":"ETF는 주식처럼 증권시장에서 실시간으로 거래되며 가격이 변동하므로, 투자자는 시장 상황에 따른 리스크를 관리해야 한다. [오답해설] ① 은행은 ETF 투자에 대한 원금 보전을 약속하지 않으며, 투자 상품은 손실 위험이 있다. ② ETF는 일반 펀드에 비해 수수료가 저렴한 경우가 많지만, 모든 상황에서 항상 더 저렴하다고 단정할 수 없으며 거래 방식에 따라 비용이 발생한다. ④ ETF는 주식시장에 상장되어 거래되므로 주식시장의 변동성에 직접적인 영향을 받으며, 안정적인 수익을 보장하지 않는다.","news_context":"은행들 ETF팔아 수수료만 5500억 챙겼다…근데 수익률 왜이래, 은행서 산 ETF 63조…7월폭락에 투자자 한숨","news_url":"https://www.mk.co.kr/news/economy/12097806","options":["① 은행은 ETF 투자에 대한 원금 보전을 약속한다.","② 은행 판매 ETF는 일반 펀드보다 거래 수수료가 항상 더 저렴하다.","③ ETF는 주식처럼 실시간으로 가격이 변동하므로 투자 리스크 관리가 필요하다.","④ 은행 판매 ETF는 주식시장의 변동성과 무관하게 안정적인 수익을 보장한다."]},{"id":1576,"category":"세부지식","question":"중저신용자 지원을 위한 은행-저축은행 공동대출에 대한 설명으로 옳은 것은?","answer":"③ 은행과 저축은행이 함께 대출을 실행하여 중저신용자의 자금 접근성을 높이는 방안이다.","explanation":"공동대출은 은행과 저축은행이 함께 대출 심사와 리스크 분담을 통해 중저신용자의 자금 접근성을 높이고 상환 부담을 완화하는 목적을 가지고 있다. [오답해설] ① 공동대출은 중저신용자 대출에 특화된 상품이므로, 은행과 저축은행이 각각의 평가 기준을 바탕으로 협력하여 심사를 진행한다. ② 은행과 저축은행이 리스크를 분담하는 구조이며, 저축은행도 대출 실행에 참여하고 원리금 상환 책임이 있다. ④ 공동대출은 중저신용자, 즉 금융 소외계층인 개인이나 소상공인, 중소기업 등을 주된 대상으로 한다.","news_context":"중저신용자 자금융통 쉽게 … 은행-저축銀 공동대출 추진","news_url":"https://www.mk.co.kr/news/economy/12097517","options":["① 대출 심사 시 오직 은행의 신용 평가 기준만을 적용한다.","② 저축은행이 대출 중개 역할만 하고, 대출 원리금은 전액 은행이 부담한다.","③ 은행과 저축은행이 함께 대출을 실행하여 중저신용자의 자금 접근성을 높이는 방안이다.","④ 공동대출은 주로 대기업을 대상으로 하며, 중소기업이나 소상공인에게는 해당되지 않는다."]},{"id":1577,"category":"세부지식","question":"최근 5대 시중은행의 주택담보대출 한도 소진과 관련된 현상에 대한 설명으로 가장 적절하지 않은 것은?","answer":"④ 은행의 대출 한도 소진은 중저신용자들을 위한 신규 대출 상품 출시를 촉진하는 긍정적인 효과를 가져온다.","explanation":"은행의 대출 한도 소진은 금융당국의 가계대출 총량 규제 등으로 인한 것으로, 중저신용자 대상 신규 대출 상품 출시를 직접적으로 촉진하기보다는 대출 시장 전반의 경색을 초래할 수 있다. [오답해설] ① 정부의 가계대출 총량 규제는 대출 한도 소진의 주요 원인 중 하나이다. ② 대출이 어려워지면 특히 대출 의존도가 높은 지역의 주택 거래가 위축될 가능성이 크다. ③ 은행권 대출이 어려워질 경우, 대출 수요가 P2P나 다른 비제도권 금융으로 이동하는 풍선효과가 발생할 수 있다.","news_context":"조여드는 주담대…'대출 절반'으로 집 사는 서울외곽 직격, 5대 시중 은행 주담대 한도 소진 가시권…하반기 서울 외곽 거래 절벽","news_url":"https://n.news.naver.com/mnews/article/648/0000048871?sid=101","options":["① 가계대출 총량 관리와 주택 시장 안정화를 위한 금융당국의 규제가 강화된 영향이다.","② 대출 한도 소진은 주로 주택 매매가격이 높은 서울 외곽 지역의 거래를 위축시킬 수 있다.","③ 대출 수요가 높은 상황에서 한도가 줄어들면, 규제 없는 P2P 대출 등으로 풍선효과가 발생할 수 있다.","④ 은행의 대출 한도 소진은 중저신용자들을 위한 신규 대출 상품 출시를 촉진하는 긍정적인 효과를 가져온다."]},{"id":1578,"category":"시사","question":"최근 중동 정세 불안이 국제 유가에 미치는 영향으로 가장 적절한 것은?","answer":"② 호르무즈 해협 통행료 인상 및 봉쇄 우려로 국제유가가 급등한다.","explanation":"중동 정세 불안은 원유 공급 차질 우려와 호르무즈 해협 봉쇄 가능성을 높여 국제 유가를 급등시키는 주요 원인이 된다. [오답해설] ① 중동 불안은 원유 생산에 불확실성을 가중시키거나 공급 차질을 유발하여 유가 상승 요인으로 작용한다. ③ 정유 시설 증설은 단기간에 이루어지기 어려우며, 중동 사태는 단기적인 공급 불안을 야기한다. ④ 글로벌 경기 둔화 우려가 유가 하락 요인이 될 수 있으나, 중동 정세 불안은 공급 측면의 충격으로 유가를 상승시키는 요인이 더 크다.","news_context":"美 \"이란 공습 개시…이란군에 막대한 타격 입힐 것\", 국제유가, 美 대이란 재봉쇄에 급등…WTI 10% 가까이 수직상승","news_url":"","options":["① 중동 지역의 원유 생산량이 증가하여 유가가 하락한다.","② 호르무즈 해협 통행료 인상 및 봉쇄 우려로 국제유가가 급등한다.","③ 국제적인 정유 시설 증설로 공급량이 늘어나 유가가 안정된다.","④ 글로벌 경기 둔화 우려로 원유 수요가 급감하여 유가가 폭락한다."]},{"id":1579,"category":"시사","question":"최근 한국은행 금융통화위원회 의사록에서 '리스크 점검' 발언이 나온 배경으로 가장 적절한 것은?","answer":"② 경기 과열을 억제하고 물가 안정을 위한 기준금리 인상 가능성 시사","explanation":"한국은행의 '리스크 점검' 발언은 고물가 상황 지속 및 경기 과열 우려 속에 금리 인상 가능성을 시사하는 '매파적' 신호로 해석될 수 있다. [오답해설] ① '리스크 점검' 발언은 현재 인플레이션 압력이 높은 상황에서 기준금리 인하를 위한 신호로 보기 어렵다. ③ 글로벌 경제는 중동 정세 불안 등으로 불확실성이 여전히 높으며, 통화정책의 방향 전환을 뜻하는 것은 아니다. ④ '리스크 점검'은 주로 물가 안정과 금융 안정성에 초점을 맞춘 것이며, 부동산 대출 규제 완화와는 직접적인 관련이 없다.","news_context":"증시·환율 출렁이는데 여유로운 한은…금리 인상 유력해도 더 봐야 할 것은, 한은 '금리 인상 신호' 나왔다 … 6월 의사록에 \"리스크 점검\", 매파로 돌변한 한은…7월·8월 연속 금리 인상 나설까","news_url":"https://www.mk.co.kr/news/economy/12097538","options":["① 기준금리 인하를 위한 전반적인 경기 침체 가능성 진단","② 경기 과열을 억제하고 물가 안정을 위한 기준금리 인상 가능성 시사","③ 글로벌 경제 불확실성이 해소되어 통화정책 방향 전환 필요성 강조","④ 국내 부동산 시장의 과열을 진정시키기 위한 대출 규제 완화 검토"]},{"id":1580,"category":"시사","question":"최저임금 인상이 '점심값 2만원 시대' 등 물가 상승에 영향을 미치는 주요 원인은?","answer":"③ 인건비 증가가 기업의 제품 및 서비스 가격 인상으로 전가되는 비용 인상 인플레이션 유발","explanation":"최저임금 인상은 기업의 인건비 부담을 높이고, 이 증가된 비용이 제품이나 서비스 가격에 반영되어 전반적인 물가 상승(비용 인상 인플레이션)으로 이어질 수 있다. [오답해설] ① 최저임금 인상은 기업의 인건비 부담을 늘려 생산 비용을 증가시키는 경향이 있으며, 생산성 향상과 직접적인 관련이 적다. ② 임금 상승은 일반적으로 가계의 구매력 증가를 동반하여 수요를 자극할 수 있으며, 물가 하락 압력으로 작용하기보다는 상승 압력으로 작용할 가능성이 크다. ④ 정부 보조금 확대는 물가 안정에 기여할 수 있지만, 최저임금 인상으로 인한 직접적인 물가 상승 요인을 상쇄하는 데는 한계가 있으며 주요 원인이라고 볼 수 없다.","news_context":"최저임금 인상이 '점심값 2만원 시대' 앞당긴다고?, 내년 최저임금, 오늘 최종 결정…'690원' 격차 막판 줄다리기","news_url":"","options":["① 기업의 생산성 향상으로 인한 생산 비용 절감","② 임금 상승이 소비 위축으로 이어져 물가 하락 압력 발생","③ 인건비 증가가 기업의 제품 및 서비스 가격 인상으로 전가되는 비용 인상 인플레이션 유발","④ 정부의 보조금 확대로 가계의 실질 구매력이 상승하여 물가가 안정화"]},{"id":1581,"category":"시사","question":"AI 반도체 산업의 급성장과 관련된 최근 동향이 금융권에 미치는 영향으로 가장 적절한 것은?","answer":"② 금융기관들이 AI 반도체 관련 기업 투자 및 기술 개발에 적극적으로 참여하여 신규 수익원을 발굴한다.","explanation":"AI 반도체 산업의 성장은 관련 기술 기업들의 기업공개(IPO) 및 자금 조달 수요를 증가시켜 금융권이 새로운 투자 기회와 수익원을 발굴할 수 있는 기회를 제공한다. [오답해설] ① AI 반도체 산업의 성장은 시설 투자, 연구 개발 등으로 인해 관련 기업의 대출 수요를 증가시킬 수 있으며, 이는 은행 여신 확대에 긍정적인 영향을 미칠 수 있다. ③ AI 반도체 산업의 성장은 전통 산업과의 융합을 통해 새로운 가치를 창출하며, 금융권 투자 포트폴리오에 새로운 활력을 불어넣을 수 있다. ④ AI 기술 도입은 단순 반복 업무 자동화로 인력 구조 변화를 가져올 수 있지만, 신규 AI 관련 직무 창출 및 디지털 전환 전문 인력 수요 증가로 이어질 수도 있어 인력 감축에만 국한되지 않는다.","news_context":"AI 반도체 주문 폭발에…'월매출 신기록' 찍은 TSMC 돌풍, 월가,\"SK하이닉스 美IPO성공,다른 기술기업들은 쉽지않아\", 골드만삭스 “中 AI 이끌 기업 즈푸AI, 딥시크, 바이트댄스”","news_url":"","options":["① AI 반도체 기업들의 대출 수요가 감소하여 은행의 여신 수익이 줄어든다.","② 금융기관들이 AI 반도체 관련 기업 투자 및 기술 개발에 적극적으로 참여하여 신규 수익원을 발굴한다.","③ AI 반도체 산업의 성장은 전통적인 산업의 가치를 하락시켜 금융권의 투자 포트폴리오 다양성을 저해한다.","④ 금융기관들은 AI 반도체 기술의 발달로 인해 인력 감축에만 집중하여 고용 시장이 위축된다."]},{"id":27,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
