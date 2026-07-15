@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-16 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-16 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-16 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 기축통화국이 자국의 이익을 위해 통화정책을 펼칠 경우, 국제 유동성 공급과 환율 안정이라는 국제사회의 목표와 상충되는 현상을 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 트리핀 딜레마</li><li>② 브레턴우즈 체제</li><li>③ 닉슨 쇼크</li><li>④ 뱅크런 현상</li>
+      </ul>
+      <p><strong>정답:</strong> ① 트리핀 딜레마</p>
+      <p><strong>해설:</strong> 트리핀 딜레마는 기축통화국의 통화정책이 국내 경제와 국제 경제의 요구 사이에서 딜레마에 빠지는 현상입니다. [오답해설] ② 브레턴우즈 체제는 2차 세계대전 이후 국제 통화 시스템을 구축한 협정입니다. ③ 닉슨 쇼크는 1971년 닉슨 대통령이 달러의 금태환 정지를 선언한 사건입니다. ④ 뱅크런 현상은 은행의 재정 상태에 대한 불안감으로 고객들이 예금을 대량으로 인출하는 사태입니다.</p>
+      <p>관련 시사 뉴스: 트럼프 정부의 '기축통화 탓'은 틀렸다'...트리핀 딜레마에 대한 반박</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 중앙은행 디지털화폐(CBDC)와 달리, 시중은행 예금을 블록체인 상의 토큰 형태로 발행하여 결제에 활용하는 디지털 화폐의 한 형태를 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 예금토큰</li><li>② CBDC (중앙은행 디지털화폐)</li><li>③ 스테이블코인</li><li>④ 대체불가토큰 (NFT)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 예금토큰</p>
+      <p><strong>해설:</strong> 예금토큰은 시중은행의 예금을 기반으로 블록체인 기술을 활용하여 발행되는 디지털 화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐로, 시중은행의 예금과는 다릅니다. ③ 스테이블코인은 법정화폐 등 특정 자산에 가치가 고정된 암호화폐입니다. ④ 대체불가토큰(NFT)은 고유한 가치를 가지는 디지털 자산으로, 화폐로 사용되기보다는 소유권 증명에 활용됩니다.</p>
+      <p>관련 시사 뉴스: 예금토큰 실험 2단계 돌입…송금·국고금 집행 기능 추가</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 차주가 연간 상환해야 할 모든 대출의 원리금 상환액을 연소득으로 나눈 비율로, 차주의 총체적 상환능력을 심사하는 지표를 의미하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① DSR (총부채원리금상환비율)</li><li>② LTV (담보인정비율)</li><li>③ DTI (총부채상환비율)</li><li>④ RTI (임대업 이자상환비율)</li>
+      </ul>
+      <p><strong>정답:</strong> ① DSR (총부채원리금상환비율)</p>
+      <p><strong>해설:</strong> DSR은 주택담보대출뿐만 아니라 신용대출, 마이너스 통장 대출 등 모든 대출의 원리금을 고려하여 차주의 상환능력을 종합적으로 평가하는 지표입니다. [오답해설] ② LTV는 주택담보대출 시 주택의 담보가치 대비 대출금액의 비율을 의미합니다. ③ DTI는 주택담보대출의 연간 원리금 상환액과 기타 대출의 연간 이자 상환액을 합산하여 연소득으로 나눈 비율입니다. ④ RTI는 임대소득 대비 이자비용을 측정하는 지표로, 주로 임대사업자 대출에 적용됩니다.</p>
+      <p>관련 시사 뉴스: 억대 성과급으로 강남 입성? 대출 조인다…DSR 산정에 일부만 반영</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 비트코인 등 특정 가상자산을 직접 보유하지 않고도 주식처럼 거래소에서 사고팔 수 있도록 만든 상장지수펀드(ETF)를 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 코인 현물 ETF</li><li>② 코인 선물 ETF</li><li>③ 블록체인 펀드</li><li>④ 토큰증권 (STO)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 코인 현물 ETF</p>
+      <p><strong>해설:</strong> 코인 현물 ETF는 투자자가 직접 가상자산을 보유하는 부담 없이 주식시장을 통해 간접적으로 가상자산에 투자할 수 있도록 설계된 상품입니다. [오답해설] ② 코인 선물 ETF는 가상자산의 미래 가격을 예측하는 선물 계약에 투자하는 ETF입니다. ③ 블록체인 펀드는 블록체인 기술을 활용하는 기업에 투자하는 펀드를 의미합니다. ④ 토큰증권(STO)은 실물 자산이나 금융 상품을 블록체인 기반의 디지털 증권으로 발행한 것입니다.</p>
+      <p>관련 시사 뉴스: 코인 현물 ETF 도입 '시동'… 시장 인프라 구축 관건</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 주식시장에서 주가가 급등 또는 급락할 경우 시장에 미치는 충격을 완화하기 위해 주식 매매를 일시적으로 중단하는 제도 중, 종합주가지수 또는 선물가격이 일정 폭 이상 변동했을 때 발동되는 매매 중단 제도는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 사이드카 (Sidecar)</li><li>② 서킷브레이커 (Circuit Breaker)</li><li>③ 숏 스퀴즈 (Short Squeeze)</li><li>④ 스무딩 오퍼레이션 (Smoothing Operation)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 사이드카 (Sidecar)</p>
+      <p><strong>해설:</strong> 사이드카는 주식시장에서 프로그램 매매 호가 효력을 일시적으로 정지시키는 제도로, 서킷브레이커보다 완화된 조치입니다. [오답해설] ② 서킷브레이커는 주식시장의 모든 거래를 일시적으로 중단시키는 강력한 조치입니다. ③ 숏 스퀴즈는 공매도했던 투자자들이 손실을 줄이기 위해 주식을 다시 사들이면서 주가가 급등하는 현상입니다. ④ 스무딩 오퍼레이션은 중앙은행이 외환시장 변동성을 완화하기 위해 외환을 매매하는 정책입니다.</p>
+      <p>관련 시사 뉴스: '사이드카'가 일상이 된 증시, 자본시장이 카지노판 되면 안돼</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 온라인 플랫폼을 통해 개인 또는 법인 투자자로부터 자금을 모집하여 다른 개인이나 기업에 대출해 주는 금융 서비스를 의미하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① P2P (Peer-to-Peer) 대출</li><li>② 크라우드 펀딩</li><li>③ 마이크로파이낸스</li><li>④ 임팩트 투자</li>
+      </ul>
+      <p><strong>정답:</strong> ① P2P (Peer-to-Peer) 대출</p>
+      <p><strong>해설:</strong> P2P 대출은 중개기관 없이 개인 간에 직접 대출이 이루어지는 형태의 금융 서비스입니다. [오답해설] ② 크라우드 펀딩은 다수의 소액 투자자로부터 자금을 모집하는 것이지만, 대출 형태가 아닌 지분 투자나 후원 형태가 많습니다. ③ 마이크로파이낸스는 저소득층에게 소액 대출을 제공하는 금융 서비스입니다. ④ 임팩트 투자는 재무적 수익과 함께 사회적 또는 환경적 가치 창출을 목표로 하는 투자입니다.</p>
+      <p>관련 시사 뉴스: 요즘 빚투족 ‘P2P 대출’로 영끌…당국, 스톡론 한도 10억 제한</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 레버리지 ETF에서 기초자산의 등락이 반복될 때 나타날 수 있는 '음의 복리' 효과에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 기초자산이 하락할 때 수익률이 더욱 크게 하락하는 현상</li><li>② 기초자산의 등락이 반복될 때, 누적 수익률이 기대했던 레버리지 비율보다 낮아지는 현상</li><li>③ 시장 변동성이 낮을수록 수익률이 감소하는 현상</li><li>④ 만기가 가까워질수록 레버리지 효과가 감소하는 현상</li>
+      </ul>
+      <p><strong>정답:</strong> ② 기초자산의 등락이 반복될 때, 누적 수익률이 기대했던 레버리지 비율보다 낮아지는 현상</p>
+      <p><strong>해설:</strong> '음의 복리'는 레버리지 ETF가 매일 기초자산 수익률의 특정 배수를 추종하도록 설계되어, 시장 변동성이 큰 상황에서 기초자산의 등락이 반복되면 장기적으로 누적 수익률이 점차 감소하는 현상입니다. [오답해설] ① 이는 레버리지 효과의 직접적인 결과 중 하나일 뿐 '음의 복리' 자체를 설명하지 못합니다. ③ 시장 변동성이 높을수록 '음의 복리' 효과는 더욱 두드러집니다. ④ 만기와 레버리지 효과의 감소는 직접적인 '음의 복리' 현상과는 관련이 적습니다.</p>
+      <p>관련 시사 뉴스: 李 대통령 “2배 ETF 많이 당하고 계신데”…보완대책 마련 주문</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 청년 주거 안정을 위한 정부 지원 전세대출 상품에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 만 34세 이하의 무주택 세대주를 대상으로 한다.</li><li>② 소득 기준은 개인 또는 부부합산 소득이 일정 수준 이하여야 한다.</li><li>③ 대출 한도는 보증금의 일정 비율 이내로 제한된다.</li><li>④ 모든 주택 유형에 대해 동일한 금리가 적용되며, 중도상환수수료가 면제된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 모든 주택 유형에 대해 동일한 금리가 적용되며, 중도상환수수료가 면제된다.</p>
+      <p><strong>해설:</strong> 청년 전세대출의 경우 주택 종류나 조건에 따라 금리가 다르게 적용될 수 있으며, 중도상환수수료 면제 여부도 상품별로 다를 수 있습니다. [오답해설] ① 청년 전세대출은 주로 젊은 무주택 세대주의 주거 안정을 목적으로 합니다. ② 정부 지원 대출은 소득 기준을 두어 정책 대상에 해당하는 이들에게 혜택을 제공합니다. ③ 대출 한도는 보증금의 일정 비율로 제한되어 과도한 대출을 방지합니다.</p>
+      <p>관련 시사 뉴스: 공급차질"vs"소수특혜"…이주비부터 청년·전세대출 갑론을박</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 한국은행의 기준금리 인상이 시중은행의 경영 및 영업 활동에 미치는 영향으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 예대마진 확대로 은행의 수익성이 개선될 수 있다.</li><li>② 가계 및 기업의 대출 수요가 위축되어 여신 성장률이 둔화될 수 있다.</li><li>③ 대출 금리 상승으로 인한 연체율 증가 가능성이 낮아진다.</li><li>④ 수신 경쟁이 심화되어 조달 비용이 증가할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 대출 금리 상승으로 인한 연체율 증가 가능성이 낮아진다.</p>
+      <p><strong>해설:</strong> 기준금리 인상은 대출 금리 상승으로 이어져 차주의 이자 부담을 가중시키므로, 가계 및 기업의 연체율 증가 가능성을 높일 수 있습니다. [오답해설] ① 일반적으로 기준금리 인상기에는 대출 금리가 예금 금리보다 빠르게 올라 예대마진이 확대될 가능성이 있습니다. ② 대출 금리가 높아지면 이자 부담으로 인해 대출 수요가 감소하고 여신 성장률이 둔화될 수 있습니다. ④ 은행들은 자금 조달을 위해 예금 금리를 올려 수신 경쟁이 심화될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 한은 '예고대로' 기준금리 인상할 듯…3년 6개월 만에 긴축 돌입</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 워런 버핏이 "최근 증시가 투자보다 도박에 가까워졌다"고 비판한 발언은 어떤 시장 상황을 암시하는가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 장기 가치 투자가 활발한 시장</li><li>② 기업의 펀더멘털 분석에 기반한 투자 확대</li><li>③ 단기 차익 실현을 위한 고위험 투자가 만연한 시장</li><li>④ 안정적인 수익률을 추구하는 보수적 투자 심리 우세</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 단기 차익 실현을 위한 고위험 투자가 만연한 시장</p>
+      <p><strong>해설:</strong> 워런 버핏의 발언은 기업의 본질적 가치보다는 단기적인 주가 변동에만 집중하여 고위험 투자가 확산되고 있는 시장 상황에 대한 경고입니다. [오답해설] ①, ②, ④번은 워런 버핏이 긍정적으로 평가하는 건전한 투자 환경을 나타내는 설명으로, 현재 증시 상황에 대한 비판적 시각과는 거리가 있습니다.</p>
+      <p>관련 시사 뉴스: 워런 버핏 "최근 증시, 투자보다 도박에 가까워져" 비판</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-16</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1592,"category":"금융용어","question":"기축통화국이 자국의 이익을 위해 통화정책을 펼칠 경우, 국제 유동성 공급과 환율 안정이라는 국제사회의 목표와 상충되는 현상을 지칭하는 용어는?","answer":"① 트리핀 딜레마","explanation":"트리핀 딜레마는 기축통화국의 통화정책이 국내 경제와 국제 경제의 요구 사이에서 딜레마에 빠지는 현상입니다. [오답해설] ② 브레턴우즈 체제는 2차 세계대전 이후 국제 통화 시스템을 구축한 협정입니다. ③ 닉슨 쇼크는 1971년 닉슨 대통령이 달러의 금태환 정지를 선언한 사건입니다. ④ 뱅크런 현상은 은행의 재정 상태에 대한 불안감으로 고객들이 예금을 대량으로 인출하는 사태입니다.","news_context":"트럼프 정부의 '기축통화 탓'은 틀렸다'...트리핀 딜레마에 대한 반박","news_url":"","options":["① 트리핀 딜레마","② 브레턴우즈 체제","③ 닉슨 쇼크","④ 뱅크런 현상"]},{"id":1593,"category":"금융용어","question":"중앙은행 디지털화폐(CBDC)와 달리, 시중은행 예금을 블록체인 상의 토큰 형태로 발행하여 결제에 활용하는 디지털 화폐의 한 형태를 지칭하는 용어는?","answer":"① 예금토큰","explanation":"예금토큰은 시중은행의 예금을 기반으로 블록체인 기술을 활용하여 발행되는 디지털 화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐로, 시중은행의 예금과는 다릅니다. ③ 스테이블코인은 법정화폐 등 특정 자산에 가치가 고정된 암호화폐입니다. ④ 대체불가토큰(NFT)은 고유한 가치를 가지는 디지털 자산으로, 화폐로 사용되기보다는 소유권 증명에 활용됩니다.","news_context":"예금토큰 실험 2단계 돌입…송금·국고금 집행 기능 추가","news_url":"https://www.yna.co.kr/view/AKR20260715169700002","options":["① 예금토큰","② CBDC (중앙은행 디지털화폐)","③ 스테이블코인","④ 대체불가토큰 (NFT)"]},{"id":1594,"category":"금융용어","question":"차주가 연간 상환해야 할 모든 대출의 원리금 상환액을 연소득으로 나눈 비율로, 차주의 총체적 상환능력을 심사하는 지표를 의미하는 용어는?","answer":"① DSR (총부채원리금상환비율)","explanation":"DSR은 주택담보대출뿐만 아니라 신용대출, 마이너스 통장 대출 등 모든 대출의 원리금을 고려하여 차주의 상환능력을 종합적으로 평가하는 지표입니다. [오답해설] ② LTV는 주택담보대출 시 주택의 담보가치 대비 대출금액의 비율을 의미합니다. ③ DTI는 주택담보대출의 연간 원리금 상환액과 기타 대출의 연간 이자 상환액을 합산하여 연소득으로 나눈 비율입니다. ④ RTI는 임대소득 대비 이자비용을 측정하는 지표로, 주로 임대사업자 대출에 적용됩니다.","news_context":"억대 성과급으로 강남 입성? 대출 조인다…DSR 산정에 일부만 반영","news_url":"https://www.mk.co.kr/news/economy/12099080","options":["① DSR (총부채원리금상환비율)","② LTV (담보인정비율)","③ DTI (총부채상환비율)","④ RTI (임대업 이자상환비율)"]},{"id":1595,"category":"금융용어","question":"비트코인 등 특정 가상자산을 직접 보유하지 않고도 주식처럼 거래소에서 사고팔 수 있도록 만든 상장지수펀드(ETF)를 지칭하는 용어는?","answer":"① 코인 현물 ETF","explanation":"코인 현물 ETF는 투자자가 직접 가상자산을 보유하는 부담 없이 주식시장을 통해 간접적으로 가상자산에 투자할 수 있도록 설계된 상품입니다. [오답해설] ② 코인 선물 ETF는 가상자산의 미래 가격을 예측하는 선물 계약에 투자하는 ETF입니다. ③ 블록체인 펀드는 블록체인 기술을 활용하는 기업에 투자하는 펀드를 의미합니다. ④ 토큰증권(STO)은 실물 자산이나 금융 상품을 블록체인 기반의 디지털 증권으로 발행한 것입니다.","news_context":"코인 현물 ETF 도입 '시동'… 시장 인프라 구축 관건","news_url":"https://it.chosun.com/news/articleView.html?idxno=2023092165839","options":["① 코인 현물 ETF","② 코인 선물 ETF","③ 블록체인 펀드","④ 토큰증권 (STO)"]},{"id":1596,"category":"금융용어","question":"주식시장에서 주가가 급등 또는 급락할 경우 시장에 미치는 충격을 완화하기 위해 주식 매매를 일시적으로 중단하는 제도 중, 종합주가지수 또는 선물가격이 일정 폭 이상 변동했을 때 발동되는 매매 중단 제도는?","answer":"① 사이드카 (Sidecar)","explanation":"사이드카는 주식시장에서 프로그램 매매 호가 효력을 일시적으로 정지시키는 제도로, 서킷브레이커보다 완화된 조치입니다. [오답해설] ② 서킷브레이커는 주식시장의 모든 거래를 일시적으로 중단시키는 강력한 조치입니다. ③ 숏 스퀴즈는 공매도했던 투자자들이 손실을 줄이기 위해 주식을 다시 사들이면서 주가가 급등하는 현상입니다. ④ 스무딩 오퍼레이션은 중앙은행이 외환시장 변동성을 완화하기 위해 외환을 매매하는 정책입니다.","news_context":"'사이드카'가 일상이 된 증시, 자본시장이 카지노판 되면 안돼","news_url":"http://www.seouleconews.com/news/articleView.html?idxno=92441","options":["① 사이드카 (Sidecar)","② 서킷브레이커 (Circuit Breaker)","③ 숏 스퀴즈 (Short Squeeze)","④ 스무딩 오퍼레이션 (Smoothing Operation)"]},{"id":1597,"category":"금융용어","question":"온라인 플랫폼을 통해 개인 또는 법인 투자자로부터 자금을 모집하여 다른 개인이나 기업에 대출해 주는 금융 서비스를 의미하는 용어는?","answer":"① P2P (Peer-to-Peer) 대출","explanation":"P2P 대출은 중개기관 없이 개인 간에 직접 대출이 이루어지는 형태의 금융 서비스입니다. [오답해설] ② 크라우드 펀딩은 다수의 소액 투자자로부터 자금을 모집하는 것이지만, 대출 형태가 아닌 지분 투자나 후원 형태가 많습니다. ③ 마이크로파이낸스는 저소득층에게 소액 대출을 제공하는 금융 서비스입니다. ④ 임팩트 투자는 재무적 수익과 함께 사회적 또는 환경적 가치 창출을 목표로 하는 투자입니다.","news_context":"요즘 빚투족 ‘P2P 대출’로 영끌…당국, 스톡론 한도 10억 제한","news_url":"https://www.mk.co.kr/news/economy/12099715","options":["① P2P (Peer-to-Peer) 대출","② 크라우드 펀딩","③ 마이크로파이낸스","④ 임팩트 투자"]},{"id":1598,"category":"세부지식","question":"레버리지 ETF에서 기초자산의 등락이 반복될 때 나타날 수 있는 '음의 복리' 효과에 대한 설명으로 가장 적절한 것은?","answer":"② 기초자산의 등락이 반복될 때, 누적 수익률이 기대했던 레버리지 비율보다 낮아지는 현상","explanation":"'음의 복리'는 레버리지 ETF가 매일 기초자산 수익률의 특정 배수를 추종하도록 설계되어, 시장 변동성이 큰 상황에서 기초자산의 등락이 반복되면 장기적으로 누적 수익률이 점차 감소하는 현상입니다. [오답해설] ① 이는 레버리지 효과의 직접적인 결과 중 하나일 뿐 '음의 복리' 자체를 설명하지 못합니다. ③ 시장 변동성이 높을수록 '음의 복리' 효과는 더욱 두드러집니다. ④ 만기와 레버리지 효과의 감소는 직접적인 '음의 복리' 현상과는 관련이 적습니다.","news_context":"李 대통령 “2배 ETF 많이 당하고 계신데”…보완대책 마련 주문","news_url":"https://www.mk.co.kr/news/economy/12099166","options":["① 기초자산이 하락할 때 수익률이 더욱 크게 하락하는 현상","② 기초자산의 등락이 반복될 때, 누적 수익률이 기대했던 레버리지 비율보다 낮아지는 현상","③ 시장 변동성이 낮을수록 수익률이 감소하는 현상","④ 만기가 가까워질수록 레버리지 효과가 감소하는 현상"]},{"id":1599,"category":"세부지식","question":"청년 주거 안정을 위한 정부 지원 전세대출 상품에 대한 설명으로 옳지 않은 것은?","answer":"④ 모든 주택 유형에 대해 동일한 금리가 적용되며, 중도상환수수료가 면제된다.","explanation":"청년 전세대출의 경우 주택 종류나 조건에 따라 금리가 다르게 적용될 수 있으며, 중도상환수수료 면제 여부도 상품별로 다를 수 있습니다. [오답해설] ① 청년 전세대출은 주로 젊은 무주택 세대주의 주거 안정을 목적으로 합니다. ② 정부 지원 대출은 소득 기준을 두어 정책 대상에 해당하는 이들에게 혜택을 제공합니다. ③ 대출 한도는 보증금의 일정 비율로 제한되어 과도한 대출을 방지합니다.","news_context":"공급차질\"vs\"소수특혜\"…이주비부터 청년·전세대출 갑론을박","news_url":"https://www.yna.co.kr/view/AKR20260715171000002","options":["① 만 34세 이하의 무주택 세대주를 대상으로 한다.","② 소득 기준은 개인 또는 부부합산 소득이 일정 수준 이하여야 한다.","③ 대출 한도는 보증금의 일정 비율 이내로 제한된다.","④ 모든 주택 유형에 대해 동일한 금리가 적용되며, 중도상환수수료가 면제된다."]},{"id":1600,"category":"시사","question":"한국은행의 기준금리 인상이 시중은행의 경영 및 영업 활동에 미치는 영향으로 가장 적절하지 않은 것은?","answer":"③ 대출 금리 상승으로 인한 연체율 증가 가능성이 낮아진다.","explanation":"기준금리 인상은 대출 금리 상승으로 이어져 차주의 이자 부담을 가중시키므로, 가계 및 기업의 연체율 증가 가능성을 높일 수 있습니다. [오답해설] ① 일반적으로 기준금리 인상기에는 대출 금리가 예금 금리보다 빠르게 올라 예대마진이 확대될 가능성이 있습니다. ② 대출 금리가 높아지면 이자 부담으로 인해 대출 수요가 감소하고 여신 성장률이 둔화될 수 있습니다. ④ 은행들은 자금 조달을 위해 예금 금리를 올려 수신 경쟁이 심화될 수 있습니다.","news_context":"한은 '예고대로' 기준금리 인상할 듯…3년 6개월 만에 긴축 돌입","news_url":"https://www.yna.co.kr/view/AKR20260715168000002","options":["① 예대마진 확대로 은행의 수익성이 개선될 수 있다.","② 가계 및 기업의 대출 수요가 위축되어 여신 성장률이 둔화될 수 있다.","③ 대출 금리 상승으로 인한 연체율 증가 가능성이 낮아진다.","④ 수신 경쟁이 심화되어 조달 비용이 증가할 수 있다."]},{"id":1601,"category":"시사","question":"워런 버핏이 \"최근 증시가 투자보다 도박에 가까워졌다\"고 비판한 발언은 어떤 시장 상황을 암시하는가?","answer":"③ 단기 차익 실현을 위한 고위험 투자가 만연한 시장","explanation":"워런 버핏의 발언은 기업의 본질적 가치보다는 단기적인 주가 변동에만 집중하여 고위험 투자가 확산되고 있는 시장 상황에 대한 경고입니다. [오답해설] ①, ②, ④번은 워런 버핏이 긍정적으로 평가하는 건전한 투자 환경을 나타내는 설명으로, 현재 증시 상황에 대한 비판적 시각과는 거리가 있습니다.","news_context":"워런 버핏 \"최근 증시, 투자보다 도박에 가까워져\" 비판","news_url":"","options":["① 장기 가치 투자가 활발한 시장","② 기업의 펀더멘털 분석에 기반한 투자 확대","③ 단기 차익 실현을 위한 고위험 투자가 만연한 시장","④ 안정적인 수익률을 추구하는 보수적 투자 심리 우세"]},{"id":29,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
