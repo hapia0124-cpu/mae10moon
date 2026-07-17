@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-18 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-18 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-18 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 금융위원회가 금융기관 지배구조 개선 및 ESG 경영 강화를 위해 신설을 검토하고 있는 최고위험관리책임자(CRO), 최고정보보호책임자(CISO)와 유사한 역할을 하는 직책으로, 혁신금융 관련 전략 수립 및 이행을 총괄하는 새로운 개념의 책임자를 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① CIFO (Chief Innovation Finance Officer)</li><li>② CRO (Chief Risk Officer)</li><li>③ CIO (Chief Information Officer)</li><li>④ CSO (Chief Strategy Officer)</li>
+      </ul>
+      <p><strong>정답:</strong> ① CIFO (Chief Innovation Finance Officer)</p>
+      <p><strong>해설:</strong> CIFO는 혁신금융 관련 전략 수립 및 이행을 총괄하는 새로운 개념의 책임자를 의미합니다. [오답해설] ② CRO는 최고위험관리책임자로, 금융기관의 전반적인 위험 관리를 담당합니다. ③ CIO는 최고정보책임자로, 정보기술(IT) 전략 수립 및 운영을 총괄합니다. ④ CSO는 최고전략책임자로, 기업의 중장기 전략 수립 및 실행을 담당합니다.</p>
+      <p>관련 시사 뉴스: 금융위 ‘CIFO’ 신설 움직임, 은행 지배구조 흔든다…ESG 강화에 역행</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 주된 일자리에서 퇴직한 후 연금을 받기까지 소득이 급격히 줄어들어 경제적으로 어려움을 겪는 기간을 일컫는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 소득 절벽</li><li>② 고용 절벽</li><li>③ 소비 절벽</li><li>④ 투자 절벽</li>
+      </ul>
+      <p><strong>정답:</strong> ① 소득 절벽</p>
+      <p><strong>해설:</strong> 소득 절벽은 주된 일자리 퇴직 후 연금 수령 전까지 소득이 급감하는 시기를 의미합니다. [오답해설] ② 고용 절벽은 청년층 등 특정 계층의 취업 기회가 급격히 줄어드는 현상을 말합니다. ③ 소비 절벽은 경제적 어려움으로 인해 가계 소비가 급격히 위축되는 상황을 나타냅니다. ④ 투자 절벽은 기업이나 개인이 미래 불확실성 등으로 인해 투자를 급격히 줄이는 현상을 의미합니다.</p>
+      <p>관련 시사 뉴스: 주된 일자리 퇴직 후 연금 받기까지 '소득 절벽' 13년</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 기초자산의 일일 수익률을 일정 배율만큼 추종하도록 설계된 상품인 '레버리지 ETF'에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 장기 투자 시 복리 효과로 인해 기초자산 수익률과 괴리가 커질 수 있다.</li><li>② 지수 상승에 투자하는 상품으로, 지수 하락 시에도 수익을 기대할 수 있다.</li><li>③ 가격 급변동 시 투자자의 손실이 확대될 위험이 일반 ETF보다 크다.</li><li>④ 파생상품을 활용하여 레버리지 효과를 얻으므로 운용 보수가 상대적으로 높을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 지수 상승에 투자하는 상품으로, 지수 하락 시에도 수익을 기대할 수 있다.</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 지수 상승에 투자하는 상품이므로 지수 하락 시에는 손실이 발생할 수 있습니다. 지수 하락 시 수익을 기대하는 상품은 인버스 ETF입니다. [오답해설] ① 레버리지 ETF는 일일 수익률을 추종하므로, 장기 투자 시 복리 효과로 인해 기초자산의 누적 수익률과 괴리가 발생할 수 있습니다. ③ 레버리지 ETF는 기초자산 변동률에 배수를 곱하여 수익률이 결정되므로, 가격이 급변동할 경우 손실 확대 위험이 커집니다. ④ 파생상품 등 복잡한 운용 전략을 사용하기 때문에 일반 ETF에 비해 운용 보수가 높게 책정될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 베팅하다 강제청산 1조…'삼전닉스 레버리지' 제동 건 이유 있다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 자영업자 및 소상공인의 노후 생활 안정을 지원하는 '노란우산 공제'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 최대 연 1,200만원까지 납입 가능하며, 납입액은 전액 소득공제된다.</li><li>② 연령 제한 없이 가입 가능하나, 사업자 등록이 되어 있어야 한다.</li><li>③ 공제금은 연금 형태가 아닌 일시금으로만 수령할 수 있다.</li><li>④ 공제 해지 시 납입 원금의 손실이 발생할 수 있으므로 신중해야 한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 연령 제한 없이 가입 가능하나, 사업자 등록이 되어 있어야 한다.</p>
+      <p><strong>해설:</strong> 노란우산 공제는 연령 제한 없이 가입할 수 있으나, 사업자 등록이 되어 있는 소상공인 및 자영업자만 가입 대상입니다. [오답해설] ① 최근 납입 한도가 연 1,800만원으로 상향 조정되었으며, 납입액에 따라 소득공제 한도가 적용됩니다. ③ 공제금은 일시금 또는 분할금으로 수령할 수 있습니다. ④ 노란우산 공제는 납입 원금이 보장되는 상품이며, 해지 시에도 이자까지 함께 받을 수 있습니다. 다만, 특정 조건 하에서는 해지가 불리할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 이달부터 자영업자 노란우산 한도 연 1800만원으로</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 주택 구입 및 전세자금 마련을 위한 주요 금융상품인 '주택청약종합저축'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 가입 후 2년이 지나야 1순위 자격이 부여된다.</li><li>② 소득공제 혜택은 연간 납입액의 40%까지 최대 96만원으로 제한된다.</li><li>③ 민영주택 청약 시에는 지역별 예치금액 기준을 충족해야 한다.</li><li>④ 만 19세 미만 미성년자는 가입할 수 없다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 민영주택 청약 시에는 지역별 예치금액 기준을 충족해야 한다.</p>
+      <p><strong>해설:</strong> 민영주택 청약을 위해서는 청약 지역과 주택 면적에 따라 정해진 예치금액 기준을 충족해야 합니다. [오답해설] ① 투기과열지구 및 청약과열지역에서는 가입 후 2년이 지나야 1순위 자격이 부여되지만, 그 외 지역은 1년 또는 6개월 등 더 짧은 기간에 1순위 자격이 부여될 수 있습니다. ② 소득공제 혜택은 연간 납입액의 40%까지 최대 120만원으로 제한됩니다. ④ 미성년자도 가입할 수 있으며, 주택청약종합저축은 만 19세 미만도 가입할 수 있는 유일한 청약통장입니다.</p>
+      <p>관련 시사 뉴스: 한 달 새 청약통장 10만명 깬 이유는?</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 이어진 금리 인상 기조가 국내 은행의 경영 및 여신 건전성에 미치는 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 가계 및 중소기업의 이자 부담이 줄어 연체율이 하락한다.</li><li>② 은행의 대출 자산 건전성이 악화될 위험이 감소한다.</li><li>③ 취약 차주 및 한계 기업의 채무 상환 능력이 저하될 수 있다.</li><li>④ 예대마진이 축소되어 은행의 수익성이 하락한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 취약 차주 및 한계 기업의 채무 상환 능력이 저하될 수 있다.</p>
+      <p><strong>해설:</strong> 금리 인상으로 인해 대출 이자 부담이 커지면서 소득이 불안정한 취약 차주나 재무 구조가 취약한 한계 기업의 채무 상환 능력이 저하될 수 있습니다. [오답해설] ① 금리 인상으로 이자 부담이 증가하여 연체율이 상승할 가능성이 큽니다. ② 취약 차주의 부실 위험 증가로 은행의 대출 자산 건전성이 악화될 위험이 커집니다. ④ 금리 인상기에는 일반적으로 예금 금리보다 대출 금리 인상 폭이 더 커져 예대마진이 확대될 가능성이 높습니다.</p>
+      <p>관련 시사 뉴스: 금리인상 후폭풍 … 고령층부터 타격</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 국내 외환시장의 24시간 개장이 국내 은행의 외환 업무에 미치는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 시차 제약 없는 실시간 환전 및 외화 송금 서비스 제공이 용이해진다.</li><li>② 글로벌 금융시장 변동성에 대한 실시간 대응 역량이 강화된다.</li><li>③ 외환 딜링룸의 인력 운영 및 시스템 유지보수 비용이 증가할 수 있다.</li><li>④ 은행 간 외환 거래가 국내 시장으로 집중되어 글로벌 유동성이 감소한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 은행 간 외환 거래가 국내 시장으로 집중되어 글로벌 유동성이 감소한다.</p>
+      <p><strong>해설:</strong> 외환시장 24시간 개장은 국내 시장의 접근성을 높여 글로벌 유동성이 국내로 유입되는 효과를 기대할 수 있습니다. [오답해설] ① 24시간 개장으로 시차 없이 언제든 환전 및 외화 송금 서비스 제공이 가능해집니다. ② 해외 시장의 급격한 변화에 국내 은행이 실시간으로 대응하여 리스크를 관리할 수 있는 역량이 강화됩니다. ③ 딜링룸 운영 시간이 길어지면서 야간 및 새벽 근무 인력 증원과 시스템 고도화로 인해 인력 운영 및 유지보수 비용이 증가할 수 있습니다.</p>
+      <p>관련 시사 뉴스: [포토] 외환시장 24시 개장 후 첫 공휴일</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 중동 정세 불안 등으로 인한 국제유가 상승이 국내 경제에 미치는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 생산 비용 증가로 기업의 수익성이 악화될 수 있다.</li><li>② 운송비 상승으로 인해 물가 상승 압력이 가중될 수 있다.</li><li>③ 원유 수입액 증가로 경상수지가 개선될 수 있다.</li><li>④ 항공, 해운 등 에너지 의존도가 높은 산업의 부담이 커진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 원유 수입액 증가로 경상수지가 개선될 수 있다.</p>
+      <p><strong>해설:</strong> 국제유가 상승은 원유 수입액을 증가시켜 경상수지를 악화시키는 요인으로 작용합니다. [오답해설] ① 유가 상승은 원자재 및 생산 비용을 증가시켜 기업의 채산성 및 수익성을 저하시킬 수 있습니다. ② 유류비 상승은 물류 및 운송비용 증가로 이어져 소비자물가 전반에 걸쳐 상승 압력을 가합니다. ④ 항공, 해운, 석유화학 등 에너지 소비량이 많은 산업은 유가 상승에 직접적인 영향을 받아 경영 부담이 가중됩니다.</p>
+      <p>관련 시사 뉴스: 국제유가, 미·이란 확전 양상에 4.5%↑…브렌트 90달러 육박</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 정부의 가계부채 관리 핵심 지표인 DSR(총부채원리금상환비율) 규제에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 차주의 연 소득 대비 모든 금융기관의 대출 원리금 상환액의 합계를 나타낸다.</li><li>② 모든 대출 상품에 일률적으로 동일한 DSR 비율이 적용된다.</li><li>③ 대출 한도를 늘려 가계 대출 총량 증가를 유도하는 목적이 있다.</li><li>④ DSR 규제는 은행의 대출 심사 자율성을 완전히 보장한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 차주의 연 소득 대비 모든 금융기관의 대출 원리금 상환액의 합계를 나타낸다.</p>
+      <p><strong>해설:</strong> DSR은 차주의 연 소득과 비교하여 모든 금융기관에서 받은 대출의 연간 원리금 상환액 총합을 나타내는 지표로, 대출 상환 능력을 평가하는 데 사용됩니다. [오답해설] ② DSR 규제는 차주의 상환 능력에 따라 차등 적용되며, 대출 상품이나 금융기관의 종류에 따라 적용 방식이 달라질 수 있습니다. ③ DSR 규제는 과도한 대출을 억제하여 가계부채의 건전성을 확보하고 대출 총량 증가를 억제하는 목적이 있습니다. ④ DSR 규제는 금융당국이 정한 기준에 따라 대출 한도를 제한하므로, 은행의 대출 심사 자율성을 부분적으로 제약합니다.</p>
+      <p>관련 시사 뉴스: 은행 대출 조이자… DSR 적용 안받는 서민급전대출 '껑충'</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 정부가 초기 스타트업 지원을 위해 '정책금융'을 뭉쳐 지원한다고 발표했다. 이러한 정책금융의 역할과 효과로 기대하기 어려운 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 민간 자본 시장의 리스크 회피 경향이 강할 때 자금 공급 역할을 수행한다.</li><li>② 민간 금융기관이 자금을 공급하기 어려운 초기 단계 기업에 대한 투자를 확대한다.</li><li>③ 혁신 기업의 성장을 촉진하여 장기적인 국가 경제 성장에 기여한다.</li><li>④ 정책금융기관 간 경쟁을 심화시켜 민간 금융의 시장 점유율을 축소시킨다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 정책금융기관 간 경쟁을 심화시켜 민간 금융의 시장 점유율을 축소시킨다.</p>
+      <p><strong>해설:</strong> 정책금융은 민간 금융이 담당하기 어려운 영역을 보완하여 시장 실패를 해소하고, 민간 금융의 활성화를 유도하는 상호 보완적인 역할을 합니다. 따라서 민간 금융의 시장 점유율을 축소시키는 것이 주요 목적이 아닙니다. [오답해설] ① 정책금융은 민간 금융기관이 투자하기 어려운 고위험 분야나 초기 기업에 자금을 지원하여 자금 공급의 공백을 메우는 역할을 합니다. ② 초기 스타트업은 담보나 실적이 부족하여 민간 금융기관으로부터 투자를 유치하기 어렵기 때문에 정책금융의 지원이 중요합니다. ③ 정책금융을 통해 혁신 기술을 가진 스타트업이 성장할 수 있는 기반을 마련하여 미래 성장 동력을 확보하고 국가 경제 성장에 기여할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 정책금융 뭉쳐 초기 스타트업 돕는다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-18</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1612,"category":"금융용어","question":"금융위원회가 금융기관 지배구조 개선 및 ESG 경영 강화를 위해 신설을 검토하고 있는 최고위험관리책임자(CRO), 최고정보보호책임자(CISO)와 유사한 역할을 하는 직책으로, 혁신금융 관련 전략 수립 및 이행을 총괄하는 새로운 개념의 책임자를 지칭하는 용어는?","answer":"① CIFO (Chief Innovation Finance Officer)","explanation":"CIFO는 혁신금융 관련 전략 수립 및 이행을 총괄하는 새로운 개념의 책임자를 의미합니다. [오답해설] ② CRO는 최고위험관리책임자로, 금융기관의 전반적인 위험 관리를 담당합니다. ③ CIO는 최고정보책임자로, 정보기술(IT) 전략 수립 및 운영을 총괄합니다. ④ CSO는 최고전략책임자로, 기업의 중장기 전략 수립 및 실행을 담당합니다.","news_context":"금융위 ‘CIFO’ 신설 움직임, 은행 지배구조 흔든다…ESG 강화에 역행","news_url":"https://n.news.naver.com/mnews/article/243/0000100554?sid=101","options":["① CIFO (Chief Innovation Finance Officer)","② CRO (Chief Risk Officer)","③ CIO (Chief Information Officer)","④ CSO (Chief Strategy Officer)"]},{"id":1613,"category":"금융용어","question":"주된 일자리에서 퇴직한 후 연금을 받기까지 소득이 급격히 줄어들어 경제적으로 어려움을 겪는 기간을 일컫는 용어는?","answer":"① 소득 절벽","explanation":"소득 절벽은 주된 일자리 퇴직 후 연금 수령 전까지 소득이 급감하는 시기를 의미합니다. [오답해설] ② 고용 절벽은 청년층 등 특정 계층의 취업 기회가 급격히 줄어드는 현상을 말합니다. ③ 소비 절벽은 경제적 어려움으로 인해 가계 소비가 급격히 위축되는 상황을 나타냅니다. ④ 투자 절벽은 기업이나 개인이 미래 불확실성 등으로 인해 투자를 급격히 줄이는 현상을 의미합니다.","news_context":"주된 일자리 퇴직 후 연금 받기까지 '소득 절벽' 13년","news_url":"https://www.yna.co.kr/view/AKR20260717031800530","options":["① 소득 절벽","② 고용 절벽","③ 소비 절벽","④ 투자 절벽"]},{"id":1614,"category":"세부지식","question":"기초자산의 일일 수익률을 일정 배율만큼 추종하도록 설계된 상품인 '레버리지 ETF'에 대한 설명으로 옳지 않은 것은?","answer":"② 지수 상승에 투자하는 상품으로, 지수 하락 시에도 수익을 기대할 수 있다.","explanation":"레버리지 ETF는 지수 상승에 투자하는 상품이므로 지수 하락 시에는 손실이 발생할 수 있습니다. 지수 하락 시 수익을 기대하는 상품은 인버스 ETF입니다. [오답해설] ① 레버리지 ETF는 일일 수익률을 추종하므로, 장기 투자 시 복리 효과로 인해 기초자산의 누적 수익률과 괴리가 발생할 수 있습니다. ③ 레버리지 ETF는 기초자산 변동률에 배수를 곱하여 수익률이 결정되므로, 가격이 급변동할 경우 손실 확대 위험이 커집니다. ④ 파생상품 등 복잡한 운용 전략을 사용하기 때문에 일반 ETF에 비해 운용 보수가 높게 책정될 수 있습니다.","news_context":"베팅하다 강제청산 1조…'삼전닉스 레버리지' 제동 건 이유 있다","news_url":"https://n.news.naver.com/mnews/article/079/0004169481?sid=101","options":["① 장기 투자 시 복리 효과로 인해 기초자산 수익률과 괴리가 커질 수 있다.","② 지수 상승에 투자하는 상품으로, 지수 하락 시에도 수익을 기대할 수 있다.","③ 가격 급변동 시 투자자의 손실이 확대될 위험이 일반 ETF보다 크다.","④ 파생상품을 활용하여 레버리지 효과를 얻으므로 운용 보수가 상대적으로 높을 수 있다."]},{"id":1615,"category":"세부지식","question":"자영업자 및 소상공인의 노후 생활 안정을 지원하는 '노란우산 공제'에 대한 설명으로 옳은 것은?","answer":"② 연령 제한 없이 가입 가능하나, 사업자 등록이 되어 있어야 한다.","explanation":"노란우산 공제는 연령 제한 없이 가입할 수 있으나, 사업자 등록이 되어 있는 소상공인 및 자영업자만 가입 대상입니다. [오답해설] ① 최근 납입 한도가 연 1,800만원으로 상향 조정되었으며, 납입액에 따라 소득공제 한도가 적용됩니다. ③ 공제금은 일시금 또는 분할금으로 수령할 수 있습니다. ④ 노란우산 공제는 납입 원금이 보장되는 상품이며, 해지 시에도 이자까지 함께 받을 수 있습니다. 다만, 특정 조건 하에서는 해지가 불리할 수 있습니다.","news_context":"이달부터 자영업자 노란우산 한도 연 1800만원으로","news_url":"https://www.mk.co.kr/news/economy/12100934","options":["① 최대 연 1,200만원까지 납입 가능하며, 납입액은 전액 소득공제된다.","② 연령 제한 없이 가입 가능하나, 사업자 등록이 되어 있어야 한다.","③ 공제금은 연금 형태가 아닌 일시금으로만 수령할 수 있다.","④ 공제 해지 시 납입 원금의 손실이 발생할 수 있으므로 신중해야 한다."]},{"id":1616,"category":"세부지식","question":"주택 구입 및 전세자금 마련을 위한 주요 금융상품인 '주택청약종합저축'에 대한 설명으로 옳은 것은?","answer":"③ 민영주택 청약 시에는 지역별 예치금액 기준을 충족해야 한다.","explanation":"민영주택 청약을 위해서는 청약 지역과 주택 면적에 따라 정해진 예치금액 기준을 충족해야 합니다. [오답해설] ① 투기과열지구 및 청약과열지역에서는 가입 후 2년이 지나야 1순위 자격이 부여되지만, 그 외 지역은 1년 또는 6개월 등 더 짧은 기간에 1순위 자격이 부여될 수 있습니다. ② 소득공제 혜택은 연간 납입액의 40%까지 최대 120만원으로 제한됩니다. ④ 미성년자도 가입할 수 있으며, 주택청약종합저축은 만 19세 미만도 가입할 수 있는 유일한 청약통장입니다.","news_context":"한 달 새 청약통장 10만명 깬 이유는?","news_url":"https://www.mk.co.kr/news/economy/12101222","options":["① 가입 후 2년이 지나야 1순위 자격이 부여된다.","② 소득공제 혜택은 연간 납입액의 40%까지 최대 96만원으로 제한된다.","③ 민영주택 청약 시에는 지역별 예치금액 기준을 충족해야 한다.","④ 만 19세 미만 미성년자는 가입할 수 없다."]},{"id":1617,"category":"시사","question":"최근 이어진 금리 인상 기조가 국내 은행의 경영 및 여신 건전성에 미치는 영향으로 옳은 것은?","answer":"③ 취약 차주 및 한계 기업의 채무 상환 능력이 저하될 수 있다.","explanation":"금리 인상으로 인해 대출 이자 부담이 커지면서 소득이 불안정한 취약 차주나 재무 구조가 취약한 한계 기업의 채무 상환 능력이 저하될 수 있습니다. [오답해설] ① 금리 인상으로 이자 부담이 증가하여 연체율이 상승할 가능성이 큽니다. ② 취약 차주의 부실 위험 증가로 은행의 대출 자산 건전성이 악화될 위험이 커집니다. ④ 금리 인상기에는 일반적으로 예금 금리보다 대출 금리 인상 폭이 더 커져 예대마진이 확대될 가능성이 높습니다.","news_context":"금리인상 후폭풍 … 고령층부터 타격","news_url":"https://www.mk.co.kr/news/economy/12101110","options":["① 가계 및 중소기업의 이자 부담이 줄어 연체율이 하락한다.","② 은행의 대출 자산 건전성이 악화될 위험이 감소한다.","③ 취약 차주 및 한계 기업의 채무 상환 능력이 저하될 수 있다.","④ 예대마진이 축소되어 은행의 수익성이 하락한다."]},{"id":1618,"category":"시사","question":"국내 외환시장의 24시간 개장이 국내 은행의 외환 업무에 미치는 영향으로 옳지 않은 것은?","answer":"④ 은행 간 외환 거래가 국내 시장으로 집중되어 글로벌 유동성이 감소한다.","explanation":"외환시장 24시간 개장은 국내 시장의 접근성을 높여 글로벌 유동성이 국내로 유입되는 효과를 기대할 수 있습니다. [오답해설] ① 24시간 개장으로 시차 없이 언제든 환전 및 외화 송금 서비스 제공이 가능해집니다. ② 해외 시장의 급격한 변화에 국내 은행이 실시간으로 대응하여 리스크를 관리할 수 있는 역량이 강화됩니다. ③ 딜링룸 운영 시간이 길어지면서 야간 및 새벽 근무 인력 증원과 시스템 고도화로 인해 인력 운영 및 유지보수 비용이 증가할 수 있습니다.","news_context":"[포토] 외환시장 24시 개장 후 첫 공휴일","news_url":"https://www.mk.co.kr/news/economy/12101075","options":["① 시차 제약 없는 실시간 환전 및 외화 송금 서비스 제공이 용이해진다.","② 글로벌 금융시장 변동성에 대한 실시간 대응 역량이 강화된다.","③ 외환 딜링룸의 인력 운영 및 시스템 유지보수 비용이 증가할 수 있다.","④ 은행 간 외환 거래가 국내 시장으로 집중되어 글로벌 유동성이 감소한다."]},{"id":1619,"category":"시사","question":"최근 중동 정세 불안 등으로 인한 국제유가 상승이 국내 경제에 미치는 영향으로 옳지 않은 것은?","answer":"③ 원유 수입액 증가로 경상수지가 개선될 수 있다.","explanation":"국제유가 상승은 원유 수입액을 증가시켜 경상수지를 악화시키는 요인으로 작용합니다. [오답해설] ① 유가 상승은 원자재 및 생산 비용을 증가시켜 기업의 채산성 및 수익성을 저하시킬 수 있습니다. ② 유류비 상승은 물류 및 운송비용 증가로 이어져 소비자물가 전반에 걸쳐 상승 압력을 가합니다. ④ 항공, 해운, 석유화학 등 에너지 소비량이 많은 산업은 유가 상승에 직접적인 영향을 받아 경영 부담이 가중됩니다.","news_context":"국제유가, 미·이란 확전 양상에 4.5%↑…브렌트 90달러 육박","news_url":"https://www.yna.co.kr/view/AKR20260718006800072","options":["① 생산 비용 증가로 기업의 수익성이 악화될 수 있다.","② 운송비 상승으로 인해 물가 상승 압력이 가중될 수 있다.","③ 원유 수입액 증가로 경상수지가 개선될 수 있다.","④ 항공, 해운 등 에너지 의존도가 높은 산업의 부담이 커진다."]},{"id":1620,"category":"시사","question":"정부의 가계부채 관리 핵심 지표인 DSR(총부채원리금상환비율) 규제에 대한 설명으로 옳은 것은?","answer":"① 차주의 연 소득 대비 모든 금융기관의 대출 원리금 상환액의 합계를 나타낸다.","explanation":"DSR은 차주의 연 소득과 비교하여 모든 금융기관에서 받은 대출의 연간 원리금 상환액 총합을 나타내는 지표로, 대출 상환 능력을 평가하는 데 사용됩니다. [오답해설] ② DSR 규제는 차주의 상환 능력에 따라 차등 적용되며, 대출 상품이나 금융기관의 종류에 따라 적용 방식이 달라질 수 있습니다. ③ DSR 규제는 과도한 대출을 억제하여 가계부채의 건전성을 확보하고 대출 총량 증가를 억제하는 목적이 있습니다. ④ DSR 규제는 금융당국이 정한 기준에 따라 대출 한도를 제한하므로, 은행의 대출 심사 자율성을 부분적으로 제약합니다.","news_context":"은행 대출 조이자… DSR 적용 안받는 서민급전대출 '껑충'","news_url":"https://www.mk.co.kr/news/economy/12101087","options":["① 차주의 연 소득 대비 모든 금융기관의 대출 원리금 상환액의 합계를 나타낸다.","② 모든 대출 상품에 일률적으로 동일한 DSR 비율이 적용된다.","③ 대출 한도를 늘려 가계 대출 총량 증가를 유도하는 목적이 있다.","④ DSR 규제는 은행의 대출 심사 자율성을 완전히 보장한다."]},{"id":1621,"category":"시사","question":"최근 정부가 초기 스타트업 지원을 위해 '정책금융'을 뭉쳐 지원한다고 발표했다. 이러한 정책금융의 역할과 효과로 기대하기 어려운 것은?","answer":"④ 정책금융기관 간 경쟁을 심화시켜 민간 금융의 시장 점유율을 축소시킨다.","explanation":"정책금융은 민간 금융이 담당하기 어려운 영역을 보완하여 시장 실패를 해소하고, 민간 금융의 활성화를 유도하는 상호 보완적인 역할을 합니다. 따라서 민간 금융의 시장 점유율을 축소시키는 것이 주요 목적이 아닙니다. [오답해설] ① 정책금융은 민간 금융기관이 투자하기 어려운 고위험 분야나 초기 기업에 자금을 지원하여 자금 공급의 공백을 메우는 역할을 합니다. ② 초기 스타트업은 담보나 실적이 부족하여 민간 금융기관으로부터 투자를 유치하기 어렵기 때문에 정책금융의 지원이 중요합니다. ③ 정책금융을 통해 혁신 기술을 가진 스타트업이 성장할 수 있는 기반을 마련하여 미래 성장 동력을 확보하고 국가 경제 성장에 기여할 수 있습니다.","news_context":"정책금융 뭉쳐 초기 스타트업 돕는다","news_url":"https://www.mk.co.kr/news/economy/12100582","options":["① 민간 자본 시장의 리스크 회피 경향이 강할 때 자금 공급 역할을 수행한다.","② 민간 금융기관이 자금을 공급하기 어려운 초기 단계 기업에 대한 투자를 확대한다.","③ 혁신 기업의 성장을 촉진하여 장기적인 국가 경제 성장에 기여한다.","④ 정책금융기관 간 경쟁을 심화시켜 민간 금융의 시장 점유율을 축소시킨다."]},{"id":31,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
