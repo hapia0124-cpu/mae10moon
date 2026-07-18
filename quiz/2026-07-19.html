@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-19 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-19 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-19 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 중 중앙은행이 연속적으로 기준금리를 인상하는 통화정책을 의미하는 용어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 백투백 인상</li><li>② 스무딩 오퍼레이션</li><li>③ 양적 완화</li><li>④ 포워드 가이던스</li>
+      </ul>
+      <p><strong>정답:</strong> ① 백투백 인상</p>
+      <p><strong>해설:</strong> 백투백 인상은 중앙은행이 경기 과열 및 인플레이션 억제를 위해 기준금리를 연속적으로 인상하는 통화정책을 의미합니다. [오답해설] ② 스무딩 오퍼레이션은 환율이 한 방향으로 급격히 움직일 때 중앙은행이 외환시장에 개입하여 환율 변동 폭을 완화하는 조치입니다. ③ 양적 완화는 중앙은행이 시장에 유동성을 공급하기 위해 국채 등 자산을 매입하여 통화량을 늘리는 정책입니다. ④ 포워드 가이던스는 중앙은행이 미래 통화정책의 방향과 목표에 대해 미리 정보를 제공하여 시장의 예측 가능성을 높이는 소통 전략입니다.</p>
+      <p>관련 시사 뉴스: 한은 '8월 백투백 인상' 신중론…전문가들 '10월에 무게' 등 기준금리 인상 관련 기사에서 '백투백 인상'이 언급되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 기초지수의 일별수익률을 추종하는 상장지수펀드로, 그 일별수익률의 일정 배수(예: 2배)를 추종하도록 설계되어 높은 수익과 손실 가능성을 동시에 지닌 상품을 무엇이라고 하나요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 레버리지 ETF</li><li>② 인버스 ETF</li><li>③ 액티브 ETF</li><li>④ 합성 ETF</li>
+      </ul>
+      <p><strong>정답:</strong> ① 레버리지 ETF</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초지수의 일별수익률의 일정 배수를 추종하도록 설계된 상품으로, 단기적인 시장 방향성에 투자하여 높은 수익을 추구할 수 있지만, 반대 방향으로 움직일 경우 큰 손실을 입을 수 있습니다. [오답해설] ② 인버스 ETF는 기초지수 움직임과 반대로 수익률이 나도록 설계된 상장지수펀드입니다. ③ 액티브 ETF는 펀드매니저가 적극적인 운용 전략으로 시장 평균 이상의 수익을 추구하는 상장지수펀드입니다. ④ 합성 ETF는 파생상품을 활용하여 기초지수 수익률을 추종하는 상장지수펀드로, 실물자산에 직접 투자하는 방식과 차이가 있습니다.</p>
+      <p>관련 시사 뉴스: 90% 손실, 900% 벌어야 본전 … 2배 ETF가 알려준 교훈 등 레버리지 ETF의 높은 변동성과 위험성을 다룬 기사들이 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 자영업자 및 소기업 경영인의 노후 대비와 생활 안정을 돕는 '노란우산 공제'에 대한 설명 중 옳은 것은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 노란우산 공제는 소상공인 및 소기업 사업자의 생활 안정을 위한 제도로, 연 납입 한도가 1,800만원으로 확대되었다.</li><li>② 노란우산 공제는 중소기업 퇴직연금 제도 중 하나로, 법인 사업자만 가입할 수 있다.</li><li>③ 노란우산 공제는 가입 시 납입한 금액에 대해 소득공제 혜택이 없으며, 오직 폐업 시에만 해지환급금을 받을 수 있다.</li><li>④ 노란우산 공제는 금융기관에서 운영하는 상품으로, 이자소득에 대한 비과세 혜택이 적용된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 노란우산 공제는 소상공인 및 소기업 사업자의 생활 안정을 위한 제도로, 연 납입 한도가 1,800만원으로 확대되었다.</p>
+      <p><strong>해설:</strong> 노란우산 공제는 소상공인 및 소기업 사업자를 위한 제도로, 연간 납입 한도가 1,800만원으로 확대되어 노후 대비를 강화할 수 있도록 지원합니다. [오답해설] ② 노란우산 공제는 소기업·소상공인을 위한 공제 제도로, 개인사업자 및 법인사업자 대표 모두 가입 가능하며, 중소기업 퇴직연금 제도와는 별개입니다. ③ 노란우산 공제는 납입 금액에 대해 소득공제 혜택이 있으며, 폐업 외에도 사망, 질병, 퇴임 등의 사유로도 공제금을 지급받을 수 있습니다. ④ 노란우산 공제는 중소기업협동조합법에 의해 설치된 공제사업으로서, 비영리 목적의 공제 제도로 일반 금융상품과는 차이가 있습니다.</p>
+      <p>관련 시사 뉴스: “퇴직금 없는 우리엄마 희소식”…이달부터 자영업자 노란우산 한도 연 1800만원으로 기사에서 노란우산 공제의 연 납입 한도 확대에 대한 내용이 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 최근 청약통장 해지 건수가 증가하고 있는 가운데, 청약통장에 대한 설명 중 옳지 않은 것은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 청약통장을 해지하면 주택청약 자격을 상실하며, 재가입 시 기존 납입 횟수와 납입 인정 금액은 소멸된다.</li><li>② 청약통장은 주택 구입 시 대출 금리 우대 혜택을 제공하기도 하지만, 해지 시 그 혜택을 받을 수 없게 된다.</li><li>③ 청약통장 해지 시 예금자보호법에 따라 원금과 소정의 이자를 보호받을 수 있다.</li><li>④ 청약통장은 주택도시기금의 재원으로 운용되며, 가입자가 납입한 금액은 전액 주택도시기금으로 귀속되어 주택 관련 사업에 활용된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 청약통장은 주택도시기금의 재원으로 운용되며, 가입자가 납입한 금액은 전액 주택도시기금으로 귀속되어 주택 관련 사업에 활용된다.</p>
+      <p><strong>해설:</strong> 청약통장은 주택도시기금의 재원으로 운용되지만, 가입자가 납입한 금액은 예치금 형태로 관리되며 청약 자격을 유지하다 해지 또는 당첨 시 반환됩니다. 전액 주택도시기금으로 귀속되는 것이 아닙니다. [오답해설] ① 청약통장을 해지하면 주택청약 자격이 상실되며, 재가입하더라도 기존에 쌓았던 납입 횟수나 인정 금액은 새로 시작해야 합니다. ② 청약통장 가입자는 주택청약 시 우대 금리 적용 등 다양한 금융 혜택을 받을 수 있으며, 해지 시 이러한 혜택은 사라집니다. ③ 청약통장은 예금자보호법에 따라 원리금을 보호받는 상품 중 하나이므로, 해지 시 원금과 소정의 이자를 돌려받을 수 있습니다.</p>
+      <p>관련 시사 뉴스: “이젠 정말 ‘헛꿈’ 안 꾼다”…한 달 새 청약통장 10만명 깬 이유는? 기사에서 청약통장 해지 현상에 대한 배경을 다루고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 연체율 상승과 총량 규제로 어려움을 겪는 '상호금융 집단대출'에 대한 설명으로 옳지 않은 것은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 상호금융권 집단대출은 주로 아파트 입주 잔금 대출에 해당하며, 총부채원리금상환비율(DSR) 규제 대상이다.</li><li>② 상호금융권의 집단대출은 은행권 대비 대출 한도가 높고 금리가 낮은 경향이 있어 실수요자에게 인기가 높다.</li><li>③ 최근 연체율 상승과 총량 규제로 인해 상호금융권의 집단대출 영업이 제한되는 추세이다.</li><li>④ 상호금융권은 지역 기반의 특성상 해당 지역 내의 부동산 시장 상황에 더욱 민감하게 반응할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 상호금융권의 집단대출은 은행권 대비 대출 한도가 높고 금리가 낮은 경향이 있어 실수요자에게 인기가 높다.</p>
+      <p><strong>해설:</strong> 상호금융권은 일반적으로 은행권 대비 대출 금리가 높고, 최근에는 대출 규제 강화로 인해 은행권보다 높은 대출 문턱을 보이기도 합니다. [오답해설] ① 상호금융권 집단대출은 아파트 등 공동주택 입주 잔금 대출이 주를 이루며, 금융당국의 가계대출 총량 규제와 DSR 규제 대상에 포함됩니다. ③ 최근 상호금융권의 연체율이 상승하고 가계대출 총량 규제가 강화되면서, 집단대출을 포함한 가계대출 영업이 제한되거나 위축되는 경향을 보입니다. ④ 상호금융권은 지역 밀착형 금융기관으로, 해당 지역의 부동산 경기 변동이나 지역 경제 상황에 직접적인 영향을 더 많이 받을 수 있습니다.</p>
+      <p>관련 시사 뉴스: 상호금융 '집단대출 부메랑' 상반기 3조 쑥…연말까지 영업제한, 연체율 비상·총량규제 압박에 상호금융 가계대출 28조 급감 등 상호금융권 집단대출의 규제 및 연체율 문제가 언급되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 금리 인상 기조와 가계대출 규제 강화가 은행의 경영 및 여신 활동에 미치는 영향으로 가장 적절한 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 금리 인상 기조와 가계대출 규제는 은행의 여신 건전성을 향상시키고 예대마진 확대로 수익성을 높일 수 있다.</li><li>② 금리 인상 및 대출 규제 강화는 취약차주의 상환 부담을 가중시켜 연체율 상승으로 이어질 수 있으며, 이는 은행의 부실채권 증가 요인이 된다.</li><li>③ 가계대출 총량 규제는 은행이 고신용 차주에게 더 많은 대출을 집중하도록 유도하여 저신용 차주에 대한 대출 문턱을 낮추는 효과를 가져온다.</li><li>④ 은행이 가계대출 여력이 부족해지면, 기업 대출을 줄여 가계 대출에 집중함으로써 건전성을 유지하려는 경향이 생긴다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 금리 인상 및 대출 규제 강화는 취약차주의 상환 부담을 가중시켜 연체율 상승으로 이어질 수 있으며, 이는 은행의 부실채권 증가 요인이 된다.</p>
+      <p><strong>해설:</strong> 금리 인상과 대출 규제 강화는 특히 상환 능력이 취약한 차주들의 이자 부담을 늘려 연체율을 높이고, 이는 은행의 부실채권 증가로 이어져 건전성을 위협할 수 있습니다. [오답해설] ① 금리 인상은 예대마진을 확대할 수 있지만, 대출 규제와 연체율 상승은 대출 성장 둔화 및 대손충당금 적립 부담을 늘려 수익성에 부정적인 영향을 미칠 수 있습니다. ③ 가계대출 총량 규제는 은행이 신용도가 높은 차주에게 대출을 집중하게 하여, 저신용 차주들은 대출을 받기 더욱 어려워지는 경향이 있습니다. ④ 은행이 가계대출 여력이 부족해지면, 건전성 유지를 위해 무조건적으로 기업 대출을 줄이기보다는, 전체 여신 포트폴리오를 조정하고 고위험 대출을 축소하는 등 리스크 관리를 강화합니다.</p>
+      <p>관련 시사 뉴스: 은행권 가계대출 여력 바닥…금리 상승까지 실수요자 '이중고', 금리인상 후폭풍 … 고령층부터 타격 등 금리 인상과 대출 규제가 가계 및 은행에 미치는 부정적 영향을 다루고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 한국의 AI 도입률이 주요국 중 최고 수준으로 전망되는 가운데, AI 기술 발전이 금융권 고용 시장에 미칠 영향으로 가장 적절한 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① AI 도입 가속화는 금융권의 단순 반복 업무를 대체하여 인력 효율화를 가져오지만, 동시에 AI 시스템 개발 및 관리 인력 수요를 증가시킨다.</li><li>② AI 기술 발전은 금융권에서 비대면 서비스 확대를 통해 인력 감축을 유도하며, 금융 전문 인력의 필요성을 전반적으로 감소시킨다.</li><li>③ 한국의 높은 AI 도입률은 금융권 취업 시장에서 전통적인 금융 지식보다는 AI 기술에 대한 이해만을 요구하는 방향으로 전환될 것임을 시사한다.</li><li>④ AI는 금융상품 개발에만 활용될 뿐, 고객 상담이나 자산 관리 등 대면 서비스 영역에는 큰 영향을 미치지 않을 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① AI 도입 가속화는 금융권의 단순 반복 업무를 대체하여 인력 효율화를 가져오지만, 동시에 AI 시스템 개발 및 관리 인력 수요를 증가시킨다.</p>
+      <p><strong>해설:</strong> AI는 데이터 분석, 서류 처리 등 단순 반복 업무를 자동화하여 효율성을 높이지만, AI 시스템을 구축, 운영, 관리하고 AI 기반 신규 서비스를 개발할 전문 인력의 수요를 창출합니다. [오답해설] ② AI 도입은 일부 인력 감축을 가져올 수 있으나, 복잡한 의사결정, 리스크 관리, 윤리적 판단 등 금융 전문 인력의 역할은 여전히 중요하며 그 성격이 변화할 것입니다. ③ 금융권 취업 시장에서는 AI 기술 이해와 함께 전통적인 금융 지식 및 윤리적 판단 능력의 중요성이 더욱 강조될 것입니다. ④ AI는 금융상품 개발뿐만 아니라 챗봇을 통한 고객 상담, 로보어드바이저를 활용한 자산 관리 등 다양한 대면 및 비대면 서비스 영역에 광범위하게 적용되어 영향을 미치고 있습니다.</p>
+      <p>관련 시사 뉴스: "한국, 10년 후 AI도입률 주요국 중 최고"…고용한파 커지나, 2분기 대졸 실업자 5년 만에 최대 기사에서 AI 도입과 고용 시장의 변화에 대한 우려와 기대를 다루고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 이달 원화 절상률이 주요국 1위를 기록하고 원/엔 환율이 1년 8개월 만에 최저치를 기록하는 등 원화 강세 현상이 나타나고 있습니다. 이러한 원화 강세가 한국 경제에 미치는 영향으로 가장 적절한 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 원화 절상은 한국 기업의 수출 경쟁력을 약화시키지만, 수입 물가를 하락시켜 물가 안정에 기여할 수 있다.</li><li>② 원화 절상은 외국인 투자자금의 유입을 감소시켜 국내 증시 하락 압력으로 작용한다.</li><li>③ 원화 절상은 국내 관광객의 해외여행 비용을 증가시켜 해외 소비를 위축시킨다.</li><li>④ 원화 절상은 원/달러 환율 상승을 유도하여 국내 기업의 외화 부채 부담을 가중시킨다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 원화 절상은 한국 기업의 수출 경쟁력을 약화시키지만, 수입 물가를 하락시켜 물가 안정에 기여할 수 있다.</p>
+      <p><strong>해설:</strong> 원화 가치가 상승하면 수출 상품의 가격 경쟁력이 떨어져 수출 기업에 불리하지만, 해외에서 수입하는 원자재나 상품의 가격이 저렴해져 전반적인 수입 물가를 안정시키는 효과가 있습니다. [오답해설] ② 원화 절상은 한국 자산의 상대적 가치를 높여 외국인 투자자금 유입을 촉진할 수 있으며, 이는 국내 증시에 긍정적인 영향을 미칠 수 있습니다. ③ 원화 절상은 해외 통화 대비 원화 가치가 높아지는 것을 의미하므로, 국내 관광객의 해외여행 비용이 상대적으로 저렴해져 해외 소비를 촉진할 수 있습니다. ④ 원화 절상은 원/달러 환율 하락(달러 가치 하락)을 유도하여 외화 부채를 보유한 국내 기업의 상환 부담을 경감시키는 효과가 있습니다.</p>
+      <p>관련 시사 뉴스: 이달 원화 절상률 주요국 1위…원/엔 1년8개월 만에 최저 기사에서 원화의 강세 현상과 그에 따른 경제적 파급 효과를 분석하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 호르무즈 해협과 홍해 등 주요 원유 수송로에서 지정학적 리스크가 고조되고 있습니다. 이러한 상황이 국제 경제 및 금융 시장에 미치는 영향으로 가장 적절한 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 호르무즈 해협과 홍해의 지정학적 불안정은 국제 유가 상승을 초래하여 글로벌 인플레이션 압력을 가중시키고, 이는 각국 중앙은행의 긴축 기조를 강화할 수 있다.</li><li>② 주요 원유 수송로의 불안정은 국제 유가를 하락시켜 에너지 관련 기업의 투자 심리를 위축시키고 경기 둔화를 야기한다.</li><li>③ 지정학적 리스크는 안전자산 선호 심리를 약화시켜 주식 등 위험자산에 대한 투자를 증가시키는 요인으로 작용한다.</li><li>④ 호르무즈 해협과 홍해의 불안정은 아시아 국가보다는 유럽과 미주 지역에 더 큰 경제적 영향을 미 미친다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 호르무즈 해협과 홍해의 지정학적 불안정은 국제 유가 상승을 초래하여 글로벌 인플레이션 압력을 가중시키고, 이는 각국 중앙은행의 긴축 기조를 강화할 수 있다.</p>
+      <p><strong>해설:</strong> 주요 원유 수송로의 불안정은 원유 공급에 대한 불확실성을 높여 국제 유가를 상승시키고, 이는 전 세계적인 물가 상승(인플레이션)을 부추겨 중앙은행들이 금리 인상 등 긴축 정책을 지속하게 만들 수 있습니다. [오답해설] ② 주요 원유 수송로의 불안정은 공급 차질 우려로 국제 유가를 상승시키는 요인으로 작용합니다. ③ 지정학적 리스크 증가는 투자자들이 불확실성을 회피하고자 금, 달러 등 안전자산을 선호하게 만들어 위험자산에 대한 투자를 위축시킵니다. ④ 호르무즈 해협과 홍해는 전 세계 원유 물동량의 상당 부분을 차지하는 주요 길목이므로, 이 지역의 불안정은 전 세계 경제에 광범위하고 심각한 영향을 미칩니다.</p>
+      <p>관련 시사 뉴스: 호르무즈 이어 홍해도 흔들…"양대 원유동맥 막히면 세계 침체" 기사에서 주요 해상 원유 수송로의 불안정이 세계 경제에 미치는 심각한 파장을 경고하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. '445억원 해킹' 피해를 입은 두나무에 금융감독원이 검사의견서를 송부하며 제재가 본격화되었습니다. 이와 관련하여 금융당국의 역할에 대한 설명으로 가장 적절한 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 금융감독원은 금융 시장의 건전성 확보를 위해 핀테크 기업의 보안 시스템 미비로 인한 고객 자산 피해 발생 시, 해당 기업에 대한 제재를 통해 시장 신뢰를 회복하는 역할을 수행한다.</li><li>② 금융감독원은 핀테크 기업의 자율성을 존중하여, 해킹 피해 발생 시에도 기업 자체적인 해결을 우선시하며 직접적인 제재는 최소화한다.</li><li>③ 금융감독원의 제재는 주로 전통 금융기관에 한정되며, 가상자산 사업자와 같은 핀테크 기업의 사고는 주로 과학기술정보통신부 소관이다.</li><li>④ 핀테크 기업의 해킹 피해에 대한 금융감독원의 제재는 소비자 피해보상과는 무관하며, 오직 기업의 재정 건전성 유지에만 초점을 맞춘다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 금융감독원은 금융 시장의 건전성 확보를 위해 핀테크 기업의 보안 시스템 미비로 인한 고객 자산 피해 발생 시, 해당 기업에 대한 제재를 통해 시장 신뢰를 회복하는 역할을 수행한다.</p>
+      <p><strong>해설:</strong> 금융감독원은 금융 시스템의 안정과 투자자 보호를 위해 가상자산 사업자를 포함한 핀테크 기업의 보안 관리 소홀로 인한 피해 발생 시, 관련 법규에 따라 제재를 통해 시장 건전성과 신뢰를 확보하는 역할을 합니다. [오답해설] ② 금융감독원은 핀테크 기업의 자율성을 존중하지만, 고객 자산 보호 및 시장 건전성 유지를 위해 필요한 경우 적극적으로 개입하여 감독하고 제재를 부과합니다. ③ 가상자산 사업자는 특정금융정보법에 따라 금융정보분석원(FIU)에 신고된 후 금융감독원의 감독 대상이 되며, 과학기술정보통신부 소관과는 다릅니다. ④ 금융감독원의 제재는 기업의 재정 건전성 유지뿐만 아니라 소비자 피해 예방 및 구제, 시장 질서 확립 등 다양한 목적을 가집니다.</p>
+      <p>관련 시사 뉴스: '445억원 해킹' 두나무에 금감원 검사의견서 송부…제재 본격화 기사에서 핀테크 기업의 보안 문제와 금융당국의 감독 및 제재 역할이 부각되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-19</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1622,"category":"금융용어","question":"다음 중 중앙은행이 연속적으로 기준금리를 인상하는 통화정책을 의미하는 용어는 무엇인가요?","answer":"① 백투백 인상","explanation":"백투백 인상은 중앙은행이 경기 과열 및 인플레이션 억제를 위해 기준금리를 연속적으로 인상하는 통화정책을 의미합니다. [오답해설] ② 스무딩 오퍼레이션은 환율이 한 방향으로 급격히 움직일 때 중앙은행이 외환시장에 개입하여 환율 변동 폭을 완화하는 조치입니다. ③ 양적 완화는 중앙은행이 시장에 유동성을 공급하기 위해 국채 등 자산을 매입하여 통화량을 늘리는 정책입니다. ④ 포워드 가이던스는 중앙은행이 미래 통화정책의 방향과 목표에 대해 미리 정보를 제공하여 시장의 예측 가능성을 높이는 소통 전략입니다.","news_context":"한은 '8월 백투백 인상' 신중론…전문가들 '10월에 무게' 등 기준금리 인상 관련 기사에서 '백투백 인상'이 언급되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/421/0009066248?sid=101","options":["① 백투백 인상","② 스무딩 오퍼레이션","③ 양적 완화","④ 포워드 가이던스"]},{"id":1623,"category":"금융용어","question":"기초지수의 일별수익률을 추종하는 상장지수펀드로, 그 일별수익률의 일정 배수(예: 2배)를 추종하도록 설계되어 높은 수익과 손실 가능성을 동시에 지닌 상품을 무엇이라고 하나요?","answer":"① 레버리지 ETF","explanation":"레버리지 ETF는 기초지수의 일별수익률의 일정 배수를 추종하도록 설계된 상품으로, 단기적인 시장 방향성에 투자하여 높은 수익을 추구할 수 있지만, 반대 방향으로 움직일 경우 큰 손실을 입을 수 있습니다. [오답해설] ② 인버스 ETF는 기초지수 움직임과 반대로 수익률이 나도록 설계된 상장지수펀드입니다. ③ 액티브 ETF는 펀드매니저가 적극적인 운용 전략으로 시장 평균 이상의 수익을 추구하는 상장지수펀드입니다. ④ 합성 ETF는 파생상품을 활용하여 기초지수 수익률을 추종하는 상장지수펀드로, 실물자산에 직접 투자하는 방식과 차이가 있습니다.","news_context":"90% 손실, 900% 벌어야 본전 … 2배 ETF가 알려준 교훈 등 레버리지 ETF의 높은 변동성과 위험성을 다룬 기사들이 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12100996","options":["① 레버리지 ETF","② 인버스 ETF","③ 액티브 ETF","④ 합성 ETF"]},{"id":1624,"category":"세부지식","question":"자영업자 및 소기업 경영인의 노후 대비와 생활 안정을 돕는 '노란우산 공제'에 대한 설명 중 옳은 것은 무엇인가요?","answer":"① 노란우산 공제는 소상공인 및 소기업 사업자의 생활 안정을 위한 제도로, 연 납입 한도가 1,800만원으로 확대되었다.","explanation":"노란우산 공제는 소상공인 및 소기업 사업자를 위한 제도로, 연간 납입 한도가 1,800만원으로 확대되어 노후 대비를 강화할 수 있도록 지원합니다. [오답해설] ② 노란우산 공제는 소기업·소상공인을 위한 공제 제도로, 개인사업자 및 법인사업자 대표 모두 가입 가능하며, 중소기업 퇴직연금 제도와는 별개입니다. ③ 노란우산 공제는 납입 금액에 대해 소득공제 혜택이 있으며, 폐업 외에도 사망, 질병, 퇴임 등의 사유로도 공제금을 지급받을 수 있습니다. ④ 노란우산 공제는 중소기업협동조합법에 의해 설치된 공제사업으로서, 비영리 목적의 공제 제도로 일반 금융상품과는 차이가 있습니다.","news_context":"“퇴직금 없는 우리엄마 희소식”…이달부터 자영업자 노란우산 한도 연 1800만원으로 기사에서 노란우산 공제의 연 납입 한도 확대에 대한 내용이 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12100934","options":["① 노란우산 공제는 소상공인 및 소기업 사업자의 생활 안정을 위한 제도로, 연 납입 한도가 1,800만원으로 확대되었다.","② 노란우산 공제는 중소기업 퇴직연금 제도 중 하나로, 법인 사업자만 가입할 수 있다.","③ 노란우산 공제는 가입 시 납입한 금액에 대해 소득공제 혜택이 없으며, 오직 폐업 시에만 해지환급금을 받을 수 있다.","④ 노란우산 공제는 금융기관에서 운영하는 상품으로, 이자소득에 대한 비과세 혜택이 적용된다."]},{"id":1625,"category":"세부지식","question":"최근 청약통장 해지 건수가 증가하고 있는 가운데, 청약통장에 대한 설명 중 옳지 않은 것은 무엇인가요?","answer":"④ 청약통장은 주택도시기금의 재원으로 운용되며, 가입자가 납입한 금액은 전액 주택도시기금으로 귀속되어 주택 관련 사업에 활용된다.","explanation":"청약통장은 주택도시기금의 재원으로 운용되지만, 가입자가 납입한 금액은 예치금 형태로 관리되며 청약 자격을 유지하다 해지 또는 당첨 시 반환됩니다. 전액 주택도시기금으로 귀속되는 것이 아닙니다. [오답해설] ① 청약통장을 해지하면 주택청약 자격이 상실되며, 재가입하더라도 기존에 쌓았던 납입 횟수나 인정 금액은 새로 시작해야 합니다. ② 청약통장 가입자는 주택청약 시 우대 금리 적용 등 다양한 금융 혜택을 받을 수 있으며, 해지 시 이러한 혜택은 사라집니다. ③ 청약통장은 예금자보호법에 따라 원리금을 보호받는 상품 중 하나이므로, 해지 시 원금과 소정의 이자를 돌려받을 수 있습니다.","news_context":"“이젠 정말 ‘헛꿈’ 안 꾼다”…한 달 새 청약통장 10만명 깬 이유는? 기사에서 청약통장 해지 현상에 대한 배경을 다루고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12101222","options":["① 청약통장을 해지하면 주택청약 자격을 상실하며, 재가입 시 기존 납입 횟수와 납입 인정 금액은 소멸된다.","② 청약통장은 주택 구입 시 대출 금리 우대 혜택을 제공하기도 하지만, 해지 시 그 혜택을 받을 수 없게 된다.","③ 청약통장 해지 시 예금자보호법에 따라 원금과 소정의 이자를 보호받을 수 있다.","④ 청약통장은 주택도시기금의 재원으로 운용되며, 가입자가 납입한 금액은 전액 주택도시기금으로 귀속되어 주택 관련 사업에 활용된다."]},{"id":1626,"category":"세부지식","question":"최근 연체율 상승과 총량 규제로 어려움을 겪는 '상호금융 집단대출'에 대한 설명으로 옳지 않은 것은 무엇인가요?","answer":"② 상호금융권의 집단대출은 은행권 대비 대출 한도가 높고 금리가 낮은 경향이 있어 실수요자에게 인기가 높다.","explanation":"상호금융권은 일반적으로 은행권 대비 대출 금리가 높고, 최근에는 대출 규제 강화로 인해 은행권보다 높은 대출 문턱을 보이기도 합니다. [오답해설] ① 상호금융권 집단대출은 아파트 등 공동주택 입주 잔금 대출이 주를 이루며, 금융당국의 가계대출 총량 규제와 DSR 규제 대상에 포함됩니다. ③ 최근 상호금융권의 연체율이 상승하고 가계대출 총량 규제가 강화되면서, 집단대출을 포함한 가계대출 영업이 제한되거나 위축되는 경향을 보입니다. ④ 상호금융권은 지역 밀착형 금융기관으로, 해당 지역의 부동산 경기 변동이나 지역 경제 상황에 직접적인 영향을 더 많이 받을 수 있습니다.","news_context":"상호금융 '집단대출 부메랑' 상반기 3조 쑥…연말까지 영업제한, 연체율 비상·총량규제 압박에 상호금융 가계대출 28조 급감 등 상호금융권 집단대출의 규제 및 연체율 문제가 언급되고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260718040400002","options":["① 상호금융권 집단대출은 주로 아파트 입주 잔금 대출에 해당하며, 총부채원리금상환비율(DSR) 규제 대상이다.","② 상호금융권의 집단대출은 은행권 대비 대출 한도가 높고 금리가 낮은 경향이 있어 실수요자에게 인기가 높다.","③ 최근 연체율 상승과 총량 규제로 인해 상호금융권의 집단대출 영업이 제한되는 추세이다.","④ 상호금융권은 지역 기반의 특성상 해당 지역 내의 부동산 시장 상황에 더욱 민감하게 반응할 수 있다."]},{"id":1627,"category":"시사","question":"금리 인상 기조와 가계대출 규제 강화가 은행의 경영 및 여신 활동에 미치는 영향으로 가장 적절한 것은 무엇인가요?","answer":"② 금리 인상 및 대출 규제 강화는 취약차주의 상환 부담을 가중시켜 연체율 상승으로 이어질 수 있으며, 이는 은행의 부실채권 증가 요인이 된다.","explanation":"금리 인상과 대출 규제 강화는 특히 상환 능력이 취약한 차주들의 이자 부담을 늘려 연체율을 높이고, 이는 은행의 부실채권 증가로 이어져 건전성을 위협할 수 있습니다. [오답해설] ① 금리 인상은 예대마진을 확대할 수 있지만, 대출 규제와 연체율 상승은 대출 성장 둔화 및 대손충당금 적립 부담을 늘려 수익성에 부정적인 영향을 미칠 수 있습니다. ③ 가계대출 총량 규제는 은행이 신용도가 높은 차주에게 대출을 집중하게 하여, 저신용 차주들은 대출을 받기 더욱 어려워지는 경향이 있습니다. ④ 은행이 가계대출 여력이 부족해지면, 건전성 유지를 위해 무조건적으로 기업 대출을 줄이기보다는, 전체 여신 포트폴리오를 조정하고 고위험 대출을 축소하는 등 리스크 관리를 강화합니다.","news_context":"은행권 가계대출 여력 바닥…금리 상승까지 실수요자 '이중고', 금리인상 후폭풍 … 고령층부터 타격 등 금리 인상과 대출 규제가 가계 및 은행에 미치는 부정적 영향을 다루고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260718001500002","options":["① 금리 인상 기조와 가계대출 규제는 은행의 여신 건전성을 향상시키고 예대마진 확대로 수익성을 높일 수 있다.","② 금리 인상 및 대출 규제 강화는 취약차주의 상환 부담을 가중시켜 연체율 상승으로 이어질 수 있으며, 이는 은행의 부실채권 증가 요인이 된다.","③ 가계대출 총량 규제는 은행이 고신용 차주에게 더 많은 대출을 집중하도록 유도하여 저신용 차주에 대한 대출 문턱을 낮추는 효과를 가져온다.","④ 은행이 가계대출 여력이 부족해지면, 기업 대출을 줄여 가계 대출에 집중함으로써 건전성을 유지하려는 경향이 생긴다."]},{"id":1628,"category":"시사","question":"최근 한국의 AI 도입률이 주요국 중 최고 수준으로 전망되는 가운데, AI 기술 발전이 금융권 고용 시장에 미칠 영향으로 가장 적절한 것은 무엇인가요?","answer":"① AI 도입 가속화는 금융권의 단순 반복 업무를 대체하여 인력 효율화를 가져오지만, 동시에 AI 시스템 개발 및 관리 인력 수요를 증가시킨다.","explanation":"AI는 데이터 분석, 서류 처리 등 단순 반복 업무를 자동화하여 효율성을 높이지만, AI 시스템을 구축, 운영, 관리하고 AI 기반 신규 서비스를 개발할 전문 인력의 수요를 창출합니다. [오답해설] ② AI 도입은 일부 인력 감축을 가져올 수 있으나, 복잡한 의사결정, 리스크 관리, 윤리적 판단 등 금융 전문 인력의 역할은 여전히 중요하며 그 성격이 변화할 것입니다. ③ 금융권 취업 시장에서는 AI 기술 이해와 함께 전통적인 금융 지식 및 윤리적 판단 능력의 중요성이 더욱 강조될 것입니다. ④ AI는 금융상품 개발뿐만 아니라 챗봇을 통한 고객 상담, 로보어드바이저를 활용한 자산 관리 등 다양한 대면 및 비대면 서비스 영역에 광범위하게 적용되어 영향을 미치고 있습니다.","news_context":"\"한국, 10년 후 AI도입률 주요국 중 최고\"…고용한파 커지나, 2분기 대졸 실업자 5년 만에 최대 기사에서 AI 도입과 고용 시장의 변화에 대한 우려와 기대를 다루고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260717045500002","options":["① AI 도입 가속화는 금융권의 단순 반복 업무를 대체하여 인력 효율화를 가져오지만, 동시에 AI 시스템 개발 및 관리 인력 수요를 증가시킨다.","② AI 기술 발전은 금융권에서 비대면 서비스 확대를 통해 인력 감축을 유도하며, 금융 전문 인력의 필요성을 전반적으로 감소시킨다.","③ 한국의 높은 AI 도입률은 금융권 취업 시장에서 전통적인 금융 지식보다는 AI 기술에 대한 이해만을 요구하는 방향으로 전환될 것임을 시사한다.","④ AI는 금융상품 개발에만 활용될 뿐, 고객 상담이나 자산 관리 등 대면 서비스 영역에는 큰 영향을 미치지 않을 것이다."]},{"id":1629,"category":"시사","question":"최근 이달 원화 절상률이 주요국 1위를 기록하고 원/엔 환율이 1년 8개월 만에 최저치를 기록하는 등 원화 강세 현상이 나타나고 있습니다. 이러한 원화 강세가 한국 경제에 미치는 영향으로 가장 적절한 것은 무엇인가요?","answer":"① 원화 절상은 한국 기업의 수출 경쟁력을 약화시키지만, 수입 물가를 하락시켜 물가 안정에 기여할 수 있다.","explanation":"원화 가치가 상승하면 수출 상품의 가격 경쟁력이 떨어져 수출 기업에 불리하지만, 해외에서 수입하는 원자재나 상품의 가격이 저렴해져 전반적인 수입 물가를 안정시키는 효과가 있습니다. [오답해설] ② 원화 절상은 한국 자산의 상대적 가치를 높여 외국인 투자자금 유입을 촉진할 수 있으며, 이는 국내 증시에 긍정적인 영향을 미칠 수 있습니다. ③ 원화 절상은 해외 통화 대비 원화 가치가 높아지는 것을 의미하므로, 국내 관광객의 해외여행 비용이 상대적으로 저렴해져 해외 소비를 촉진할 수 있습니다. ④ 원화 절상은 원/달러 환율 하락(달러 가치 하락)을 유도하여 외화 부채를 보유한 국내 기업의 상환 부담을 경감시키는 효과가 있습니다.","news_context":"이달 원화 절상률 주요국 1위…원/엔 1년8개월 만에 최저 기사에서 원화의 강세 현상과 그에 따른 경제적 파급 효과를 분석하고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260718018300002","options":["① 원화 절상은 한국 기업의 수출 경쟁력을 약화시키지만, 수입 물가를 하락시켜 물가 안정에 기여할 수 있다.","② 원화 절상은 외국인 투자자금의 유입을 감소시켜 국내 증시 하락 압력으로 작용한다.","③ 원화 절상은 국내 관광객의 해외여행 비용을 증가시켜 해외 소비를 위축시킨다.","④ 원화 절상은 원/달러 환율 상승을 유도하여 국내 기업의 외화 부채 부담을 가중시킨다."]},{"id":1630,"category":"시사","question":"호르무즈 해협과 홍해 등 주요 원유 수송로에서 지정학적 리스크가 고조되고 있습니다. 이러한 상황이 국제 경제 및 금융 시장에 미치는 영향으로 가장 적절한 것은 무엇인가요?","answer":"① 호르무즈 해협과 홍해의 지정학적 불안정은 국제 유가 상승을 초래하여 글로벌 인플레이션 압력을 가중시키고, 이는 각국 중앙은행의 긴축 기조를 강화할 수 있다.","explanation":"주요 원유 수송로의 불안정은 원유 공급에 대한 불확실성을 높여 국제 유가를 상승시키고, 이는 전 세계적인 물가 상승(인플레이션)을 부추겨 중앙은행들이 금리 인상 등 긴축 정책을 지속하게 만들 수 있습니다. [오답해설] ② 주요 원유 수송로의 불안정은 공급 차질 우려로 국제 유가를 상승시키는 요인으로 작용합니다. ③ 지정학적 리스크 증가는 투자자들이 불확실성을 회피하고자 금, 달러 등 안전자산을 선호하게 만들어 위험자산에 대한 투자를 위축시킵니다. ④ 호르무즈 해협과 홍해는 전 세계 원유 물동량의 상당 부분을 차지하는 주요 길목이므로, 이 지역의 불안정은 전 세계 경제에 광범위하고 심각한 영향을 미칩니다.","news_context":"호르무즈 이어 홍해도 흔들…\"양대 원유동맥 막히면 세계 침체\" 기사에서 주요 해상 원유 수송로의 불안정이 세계 경제에 미치는 심각한 파장을 경고하고 있습니다.","news_url":"","options":["① 호르무즈 해협과 홍해의 지정학적 불안정은 국제 유가 상승을 초래하여 글로벌 인플레이션 압력을 가중시키고, 이는 각국 중앙은행의 긴축 기조를 강화할 수 있다.","② 주요 원유 수송로의 불안정은 국제 유가를 하락시켜 에너지 관련 기업의 투자 심리를 위축시키고 경기 둔화를 야기한다.","③ 지정학적 리스크는 안전자산 선호 심리를 약화시켜 주식 등 위험자산에 대한 투자를 증가시키는 요인으로 작용한다.","④ 호르무즈 해협과 홍해의 불안정은 아시아 국가보다는 유럽과 미주 지역에 더 큰 경제적 영향을 미 미친다."]},{"id":1631,"category":"시사","question":"'445억원 해킹' 피해를 입은 두나무에 금융감독원이 검사의견서를 송부하며 제재가 본격화되었습니다. 이와 관련하여 금융당국의 역할에 대한 설명으로 가장 적절한 것은 무엇인가요?","answer":"① 금융감독원은 금융 시장의 건전성 확보를 위해 핀테크 기업의 보안 시스템 미비로 인한 고객 자산 피해 발생 시, 해당 기업에 대한 제재를 통해 시장 신뢰를 회복하는 역할을 수행한다.","explanation":"금융감독원은 금융 시스템의 안정과 투자자 보호를 위해 가상자산 사업자를 포함한 핀테크 기업의 보안 관리 소홀로 인한 피해 발생 시, 관련 법규에 따라 제재를 통해 시장 건전성과 신뢰를 확보하는 역할을 합니다. [오답해설] ② 금융감독원은 핀테크 기업의 자율성을 존중하지만, 고객 자산 보호 및 시장 건전성 유지를 위해 필요한 경우 적극적으로 개입하여 감독하고 제재를 부과합니다. ③ 가상자산 사업자는 특정금융정보법에 따라 금융정보분석원(FIU)에 신고된 후 금융감독원의 감독 대상이 되며, 과학기술정보통신부 소관과는 다릅니다. ④ 금융감독원의 제재는 기업의 재정 건전성 유지뿐만 아니라 소비자 피해 예방 및 구제, 시장 질서 확립 등 다양한 목적을 가집니다.","news_context":"'445억원 해킹' 두나무에 금감원 검사의견서 송부…제재 본격화 기사에서 핀테크 기업의 보안 문제와 금융당국의 감독 및 제재 역할이 부각되고 있습니다.","news_url":"https://www.yna.co.kr/view/AKR20260718039600002","options":["① 금융감독원은 금융 시장의 건전성 확보를 위해 핀테크 기업의 보안 시스템 미비로 인한 고객 자산 피해 발생 시, 해당 기업에 대한 제재를 통해 시장 신뢰를 회복하는 역할을 수행한다.","② 금융감독원은 핀테크 기업의 자율성을 존중하여, 해킹 피해 발생 시에도 기업 자체적인 해결을 우선시하며 직접적인 제재는 최소화한다.","③ 금융감독원의 제재는 주로 전통 금융기관에 한정되며, 가상자산 사업자와 같은 핀테크 기업의 사고는 주로 과학기술정보통신부 소관이다.","④ 핀테크 기업의 해킹 피해에 대한 금융감독원의 제재는 소비자 피해보상과는 무관하며, 오직 기업의 재정 건전성 유지에만 초점을 맞춘다."]},{"id":32,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
