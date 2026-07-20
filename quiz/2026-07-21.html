@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-21 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-21 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-21 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 중 가치 안정화를 위해 법정화폐, 상품, 또는 다른 암호화폐에 가치를 고정(페그)하여 가격 변동성을 최소화하도록 설계된 암호화폐를 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스테이블코인</li><li>② CBDC</li><li>③ 알트코인</li><li>④ 밈코인</li>
+      </ul>
+      <p><strong>정답:</strong> ① 스테이블코인</p>
+      <p><strong>해설:</strong> 스테이블코인은 가치 변동성을 줄여 실생활 결제에 활용될 수 있도록 설계된 암호화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐이며, 스테이블코인과는 발행 주체와 목적이 다릅니다. ③ 알트코인은 비트코인을 제외한 모든 암호화폐를 지칭하는 일반적인 용어입니다. ④ 밈코인은 특정 인터넷 밈이나 사회적 트렌드에서 영감을 받아 발행된 암호화폐로, 가치 안정성과는 거리가 있습니다.</p>
+      <p>관련 시사 뉴스: "연내 입법”…오늘 스테이블코인법 첫 정부 포럼 열린다", "스테이블코인 품은 비자…모건스탠리·DTCC도 온체인 금융"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 기초자산 가격 변동률의 일정 배수만큼 수익률을 추구하도록 설계된 상장지수펀드(ETF)로, 시장 방향성에 대한 강한 확신을 가진 투자자들이 활용하나 높은 변동성으로 인해 큰 손실 위험을 안고 있는 금융상품을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 레버리지 ETF</li><li>② 인버스 ETF</li><li>③ 액티브 ETF</li><li>④ 인덱스 펀드</li>
+      </ul>
+      <p><strong>정답:</strong> ① 레버리지 ETF</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초자산의 일일 변동률을 추종하며, 방향성이 맞으면 높은 수익을, 틀리면 높은 손실을 가져올 수 있는 고위험 상품입니다. [오답해설] ② 인버스 ETF는 기초자산 가격이 하락할 때 수익을 얻도록 설계된 상품입니다. ③ 액티브 ETF는 펀드매니저의 적극적인 운용을 통해 시장수익률을 초과하는 성과를 추구하는 상품입니다. ④ 인덱스 펀드는 특정 시장 지수의 수익률을 그대로 추종하는 수동적 운용 상품입니다.</p>
+      <p>관련 시사 뉴스: "이런 말씀 죄송, 레버리지 투자 말아야", "주가 폭락에 ‘레버리지 ETF’ 경고등 켠 여당"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 은행법에 따라 은행의 특정 업무를 대리하여 수행하는 것을 의미하며, 주로 은행 지점이 없는 지역에서 금융 접근성을 높이기 위해 우체국 등 다른 기관이 은행의 대출 상담, 예금 접수 등의 업무를 대신하는 제도를 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 은행대리업</li><li>② 뱅크 에이전시</li><li>③ 대출중개업</li><li>④ 파이낸스 에이전트</li>
+      </ul>
+      <p><strong>정답:</strong> ① 은행대리업</p>
+      <p><strong>해설:</strong> 은행대리업은 은행의 접근성이 낮은 지역 주민들의 편의를 위해 다른 기관이 은행 업무를 위탁받아 대리하는 제도입니다. [오답해설] ② 뱅크 에이전시는 은행대리업의 영어 표현입니다. ③ 대출중개업은 대출 상품을 중개하고 수수료를 받는 사업이며 은행 업무를 대리하는 것은 아닙니다. ④ 파이낸스 에이전트는 금융상품 판매 대리인과 같은 넓은 의미로, 은행 업무 대리업과는 직접적인 관련이 적습니다.</p>
+      <p>관련 시사 뉴스: "농촌 우체국이 4대은행 대출창구로", "우체국서 은행 대출도"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 인공지능(AI) 학습 및 추론에 특화된 연산 처리 장치로, 특히 대규모 병렬 연산에 최적화되어 있어 AI 서비스의 효율성과 속도를 크게 향상시키는 차세대 반도체 기술을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① NPU (신경망처리장치)</li><li>② GPU (그래픽처리장치)</li><li>③ CPU (중앙처리장치)</li><li>④ ASIC (주문형반도체)</li>
+      </ul>
+      <p><strong>정답:</strong> ① NPU (신경망처리장치)</p>
+      <p><strong>해설:</strong> NPU는 AI 연산에 특화되어 대량의 데이터를 빠르게 처리할 수 있어 AI 기술 발전에 필수적인 요소입니다. [오답해설] ② GPU는 원래 그래픽 처리에 사용되었으나, 병렬 연산 능력이 뛰어나 AI 학습에도 활용됩니다만, NPU는 AI에 더욱 최적화된 구조를 가집니다. ③ CPU는 범용적인 연산을 담당하는 컴퓨터의 핵심 두뇌이며 AI 연산에 특화되지는 않습니다. ④ ASIC는 특정 목적을 위해 맞춤 제작된 반도체로, NPU도 ASIC의 일종일 수 있으나, NPU는 AI 특화라는 기능적 측면을 강조하는 용어입니다.</p>
+      <p>관련 시사 뉴스: "구글, 새로운 서버용 AI 칩 개발 중", "구글, 추론 전용칩 개발 추진", "AI기본법 후속 개정안 시행…한국 AI 산업 시험대"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 한국 기업들의 주가가 기업 가치나 실적에 비해 저평가되는 현상을 의미하는 용어로, 불투명한 지배구조, 낮은 주주환원율, 북한 리스크 등 다양한 요인이 복합적으로 작용하여 발생하는 것으로 분석되는 현상은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 코리아 디스카운트</li><li>② 코리아 프리미엄</li><li>③ 자사주 매입</li><li>④ 주주 행동주의</li>
+      </ul>
+      <p><strong>정답:</strong> ① 코리아 디스카운트</p>
+      <p><strong>해설:</strong> 코리아 디스카운트는 한국 기업의 주가가 기업의 내재 가치보다 낮게 평가되는 현상을 지칭합니다. [오답해설] ② 코리아 프리미엄은 한국 기업이나 자산에 높은 가치를 부여하는 현상으로, 디스카운트와 반대되는 개념입니다. ③ 자사주 매입은 기업이 시장에서 자신의 주식을 다시 사들이는 행위로, 주주가치를 높이기 위한 노력 중 하나이지만 현상 자체를 지칭하는 것은 아닙니다. ④ 주주 행동주의는 소액주주 등이 기업 경영에 적극적으로 참여하여 변화를 요구하는 활동입니다.</p>
+      <p>관련 시사 뉴스: 전문가 75% “코리아 디스카운트 해소에 기여”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 다음 중 서민금융진흥원의 ‘햇살론유스’에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 취업 준비생 및 사회초년생의 금융 애로 해소를 위해 낮은 금리로 자금을 지원한다.</li><li>② 대출 한도는 연간 최대 1,200만원이며, 총 한도는 3,600만원이다.</li><li>③ 이용 대상은 만 19세 이상 34세 이하 청년으로, 연 소득 3,500만원 이하여야 한다.</li><li>④ 상환 방식은 원금균등분할상환이며, 최장 15년까지 상환 기간이 가능하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 대출 한도는 연간 최대 1,200만원이며, 총 한도는 3,600만원이다.</p>
+      <p><strong>해설:</strong> 햇살론유스의 대출 한도는 연간 최대 1,200만원, 총 한도는 1,200만원입니다. [오답해설] ① 햇살론유스는 취업 준비생 등 사회 초년생의 안정적인 사회 정착을 지원하는 정책 상품입니다. ③ 만 19세 이상 34세 이하, 연 소득 3,500만원 이하 청년이 주요 대상입니다. ④ 상환 방식은 원금균등분할상환이며, 최장 15년까지 상환이 가능합니다.</p>
+      <p>관련 시사 뉴스: 신한은행, '햇살론유스' 보증료 지원 이벤트…청년 금융부담 최대 10만원...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 다음 중 금융당국이 주택담보대출 증가세를 관리하기 위해 시행하는 '주택담보대출 총량제'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 시중 은행별로 주택담보대출 취급 한도를 설정하여 대출 증가율을 제한한다.</li><li>② 모든 금융기관에 적용되며, 대출 용도와 관계없이 주택을 담보로 하는 모든 대출에 적용된다.</li><li>③ 대출 한도 초과 시, 해당 은행은 가산금리 인상 등 추가적인 제재를 받게 된다.</li><li>④ 금융당국은 총량제 목표 달성을 위해 DSR(총부채원리금상환비율) 규제를 일시적으로 완화할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 시중 은행별로 주택담보대출 취급 한도를 설정하여 대출 증가율을 제한한다.</p>
+      <p><strong>해설:</strong> 주택담보대출 총량제는 은행별 대출 증가율을 일정 수준 이하로 관리하기 위해 금융당국이 개별 은행에 대출 한도를 배정하는 방식입니다. [오답해설] ② 주로 시중은행에 적용되며, 전세자금대출 등 일부 정책 대출은 총량제에서 제외되는 경우가 많습니다. ③ 총량 한도를 초과할 경우 신규 대출 중단, 영업점 평가 불이익 등의 조치가 뒤따를 수 있으나, 가산금리 인상 조치는 일반적이지 않습니다. ④ 총량제는 대출 수요 억제를 목표로 하므로, DSR 규제를 완화하는 것은 총량제 시행 목적과 상반됩니다.</p>
+      <p>관련 시사 뉴스: SC제일銀 신규 주담대 제한 … 지역본부별로 총량제 도입</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 카드사들이 홈플러스에 대한 매출대금 지급을 보류한 것과 관련하여, 금융권에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 카드사의 매출채권 회수 리스크가 감소하여 수익성이 개선될 것이다.</li><li>② 가맹점과의 신뢰 관계 악화로 인해 카드 사용자의 결제 편의성이 저해될 수 있다.</li><li>③ 대규모 가맹점의 경영 불안정이 다른 유통 가맹점 리스크 관리 강화로 이어질 수 있다.</li><li>④ 금융당국은 카드사의 건전성 유지를 위해 대형 가맹점에 대한 지원책을 발표할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 대규모 가맹점의 경영 불안정이 다른 유통 가맹점 리스크 관리 강화로 이어질 수 있다.</p>
+      <p><strong>해설:</strong> 대형 가맹점의 경영 불안정은 카드사의 리스크 관리 기준을 더욱 강화하는 계기가 되어, 다른 유통 가맹점에 대한 심사 및 지급 조건에도 영향을 미칠 수 있습니다. [오답해설] ① 지급 보류는 매출채권 회수 지연 및 잠재적 부실 가능성을 증가시켜 카드사의 리스크를 높입니다. ② 카드사의 지급 보류는 가맹점과의 직접적인 문제이며, 카드 사용자의 결제 편의성에는 직접적인 영향을 주지 않습니다. ④ 금융당국은 개별 가맹점의 리스크에 대해 직접적인 지원책을 발표하기보다는, 카드사 전반의 건전성 관리를 독려할 가능성이 더 큽니다.</p>
+      <p>관련 시사 뉴스: 카드업계 홈플러스 대금 지급보류…결제취소 리스크 관리</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 중동 지역의 정세 불안이 심화되면서 국제유가 및 환율 변동성이 커지고 있다. 이러한 상황이 한국 경제 및 금융시장에 미칠 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국제유가 상승은 국내 생산 및 운송 비용을 증가시켜 물가 상승 압력으로 작용할 수 있다.</li><li>② 원-달러 환율 상승은 수출 기업의 채산성을 개선시키지만, 수입 물가를 높여 무역수지를 악화시킬 수 있다.</li><li>③ 고유가로 인한 물가 상승과 경기 둔화 우려는 중앙은행의 금리 인상 결정에 부담으로 작용할 수 있다.</li><li>④ 금융당국은 외환시장 안정화를 위해 스무딩 오퍼레이션을 실시하여 원-달러 환율 상승을 적극적으로 유도할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 금융당국은 외환시장 안정화를 위해 스무딩 오퍼레이션을 실시하여 원-달러 환율 상승을 적극적으로 유도할 것이다.</p>
+      <p><strong>해설:</strong> 금융당국은 외환시장 안정화를 위해 환율의 급격한 변동에 개입하며, 이는 주로 환율 상승을 억제하는 방향으로 이루어집니다. [오답해설] ① 유가 상승은 생산비와 운송비 증가를 통해 전반적인 물가 상승(인플레이션)을 유발할 수 있습니다. ② 원-달러 환율 상승은 수출 기업에게는 유리하나, 원자재 수입 비중이 높은 한국의 경우 수입 물가를 상승시켜 무역수지를 악화시킬 수 있습니다. ③ 물가 상승과 경기 둔화는 중앙은행의 통화정책(금리 인상 등) 결정 시 딜레마를 안겨주어 정책 수행에 부담이 됩니다.</p>
+      <p>관련 시사 뉴스: 중동 정세 불안에 국제유가 상승세 지속…브렌트유 1.3%↑</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 금융지주 회장 연임에 대한 논의와 제동 가능성이 보도되고 있다. 이와 관련된 금융권의 변화 방향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① CEO 승계 절차의 투명성과 공정성이 강화되어 지배구조 개선에 기여할 것이다.</li><li>② 장기적인 비전 제시와 일관된 경영 전략 추진이 어려워져 금융 경쟁력이 약화될 수 있다.</li><li>③ 금융당국의 개입이 줄어들어 각 금융지주 이사회의 자율적인 의사결정이 확대될 것이다.</li><li>④ 최고경영자(CEO)의 재임 기간이 짧아져 단기적인 성과 위주의 경영이 더욱 심화될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① CEO 승계 절차의 투명성과 공정성이 강화되어 지배구조 개선에 기여할 것이다.</p>
+      <p><strong>해설:</strong> 금융지주 회장 연임에 대한 제동 논의는 주로 과도한 장기 집권의 폐해를 막고, 객관적이고 투명한 승계 절차를 확립하여 지배구조를 개선하려는 의도에서 시작됩니다. [오답해설] ② 연임 제한은 단기적 관점의 우려를 낳을 수 있지만, 투명한 승계 절차는 오히려 장기적인 관점에서 회사의 건전한 발전을 도모할 수 있습니다. ③ 연임 제한 논의 자체가 금융당국의 적극적인 개입으로 볼 수 있으며, 이사회의 자율성보다는 규제적 관점에서 접근하는 측면이 있습니다. ④ 단기적 성과 위주의 경영은 연임 제한으로 인해 발생할 수 있는 부작용으로 지적될 수 있으나, 제도 개선의 본래 목표는 투명성 강화입니다.</p>
+      <p>관련 시사 뉴스: 금융지주 회장 3연임 제동…승계구도 지각변동 예고</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-21</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1642,"category":"금융용어","question":"다음 중 가치 안정화를 위해 법정화폐, 상품, 또는 다른 암호화폐에 가치를 고정(페그)하여 가격 변동성을 최소화하도록 설계된 암호화폐를 무엇이라고 하는가?","answer":"① 스테이블코인","explanation":"스테이블코인은 가치 변동성을 줄여 실생활 결제에 활용될 수 있도록 설계된 암호화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐이며, 스테이블코인과는 발행 주체와 목적이 다릅니다. ③ 알트코인은 비트코인을 제외한 모든 암호화폐를 지칭하는 일반적인 용어입니다. ④ 밈코인은 특정 인터넷 밈이나 사회적 트렌드에서 영감을 받아 발행된 암호화폐로, 가치 안정성과는 거리가 있습니다.","news_context":"\"연내 입법”…오늘 스테이블코인법 첫 정부 포럼 열린다\", \"스테이블코인 품은 비자…모건스탠리·DTCC도 온체인 금융\"","news_url":"https://n.news.naver.com/mnews/article/018/0006333492?sid=101","options":["① 스테이블코인","② CBDC","③ 알트코인","④ 밈코인"]},{"id":1643,"category":"금융용어","question":"기초자산 가격 변동률의 일정 배수만큼 수익률을 추구하도록 설계된 상장지수펀드(ETF)로, 시장 방향성에 대한 강한 확신을 가진 투자자들이 활용하나 높은 변동성으로 인해 큰 손실 위험을 안고 있는 금융상품을 무엇이라고 하는가?","answer":"① 레버리지 ETF","explanation":"레버리지 ETF는 기초자산의 일일 변동률을 추종하며, 방향성이 맞으면 높은 수익을, 틀리면 높은 손실을 가져올 수 있는 고위험 상품입니다. [오답해설] ② 인버스 ETF는 기초자산 가격이 하락할 때 수익을 얻도록 설계된 상품입니다. ③ 액티브 ETF는 펀드매니저의 적극적인 운용을 통해 시장수익률을 초과하는 성과를 추구하는 상품입니다. ④ 인덱스 펀드는 특정 시장 지수의 수익률을 그대로 추종하는 수동적 운용 상품입니다.","news_context":"\"이런 말씀 죄송, 레버리지 투자 말아야\", \"주가 폭락에 ‘레버리지 ETF’ 경고등 켠 여당\"","news_url":"https://www.yna.co.kr/view/AKR20260720171100008","options":["① 레버리지 ETF","② 인버스 ETF","③ 액티브 ETF","④ 인덱스 펀드"]},{"id":1644,"category":"금융용어","question":"은행법에 따라 은행의 특정 업무를 대리하여 수행하는 것을 의미하며, 주로 은행 지점이 없는 지역에서 금융 접근성을 높이기 위해 우체국 등 다른 기관이 은행의 대출 상담, 예금 접수 등의 업무를 대신하는 제도를 무엇이라고 하는가?","answer":"① 은행대리업","explanation":"은행대리업은 은행의 접근성이 낮은 지역 주민들의 편의를 위해 다른 기관이 은행 업무를 위탁받아 대리하는 제도입니다. [오답해설] ② 뱅크 에이전시는 은행대리업의 영어 표현입니다. ③ 대출중개업은 대출 상품을 중개하고 수수료를 받는 사업이며 은행 업무를 대리하는 것은 아닙니다. ④ 파이낸스 에이전트는 금융상품 판매 대리인과 같은 넓은 의미로, 은행 업무 대리업과는 직접적인 관련이 적습니다.","news_context":"\"농촌 우체국이 4대은행 대출창구로\", \"우체국서 은행 대출도\"","news_url":"https://www.yna.co.kr/view/AKR20260720147800063","options":["① 은행대리업","② 뱅크 에이전시","③ 대출중개업","④ 파이낸스 에이전트"]},{"id":1645,"category":"금융용어","question":"인공지능(AI) 학습 및 추론에 특화된 연산 처리 장치로, 특히 대규모 병렬 연산에 최적화되어 있어 AI 서비스의 효율성과 속도를 크게 향상시키는 차세대 반도체 기술을 무엇이라고 하는가?","answer":"① NPU (신경망처리장치)","explanation":"NPU는 AI 연산에 특화되어 대량의 데이터를 빠르게 처리할 수 있어 AI 기술 발전에 필수적인 요소입니다. [오답해설] ② GPU는 원래 그래픽 처리에 사용되었으나, 병렬 연산 능력이 뛰어나 AI 학습에도 활용됩니다만, NPU는 AI에 더욱 최적화된 구조를 가집니다. ③ CPU는 범용적인 연산을 담당하는 컴퓨터의 핵심 두뇌이며 AI 연산에 특화되지는 않습니다. ④ ASIC는 특정 목적을 위해 맞춤 제작된 반도체로, NPU도 ASIC의 일종일 수 있으나, NPU는 AI 특화라는 기능적 측면을 강조하는 용어입니다.","news_context":"\"구글, 새로운 서버용 AI 칩 개발 중\", \"구글, 추론 전용칩 개발 추진\", \"AI기본법 후속 개정안 시행…한국 AI 산업 시험대\"","news_url":"","options":["① NPU (신경망처리장치)","② GPU (그래픽처리장치)","③ CPU (중앙처리장치)","④ ASIC (주문형반도체)"]},{"id":1646,"category":"금융용어","question":"한국 기업들의 주가가 기업 가치나 실적에 비해 저평가되는 현상을 의미하는 용어로, 불투명한 지배구조, 낮은 주주환원율, 북한 리스크 등 다양한 요인이 복합적으로 작용하여 발생하는 것으로 분석되는 현상은 무엇인가?","answer":"① 코리아 디스카운트","explanation":"코리아 디스카운트는 한국 기업의 주가가 기업의 내재 가치보다 낮게 평가되는 현상을 지칭합니다. [오답해설] ② 코리아 프리미엄은 한국 기업이나 자산에 높은 가치를 부여하는 현상으로, 디스카운트와 반대되는 개념입니다. ③ 자사주 매입은 기업이 시장에서 자신의 주식을 다시 사들이는 행위로, 주주가치를 높이기 위한 노력 중 하나이지만 현상 자체를 지칭하는 것은 아닙니다. ④ 주주 행동주의는 소액주주 등이 기업 경영에 적극적으로 참여하여 변화를 요구하는 활동입니다.","news_context":"전문가 75% “코리아 디스카운트 해소에 기여”","news_url":"https://n.news.naver.com/mnews/article/277/0005792127?sid=101","options":["① 코리아 디스카운트","② 코리아 프리미엄","③ 자사주 매입","④ 주주 행동주의"]},{"id":1647,"category":"세부지식","question":"다음 중 서민금융진흥원의 ‘햇살론유스’에 대한 설명으로 옳지 않은 것은?","answer":"② 대출 한도는 연간 최대 1,200만원이며, 총 한도는 3,600만원이다.","explanation":"햇살론유스의 대출 한도는 연간 최대 1,200만원, 총 한도는 1,200만원입니다. [오답해설] ① 햇살론유스는 취업 준비생 등 사회 초년생의 안정적인 사회 정착을 지원하는 정책 상품입니다. ③ 만 19세 이상 34세 이하, 연 소득 3,500만원 이하 청년이 주요 대상입니다. ④ 상환 방식은 원금균등분할상환이며, 최장 15년까지 상환이 가능합니다.","news_context":"신한은행, '햇살론유스' 보증료 지원 이벤트…청년 금융부담 최대 10만원...","news_url":"https://www.public25.com/news/articleView.html?idxno=50997","options":["① 취업 준비생 및 사회초년생의 금융 애로 해소를 위해 낮은 금리로 자금을 지원한다.","② 대출 한도는 연간 최대 1,200만원이며, 총 한도는 3,600만원이다.","③ 이용 대상은 만 19세 이상 34세 이하 청년으로, 연 소득 3,500만원 이하여야 한다.","④ 상환 방식은 원금균등분할상환이며, 최장 15년까지 상환 기간이 가능하다."]},{"id":1648,"category":"세부지식","question":"다음 중 금융당국이 주택담보대출 증가세를 관리하기 위해 시행하는 '주택담보대출 총량제'에 대한 설명으로 옳은 것은?","answer":"① 시중 은행별로 주택담보대출 취급 한도를 설정하여 대출 증가율을 제한한다.","explanation":"주택담보대출 총량제는 은행별 대출 증가율을 일정 수준 이하로 관리하기 위해 금융당국이 개별 은행에 대출 한도를 배정하는 방식입니다. [오답해설] ② 주로 시중은행에 적용되며, 전세자금대출 등 일부 정책 대출은 총량제에서 제외되는 경우가 많습니다. ③ 총량 한도를 초과할 경우 신규 대출 중단, 영업점 평가 불이익 등의 조치가 뒤따를 수 있으나, 가산금리 인상 조치는 일반적이지 않습니다. ④ 총량제는 대출 수요 억제를 목표로 하므로, DSR 규제를 완화하는 것은 총량제 시행 목적과 상반됩니다.","news_context":"SC제일銀 신규 주담대 제한 … 지역본부별로 총량제 도입","news_url":"https://www.mk.co.kr/news/economy/12102608","options":["① 시중 은행별로 주택담보대출 취급 한도를 설정하여 대출 증가율을 제한한다.","② 모든 금융기관에 적용되며, 대출 용도와 관계없이 주택을 담보로 하는 모든 대출에 적용된다.","③ 대출 한도 초과 시, 해당 은행은 가산금리 인상 등 추가적인 제재를 받게 된다.","④ 금융당국은 총량제 목표 달성을 위해 DSR(총부채원리금상환비율) 규제를 일시적으로 완화할 수 있다."]},{"id":1649,"category":"시사","question":"카드사들이 홈플러스에 대한 매출대금 지급을 보류한 것과 관련하여, 금융권에 미치는 영향으로 가장 적절한 것은?","answer":"③ 대규모 가맹점의 경영 불안정이 다른 유통 가맹점 리스크 관리 강화로 이어질 수 있다.","explanation":"대형 가맹점의 경영 불안정은 카드사의 리스크 관리 기준을 더욱 강화하는 계기가 되어, 다른 유통 가맹점에 대한 심사 및 지급 조건에도 영향을 미칠 수 있습니다. [오답해설] ① 지급 보류는 매출채권 회수 지연 및 잠재적 부실 가능성을 증가시켜 카드사의 리스크를 높입니다. ② 카드사의 지급 보류는 가맹점과의 직접적인 문제이며, 카드 사용자의 결제 편의성에는 직접적인 영향을 주지 않습니다. ④ 금융당국은 개별 가맹점의 리스크에 대해 직접적인 지원책을 발표하기보다는, 카드사 전반의 건전성 관리를 독려할 가능성이 더 큽니다.","news_context":"카드업계 홈플러스 대금 지급보류…결제취소 리스크 관리","news_url":"https://www.yna.co.kr/view/AKR20260720167100002","options":["① 카드사의 매출채권 회수 리스크가 감소하여 수익성이 개선될 것이다.","② 가맹점과의 신뢰 관계 악화로 인해 카드 사용자의 결제 편의성이 저해될 수 있다.","③ 대규모 가맹점의 경영 불안정이 다른 유통 가맹점 리스크 관리 강화로 이어질 수 있다.","④ 금융당국은 카드사의 건전성 유지를 위해 대형 가맹점에 대한 지원책을 발표할 것이다."]},{"id":1650,"category":"시사","question":"최근 중동 지역의 정세 불안이 심화되면서 국제유가 및 환율 변동성이 커지고 있다. 이러한 상황이 한국 경제 및 금융시장에 미칠 영향으로 옳지 않은 것은?","answer":"④ 금융당국은 외환시장 안정화를 위해 스무딩 오퍼레이션을 실시하여 원-달러 환율 상승을 적극적으로 유도할 것이다.","explanation":"금융당국은 외환시장 안정화를 위해 환율의 급격한 변동에 개입하며, 이는 주로 환율 상승을 억제하는 방향으로 이루어집니다. [오답해설] ① 유가 상승은 생산비와 운송비 증가를 통해 전반적인 물가 상승(인플레이션)을 유발할 수 있습니다. ② 원-달러 환율 상승은 수출 기업에게는 유리하나, 원자재 수입 비중이 높은 한국의 경우 수입 물가를 상승시켜 무역수지를 악화시킬 수 있습니다. ③ 물가 상승과 경기 둔화는 중앙은행의 통화정책(금리 인상 등) 결정 시 딜레마를 안겨주어 정책 수행에 부담이 됩니다.","news_context":"중동 정세 불안에 국제유가 상승세 지속…브렌트유 1.3%↑","news_url":"https://www.yna.co.kr/view/AKR20260721006200072","options":["① 국제유가 상승은 국내 생산 및 운송 비용을 증가시켜 물가 상승 압력으로 작용할 수 있다.","② 원-달러 환율 상승은 수출 기업의 채산성을 개선시키지만, 수입 물가를 높여 무역수지를 악화시킬 수 있다.","③ 고유가로 인한 물가 상승과 경기 둔화 우려는 중앙은행의 금리 인상 결정에 부담으로 작용할 수 있다.","④ 금융당국은 외환시장 안정화를 위해 스무딩 오퍼레이션을 실시하여 원-달러 환율 상승을 적극적으로 유도할 것이다."]},{"id":1651,"category":"시사","question":"최근 금융지주 회장 연임에 대한 논의와 제동 가능성이 보도되고 있다. 이와 관련된 금융권의 변화 방향으로 가장 적절한 것은?","answer":"① CEO 승계 절차의 투명성과 공정성이 강화되어 지배구조 개선에 기여할 것이다.","explanation":"금융지주 회장 연임에 대한 제동 논의는 주로 과도한 장기 집권의 폐해를 막고, 객관적이고 투명한 승계 절차를 확립하여 지배구조를 개선하려는 의도에서 시작됩니다. [오답해설] ② 연임 제한은 단기적 관점의 우려를 낳을 수 있지만, 투명한 승계 절차는 오히려 장기적인 관점에서 회사의 건전한 발전을 도모할 수 있습니다. ③ 연임 제한 논의 자체가 금융당국의 적극적인 개입으로 볼 수 있으며, 이사회의 자율성보다는 규제적 관점에서 접근하는 측면이 있습니다. ④ 단기적 성과 위주의 경영은 연임 제한으로 인해 발생할 수 있는 부작용으로 지적될 수 있으나, 제도 개선의 본래 목표는 투명성 강화입니다.","news_context":"금융지주 회장 3연임 제동…승계구도 지각변동 예고","news_url":"https://www.mk.co.kr/news/economy/12102610","options":["① CEO 승계 절차의 투명성과 공정성이 강화되어 지배구조 개선에 기여할 것이다.","② 장기적인 비전 제시와 일관된 경영 전략 추진이 어려워져 금융 경쟁력이 약화될 수 있다.","③ 금융당국의 개입이 줄어들어 각 금융지주 이사회의 자율적인 의사결정이 확대될 것이다.","④ 최고경영자(CEO)의 재임 기간이 짧아져 단기적인 성과 위주의 경영이 더욱 심화될 것이다."]},{"id":34,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
