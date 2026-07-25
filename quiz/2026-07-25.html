@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-25 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-25 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-25 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+특정 금융자산의 가격이나 시장 지수가 단기적으로는 예측 불가능한 변동성을 보일 수 있지만, 장기적인 관점에서는 결국 평균적인 수준으로 회귀하려는 경향이 있다는 것을 설명하는 금융 이론은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 타우의 법칙</li><li>② 효율적 시장 가설</li><li>③ 랜덤워크 이론</li><li>④ 행동경제학</li>
+      </ul>
+      <p><strong>정답:</strong> ① 타우의 법칙</p>
+      <p><strong>해설:</strong> 정답은 타우의 법칙으로, 평균회귀 현상이 단기적으로는 무의미하지만 장기적으로는 유의미하다는 것을 설명합니다. [오답해설] ② 효율적 시장 가설은 모든 정보가 즉시 가격에 반영된다는 이론입니다. ③ 랜덤워크 이론은 주가 움직임이 무작위적이며 예측 불가능하다는 이론입니다. ④ 행동경제학은 인간의 심리적 요인이 금융 시장에 미치는 영향을 연구하는 학문입니다.</p>
+      <p>관련 시사 뉴스: 평균회귀 현상이 단기적으로는 무의미하지만 장기적으로는 유의미하다는 것을 의미하는 법칙으로, 장기적으로 시장이 일정한 패턴을 따른다는 아이디어를 제공한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+대출을 받은 채무자가 사망하거나 고도 장해를 입어 채무를 상환하기 어려워졌을 때, 보험회사가 대출 기관(채권자)에 남은 대출금을 대신 갚아주는 보험 상품은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 신용생명보험</li><li>② 종신보험</li><li>③ 변액연금보험</li><li>④ 주택화재보험</li>
+      </ul>
+      <p><strong>정답:</strong> ① 신용생명보험</p>
+      <p><strong>해설:</strong> 정답은 신용생명보험으로, 채무자의 사망 또는 고도 장해 시 보험사가 대출금을 대신 상환하는 상품입니다. [오답해설] ② 종신보험은 사망 시 유족에게 보험금을 지급하는 일반적인 생명보험입니다. ③ 변액연금보험은 투자 실적에 따라 연금액이 변동되는 연금보험 상품입니다. ④ 주택화재보험은 주택의 화재 및 풍수해 등 재산 손해를 보장하는 손해보험의 일종입니다.</p>
+      <p>관련 시사 뉴스: 대출을 받은 사람이 사망하거나 고도 장해를 입어 채무를 상환하기 어려워졌을 때, 보험회사가 대출 기관에 남은 대출금을 대신 갚아주는 보험 상품이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 설명에 해당하는 최신 AI 용어는 무엇인가?
+"AI 기술이 로봇이나 기계장치와 결합하여 물리적 세계에서 실시간으로 환경을 인지하고 판단하며, 직접 행동으로 결과물을 만들어내는 인공지능을 의미한다."</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 피지컬 AI (Physical AI)</li><li>② 인공지능 윤리 (AI Ethics)</li><li>③ 지능형 로봇 (Intelligent Robot)</li><li>④ 강화 학습 (Reinforcement Learning)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 피지컬 AI (Physical AI)</p>
+      <p><strong>해설:</strong> 피지컬 AI는 인공지능이 물리적 실체와 결합하여 실제 환경에서 상호작용하며 작업을 수행하는 것을 말합니다.
+[오답해설] ② 인공지능 윤리는 AI 개발 및 활용 과정에서 발생할 수 있는 윤리적 문제를 다루는 분야입니다. ③ 지능형 로봇은 스스로 주변 환경을 인식하고 판단하여 자율적으로 동작하는 로봇을 의미하며, 피지컬 AI는 이러한 로봇 기술의 한 형태를 포함하지만 더 넓은 AI의 물리적 구현을 포괄합니다. ④ 강화 학습은 시행착오를 통해 최적의 행동 방식을 학습하는 기계학습의 한 종류입니다.</p>
+      <p>관련 시사 뉴스: 현대차 정의선 회장이 엔비디아, 구글 등과 협력하여 피지컬 AI 구현을 가속화하겠다고 밝혔습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 대량의 텍스트 데이터를 학습하여 인간의 언어를 이해하고 생성하며, 다양한 자연어 처리 작업을 수행할 수 있는 인공지능 모델을 지칭하는 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① LLM (Large Language Model)</li><li>② SLM (Small Language Model)</li><li>③ GAN (Generative Adversarial Network)</li><li>④ NLP (Natural Language Processing)</li>
+      </ul>
+      <p><strong>정답:</strong> ① LLM (Large Language Model)</p>
+      <p><strong>해설:</strong> LLM은 방대한 텍스트 데이터를 학습하여 사람의 언어를 이해하고 새로운 텍스트를 생성하는 거대 언어 모델입니다.
+[오답해설] ② SLM은 LLM에 비해 규모가 작고 특정 목적에 최적화된 언어 모델입니다. ③ GAN은 생성자와 판별자가 경쟁하며 데이터를 생성하는 인공지능 모델로 주로 이미지 생성에 사용됩니다. ④ NLP는 컴퓨터가 인간의 언어를 이해하고 처리하도록 하는 기술 분야 전반을 의미하며, LLM은 NLP의 하위 분야이자 핵심 기술 중 하나입니다.</p>
+      <p>관련 시사 뉴스: 젠슨 황 엔비디아 CEO가 '코리아AI' 구축 협력과 대한민국 LLM 개발 계획을 언급했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 정부가 추진하는 일용근로소득에 대한 건강보험료 부과 개편 내용으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 연 1,000만원을 초과하는 일용근로소득에 대해 건강보험료를 부과한다.</li><li>② 연 2,000만원을 초과하는 일용근로소득에 대해 지역가입자로 전환하여 건강보험료를 부과한다.</li><li>③ 일용근로소득이 있는 모든 근로자에게 건강보험료를 부과한다.</li><li>④ 월 150만원을 초과하는 일용근로소득에 대해 건강보험료를 부과한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 연 2,000만원을 초과하는 일용근로소득에 대해 지역가입자로 전환하여 건강보험료를 부과한다.</p>
+      <p><strong>해설:</strong> 일용근로소득이 연 2,000만원을 초과하는 경우, 초과분부터 지역가입자 건강보험료를 부과하여 형평성을 제고합니다.
+[오답해설] ① 개편 기준은 연 2,000만원입니다. ③ 모든 일용근로자에게 부과하는 것이 아니라, 연 소득 기준 초과 시에만 적용됩니다. ④ 월 소득 기준이 아닌 연 소득 2,000만원 초과가 기준입니다.</p>
+      <p>관련 시사 뉴스: 일용직도 연 2,000만원 넘으면 건강보험료를 내도록 부과 개편에 착수한다는 소식입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 정부가 월세 세액공제 혜택을 늘리기로 한 가운데, 현행 월세 세액공제의 주요 대상 및 한도로 알맞은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 총급여 7천만원 이하 무주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.</li><li>② 총급여 8천만원 이하 무주택 세대주(또는 세대원)가 연 500만원 한도 내에서 공제받을 수 있다.</li><li>③ 총급여 6천만원 이하 유주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.</li><li>④ 총급여 7천만원 초과 무주택 세대주(또는 세대원)가 연 1,000만원 한도 내에서 공제받을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 총급여 7천만원 이하 무주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.</p>
+      <p><strong>해설:</strong> 현행 월세 세액공제는 총급여 7천만원 이하의 무주택 세대주 또는 세대원이 연 750만원 한도 내에서 월세액의 일정 비율을 공제받을 수 있습니다.
+[오답해설] ② 현행 한도는 연 750만원입니다. ③ 유주택자는 대상이 아니며, 총급여 기준도 다릅니다. ④ 총급여 7천만원 초과자는 대상이 아니며, 한도도 다릅니다.</p>
+      <p>관련 시사 뉴스: 월세 가격이 치솟자 정부가 월세 세액공제 혜택을 늘릴 계획이라고 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 5대 금융지주가 '상생금융 경쟁'의 일환으로 미소금융을 확대하고 있는 가운데, 미소금융의 주요 특징으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 소액 자활자금을 지원하는 서민금융이다.</li><li>② 고신용 자영업자의 사업 확장을 위한 고액 대출을 담보부로 지원하는 정책자금이다.</li><li>③ 중소기업의 혁신 기술 개발을 위한 연구개발 자금을 정부 보증으로 제공하는 대출이다.</li><li>④ 시중은행의 주택담보대출 이용이 어려운 중산층을 위한 저금리 주택자금 대출이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 소액 자활자금을 지원하는 서민금융이다.</p>
+      <p><strong>해설:</strong> 미소금융은 제도권 금융 이용이 어려운 저소득·저신용 금융 취약계층에게 창업·운영자금 등을 무담보·무보증으로 지원하여 자활을 돕는 서민금융 상품입니다.
+[오답해설] ② 미소금융은 고신용자가 아닌 저소득·저신용층을 대상으로 합니다. ③ 미소금융은 중소기업의 기술 개발보다는 금융 취약계층의 자활에 초점을 둡니다. ④ 주택자금보다는 창업·운영자금 등 자활자금 대출에 중점을 둡니다.</p>
+      <p>관련 시사 뉴스: 5대 금융지주가 모두 미소금융을 갖추고 상생금융 경쟁을 벌인다는 기사입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. AI 기술의 금융권 도입 및 활용 확대가 은행 경영에 미칠 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 고객 개인별 맞춤형 금융 상품 및 서비스 개발이 가속화될 수 있다.</li><li>② AI 기반의 데이터 분석을 통해 여신 심사 정확도를 높여 부실률을 줄일 수 있다.</li><li>③ AI 해킹 등 사이버 보안 리스크가 증대될 수 있으며, 이에 대한 대응 투자가 필수적이다.</li><li>④ AI는 인간의 판단을 완전히 대체하여 금융 전문 인력의 필요성을 근본적으로 제거한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ AI는 인간의 판단을 완전히 대체하여 금융 전문 인력의 필요성을 근본적으로 제거한다.</p>
+      <p><strong>해설:</strong> AI는 금융 업무의 효율성과 정확도를 높이지만, 인간의 복합적인 판단과 윤리적 의사결정까지 완전히 대체하기는 어려우며, 오히려 AI 시스템 관리 및 개발을 위한 새로운 전문 인력 수요를 창출합니다.
+[오답해설] ① AI는 빅데이터 분석을 통해 고객의 소비 패턴과 니즈를 파악하여 초개인화된 금융 상품 및 서비스 제공을 가능하게 합니다. ② AI는 방대한 고객 데이터를 분석하여 신용 평가 모델을 고도화하고 여신 심사의 정확도를 높여 은행의 리스크 관리 역량을 강화할 수 있습니다. ③ AI 시스템의 복잡성으로 인해 AI를 활용한 정교한 해킹 시도가 증가할 수 있으며, 이에 대한 강력한 보안 시스템 구축과 투자가 중요합니다.</p>
+      <p>관련 시사 뉴스: 금융 해킹 시도와 AI를 이용한 방어 및 공격에 대한 금융권의 대응 노력이 언급되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 5대 금융지주의 상반기 순이익이 역대 최대를 기록한 주요 원인으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 비이자 수익 부문의 급격한 성장과 해외 자산 투자 성공.</li><li>② 고금리 기조 유지에 따른 예대마진 확대와 견조한 증권 부문 실적.</li><li>③ 대규모 구조조정을 통한 비용 절감과 정부의 금융 지원 정책.</li><li>④ 부동산 프로젝트 파이낸싱(PF) 대출의 성공적인 회수 및 수익 전환.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 고금리 기조 유지에 따른 예대마진 확대와 견조한 증권 부문 실적.</p>
+      <p><strong>해설:</strong> 고금리 기조 유지에 따른 은행의 예대마진 확대와 증권 등 비은행 부문의 실적 견조세가 복합적으로 작용하여 역대 최대 순이익을 달성했습니다.
+[오답해설] ① 비이자 수익도 기여했지만, 이자 수익의 확대가 더 큰 비중을 차지했습니다. ③ 대규모 구조조정보다는 시장 환경 변화에 따른 수익성 개선이 주된 요인입니다. ④ 부동산 PF는 오히려 저축은행 등에서 부담 요인으로 작용하고 있으며, 5대 금융지주의 최대 순이익의 주된 원인은 아닙니다.</p>
+      <p>관련 시사 뉴스: 5대 금융지주가 상반기 13조원 이상의 역대 최대 순이익을 기록했다는 소식입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 미국이 한국을 환율관찰대상국으로 유지하며 원화 약세가 경제 체력 대비 과도하다고 지적한 상황에서 국내 은행이 여신 및 외환 업무에서 특히 주목해야 할 리스크는 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 정부의 환율 시장 개입 증가로 인한 외화 유동성 경색 위험.</li><li>② 원화 약세 심화로 수입 기업의 외화 부채 상환 부담 증가 및 여신 건전성 악화 가능성.</li><li>③ 수출 기업의 가격 경쟁력 약화로 인한 수출 감소 및 신규 여신 수요 위축.</li><li>④ 국내 금융 시장의 불확실성 증대로 인한 외국인 투자 자금의 급격한 유출.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 원화 약세 심화로 수입 기업의 외화 부채 상환 부담 증가 및 여신 건전성 악화 가능성.</p>
+      <p><strong>해설:</strong> 원화 약세가 지속될 경우 원자재 수입 의존도가 높거나 외화 부채를 보유한 수입 기업의 환산 부채 부담이 커져 채무 상환 능력에 부정적인 영향을 미치고, 이는 은행의 해당 기업 여신 건전성 악화로 이어질 수 있습니다.
+[오답해설] ① 정부의 환율 개입은 외화 유동성 경색보다는 외환 시장 안정화에 초점을 맞춥니다. ③ 원화 약세는 일반적으로 수출 기업의 가격 경쟁력에 긍정적인 영향을 미쳐 수출 증가를 유도할 수 있습니다. ④ 외국인 투자 자금 유출은 다양한 복합적 요인에 의해 발생하며, 환율관찰대상국 지정 자체보다는 전반적인 경제 상황과 투자 심리에 더 큰 영향을 받습니다.</p>
+      <p>관련 시사 뉴스: 미국이 한국을 환율관찰대상국으로 유지하며 원화 약세가 경제 체력 대비 과도하다고 평가했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-25</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1692,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n특정 금융자산의 가격이나 시장 지수가 단기적으로는 예측 불가능한 변동성을 보일 수 있지만, 장기적인 관점에서는 결국 평균적인 수준으로 회귀하려는 경향이 있다는 것을 설명하는 금융 이론은?","answer":"① 타우의 법칙","explanation":"정답은 타우의 법칙으로, 평균회귀 현상이 단기적으로는 무의미하지만 장기적으로는 유의미하다는 것을 설명합니다. [오답해설] ② 효율적 시장 가설은 모든 정보가 즉시 가격에 반영된다는 이론입니다. ③ 랜덤워크 이론은 주가 움직임이 무작위적이며 예측 불가능하다는 이론입니다. ④ 행동경제학은 인간의 심리적 요인이 금융 시장에 미치는 영향을 연구하는 학문입니다.","news_context":"평균회귀 현상이 단기적으로는 무의미하지만 장기적으로는 유의미하다는 것을 의미하는 법칙으로, 장기적으로 시장이 일정한 패턴을 따른다는 아이디어를 제공한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4424751","options":["① 타우의 법칙","② 효율적 시장 가설","③ 랜덤워크 이론","④ 행동경제학"]},{"id":1693,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n대출을 받은 채무자가 사망하거나 고도 장해를 입어 채무를 상환하기 어려워졌을 때, 보험회사가 대출 기관(채권자)에 남은 대출금을 대신 갚아주는 보험 상품은?","answer":"① 신용생명보험","explanation":"정답은 신용생명보험으로, 채무자의 사망 또는 고도 장해 시 보험사가 대출금을 대신 상환하는 상품입니다. [오답해설] ② 종신보험은 사망 시 유족에게 보험금을 지급하는 일반적인 생명보험입니다. ③ 변액연금보험은 투자 실적에 따라 연금액이 변동되는 연금보험 상품입니다. ④ 주택화재보험은 주택의 화재 및 풍수해 등 재산 손해를 보장하는 손해보험의 일종입니다.","news_context":"대출을 받은 사람이 사망하거나 고도 장해를 입어 채무를 상환하기 어려워졌을 때, 보험회사가 대출 기관에 남은 대출금을 대신 갚아주는 보험 상품이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4426576","options":["① 신용생명보험","② 종신보험","③ 변액연금보험","④ 주택화재보험"]},{"id":1694,"category":"금융용어","question":"다음 설명에 해당하는 최신 AI 용어는 무엇인가?\n\"AI 기술이 로봇이나 기계장치와 결합하여 물리적 세계에서 실시간으로 환경을 인지하고 판단하며, 직접 행동으로 결과물을 만들어내는 인공지능을 의미한다.\"","answer":"① 피지컬 AI (Physical AI)","explanation":"피지컬 AI는 인공지능이 물리적 실체와 결합하여 실제 환경에서 상호작용하며 작업을 수행하는 것을 말합니다.\n[오답해설] ② 인공지능 윤리는 AI 개발 및 활용 과정에서 발생할 수 있는 윤리적 문제를 다루는 분야입니다. ③ 지능형 로봇은 스스로 주변 환경을 인식하고 판단하여 자율적으로 동작하는 로봇을 의미하며, 피지컬 AI는 이러한 로봇 기술의 한 형태를 포함하지만 더 넓은 AI의 물리적 구현을 포괄합니다. ④ 강화 학습은 시행착오를 통해 최적의 행동 방식을 학습하는 기계학습의 한 종류입니다.","news_context":"현대차 정의선 회장이 엔비디아, 구글 등과 협력하여 피지컬 AI 구현을 가속화하겠다고 밝혔습니다.","news_url":"","options":["① 피지컬 AI (Physical AI)","② 인공지능 윤리 (AI Ethics)","③ 지능형 로봇 (Intelligent Robot)","④ 강화 학습 (Reinforcement Learning)"]},{"id":1695,"category":"금융용어","question":"대량의 텍스트 데이터를 학습하여 인간의 언어를 이해하고 생성하며, 다양한 자연어 처리 작업을 수행할 수 있는 인공지능 모델을 지칭하는 용어는 무엇인가?","answer":"① LLM (Large Language Model)","explanation":"LLM은 방대한 텍스트 데이터를 학습하여 사람의 언어를 이해하고 새로운 텍스트를 생성하는 거대 언어 모델입니다.\n[오답해설] ② SLM은 LLM에 비해 규모가 작고 특정 목적에 최적화된 언어 모델입니다. ③ GAN은 생성자와 판별자가 경쟁하며 데이터를 생성하는 인공지능 모델로 주로 이미지 생성에 사용됩니다. ④ NLP는 컴퓨터가 인간의 언어를 이해하고 처리하도록 하는 기술 분야 전반을 의미하며, LLM은 NLP의 하위 분야이자 핵심 기술 중 하나입니다.","news_context":"젠슨 황 엔비디아 CEO가 '코리아AI' 구축 협력과 대한민국 LLM 개발 계획을 언급했습니다.","news_url":"","options":["① LLM (Large Language Model)","② SLM (Small Language Model)","③ GAN (Generative Adversarial Network)","④ NLP (Natural Language Processing)"]},{"id":1696,"category":"세부지식","question":"최근 정부가 추진하는 일용근로소득에 대한 건강보험료 부과 개편 내용으로 옳은 것은?","answer":"② 연 2,000만원을 초과하는 일용근로소득에 대해 지역가입자로 전환하여 건강보험료를 부과한다.","explanation":"일용근로소득이 연 2,000만원을 초과하는 경우, 초과분부터 지역가입자 건강보험료를 부과하여 형평성을 제고합니다.\n[오답해설] ① 개편 기준은 연 2,000만원입니다. ③ 모든 일용근로자에게 부과하는 것이 아니라, 연 소득 기준 초과 시에만 적용됩니다. ④ 월 소득 기준이 아닌 연 소득 2,000만원 초과가 기준입니다.","news_context":"일용직도 연 2,000만원 넘으면 건강보험료를 내도록 부과 개편에 착수한다는 소식입니다.","news_url":"","options":["① 연 1,000만원을 초과하는 일용근로소득에 대해 건강보험료를 부과한다.","② 연 2,000만원을 초과하는 일용근로소득에 대해 지역가입자로 전환하여 건강보험료를 부과한다.","③ 일용근로소득이 있는 모든 근로자에게 건강보험료를 부과한다.","④ 월 150만원을 초과하는 일용근로소득에 대해 건강보험료를 부과한다."]},{"id":1697,"category":"세부지식","question":"정부가 월세 세액공제 혜택을 늘리기로 한 가운데, 현행 월세 세액공제의 주요 대상 및 한도로 알맞은 것은?","answer":"① 총급여 7천만원 이하 무주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.","explanation":"현행 월세 세액공제는 총급여 7천만원 이하의 무주택 세대주 또는 세대원이 연 750만원 한도 내에서 월세액의 일정 비율을 공제받을 수 있습니다.\n[오답해설] ② 현행 한도는 연 750만원입니다. ③ 유주택자는 대상이 아니며, 총급여 기준도 다릅니다. ④ 총급여 7천만원 초과자는 대상이 아니며, 한도도 다릅니다.","news_context":"월세 가격이 치솟자 정부가 월세 세액공제 혜택을 늘릴 계획이라고 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12106950","options":["① 총급여 7천만원 이하 무주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.","② 총급여 8천만원 이하 무주택 세대주(또는 세대원)가 연 500만원 한도 내에서 공제받을 수 있다.","③ 총급여 6천만원 이하 유주택 세대주(또는 세대원)가 연 750만원 한도 내에서 공제받을 수 있다.","④ 총급여 7천만원 초과 무주택 세대주(또는 세대원)가 연 1,000만원 한도 내에서 공제받을 수 있다."]},{"id":1698,"category":"세부지식","question":"5대 금융지주가 '상생금융 경쟁'의 일환으로 미소금융을 확대하고 있는 가운데, 미소금융의 주요 특징으로 가장 적절한 것은?","answer":"① 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 소액 자활자금을 지원하는 서민금융이다.","explanation":"미소금융은 제도권 금융 이용이 어려운 저소득·저신용 금융 취약계층에게 창업·운영자금 등을 무담보·무보증으로 지원하여 자활을 돕는 서민금융 상품입니다.\n[오답해설] ② 미소금융은 고신용자가 아닌 저소득·저신용층을 대상으로 합니다. ③ 미소금융은 중소기업의 기술 개발보다는 금융 취약계층의 자활에 초점을 둡니다. ④ 주택자금보다는 창업·운영자금 등 자활자금 대출에 중점을 둡니다.","news_context":"5대 금융지주가 모두 미소금융을 갖추고 상생금융 경쟁을 벌인다는 기사입니다.","news_url":"https://daily.hankooki.com/news/articleView.html?idxno=1389113","options":["① 제도권 금융 이용이 어려운 저소득·저신용층을 대상으로 무담보·무보증으로 소액 자활자금을 지원하는 서민금융이다.","② 고신용 자영업자의 사업 확장을 위한 고액 대출을 담보부로 지원하는 정책자금이다.","③ 중소기업의 혁신 기술 개발을 위한 연구개발 자금을 정부 보증으로 제공하는 대출이다.","④ 시중은행의 주택담보대출 이용이 어려운 중산층을 위한 저금리 주택자금 대출이다."]},{"id":1699,"category":"시사","question":"AI 기술의 금융권 도입 및 활용 확대가 은행 경영에 미칠 영향으로 옳지 않은 것은?","answer":"④ AI는 인간의 판단을 완전히 대체하여 금융 전문 인력의 필요성을 근본적으로 제거한다.","explanation":"AI는 금융 업무의 효율성과 정확도를 높이지만, 인간의 복합적인 판단과 윤리적 의사결정까지 완전히 대체하기는 어려우며, 오히려 AI 시스템 관리 및 개발을 위한 새로운 전문 인력 수요를 창출합니다.\n[오답해설] ① AI는 빅데이터 분석을 통해 고객의 소비 패턴과 니즈를 파악하여 초개인화된 금융 상품 및 서비스 제공을 가능하게 합니다. ② AI는 방대한 고객 데이터를 분석하여 신용 평가 모델을 고도화하고 여신 심사의 정확도를 높여 은행의 리스크 관리 역량을 강화할 수 있습니다. ③ AI 시스템의 복잡성으로 인해 AI를 활용한 정교한 해킹 시도가 증가할 수 있으며, 이에 대한 강력한 보안 시스템 구축과 투자가 중요합니다.","news_context":"금융 해킹 시도와 AI를 이용한 방어 및 공격에 대한 금융권의 대응 노력이 언급되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12106908","options":["① 고객 개인별 맞춤형 금융 상품 및 서비스 개발이 가속화될 수 있다.","② AI 기반의 데이터 분석을 통해 여신 심사 정확도를 높여 부실률을 줄일 수 있다.","③ AI 해킹 등 사이버 보안 리스크가 증대될 수 있으며, 이에 대한 대응 투자가 필수적이다.","④ AI는 인간의 판단을 완전히 대체하여 금융 전문 인력의 필요성을 근본적으로 제거한다."]},{"id":1700,"category":"시사","question":"5대 금융지주의 상반기 순이익이 역대 최대를 기록한 주요 원인으로 가장 적절한 것은?","answer":"② 고금리 기조 유지에 따른 예대마진 확대와 견조한 증권 부문 실적.","explanation":"고금리 기조 유지에 따른 은행의 예대마진 확대와 증권 등 비은행 부문의 실적 견조세가 복합적으로 작용하여 역대 최대 순이익을 달성했습니다.\n[오답해설] ① 비이자 수익도 기여했지만, 이자 수익의 확대가 더 큰 비중을 차지했습니다. ③ 대규모 구조조정보다는 시장 환경 변화에 따른 수익성 개선이 주된 요인입니다. ④ 부동산 PF는 오히려 저축은행 등에서 부담 요인으로 작용하고 있으며, 5대 금융지주의 최대 순이익의 주된 원인은 아닙니다.","news_context":"5대 금융지주가 상반기 13조원 이상의 역대 최대 순이익을 기록했다는 소식입니다.","news_url":"https://www.yna.co.kr/view/AKR20260723180200002","options":["① 비이자 수익 부문의 급격한 성장과 해외 자산 투자 성공.","② 고금리 기조 유지에 따른 예대마진 확대와 견조한 증권 부문 실적.","③ 대규모 구조조정을 통한 비용 절감과 정부의 금융 지원 정책.","④ 부동산 프로젝트 파이낸싱(PF) 대출의 성공적인 회수 및 수익 전환."]},{"id":1701,"category":"시사","question":"미국이 한국을 환율관찰대상국으로 유지하며 원화 약세가 경제 체력 대비 과도하다고 지적한 상황에서 국내 은행이 여신 및 외환 업무에서 특히 주목해야 할 리스크는 무엇인가?","answer":"② 원화 약세 심화로 수입 기업의 외화 부채 상환 부담 증가 및 여신 건전성 악화 가능성.","explanation":"원화 약세가 지속될 경우 원자재 수입 의존도가 높거나 외화 부채를 보유한 수입 기업의 환산 부채 부담이 커져 채무 상환 능력에 부정적인 영향을 미치고, 이는 은행의 해당 기업 여신 건전성 악화로 이어질 수 있습니다.\n[오답해설] ① 정부의 환율 개입은 외화 유동성 경색보다는 외환 시장 안정화에 초점을 맞춥니다. ③ 원화 약세는 일반적으로 수출 기업의 가격 경쟁력에 긍정적인 영향을 미쳐 수출 증가를 유도할 수 있습니다. ④ 외국인 투자 자금 유출은 다양한 복합적 요인에 의해 발생하며, 환율관찰대상국 지정 자체보다는 전반적인 경제 상황과 투자 심리에 더 큰 영향을 받습니다.","news_context":"미국이 한국을 환율관찰대상국으로 유지하며 원화 약세가 경제 체력 대비 과도하다고 평가했습니다.","news_url":"https://www.mk.co.kr/news/economy/12106931","options":["① 정부의 환율 시장 개입 증가로 인한 외화 유동성 경색 위험.","② 원화 약세 심화로 수입 기업의 외화 부채 상환 부담 증가 및 여신 건전성 악화 가능성.","③ 수출 기업의 가격 경쟁력 약화로 인한 수출 감소 및 신규 여신 수요 위축.","④ 국내 금융 시장의 불확실성 증대로 인한 외국인 투자 자금의 급격한 유출."]},{"id":39,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
