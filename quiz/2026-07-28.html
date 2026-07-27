@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-28 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-07-28 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-07-28 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+사모펀드(PEF)가 기존에 투자했던 기업의 지분을 2차 시장에 매각하는 대신, 새로운 펀드를 조성하여 해당 지분을 인수하는 방식으로 기존 투자를 연장하거나 추가 수익을 추구하는 전략입니다. 이는 PEF의 포트폴리오 기업을 장기적으로 보유하며 가치를 극대화하는 데 사용됩니다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 컨티뉴에이션 비히클</li><li>② 세컨더리 펀드</li><li>③ 브릿지론</li><li>④ 펀드 오브 펀드</li>
+      </ul>
+      <p><strong>정답:</strong> ① 컨티뉴에이션 비히클</p>
+      <p><strong>해설:</strong> 컨티뉴에이션 비히클은 PEF가 기존 포트폴리오 기업 지분을 새 펀드를 통해 재인수하여 장기 보유하는 방식입니다. [오답해설] ② 세컨더리 펀드는 다른 PEF로부터 지분을 인수하는 것이 주 목적이며, ③ 브릿지론은 단기 자금 조달을 위한 대출 상품이고, ④ 펀드 오브 펀드는 여러 펀드에 분산 투자하는 펀드입니다.</p>
+      <p>관련 시사 뉴스: 사모펀드(PEF)가 기존에 투자했던 기업 지분을 2차 시장에서 매각하지 않고, 새로운 펀드를 조성해 해당 지분을 인수하는 방식입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+대출자가 사망하거나 심각한 질병, 장애 등으로 인해 대출금을 상환할 수 없게 될 경우, 보험사가 남은 대출잔액을 대신 갚아주는 보험 상품입니다. 이는 대출자의 유가족 및 채권자를 보호하는 역할을 합니다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 신용생명보험</li><li>② 신용보증보험</li><li>③ 주택담보대출보험</li><li>④ 일반 생명보험</li>
+      </ul>
+      <p><strong>정답:</strong> ① 신용생명보험</p>
+      <p><strong>해설:</strong> 신용생명보험은 대출자가 상환 불능 상태가 되었을 때 보험사가 대출 잔액을 대신 갚아주는 상품입니다. [오답해설] ② 신용보증보험은 채무자의 채무 불이행 시 채권자의 손실을 보전해주는 보험이고, ③ 주택담보대출보험은 주택담보대출에만 한정되며, ④ 일반 생명보험은 특정 대출금 상환과는 무관하게 피보험자의 사망 시 보험금을 지급합니다.</p>
+      <p>관련 시사 뉴스: 대출자가 사망하거나 질병, 장애 등으로 대출금을 갚지 못하게 될 경우 보험사가 대출잔액을 대신 갚아주는 보험 상품입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. AI 개발 및 운영에 필요한 막대한 자금을 조달하기 위해 AI 기술을 활용하는 기업들이 서로의 제품을 구매하거나 투자하며 자금이 순환되는 구조를 의미하는 신조어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 벤처캐피탈 자금</li><li>② AI 순환금융</li><li>③ 기업 간 상호지급보증</li><li>④ 폰지 사기</li>
+      </ul>
+      <p><strong>정답:</strong> ② AI 순환금융</p>
+      <p><strong>해설:</strong> AI 순환금융은 AI 생태계 내에서 기업들이 서로 투자하고 구매하는 방식으로 자금을 조달하고 유동성을 공급하는 형태를 의미합니다. [오답해설] ① 벤처캐피탈 자금은 고성장 초기 기업에 투자하는 외부 자본을 의미합니다. ③ 기업 간 상호지급보증은 특정 기업의 채무에 대해 다른 기업이 보증을 서는 행위로, AI 순환금융의 한 구성 요소일 수 있으나 전체 개념은 아닙니다. ④ 폰지 사기는 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 불법 금융사기입니다.</p>
+      <p>관련 시사 뉴스: 엔비디아의 오픈AI 지급보증 사례로 다시 불거진 AI 순환금융에 대한 관심이 높아지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 부동산, 미술품, 주식 등 다양한 자산의 소유권을 블록체인 기술을 활용하여 디지털화하고, 이를 바탕으로 발행되어 유통되는 증권을 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① NFT</li><li>② 가상자산</li><li>③ 스테이블코인</li><li>④ 토큰증권</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 토큰증권</p>
+      <p><strong>해설:</strong> 토큰증권은 블록체인 기술을 활용해 자산의 소유권을 디지털화하여 발행 및 유통하는 증권으로, 조각투자 등 새로운 투자 기회를 제공합니다. [오답해설] ① NFT(Non-Fungible Token)는 특정 디지털 자산의 고유한 소유권을 증명하는 '대체 불가능 토큰'으로, 증권의 개념과는 차이가 있습니다. ② 가상자산은 비트코인 등 블록체인 기술을 기반으로 하는 디지털 자산 전체를 포괄하는 용어로, 토큰증권은 가상자산 중 증권의 성격을 가지는 특정 유형에 해당합니다. ③ 스테이블코인은 법정화폐나 실물자산에 가치를 연동하여 가격 변동성을 최소화한 가상자산입니다.</p>
+      <p>관련 시사 뉴스: 토큰증권과 스테이블코인의 유동성 경쟁이 심화되는 가운데, 퍼블릭 체인 채택 여부가 중요하게 논의되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 8월부터 시범 운영될 예정인 새로운 소상공인 신용평가 모델에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 오직 사업장의 매출액과 순이익만을 기준으로 대출 한도를 결정한다.</li><li>② 재방문율, 단골 비중 등 비금융 데이터를 활용하여 신용도를 평가한다.</li><li>③ 고위험 업종의 소상공인 대출은 전면적으로 중단하는 것을 목표로 한다.</li><li>④ 기존의 신용점수 체계를 완전히 대체하고 은행권 전반에 즉시 적용된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 재방문율, 단골 비중 등 비금융 데이터를 활용하여 신용도를 평가한다.</p>
+      <p><strong>해설:</strong> 새로운 소상공인 신용평가 모델은 매출액 외에 재방문율, 단골 비중 등의 비금융 데이터를 활용하여 신용도를 평가함으로써, 우량하지만 금융 이력이 부족한 소상공인에게 대출 기회를 확대하는 것을 목표로 합니다. [오답해설] ① 새로운 모델은 매출액 외 비금융 데이터를 함께 고려합니다. ③ 고위험 업종 대출을 전면 중단하는 것이 아니라, 대출 심사의 정확도를 높여 상환 능력을 면밀히 평가하려는 것입니다. ④ 8월부터 시범 운영되며, 기존 신용점수 체계를 보완하는 방식으로 점진적으로 확대될 예정입니다.</p>
+      <p>관련 시사 뉴스: 단골이 많은 소상공인에게 대출을 더 해주기 위해 매출액 외 재방문율 등 비금융 데이터를 활용한 새로운 신용평가 모델이 8월부터 시범 운영됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 은행의 이익 증가와 관련하여 논의되고 있는 '은행 법정출연금'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행이 국가에 납부하는 법인세의 일종으로, 이익 규모와 관계없이 고정된 금액이다.</li><li>② 은행의 자율적인 사회공헌 활동을 위한 기금으로, 출연 여부는 은행이 자유롭게 결정한다.</li><li>③ 은행이 예금보험기금 등에 의무적으로 납부하는 금액으로, 은행의 건전성 제고 및 금융 시스템 안정에 기여한다.</li><li>④ 은행 주주에게 지급되는 배당금의 일종으로, 법적으로 정해진 비율에 따라 의무적으로 지급된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행이 예금보험기금 등에 의무적으로 납부하는 금액으로, 은행의 건전성 제고 및 금융 시스템 안정에 기여한다.</p>
+      <p><strong>해설:</strong> 은행 법정출연금은 예금보험기금 등 금융 시스템의 안정과 예금자 보호를 위해 은행이 의무적으로 납부하는 금액입니다. [오답해설] ① 법인세와는 별개의 의무 납부금입니다. ② 자율적인 사회공헌 기금과 달리 법적으로 납부가 의무화되어 있습니다. ④ 주주 배당금과 달리 공공의 목적을 위해 납부되는 비용입니다.</p>
+      <p>관련 시사 뉴스: 은행의 이익이 증가함에 따라 취약층 지원을 확대해야 한다는 목소리와 함께 은행 법정출연금에 대한 재논의가 이루어지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 은행의 '요주의여신' 규모가 8조 원에 달하며 증가하고 있다는 소식이 은행 경영 및 여신정책에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 대출 심사 기준이 완화되어 여신 증가를 촉진할 것이다.</li><li>② 은행의 자산 건전성 악화로 이어져 대손충당금 적립 부담이 증가하고, 신규 대출 여력이 위축될 수 있다.</li><li>③ 은행의 수익성이 개선되어 주주 배당이 확대될 가능성이 높다.</li><li>④ 은행은 정부의 규제 완화에 따라 기업 구조조정을 적극적으로 추진할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 은행의 자산 건전성 악화로 이어져 대손충당금 적립 부담이 증가하고, 신규 대출 여력이 위축될 수 있다.</p>
+      <p><strong>해설:</strong> 요주의여신은 대출 상환에 문제가 발생할 가능성이 있는 여신을 의미하며, 이는 은행의 자산 건전성을 악화시켜 대손충당금 추가 적립 부담으로 이어지고 결과적으로 신규 대출 여력을 위축시킵니다. [오답해설] ① 요주의여신 증가는 오히려 은행의 리스크 관리 강화를 불러와 대출 심사 기준을 강화시킬 수 있습니다. ③ 요주의여신 증가는 대손 비용을 증가시켜 수익성을 악화시키는 요인입니다. ④ 요주의여신 증가는 은행의 리스크 관리 부담을 높이지만, 정부의 규제 완화와는 직접적인 관계가 없으며 기업 구조조정은 당국과의 협의가 필요한 사항입니다.</p>
+      <p>관련 시사 뉴스: 기업과 자영업의 상환 부담으로 은행의 요주의여신이 8조 원 규모로 불어나면서 부실 경고음이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 한국 정부가 환율 방어를 위해 280억 달러를 투입하는 등 적극적인 외환시장 개입을 했다는 소식이 전해졌다. 이러한 중앙은행의 환율 방어 조치에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 외환보유액이 감소할 수 있으며, 이는 국가의 대외 신인도에 영향을 줄 수 있다.</li><li>② 원화 약세가 심화될 때 달러를 매도하여 환율 상승 압력을 완화하는 것이 일반적이다.</li><li>③ 단기적으로 급격한 환율 변동성을 줄여 시장 안정화에 기여할 수 있다.</li><li>④ 외환시장 개입은 시장 원리에 기반한 자연스러운 환율 조정 기능을 강화하는 효과가 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 외환시장 개입은 시장 원리에 기반한 자연스러운 환율 조정 기능을 강화하는 효과가 있다.</p>
+      <p><strong>해설:</strong> 외환시장 개입은 환율의 급격한 변동을 완화하여 시장 안정화를 도모하지만, 이는 시장의 자율적인 가격 결정 기능을 일시적으로 제한하는 행위이므로 자연스러운 환율 조정 기능을 강화한다고 보기는 어렵습니다. [오답해설] ① 달러를 매도하여 환율을 방어하면 그만큼 외환보유액이 감소합니다. ② 원화 약세는 달러 강세를 의미하므로, 중앙은행은 시장에 달러를 풀어(매도하여) 달러 공급을 늘려 환율 상승을 억제합니다. ③ 환율 방어의 주된 목적 중 하나는 급격한 환율 변동성을 줄여 경제 주체의 불확실성을 감소시키는 것입니다.</p>
+      <p>관련 시사 뉴스: 한국이 환율 방어를 위해 280억 달러를 시장에 풀었으며, 이는 미국 재무부 보고서에 따르면 세계 3위 규모의 개입입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 미국 연방준비제도(Fed)의 연방공개시장위원회(FOMC)가 금리 결정을 앞두고 있는 가운데, FOMC의 금리 정책이 한국 금융시장에 미치는 영향에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① FOMC의 금리 인상은 한국의 자금 유출 압력을 높여 원화 약세 및 국내 금리 상승 요인으로 작용할 수 있다.</li><li>② FOMC가 금리를 인상하면 한국은 내수 활성화를 위해 반대로 금리를 인하하는 정책을 주로 펼친다.</li><li>③ FOMC의 금리 정책은 한국의 주식 시장에는 거의 영향을 미치지 않으며, 주로 채권 시장에만 영향을 준다.</li><li>④ 미국 금리 결정은 한국의 수출 경쟁력을 직접적으로 강화하여 기업 실적을 개선시키는 효과가 크다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① FOMC의 금리 인상은 한국의 자금 유출 압력을 높여 원화 약세 및 국내 금리 상승 요인으로 작용할 수 있다.</p>
+      <p><strong>해설:</strong> FOMC의 금리 인상은 미국 자산의 상대적 매력을 높여 한국에서 외국인 투자 자금 유출을 야기할 수 있으며, 이는 원화 약세 압력을 가하고 국내 기준금리 인상 압박으로 이어질 수 있습니다. [오답해설] ② FOMC의 금리 인상 시 한국은 자본 유출 방어 및 물가 관리를 위해 금리 인상을 고려하는 경우가 많습니다. ③ FOMC의 금리 정책은 글로벌 자금 흐름에 큰 영향을 미치므로 한국의 주식, 채권, 환율 등 모든 금융시장에 광범위하게 영향을 줍니다. ④ 미국 금리 결정은 간접적으로 영향을 미칠 수 있으나, 직접적으로 한국 수출 경쟁력을 강화한다고 보기는 어렵습니다.</p>
+      <p>관련 시사 뉴스: FOMC 회의를 앞두고 금리 결정에 대한 관심이 높은 가운데, 트럼프 전 대통령이 Fed에 세계 최저 금리를 요구하며 압박하는 상황입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 8월 기업 체감경기가 다시 악화되어 기업경기실사지수(BSI)가 89.9를 기록했다는 뉴스가 보도되었다. BSI에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① BSI는 100을 기준으로 하며, 100을 넘으면 경기 비관, 100 미만이면 경기 낙관을 의미한다.</li><li>② BSI는 기업인들의 실제 투자 규모를 측정하는 지표로, 기업의 설비 투자 계획을 직접적으로 반영한다.</li><li>③ BSI는 주로 소비자들의 소비 심리를 측정하는 지표로, 소비자심리지수(CSI)와 동일한 정보를 제공한다.</li><li>④ BSI는 기업인들이 체감하는 현재 및 향후 경기에 대한 심리를 지수화한 것으로, 100을 기준으로 경기가 확장 또는 위축될 것으로 판단한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ BSI는 기업인들이 체감하는 현재 및 향후 경기에 대한 심리를 지수화한 것으로, 100을 기준으로 경기가 확장 또는 위축될 것으로 판단한다.</p>
+      <p><strong>해설:</strong> 기업경기실사지수(BSI)는 기업인들이 체감하는 현재 경기 상황과 향후 전망을 조사하여 지수화한 것으로, 100을 기준으로 100보다 높으면 경기 확장, 100보다 낮으면 경기 위축을 예상하는 기업이 많다는 의미입니다. [오답해설] ① BSI는 100을 기준으로 하며, 100을 넘으면 경기 낙관, 100 미만이면 경기 비관을 의미합니다. ② BSI는 실제 투자 규모가 아닌 기업인의 '심리'를 측정하는 지표입니다. ③ BSI는 기업 경기 심리를, CSI는 소비자 심리를 측정하는 지표로 서로 다른 정보를 제공합니다.</p>
+      <p>관련 시사 뉴스: 8월 기업 체감경기가 중동 긴장 재고조 등의 영향으로 다시 악화되어 BSI가 3개월 만에 80대 수준으로 하락했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-07-28</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1722,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n사모펀드(PEF)가 기존에 투자했던 기업의 지분을 2차 시장에 매각하는 대신, 새로운 펀드를 조성하여 해당 지분을 인수하는 방식으로 기존 투자를 연장하거나 추가 수익을 추구하는 전략입니다. 이는 PEF의 포트폴리오 기업을 장기적으로 보유하며 가치를 극대화하는 데 사용됩니다.","answer":"① 컨티뉴에이션 비히클","explanation":"컨티뉴에이션 비히클은 PEF가 기존 포트폴리오 기업 지분을 새 펀드를 통해 재인수하여 장기 보유하는 방식입니다. [오답해설] ② 세컨더리 펀드는 다른 PEF로부터 지분을 인수하는 것이 주 목적이며, ③ 브릿지론은 단기 자금 조달을 위한 대출 상품이고, ④ 펀드 오브 펀드는 여러 펀드에 분산 투자하는 펀드입니다.","news_context":"사모펀드(PEF)가 기존에 투자했던 기업 지분을 2차 시장에서 매각하지 않고, 새로운 펀드를 조성해 해당 지분을 인수하는 방식입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4424070","options":["① 컨티뉴에이션 비히클","② 세컨더리 펀드","③ 브릿지론","④ 펀드 오브 펀드"]},{"id":1723,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n대출자가 사망하거나 심각한 질병, 장애 등으로 인해 대출금을 상환할 수 없게 될 경우, 보험사가 남은 대출잔액을 대신 갚아주는 보험 상품입니다. 이는 대출자의 유가족 및 채권자를 보호하는 역할을 합니다.","answer":"① 신용생명보험","explanation":"신용생명보험은 대출자가 상환 불능 상태가 되었을 때 보험사가 대출 잔액을 대신 갚아주는 상품입니다. [오답해설] ② 신용보증보험은 채무자의 채무 불이행 시 채권자의 손실을 보전해주는 보험이고, ③ 주택담보대출보험은 주택담보대출에만 한정되며, ④ 일반 생명보험은 특정 대출금 상환과는 무관하게 피보험자의 사망 시 보험금을 지급합니다.","news_context":"대출자가 사망하거나 질병, 장애 등으로 대출금을 갚지 못하게 될 경우 보험사가 대출잔액을 대신 갚아주는 보험 상품입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4426576","options":["① 신용생명보험","② 신용보증보험","③ 주택담보대출보험","④ 일반 생명보험"]},{"id":1724,"category":"금융용어","question":"AI 개발 및 운영에 필요한 막대한 자금을 조달하기 위해 AI 기술을 활용하는 기업들이 서로의 제품을 구매하거나 투자하며 자금이 순환되는 구조를 의미하는 신조어는 무엇인가?","answer":"② AI 순환금융","explanation":"AI 순환금융은 AI 생태계 내에서 기업들이 서로 투자하고 구매하는 방식으로 자금을 조달하고 유동성을 공급하는 형태를 의미합니다. [오답해설] ① 벤처캐피탈 자금은 고성장 초기 기업에 투자하는 외부 자본을 의미합니다. ③ 기업 간 상호지급보증은 특정 기업의 채무에 대해 다른 기업이 보증을 서는 행위로, AI 순환금융의 한 구성 요소일 수 있으나 전체 개념은 아닙니다. ④ 폰지 사기는 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 불법 금융사기입니다.","news_context":"엔비디아의 오픈AI 지급보증 사례로 다시 불거진 AI 순환금융에 대한 관심이 높아지고 있습니다.","news_url":"","options":["① 벤처캐피탈 자금","② AI 순환금융","③ 기업 간 상호지급보증","④ 폰지 사기"]},{"id":1725,"category":"금융용어","question":"부동산, 미술품, 주식 등 다양한 자산의 소유권을 블록체인 기술을 활용하여 디지털화하고, 이를 바탕으로 발행되어 유통되는 증권을 무엇이라고 하는가?","answer":"④ 토큰증권","explanation":"토큰증권은 블록체인 기술을 활용해 자산의 소유권을 디지털화하여 발행 및 유통하는 증권으로, 조각투자 등 새로운 투자 기회를 제공합니다. [오답해설] ① NFT(Non-Fungible Token)는 특정 디지털 자산의 고유한 소유권을 증명하는 '대체 불가능 토큰'으로, 증권의 개념과는 차이가 있습니다. ② 가상자산은 비트코인 등 블록체인 기술을 기반으로 하는 디지털 자산 전체를 포괄하는 용어로, 토큰증권은 가상자산 중 증권의 성격을 가지는 특정 유형에 해당합니다. ③ 스테이블코인은 법정화폐나 실물자산에 가치를 연동하여 가격 변동성을 최소화한 가상자산입니다.","news_context":"토큰증권과 스테이블코인의 유동성 경쟁이 심화되는 가운데, 퍼블릭 체인 채택 여부가 중요하게 논의되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/018/0006337885?sid=101","options":["① NFT","② 가상자산","③ 스테이블코인","④ 토큰증권"]},{"id":1726,"category":"세부지식","question":"최근 8월부터 시범 운영될 예정인 새로운 소상공인 신용평가 모델에 대한 설명으로 옳은 것은?","answer":"② 재방문율, 단골 비중 등 비금융 데이터를 활용하여 신용도를 평가한다.","explanation":"새로운 소상공인 신용평가 모델은 매출액 외에 재방문율, 단골 비중 등의 비금융 데이터를 활용하여 신용도를 평가함으로써, 우량하지만 금융 이력이 부족한 소상공인에게 대출 기회를 확대하는 것을 목표로 합니다. [오답해설] ① 새로운 모델은 매출액 외 비금융 데이터를 함께 고려합니다. ③ 고위험 업종 대출을 전면 중단하는 것이 아니라, 대출 심사의 정확도를 높여 상환 능력을 면밀히 평가하려는 것입니다. ④ 8월부터 시범 운영되며, 기존 신용점수 체계를 보완하는 방식으로 점진적으로 확대될 예정입니다.","news_context":"단골이 많은 소상공인에게 대출을 더 해주기 위해 매출액 외 재방문율 등 비금융 데이터를 활용한 새로운 신용평가 모델이 8월부터 시범 운영됩니다.","news_url":"https://www.mk.co.kr/news/economy/12108392","options":["① 오직 사업장의 매출액과 순이익만을 기준으로 대출 한도를 결정한다.","② 재방문율, 단골 비중 등 비금융 데이터를 활용하여 신용도를 평가한다.","③ 고위험 업종의 소상공인 대출은 전면적으로 중단하는 것을 목표로 한다.","④ 기존의 신용점수 체계를 완전히 대체하고 은행권 전반에 즉시 적용된다."]},{"id":1727,"category":"세부지식","question":"최근 은행의 이익 증가와 관련하여 논의되고 있는 '은행 법정출연금'에 대한 설명으로 옳은 것은?","answer":"③ 은행이 예금보험기금 등에 의무적으로 납부하는 금액으로, 은행의 건전성 제고 및 금융 시스템 안정에 기여한다.","explanation":"은행 법정출연금은 예금보험기금 등 금융 시스템의 안정과 예금자 보호를 위해 은행이 의무적으로 납부하는 금액입니다. [오답해설] ① 법인세와는 별개의 의무 납부금입니다. ② 자율적인 사회공헌 기금과 달리 법적으로 납부가 의무화되어 있습니다. ④ 주주 배당금과 달리 공공의 목적을 위해 납부되는 비용입니다.","news_context":"은행의 이익이 증가함에 따라 취약층 지원을 확대해야 한다는 목소리와 함께 은행 법정출연금에 대한 재논의가 이루어지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12108585","options":["① 은행이 국가에 납부하는 법인세의 일종으로, 이익 규모와 관계없이 고정된 금액이다.","② 은행의 자율적인 사회공헌 활동을 위한 기금으로, 출연 여부는 은행이 자유롭게 결정한다.","③ 은행이 예금보험기금 등에 의무적으로 납부하는 금액으로, 은행의 건전성 제고 및 금융 시스템 안정에 기여한다.","④ 은행 주주에게 지급되는 배당금의 일종으로, 법적으로 정해진 비율에 따라 의무적으로 지급된다."]},{"id":1728,"category":"시사","question":"은행의 '요주의여신' 규모가 8조 원에 달하며 증가하고 있다는 소식이 은행 경영 및 여신정책에 미치는 영향으로 가장 적절한 것은?","answer":"② 은행의 자산 건전성 악화로 이어져 대손충당금 적립 부담이 증가하고, 신규 대출 여력이 위축될 수 있다.","explanation":"요주의여신은 대출 상환에 문제가 발생할 가능성이 있는 여신을 의미하며, 이는 은행의 자산 건전성을 악화시켜 대손충당금 추가 적립 부담으로 이어지고 결과적으로 신규 대출 여력을 위축시킵니다. [오답해설] ① 요주의여신 증가는 오히려 은행의 리스크 관리 강화를 불러와 대출 심사 기준을 강화시킬 수 있습니다. ③ 요주의여신 증가는 대손 비용을 증가시켜 수익성을 악화시키는 요인입니다. ④ 요주의여신 증가는 은행의 리스크 관리 부담을 높이지만, 정부의 규제 완화와는 직접적인 관계가 없으며 기업 구조조정은 당국과의 협의가 필요한 사항입니다.","news_context":"기업과 자영업의 상환 부담으로 은행의 요주의여신이 8조 원 규모로 불어나면서 부실 경고음이 커지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12109004","options":["① 은행의 대출 심사 기준이 완화되어 여신 증가를 촉진할 것이다.","② 은행의 자산 건전성 악화로 이어져 대손충당금 적립 부담이 증가하고, 신규 대출 여력이 위축될 수 있다.","③ 은행의 수익성이 개선되어 주주 배당이 확대될 가능성이 높다.","④ 은행은 정부의 규제 완화에 따라 기업 구조조정을 적극적으로 추진할 것이다."]},{"id":1729,"category":"시사","question":"최근 한국 정부가 환율 방어를 위해 280억 달러를 투입하는 등 적극적인 외환시장 개입을 했다는 소식이 전해졌다. 이러한 중앙은행의 환율 방어 조치에 대한 설명으로 옳지 않은 것은?","answer":"④ 외환시장 개입은 시장 원리에 기반한 자연스러운 환율 조정 기능을 강화하는 효과가 있다.","explanation":"외환시장 개입은 환율의 급격한 변동을 완화하여 시장 안정화를 도모하지만, 이는 시장의 자율적인 가격 결정 기능을 일시적으로 제한하는 행위이므로 자연스러운 환율 조정 기능을 강화한다고 보기는 어렵습니다. [오답해설] ① 달러를 매도하여 환율을 방어하면 그만큼 외환보유액이 감소합니다. ② 원화 약세는 달러 강세를 의미하므로, 중앙은행은 시장에 달러를 풀어(매도하여) 달러 공급을 늘려 환율 상승을 억제합니다. ③ 환율 방어의 주된 목적 중 하나는 급격한 환율 변동성을 줄여 경제 주체의 불확실성을 감소시키는 것입니다.","news_context":"한국이 환율 방어를 위해 280억 달러를 시장에 풀었으며, 이는 미국 재무부 보고서에 따르면 세계 3위 규모의 개입입니다.","news_url":"https://www.mk.co.kr/news/economy/12108688","options":["① 외환보유액이 감소할 수 있으며, 이는 국가의 대외 신인도에 영향을 줄 수 있다.","② 원화 약세가 심화될 때 달러를 매도하여 환율 상승 압력을 완화하는 것이 일반적이다.","③ 단기적으로 급격한 환율 변동성을 줄여 시장 안정화에 기여할 수 있다.","④ 외환시장 개입은 시장 원리에 기반한 자연스러운 환율 조정 기능을 강화하는 효과가 있다."]},{"id":1730,"category":"시사","question":"미국 연방준비제도(Fed)의 연방공개시장위원회(FOMC)가 금리 결정을 앞두고 있는 가운데, FOMC의 금리 정책이 한국 금융시장에 미치는 영향에 대한 설명으로 가장 적절한 것은?","answer":"① FOMC의 금리 인상은 한국의 자금 유출 압력을 높여 원화 약세 및 국내 금리 상승 요인으로 작용할 수 있다.","explanation":"FOMC의 금리 인상은 미국 자산의 상대적 매력을 높여 한국에서 외국인 투자 자금 유출을 야기할 수 있으며, 이는 원화 약세 압력을 가하고 국내 기준금리 인상 압박으로 이어질 수 있습니다. [오답해설] ② FOMC의 금리 인상 시 한국은 자본 유출 방어 및 물가 관리를 위해 금리 인상을 고려하는 경우가 많습니다. ③ FOMC의 금리 정책은 글로벌 자금 흐름에 큰 영향을 미치므로 한국의 주식, 채권, 환율 등 모든 금융시장에 광범위하게 영향을 줍니다. ④ 미국 금리 결정은 간접적으로 영향을 미칠 수 있으나, 직접적으로 한국 수출 경쟁력을 강화한다고 보기는 어렵습니다.","news_context":"FOMC 회의를 앞두고 금리 결정에 대한 관심이 높은 가운데, 트럼프 전 대통령이 Fed에 세계 최저 금리를 요구하며 압박하는 상황입니다.","news_url":"","options":["① FOMC의 금리 인상은 한국의 자금 유출 압력을 높여 원화 약세 및 국내 금리 상승 요인으로 작용할 수 있다.","② FOMC가 금리를 인상하면 한국은 내수 활성화를 위해 반대로 금리를 인하하는 정책을 주로 펼친다.","③ FOMC의 금리 정책은 한국의 주식 시장에는 거의 영향을 미치지 않으며, 주로 채권 시장에만 영향을 준다.","④ 미국 금리 결정은 한국의 수출 경쟁력을 직접적으로 강화하여 기업 실적을 개선시키는 효과가 크다."]},{"id":1731,"category":"시사","question":"최근 8월 기업 체감경기가 다시 악화되어 기업경기실사지수(BSI)가 89.9를 기록했다는 뉴스가 보도되었다. BSI에 대한 설명으로 옳은 것은?","answer":"④ BSI는 기업인들이 체감하는 현재 및 향후 경기에 대한 심리를 지수화한 것으로, 100을 기준으로 경기가 확장 또는 위축될 것으로 판단한다.","explanation":"기업경기실사지수(BSI)는 기업인들이 체감하는 현재 경기 상황과 향후 전망을 조사하여 지수화한 것으로, 100을 기준으로 100보다 높으면 경기 확장, 100보다 낮으면 경기 위축을 예상하는 기업이 많다는 의미입니다. [오답해설] ① BSI는 100을 기준으로 하며, 100을 넘으면 경기 낙관, 100 미만이면 경기 비관을 의미합니다. ② BSI는 실제 투자 규모가 아닌 기업인의 '심리'를 측정하는 지표입니다. ③ BSI는 기업 경기 심리를, CSI는 소비자 심리를 측정하는 지표로 서로 다른 정보를 제공합니다.","news_context":"8월 기업 체감경기가 중동 긴장 재고조 등의 영향으로 다시 악화되어 BSI가 3개월 만에 80대 수준으로 하락했습니다.","news_url":"https://n.news.naver.com/mnews/article/018/0006337866?sid=101","options":["① BSI는 100을 기준으로 하며, 100을 넘으면 경기 비관, 100 미만이면 경기 낙관을 의미한다.","② BSI는 기업인들의 실제 투자 규모를 측정하는 지표로, 기업의 설비 투자 계획을 직접적으로 반영한다.","③ BSI는 주로 소비자들의 소비 심리를 측정하는 지표로, 소비자심리지수(CSI)와 동일한 정보를 제공한다.","④ BSI는 기업인들이 체감하는 현재 및 향후 경기에 대한 심리를 지수화한 것으로, 100을 기준으로 경기가 확장 또는 위축될 것으로 판단한다."]},{"id":42,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
