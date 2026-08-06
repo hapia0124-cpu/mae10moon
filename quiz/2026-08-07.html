@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-07 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-07 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-07 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 외국환은행이 외화를 사고파는 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시하는 환율로, 다양한 외화 거래의 기준이 되는 금융용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 현찰매매율</li><li>② 매매기준율</li><li>③ 전신환매매율</li><li>④ 재정환율</li>
+      </ul>
+      <p><strong>정답:</strong> ② 매매기준율</p>
+      <p><strong>해설:</strong> 매매기준율은 외국환은행이 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시하는 환율로, 다양한 외화 거래의 기준이 됩니다. [오답해설] ① 현찰매매율은 실제 현찰을 교환할 때 적용되는 환율입니다. ③ 전신환매매율은 전신환 매입율과 매도율을 통칭하는 개념으로, 매매기준율은 이들의 단순평균으로 산출됩니다. ④ 재정환율은 두 통화 간의 환율을 제3의 통화를 매개로 산출하는 환율입니다.</p>
+      <p>관련 시사 뉴스: 매매기준율은 외국환은행이 외화를 사고파는 기준이 되는 환율로, 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 본질적으로 매력적이지 않거나 위험한 금융상품을 마치 좋은 상품인 것처럼 보이게 포장하거나, 핵심적인 불리한 정보를 숨기는 행위를 비유적으로 이르는 금융용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 넛지</li><li>② 그린워싱</li><li>③ 핑크워싱</li><li>④ 슈가코팅</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 슈가코팅</p>
+      <p><strong>해설:</strong> 슈가코팅은 본질적으로 좋지 않은 금융상품에 매력적인 요소를 덧붙여 좋아 보이게 포장하거나 핵심 정보를 숨기는 행위를 말합니다. [오답해설] ① 넛지는 타인의 선택을 유도하되 강제하지 않는 부드러운 개입을 의미합니다. ② 그린워싱은 기업이 실제로는 환경에 나쁜 영향을 미치면서도 친환경적인 이미지를 내세우는 행위입니다. ③ 핑크워싱은 기업이 유방암 예방 캠페인 등 핑크 리본과 관련된 마케팅을 통해 자사 제품의 이미지를 좋게 포장하는 행위를 말합니다.</p>
+      <p>관련 시사 뉴스: 슈가코팅은 본질적으로 매력적이지 않거나 위험한 금융상품을 마치 좋은 상품인 것처럼 보이게 포장하는 행위를 비유적으로 이르는 말이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 블록체인 기술을 활용하여 부동산과 같은 실물 자산의 소유권을 디지털 토큰 형태로 분할하고 거래하는 것을 의미하며, 최근 사우디 부동산 시장에서 시도되고 있는 금융 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 부동산 증권화</li><li>② 부동산 토큰화</li><li>③ 자산유동화</li><li>④ 디지털 자산화</li>
+      </ul>
+      <p><strong>정답:</strong> ② 부동산 토큰화</p>
+      <p><strong>해설:</strong> 부동산 토큰화는 블록체인 기술을 사용하여 부동산 소유권을 디지털 토큰 형태로 분할하고 거래하는 것을 의미한다. [오답해설] ① 부동산 증권화는 부동산을 담보로 증권을 발행하는 것이며, ③ 자산유동화는 비유동성 자산을 유동화하는 광범위한 개념이고, ④ 디지털 자산화는 모든 자산을 디지털 형태로 변환하는 것을 포괄하는 상위 개념으로 부동산 토큰화보다 넓은 의미를 가진다.</p>
+      <p>관련 시사 뉴스: 테더가 하드론 플랫폼을 통해 사우디 부동산 토큰화에 나선다는 기사에서 언급된 개념입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 환율이 특정 방향으로 급격히 변동할 때, 중앙은행이 외환시장에 직접 개입하여 환율의 급변동을 완화하고 안정시키는 조작을 의미하는 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 테이퍼링</li><li>② 양적 완화</li><li>③ 금리 인상</li><li>④ 스무딩 오퍼레이션</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 스무딩 오퍼레이션</p>
+      <p><strong>해설:</strong> 스무딩 오퍼레이션은 환율 급변동을 완화하기 위해 중앙은행이 외환시장에 개입하는 조작을 뜻한다. [오답해설] ① 테이퍼링은 중앙은행이 양적 완화 정책의 규모를 점진적으로 축소하는 것이며, ② 양적 완화는 중앙은행이 국채 매입 등으로 시장에 유동성을 공급하는 정책이고, ③ 금리 인상은 기준금리를 올려 통화량을 조절하는 대표적인 통화 정책 수단이다.</p>
+      <p>관련 시사 뉴스: 미국이 환율 시장에 개입하여 원달러 환율이 하락하고, '베선트'의 발언이 환율 안정에 영향을 미쳤다는 기사들에서 통화 개입의 중요성이 부각됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 대출 규제의 풍선효과로 이용이 증가하고 있는 예금담보대출(예담대)의 특징에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 고객이 예치한 예금이나 적금 등 금융상품을 담보로 대출이 실행된다.</li><li>② 대출자의 신용등급에 따라 대출 가능 여부가 크게 좌우된다.</li><li>③ 일반 신용대출보다 대출 한도가 낮고 금리가 높은 편이다.</li><li>④ 담보 예금 해지 시 은행은 대출금 상환을 요청할 수 있는 권리가 없다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 고객이 예치한 예금이나 적금 등 금융상품을 담보로 대출이 실행된다.</p>
+      <p><strong>해설:</strong> 예금담보대출은 고객이 예치한 금융상품을 담보로 제공하여 대출이 실행되는 상품이다. [오답해설] ② 예금담보대출은 대출자의 신용도와 무관하게 담보로 제공된 예금의 범위 내에서 대출이 가능하다는 특징이 있으며, ③ 예금담보대출은 담보가 확실하여 대출 한도가 높고 일반 신용대출에 비해 금리가 낮은 편이고, ④ 은행은 담보 예금 해지 시 대출금을 먼저 상환받을 권리가 있다.</p>
+      <p>관련 시사 뉴스: 대출규제의 풍선효과로 예금담보대출(예담대)의 잔액이 7조원에 육박한다는 기사를 통해 예담대의 특징을 이해하는 것이 중요합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 정부가 시행하는 신용사면 제도에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 연체 채무 기록이 있는 개인이나 기업의 신용등급을 즉시 최고 등급으로 상향 조정하는 조치이다.</li><li>② 신용사면 대상자는 향후 모든 대출 상품에서 무조건적인 우대 금리를 적용받는다.</li><li>③ 신용사면은 한 번만 적용되며, 재차 연체 발생 시에는 영구적으로 금융 거래가 제한된다.</li><li>④ 특정 기간 동안 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 지원하는 제도이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 특정 기간 동안 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 지원하는 제도이다.</p>
+      <p><strong>해설:</strong> 신용사면은 일정 기간 내 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 돕는 제도이다. [오답해설] ① 신용사면은 신용등급을 즉시 최고 등급으로 상향 조정하는 것이 아니라 연체 기록을 삭제하여 신용 회복을 돕는 것이며, ② 신용사면 대상자가 무조건적인 우대 금리를 적용받는 것은 사실이 아니고, ③ 신용사면은 한 번만 적용되며 재차 연체 발생 시 영구적으로 금융 거래가 제한되는 것은 지나치게 극단적인 설명이다.</p>
+      <p>관련 시사 뉴스: 신용사면 이후에도 5명 중 1명이 다시 연체했다는 기사를 통해 신용사면 제도의 목적과 한계를 파악할 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 세제 개편 논의가 있었던 개인종합자산관리계좌(ISA)에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 비과세 한도 없이 투자수익 전체에 대해 세금을 부과하지 않는 완전 비과세 상품이다.</li><li>② 한 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있는 계좌이다.</li><li>③ 투자 손실이 발생하더라도 다른 상품의 이익과 통산(상계)하여 세액을 계산할 수 없다.</li><li>④ 가입 대상에 제한이 없어 미성년자도 본인 명의로 자유롭게 가입할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 한 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있는 계좌이다.</p>
+      <p><strong>해설:</strong> ISA는 하나의 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있으며, 이익과 손실을 통산하여 세금을 계산하는 절세 상품이다. [오답해설] ① ISA는 비과세 한도가 정해져 있으며 그 초과분에 대해서는 분리과세되는 절세 상품이므로 완전 비과세 상품이 아니며, ③ 투자 손실이 발생하면 다른 상품의 이익과 통산하여 세액을 계산할 수 있는 손익통산 기능이 ISA의 주요 장점이고, ④ ISA는 만 19세 이상 거주자(또는 소득이 있는 만 15세 이상)만 가입할 수 있어 가입 대상에 제한이 있다.</p>
+      <p>관련 시사 뉴스: ISA 세제 개편에 대한 투자자 불만 기사를 통해 ISA의 주요 특징과 장점을 이해하는 것이 필요합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 공정거래위원회가 금융권의 국고채 담합 의혹을 조사하고 있는 상황이 시중은행에 미칠 수 있는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 은행의 국고채 인수 업무 중단으로 정부의 재정 조달 계획에 전면적인 차질이 발생함.</li><li>② 국고채 시장의 투명성과 공정성 제고를 위한 내부 통제 시스템 강화 압박.</li><li>③ 과징금 부과 시 은행의 재무 건전성에 단기적인 부담으로 작용할 수 있음.</li><li>④ 은행의 국고채 거래 참여가 위축되어 국고채 시장 유동성에 부정적 영향을 미칠 수 있음.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 은행의 국고채 인수 업무 중단으로 정부의 재정 조달 계획에 전면적인 차질이 발생함.</p>
+      <p><strong>해설:</strong> 국고채 담합 조사는 은행의 내부 통제 강화와 재무적 부담을 야기할 수 있지만, 은행의 국고채 인수 업무가 전면 중단되어 정부 재정 조달 계획에 전면적인 차질이 발생할 정도의 영향은 일반적으로 예상하기 어렵다. [오답해설] ② 공정위 조사는 국고채 시장의 투명성과 공정성 강화를 위한 은행 내부 통제 시스템 강화로 이어질 수 있으며, ③ 과징금 부과 시 은행의 재무 건전성에 단기적인 부담으로 작용할 수 있는 것은 당연한 결과이고, ④ 은행의 국고채 거래 참여 위축은 국고채 시장의 유동성 감소로 이어질 수 있다.</p>
+      <p>관련 시사 뉴스: 공정위가 금융권의 국고채 담합 의혹을 정조준하고 최대 15조원 과징금을 예고했다는 기사는 은행의 규제 리스크와 시장 영향을 보여줍니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 다음 중 6월 경상수지 흑자 확대가 한국 경제 및 금융 시장에 미칠 영향으로 가장 가능성이 높은 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 국내 소비 부진이 심화되어 은행의 예대마진이 급격히 축소될 것이다.</li><li>② 수출 기업의 가격 경쟁력이 약화되어 무역수지 적자로 전환될 가능성이 높다.</li><li>③ 인플레이션 압력이 완화되어 중앙은행이 적극적인 금리 인하 정책을 펼칠 것이다.</li><li>④ 외국 자본 유입 증가로 원화 가치 상승 압력이 발생할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 외국 자본 유입 증가로 원화 가치 상승 압력이 발생할 수 있다.</p>
+      <p><strong>해설:</strong> 경상수지 흑자는 외화 유입을 늘려 국내 외환 보유고를 확대하고, 이는 원화 가치 상승 압력으로 작용할 수 있어 은행의 외환 부문과 자산 운용에 영향을 미친다. [오답해설] ① 경상수지 흑자 확대가 반드시 국내 소비 부진만을 의미하는 것은 아니며, 예대마진 축소와 직결된다고 보기는 어렵고, ② 흑자 증가는 일반적으로 가격 경쟁력 강화 요인으로 작용하며, 무역수지 적자 전환 가능성은 낮습니다. ③ 흑자는 통화량 증가를 유발할 수 있으나 인플레이션 심화 시 금리 인상 요인이 되기 쉽다.</p>
+      <p>관련 시사 뉴스: 6월 경상수지가 사상 최대 흑자를 기록했다는 소식은 한국 경제의 대외 건전성을 보여주는 중요한 지표입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 인천 시금고 유치 경쟁이 본격화된다는 뉴스에서 시중은행이 시금고 유치에 적극적으로 나서는 이유가 아닌 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 대규모 지자체 자금 운용으로 안정적인 이자 수익을 확보할 수 있다.</li><li>② 해당 지자체의 공공기관 및 시민과의 관계를 강화하여 브랜드 이미지를 제고할 수 있다.</li><li>③ 시금고 유치 과정에서 은행 간 금리 담합이 공정거래법상 예외적으로 허용된다.</li><li>④ 지역 내 영업 기반 확대 및 잠재적인 신규 고객 확보에 유리한 마케팅 효과가 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 시금고 유치 과정에서 은행 간 금리 담합이 공정거래법상 예외적으로 허용된다.</p>
+      <p><strong>해설:</strong> 시중은행이 시금고 유치에 적극적인 이유는 지자체 예산 관리, 지역 관계 강화, 마케팅 효과 등 다양한 이점 때문이며, 금리 담합은 명백한 불법 행위이므로 공식적으로 허용될 수 없다. [오답해설] ① 시금고 유치를 통해 지자체 예산을 독점적으로 관리하며 대규모 자금 운용의 안정성을 확보할 수 있는 것은 은행에게 큰 이점이며, ② 시금고 유치는 해당 지역의 공공기관 및 시민과의 관계를 강화하는 좋은 기회가 되고, ④ 지역 내 영업망 확장 및 잠재 고객 확보에 유리한 마케팅 효과를 기대할 수 있는 것은 시금고 유치의 핵심적인 간접적 이득이다.</p>
+      <p>관련 시사 뉴스: 인천 17조 시금고 전쟁이 본격화된다는 기사는 은행 간 경쟁의 한 단면을 보여줍니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-07</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1837,"category":"시사금융용어","question":"외국환은행이 외화를 사고파는 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시하는 환율로, 다양한 외화 거래의 기준이 되는 금융용어는 무엇인가?","answer":"② 매매기준율","explanation":"매매기준율은 외국환은행이 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시하는 환율로, 다양한 외화 거래의 기준이 됩니다. [오답해설] ① 현찰매매율은 실제 현찰을 교환할 때 적용되는 환율입니다. ③ 전신환매매율은 전신환 매입율과 매도율을 통칭하는 개념으로, 매매기준율은 이들의 단순평균으로 산출됩니다. ④ 재정환율은 두 통화 간의 환율을 제3의 통화를 매개로 산출하는 환율입니다.","news_context":"매매기준율은 외국환은행이 외화를 사고파는 기준이 되는 환율로, 전신환매입률과 전신환매도율의 단순평균을 계산하여 고시합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4427366","options":["① 현찰매매율","② 매매기준율","③ 전신환매매율","④ 재정환율"]},{"id":1838,"category":"시사금융용어","question":"본질적으로 매력적이지 않거나 위험한 금융상품을 마치 좋은 상품인 것처럼 보이게 포장하거나, 핵심적인 불리한 정보를 숨기는 행위를 비유적으로 이르는 금융용어는 무엇인가?","answer":"④ 슈가코팅","explanation":"슈가코팅은 본질적으로 좋지 않은 금융상품에 매력적인 요소를 덧붙여 좋아 보이게 포장하거나 핵심 정보를 숨기는 행위를 말합니다. [오답해설] ① 넛지는 타인의 선택을 유도하되 강제하지 않는 부드러운 개입을 의미합니다. ② 그린워싱은 기업이 실제로는 환경에 나쁜 영향을 미치면서도 친환경적인 이미지를 내세우는 행위입니다. ③ 핑크워싱은 기업이 유방암 예방 캠페인 등 핑크 리본과 관련된 마케팅을 통해 자사 제품의 이미지를 좋게 포장하는 행위를 말합니다.","news_context":"슈가코팅은 본질적으로 매력적이지 않거나 위험한 금융상품을 마치 좋은 상품인 것처럼 보이게 포장하는 행위를 비유적으로 이르는 말이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4427146","options":["① 넛지","② 그린워싱","③ 핑크워싱","④ 슈가코팅"]},{"id":1839,"category":"금융용어","question":"블록체인 기술을 활용하여 부동산과 같은 실물 자산의 소유권을 디지털 토큰 형태로 분할하고 거래하는 것을 의미하며, 최근 사우디 부동산 시장에서 시도되고 있는 금융 용어는 무엇인가?","answer":"② 부동산 토큰화","explanation":"부동산 토큰화는 블록체인 기술을 사용하여 부동산 소유권을 디지털 토큰 형태로 분할하고 거래하는 것을 의미한다. [오답해설] ① 부동산 증권화는 부동산을 담보로 증권을 발행하는 것이며, ③ 자산유동화는 비유동성 자산을 유동화하는 광범위한 개념이고, ④ 디지털 자산화는 모든 자산을 디지털 형태로 변환하는 것을 포괄하는 상위 개념으로 부동산 토큰화보다 넓은 의미를 가진다.","news_context":"테더가 하드론 플랫폼을 통해 사우디 부동산 토큰화에 나선다는 기사에서 언급된 개념입니다.","news_url":"https://www.wikitree.co.kr/articles/1150949","options":["① 부동산 증권화","② 부동산 토큰화","③ 자산유동화","④ 디지털 자산화"]},{"id":1840,"category":"금융용어","question":"환율이 특정 방향으로 급격히 변동할 때, 중앙은행이 외환시장에 직접 개입하여 환율의 급변동을 완화하고 안정시키는 조작을 의미하는 용어는 무엇인가?","answer":"④ 스무딩 오퍼레이션","explanation":"스무딩 오퍼레이션은 환율 급변동을 완화하기 위해 중앙은행이 외환시장에 개입하는 조작을 뜻한다. [오답해설] ① 테이퍼링은 중앙은행이 양적 완화 정책의 규모를 점진적으로 축소하는 것이며, ② 양적 완화는 중앙은행이 국채 매입 등으로 시장에 유동성을 공급하는 정책이고, ③ 금리 인상은 기준금리를 올려 통화량을 조절하는 대표적인 통화 정책 수단이다.","news_context":"미국이 환율 시장에 개입하여 원달러 환율이 하락하고, '베선트'의 발언이 환율 안정에 영향을 미쳤다는 기사들에서 통화 개입의 중요성이 부각됩니다.","news_url":"","options":["① 테이퍼링","② 양적 완화","③ 금리 인상","④ 스무딩 오퍼레이션"]},{"id":1841,"category":"세부지식","question":"최근 대출 규제의 풍선효과로 이용이 증가하고 있는 예금담보대출(예담대)의 특징에 대한 설명으로 가장 적절한 것은?","answer":"① 고객이 예치한 예금이나 적금 등 금융상품을 담보로 대출이 실행된다.","explanation":"예금담보대출은 고객이 예치한 금융상품을 담보로 제공하여 대출이 실행되는 상품이다. [오답해설] ② 예금담보대출은 대출자의 신용도와 무관하게 담보로 제공된 예금의 범위 내에서 대출이 가능하다는 특징이 있으며, ③ 예금담보대출은 담보가 확실하여 대출 한도가 높고 일반 신용대출에 비해 금리가 낮은 편이고, ④ 은행은 담보 예금 해지 시 대출금을 먼저 상환받을 권리가 있다.","news_context":"대출규제의 풍선효과로 예금담보대출(예담대)의 잔액이 7조원에 육박한다는 기사를 통해 예담대의 특징을 이해하는 것이 중요합니다.","news_url":"https://www.mk.co.kr/news/economy/12119521","options":["① 고객이 예치한 예금이나 적금 등 금융상품을 담보로 대출이 실행된다.","② 대출자의 신용등급에 따라 대출 가능 여부가 크게 좌우된다.","③ 일반 신용대출보다 대출 한도가 낮고 금리가 높은 편이다.","④ 담보 예금 해지 시 은행은 대출금 상환을 요청할 수 있는 권리가 없다."]},{"id":1842,"category":"세부지식","question":"정부가 시행하는 신용사면 제도에 대한 설명으로 옳은 것은?","answer":"④ 특정 기간 동안 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 지원하는 제도이다.","explanation":"신용사면은 일정 기간 내 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 돕는 제도이다. [오답해설] ① 신용사면은 신용등급을 즉시 최고 등급으로 상향 조정하는 것이 아니라 연체 기록을 삭제하여 신용 회복을 돕는 것이며, ② 신용사면 대상자가 무조건적인 우대 금리를 적용받는 것은 사실이 아니고, ③ 신용사면은 한 번만 적용되며 재차 연체 발생 시 영구적으로 금융 거래가 제한되는 것은 지나치게 극단적인 설명이다.","news_context":"신용사면 이후에도 5명 중 1명이 다시 연체했다는 기사를 통해 신용사면 제도의 목적과 한계를 파악할 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12120295","options":["① 연체 채무 기록이 있는 개인이나 기업의 신용등급을 즉시 최고 등급으로 상향 조정하는 조치이다.","② 신용사면 대상자는 향후 모든 대출 상품에서 무조건적인 우대 금리를 적용받는다.","③ 신용사면은 한 번만 적용되며, 재차 연체 발생 시에는 영구적으로 금융 거래가 제한된다.","④ 특정 기간 동안 발생한 소액 연체 기록을 삭제하여 금융 활동을 정상화하도록 지원하는 제도이다."]},{"id":1843,"category":"세부지식","question":"최근 세제 개편 논의가 있었던 개인종합자산관리계좌(ISA)에 대한 설명으로 옳은 것은?","answer":"② 한 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있는 계좌이다.","explanation":"ISA는 하나의 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있으며, 이익과 손실을 통산하여 세금을 계산하는 절세 상품이다. [오답해설] ① ISA는 비과세 한도가 정해져 있으며 그 초과분에 대해서는 분리과세되는 절세 상품이므로 완전 비과세 상품이 아니며, ③ 투자 손실이 발생하면 다른 상품의 이익과 통산하여 세액을 계산할 수 있는 손익통산 기능이 ISA의 주요 장점이고, ④ ISA는 만 19세 이상 거주자(또는 소득이 있는 만 15세 이상)만 가입할 수 있어 가입 대상에 제한이 있다.","news_context":"ISA 세제 개편에 대한 투자자 불만 기사를 통해 ISA의 주요 특징과 장점을 이해하는 것이 필요합니다.","news_url":"https://n.news.naver.com/mnews/article/366/0001184801?sid=101","options":["① 비과세 한도 없이 투자수익 전체에 대해 세금을 부과하지 않는 완전 비과세 상품이다.","② 한 계좌에 예금, 펀드, ELS 등 다양한 금융 상품을 담아 통합 관리할 수 있는 계좌이다.","③ 투자 손실이 발생하더라도 다른 상품의 이익과 통산(상계)하여 세액을 계산할 수 없다.","④ 가입 대상에 제한이 없어 미성년자도 본인 명의로 자유롭게 가입할 수 있다."]},{"id":1844,"category":"시사상식","question":"공정거래위원회가 금융권의 국고채 담합 의혹을 조사하고 있는 상황이 시중은행에 미칠 수 있는 영향으로 옳지 않은 것은?","answer":"① 은행의 국고채 인수 업무 중단으로 정부의 재정 조달 계획에 전면적인 차질이 발생함.","explanation":"국고채 담합 조사는 은행의 내부 통제 강화와 재무적 부담을 야기할 수 있지만, 은행의 국고채 인수 업무가 전면 중단되어 정부 재정 조달 계획에 전면적인 차질이 발생할 정도의 영향은 일반적으로 예상하기 어렵다. [오답해설] ② 공정위 조사는 국고채 시장의 투명성과 공정성 강화를 위한 은행 내부 통제 시스템 강화로 이어질 수 있으며, ③ 과징금 부과 시 은행의 재무 건전성에 단기적인 부담으로 작용할 수 있는 것은 당연한 결과이고, ④ 은행의 국고채 거래 참여 위축은 국고채 시장의 유동성 감소로 이어질 수 있다.","news_context":"공정위가 금융권의 국고채 담합 의혹을 정조준하고 최대 15조원 과징금을 예고했다는 기사는 은행의 규제 리스크와 시장 영향을 보여줍니다.","news_url":"https://www.mk.co.kr/news/economy/12119507","options":["① 은행의 국고채 인수 업무 중단으로 정부의 재정 조달 계획에 전면적인 차질이 발생함.","② 국고채 시장의 투명성과 공정성 제고를 위한 내부 통제 시스템 강화 압박.","③ 과징금 부과 시 은행의 재무 건전성에 단기적인 부담으로 작용할 수 있음.","④ 은행의 국고채 거래 참여가 위축되어 국고채 시장 유동성에 부정적 영향을 미칠 수 있음."]},{"id":1845,"category":"시사상식","question":"다음 중 6월 경상수지 흑자 확대가 한국 경제 및 금융 시장에 미칠 영향으로 가장 가능성이 높은 것은?","answer":"④ 외국 자본 유입 증가로 원화 가치 상승 압력이 발생할 수 있다.","explanation":"경상수지 흑자는 외화 유입을 늘려 국내 외환 보유고를 확대하고, 이는 원화 가치 상승 압력으로 작용할 수 있어 은행의 외환 부문과 자산 운용에 영향을 미친다. [오답해설] ① 경상수지 흑자 확대가 반드시 국내 소비 부진만을 의미하는 것은 아니며, 예대마진 축소와 직결된다고 보기는 어렵고, ② 흑자 증가는 일반적으로 가격 경쟁력 강화 요인으로 작용하며, 무역수지 적자 전환 가능성은 낮습니다. ③ 흑자는 통화량 증가를 유발할 수 있으나 인플레이션 심화 시 금리 인상 요인이 되기 쉽다.","news_context":"6월 경상수지가 사상 최대 흑자를 기록했다는 소식은 한국 경제의 대외 건전성을 보여주는 중요한 지표입니다.","news_url":"https://www.mk.co.kr/news/economy/12119450","options":["① 국내 소비 부진이 심화되어 은행의 예대마진이 급격히 축소될 것이다.","② 수출 기업의 가격 경쟁력이 약화되어 무역수지 적자로 전환될 가능성이 높다.","③ 인플레이션 압력이 완화되어 중앙은행이 적극적인 금리 인하 정책을 펼칠 것이다.","④ 외국 자본 유입 증가로 원화 가치 상승 압력이 발생할 수 있다."]},{"id":1846,"category":"시사상식","question":"인천 시금고 유치 경쟁이 본격화된다는 뉴스에서 시중은행이 시금고 유치에 적극적으로 나서는 이유가 아닌 것은?","answer":"③ 시금고 유치 과정에서 은행 간 금리 담합이 공정거래법상 예외적으로 허용된다.","explanation":"시중은행이 시금고 유치에 적극적인 이유는 지자체 예산 관리, 지역 관계 강화, 마케팅 효과 등 다양한 이점 때문이며, 금리 담합은 명백한 불법 행위이므로 공식적으로 허용될 수 없다. [오답해설] ① 시금고 유치를 통해 지자체 예산을 독점적으로 관리하며 대규모 자금 운용의 안정성을 확보할 수 있는 것은 은행에게 큰 이점이며, ② 시금고 유치는 해당 지역의 공공기관 및 시민과의 관계를 강화하는 좋은 기회가 되고, ④ 지역 내 영업망 확장 및 잠재 고객 확보에 유리한 마케팅 효과를 기대할 수 있는 것은 시금고 유치의 핵심적인 간접적 이득이다.","news_context":"인천 17조 시금고 전쟁이 본격화된다는 기사는 은행 간 경쟁의 한 단면을 보여줍니다.","news_url":"https://n.news.naver.com/mnews/article/666/0000118215?sid=102","options":["① 대규모 지자체 자금 운용으로 안정적인 이자 수익을 확보할 수 있다.","② 해당 지자체의 공공기관 및 시민과의 관계를 강화하여 브랜드 이미지를 제고할 수 있다.","③ 시금고 유치 과정에서 은행 간 금리 담합이 공정거래법상 예외적으로 허용된다.","④ 지역 내 영업 기반 확대 및 잠재적인 신규 고객 확보에 유리한 마케팅 효과가 있다."]},{"id":53,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
