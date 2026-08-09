@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-10 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-10 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-10 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음은 유럽연합(EU) 회원국들이 발행하는 국채를 담보로 하여 발행되는 역내 채권에 대한 설명이다. 유로존 회원국들의 국채 담보 증권을 풀링(pooling)하여 발행되는 유럽 공통 안전자산 형태의 부채로, 유럽중앙은행(ECB)의 통화정책 수단으로 활용될 가능성도 언급되는 이 금융용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 유로본드</li><li>② 유럽 담보부채권(ESN)</li><li>③ 커버드본드</li><li>④ 자산유동화증권(ABS)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 유럽 담보부채권(ESN)</p>
+      <p><strong>해설:</strong> 유럽 담보부채권(ESN)은 EU 회원국들의 국채를 담보로 발행되는 유럽 공통의 안전자산 형태 부채입니다. [오답해설] ① 유로본드는 여러 나라의 통화로 발행되는 국제 채권으로 특정 담보가 명시적이지 않습니다. ③ 커버드본드는 금융기관이 주택담보대출채권 등을 담보로 발행하는 채권입니다. ④ 자산유동화증권(ABS)은 다양한 자산을 묶어 유동화한 증권으로, 국가의 국채를 담보로 하는 ESN과는 차이가 있습니다.</p>
+      <p>관련 시사 뉴스: EU 회원국들의 국채를 담보로 발행되는 역내 채권으로, 유럽 공통 안전자산으로 불린다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 정부가 예산 편성 시 예상했던 것보다 실제로 더 많이 걷힌 세금을 의미하는 용어는 무엇인가? 이는 경기 회복, 물가 상승, 기업 실적 개선 등의 요인으로 발생하며, 국가 재정 운영에 유연성을 제공하기도 한다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 세수 결손</li><li>② 세입 예산</li><li>③ 추가 세수</li><li>④ 재정 흑자</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 추가 세수</p>
+      <p><strong>해설:</strong> 추가 세수는 정부가 예산 편성 시 예상했던 세입보다 실제로 더 많이 걷힌 세금을 말합니다. [오답해설] ① 세수 결손은 예상보다 세금이 적게 걷힌 경우를 의미합니다. ② 세입 예산은 정부가 예상하는 수입 규모를 뜻합니다. ④ 재정 흑자는 정부의 총 수입이 총 지출보다 많은 상태를 의미하며, 추가 세수가 그 원인이 될 수는 있지만 개념 자체는 다릅니다.</p>
+      <p>관련 시사 뉴스: 정부가 예산 편성 시 예상했던 세입보다 실제로 더 많이 걷힌 세금을 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 금융당국이 온라인 쇼핑 이력 등 비금융 데이터를 활용하여 새로운 신용을 평가하는 지표를 도입하고 있습니다. 특히, 신용 이력이 부족한 청년층이나 주부 등의 금융 접근성을 높이는 것을 목표로 하는 이 지표는 무엇일까요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 신용성장스코어</li><li>② 대안신용평가모델</li><li>③ 사회적 신용지수</li><li>④ 디지털 신용평가</li>
+      </ul>
+      <p><strong>정답:</strong> ① 신용성장스코어</p>
+      <p><strong>해설:</strong> 신용성장스코어는 비금융 데이터를 활용하여 신용 이력이 부족한 금융 소외 계층의 신용도를 새롭게 평가하는 지표입니다. [오답해설] ② 대안신용평가모델은 비금융 데이터를 활용한 신용평가 방식 전반을 통칭하는 개념으로, 신용성장스코어는 그 모델 중 하나로 볼 수 있습니다. ③ 사회적 신용지수는 중국 등 일부 국가에서 시민의 사회적 행동을 점수화하여 관리하는 제도로, 금융권 신용평가와는 차이가 있습니다. ④ 디지털 신용평가는 디지털 기술을 활용한 신용평가 방식 전반을 의미하며, 신용성장스코어보다 넓은 개념입니다.</p>
+      <p>관련 시사 뉴스: 온라인쇼핑 이력도 신용 반영 … 당국 '신용성장스코어' 도입</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 은행 예금을 블록체인상에서 토큰화하여 발행하는 디지털 화폐의 한 형태로, 예금과 동일하게 1:1로 가치가 보장되며 실시간으로 송금 및 결제가 가능한 특징을 가진 금융 신조어는 무엇일까요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 예금토큰</li><li>② 중앙은행 디지털화폐(CBDC)</li><li>③ 스테이블코인</li><li>④ 민간 디지털화폐</li>
+      </ul>
+      <p><strong>정답:</strong> ① 예금토큰</p>
+      <p><strong>해설:</strong> 예금토큰은 은행 예금을 블록체인 기술을 활용하여 토큰 형태로 발행함으로써 디지털 자산 시장에서 은행 예금과 동일한 효력을 가지게 하는 디지털 화폐입니다. [오답해설] ② 중앙은행 디지털화폐(CBDC)는 중앙은행이 발행하는 법정 디지털 화폐로, 민간 은행의 예금 기반이 아닌 중앙은행 자체 부채입니다. ③ 스테이블코인은 가치 변동성을 줄이기 위해 특정 자산(법정화폐, 금 등)에 연동하여 발행되는 암호화폐 전반을 의미하며, 예금토큰은 스테이블코인의 한 유형으로 볼 수 있으나 은행 예금을 직접 토큰화한다는 점에서 차이가 있습니다. ④ 민간 디지털화폐는 특정 주체가 발행하는 다양한 형태의 디지털 화폐를 포괄하는 용어로, 예금토큰은 그 중 은행 예금 기반의 특정 형태입니다.</p>
+      <p>관련 시사 뉴스: 은행 문 닫아도 즉시 대금 결제...하루 10억弗 거래되는 ‘씨티 예금토큰’</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 정부의 세제 개편안 재검토 논의가 있는 ISA(개인종합자산관리계좌)에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 비과세 혜택과 저율 분리과세 혜택을 동시에 제공하여 투자 수익에 대한 세금 부담을 줄여준다.</li><li>② 만 19세 이상 대한민국 거주자는 누구나 가입할 수 있으며, 가입 즉시 모든 투자가 가능하다.</li><li>③ 예금, 펀드, 주식 등 다양한 금융 상품에 투자할 수 있지만, 채권은 투자 대상에서 제외된다.</li><li>④ 서민형 ISA의 경우 연간 납입 한도는 4,000만원이며, 총 납입 한도는 제한이 없다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 비과세 혜택과 저율 분리과세 혜택을 동시에 제공하여 투자 수익에 대한 세금 부담을 줄여준다.</p>
+      <p><strong>해설:</strong> ISA는 비과세 혜택과 비과세 한도 초과분에 대한 저율 분리과세 혜택을 제공하여 투자 수익에 대한 세금 부담을 경감시켜주는 대표적인 절세 상품입니다. [오답해설] ② 가입 즉시 모든 투자가 가능한 것은 아니며, 가입 유형(서민형, 일반형 등)에 따라 가입 조건이 다르거나 계좌 유지 의무 기간이 있을 수 있습니다. ③ 채권은 투자 대상에 포함됩니다. ④ 서민형 ISA의 연간 납입 한도는 현재 2,000만원이며, 총 납입 한도는 1억원으로 제한됩니다.</p>
+      <p>관련 시사 뉴스: 정부, 2026 세제개편안 일부 '재검토'…ISA·주가 누르기 방지법 손질하...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 신혼부부 및 청년층 대상 주택 관련 저금리 대출 상품의 '결혼 페널티' 논란이 제기되고 있습니다. 이러한 논란과 관련하여 현재 정책 및 제도의 특징에 대해 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택 구입 자금 대출 심사 시 부부 합산 소득이 일정 기준을 초과하면 저금리 대출 자격에서 제외될 수 있다.</li><li>② 결혼 전 각자 청년 대출을 이용하던 부부가 결혼 후 합산 소득으로 인해 대출 자격을 상실하는 경우가 '결혼 페널티'의 주요 내용 중 하나이다.</li><li>③ 자녀가 없는 신혼부부에게는 특별 공급 등의 주택 관련 혜택이 주어지지 않아 결혼에 대한 유인이 감소한다.</li><li>④ 정책 당국은 '결혼 페널티' 문제 해결을 위해 신혼부부 특례 대출의 소득 기준을 상향 조정하는 방안을 검토하고 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 자녀가 없는 신혼부부에게는 특별 공급 등의 주택 관련 혜택이 주어지지 않아 결혼에 대한 유인이 감소한다.</p>
+      <p><strong>해설:</strong> 자녀가 없는 신혼부부에게도 특별 공급 등의 주택 관련 혜택이 주어지지만, 자녀 수에 따라 가점 등에서 차이가 있을 수 있어 유자녀 가구에 비해 불리하게 작용할 수 있다는 의미로 해석되기도 합니다. 그러나 "주어지지 않아"는 명확히 틀린 설명입니다. [오답해설] ① 현재 대부분의 신혼부부 저금리 대출은 부부 합산 소득 기준을 두고 있어, 이를 초과하면 대상에서 제외될 수 있습니다. ② 결혼 전에는 개인 소득 기준으로 청년 대출을 이용하다가 결혼 후 부부 합산 소득이 기준을 넘어 저금리 대출 자격을 상실하는 경우가 대표적인 결혼 페널티 사례로 꼽힙니다. ④ 정부 및 정책 당국은 이러한 결혼 페널티 논란을 인지하고 있으며, 신혼부부 특례 대출의 소득 기준 상향 등 제도 개선 방안을 활발히 검토 중입니다.</p>
+      <p>관련 시사 뉴스: “부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 뉴스에서 언급된 '단일종목 레버리지 규제'와 관련하여, 레버리지 ETF에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 장기적인 관점에서 시장의 우상향을 기대하고 투자하기에 적합하며, 복리 효과로 인해 장기 수익률이 안정적이다.</li><li>② 기초자산 가격 변동의 2배, 3배 등 정해진 배수만큼 수익률을 추종하여, 시장 상승기에는 일반 ETF보다 높은 수익을 기대할 수 있다.</li><li>③ 레버리지 ETF는 인버스 ETF와 달리 하락장에서도 수익을 낼 수 있는 상품으로 설계된다.</li><li>④ 규제의 주요 목적은 특정 종목에 대한 과도한 투기적 자금 쏠림을 방지하여 시장 변동성을 완화하는 데 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 기초자산 가격 변동의 2배, 3배 등 정해진 배수만큼 수익률을 추종하여, 시장 상승기에는 일반 ETF보다 높은 수익을 기대할 수 있다.</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초자산 가격 변동에 정해진 배수만큼 연동되어 수익률이 결정되므로, 시장이 예측한 방향으로 움직일 때 일반 ETF 대비 높은 수익을 얻을 수 있습니다. [오답해설] ① 레버리지 ETF는 복리 효과로 인해 장기 투자 시 기초자산의 누적 수익률과 괴리가 커질 수 있어, 단기 투자에 더 적합하며 장기 수익률이 안정적이지 않습니다. ③ 레버리지 ETF는 시장 상승에 베팅하는 상품이며, 하락장에서 수익을 내는 상품은 인버스(Inverse) ETF입니다. ④ 규제의 주요 목적 중 하나는 과도한 투기적 투자를 억제하고 투자자 보호를 강화하는 것이 맞지만, '단일종목' 레버리지 규제는 특정 종목의 과열을 막기 위한 것입니다.</p>
+      <p>관련 시사 뉴스: 단일종목 레버리지 규제 효과…증시 거래대금 절반 달했던 ETF 거래 급감</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. "역머니무브에 … 4%대 저축銀 예금 실종"이라는 뉴스 제목에서 유추할 수 있는 역머니무브 현상이 은행권에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 시중은행과 저축은행 간의 예금 금리 경쟁이 심화되어 전반적인 시장 금리가 하락하는 경향을 보인다.</li><li>② 저축은행의 대출 심사 기준이 완화되어 저신용자들의 자금 조달이 용이해진다.</li><li>③ 저축은행의 수신 잔액 감소로 대출 여력이 축소되어 기업 및 가계 대출 금리 인상 압박이 커진다.</li><li>④ 투자자들이 고위험 자산인 주식이나 펀드 시장으로 자금을 이동시켜 은행권의 유동성 위기가 심화된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 저축은행의 수신 잔액 감소로 대출 여력이 축소되어 기업 및 가계 대출 금리 인상 압박이 커진다.</p>
+      <p><strong>해설:</strong> 역머니무브는 자금이 고금리 상품이나 시중은행으로 이동하는 현상으로, 저축은행의 수신 기반을 약화시켜 대출 여력을 축소하고, 이는 대출 금리 인상 압박으로 이어질 수 있습니다. [오답해설] ① 역머니무브는 대개 금리 상승기에 고금리 상품으로 자금이 이동하는 현상이므로, 은행 간 금리 경쟁은 심화될 수 있으나 전반적인 시장 금리가 하락한다는 것은 인과관계가 맞지 않습니다. ② 수신 잔액 감소로 대출 여력이 축소되면 오히려 대출 심사가 강화될 가능성이 높습니다. ④ 역머니무브는 주로 안전자산(예금) 내에서의 이동을 의미하며, 고위험 자산으로의 이동과는 직접적인 관련이 적습니다.</p>
+      <p>관련 시사 뉴스: 역머니무브에 … 4%대 저축銀 예금 실종</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. "기업 자금난 '경고등'… 어음부도율 13개월만에 최고"라는 뉴스 기사가 은행의 기업 여신 업무에 미칠 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기업의 자금난 해소를 위해 은행들은 단기 운전자금 대출 금리를 인하하여 유동성 지원을 확대할 것이다.</li><li>② 어음부도율 증가는 기업들의 자금 조달 다변화를 유도하여 은행 대출 의존도를 낮추는 효과를 가져온다.</li><li>③ 은행은 대출 자산의 건전성 유지를 위해 부동산 프로젝트 파이낸싱(PF) 대출 비중을 확대할 가능성이 높다.</li><li>④ 은행들은 기업의 신용 위험 증가에 따라 대출 심사 기준을 강화하고 부실채권 관리를 우선순위에 둘 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 은행들은 기업의 신용 위험 증가에 따라 대출 심사 기준을 강화하고 부실채권 관리를 우선순위에 둘 것이다.</p>
+      <p><strong>해설:</strong> 어음부도율 증가는 기업들의 재무 건전성 악화 및 자금난 심화를 의미하므로, 은행은 잠재적 부실 위험에 대비하여 기업 대출에 대한 심사를 강화하고 부실채권 관리를 철저히 할 것입니다. [오답해설] ① 기업의 신용 위험이 높아지는 상황에서 은행이 무작정 대출 금리를 인하하기는 어렵고, 오히려 위험 프리미엄을 높여 금리 인상 요인으로 작용할 수 있습니다. ② 어음부도율 증가는 기업의 신용도 하락을 의미하여, 은행 대출뿐만 아니라 다른 자금 조달원에서도 어려움을 겪을 수 있습니다. ③ 기업의 신용 위험이 증가하는 상황에서 부동산 PF 대출은 자체적으로 높은 위험을 내포하므로, 은행이 건전성 유지를 위해 PF 대출 비중을 확대하기는 어렵습니다.</p>
+      <p>관련 시사 뉴스: 기업 자금난 '경고등'… 어음부도율 13개월만에 최고</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. "가계대출 차주 100명중 13명, 소득 70% 빚 갚는데 쓴다"는 기사를 통해 은행의 가계 여신 건전성과 관련하여 추론할 수 있는 내용으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행들은 대출 리스크 관리를 위해 총부채상환비율(DTI) 규제를 완화하여 신규 대출을 확대할 것이다.</li><li>② DSR(총부채원리금상환비율)이 높은 차주 비중 증가는 은행의 대출 자산 건전성 악화로 이어질 잠재적 위험을 내포한다.</li><li>③ 금리 인상기에는 차주들의 원리금 상환 부담이 일시적으로 증가하지만, 은행의 총 연체율에는 큰 영향을 미치지 않는다.</li><li>④ 가계대출 연체율이 상승하는 상황에서 은행은 우량 차주 중심으로 대출을 확대하여 수익성을 제고할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② DSR(총부채원리금상환비율)이 높은 차주 비중 증가는 은행의 대출 자산 건전성 악화로 이어질 잠재적 위험을 내포한다.</p>
+      <p><strong>해설:</strong> 소득 대비 원리금 상환 비중이 높은 차주가 많다는 것은 가계의 채무 상환 능력이 취약하다는 것을 의미하며, 이는 금리 인상 등 외부 충격 발생 시 연체율 상승 및 은행 대출 자산 건전성 악화로 이어질 수 있는 심각한 잠재적 위험입니다. [오답해설] ① DSR이 높은 차주 비중이 증가하는 상황은 리스크가 확대되는 것이므로, 은행들은 DTI 규제를 완화하기보다는 오히려 강화하거나 신규 대출을 더욱 보수적으로 운용할 가능성이 높습니다. ③ 금리 인상기에는 원리금 상환 부담이 증가하고, 이것이 지속될 경우 차주들의 상환 능력 약화로 연체율이 상승하여 은행의 건전성에 직접적인 영향을 미칩니다. ④ 가계대출 연체율이 상승하는 상황에서는 리스크 관리가 최우선이므로, 무분별한 대출 확대보다는 건전성 관리에 집중하게 됩니다. 우량 차주 대출 확대도 중요하지만, 전체적인 리스크 상황을 고려할 때 제한적일 수 있습니다.</p>
+      <p>관련 시사 뉴스: 가계대출 차주 100명중 13명, 소득 70% 빚 갚는데 쓴다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-10</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1869,"category":"시사금융용어","question":"다음은 유럽연합(EU) 회원국들이 발행하는 국채를 담보로 하여 발행되는 역내 채권에 대한 설명이다. 유로존 회원국들의 국채 담보 증권을 풀링(pooling)하여 발행되는 유럽 공통 안전자산 형태의 부채로, 유럽중앙은행(ECB)의 통화정책 수단으로 활용될 가능성도 언급되는 이 금융용어는 무엇인가?","answer":"② 유럽 담보부채권(ESN)","explanation":"유럽 담보부채권(ESN)은 EU 회원국들의 국채를 담보로 발행되는 유럽 공통의 안전자산 형태 부채입니다. [오답해설] ① 유로본드는 여러 나라의 통화로 발행되는 국제 채권으로 특정 담보가 명시적이지 않습니다. ③ 커버드본드는 금융기관이 주택담보대출채권 등을 담보로 발행하는 채권입니다. ④ 자산유동화증권(ABS)은 다양한 자산을 묶어 유동화한 증권으로, 국가의 국채를 담보로 하는 ESN과는 차이가 있습니다.","news_context":"EU 회원국들의 국채를 담보로 발행되는 역내 채권으로, 유럽 공통 안전자산으로 불린다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4425695","options":["① 유로본드","② 유럽 담보부채권(ESN)","③ 커버드본드","④ 자산유동화증권(ABS)"]},{"id":1870,"category":"시사금융용어","question":"정부가 예산 편성 시 예상했던 것보다 실제로 더 많이 걷힌 세금을 의미하는 용어는 무엇인가? 이는 경기 회복, 물가 상승, 기업 실적 개선 등의 요인으로 발생하며, 국가 재정 운영에 유연성을 제공하기도 한다.","answer":"③ 추가 세수","explanation":"추가 세수는 정부가 예산 편성 시 예상했던 세입보다 실제로 더 많이 걷힌 세금을 말합니다. [오답해설] ① 세수 결손은 예상보다 세금이 적게 걷힌 경우를 의미합니다. ② 세입 예산은 정부가 예상하는 수입 규모를 뜻합니다. ④ 재정 흑자는 정부의 총 수입이 총 지출보다 많은 상태를 의미하며, 추가 세수가 그 원인이 될 수는 있지만 개념 자체는 다릅니다.","news_context":"정부가 예산 편성 시 예상했던 세입보다 실제로 더 많이 걷힌 세금을 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4424546","options":["① 세수 결손","② 세입 예산","③ 추가 세수","④ 재정 흑자"]},{"id":1871,"category":"금융용어","question":"금융당국이 온라인 쇼핑 이력 등 비금융 데이터를 활용하여 새로운 신용을 평가하는 지표를 도입하고 있습니다. 특히, 신용 이력이 부족한 청년층이나 주부 등의 금융 접근성을 높이는 것을 목표로 하는 이 지표는 무엇일까요?","answer":"① 신용성장스코어","explanation":"신용성장스코어는 비금융 데이터를 활용하여 신용 이력이 부족한 금융 소외 계층의 신용도를 새롭게 평가하는 지표입니다. [오답해설] ② 대안신용평가모델은 비금융 데이터를 활용한 신용평가 방식 전반을 통칭하는 개념으로, 신용성장스코어는 그 모델 중 하나로 볼 수 있습니다. ③ 사회적 신용지수는 중국 등 일부 국가에서 시민의 사회적 행동을 점수화하여 관리하는 제도로, 금융권 신용평가와는 차이가 있습니다. ④ 디지털 신용평가는 디지털 기술을 활용한 신용평가 방식 전반을 의미하며, 신용성장스코어보다 넓은 개념입니다.","news_context":"온라인쇼핑 이력도 신용 반영 … 당국 '신용성장스코어' 도입","news_url":"https://www.mk.co.kr/news/economy/12122258","options":["① 신용성장스코어","② 대안신용평가모델","③ 사회적 신용지수","④ 디지털 신용평가"]},{"id":1872,"category":"금융용어","question":"은행 예금을 블록체인상에서 토큰화하여 발행하는 디지털 화폐의 한 형태로, 예금과 동일하게 1:1로 가치가 보장되며 실시간으로 송금 및 결제가 가능한 특징을 가진 금융 신조어는 무엇일까요?","answer":"① 예금토큰","explanation":"예금토큰은 은행 예금을 블록체인 기술을 활용하여 토큰 형태로 발행함으로써 디지털 자산 시장에서 은행 예금과 동일한 효력을 가지게 하는 디지털 화폐입니다. [오답해설] ② 중앙은행 디지털화폐(CBDC)는 중앙은행이 발행하는 법정 디지털 화폐로, 민간 은행의 예금 기반이 아닌 중앙은행 자체 부채입니다. ③ 스테이블코인은 가치 변동성을 줄이기 위해 특정 자산(법정화폐, 금 등)에 연동하여 발행되는 암호화폐 전반을 의미하며, 예금토큰은 스테이블코인의 한 유형으로 볼 수 있으나 은행 예금을 직접 토큰화한다는 점에서 차이가 있습니다. ④ 민간 디지털화폐는 특정 주체가 발행하는 다양한 형태의 디지털 화폐를 포괄하는 용어로, 예금토큰은 그 중 은행 예금 기반의 특정 형태입니다.","news_context":"은행 문 닫아도 즉시 대금 결제...하루 10억弗 거래되는 ‘씨티 예금토큰’","news_url":"https://n.news.naver.com/mnews/article/011/0004650061?sid=101","options":["① 예금토큰","② 중앙은행 디지털화폐(CBDC)","③ 스테이블코인","④ 민간 디지털화폐"]},{"id":1873,"category":"세부지식","question":"정부의 세제 개편안 재검토 논의가 있는 ISA(개인종합자산관리계좌)에 대한 설명으로 옳은 것은?","answer":"① 비과세 혜택과 저율 분리과세 혜택을 동시에 제공하여 투자 수익에 대한 세금 부담을 줄여준다.","explanation":"ISA는 비과세 혜택과 비과세 한도 초과분에 대한 저율 분리과세 혜택을 제공하여 투자 수익에 대한 세금 부담을 경감시켜주는 대표적인 절세 상품입니다. [오답해설] ② 가입 즉시 모든 투자가 가능한 것은 아니며, 가입 유형(서민형, 일반형 등)에 따라 가입 조건이 다르거나 계좌 유지 의무 기간이 있을 수 있습니다. ③ 채권은 투자 대상에 포함됩니다. ④ 서민형 ISA의 연간 납입 한도는 현재 2,000만원이며, 총 납입 한도는 1억원으로 제한됩니다.","news_context":"정부, 2026 세제개편안 일부 '재검토'…ISA·주가 누르기 방지법 손질하...","news_url":"http://www.intn.co.kr/news/articleView.html?idxno=2052439","options":["① 비과세 혜택과 저율 분리과세 혜택을 동시에 제공하여 투자 수익에 대한 세금 부담을 줄여준다.","② 만 19세 이상 대한민국 거주자는 누구나 가입할 수 있으며, 가입 즉시 모든 투자가 가능하다.","③ 예금, 펀드, 주식 등 다양한 금융 상품에 투자할 수 있지만, 채권은 투자 대상에서 제외된다.","④ 서민형 ISA의 경우 연간 납입 한도는 4,000만원이며, 총 납입 한도는 제한이 없다."]},{"id":1874,"category":"세부지식","question":"최근 신혼부부 및 청년층 대상 주택 관련 저금리 대출 상품의 '결혼 페널티' 논란이 제기되고 있습니다. 이러한 논란과 관련하여 현재 정책 및 제도의 특징에 대해 옳지 않은 것은?","answer":"③ 자녀가 없는 신혼부부에게는 특별 공급 등의 주택 관련 혜택이 주어지지 않아 결혼에 대한 유인이 감소한다.","explanation":"자녀가 없는 신혼부부에게도 특별 공급 등의 주택 관련 혜택이 주어지지만, 자녀 수에 따라 가점 등에서 차이가 있을 수 있어 유자녀 가구에 비해 불리하게 작용할 수 있다는 의미로 해석되기도 합니다. 그러나 \"주어지지 않아\"는 명확히 틀린 설명입니다. [오답해설] ① 현재 대부분의 신혼부부 저금리 대출은 부부 합산 소득 기준을 두고 있어, 이를 초과하면 대상에서 제외될 수 있습니다. ② 결혼 전에는 개인 소득 기준으로 청년 대출을 이용하다가 결혼 후 부부 합산 소득이 기준을 넘어 저금리 대출 자격을 상실하는 경우가 대표적인 결혼 페널티 사례로 꼽힙니다. ④ 정부 및 정책 당국은 이러한 결혼 페널티 논란을 인지하고 있으며, 신혼부부 특례 대출의 소득 기준 상향 등 제도 개선 방안을 활발히 검토 중입니다.","news_context":"“부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”","news_url":"https://www.mk.co.kr/news/economy/12122400","options":["① 주택 구입 자금 대출 심사 시 부부 합산 소득이 일정 기준을 초과하면 저금리 대출 자격에서 제외될 수 있다.","② 결혼 전 각자 청년 대출을 이용하던 부부가 결혼 후 합산 소득으로 인해 대출 자격을 상실하는 경우가 '결혼 페널티'의 주요 내용 중 하나이다.","③ 자녀가 없는 신혼부부에게는 특별 공급 등의 주택 관련 혜택이 주어지지 않아 결혼에 대한 유인이 감소한다.","④ 정책 당국은 '결혼 페널티' 문제 해결을 위해 신혼부부 특례 대출의 소득 기준을 상향 조정하는 방안을 검토하고 있다."]},{"id":1875,"category":"세부지식","question":"뉴스에서 언급된 '단일종목 레버리지 규제'와 관련하여, 레버리지 ETF에 대한 설명으로 옳은 것은?","answer":"② 기초자산 가격 변동의 2배, 3배 등 정해진 배수만큼 수익률을 추종하여, 시장 상승기에는 일반 ETF보다 높은 수익을 기대할 수 있다.","explanation":"레버리지 ETF는 기초자산 가격 변동에 정해진 배수만큼 연동되어 수익률이 결정되므로, 시장이 예측한 방향으로 움직일 때 일반 ETF 대비 높은 수익을 얻을 수 있습니다. [오답해설] ① 레버리지 ETF는 복리 효과로 인해 장기 투자 시 기초자산의 누적 수익률과 괴리가 커질 수 있어, 단기 투자에 더 적합하며 장기 수익률이 안정적이지 않습니다. ③ 레버리지 ETF는 시장 상승에 베팅하는 상품이며, 하락장에서 수익을 내는 상품은 인버스(Inverse) ETF입니다. ④ 규제의 주요 목적 중 하나는 과도한 투기적 투자를 억제하고 투자자 보호를 강화하는 것이 맞지만, '단일종목' 레버리지 규제는 특정 종목의 과열을 막기 위한 것입니다.","news_context":"단일종목 레버리지 규제 효과…증시 거래대금 절반 달했던 ETF 거래 급감","news_url":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608091302236530302","options":["① 장기적인 관점에서 시장의 우상향을 기대하고 투자하기에 적합하며, 복리 효과로 인해 장기 수익률이 안정적이다.","② 기초자산 가격 변동의 2배, 3배 등 정해진 배수만큼 수익률을 추종하여, 시장 상승기에는 일반 ETF보다 높은 수익을 기대할 수 있다.","③ 레버리지 ETF는 인버스 ETF와 달리 하락장에서도 수익을 낼 수 있는 상품으로 설계된다.","④ 규제의 주요 목적은 특정 종목에 대한 과도한 투기적 자금 쏠림을 방지하여 시장 변동성을 완화하는 데 있다."]},{"id":1876,"category":"시사","question":"\"역머니무브에 … 4%대 저축銀 예금 실종\"이라는 뉴스 제목에서 유추할 수 있는 역머니무브 현상이 은행권에 미치는 영향으로 가장 적절한 것은?","answer":"③ 저축은행의 수신 잔액 감소로 대출 여력이 축소되어 기업 및 가계 대출 금리 인상 압박이 커진다.","explanation":"역머니무브는 자금이 고금리 상품이나 시중은행으로 이동하는 현상으로, 저축은행의 수신 기반을 약화시켜 대출 여력을 축소하고, 이는 대출 금리 인상 압박으로 이어질 수 있습니다. [오답해설] ① 역머니무브는 대개 금리 상승기에 고금리 상품으로 자금이 이동하는 현상이므로, 은행 간 금리 경쟁은 심화될 수 있으나 전반적인 시장 금리가 하락한다는 것은 인과관계가 맞지 않습니다. ② 수신 잔액 감소로 대출 여력이 축소되면 오히려 대출 심사가 강화될 가능성이 높습니다. ④ 역머니무브는 주로 안전자산(예금) 내에서의 이동을 의미하며, 고위험 자산으로의 이동과는 직접적인 관련이 적습니다.","news_context":"역머니무브에 … 4%대 저축銀 예금 실종","news_url":"https://www.mk.co.kr/news/economy/12122259","options":["① 시중은행과 저축은행 간의 예금 금리 경쟁이 심화되어 전반적인 시장 금리가 하락하는 경향을 보인다.","② 저축은행의 대출 심사 기준이 완화되어 저신용자들의 자금 조달이 용이해진다.","③ 저축은행의 수신 잔액 감소로 대출 여력이 축소되어 기업 및 가계 대출 금리 인상 압박이 커진다.","④ 투자자들이 고위험 자산인 주식이나 펀드 시장으로 자금을 이동시켜 은행권의 유동성 위기가 심화된다."]},{"id":1877,"category":"시사","question":"\"기업 자금난 '경고등'… 어음부도율 13개월만에 최고\"라는 뉴스 기사가 은행의 기업 여신 업무에 미칠 영향으로 옳은 것은?","answer":"④ 은행들은 기업의 신용 위험 증가에 따라 대출 심사 기준을 강화하고 부실채권 관리를 우선순위에 둘 것이다.","explanation":"어음부도율 증가는 기업들의 재무 건전성 악화 및 자금난 심화를 의미하므로, 은행은 잠재적 부실 위험에 대비하여 기업 대출에 대한 심사를 강화하고 부실채권 관리를 철저히 할 것입니다. [오답해설] ① 기업의 신용 위험이 높아지는 상황에서 은행이 무작정 대출 금리를 인하하기는 어렵고, 오히려 위험 프리미엄을 높여 금리 인상 요인으로 작용할 수 있습니다. ② 어음부도율 증가는 기업의 신용도 하락을 의미하여, 은행 대출뿐만 아니라 다른 자금 조달원에서도 어려움을 겪을 수 있습니다. ③ 기업의 신용 위험이 증가하는 상황에서 부동산 PF 대출은 자체적으로 높은 위험을 내포하므로, 은행이 건전성 유지를 위해 PF 대출 비중을 확대하기는 어렵습니다.","news_context":"기업 자금난 '경고등'… 어음부도율 13개월만에 최고","news_url":"https://www.mk.co.kr/news/economy/12122187","options":["① 기업의 자금난 해소를 위해 은행들은 단기 운전자금 대출 금리를 인하하여 유동성 지원을 확대할 것이다.","② 어음부도율 증가는 기업들의 자금 조달 다변화를 유도하여 은행 대출 의존도를 낮추는 효과를 가져온다.","③ 은행은 대출 자산의 건전성 유지를 위해 부동산 프로젝트 파이낸싱(PF) 대출 비중을 확대할 가능성이 높다.","④ 은행들은 기업의 신용 위험 증가에 따라 대출 심사 기준을 강화하고 부실채권 관리를 우선순위에 둘 것이다."]},{"id":1878,"category":"시사","question":"\"가계대출 차주 100명중 13명, 소득 70% 빚 갚는데 쓴다\"는 기사를 통해 은행의 가계 여신 건전성과 관련하여 추론할 수 있는 내용으로 가장 적절한 것은?","answer":"② DSR(총부채원리금상환비율)이 높은 차주 비중 증가는 은행의 대출 자산 건전성 악화로 이어질 잠재적 위험을 내포한다.","explanation":"소득 대비 원리금 상환 비중이 높은 차주가 많다는 것은 가계의 채무 상환 능력이 취약하다는 것을 의미하며, 이는 금리 인상 등 외부 충격 발생 시 연체율 상승 및 은행 대출 자산 건전성 악화로 이어질 수 있는 심각한 잠재적 위험입니다. [오답해설] ① DSR이 높은 차주 비중이 증가하는 상황은 리스크가 확대되는 것이므로, 은행들은 DTI 규제를 완화하기보다는 오히려 강화하거나 신규 대출을 더욱 보수적으로 운용할 가능성이 높습니다. ③ 금리 인상기에는 원리금 상환 부담이 증가하고, 이것이 지속될 경우 차주들의 상환 능력 약화로 연체율이 상승하여 은행의 건전성에 직접적인 영향을 미칩니다. ④ 가계대출 연체율이 상승하는 상황에서는 리스크 관리가 최우선이므로, 무분별한 대출 확대보다는 건전성 관리에 집중하게 됩니다. 우량 차주 대출 확대도 중요하지만, 전체적인 리스크 상황을 고려할 때 제한적일 수 있습니다.","news_context":"가계대출 차주 100명중 13명, 소득 70% 빚 갚는데 쓴다","news_url":"https://www.mk.co.kr/news/economy/12121211","options":["① 은행들은 대출 리스크 관리를 위해 총부채상환비율(DTI) 규제를 완화하여 신규 대출을 확대할 것이다.","② DSR(총부채원리금상환비율)이 높은 차주 비중 증가는 은행의 대출 자산 건전성 악화로 이어질 잠재적 위험을 내포한다.","③ 금리 인상기에는 차주들의 원리금 상환 부담이 일시적으로 증가하지만, 은행의 총 연체율에는 큰 영향을 미치지 않는다.","④ 가계대출 연체율이 상승하는 상황에서 은행은 우량 차주 중심으로 대출을 확대하여 수익성을 제고할 것이다."]},{"id":56,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
