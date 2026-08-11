@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-12 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-12 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-12 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 주식 거래 완료 후, 고객과 증권사 간에 거래 내역의 정확성을 다시 확인하는 절차로, 주로 장 마감 후 발생할 수 있는 착오를 방지하기 위해 수행되는 금융용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 마크 투 마켓(Mark-to-Market)</li><li>② 결제 불이행(Settlement Failure)</li><li>③ 레이트 체크(Rate Check)</li><li>④ 백 테스트(Backtest)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 레이트 체크(Rate Check)</p>
+      <p><strong>해설:</strong> 레이트 체크는 주식 거래 완료 후 거래 내역의 정확성을 확인하는 절차입니다. [오답해설] ① 마크 투 마켓은 보유 자산을 시장 가격으로 재평가하는 것을 의미합니다. ② 결제 불이행은 약속된 날짜에 거래 대금이나 증권이 인도되지 않는 상황을 말합니다. ④ 백 테스트는 과거 데이터를 이용하여 특정 투자 전략의 유효성을 검증하는 과정입니다.</p>
+      <p>관련 시사 뉴스: 레이트 체크는 고객과 증권사 간 거래 완료 후 착오 방지를 위해 거래 내역을 다시 확인하는 절차를 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 국내 주식시장인 코스피가 롤러코스터처럼 급등과 급락을 반복하며 매우 큰 변동성을 보이는 현상을 일컫는 신조어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 롤러코스피(Roller-KOSPI)</li><li>② 데드 캣 바운스(Dead Cat Bounce)</li><li>③ 블랙 스완(Black Swan)</li><li>④ 베어마켓 랠리(Bear Market Rally)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 롤러코스피(Roller-KOSPI)</p>
+      <p><strong>해설:</strong> 롤러코스피는 코스피 시장의 급등락 반복으로 인한 큰 변동성을 나타내는 신조어입니다. [오답해설] ② 데드 캣 바운스는 크게 하락하던 주가가 일시적으로 반등하는 현상을 뜻합니다. ③ 블랙 스완은 발생 가능성이 매우 낮지만 일단 발생하면 엄청난 충격을 주는 사건을 의미합니다. ④ 베어마켓 랠리는 약세장(하락장) 속에서 일시적으로 주가가 상승하는 현상을 말합니다.</p>
+      <p>관련 시사 뉴스: 롤러코스피는 국내 주식시장의 대표 지수인 코스피가 롤러코스터처럼 급등락을 반복하며 불안정한 움직임을 보이는 현상을 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. ISA(개인종합자산관리계좌)에 대한 설명 중 옳지 않은 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 만 19세 이상 대한민국 거주자라면 누구나 가입할 수 있으나, 금융소득종합과세 대상자는 가입이 제한될 수 있다.</li><li>② 계좌에서 발생한 소득에 대해 비과세 및 저율과세 혜택이 제공된다.</li><li>③ 국내 상장 주식, 펀드, ELS 등 다양한 금융상품을 한 계좌에서 통합 관리할 수 있다.</li><li>④ 의무 가입 기간은 3년이며, 이후에는 자유롭게 연장하거나 해지할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 의무 가입 기간은 3년이며, 이후에는 자유롭게 연장하거나 해지할 수 있다.</p>
+      <p><strong>해설:</strong> ISA는 의무 가입 기간이 5년(서민형 및 농어민형은 3년)이므로, 3년이라고 단정하는 것은 옳지 않습니다. [오답해설] ① 만 19세 이상 거주자(근로소득자는 만 15세 이상)는 가입 가능하지만, 직전 3개년도 금융소득종합과세 대상이었던 자는 가입이 제한될 수 있습니다. ② ISA는 계좌 내 수익에 대해 일정 한도 내에서 비과세 혜택을 제공하며, 초과분에 대해서는 저율 분리과세합니다. ③ ISA는 국내 상장 주식, 펀드, ELS 등 다양한 금융상품을 한 계좌에 담아 통합 관리할 수 있는 장점이 있습니다.</p>
+      <p>관련 시사 뉴스: ISA 가입 고객들이 은행 대신 증권사를 선택하는 현상이 두드러지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 은행 대출금리를 구성하는 요소 중, 기준금리에 더해져 최종 대출금리를 결정하며 차주의 신용도, 담보, 대출 종류 등에 따라 달라지는 금리를 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 예대마진</li><li>② 명목금리</li><li>③ 가산금리</li><li>④ 기준금리</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 가산금리</p>
+      <p><strong>해설:</strong> 가산금리는 은행이 대출 시 기준금리에 더하는 금리로, 차주의 신용도, 대출 종류, 은행의 마진 등을 반영하여 결정됩니다. [오답해설] ① 예대마진은 대출금리에서 예금금리를 뺀 차이를 의미하며, 은행의 수익성을 나타내는 지표입니다. ② 명목금리는 인플레이션의 영향을 고려하지 않은, 표면적으로 드러나는 금리입니다. ④ 기준금리는 한국은행이 정하는 금리로, 시중금리의 척도 역할을 합니다.</p>
+      <p>관련 시사 뉴스: 은행권이 주택담보대출을 줄이기 위해 가산금리 비중을 높이고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 ISA(개인종합자산관리계좌) 시장에서 은행이 증권사에 비해 고객 확보에 어려움을 겪는 주요 원인으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행 ISA 상품의 높은 수수료율</li><li>② 은행의 낮은 고객 신뢰도</li><li>③ 은행의 증권 거래 기능 부재로 인한 투자 상품 다양성 부족</li><li>④ 은행 ISA 가입 시 부과되는 추가 세금 부담</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행의 증권 거래 기능 부재로 인한 투자 상품 다양성 부족</p>
+      <p><strong>해설:</strong> 은행 ISA는 예적금, 펀드 등 제한적인 상품 운용이 가능하며, 국내 주식 직접 투자가 불가능하여 증권사에 비해 투자 상품 다양성이 부족한 점이 고객 이탈의 주요 원인입니다. [오답해설] ① 은행 ISA 상품의 수수료율이 항상 증권사보다 높다고 단정하기는 어려우며, 상품 구조에 따라 다릅니다. ② 은행은 일반적으로 높은 고객 신뢰도를 가지고 있으므로, 낮은 신뢰도가 직접적인 고객 이탈의 주요 원인이라고 보기 어렵습니다. ④ ISA는 기본적으로 세제 혜택을 제공하는 상품이므로, 가입 시 추가 세금 부담이 부과된다는 설명은 사실이 아닙니다.</p>
+      <p>관련 시사 뉴스: 새로운 ISA 고객의 99%가 증권사를 찾는 현상이 나타나며 은행들이 ISA 시장에서 어려움을 겪고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 정부의 가계대출 규제 강화가 금융시장에 미치는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 저축은행 등 제2금융권으로 대출 수요가 몰려 연체율이 상승할 우려가 있다.</li><li>② 은행권의 주택담보대출 문턱이 높아져 신규 대출이 어려워질 수 있다.</li><li>③ 총부채원리금상환비율(DSR) 규제 완화로 차주들의 대출 여력이 확대될 수 있다.</li><li>④ 저신용 및 다중채무자들이 제도권 금융 대신 고금리 대출로 내몰릴 위험이 커진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 총부채원리금상환비율(DSR) 규제 완화로 차주들의 대출 여력이 확대될 수 있다.</p>
+      <p><strong>해설:</strong> 정부의 가계대출 규제 강화는 DSR 규제 강화로 이어져 차주들의 대출 여력을 축소시키는 경향이 있으므로, 완화된다는 설명은 옳지 않습니다. [오답해설] ① 은행권 대출이 어려워지면서 저축은행 등 제2금융권으로 대출 수요가 증가할 수 있으며, 이들이 고금리로 대출을 받음에 따라 경기 악화 시 연체율이 급증할 위험이 있습니다. ② 가계대출 규제 강화는 은행권이 대출 심사를 강화하고 대출 한도를 줄이게 하여 주택담보대출의 문턱을 높입니다. ④ 정부 규제로 은행 대출이 어려워진 저신용 및 다중채무자들은 불가피하게 고금리의 제2금융권이나 사금융으로 이동할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 가계대출 규제 강화로 인해 저신용자들이 저축은행 등 고금리 대출로 내몰리는 '대출난민' 현상이 심화되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 한국은행이 "특별한 충격이 없다면 금리 추가 인상"을 시사하는 상황에서, 시중은행의 경영 및 고객 자산 관리 측면에서 예상되는 주요 변화로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 대출 금리 인하 경쟁 심화로 은행의 순이자마진(NIM)이 감소할 것이다.</li><li>② 대출 연체율 증가 압박이 커지고, 기업 및 가계의 이자 부담이 가중될 것이다.</li><li>③ 예대율 규제 완화로 은행의 대출 확대 여력이 크게 증가할 것이다.</li><li>④ 해외 자본 유입이 감소하고 원화 가치가 하락하여 외환 익스포저가 감소할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 대출 연체율 증가 압박이 커지고, 기업 및 가계의 이자 부담이 가중될 것이다.</p>
+      <p><strong>해설:</strong> 한국은행의 금리 추가 인상은 시중은행의 대출 금리를 상승시켜 기업과 가계의 이자 부담을 가중시키고, 이는 대출 연체율 증가로 이어질 가능성이 큽니다. [오답해설] ① 금리 인상은 일반적으로 대출 금리 인상으로 이어져 은행의 순이자마진(NIM) 개선에 긍정적일 수 있습니다. ③ 금리 인상 시 예대율 규제는 직접적인 완화 요인이 아니며, 오히려 유동성 관리에 대한 압박이 있을 수 있습니다. ④ 금리 인상은 일반적으로 해외 자본 유입을 촉진하고 원화 가치를 상승시키는 경향이 있어 외환 익스포저 관리의 방향이 다를 수 있습니다.</p>
+      <p>관련 시사 뉴스: 한국은행이 '특별한 충격이 없다면' 금리 추가 인상을 시사하며 향후 금리 정책에 대한 기조를 밝혔습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 정부의 반도체 산업 지원 정책이 국내 금융권에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 반도체 수출 증가로 인한 외환 수입 감소로 은행의 외환 포지션이 악화될 것이다.</li><li>② 반도체 산업 성장에 따른 관련 기업들의 자금 수요 증가로 기업금융 부문이 활성화될 것이다.</li><li>③ 반도체 관련 기업에 대한 프로젝트 파이낸싱(PF) 및 설비 투자 대출이 감소할 것이다.</li><li>④ 반도체 산업 육성 정책으로 인해 가계 대출 금리가 급격히 하락할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 반도체 산업 성장에 따른 관련 기업들의 자금 수요 증가로 기업금융 부문이 활성화될 것이다.</p>
+      <p><strong>해설:</strong> 정부의 반도체 산업 지원은 관련 기업들의 투자 및 생산 확대를 위한 자금 수요를 증대시켜, 은행의 기업금융 부문 활성화에 기여할 것입니다. [오답해설] ① 반도체 수출 증가는 외화 유입을 늘려 외환 수입을 증가시키고, 은행의 외환 포지션에 긍정적인 영향을 미칠 수 있습니다. ③ 반도체 산업 지원은 관련 기업들의 프로젝트 파이낸싱 및 설비 투자 대출 수요를 증가시켜 은행 수익 확대에 기여할 가능성이 큽니다. ④ 반도체 산업 육성 정책이 직접적으로 가계 대출 금리를 급격히 하락시키는 주된 요인은 아닙니다.</p>
+      <p>관련 시사 뉴스: 정부가 반도체 산업을 위한 대규모 자금 지원과 인프라 구축에 박차를 가하고 있으며, 반도체 관련 수출액도 역대급을 기록하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 호르무즈 해협의 불확실성이 지속될 경우, 세계 경제 및 국내 금융시장에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 글로벌 공급망 안정화로 인한 교역량 증가로 국내 총생산(GDP)이 급증할 것이다.</li><li>② 국제 유가 하락으로 물가 상승 압력이 완화되어 경기 부양에 긍정적일 것이다.</li><li>③ 안전 자산 선호 심화로 금값이 상승하고, 주식 시장의 변동성이 확대될 것이다.</li><li>④ 원자재 수입 비용 감소로 기업의 생산비가 줄어들어 수출 경쟁력이 강화될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 안전 자산 선호 심화로 금값이 상승하고, 주식 시장의 변동성이 확대될 것이다.</p>
+      <p><strong>해설:</strong> 호르무즈 해협의 불확실성은 중동 정세 불안을 야기하며 국제 유가 상승을 초래하고, 이는 안전 자산 선호 심리를 강화하여 금값 상승과 주식 시장의 변동성 확대로 이어질 수 있습니다. [오답해설] ① 호르무즈 해협의 불확실성은 글로벌 공급망을 불안정하게 만들어 교역량 감소와 국내 GDP 성장 둔화로 이어질 수 있습니다. ② 호르무즈 해협 불확실성은 주요 유조선 통로이므로 국제 유가 상승 압력으로 작용하여 물가 상승 압력을 높일 수 있습니다. ④ 유가 상승은 원자재 수입 비용을 증가시켜 기업의 생산비를 높이고 수출 경쟁력을 약화시킬 수 있습니다.</p>
+      <p>관련 시사 뉴스: 호르무즈 해협의 불확실성이 지속되면서 뉴욕 증시가 하락하고 국제 유가가 상승하는 등 금융시장에 경계감이 고조되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 정부의 금융 공공기관 지방 이전 정책에 대해 금융권 노조가 반대하는 주된 이유와 이로 인해 예상되는 금융권의 변화는 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 금융기관의 수도권 집중이 심화되어 지방 경제 발전에 기여할 기회가 줄어든다.</li><li>② 지방 이전으로 인해 금융기관의 운영 비용이 절감되어 서비스 품질이 향상될 것이다.</li><li>③ 지방 금융시장이 활성화되어 새로운 금융 상품 개발 및 판매가 증가할 것이다.</li><li>④ 금융 인력의 지방 이주에 따른 불편함과 전문 인력 유출 우려가 있으며, 금융 허브 경쟁력이 약화될 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 금융 인력의 지방 이주에 따른 불편함과 전문 인력 유출 우려가 있으며, 금융 허브 경쟁력이 약화될 수 있다.</p>
+      <p><strong>해설:</strong> 금융권 노조는 지방 이전에 따른 직원들의 생활 불편, 전문 인력의 이탈 우려, 그리고 금융 산업의 집적 효과 상실로 인한 국가 금융 경쟁력 약화를 주된 반대 이유로 들고 있습니다. [오답해설] ① 이는 지방 이전 정책의 목표와 상반되는 결과이며, 금융권 노조의 반대 이유는 아닙니다. ② 지방 이전으로 인한 운영 비용 절감은 단기적으로 어려울 수 있으며, 새로운 인프라 구축 등에 추가 비용이 발생할 수 있습니다. ③ 지방 이전이 반드시 지방 금융시장의 활성화와 신상품 개발 증가로 이어진다고 보장하기 어려우며, 인프라나 인력 부족 등의 문제가 발생할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 한국자산관리공사(예보), 국책은행 등 주요 금융 공공기관 노조가 정부의 지방 이전 정책에 반대하며 한목소리를 내고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-12</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1889,"category":"시사금융용어","question":"주식 거래 완료 후, 고객과 증권사 간에 거래 내역의 정확성을 다시 확인하는 절차로, 주로 장 마감 후 발생할 수 있는 착오를 방지하기 위해 수행되는 금융용어는 무엇인가?","answer":"③ 레이트 체크(Rate Check)","explanation":"레이트 체크는 주식 거래 완료 후 거래 내역의 정확성을 확인하는 절차입니다. [오답해설] ① 마크 투 마켓은 보유 자산을 시장 가격으로 재평가하는 것을 의미합니다. ② 결제 불이행은 약속된 날짜에 거래 대금이나 증권이 인도되지 않는 상황을 말합니다. ④ 백 테스트는 과거 데이터를 이용하여 특정 투자 전략의 유효성을 검증하는 과정입니다.","news_context":"레이트 체크는 고객과 증권사 간 거래 완료 후 착오 방지를 위해 거래 내역을 다시 확인하는 절차를 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428630","options":["① 마크 투 마켓(Mark-to-Market)","② 결제 불이행(Settlement Failure)","③ 레이트 체크(Rate Check)","④ 백 테스트(Backtest)"]},{"id":1890,"category":"시사금융용어","question":"국내 주식시장인 코스피가 롤러코스터처럼 급등과 급락을 반복하며 매우 큰 변동성을 보이는 현상을 일컫는 신조어는 무엇인가?","answer":"① 롤러코스피(Roller-KOSPI)","explanation":"롤러코스피는 코스피 시장의 급등락 반복으로 인한 큰 변동성을 나타내는 신조어입니다. [오답해설] ② 데드 캣 바운스는 크게 하락하던 주가가 일시적으로 반등하는 현상을 뜻합니다. ③ 블랙 스완은 발생 가능성이 매우 낮지만 일단 발생하면 엄청난 충격을 주는 사건을 의미합니다. ④ 베어마켓 랠리는 약세장(하락장) 속에서 일시적으로 주가가 상승하는 현상을 말합니다.","news_context":"롤러코스피는 국내 주식시장의 대표 지수인 코스피가 롤러코스터처럼 급등락을 반복하며 불안정한 움직임을 보이는 현상을 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428213","options":["① 롤러코스피(Roller-KOSPI)","② 데드 캣 바운스(Dead Cat Bounce)","③ 블랙 스완(Black Swan)","④ 베어마켓 랠리(Bear Market Rally)"]},{"id":1891,"category":"금융용어","question":"ISA(개인종합자산관리계좌)에 대한 설명 중 옳지 않은 것은?","answer":"④ 의무 가입 기간은 3년이며, 이후에는 자유롭게 연장하거나 해지할 수 있다.","explanation":"ISA는 의무 가입 기간이 5년(서민형 및 농어민형은 3년)이므로, 3년이라고 단정하는 것은 옳지 않습니다. [오답해설] ① 만 19세 이상 거주자(근로소득자는 만 15세 이상)는 가입 가능하지만, 직전 3개년도 금융소득종합과세 대상이었던 자는 가입이 제한될 수 있습니다. ② ISA는 계좌 내 수익에 대해 일정 한도 내에서 비과세 혜택을 제공하며, 초과분에 대해서는 저율 분리과세합니다. ③ ISA는 국내 상장 주식, 펀드, ELS 등 다양한 금융상품을 한 계좌에 담아 통합 관리할 수 있는 장점이 있습니다.","news_context":"ISA 가입 고객들이 은행 대신 증권사를 선택하는 현상이 두드러지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12124828","options":["① 만 19세 이상 대한민국 거주자라면 누구나 가입할 수 있으나, 금융소득종합과세 대상자는 가입이 제한될 수 있다.","② 계좌에서 발생한 소득에 대해 비과세 및 저율과세 혜택이 제공된다.","③ 국내 상장 주식, 펀드, ELS 등 다양한 금융상품을 한 계좌에서 통합 관리할 수 있다.","④ 의무 가입 기간은 3년이며, 이후에는 자유롭게 연장하거나 해지할 수 있다."]},{"id":1892,"category":"금융용어","question":"은행 대출금리를 구성하는 요소 중, 기준금리에 더해져 최종 대출금리를 결정하며 차주의 신용도, 담보, 대출 종류 등에 따라 달라지는 금리를 무엇이라고 하는가?","answer":"③ 가산금리","explanation":"가산금리는 은행이 대출 시 기준금리에 더하는 금리로, 차주의 신용도, 대출 종류, 은행의 마진 등을 반영하여 결정됩니다. [오답해설] ① 예대마진은 대출금리에서 예금금리를 뺀 차이를 의미하며, 은행의 수익성을 나타내는 지표입니다. ② 명목금리는 인플레이션의 영향을 고려하지 않은, 표면적으로 드러나는 금리입니다. ④ 기준금리는 한국은행이 정하는 금리로, 시중금리의 척도 역할을 합니다.","news_context":"은행권이 주택담보대출을 줄이기 위해 가산금리 비중을 높이고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12124322","options":["① 예대마진","② 명목금리","③ 가산금리","④ 기준금리"]},{"id":1893,"category":"세부지식","question":"최근 ISA(개인종합자산관리계좌) 시장에서 은행이 증권사에 비해 고객 확보에 어려움을 겪는 주요 원인으로 가장 적절한 것은?","answer":"③ 은행의 증권 거래 기능 부재로 인한 투자 상품 다양성 부족","explanation":"은행 ISA는 예적금, 펀드 등 제한적인 상품 운용이 가능하며, 국내 주식 직접 투자가 불가능하여 증권사에 비해 투자 상품 다양성이 부족한 점이 고객 이탈의 주요 원인입니다. [오답해설] ① 은행 ISA 상품의 수수료율이 항상 증권사보다 높다고 단정하기는 어려우며, 상품 구조에 따라 다릅니다. ② 은행은 일반적으로 높은 고객 신뢰도를 가지고 있으므로, 낮은 신뢰도가 직접적인 고객 이탈의 주요 원인이라고 보기 어렵습니다. ④ ISA는 기본적으로 세제 혜택을 제공하는 상품이므로, 가입 시 추가 세금 부담이 부과된다는 설명은 사실이 아닙니다.","news_context":"새로운 ISA 고객의 99%가 증권사를 찾는 현상이 나타나며 은행들이 ISA 시장에서 어려움을 겪고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12124828","options":["① 은행 ISA 상품의 높은 수수료율","② 은행의 낮은 고객 신뢰도","③ 은행의 증권 거래 기능 부재로 인한 투자 상품 다양성 부족","④ 은행 ISA 가입 시 부과되는 추가 세금 부담"]},{"id":1894,"category":"세부지식","question":"정부의 가계대출 규제 강화가 금융시장에 미치는 영향으로 옳지 않은 것은?","answer":"③ 총부채원리금상환비율(DSR) 규제 완화로 차주들의 대출 여력이 확대될 수 있다.","explanation":"정부의 가계대출 규제 강화는 DSR 규제 강화로 이어져 차주들의 대출 여력을 축소시키는 경향이 있으므로, 완화된다는 설명은 옳지 않습니다. [오답해설] ① 은행권 대출이 어려워지면서 저축은행 등 제2금융권으로 대출 수요가 증가할 수 있으며, 이들이 고금리로 대출을 받음에 따라 경기 악화 시 연체율이 급증할 위험이 있습니다. ② 가계대출 규제 강화는 은행권이 대출 심사를 강화하고 대출 한도를 줄이게 하여 주택담보대출의 문턱을 높입니다. ④ 정부 규제로 은행 대출이 어려워진 저신용 및 다중채무자들은 불가피하게 고금리의 제2금융권이나 사금융으로 이동할 수 있습니다.","news_context":"가계대출 규제 강화로 인해 저신용자들이 저축은행 등 고금리 대출로 내몰리는 '대출난민' 현상이 심화되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12124323","options":["① 저축은행 등 제2금융권으로 대출 수요가 몰려 연체율이 상승할 우려가 있다.","② 은행권의 주택담보대출 문턱이 높아져 신규 대출이 어려워질 수 있다.","③ 총부채원리금상환비율(DSR) 규제 완화로 차주들의 대출 여력이 확대될 수 있다.","④ 저신용 및 다중채무자들이 제도권 금융 대신 고금리 대출로 내몰릴 위험이 커진다."]},{"id":1895,"category":"시사","question":"한국은행이 \"특별한 충격이 없다면 금리 추가 인상\"을 시사하는 상황에서, 시중은행의 경영 및 고객 자산 관리 측면에서 예상되는 주요 변화로 가장 적절한 것은?","answer":"② 대출 연체율 증가 압박이 커지고, 기업 및 가계의 이자 부담이 가중될 것이다.","explanation":"한국은행의 금리 추가 인상은 시중은행의 대출 금리를 상승시켜 기업과 가계의 이자 부담을 가중시키고, 이는 대출 연체율 증가로 이어질 가능성이 큽니다. [오답해설] ① 금리 인상은 일반적으로 대출 금리 인상으로 이어져 은행의 순이자마진(NIM) 개선에 긍정적일 수 있습니다. ③ 금리 인상 시 예대율 규제는 직접적인 완화 요인이 아니며, 오히려 유동성 관리에 대한 압박이 있을 수 있습니다. ④ 금리 인상은 일반적으로 해외 자본 유입을 촉진하고 원화 가치를 상승시키는 경향이 있어 외환 익스포저 관리의 방향이 다를 수 있습니다.","news_context":"한국은행이 '특별한 충격이 없다면' 금리 추가 인상을 시사하며 향후 금리 정책에 대한 기조를 밝혔습니다.","news_url":"https://www.mk.co.kr/news/economy/12124233","options":["① 대출 금리 인하 경쟁 심화로 은행의 순이자마진(NIM)이 감소할 것이다.","② 대출 연체율 증가 압박이 커지고, 기업 및 가계의 이자 부담이 가중될 것이다.","③ 예대율 규제 완화로 은행의 대출 확대 여력이 크게 증가할 것이다.","④ 해외 자본 유입이 감소하고 원화 가치가 하락하여 외환 익스포저가 감소할 것이다."]},{"id":1896,"category":"시사","question":"정부의 반도체 산업 지원 정책이 국내 금융권에 미칠 영향으로 가장 적절한 것은?","answer":"② 반도체 산업 성장에 따른 관련 기업들의 자금 수요 증가로 기업금융 부문이 활성화될 것이다.","explanation":"정부의 반도체 산업 지원은 관련 기업들의 투자 및 생산 확대를 위한 자금 수요를 증대시켜, 은행의 기업금융 부문 활성화에 기여할 것입니다. [오답해설] ① 반도체 수출 증가는 외화 유입을 늘려 외환 수입을 증가시키고, 은행의 외환 포지션에 긍정적인 영향을 미칠 수 있습니다. ③ 반도체 산업 지원은 관련 기업들의 프로젝트 파이낸싱 및 설비 투자 대출 수요를 증가시켜 은행 수익 확대에 기여할 가능성이 큽니다. ④ 반도체 산업 육성 정책이 직접적으로 가계 대출 금리를 급격히 하락시키는 주된 요인은 아닙니다.","news_context":"정부가 반도체 산업을 위한 대규모 자금 지원과 인프라 구축에 박차를 가하고 있으며, 반도체 관련 수출액도 역대급을 기록하고 있습니다.","news_url":"","options":["① 반도체 수출 증가로 인한 외환 수입 감소로 은행의 외환 포지션이 악화될 것이다.","② 반도체 산업 성장에 따른 관련 기업들의 자금 수요 증가로 기업금융 부문이 활성화될 것이다.","③ 반도체 관련 기업에 대한 프로젝트 파이낸싱(PF) 및 설비 투자 대출이 감소할 것이다.","④ 반도체 산업 육성 정책으로 인해 가계 대출 금리가 급격히 하락할 것이다."]},{"id":1897,"category":"시사","question":"호르무즈 해협의 불확실성이 지속될 경우, 세계 경제 및 국내 금융시장에 미칠 영향으로 가장 적절한 것은?","answer":"③ 안전 자산 선호 심화로 금값이 상승하고, 주식 시장의 변동성이 확대될 것이다.","explanation":"호르무즈 해협의 불확실성은 중동 정세 불안을 야기하며 국제 유가 상승을 초래하고, 이는 안전 자산 선호 심리를 강화하여 금값 상승과 주식 시장의 변동성 확대로 이어질 수 있습니다. [오답해설] ① 호르무즈 해협의 불확실성은 글로벌 공급망을 불안정하게 만들어 교역량 감소와 국내 GDP 성장 둔화로 이어질 수 있습니다. ② 호르무즈 해협 불확실성은 주요 유조선 통로이므로 국제 유가 상승 압력으로 작용하여 물가 상승 압력을 높일 수 있습니다. ④ 유가 상승은 원자재 수입 비용을 증가시켜 기업의 생산비를 높이고 수출 경쟁력을 약화시킬 수 있습니다.","news_context":"호르무즈 해협의 불확실성이 지속되면서 뉴욕 증시가 하락하고 국제 유가가 상승하는 등 금융시장에 경계감이 고조되고 있습니다.","news_url":"","options":["① 글로벌 공급망 안정화로 인한 교역량 증가로 국내 총생산(GDP)이 급증할 것이다.","② 국제 유가 하락으로 물가 상승 압력이 완화되어 경기 부양에 긍정적일 것이다.","③ 안전 자산 선호 심화로 금값이 상승하고, 주식 시장의 변동성이 확대될 것이다.","④ 원자재 수입 비용 감소로 기업의 생산비가 줄어들어 수출 경쟁력이 강화될 것이다."]},{"id":1898,"category":"시사","question":"정부의 금융 공공기관 지방 이전 정책에 대해 금융권 노조가 반대하는 주된 이유와 이로 인해 예상되는 금융권의 변화는 무엇인가?","answer":"④ 금융 인력의 지방 이주에 따른 불편함과 전문 인력 유출 우려가 있으며, 금융 허브 경쟁력이 약화될 수 있다.","explanation":"금융권 노조는 지방 이전에 따른 직원들의 생활 불편, 전문 인력의 이탈 우려, 그리고 금융 산업의 집적 효과 상실로 인한 국가 금융 경쟁력 약화를 주된 반대 이유로 들고 있습니다. [오답해설] ① 이는 지방 이전 정책의 목표와 상반되는 결과이며, 금융권 노조의 반대 이유는 아닙니다. ② 지방 이전으로 인한 운영 비용 절감은 단기적으로 어려울 수 있으며, 새로운 인프라 구축 등에 추가 비용이 발생할 수 있습니다. ③ 지방 이전이 반드시 지방 금융시장의 활성화와 신상품 개발 증가로 이어진다고 보장하기 어려우며, 인프라나 인력 부족 등의 문제가 발생할 수 있습니다.","news_context":"한국자산관리공사(예보), 국책은행 등 주요 금융 공공기관 노조가 정부의 지방 이전 정책에 반대하며 한목소리를 내고 있습니다.","news_url":"https://www.labortoday.co.kr/news/articleView.html?idxno=236196","options":["① 금융기관의 수도권 집중이 심화되어 지방 경제 발전에 기여할 기회가 줄어든다.","② 지방 이전으로 인해 금융기관의 운영 비용이 절감되어 서비스 품질이 향상될 것이다.","③ 지방 금융시장이 활성화되어 새로운 금융 상품 개발 및 판매가 증가할 것이다.","④ 금융 인력의 지방 이주에 따른 불편함과 전문 인력 유출 우려가 있으며, 금융 허브 경쟁력이 약화될 수 있다."]},{"id":58,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
