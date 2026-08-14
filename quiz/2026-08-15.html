@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-15 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-15 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-15 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+소상공인의 상환능력을 정확히 평가하기 위해 기존의 재무제표 중심 평가를 넘어 금융권 데이터 외에 상권, 기업, 개인 정보 등 비금융데이터를 활용하여 다각도로 평가하는 신용평가체계는 무엇인가요?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 기업 신용평가 모형</li><li>② 개인 신용평가 시스템</li><li>③ 소상공인 특화 신용평가체계(SCB)</li><li>④ 담보평가 시스템</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 소상공인 특화 신용평가체계(SCB)</p>
+      <p><strong>해설:</strong> 소상공인 특화 신용평가체계(SCB)는 소상공인의 상환능력을 다각도로 평가하기 위해 금융데이터와 비금융데이터를 함께 활용하는 시스템입니다. [오답해설] ① 기업 신용평가 모형은 일반 기업의 신용을 평가하는 시스템입니다. ② 개인 신용평가 시스템은 개인의 신용을 평가하는 시스템입니다. ④ 담보평가 시스템은 대출 시 담보물의 가치를 평가하는 시스템으로 신용평가와는 다릅니다.</p>
+      <p>관련 시사 뉴스: 소상공인 특화 신용평가체계(SCB)는 금융데이터 외 상권, 기업, 개인 정보 등 비금융데이터를 활용하여 소상공인의 상환능력을 다각도로 평가하는 시스템입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+한 국가의 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 해당 소득 발생 국가와 거주지 국가 모두에서 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약은 무엇인가요?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 조세회피방지협정</li><li>② 이중과세방지협정</li><li>③ 해외금융계좌신고법(FATCA)</li><li>④ OECD 모델 조세협약</li>
+      </ul>
+      <p><strong>정답:</strong> ② 이중과세방지협정</p>
+      <p><strong>해설:</strong> 이중과세방지협정은 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 양국에서 모두 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약입니다. [오답해설] ① 조세회피방지협정은 조세 회피 행위를 막기 위한 협정으로 이중과세 방지와는 목적이 다릅니다. ③ 해외금융계좌신고법(FATCA)은 미국 납세의무자가 해외 금융계좌를 신고하도록 하는 법률입니다. ④ OECD 모델 조세협약은 이중과세방지협정을 체결할 때 참고할 수 있는 표준 모델을 제시하는 것입니다.</p>
+      <p>관련 시사 뉴스: 이중과세방지협정은 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 해당 국가와 거주지 국가 모두에서 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 개별 종목의 일일 수익률을 1배 추종하도록 설계된 파생상품을 뜻하며, 최근 시장의 변동성을 키우는 요인으로 지목되는 금융상품은 무엇입니까?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 단일 레버리지 ETF</li><li>② 인버스 ETF</li><li>③ 합성 레버리지 ETF</li><li>④ 롱숏 펀드</li>
+      </ul>
+      <p><strong>정답:</strong> ① 단일 레버리지 ETF</p>
+      <p><strong>해설:</strong> 단일 레버리지 ETF는 개별 종목의 일일 수익률을 1배로 추종하여 지수 레버리지 상품 대비 특정 종목의 변동성을 직접적으로 반영합니다. [오답해설] ② 인버스 ETF는 기초자산 가격이 하락할 때 수익을 얻는 구조입니다. ③ 합성 레버리지 ETF는 스왑 계약 등 파생상품을 이용하여 기초자산 수익률의 일정 배수를 추종하는 상품입니다. ④ 롱숏 펀드는 주식 매수(Long)와 매도(Short) 포지션을 동시에 취하여 시장 상황과 관계없이 절대 수익을 추구하는 펀드입니다.</p>
+      <p>관련 시사 뉴스: 증권학계는 단일 레버리지 상품이 시장 변동성을 증폭시키는 요인으로 지목하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 기업이 벌어들인 이익을 주주들에게 돌려주는 활동으로, 배당금 지급, 자사주 매입 및 소각, 무상증자 등이 대표적인 방법인 경영 전략은 무엇입니까?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① ESG 경영</li><li>② 지배구조 개선</li><li>③ 주주환원 정책</li><li>④ M&A 전략</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 주주환원 정책</p>
+      <p><strong>해설:</strong> 주주환원 정책은 기업의 이익을 배당, 자사주 매입 및 소각 등을 통해 주주들에게 돌려주는 경영 활동입니다. [오답해설] ① ESG 경영은 환경(Environmental), 사회(Social), 지배구조(Governance) 요소를 기업 경영에 반영하는 것을 의미합니다. ② 지배구조 개선은 기업의 의사결정 투명성과 공정성을 높이는 노력을 말합니다. ④ M&A 전략은 기업의 인수(Merger) 및 합병(Acquisition)을 통해 기업 규모를 확장하거나 새로운 사업 분야로 진출하는 전략입니다.</p>
+      <p>관련 시사 뉴스: 샌디스크가 주주에게 모든 이익을 돌려주는 파격적인 주주환원 정책을 발표하여 주목받고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 금융당국의 가계대출 총량 관리와 관련한 설명으로 옳지 않은 것은 무엇입니까?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 금융당국은 가계대출 총량 목표가 실수요를 지원하며 투기 수요를 자극하는 신호가 아니라고 강조하고 있습니다.</li><li>② 은행들은 가계대출 관리의 명확한 기준 마련을 요구하며 자율적인 운영의 어려움을 표명하고 있습니다.</li><li>③ 총량 규제의 강화는 은행의 대출 심사를 완화하여 실수요자의 자금 접근성을 높이는 효과를 가져옵니다.</li><li>④ 금융당국은 주택담보대출의 경우 주택시장 상황을 면밀히 모니터링하며 필요시 추가적인 대책을 마련할 수 있음을 시사했습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 총량 규제의 강화는 은행의 대출 심사를 완화하여 실수요자의 자금 접근성을 높이는 효과를 가져옵니다.</p>
+      <p><strong>해설:</strong> 가계대출 총량 규제는 대출 총액을 제한하는 것이므로, 은행의 대출 심사를 강화하고 실수요자의 자금 접근성을 낮출 수 있습니다. [오답해설] ① 금융당국은 가계대출 총량 목표가 실수요를 지원하기 위함이며 투기 수요를 자극하는 신호가 아님을 지속적으로 설명하고 있습니다. ② 은행들은 총량 관리 목표 준수를 위해 대출 심사를 강화하고 있어 명확한 기준 없이는 자율적인 운영이 어렵다는 입장을 보이고 있습니다. ④ 금융당국은 가계부채 관리의 일환으로 주택시장 상황에 따라 추가 대책을 마련할 수 있다는 입장을 밝히고 있습니다.</p>
+      <p>관련 시사 뉴스: 금융당국은 가계대출 총량 목표를 실수요 지원을 위한 것으로 설명하며, 금융권에서는 명확한 기준을 요구하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 20년 묵은 '30% 족쇄'라는 표현이 사용되며 투자 규제 완화의 필요성이 제기되고 있는 금융상품은 무엇입니까?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택청약종합저축</li><li>② 퇴직연금</li><li>③ 개인종합자산관리계좌(ISA)</li><li>④ 변액보험</li>
+      </ul>
+      <p><strong>정답:</strong> ② 퇴직연금</p>
+      <p><strong>해설:</strong> 퇴직연금은 운용 자산의 특정 비중(예: 30%) 이상을 위험자산에 투자할 수 없도록 하는 등의 규제('30% 족쇄')가 존재하여 수익률 제고에 한계가 있다는 지적이 있습니다. [오답해설] ① 주택청약종합저축은 주택 구입을 위한 목돈 마련과 주택 청약 자격을 부여하는 상품입니다. ③ 개인종합자산관리계좌(ISA)는 한 계좌에서 다양한 금융상품을 통합 관리하며 세제 혜택을 받을 수 있는 상품입니다. ④ 변액보험은 보험료의 일부를 주식이나 펀드에 투자하여 운용 실적에 따라 보험금이나 해지환급금이 변동하는 상품으로, 보험 관련 문제이므로 본 퀴즈의 출제 범위와 다릅니다.</p>
+      <p>관련 시사 뉴스: 방치된 500조 퇴직연금의 수익률을 높이기 위해 20년 묵은 투자 규제(30% 족쇄)를 풀 때가 되었다는 목소리가 나오고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 2024년 7월부터 원/달러 외환시장이 24시간 개방됨에 따라 은행 외환 업무에 미칠 영향에 대한 설명으로 가장 적절한 것은 무엇입니까?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행들은 24시간 거래 환경에 맞춰 비대면 거래 시스템을 고도화하고 인력 운영 효율성을 재고해야 합니다.</li><li>② 외환시장 변동성이 감소하여 은행의 환리스크 관리 부담이 줄어들 것입니다.</li><li>③ 해외 투자자들의 원화 접근성이 제한되어 국내 자본 시장으로의 자금 유입이 감소할 것입니다.</li><li>④ 은행의 외환거래 수수료 수입이 급감하여 관련 사업의 축소가 예상됩니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 은행들은 24시간 거래 환경에 맞춰 비대면 거래 시스템을 고도화하고 인력 운영 효율성을 재고해야 합니다.</p>
+      <p><strong>해설:</strong> 외환시장 24시간 개방은 은행이 24시간 거래가 가능한 시스템을 구축하고, 심야 시간대 거래 대응을 위한 인력 배치 등 운영 효율성 개선이 필수적입니다. [오답해설] ② 외환시장 개방은 거래량 증가와 함께 시장 변동성을 높일 가능성도 있어 은행의 환리스크 관리의 중요성은 더욱 커질 수 있습니다. ③ 외환시장 24시간 개방은 해외 투자자들의 원화 접근성을 높여 국내 자본 시장으로의 자금 유입을 촉진할 수 있습니다. ④ 거래량 증가로 인해 전체적인 외환거래 수수료 수입은 유지되거나 증가할 가능성이 있으며, 은행들은 경쟁력 확보를 위해 수수료 정책을 재검토할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 외환시장 24시간 개방 한 달 만에 원·달러 거래량이 10% 껑충 뛰며 시장 활성화가 나타나고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 AI 기술 도입이 은행 경영 및 인력 구조에 미치는 영향으로 옳은 것은 무엇입니까?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① AI 기반 상담 시스템 도입으로 인해 은행 상담원 수가 감소하는 추세가 나타나고 있습니다.</li><li>② AI는 주로 단순 반복 업무에만 활용되어 은행의 기업금융 업무에는 큰 변화를 주지 않습니다.</li><li>③ AI 기술 도입은 시스템 유지 보수 비용을 절감하여 은행의 IT 투자 지출을 줄이는 데 기여합니다.</li><li>④ AI 기술 발전으로 인해 은행은 개인 정보 보호 및 보안 관련 규제 부담에서 자유로워집니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① AI 기반 상담 시스템 도입으로 인해 은행 상담원 수가 감소하는 추세가 나타나고 있습니다.</p>
+      <p><strong>해설:</strong> AI 기반 챗봇, 로보어드바이저 등 비대면 상담 시스템의 도입으로 단순 상담 업무를 대체하며 은행 상담원 인력 감축 현상이 나타나고 있습니다. [오답해설] ② AI는 기업 신용 평가, 대출 심사, 맞춤형 금융 상품 추천 등 기업금융 업무 전반에 걸쳐 활용되며 상당한 변화를 가져오고 있습니다. ③ AI 기술 도입 초기에는 시스템 구축 및 고도화를 위한 상당한 IT 투자 지출이 발생할 수 있습니다. ④ AI 활용이 증가할수록 개인 정보 수집 및 활용에 대한 프라이버시 침해, 보안 사고 등의 위험이 커져 관련 규제 준수 및 리스크 관리가 더욱 중요해집니다.</p>
+      <p>관련 시사 뉴스: AI 상담이 늘어나면서 은행 상담원 수가 줄어들고 있으며, AI 데이터센터 및 전력 투자 확대에 따라 은행 기업금융에도 변화가 나타나고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 은행권에서 확산되고 있는 노사 갈등 및 파업과 관련하여 옳지 않은 설명은 무엇입니까?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행권 노사 갈등의 주요 쟁점 중 하나는 본점 인력의 지방 분산 배치와 주 4.5일제 도입에 대한 견해차입니다.</li><li>② 파업 확산은 은행의 고객 서비스 중단, 영업점 운영 차질 등으로 이어져 고객 불편을 초래할 수 있습니다.</li><li>③ 금융 노조는 임금 인상보다는 고용 안정과 복지 혜택 축소 방지에 중점을 두고 파업을 진행하고 있습니다.</li><li>④ 카카오뱅크 등 인터넷전문은행에서도 파업이 발생하며 은행권 전반의 노사 관계 불안정성이 심화되고 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 금융 노조는 임금 인상보다는 고용 안정과 복지 혜택 축소 방지에 중점을 두고 파업을 진행하고 있습니다.</p>
+      <p><strong>해설:</strong> 은행권 파업은 임금 인상, 성과급 문제 등 다양한 요인을 포함하며, 고용 안정과 복지 혜택 축소 방지 외에 임금 인상 또한 주요 쟁점 중 하나입니다. [오답해설] ① 은행권은 본점 인력의 지방 분산 배치와 주 4.5일제 도입 등을 놓고 사측과 노조 간에 의견 차이가 큰 것으로 알려져 있습니다. ② 파업은 영업점 운영에 직접적인 영향을 미쳐 고객 대기 시간 증가, 업무 처리 지연 등 서비스 중단으로 이어질 수 있습니다. ④ 카카오뱅크의 2차 파업 돌입 소식은 인터넷전문은행까지 노사 갈등이 확산되며 은행권 전반의 불안정성을 보여줍니다.</p>
+      <p>관련 시사 뉴스: 은행권에서 지방 이전 및 주4.5일제 갈등, 금융노조 총파업 예고 등으로 노사 갈등이 전방위적으로 확산되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 금리 인상 기조와 소비 둔화 우려가 경제에 미치는 영향에 대한 설명으로 가장 거리가 먼 것은 무엇입습니까?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 금리 인상은 가계의 대출 상환 부담을 가중시켜 소비 여력을 위축시키고 경제 전반의 소비 둔화로 이어질 수 있습니다.</li><li>② 고금리 환경은 기업의 자금 조달 비용을 증가시켜 신규 투자 축소 및 경영 활동 위축을 유발할 수 있습니다.</li><li>③ 소비 둔화는 기업 매출 감소와 실적 악화로 이어져 주식 시장의 하락 압력으로 작용할 수 있습니다.</li><li>④ 고금리는 은행의 예대마진(예금금리와 대출금리의 차이)을 축소시켜 은행의 수익성을 악화시키는 주요 원인이 됩니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 고금리는 은행의 예대마진(예금금리와 대출금리의 차이)을 축소시켜 은행의 수익성을 악화시키는 주요 원인이 됩니다.</p>
+      <p><strong>해설:</strong> 일반적으로 금리 인상기에는 대출금리가 예금금리보다 빠르게, 혹은 더 크게 인상되는 경향이 있어 은행의 예대마진은 확대되고 수익성은 개선되는 경우가 많습니다. [오답해설] ① 금리 인상은 변동금리 대출을 가진 가계의 이자 부담을 늘려 가처분 소득을 줄이고 소비를 위축시킵니다. ② 기업은 자금 조달 시 더 높은 이자를 지불해야 하므로 투자 계획을 보류하거나 축소할 수 있습니다. ③ 소비 둔화는 기업의 실적에 부정적인 영향을 미쳐 투자 심리를 위축시키고 주가 하락으로 이어질 수 있습니다.</p>
+      <p>관련 시사 뉴스: 금리의 역습으로 가계 상환 부담과 소비 여력이 위축될 우려가 제기되고 있으며, 소비 둔화 우려로 뉴욕 증시가 하락했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-15</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1921,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n소상공인의 상환능력을 정확히 평가하기 위해 기존의 재무제표 중심 평가를 넘어 금융권 데이터 외에 상권, 기업, 개인 정보 등 비금융데이터를 활용하여 다각도로 평가하는 신용평가체계는 무엇인가요?","answer":"③ 소상공인 특화 신용평가체계(SCB)","explanation":"소상공인 특화 신용평가체계(SCB)는 소상공인의 상환능력을 다각도로 평가하기 위해 금융데이터와 비금융데이터를 함께 활용하는 시스템입니다. [오답해설] ① 기업 신용평가 모형은 일반 기업의 신용을 평가하는 시스템입니다. ② 개인 신용평가 시스템은 개인의 신용을 평가하는 시스템입니다. ④ 담보평가 시스템은 대출 시 담보물의 가치를 평가하는 시스템으로 신용평가와는 다릅니다.","news_context":"소상공인 특화 신용평가체계(SCB)는 금융데이터 외 상권, 기업, 개인 정보 등 비금융데이터를 활용하여 소상공인의 상환능력을 다각도로 평가하는 시스템입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428845","options":["① 기업 신용평가 모형","② 개인 신용평가 시스템","③ 소상공인 특화 신용평가체계(SCB)","④ 담보평가 시스템"]},{"id":1922,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n한 국가의 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 해당 소득 발생 국가와 거주지 국가 모두에서 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약은 무엇인가요?","answer":"② 이중과세방지협정","explanation":"이중과세방지협정은 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 양국에서 모두 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약입니다. [오답해설] ① 조세회피방지협정은 조세 회피 행위를 막기 위한 협정으로 이중과세 방지와는 목적이 다릅니다. ③ 해외금융계좌신고법(FATCA)은 미국 납세의무자가 해외 금융계좌를 신고하도록 하는 법률입니다. ④ OECD 모델 조세협약은 이중과세방지협정을 체결할 때 참고할 수 있는 표준 모델을 제시하는 것입니다.","news_context":"이중과세방지협정은 거주자 또는 내국법인이 국외에서 얻은 소득에 대해 해당 국가와 거주지 국가 모두에서 과세되는 것을 방지하기 위해 국가 간에 체결하는 조세조약입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429044","options":["① 조세회피방지협정","② 이중과세방지협정","③ 해외금융계좌신고법(FATCA)","④ OECD 모델 조세협약"]},{"id":1923,"category":"금융용어","question":"다음 중 개별 종목의 일일 수익률을 1배 추종하도록 설계된 파생상품을 뜻하며, 최근 시장의 변동성을 키우는 요인으로 지목되는 금융상품은 무엇입니까?","answer":"① 단일 레버리지 ETF","explanation":"단일 레버리지 ETF는 개별 종목의 일일 수익률을 1배로 추종하여 지수 레버리지 상품 대비 특정 종목의 변동성을 직접적으로 반영합니다. [오답해설] ② 인버스 ETF는 기초자산 가격이 하락할 때 수익을 얻는 구조입니다. ③ 합성 레버리지 ETF는 스왑 계약 등 파생상품을 이용하여 기초자산 수익률의 일정 배수를 추종하는 상품입니다. ④ 롱숏 펀드는 주식 매수(Long)와 매도(Short) 포지션을 동시에 취하여 시장 상황과 관계없이 절대 수익을 추구하는 펀드입니다.","news_context":"증권학계는 단일 레버리지 상품이 시장 변동성을 증폭시키는 요인으로 지목하고 있습니다.","news_url":"","options":["① 단일 레버리지 ETF","② 인버스 ETF","③ 합성 레버리지 ETF","④ 롱숏 펀드"]},{"id":1924,"category":"금융용어","question":"기업이 벌어들인 이익을 주주들에게 돌려주는 활동으로, 배당금 지급, 자사주 매입 및 소각, 무상증자 등이 대표적인 방법인 경영 전략은 무엇입니까?","answer":"③ 주주환원 정책","explanation":"주주환원 정책은 기업의 이익을 배당, 자사주 매입 및 소각 등을 통해 주주들에게 돌려주는 경영 활동입니다. [오답해설] ① ESG 경영은 환경(Environmental), 사회(Social), 지배구조(Governance) 요소를 기업 경영에 반영하는 것을 의미합니다. ② 지배구조 개선은 기업의 의사결정 투명성과 공정성을 높이는 노력을 말합니다. ④ M&A 전략은 기업의 인수(Merger) 및 합병(Acquisition)을 통해 기업 규모를 확장하거나 새로운 사업 분야로 진출하는 전략입니다.","news_context":"샌디스크가 주주에게 모든 이익을 돌려주는 파격적인 주주환원 정책을 발표하여 주목받고 있습니다.","news_url":"","options":["① ESG 경영","② 지배구조 개선","③ 주주환원 정책","④ M&A 전략"]},{"id":1925,"category":"세부지식","question":"최근 금융당국의 가계대출 총량 관리와 관련한 설명으로 옳지 않은 것은 무엇입니까?","answer":"③ 총량 규제의 강화는 은행의 대출 심사를 완화하여 실수요자의 자금 접근성을 높이는 효과를 가져옵니다.","explanation":"가계대출 총량 규제는 대출 총액을 제한하는 것이므로, 은행의 대출 심사를 강화하고 실수요자의 자금 접근성을 낮출 수 있습니다. [오답해설] ① 금융당국은 가계대출 총량 목표가 실수요를 지원하기 위함이며 투기 수요를 자극하는 신호가 아님을 지속적으로 설명하고 있습니다. ② 은행들은 총량 관리 목표 준수를 위해 대출 심사를 강화하고 있어 명확한 기준 없이는 자율적인 운영이 어렵다는 입장을 보이고 있습니다. ④ 금융당국은 가계부채 관리의 일환으로 주택시장 상황에 따라 추가 대책을 마련할 수 있다는 입장을 밝히고 있습니다.","news_context":"금융당국은 가계대출 총량 목표를 실수요 지원을 위한 것으로 설명하며, 금융권에서는 명확한 기준을 요구하고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12128215","options":["① 금융당국은 가계대출 총량 목표가 실수요를 지원하며 투기 수요를 자극하는 신호가 아니라고 강조하고 있습니다.","② 은행들은 가계대출 관리의 명확한 기준 마련을 요구하며 자율적인 운영의 어려움을 표명하고 있습니다.","③ 총량 규제의 강화는 은행의 대출 심사를 완화하여 실수요자의 자금 접근성을 높이는 효과를 가져옵니다.","④ 금융당국은 주택담보대출의 경우 주택시장 상황을 면밀히 모니터링하며 필요시 추가적인 대책을 마련할 수 있음을 시사했습니다."]},{"id":1926,"category":"세부지식","question":"20년 묵은 '30% 족쇄'라는 표현이 사용되며 투자 규제 완화의 필요성이 제기되고 있는 금융상품은 무엇입니까?","answer":"② 퇴직연금","explanation":"퇴직연금은 운용 자산의 특정 비중(예: 30%) 이상을 위험자산에 투자할 수 없도록 하는 등의 규제('30% 족쇄')가 존재하여 수익률 제고에 한계가 있다는 지적이 있습니다. [오답해설] ① 주택청약종합저축은 주택 구입을 위한 목돈 마련과 주택 청약 자격을 부여하는 상품입니다. ③ 개인종합자산관리계좌(ISA)는 한 계좌에서 다양한 금융상품을 통합 관리하며 세제 혜택을 받을 수 있는 상품입니다. ④ 변액보험은 보험료의 일부를 주식이나 펀드에 투자하여 운용 실적에 따라 보험금이나 해지환급금이 변동하는 상품으로, 보험 관련 문제이므로 본 퀴즈의 출제 범위와 다릅니다.","news_context":"방치된 500조 퇴직연금의 수익률을 높이기 위해 20년 묵은 투자 규제(30% 족쇄)를 풀 때가 되었다는 목소리가 나오고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12127955","options":["① 주택청약종합저축","② 퇴직연금","③ 개인종합자산관리계좌(ISA)","④ 변액보험"]},{"id":1927,"category":"세부지식","question":"2024년 7월부터 원/달러 외환시장이 24시간 개방됨에 따라 은행 외환 업무에 미칠 영향에 대한 설명으로 가장 적절한 것은 무엇입니까?","answer":"① 은행들은 24시간 거래 환경에 맞춰 비대면 거래 시스템을 고도화하고 인력 운영 효율성을 재고해야 합니다.","explanation":"외환시장 24시간 개방은 은행이 24시간 거래가 가능한 시스템을 구축하고, 심야 시간대 거래 대응을 위한 인력 배치 등 운영 효율성 개선이 필수적입니다. [오답해설] ② 외환시장 개방은 거래량 증가와 함께 시장 변동성을 높일 가능성도 있어 은행의 환리스크 관리의 중요성은 더욱 커질 수 있습니다. ③ 외환시장 24시간 개방은 해외 투자자들의 원화 접근성을 높여 국내 자본 시장으로의 자금 유입을 촉진할 수 있습니다. ④ 거래량 증가로 인해 전체적인 외환거래 수수료 수입은 유지되거나 증가할 가능성이 있으며, 은행들은 경쟁력 확보를 위해 수수료 정책을 재검토할 수 있습니다.","news_context":"외환시장 24시간 개방 한 달 만에 원·달러 거래량이 10% 껑충 뛰며 시장 활성화가 나타나고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12127950","options":["① 은행들은 24시간 거래 환경에 맞춰 비대면 거래 시스템을 고도화하고 인력 운영 효율성을 재고해야 합니다.","② 외환시장 변동성이 감소하여 은행의 환리스크 관리 부담이 줄어들 것입니다.","③ 해외 투자자들의 원화 접근성이 제한되어 국내 자본 시장으로의 자금 유입이 감소할 것입니다.","④ 은행의 외환거래 수수료 수입이 급감하여 관련 사업의 축소가 예상됩니다."]},{"id":1928,"category":"시사","question":"최근 AI 기술 도입이 은행 경영 및 인력 구조에 미치는 영향으로 옳은 것은 무엇입니까?","answer":"① AI 기반 상담 시스템 도입으로 인해 은행 상담원 수가 감소하는 추세가 나타나고 있습니다.","explanation":"AI 기반 챗봇, 로보어드바이저 등 비대면 상담 시스템의 도입으로 단순 상담 업무를 대체하며 은행 상담원 인력 감축 현상이 나타나고 있습니다. [오답해설] ② AI는 기업 신용 평가, 대출 심사, 맞춤형 금융 상품 추천 등 기업금융 업무 전반에 걸쳐 활용되며 상당한 변화를 가져오고 있습니다. ③ AI 기술 도입 초기에는 시스템 구축 및 고도화를 위한 상당한 IT 투자 지출이 발생할 수 있습니다. ④ AI 활용이 증가할수록 개인 정보 수집 및 활용에 대한 프라이버시 침해, 보안 사고 등의 위험이 커져 관련 규제 준수 및 리스크 관리가 더욱 중요해집니다.","news_context":"AI 상담이 늘어나면서 은행 상담원 수가 줄어들고 있으며, AI 데이터센터 및 전력 투자 확대에 따라 은행 기업금융에도 변화가 나타나고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12128224","options":["① AI 기반 상담 시스템 도입으로 인해 은행 상담원 수가 감소하는 추세가 나타나고 있습니다.","② AI는 주로 단순 반복 업무에만 활용되어 은행의 기업금융 업무에는 큰 변화를 주지 않습니다.","③ AI 기술 도입은 시스템 유지 보수 비용을 절감하여 은행의 IT 투자 지출을 줄이는 데 기여합니다.","④ AI 기술 발전으로 인해 은행은 개인 정보 보호 및 보안 관련 규제 부담에서 자유로워집니다."]},{"id":1929,"category":"시사","question":"최근 은행권에서 확산되고 있는 노사 갈등 및 파업과 관련하여 옳지 않은 설명은 무엇입니까?","answer":"③ 금융 노조는 임금 인상보다는 고용 안정과 복지 혜택 축소 방지에 중점을 두고 파업을 진행하고 있습니다.","explanation":"은행권 파업은 임금 인상, 성과급 문제 등 다양한 요인을 포함하며, 고용 안정과 복지 혜택 축소 방지 외에 임금 인상 또한 주요 쟁점 중 하나입니다. [오답해설] ① 은행권은 본점 인력의 지방 분산 배치와 주 4.5일제 도입 등을 놓고 사측과 노조 간에 의견 차이가 큰 것으로 알려져 있습니다. ② 파업은 영업점 운영에 직접적인 영향을 미쳐 고객 대기 시간 증가, 업무 처리 지연 등 서비스 중단으로 이어질 수 있습니다. ④ 카카오뱅크의 2차 파업 돌입 소식은 인터넷전문은행까지 노사 갈등이 확산되며 은행권 전반의 불안정성을 보여줍니다.","news_context":"은행권에서 지방 이전 및 주4.5일제 갈등, 금융노조 총파업 예고 등으로 노사 갈등이 전방위적으로 확산되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12128613","options":["① 은행권 노사 갈등의 주요 쟁점 중 하나는 본점 인력의 지방 분산 배치와 주 4.5일제 도입에 대한 견해차입니다.","② 파업 확산은 은행의 고객 서비스 중단, 영업점 운영 차질 등으로 이어져 고객 불편을 초래할 수 있습니다.","③ 금융 노조는 임금 인상보다는 고용 안정과 복지 혜택 축소 방지에 중점을 두고 파업을 진행하고 있습니다.","④ 카카오뱅크 등 인터넷전문은행에서도 파업이 발생하며 은행권 전반의 노사 관계 불안정성이 심화되고 있습니다."]},{"id":1930,"category":"시사","question":"최근 금리 인상 기조와 소비 둔화 우려가 경제에 미치는 영향에 대한 설명으로 가장 거리가 먼 것은 무엇입습니까?","answer":"④ 고금리는 은행의 예대마진(예금금리와 대출금리의 차이)을 축소시켜 은행의 수익성을 악화시키는 주요 원인이 됩니다.","explanation":"일반적으로 금리 인상기에는 대출금리가 예금금리보다 빠르게, 혹은 더 크게 인상되는 경향이 있어 은행의 예대마진은 확대되고 수익성은 개선되는 경우가 많습니다. [오답해설] ① 금리 인상은 변동금리 대출을 가진 가계의 이자 부담을 늘려 가처분 소득을 줄이고 소비를 위축시킵니다. ② 기업은 자금 조달 시 더 높은 이자를 지불해야 하므로 투자 계획을 보류하거나 축소할 수 있습니다. ③ 소비 둔화는 기업의 실적에 부정적인 영향을 미쳐 투자 심리를 위축시키고 주가 하락으로 이어질 수 있습니다.","news_context":"금리의 역습으로 가계 상환 부담과 소비 여력이 위축될 우려가 제기되고 있으며, 소비 둔화 우려로 뉴욕 증시가 하락했습니다.","news_url":"https://www.mhns.co.kr/news/articleView.html?idxno=756531","options":["① 금리 인상은 가계의 대출 상환 부담을 가중시켜 소비 여력을 위축시키고 경제 전반의 소비 둔화로 이어질 수 있습니다.","② 고금리 환경은 기업의 자금 조달 비용을 증가시켜 신규 투자 축소 및 경영 활동 위축을 유발할 수 있습니다.","③ 소비 둔화는 기업 매출 감소와 실적 악화로 이어져 주식 시장의 하락 압력으로 작용할 수 있습니다.","④ 고금리는 은행의 예대마진(예금금리와 대출금리의 차이)을 축소시켜 은행의 수익성을 악화시키는 주요 원인이 됩니다."]},{"id":61,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
