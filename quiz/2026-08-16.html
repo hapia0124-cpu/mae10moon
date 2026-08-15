@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-16 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-16 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-16 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음은 금융 취약계층의 생활 안정을 지원하기 위해 낮은 신용등급의 개인에게 제공되는 대출 상품에 대한 설명이다. 정부 지원을 받아 금융기관이 취급하며, 생활비 등 긴급 자금으로 활용될 수 있는 이 용어로 가장 적절한 것은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 긴급자금대출</li><li>② 정책서민대출</li><li>③ 중저신용자 생활안정자금</li><li>④ 취약계층지원금</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 중저신용자 생활안정자금</p>
+      <p><strong>해설:</strong> 중저신용자 생활안정자금은 금융 취약계층의 생활 안정을 지원하기 위해 낮은 신용등급의 개인에게 제공되는 대출 상품입니다. [오답해설] ① 긴급자금대출은 긴급한 상황에 필요한 자금을 빌리는 일반적인 대출을 의미하며, 신용등급 특정이나 특정 계층 지원에 국한되지 않습니다. ② 정책서민대출은 정부가 서민층 지원을 위해 제공하는 다양한 대출 상품을 포괄하는 상위 개념입니다. ④ 취약계층지원금은 주로 정부가 지원하는 현금성 지급 형태로, 대출 상품과는 다릅니다.</p>
+      <p>관련 시사 뉴스: 중저신용자 생활안정자금은 금융 취약계층의 생활 안정을 지원하기 위해 새마을금고 등이 취급하는 대출 상품이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 주식 시장에서 코스피(KOSPI) 지수가 마치 롤러코스터처럼 극심한 등락을 반복하며 엄청난 변동성을 보이는 현상을 비유적으로 이르는 용어로 가장 적절한 것은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 코스피 쇼크</li><li>② 롤러코스피</li><li>③ 베어마켓 랠리</li><li>④ 블랙 스완</li>
+      </ul>
+      <p><strong>정답:</strong> ② 롤러코스피</p>
+      <p><strong>해설:</strong> 롤러코스피는 코스피 지수가 롤러코스터처럼 극심한 등락을 반복하는 변동성 높은 시장 상황을 의미합니다. [오답해설] ① 코스피 쇼크는 코스피 지수가 급락하여 시장에 충격을 주는 현상을 의미하며, 등락을 반복하는 변동성과는 차이가 있습니다. ③ 베어마켓 랠리는 하락장(약세장)에서 일시적으로 주가가 상승하는 현상을 말합니다. ④ 블랙 스완은 예상치 못했던 극단적인 부정적 사건이 발생하여 시장에 큰 충격을 주는 현상입니다.</p>
+      <p>관련 시사 뉴스: 롤러코스피는 코스피 지수가 롤러코스터처럼 급등락을 반복하는 극심한 변동성 장세를 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 실물 자산의 소유권을 블록체인 상의 디지털 토큰으로 표현하여, 해당 자산을 분할하거나 더 쉽게 거래할 수 있도록 하는 기술을 지칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 디지털 증권</li><li>② 토큰화 자산</li><li>③ NFT (Non-Fungible Token)</li><li>④ STO (Security Token Offering)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 토큰화 자산</p>
+      <p><strong>해설:</strong> 토큰화 자산은 실물 자산을 블록체인 기반의 디지털 토큰으로 변환하여 유동성을 높이고 거래를 용이하게 하는 기술입니다. [오답해설] ① 디지털 증권은 전통적인 증권의 형태를 디지털화한 것을 의미하며, 토큰화 자산은 더 넓은 범위의 실물 자산에 적용될 수 있습니다. ③ NFT는 대체 불가능한 토큰으로, 고유한 디지털 자산의 소유권을 나타내지만 분할이 어려운 특징이 있습니다. ④ STO는 블록체인 기반의 증권을 발행하여 자금을 조달하는 방식을 의미하며, 토큰화 자산은 STO의 기반 기술로 활용될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 솔라나, 토큰화 미 국채 순유입 5349억원</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 탈중앙화 금융(DeFi) 플랫폼에 예치되어 있는 모든 자산의 총 가치를 나타내는 지표로, 해당 플랫폼의 규모와 건전성을 평가하는 데 사용되는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① APY (Annual Percentage Yield)</li><li>② Market Cap (Market Capitalization)</li><li>③ TVL (Total Value Locked)</li><li>④ FDV (Fully Diluted Valuation)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ TVL (Total Value Locked)</p>
+      <p><strong>해설:</strong> TVL은 탈중앙화 금융(DeFi) 플랫폼에 예치된 총 자산 가치를 의미하며, 플랫폼의 규모와 신뢰도를 나타내는 핵심 지표입니다. [오답해설] ① APY는 연간 수익률을 의미하며, 예치된 자산의 수익성을 나타냅니다. ② Market Cap은 특정 암호화폐의 전체 시가총액을 의미합니다. ④ FDV는 특정 암호화폐가 발행될 수 있는 모든 물량을 기준으로 한 시가총액을 의미합니다.</p>
+      <p>관련 시사 뉴스: 로빈후드체인, 출범 한 달 만에 TVL 1조원 육박…유니스왑이 유동성 전...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 뉴스에서 "방치된 퇴직연금" 및 "30% 족쇄"로 언급된 내용과 관련하여, 현재 퇴직연금 제도의 문제점 또는 개선 방향으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 총적립금 대비 주식형 자산의 투자 한도를 30%로 제한하는 규정은 가입자의 위험 노출을 최소화하여 원금 손실을 방지한다.</li><li>② 가입자의 투자 지식 부족 및 무관심으로 인해 직접 운용 비율이 낮아 자산 증식 효과가 미미하다.</li><li>③ 디폴트옵션(사전지정운용제도) 도입을 통해 가입자가 별도 지시가 없어도 금융회사가 미리 정한 방식으로 자산을 운용하도록 유도한다.</li><li>④ 원리금보장형 상품 위주의 낮은 수익률 개선을 위해 다양한 투자상품 편입이 필요하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 총적립금 대비 주식형 자산의 투자 한도를 30%로 제한하는 규정은 가입자의 위험 노출을 최소화하여 원금 손실을 방지한다.</p>
+      <p><strong>해설:</strong> 퇴직연금의 총적립금 대비 주식형 자산 투자 한도 30% 제한은 수익률 제고를 어렵게 하는 '족쇄'로 지적되며, 이는 원금 손실 방지보다는 장기적인 자산 증식 기회를 제한한다는 비판을 받고 있습니다. [오답해설] ② 가입자의 투자 지식 부족과 무관심은 퇴직연금 자산 증식을 저해하는 주요 원인 중 하나로 지적됩니다. ③ 디폴트옵션은 가입자가 운용 지시를 하지 않을 경우 사전에 지정된 방식으로 자산을 운용하여 수익률을 제고하기 위한 제도입니다. ④ 현재 퇴직연금은 원리금보장형 상품 비중이 높아 수익률이 낮은 편이며, 이를 개선하기 위한 다양한 투자상품 편입은 필요한 부분입니다.</p>
+      <p>관련 시사 뉴스: “방치된 500조 퇴직연금”…20년 묵은 ‘30% 족쇄’ 풀 때 됐다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 정부가 청년층의 주택 구입을 지원하기 위해 도입했거나 논의 중인 '청년미래보금자리론'과 관련한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택금융공사의 보금자리론과 유사하게 운영되며, 소득 요건 및 주택 가격 제한이 적용된다.</li><li>② DSR(총부채원리금상환비율) 규제를 완화하여 청년층이 소득과 관계없이 더 많은 대출을 받을 수 있도록 설계되었다.</li><li>③ 이 상품은 투기 수요를 억제하고 실수요자의 내 집 마련을 돕기 위한 정책 금융 상품이다.</li><li>④ 만 39세 이하의 무주택 청년층을 대상으로 하며, 낮은 금리로 장기 대출을 제공하는 것이 목표이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② DSR(총부채원리금상환비율) 규제를 완화하여 청년층이 소득과 관계없이 더 많은 대출을 받을 수 있도록 설계되었다.</p>
+      <p><strong>해설:</strong> 청년미래보금자리론은 DSR 규제를 완전히 무시하고 대출을 제공하는 것이 아니라, 다른 보금자리론과 유사하게 소득 요건 및 주택 가격 제한 등 건전성 관리를 위한 장치를 가지고 있습니다. [오답해설] ① 청년미래보금자리론은 주택금융공사의 보금자리론과 기본적인 틀을 공유하며, 소득 및 주택 가격 제한이 적용됩니다. ③ 이 상품은 실수요자인 청년층의 내 집 마련을 지원하고, 무분별한 투기를 방지하기 위한 정책적 목적을 가집니다. ④ 만 39세 이하의 무주택 청년층을 대상으로 저금리 장기 대출을 제공하는 것이 주된 목적입니다.</p>
+      <p>관련 시사 뉴스: [비즈토크<하>] 집 사게 해준다는데…'청년미래보금자리론' 놓고 '부글'</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 인공지능(AI) 기술이 은행 산업에 미치는 영향에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① AI 기술의 확산은 데이터 보안 리스크를 근본적으로 해소하여 금융사고 발생 가능성을 낮춘다.</li><li>② AI 기반 맞춤형 금융 상품 추천은 고객의 정보 불균형을 해소하고, 대출 심사 시 모든 차별적 요소를 제거한다.</li><li>③ AI 기술 도입으로 인해 은행 영업점의 물리적 확장이 필수적이 되며, 비대면 채널의 역할은 축소될 것이다.</li><li>④ AI 상담원 도입은 고객 응대 업무 효율성을 높이지만, 금융 상품의 복잡성으로 인해 은행원의 전문성은 더욱 중요해진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ AI 상담원 도입은 고객 응대 업무 효율성을 높이지만, 금융 상품의 복잡성으로 인해 은행원의 전문성은 더욱 중요해진다.</p>
+      <p><strong>해설:</strong> AI는 단순 반복 업무를 효율화하지만, 복잡한 금융 상담이나 맞춤형 솔루션 제공에는 여전히 은행원의 전문성과 인간적인 소통이 필수적입니다. [오답해설] ① AI 기술 도입은 새로운 데이터 보안 리스크를 발생시키거나 기존 리스크를 변형시킬 수 있으며, 해킹 등 금융사고의 가능성은 여전히 존재합니다. ② AI 기반 추천 시스템 역시 학습 데이터의 편향성이나 알고리즘의 한계로 인해 차별적 요소가 발생할 수 있습니다. ③ AI 기술 확산은 비대면 채널의 중요성을 증대시키고, 영업점은 대면 상담 중심의 고도화된 서비스 공간으로 변화할 가능성이 높습니다.</p>
+      <p>관련 시사 뉴스: AI상담 늘자 … 은행 상담원 30% 줄었다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 가계부채 증가와 금리 인상기에 금융 건전성 확보를 위한 금융당국 및 은행의 대응 방향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비해야 한다.</li><li>② 금융당국은 가계대출 총량 규제를 전면 해제하여 경제 활력을 도모해야 한다.</li><li>③ 금리 인상기에 대출 금리를 인하하여 차주의 상환 부담을 완화하고 소비를 진작해야 한다.</li><li>④ 가계부채 증가가 은행의 수익성 증대에 기여하므로, 대출 확대 정책을 지속적으로 유지해야 한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비해야 한다.</p>
+      <p><strong>해설:</strong> 금리 인상기에 가계부채 증가는 금융 시스템의 건전성을 위협할 수 있으므로, 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비하는 것이 중요합니다. [오답해설] ② 가계대출 총량 규제 해제는 부채 급증을 야기하여 금융 시스템 불안정을 초래할 수 있습니다. ③ 금리 인상기에 대출 금리 인하는 은행의 수익성을 악화시키고, 금융당국의 통화정책과 상충될 수 있습니다. ④ 가계부채 증가는 단기적인 수익 증대로 이어질 수 있지만, 장기적으로는 차주의 상환 능력 악화와 부실 채권 증가로 은행의 건전성에 심각한 타격을 줄 수 있습니다.</p>
+      <p>관련 시사 뉴스: '가계부채 2천조원' 시대 진입…금리 인상기 건전성 비상</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 정부가 추진하고 있는 국내 외환시장 24시간 개방의 예상되는 긍정적 효과로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 외국인 투자자의 국내 금융 시장 접근성 저하</li><li>② 원화의 국제적 위상 하락 및 국제 결제 통화로서의 경쟁력 약화</li><li>③ 환율 변동성 증가에 따른 정부의 직접적인 시장 개입 빈도 증가</li><li>④ 국내 기업 및 투자자의 해외 투자 시 환전 편의성 증대</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 국내 기업 및 투자자의 해외 투자 시 환전 편의성 증대</p>
+      <p><strong>해설:</strong> 국내 외환시장 24시간 개방은 시차 제약 없이 해외 투자가 가능해져 국내 기업과 투자자의 환전 편의성을 높이는 것이 주요 긍정적 효과 중 하나입니다. [오답해설] ① 외국인 투자자들이 더 유연하게 원화를 거래할 수 있게 되어 국내 금융 시장으로의 접근성이 향상됩니다. ② 원화 거래량이 늘고 국제적 접근성이 좋아지면 장기적으로 원화의 국제적 위상이 높아질 가능성이 있습니다. ③ 24시간 개방은 시장 유동성을 높여 오히려 환율 변동성 완화에 기여하며, 정부의 직접적인 시장 개입 빈도를 증가시키지는 않습니다.</p>
+      <p>관련 시사 뉴스: 외환시장 24시간 개방 한 달, 원·달러 거래량 10% 껑충</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 뉴스에서 언급된 '미국 연방공개시장위원회(FOMC)'의 주요 기능은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 미국 정부의 예산 및 세금 정책을 수립하는 기구</li><li>② 미국 내 주요 은행들의 인수합병을 심사하고 승인하는 기관</li><li>③ 연방준비제도(Fed)의 통화정책 방향을 결정하는 회의체</li><li>④ 국제통화기금(IMF)과의 협력을 통해 세계 금융 안정화에 기여하는 조직</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 연방준비제도(Fed)의 통화정책 방향을 결정하는 회의체</p>
+      <p><strong>해설:</strong> FOMC는 미국 연방준비제도(Fed) 내에서 통화정책의 주요 방향을 결정하는 최고 의사결정 기구입니다. [오답해설] ① 미국 정부의 예산 및 세금 정책은 의회와 재무부가 담당합니다. ② 미국 은행의 인수합병 심사 및 승인은 주로 연방준비제도 이사회와 법무부 등이 담당합니다. ④ 국제통화기금(IMF)과의 협력은 재무부와 중앙은행이 수행하지만, FOMC의 직접적인 기능은 아닙니다.</p>
+      <p>관련 시사 뉴스: [글로벌 경제지표] 美연준 FOMC 의사록 관건…월마트 실적 주목</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-16</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1931,"category":"시사금융용어","question":"다음은 금융 취약계층의 생활 안정을 지원하기 위해 낮은 신용등급의 개인에게 제공되는 대출 상품에 대한 설명이다. 정부 지원을 받아 금융기관이 취급하며, 생활비 등 긴급 자금으로 활용될 수 있는 이 용어로 가장 적절한 것은?","answer":"③ 중저신용자 생활안정자금","explanation":"중저신용자 생활안정자금은 금융 취약계층의 생활 안정을 지원하기 위해 낮은 신용등급의 개인에게 제공되는 대출 상품입니다. [오답해설] ① 긴급자금대출은 긴급한 상황에 필요한 자금을 빌리는 일반적인 대출을 의미하며, 신용등급 특정이나 특정 계층 지원에 국한되지 않습니다. ② 정책서민대출은 정부가 서민층 지원을 위해 제공하는 다양한 대출 상품을 포괄하는 상위 개념입니다. ④ 취약계층지원금은 주로 정부가 지원하는 현금성 지급 형태로, 대출 상품과는 다릅니다.","news_context":"중저신용자 생활안정자금은 금융 취약계층의 생활 안정을 지원하기 위해 새마을금고 등이 취급하는 대출 상품이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4426905","options":["① 긴급자금대출","② 정책서민대출","③ 중저신용자 생활안정자금","④ 취약계층지원금"]},{"id":1932,"category":"시사금융용어","question":"주식 시장에서 코스피(KOSPI) 지수가 마치 롤러코스터처럼 극심한 등락을 반복하며 엄청난 변동성을 보이는 현상을 비유적으로 이르는 용어로 가장 적절한 것은?","answer":"② 롤러코스피","explanation":"롤러코스피는 코스피 지수가 롤러코스터처럼 극심한 등락을 반복하는 변동성 높은 시장 상황을 의미합니다. [오답해설] ① 코스피 쇼크는 코스피 지수가 급락하여 시장에 충격을 주는 현상을 의미하며, 등락을 반복하는 변동성과는 차이가 있습니다. ③ 베어마켓 랠리는 하락장(약세장)에서 일시적으로 주가가 상승하는 현상을 말합니다. ④ 블랙 스완은 예상치 못했던 극단적인 부정적 사건이 발생하여 시장에 큰 충격을 주는 현상입니다.","news_context":"롤러코스피는 코스피 지수가 롤러코스터처럼 급등락을 반복하는 극심한 변동성 장세를 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428213","options":["① 코스피 쇼크","② 롤러코스피","③ 베어마켓 랠리","④ 블랙 스완"]},{"id":1933,"category":"금융용어","question":"실물 자산의 소유권을 블록체인 상의 디지털 토큰으로 표현하여, 해당 자산을 분할하거나 더 쉽게 거래할 수 있도록 하는 기술을 지칭하는 용어는?","answer":"② 토큰화 자산","explanation":"토큰화 자산은 실물 자산을 블록체인 기반의 디지털 토큰으로 변환하여 유동성을 높이고 거래를 용이하게 하는 기술입니다. [오답해설] ① 디지털 증권은 전통적인 증권의 형태를 디지털화한 것을 의미하며, 토큰화 자산은 더 넓은 범위의 실물 자산에 적용될 수 있습니다. ③ NFT는 대체 불가능한 토큰으로, 고유한 디지털 자산의 소유권을 나타내지만 분할이 어려운 특징이 있습니다. ④ STO는 블록체인 기반의 증권을 발행하여 자금을 조달하는 방식을 의미하며, 토큰화 자산은 STO의 기반 기술로 활용될 수 있습니다.","news_context":"솔라나, 토큰화 미 국채 순유입 5349억원","news_url":"https://www.tokenpost.kr/news/cryptocurrency/391524","options":["① 디지털 증권","② 토큰화 자산","③ NFT (Non-Fungible Token)","④ STO (Security Token Offering)"]},{"id":1934,"category":"금융용어","question":"탈중앙화 금융(DeFi) 플랫폼에 예치되어 있는 모든 자산의 총 가치를 나타내는 지표로, 해당 플랫폼의 규모와 건전성을 평가하는 데 사용되는 용어는?","answer":"③ TVL (Total Value Locked)","explanation":"TVL은 탈중앙화 금융(DeFi) 플랫폼에 예치된 총 자산 가치를 의미하며, 플랫폼의 규모와 신뢰도를 나타내는 핵심 지표입니다. [오답해설] ① APY는 연간 수익률을 의미하며, 예치된 자산의 수익성을 나타냅니다. ② Market Cap은 특정 암호화폐의 전체 시가총액을 의미합니다. ④ FDV는 특정 암호화폐가 발행될 수 있는 모든 물량을 기준으로 한 시가총액을 의미합니다.","news_context":"로빈후드체인, 출범 한 달 만에 TVL 1조원 육박…유니스왑이 유동성 전...","news_url":"https://www.wikitree.co.kr/articles/1152713","options":["① APY (Annual Percentage Yield)","② Market Cap (Market Capitalization)","③ TVL (Total Value Locked)","④ FDV (Fully Diluted Valuation)"]},{"id":1935,"category":"세부지식","question":"뉴스에서 \"방치된 퇴직연금\" 및 \"30% 족쇄\"로 언급된 내용과 관련하여, 현재 퇴직연금 제도의 문제점 또는 개선 방향으로 옳지 않은 것은?","answer":"① 총적립금 대비 주식형 자산의 투자 한도를 30%로 제한하는 규정은 가입자의 위험 노출을 최소화하여 원금 손실을 방지한다.","explanation":"퇴직연금의 총적립금 대비 주식형 자산 투자 한도 30% 제한은 수익률 제고를 어렵게 하는 '족쇄'로 지적되며, 이는 원금 손실 방지보다는 장기적인 자산 증식 기회를 제한한다는 비판을 받고 있습니다. [오답해설] ② 가입자의 투자 지식 부족과 무관심은 퇴직연금 자산 증식을 저해하는 주요 원인 중 하나로 지적됩니다. ③ 디폴트옵션은 가입자가 운용 지시를 하지 않을 경우 사전에 지정된 방식으로 자산을 운용하여 수익률을 제고하기 위한 제도입니다. ④ 현재 퇴직연금은 원리금보장형 상품 비중이 높아 수익률이 낮은 편이며, 이를 개선하기 위한 다양한 투자상품 편입은 필요한 부분입니다.","news_context":"“방치된 500조 퇴직연금”…20년 묵은 ‘30% 족쇄’ 풀 때 됐다","news_url":"https://www.mk.co.kr/news/economy/12127955","options":["① 총적립금 대비 주식형 자산의 투자 한도를 30%로 제한하는 규정은 가입자의 위험 노출을 최소화하여 원금 손실을 방지한다.","② 가입자의 투자 지식 부족 및 무관심으로 인해 직접 운용 비율이 낮아 자산 증식 효과가 미미하다.","③ 디폴트옵션(사전지정운용제도) 도입을 통해 가입자가 별도 지시가 없어도 금융회사가 미리 정한 방식으로 자산을 운용하도록 유도한다.","④ 원리금보장형 상품 위주의 낮은 수익률 개선을 위해 다양한 투자상품 편입이 필요하다."]},{"id":1936,"category":"세부지식","question":"정부가 청년층의 주택 구입을 지원하기 위해 도입했거나 논의 중인 '청년미래보금자리론'과 관련한 설명으로 옳지 않은 것은?","answer":"② DSR(총부채원리금상환비율) 규제를 완화하여 청년층이 소득과 관계없이 더 많은 대출을 받을 수 있도록 설계되었다.","explanation":"청년미래보금자리론은 DSR 규제를 완전히 무시하고 대출을 제공하는 것이 아니라, 다른 보금자리론과 유사하게 소득 요건 및 주택 가격 제한 등 건전성 관리를 위한 장치를 가지고 있습니다. [오답해설] ① 청년미래보금자리론은 주택금융공사의 보금자리론과 기본적인 틀을 공유하며, 소득 및 주택 가격 제한이 적용됩니다. ③ 이 상품은 실수요자인 청년층의 내 집 마련을 지원하고, 무분별한 투기를 방지하기 위한 정책적 목적을 가집니다. ④ 만 39세 이하의 무주택 청년층을 대상으로 저금리 장기 대출을 제공하는 것이 주된 목적입니다.","news_context":"[비즈토크\u003c하\u003e] 집 사게 해준다는데…'청년미래보금자리론' 놓고 '부글'","news_url":"https://n.news.naver.com/mnews/article/629/0000524874?sid=101","options":["① 주택금융공사의 보금자리론과 유사하게 운영되며, 소득 요건 및 주택 가격 제한이 적용된다.","② DSR(총부채원리금상환비율) 규제를 완화하여 청년층이 소득과 관계없이 더 많은 대출을 받을 수 있도록 설계되었다.","③ 이 상품은 투기 수요를 억제하고 실수요자의 내 집 마련을 돕기 위한 정책 금융 상품이다.","④ 만 39세 이하의 무주택 청년층을 대상으로 하며, 낮은 금리로 장기 대출을 제공하는 것이 목표이다."]},{"id":1937,"category":"시사","question":"인공지능(AI) 기술이 은행 산업에 미치는 영향에 대한 설명으로 옳은 것은?","answer":"④ AI 상담원 도입은 고객 응대 업무 효율성을 높이지만, 금융 상품의 복잡성으로 인해 은행원의 전문성은 더욱 중요해진다.","explanation":"AI는 단순 반복 업무를 효율화하지만, 복잡한 금융 상담이나 맞춤형 솔루션 제공에는 여전히 은행원의 전문성과 인간적인 소통이 필수적입니다. [오답해설] ① AI 기술 도입은 새로운 데이터 보안 리스크를 발생시키거나 기존 리스크를 변형시킬 수 있으며, 해킹 등 금융사고의 가능성은 여전히 존재합니다. ② AI 기반 추천 시스템 역시 학습 데이터의 편향성이나 알고리즘의 한계로 인해 차별적 요소가 발생할 수 있습니다. ③ AI 기술 확산은 비대면 채널의 중요성을 증대시키고, 영업점은 대면 상담 중심의 고도화된 서비스 공간으로 변화할 가능성이 높습니다.","news_context":"AI상담 늘자 … 은행 상담원 30% 줄었다","news_url":"https://www.mk.co.kr/news/economy/12128224","options":["① AI 기술의 확산은 데이터 보안 리스크를 근본적으로 해소하여 금융사고 발생 가능성을 낮춘다.","② AI 기반 맞춤형 금융 상품 추천은 고객의 정보 불균형을 해소하고, 대출 심사 시 모든 차별적 요소를 제거한다.","③ AI 기술 도입으로 인해 은행 영업점의 물리적 확장이 필수적이 되며, 비대면 채널의 역할은 축소될 것이다.","④ AI 상담원 도입은 고객 응대 업무 효율성을 높이지만, 금융 상품의 복잡성으로 인해 은행원의 전문성은 더욱 중요해진다."]},{"id":1938,"category":"시사","question":"가계부채 증가와 금리 인상기에 금융 건전성 확보를 위한 금융당국 및 은행의 대응 방향으로 가장 적절한 것은?","answer":"① 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비해야 한다.","explanation":"금리 인상기에 가계부채 증가는 금융 시스템의 건전성을 위협할 수 있으므로, 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비하는 것이 중요합니다. [오답해설] ② 가계대출 총량 규제 해제는 부채 급증을 야기하여 금융 시스템 불안정을 초래할 수 있습니다. ③ 금리 인상기에 대출 금리 인하는 은행의 수익성을 악화시키고, 금융당국의 통화정책과 상충될 수 있습니다. ④ 가계부채 증가는 단기적인 수익 증대로 이어질 수 있지만, 장기적으로는 차주의 상환 능력 악화와 부실 채권 증가로 은행의 건전성에 심각한 타격을 줄 수 있습니다.","news_context":"'가계부채 2천조원' 시대 진입…금리 인상기 건전성 비상","news_url":"https://n.news.naver.com/mnews/article/001/0016253453?sid=101","options":["① 은행은 리스크 관리를 강화하고 대출 심사 기준을 엄격히 적용하여 부실 위험에 선제적으로 대비해야 한다.","② 금융당국은 가계대출 총량 규제를 전면 해제하여 경제 활력을 도모해야 한다.","③ 금리 인상기에 대출 금리를 인하하여 차주의 상환 부담을 완화하고 소비를 진작해야 한다.","④ 가계부채 증가가 은행의 수익성 증대에 기여하므로, 대출 확대 정책을 지속적으로 유지해야 한다."]},{"id":1939,"category":"시사","question":"정부가 추진하고 있는 국내 외환시장 24시간 개방의 예상되는 긍정적 효과로 옳은 것은?","answer":"④ 국내 기업 및 투자자의 해외 투자 시 환전 편의성 증대","explanation":"국내 외환시장 24시간 개방은 시차 제약 없이 해외 투자가 가능해져 국내 기업과 투자자의 환전 편의성을 높이는 것이 주요 긍정적 효과 중 하나입니다. [오답해설] ① 외국인 투자자들이 더 유연하게 원화를 거래할 수 있게 되어 국내 금융 시장으로의 접근성이 향상됩니다. ② 원화 거래량이 늘고 국제적 접근성이 좋아지면 장기적으로 원화의 국제적 위상이 높아질 가능성이 있습니다. ③ 24시간 개방은 시장 유동성을 높여 오히려 환율 변동성 완화에 기여하며, 정부의 직접적인 시장 개입 빈도를 증가시키지는 않습니다.","news_context":"외환시장 24시간 개방 한 달, 원·달러 거래량 10% 껑충","news_url":"https://www.mk.co.kr/news/economy/12127950","options":["① 외국인 투자자의 국내 금융 시장 접근성 저하","② 원화의 국제적 위상 하락 및 국제 결제 통화로서의 경쟁력 약화","③ 환율 변동성 증가에 따른 정부의 직접적인 시장 개입 빈도 증가","④ 국내 기업 및 투자자의 해외 투자 시 환전 편의성 증대"]},{"id":1940,"category":"시사","question":"뉴스에서 언급된 '미국 연방공개시장위원회(FOMC)'의 주요 기능은 무엇인가?","answer":"③ 연방준비제도(Fed)의 통화정책 방향을 결정하는 회의체","explanation":"FOMC는 미국 연방준비제도(Fed) 내에서 통화정책의 주요 방향을 결정하는 최고 의사결정 기구입니다. [오답해설] ① 미국 정부의 예산 및 세금 정책은 의회와 재무부가 담당합니다. ② 미국 은행의 인수합병 심사 및 승인은 주로 연방준비제도 이사회와 법무부 등이 담당합니다. ④ 국제통화기금(IMF)과의 협력은 재무부와 중앙은행이 수행하지만, FOMC의 직접적인 기능은 아닙니다.","news_context":"[글로벌 경제지표] 美연준 FOMC 의사록 관건…월마트 실적 주목","news_url":"https://n.news.naver.com/mnews/article/374/0000527741?sid=101","options":["① 미국 정부의 예산 및 세금 정책을 수립하는 기구","② 미국 내 주요 은행들의 인수합병을 심사하고 승인하는 기관","③ 연방준비제도(Fed)의 통화정책 방향을 결정하는 회의체","④ 국제통화기금(IMF)과의 협력을 통해 세계 금융 안정화에 기여하는 조직"]},{"id":62,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
