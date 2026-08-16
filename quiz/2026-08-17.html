@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-17 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-17 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-17 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 시장 금리나 특정 금융 상품의 이자율 등을 확인하고 점검하여 시장 상황을 파악하는 행위를 지칭하는 용어로 가장 적절한 것은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 일드 커브</li><li>② 레이트 체크</li><li>③ 듀레이션</li><li>④ 베이시스 포인트</li>
+      </ul>
+      <p><strong>정답:</strong> ② 레이트 체크</p>
+      <p><strong>해설:</strong> 레이트 체크는 시장 금리나 특정 금융 상품의 이자율 등을 확인하고 점검하는 행위를 의미합니다. [오답해설] ① 일드 커브는 채권의 잔존 만기와 수익률 간의 관계를 그래프로 나타낸 것입니다. ③ 듀레이션은 채권 투자 기간에 따른 이자율 변동 위험을 나타내는 지표입니다. ④ 베이시스 포인트는 이자율이나 수익률을 나타내는 최소 단위입니다.</p>
+      <p>관련 시사 뉴스: 레이트 체크는 시장 금리 및 금융 상품의 이자율 확인을 통해 투자 결정을 돕는 행위를 뜻합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 자기 자금이나 기존 사업에서 나오는 수익으로 새로운 사업을 확장하거나 기존 채무를 상환하는 등, 외부 자본 유입 없이 스스로 자금을 조달하는 방식을 지칭하며, 지속 가능성에 대한 우려를 내포할 수 있는 금융 기법은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 폰지 사기</li><li>② 에버그린 대출</li><li>③ 우로보로스 파이낸싱</li><li>④ 롤오버 리스크</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 우로보로스 파이낸싱</p>
+      <p><strong>해설:</strong> 우로보로스 파이낸싱은 외부 자본 유입 없이 내부 자금으로 새로운 사업 확장이나 채무 상환을 반복하는 순환식 자금 조달 방식을 의미하며, 지속 가능성 우려가 있을 수 있습니다. [오답해설] ① 폰지 사기는 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 투자 사기입니다. ② 에버그린 대출은 만기가 되어도 원금 상환 없이 이자만 지급하거나 대출을 연장하는 방식입니다. ④ 롤오버 리스크는 만기가 된 채무를 연장하거나 새로운 대출로 대체하지 못할 위험입니다.</p>
+      <p>관련 시사 뉴스: 우로보로스 파이낸싱은 자체 자금으로 사업을 확장하거나 채무를 상환하는 순환식 자금 조달 방식으로, 지속 가능성 문제를 야기할 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 금융시장에서 투자자들의 자산이 특정 투자처에서 다른 투자처로 대규모로 이동하는 현상을 일컫는 용어는? 주로 경기 상황 변화나 금리 변동 등에 의해 발생한다.</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 펀드런</li><li>② 머니무브</li><li>③ 캐시버닝</li><li>④ 뱅크런</li>
+      </ul>
+      <p><strong>정답:</strong> ② 머니무브</p>
+      <p><strong>해설:</strong> 머니무브는 자산이 한 시장에서 다른 시장으로 이동하는 현상으로, 경제 상황 변화에 따라 투자 포트폴리오를 조정하는 의미를 포함합니다.
+[오답해설] ① 펀드런은 펀드에서 대규모 환매가 발생하는 현상을 의미하며, 주로 펀드의 부실이나 시장 불안정 시 발생합니다. ③ 캐시버닝은 스타트업이 시장 점유율 확대를 위해 이익 없이 현금을 소모하는 것을 의미합니다. ④ 뱅크런은 은행의 건전성 악화 우려로 예금자들이 한꺼번에 예금을 인출하는 현상으로, 금융 시스템 위기 시 발생합니다.</p>
+      <p>관련 시사 뉴스: 주식 시장에서 자금이 빠져나가 은행 특판 예금으로 이동하는 현상이 머니무브로 주목받고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 고가의 자산을 여러 투자자가 소액으로 나누어 공동 소유하고, 해당 자산에서 발생하는 수익을 지분만큼 배분받는 투자 방식을 의미하는 용어는? 미술품, 부동산 등 다양한 비유동 자산에 적용될 수 있다.</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 크라우드펀딩</li><li>② 증권형 토큰(STO)</li><li>③ 조각투자</li><li>④ 공동구매</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 조각투자</p>
+      <p><strong>해설:</strong> 조각투자는 고가의 자산을 여러 투자자가 소액으로 나누어 공동 소유하고 수익을 배분하는 투자 방식을 의미합니다.
+[오답해설] ① 크라우드펀딩은 다수의 소액 투자자로부터 자금을 모으는 방식이지만, 조각투자는 자산의 '지분'을 직접 소유한다는 점에서 차이가 있습니다. ② 증권형 토큰(STO)은 실물 자산의 소유권을 블록체인 기반의 토큰으로 발행한 것으로, 조각투자를 위한 기술적 수단이 될 수 있지만 그 자체로 투자 방식을 지칭하지는 않습니다. ④ 공동구매는 여러 사람이 함께 물건을 구매하여 가격을 낮추는 행위로, 투자 수익을 목적으로 하는 조각투자와는 성격이 다릅니다.</p>
+      <p>관련 시사 뉴스: 미술품에 대한 소액 투자가 가능한 조각투자가 새로운 투자 형태로 떠오르고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 다음 중 ELS(주가연계증권)의 특징에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주가지수나 개별 주식의 가격 변동에 따라 수익률이 결정되는 파생결합증권이다.</li><li>② 원금보장형 ELS는 투자 기간 동안 주가가 아무리 하락해도 원금 손실이 발생하지 않는다.</li><li>③ 은행에서는 ELS 직접 판매가 금지되어 있으며, 주로 증권사를 통해 발행 및 판매된다.</li><li>④ 주가 하락 시 원금 손실 위험이 있으므로, 투자 시 기초자산의 변동성을 충분히 고려해야 한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 원금보장형 ELS는 투자 기간 동안 주가가 아무리 하락해도 원금 손실이 발생하지 않는다.</p>
+      <p><strong>해설:</strong> 원금보장형 ELS는 만기 시 원금이 보장될 수 있지만, 투자 기간 중 특정 조건에 의해 원금 손실 가능성이 있는 상품도 있으므로 '아무리 하락해도'라는 표현은 적절하지 않습니다.
+[오답해설] ① ELS는 주가지수나 개별 주식의 변동에 따라 수익률이 결정되는 파생결합증권으로, 맞는 설명입니다. ③ ELS는 고위험 상품으로 분류되어 은행의 직접 판매가 금지되어 있으며, 주로 증권사를 통해 발행 및 판매됩니다. ④ 주가 하락 시 손실 발생 조건에 따라 원금 손실 위험이 있으므로, 투자자는 기초자산의 변동성을 충분히 이해하고 투자해야 합니다.</p>
+      <p>관련 시사 뉴스: 은행에서 판매가 중단되었던 ELS가 증권사에서 새로운 형태로 부활하며 고수익을 기대할 수 있다는 기사가 나왔습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 가계부채가 사상 처음으로 2000조 원을 돌파하며 금융당국의 규제 강화 필요성이 대두되고 있다. 이와 관련하여 가계대출의 건전성을 관리하기 위해 도입된 총부채원리금상환비율(DSR)에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 차주가 보유한 모든 대출의 연간 원리금 상환액을 연 소득으로 나눈 값이다.</li><li>② 주택담보대출에만 적용되며, 다른 신용대출 등은 계산에서 제외된다.</li><li>③ DSR 규제는 은행권에만 적용되며, 제2금융권은 자율적으로 운영된다.</li><li>④ 대출 규모와 상관없이 모든 차주에게 동일한 DSR 비율이 일괄적으로 적용된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 차주가 보유한 모든 대출의 연간 원리금 상환액을 연 소득으로 나눈 값이다.</p>
+      <p><strong>해설:</strong> DSR은 차주가 보유한 모든 대출(주택담보대출, 신용대출 등)의 연간 원리금 상환액을 연 소득으로 나눈 값으로, 차주의 총체적 상환 능력을 심사하는 지표입니다.
+[오답해설] ② DSR은 주택담보대출뿐만 아니라 신용대출, 카드론 등 차주가 보유한 모든 대출의 원리금 상환액을 포함하여 계산합니다. ③ DSR 규제는 은행권은 물론 저축은행, 상호금융 등 제2금융권에도 적용되어 가계부채 전반을 관리합니다. ④ DSR 비율은 대출 유형이나 차주의 소득 수준 등에 따라 차등 적용될 수 있으며, 모든 차주에게 동일하게 적용되는 것은 아닙니다.</p>
+      <p>관련 시사 뉴스: 가계빚이 사상 첫 2000조 원을 돌파하고 주담대가 증가분의 대부분을 차지하면서, 기준금리 인상 시 취약 차주의 부실 위험이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 주택 관련 세제와 대출 정책에서 '실거주' 기준의 모호성으로 인한 혼란이 발생하고 있다. 현행 주택담보대출 규제에서 주택 구입 시 대출자의 '전입 의무'가 일반적으로 부과되는 주요 사례는?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 투기과열지구 내에서 주택을 구입하기 위해 주택담보대출을 이용하는 경우</li><li>② 조정대상지역이 아닌 일반 지역에서 무주택자가 주택 구입을 위해 대출을 받는 경우</li><li>③ 생활안정자금 마련을 위해 기존 주택을 담보로 추가 대출을 받는 경우</li><li>④ 기존 전세보증금 반환을 위해 주택담보대출을 이용하는 경우</li>
+      </ul>
+      <p><strong>정답:</strong> ① 투기과열지구 내에서 주택을 구입하기 위해 주택담보대출을 이용하는 경우</p>
+      <p><strong>해설:</strong> 투기과열지구 등 규제지역 내 주택 구입 목적의 주택담보대출은 일반적으로 일정 기간 내 전입 의무가 부과되어 실거주를 유도합니다.
+[오답해설] ② 규제지역이 아닌 일반 지역의 주택 구입 대출에는 전입 의무가 부과되지 않는 경우가 많습니다. ③ 생활안정자금 대출은 주택 보유 여부와 관계없이 기존 주택을 담보로 받는 것이므로 전입 의무와는 무관합니다. ④ 전세보증금 반환 목적의 대출은 임대인이 전세입자를 내보낼 때 받는 대출로, 주로 전입 의무가 부과되지 않습니다.</p>
+      <p>관련 시사 뉴스: 세제와 대출 정책에서 '실거주' 기준이 제각각이어서 혼란을 야기하며, 전입 이력만 따지는 대출 정책의 한계가 지적되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 한국은행의 기준금리 인상이 은행의 수신(예금) 및 여신(대출) 업무에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 예금 금리 인상으로 가계의 이자 부담이 줄어든다.</li><li>② 대출 금리가 하락하여 기업의 투자 및 가계의 소비가 촉진된다.</li><li>③ 은행의 조달비용이 증가하고 대출 수요가 감소할 수 있어 수익성 악화 요인이 된다.</li><li>④ 예금 금리 인상으로 은행의 순이자마진(NIM)이 항상 개선된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행의 조달비용이 증가하고 대출 수요가 감소할 수 있어 수익성 악화 요인이 된다.</p>
+      <p><strong>해설:</strong> 기준금리 인상은 은행의 수신 금리를 끌어올려 자금 조달 비용을 높이며, 대출 금리 인상으로 대출 수요를 위축시켜 은행의 수익성에 부정적인 영향을 줄 수 있습니다.
+[오답해설] ① 예금 금리 인상은 가계의 이자 수익을 증가시키지만, 대출 금리 인상으로 가계의 이자 부담이 커지므로 전반적인 이자 부담이 줄어든다고 볼 수 없습니다. ② 기준금리 인상은 일반적으로 대출 금리 인상으로 이어져 기업의 투자 및 가계의 소비를 위축시키는 요인이 됩니다. ④ 예금 금리 인상 폭과 대출 금리 인상 폭의 차이에 따라 순이자마진(NIM)은 달라질 수 있으며, 조달비용 증가로 NIM이 악화될 수도 있습니다.</p>
+      <p>관련 시사 뉴스: 가계빚 2000조 원 시대에 기준금리 인상은 치명타가 될 수 있으며, 금리 인상 공포에도 카드 소비가 줄지 않는 등 한은의 셈법이 복잡하다는 내용이 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 5대 시중은행들이 17조 원 규모의 인천시금고 유치에 총력을 기울이는 것과 같은 지방자치단체 금고 경쟁이 은행 경영에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 지방자치단체 금고는 주로 수수료 수익이 낮아 은행의 순이자마진(NIM)에 큰 영향을 주지 않는다.</li><li>② 안정적인 예금 유치 및 지역 기반 확대를 통해 저원가성 예금 확보에 기여한다.</li><li>③ 지자체 금고는 대출 재원이 되기 어려워 은행의 여신 규모 확대에는 거의 도움이 되지 않는다.</li><li>④ 금고 유치 성공 시 은행은 추가적인 사회공헌 활동 의무에서 벗어날 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 안정적인 예금 유치 및 지역 기반 확대를 통해 저원가성 예금 확보에 기여한다.</p>
+      <p><strong>해설:</strong> 지자체 금고는 안정적이고 대규모의 저원가성 자금(예금)을 확보할 수 있게 하며, 해당 지자체 소속 공무원 및 시민들과의 거래 확대를 통해 은행의 지역 영업 기반을 강화하는 중요한 수단이 됩니다.
+[오답해설] ① 지자체 금고는 수수료 수익뿐만 아니라 대규모 자금 유치를 통한 이자 수익, 그리고 안정적인 고객 기반 확보 등 은행의 전반적인 수익성과 사업 확장에 중요한 영향을 미칩니다. ③ 지자체 금고를 통해 확보된 자금은 은행의 전체 예금 포트폴리오의 한 부분으로, 여신(대출) 재원으로 활용될 수 있습니다. ④ 금고 유치 시 은행은 지자체와의 협력 관계 유지를 위해 다양한 사회공헌 활동이나 출연금 제공 등 추가적인 노력을 기울이는 경우가 많습니다.</p>
+      <p>관련 시사 뉴스: 5대 시중은행들이 17조 원 규모의 인천시금고 유치를 위해 치열한 경쟁을 벌이고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 같은 직장에서 실업급여를 반복적으로 수급하는 사례가 역대 최다를 기록하며 사회적 논란이 되고 있다. 이러한 실업급여 반복 수급이 초래할 수 있는 문제점으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 고용보험 재정의 건전성 악화 및 기금 고갈을 가속화할 수 있다.</li><li>② 불필요한 이직을 조장하여 노동 시장의 유연성을 저해할 수 있다.</li><li>③ 실업급여 제도의 본래 취지인 재취업 지원 기능이 약화될 수 있다.</li><li>④ 기업의 고용보험료 부담 증가로 고용 축소 및 투자 위축을 유발할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 불필요한 이직을 조장하여 노동 시장의 유연성을 저해할 수 있다.</p>
+      <p><strong>해설:</strong> 실업급여 반복 수급은 오히려 고용 기간을 짧게 가져가거나 불필요한 이직을 유도하여 노동 시장의 경직성을 높이거나 본래 취지와 다른 방식으로 활용될 우려가 있습니다. 유연성은 제고되지 않습니다.
+[오답해설] ① 반복 수급은 고용보험 재정 부담을 가중시켜 건전성 악화 및 기금 고갈 위험을 높일 수 있습니다. ③ 실업급여는 실직자의 생활 안정을 돕고 재취업을 지원하는 것이 주된 목적이나, 반복 수급은 이러한 재취업 노력 없이 제도를 편법적으로 이용하게 만들 수 있습니다. ④ 고용보험료는 기업과 근로자가 함께 부담하며, 반복 수급으로 인한 지출 증가는 장기적으로 보험료율 인상 요인이 되어 기업의 부담 증가 및 고용 위축으로 이어질 수 있습니다.</p>
+      <p>관련 시사 뉴스: 같은 직장에서 실업급여를 5번 넘게 받는 반복 수급 사례가 역대 최다를 기록하여 고용보험 재정 건전성 악화 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-17</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":1941,"category":"시사금융용어","question":"시장 금리나 특정 금융 상품의 이자율 등을 확인하고 점검하여 시장 상황을 파악하는 행위를 지칭하는 용어로 가장 적절한 것은?","answer":"② 레이트 체크","explanation":"레이트 체크는 시장 금리나 특정 금융 상품의 이자율 등을 확인하고 점검하는 행위를 의미합니다. [오답해설] ① 일드 커브는 채권의 잔존 만기와 수익률 간의 관계를 그래프로 나타낸 것입니다. ③ 듀레이션은 채권 투자 기간에 따른 이자율 변동 위험을 나타내는 지표입니다. ④ 베이시스 포인트는 이자율이나 수익률을 나타내는 최소 단위입니다.","news_context":"레이트 체크는 시장 금리 및 금융 상품의 이자율 확인을 통해 투자 결정을 돕는 행위를 뜻합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428630","options":["① 일드 커브","② 레이트 체크","③ 듀레이션","④ 베이시스 포인트"]},{"id":1942,"category":"시사금융용어","question":"자기 자금이나 기존 사업에서 나오는 수익으로 새로운 사업을 확장하거나 기존 채무를 상환하는 등, 외부 자본 유입 없이 스스로 자금을 조달하는 방식을 지칭하며, 지속 가능성에 대한 우려를 내포할 수 있는 금융 기법은?","answer":"③ 우로보로스 파이낸싱","explanation":"우로보로스 파이낸싱은 외부 자본 유입 없이 내부 자금으로 새로운 사업 확장이나 채무 상환을 반복하는 순환식 자금 조달 방식을 의미하며, 지속 가능성 우려가 있을 수 있습니다. [오답해설] ① 폰지 사기는 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 투자 사기입니다. ② 에버그린 대출은 만기가 되어도 원금 상환 없이 이자만 지급하거나 대출을 연장하는 방식입니다. ④ 롤오버 리스크는 만기가 된 채무를 연장하거나 새로운 대출로 대체하지 못할 위험입니다.","news_context":"우로보로스 파이낸싱은 자체 자금으로 사업을 확장하거나 채무를 상환하는 순환식 자금 조달 방식으로, 지속 가능성 문제를 야기할 수 있습니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429662","options":["① 폰지 사기","② 에버그린 대출","③ 우로보로스 파이낸싱","④ 롤오버 리스크"]},{"id":1943,"category":"금융용어","question":"금융시장에서 투자자들의 자산이 특정 투자처에서 다른 투자처로 대규모로 이동하는 현상을 일컫는 용어는? 주로 경기 상황 변화나 금리 변동 등에 의해 발생한다.","answer":"② 머니무브","explanation":"머니무브는 자산이 한 시장에서 다른 시장으로 이동하는 현상으로, 경제 상황 변화에 따라 투자 포트폴리오를 조정하는 의미를 포함합니다.\n[오답해설] ① 펀드런은 펀드에서 대규모 환매가 발생하는 현상을 의미하며, 주로 펀드의 부실이나 시장 불안정 시 발생합니다. ③ 캐시버닝은 스타트업이 시장 점유율 확대를 위해 이익 없이 현금을 소모하는 것을 의미합니다. ④ 뱅크런은 은행의 건전성 악화 우려로 예금자들이 한꺼번에 예금을 인출하는 현상으로, 금융 시스템 위기 시 발생합니다.","news_context":"주식 시장에서 자금이 빠져나가 은행 특판 예금으로 이동하는 현상이 머니무브로 주목받고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12129176","options":["① 펀드런","② 머니무브","③ 캐시버닝","④ 뱅크런"]},{"id":1944,"category":"금융용어","question":"고가의 자산을 여러 투자자가 소액으로 나누어 공동 소유하고, 해당 자산에서 발생하는 수익을 지분만큼 배분받는 투자 방식을 의미하는 용어는? 미술품, 부동산 등 다양한 비유동 자산에 적용될 수 있다.","answer":"③ 조각투자","explanation":"조각투자는 고가의 자산을 여러 투자자가 소액으로 나누어 공동 소유하고 수익을 배분하는 투자 방식을 의미합니다.\n[오답해설] ① 크라우드펀딩은 다수의 소액 투자자로부터 자금을 모으는 방식이지만, 조각투자는 자산의 '지분'을 직접 소유한다는 점에서 차이가 있습니다. ② 증권형 토큰(STO)은 실물 자산의 소유권을 블록체인 기반의 토큰으로 발행한 것으로, 조각투자를 위한 기술적 수단이 될 수 있지만 그 자체로 투자 방식을 지칭하지는 않습니다. ④ 공동구매는 여러 사람이 함께 물건을 구매하여 가격을 낮추는 행위로, 투자 수익을 목적으로 하는 조각투자와는 성격이 다릅니다.","news_context":"미술품에 대한 소액 투자가 가능한 조각투자가 새로운 투자 형태로 떠오르고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/022/0004151394?sid=103","options":["① 크라우드펀딩","② 증권형 토큰(STO)","③ 조각투자","④ 공동구매"]},{"id":1945,"category":"세부지식","question":"다음 중 ELS(주가연계증권)의 특징에 대한 설명으로 옳지 않은 것은?","answer":"② 원금보장형 ELS는 투자 기간 동안 주가가 아무리 하락해도 원금 손실이 발생하지 않는다.","explanation":"원금보장형 ELS는 만기 시 원금이 보장될 수 있지만, 투자 기간 중 특정 조건에 의해 원금 손실 가능성이 있는 상품도 있으므로 '아무리 하락해도'라는 표현은 적절하지 않습니다.\n[오답해설] ① ELS는 주가지수나 개별 주식의 변동에 따라 수익률이 결정되는 파생결합증권으로, 맞는 설명입니다. ③ ELS는 고위험 상품으로 분류되어 은행의 직접 판매가 금지되어 있으며, 주로 증권사를 통해 발행 및 판매됩니다. ④ 주가 하락 시 손실 발생 조건에 따라 원금 손실 위험이 있으므로, 투자자는 기초자산의 변동성을 충분히 이해하고 투자해야 합니다.","news_context":"은행에서 판매가 중단되었던 ELS가 증권사에서 새로운 형태로 부활하며 고수익을 기대할 수 있다는 기사가 나왔습니다.","news_url":"https://n.news.naver.com/mnews/article/015/0005321462?sid=101","options":["① 주가지수나 개별 주식의 가격 변동에 따라 수익률이 결정되는 파생결합증권이다.","② 원금보장형 ELS는 투자 기간 동안 주가가 아무리 하락해도 원금 손실이 발생하지 않는다.","③ 은행에서는 ELS 직접 판매가 금지되어 있으며, 주로 증권사를 통해 발행 및 판매된다.","④ 주가 하락 시 원금 손실 위험이 있으므로, 투자 시 기초자산의 변동성을 충분히 고려해야 한다."]},{"id":1946,"category":"세부지식","question":"최근 가계부채가 사상 처음으로 2000조 원을 돌파하며 금융당국의 규제 강화 필요성이 대두되고 있다. 이와 관련하여 가계대출의 건전성을 관리하기 위해 도입된 총부채원리금상환비율(DSR)에 대한 설명으로 옳은 것은?","answer":"① 차주가 보유한 모든 대출의 연간 원리금 상환액을 연 소득으로 나눈 값이다.","explanation":"DSR은 차주가 보유한 모든 대출(주택담보대출, 신용대출 등)의 연간 원리금 상환액을 연 소득으로 나눈 값으로, 차주의 총체적 상환 능력을 심사하는 지표입니다.\n[오답해설] ② DSR은 주택담보대출뿐만 아니라 신용대출, 카드론 등 차주가 보유한 모든 대출의 원리금 상환액을 포함하여 계산합니다. ③ DSR 규제는 은행권은 물론 저축은행, 상호금융 등 제2금융권에도 적용되어 가계부채 전반을 관리합니다. ④ DSR 비율은 대출 유형이나 차주의 소득 수준 등에 따라 차등 적용될 수 있으며, 모든 차주에게 동일하게 적용되는 것은 아닙니다.","news_context":"가계빚이 사상 첫 2000조 원을 돌파하고 주담대가 증가분의 대부분을 차지하면서, 기준금리 인상 시 취약 차주의 부실 위험이 커지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12129166","options":["① 차주가 보유한 모든 대출의 연간 원리금 상환액을 연 소득으로 나눈 값이다.","② 주택담보대출에만 적용되며, 다른 신용대출 등은 계산에서 제외된다.","③ DSR 규제는 은행권에만 적용되며, 제2금융권은 자율적으로 운영된다.","④ 대출 규모와 상관없이 모든 차주에게 동일한 DSR 비율이 일괄적으로 적용된다."]},{"id":1947,"category":"세부지식","question":"최근 주택 관련 세제와 대출 정책에서 '실거주' 기준의 모호성으로 인한 혼란이 발생하고 있다. 현행 주택담보대출 규제에서 주택 구입 시 대출자의 '전입 의무'가 일반적으로 부과되는 주요 사례는?","answer":"① 투기과열지구 내에서 주택을 구입하기 위해 주택담보대출을 이용하는 경우","explanation":"투기과열지구 등 규제지역 내 주택 구입 목적의 주택담보대출은 일반적으로 일정 기간 내 전입 의무가 부과되어 실거주를 유도합니다.\n[오답해설] ② 규제지역이 아닌 일반 지역의 주택 구입 대출에는 전입 의무가 부과되지 않는 경우가 많습니다. ③ 생활안정자금 대출은 주택 보유 여부와 관계없이 기존 주택을 담보로 받는 것이므로 전입 의무와는 무관합니다. ④ 전세보증금 반환 목적의 대출은 임대인이 전세입자를 내보낼 때 받는 대출로, 주로 전입 의무가 부과되지 않습니다.","news_context":"세제와 대출 정책에서 '실거주' 기준이 제각각이어서 혼란을 야기하며, 전입 이력만 따지는 대출 정책의 한계가 지적되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/421/0009116637?sid=101","options":["① 투기과열지구 내에서 주택을 구입하기 위해 주택담보대출을 이용하는 경우","② 조정대상지역이 아닌 일반 지역에서 무주택자가 주택 구입을 위해 대출을 받는 경우","③ 생활안정자금 마련을 위해 기존 주택을 담보로 추가 대출을 받는 경우","④ 기존 전세보증금 반환을 위해 주택담보대출을 이용하는 경우"]},{"id":1948,"category":"시사","question":"한국은행의 기준금리 인상이 은행의 수신(예금) 및 여신(대출) 업무에 미치는 영향으로 가장 적절한 것은?","answer":"③ 은행의 조달비용이 증가하고 대출 수요가 감소할 수 있어 수익성 악화 요인이 된다.","explanation":"기준금리 인상은 은행의 수신 금리를 끌어올려 자금 조달 비용을 높이며, 대출 금리 인상으로 대출 수요를 위축시켜 은행의 수익성에 부정적인 영향을 줄 수 있습니다.\n[오답해설] ① 예금 금리 인상은 가계의 이자 수익을 증가시키지만, 대출 금리 인상으로 가계의 이자 부담이 커지므로 전반적인 이자 부담이 줄어든다고 볼 수 없습니다. ② 기준금리 인상은 일반적으로 대출 금리 인상으로 이어져 기업의 투자 및 가계의 소비를 위축시키는 요인이 됩니다. ④ 예금 금리 인상 폭과 대출 금리 인상 폭의 차이에 따라 순이자마진(NIM)은 달라질 수 있으며, 조달비용 증가로 NIM이 악화될 수도 있습니다.","news_context":"가계빚 2000조 원 시대에 기준금리 인상은 치명타가 될 수 있으며, 금리 인상 공포에도 카드 소비가 줄지 않는 등 한은의 셈법이 복잡하다는 내용이 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12129166","options":["① 은행의 예금 금리 인상으로 가계의 이자 부담이 줄어든다.","② 대출 금리가 하락하여 기업의 투자 및 가계의 소비가 촉진된다.","③ 은행의 조달비용이 증가하고 대출 수요가 감소할 수 있어 수익성 악화 요인이 된다.","④ 예금 금리 인상으로 은행의 순이자마진(NIM)이 항상 개선된다."]},{"id":1949,"category":"시사","question":"5대 시중은행들이 17조 원 규모의 인천시금고 유치에 총력을 기울이는 것과 같은 지방자치단체 금고 경쟁이 은행 경영에 미치는 영향으로 가장 적절한 것은?","answer":"② 안정적인 예금 유치 및 지역 기반 확대를 통해 저원가성 예금 확보에 기여한다.","explanation":"지자체 금고는 안정적이고 대규모의 저원가성 자금(예금)을 확보할 수 있게 하며, 해당 지자체 소속 공무원 및 시민들과의 거래 확대를 통해 은행의 지역 영업 기반을 강화하는 중요한 수단이 됩니다.\n[오답해설] ① 지자체 금고는 수수료 수익뿐만 아니라 대규모 자금 유치를 통한 이자 수익, 그리고 안정적인 고객 기반 확보 등 은행의 전반적인 수익성과 사업 확장에 중요한 영향을 미칩니다. ③ 지자체 금고를 통해 확보된 자금은 은행의 전체 예금 포트폴리오의 한 부분으로, 여신(대출) 재원으로 활용될 수 있습니다. ④ 금고 유치 시 은행은 지자체와의 협력 관계 유지를 위해 다양한 사회공헌 활동이나 출연금 제공 등 추가적인 노력을 기울이는 경우가 많습니다.","news_context":"5대 시중은행들이 17조 원 규모의 인천시금고 유치를 위해 치열한 경쟁을 벌이고 있습니다.","news_url":"https://www.lcnews.co.kr/news/articleView.html?idxno=206597","options":["① 지방자치단체 금고는 주로 수수료 수익이 낮아 은행의 순이자마진(NIM)에 큰 영향을 주지 않는다.","② 안정적인 예금 유치 및 지역 기반 확대를 통해 저원가성 예금 확보에 기여한다.","③ 지자체 금고는 대출 재원이 되기 어려워 은행의 여신 규모 확대에는 거의 도움이 되지 않는다.","④ 금고 유치 성공 시 은행은 추가적인 사회공헌 활동 의무에서 벗어날 수 있다."]},{"id":1950,"category":"시사","question":"최근 같은 직장에서 실업급여를 반복적으로 수급하는 사례가 역대 최다를 기록하며 사회적 논란이 되고 있다. 이러한 실업급여 반복 수급이 초래할 수 있는 문제점으로 옳지 않은 것은?","answer":"② 불필요한 이직을 조장하여 노동 시장의 유연성을 저해할 수 있다.","explanation":"실업급여 반복 수급은 오히려 고용 기간을 짧게 가져가거나 불필요한 이직을 유도하여 노동 시장의 경직성을 높이거나 본래 취지와 다른 방식으로 활용될 우려가 있습니다. 유연성은 제고되지 않습니다.\n[오답해설] ① 반복 수급은 고용보험 재정 부담을 가중시켜 건전성 악화 및 기금 고갈 위험을 높일 수 있습니다. ③ 실업급여는 실직자의 생활 안정을 돕고 재취업을 지원하는 것이 주된 목적이나, 반복 수급은 이러한 재취업 노력 없이 제도를 편법적으로 이용하게 만들 수 있습니다. ④ 고용보험료는 기업과 근로자가 함께 부담하며, 반복 수급으로 인한 지출 증가는 장기적으로 보험료율 인상 요인이 되어 기업의 부담 증가 및 고용 위축으로 이어질 수 있습니다.","news_context":"같은 직장에서 실업급여를 5번 넘게 받는 반복 수급 사례가 역대 최다를 기록하여 고용보험 재정 건전성 악화 우려가 커지고 있습니다.","news_url":"","options":["① 고용보험 재정의 건전성 악화 및 기금 고갈을 가속화할 수 있다.","② 불필요한 이직을 조장하여 노동 시장의 유연성을 저해할 수 있다.","③ 실업급여 제도의 본래 취지인 재취업 지원 기능이 약화될 수 있다.","④ 기업의 고용보험료 부담 증가로 고용 축소 및 투자 위축을 유발할 수 있다."]},{"id":63,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
