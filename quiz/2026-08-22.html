@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-22 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-22 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-22 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 보험사기 방지를 위해 경미한 교통사고에서 국과수가 개발한 교통사고 시뮬레이션 프로그램을 활용하여 상해 발생 가능성 여부를 과학적으로 분석하는 시스템은 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 딥러닝 기반 사고 예측 시스템</li><li>② 한국형 마디모</li><li>③ 보험사기특별조사단(SIU)</li><li>④ 블랙박스 포렌식</li>
+      </ul>
+      <p><strong>정답:</strong> ② 한국형 마디모</p>
+      <p><strong>해설:</strong> 한국형 마디모는 경미한 교통사고에서 국과수의 시뮬레이션 프로그램을 이용해 상해 여부를 과학적으로 분석하는 시스템입니다. [오답해설] ① 딥러닝 기반 사고 예측 시스템은 미래의 사고 위험을 예측하는 기술입니다. ③ 보험사기특별조사단(SIU)은 보험사기 전반을 조사하는 조직입니다. ④ 블랙박스 포렌식은 블랙박스 영상을 분석하여 사고 원인을 규명하는 기술입니다.</p>
+      <p>관련 시사 뉴스: 보험사기 방지를 위해 국과수 시뮬레이션 프로그램을 활용, 경미한 교통사고의 상해 발생 가능성을 과학적으로 분석하는 시스템이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 안보 동맹국들끼리 경제 협력을 강화하는 과정에서 글로벌 공급망이 재편되고, 이로 인해 저렴한 생산국 대신 동맹국으로부터 더 비싼 가격으로 재화나 서비스를 조달하게 되어 발생하는 물가 상승 현상을 일컫는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 스태그플레이션</li><li>② 그린플레이션</li><li>③ 프렌드플레이션</li><li>④ 리쇼어링 플레이션</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 프렌드플레이션</p>
+      <p><strong>해설:</strong> 프렌드플레이션은 안보 동맹국 간 경제 협력 강화와 공급망 재편으로 인해 발생하는 인플레이션입니다. [오답해설] ① 스태그플레이션은 경기 침체 속에서 물가가 상승하는 현상입니다. ② 그린플레이션은 친환경 정책 추진으로 발생하는 물가 상승 현상입니다. ④ 리쇼어링 플레이션은 해외에 있던 생산 시설이 자국으로 돌아오면서 생산 비용 증가로 물가가 상승하는 현상입니다.</p>
+      <p>관련 시사 뉴스: 안보 동맹국 간 경제 협력 강화와 글로벌 공급망 재편 과정에서, 더 비싼 동맹국으로부터 재화를 조달하여 발생하는 인플레이션이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 미국 재무부가 시장에서 국채를 다시 사들이는 행위를 지칭하며, 주로 채권 시장의 유동성을 조절하고 금리를 안정화하는 데 활용되는 정책 수단은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 양적완화 (Quantitative Easing)</li><li>② 공개시장조작 (Open Market Operations)</li><li>③ 재할인율 인상 (Rediscount Rate Hike)</li><li>④ 국채 바이백 (Treasury Buyback)</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 국채 바이백 (Treasury Buyback)</p>
+      <p><strong>해설:</strong> 국채 바이백은 정부가 이전에 발행한 국채를 시장에서 다시 매입하여 유동성을 공급하고 금리를 안정화하는 데 사용되는 정책입니다. [오답해설] ① 양적완화는 중앙은행이 국채 등을 대규모로 매입하여 통화량을 늘리는 정책입니다. ② 공개시장조작은 중앙은행이 시장에서 채권을 매매하여 단기 금리와 통화량을 조절하는 포괄적인 정책입니다. ③ 재할인율 인상은 중앙은행이 시중은행에 돈을 빌려줄 때 적용하는 금리를 높여 시중 유동성을 흡수하는 정책입니다.</p>
+      <p>관련 시사 뉴스: 미국이 시장에서 국채를 다시 사들이는 '국채 바이백' 정책의 이면과 그 영향에 대한 기사들이 언급되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 특정 법정화폐나 실물자산에 가치를 고정시켜 가격 변동성을 최소화하도록 설계된 암호화폐를 일컫는 용어는 무엇인가? 이는 주로 결제 및 송금 목적으로 활용되며, 기존 금융 시스템과의 연계를 모색하고 있다.</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스테이블코인 (Stablecoin)</li><li>② CBDC (Central Bank Digital Currency)</li><li>③ 알트코인 (Altcoin)</li><li>④ 토큰 (Token)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 스테이블코인 (Stablecoin)</p>
+      <p><strong>해설:</strong> 스테이블코인은 비트코인 등 일반 암호화폐의 높은 가격 변동성을 보완하기 위해 가치를 특정 자산에 고정시켜 안정성을 확보한 암호화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐로, 국가가 직접 발행하고 통제합니다. ③ 알트코인은 비트코인 이외의 모든 암호화폐를 통칭하는 용어입니다. ④ 토큰은 블록체인 상에서 발행되는 자산이나 권리를 나타내는 디지털 증표로, 스테이블코인도 토큰의 일종으로 볼 수 있으나 가치 안정성에 초점을 둔 것은 스테이블코인입니다.</p>
+      <p>관련 시사 뉴스: 기존 결제망을 통해 스테이블코인 결제를 추진하려는 움직임에 대한 기사가 있었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 최근 달러 가치가 저렴하다고 판단한 개인과 기업들이 달러예금을 대거 늘리고 있는 현상과 관련하여, 달러예금에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 달러예금의 환차익은 소득세 과세 대상이 아니다.</li><li>② 달러예금은 외화 자산이라도 예금자보호법에 따라 국내 원화예금과 합산하여 1인당 5천만원까지 보호된다.</li><li>③ 달러예금은 입출금이 자유로운 보통예금 형태로만 개설할 수 있다.</li><li>④ 달러예금의 이자 소득에 대해서는 원화예금과 동일하게 이자소득세가 부과된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 달러예금은 입출금이 자유로운 보통예금 형태로만 개설할 수 있다.</p>
+      <p><strong>해설:</strong> 달러예금은 입출금이 자유로운 보통예금 형태뿐만 아니라 정기예금 형태로도 개설할 수 있습니다. [오답해설] ① 달러예금의 환차익은 비과세 대상입니다. ② 달러예금은 외화 자산이더라도 예금자보호법에 따라 국내 원화예금과 합산하여 1인당 5천만원까지 보호됩니다. ④ 달러예금의 이자 소득은 국내 원화예금과 마찬가지로 이자소득세(15.4%)가 부과됩니다.</p>
+      <p>관련 시사 뉴스: 달러 가치가 낮을 때 달러를 사두려는 개인과 기업의 수요로 달러예금이 급증했다는 기사가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 주택담보대출 대환 시 잘못하면 '독'이 될 수 있다는 기사가 보도되었다. 다음 중 주택담보대출 대환 시 신중하게 고려해야 할 사항으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 대출 금리 하락폭보다 중도상환수수료가 더 클 수 있다.</li><li>② 기존 대출의 만기가 얼마 남지 않았다면 대환이 유리하지 않을 수 있다.</li><li>③ DSR(총부채원리금상환비율) 규제가 완화되어 대환 시 대출 한도가 무조건 늘어난다.</li><li>④ 대환대출을 통해 상환 기간을 늘리면 월 상환액 부담은 줄지만, 총 이자액은 늘어날 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ DSR(총부채원리금상환비율) 규제가 완화되어 대환 시 대출 한도가 무조건 늘어난다.</p>
+      <p><strong>해설:</strong> DSR 규제는 대환대출 시에도 적용되며, 대환대출이라고 해서 무조건 대출 한도가 늘어나는 것은 아니므로 자신의 상환 능력과 규제 한도를 고려해야 합니다. [오답해설] ① 대출 금리 하락폭이 중도상환수수료보다 작다면 대환으로 인한 이점보다 비용 부담이 커질 수 있습니다. ② 기존 대출 만기가 짧게 남았을 경우, 대환으로 인한 신규 대출 수수료 및 재설정 비용이 오히려 더 큰 부담이 될 수 있습니다. ④ 대환대출로 상환 기간을 늘리면 당장 월 상환 부담은 줄어들지만, 대출 기간이 길어지는 만큼 총 이자액은 증가할 가능성이 높습니다.</p>
+      <p>관련 시사 뉴스: 이자를 아끼기 위해 주택담보대출을 대환했지만, 잘못하면 독이 될 수 있다는 내용의 기사가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 5대 은행이 아파트 잔금대출 한도를 늘리는 등 집단대출 경쟁이 과열되고 있다는 기사가 있다. 집단대출에 대한 설명으로 가장 적절한 것은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 개별 차주의 신용도 심사 없이 건설사의 보증만으로 대출이 실행되는 주택도시기금 대출이다.</li><li>② 차주별 DSR 규제 적용을 받지 않아 일반 주택담보대출보다 대출 한도가 높게 설정되는 경우가 일반적이다.</li><li>③ 시중은행이 아닌 농협, 수협 등 상호금융기관에서 주로 취급하며, 비규제 지역에서만 가능하다.</li><li>④ 아파트 분양 시 중도금, 잔금 등을 위해 특정 사업장의 입주 예정자 전원에게 금융기관이 일괄적으로 취급하는 대출이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 아파트 분양 시 중도금, 잔금 등을 위해 특정 사업장의 입주 예정자 전원에게 금융기관이 일괄적으로 취급하는 대출이다.</p>
+      <p><strong>해설:</strong> 집단대출은 신축 아파트 등 특정 사업장의 입주 예정자 전원을 대상으로 금융기관이 심사를 거쳐 일괄적으로 취급하는 대출로, 중도금, 잔금 대출 등이 대표적입니다. [오답해설] ① 집단대출은 건설사 보증 형태가 아니며 주택도시기금 대출과 다릅니다. ② 집단대출도 차주별 DSR 규제를 적용받습니다. ③ 집단대출은 주로 시중은행에서 취급하며, 규제지역 여부와 상관없이 시행될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 5대 은행이 디에이치 방배 잔금대출 한도를 늘리며 집단대출 경쟁이 뜨거워지고 있다는 기사가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 정부가 반도체 세수 등을 활용하여 대규모 미래대응기금을 신설하고 교육교부금을 개편하여 재원을 확보하려 하고 있다. 이러한 미래대응기금 조성 및 재원 마련 방안이 은행 경영에 미칠 수 있는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 정부 재정 여건 개선으로 시중 유동성이 감소하여 예대율 관리가 어려워질 수 있다.</li><li>② 미래대응기금의 투자가 주로 중소기업에 집중되어 은행의 대기업 대출 자산 건전성이 악화될 수 있다.</li><li>③ 교육교부금 개편으로 지방 교육 재정이 축소되어 은행의 지방 지점 수익성이 크게 악화될 수 있다.</li><li>④ 기금 조성을 위한 국채 발행이 증가하여 채권시장 금리가 상승하고 은행의 조달 비용이 증가할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 기금 조성을 위한 국채 발행이 증가하여 채권시장 금리가 상승하고 은행의 조달 비용이 증가할 수 있다.</p>
+      <p><strong>해설:</strong> 대규모 기금 조성을 위해서는 정부의 재원 마련이 필요하며, 이는 국채 발행 확대로 이어져 채권시장 금리를 상승시키고 결과적으로 은행의 자금 조달 비용을 높일 수 있습니다. [오답해설] ① 정부 재정 여건 개선은 유동성 감소와 직접적인 연관이 없으며, 오히려 세수 증가로 인한 여유 자금은 다른 재정 정책에 활용될 수 있습니다. ② 미래대응기금의 투자 대상이 중소기업에 집중된다고 해도, 은행의 대기업 대출 자산 건전성이 직접적으로 악화된다고 보기 어렵습니다. ③ 교육교부금 개편이 지방 교육 재정 축소로 이어질 수는 있으나, 이것이 은행 지방 지점 수익성 악화로 직결된다고 단정하기는 어렵습니다.</p>
+      <p>관련 시사 뉴스: 정부가 반도체 세수 등으로 100조 원 규모의 미래대응기금 신설을 추진하며, 교육교부금 개편을 통해 20조 원 규모의 재정 부담을 절감하려 한다는 기사들이 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 유가 하락으로 7월 생산자물가지수(PPI)가 11개월 만에 하락 전환했다는 뉴스가 있다. 생산자물가지수에 대한 설명 중 틀린 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받지 않는다.</li><li>② 생산자물가지수는 미래 소비자물가 변동을 예측하는 선행 지표로 활용될 수 있다.</li><li>③ 생산자물가지수는 국내 생산자가 국내 시장에 공급하는 상품 및 서비스의 가격 변동을 측정한다.</li><li>④ 생산자물가지수의 하락은 기업의 생산 원가 부담 감소로 이어질 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받지 않는다.</p>
+      <p><strong>해설:</strong> 생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받습니다. [오답해설] ② 생산자물가지수는 생산 비용 변화를 나타내므로, 미래 소비자물가 변동을 예측하는 선행 지표로 활용될 수 있습니다. ③ 생산자물가지수는 국내 생산자가 국내 시장에 공급하는 상품 및 서비스의 가격 변동을 측정합니다. ④ 생산자물가지수 하락은 기업이 상품 및 서비스를 생산하는 데 드는 비용 부담이 줄어드는 것을 의미합니다.</p>
+      <p>관련 시사 뉴스: 유가 하락으로 7월 생산자물가가 하락하며 11개월 만에 방향 전환했다는 기사가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 국내 주식시장에서 사이드카가 80회 발동되는 등 시장의 변동성이 커지고 있다는 기사가 있다. 코스피 시장 사이드카 발동 시 나타나는 현상으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 선물시장의 매매거래가 즉시 전면 중단된다.</li><li>② 현물시장의 프로그램 매매 호가 효력이 5분간 정지된다.</li><li>③ 현물시장의 모든 매매거래가 5분간 정지된다.</li><li>④ 주식시장의 일일 가격제한폭이 일시적으로 확대된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 현물시장의 프로그램 매매 호가 효력이 5분간 정지된다.</p>
+      <p><strong>해설:</strong> 코스피 사이드카 발동 시 현물시장 프로그램 매매 호가 효력이 5분간 정지됩니다. [오답해설] ① 선물시장 매매거래가 즉시 전면 중단되는 것은 서킷브레이커의 한 종류입니다. ③ 현물시장의 모든 매매거래가 정지되는 것이 아니라, 프로그램 매매 호가의 효력만 정지됩니다. ④ 사이드카 발동은 가격제한폭 변경과 직접적인 관련이 없습니다.</p>
+      <p>관련 시사 뉴스: 최근 코스피 시장에서 사이드카 발동이 80회에 달하며 시장의 변동성을 보여주었다는 기사가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-22</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2011,"category":"시사금융용어","question":"보험사기 방지를 위해 경미한 교통사고에서 국과수가 개발한 교통사고 시뮬레이션 프로그램을 활용하여 상해 발생 가능성 여부를 과학적으로 분석하는 시스템은 무엇인가?","answer":"② 한국형 마디모","explanation":"한국형 마디모는 경미한 교통사고에서 국과수의 시뮬레이션 프로그램을 이용해 상해 여부를 과학적으로 분석하는 시스템입니다. [오답해설] ① 딥러닝 기반 사고 예측 시스템은 미래의 사고 위험을 예측하는 기술입니다. ③ 보험사기특별조사단(SIU)은 보험사기 전반을 조사하는 조직입니다. ④ 블랙박스 포렌식은 블랙박스 영상을 분석하여 사고 원인을 규명하는 기술입니다.","news_context":"보험사기 방지를 위해 국과수 시뮬레이션 프로그램을 활용, 경미한 교통사고의 상해 발생 가능성을 과학적으로 분석하는 시스템이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429463","options":["① 딥러닝 기반 사고 예측 시스템","② 한국형 마디모","③ 보험사기특별조사단(SIU)","④ 블랙박스 포렌식"]},{"id":2012,"category":"시사금융용어","question":"안보 동맹국들끼리 경제 협력을 강화하는 과정에서 글로벌 공급망이 재편되고, 이로 인해 저렴한 생산국 대신 동맹국으로부터 더 비싼 가격으로 재화나 서비스를 조달하게 되어 발생하는 물가 상승 현상을 일컫는 용어는?","answer":"③ 프렌드플레이션","explanation":"프렌드플레이션은 안보 동맹국 간 경제 협력 강화와 공급망 재편으로 인해 발생하는 인플레이션입니다. [오답해설] ① 스태그플레이션은 경기 침체 속에서 물가가 상승하는 현상입니다. ② 그린플레이션은 친환경 정책 추진으로 발생하는 물가 상승 현상입니다. ④ 리쇼어링 플레이션은 해외에 있던 생산 시설이 자국으로 돌아오면서 생산 비용 증가로 물가가 상승하는 현상입니다.","news_context":"안보 동맹국 간 경제 협력 강화와 글로벌 공급망 재편 과정에서, 더 비싼 동맹국으로부터 재화를 조달하여 발생하는 인플레이션이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4427922","options":["① 스태그플레이션","② 그린플레이션","③ 프렌드플레이션","④ 리쇼어링 플레이션"]},{"id":2013,"category":"금융용어","question":"미국 재무부가 시장에서 국채를 다시 사들이는 행위를 지칭하며, 주로 채권 시장의 유동성을 조절하고 금리를 안정화하는 데 활용되는 정책 수단은 무엇인가?","answer":"④ 국채 바이백 (Treasury Buyback)","explanation":"국채 바이백은 정부가 이전에 발행한 국채를 시장에서 다시 매입하여 유동성을 공급하고 금리를 안정화하는 데 사용되는 정책입니다. [오답해설] ① 양적완화는 중앙은행이 국채 등을 대규모로 매입하여 통화량을 늘리는 정책입니다. ② 공개시장조작은 중앙은행이 시장에서 채권을 매매하여 단기 금리와 통화량을 조절하는 포괄적인 정책입니다. ③ 재할인율 인상은 중앙은행이 시중은행에 돈을 빌려줄 때 적용하는 금리를 높여 시중 유동성을 흡수하는 정책입니다.","news_context":"미국이 시장에서 국채를 다시 사들이는 '국채 바이백' 정책의 이면과 그 영향에 대한 기사들이 언급되었습니다.","news_url":"https://www.kukinews.com/article/view/kuk202608210134","options":["① 양적완화 (Quantitative Easing)","② 공개시장조작 (Open Market Operations)","③ 재할인율 인상 (Rediscount Rate Hike)","④ 국채 바이백 (Treasury Buyback)"]},{"id":2014,"category":"금융용어","question":"특정 법정화폐나 실물자산에 가치를 고정시켜 가격 변동성을 최소화하도록 설계된 암호화폐를 일컫는 용어는 무엇인가? 이는 주로 결제 및 송금 목적으로 활용되며, 기존 금융 시스템과의 연계를 모색하고 있다.","answer":"① 스테이블코인 (Stablecoin)","explanation":"스테이블코인은 비트코인 등 일반 암호화폐의 높은 가격 변동성을 보완하기 위해 가치를 특정 자산에 고정시켜 안정성을 확보한 암호화폐입니다. [오답해설] ② CBDC는 중앙은행이 발행하는 디지털 화폐로, 국가가 직접 발행하고 통제합니다. ③ 알트코인은 비트코인 이외의 모든 암호화폐를 통칭하는 용어입니다. ④ 토큰은 블록체인 상에서 발행되는 자산이나 권리를 나타내는 디지털 증표로, 스테이블코인도 토큰의 일종으로 볼 수 있으나 가치 안정성에 초점을 둔 것은 스테이블코인입니다.","news_context":"기존 결제망을 통해 스테이블코인 결제를 추진하려는 움직임에 대한 기사가 있었습니다.","news_url":"https://n.news.naver.com/mnews/article/366/0001187694?sid=101","options":["① 스테이블코인 (Stablecoin)","② CBDC (Central Bank Digital Currency)","③ 알트코인 (Altcoin)","④ 토큰 (Token)"]},{"id":2015,"category":"세부지식","question":"최근 달러 가치가 저렴하다고 판단한 개인과 기업들이 달러예금을 대거 늘리고 있는 현상과 관련하여, 달러예금에 대한 설명으로 옳지 않은 것은?","answer":"③ 달러예금은 입출금이 자유로운 보통예금 형태로만 개설할 수 있다.","explanation":"달러예금은 입출금이 자유로운 보통예금 형태뿐만 아니라 정기예금 형태로도 개설할 수 있습니다. [오답해설] ① 달러예금의 환차익은 비과세 대상입니다. ② 달러예금은 외화 자산이더라도 예금자보호법에 따라 국내 원화예금과 합산하여 1인당 5천만원까지 보호됩니다. ④ 달러예금의 이자 소득은 국내 원화예금과 마찬가지로 이자소득세(15.4%)가 부과됩니다.","news_context":"달러 가치가 낮을 때 달러를 사두려는 개인과 기업의 수요로 달러예금이 급증했다는 기사가 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12133699","options":["① 달러예금의 환차익은 소득세 과세 대상이 아니다.","② 달러예금은 외화 자산이라도 예금자보호법에 따라 국내 원화예금과 합산하여 1인당 5천만원까지 보호된다.","③ 달러예금은 입출금이 자유로운 보통예금 형태로만 개설할 수 있다.","④ 달러예금의 이자 소득에 대해서는 원화예금과 동일하게 이자소득세가 부과된다."]},{"id":2016,"category":"세부지식","question":"주택담보대출 대환 시 잘못하면 '독'이 될 수 있다는 기사가 보도되었다. 다음 중 주택담보대출 대환 시 신중하게 고려해야 할 사항으로 옳지 않은 것은?","answer":"③ DSR(총부채원리금상환비율) 규제가 완화되어 대환 시 대출 한도가 무조건 늘어난다.","explanation":"DSR 규제는 대환대출 시에도 적용되며, 대환대출이라고 해서 무조건 대출 한도가 늘어나는 것은 아니므로 자신의 상환 능력과 규제 한도를 고려해야 합니다. [오답해설] ① 대출 금리 하락폭이 중도상환수수료보다 작다면 대환으로 인한 이점보다 비용 부담이 커질 수 있습니다. ② 기존 대출 만기가 짧게 남았을 경우, 대환으로 인한 신규 대출 수수료 및 재설정 비용이 오히려 더 큰 부담이 될 수 있습니다. ④ 대환대출로 상환 기간을 늘리면 당장 월 상환 부담은 줄어들지만, 대출 기간이 길어지는 만큼 총 이자액은 증가할 가능성이 높습니다.","news_context":"이자를 아끼기 위해 주택담보대출을 대환했지만, 잘못하면 독이 될 수 있다는 내용의 기사가 보도되었습니다.","news_url":"https://n.news.naver.com/mnews/article/029/0003043580?sid=101","options":["① 대출 금리 하락폭보다 중도상환수수료가 더 클 수 있다.","② 기존 대출의 만기가 얼마 남지 않았다면 대환이 유리하지 않을 수 있다.","③ DSR(총부채원리금상환비율) 규제가 완화되어 대환 시 대출 한도가 무조건 늘어난다.","④ 대환대출을 통해 상환 기간을 늘리면 월 상환액 부담은 줄지만, 총 이자액은 늘어날 수 있다."]},{"id":2017,"category":"세부지식","question":"5대 은행이 아파트 잔금대출 한도를 늘리는 등 집단대출 경쟁이 과열되고 있다는 기사가 있다. 집단대출에 대한 설명으로 가장 적절한 것은 무엇인가?","answer":"④ 아파트 분양 시 중도금, 잔금 등을 위해 특정 사업장의 입주 예정자 전원에게 금융기관이 일괄적으로 취급하는 대출이다.","explanation":"집단대출은 신축 아파트 등 특정 사업장의 입주 예정자 전원을 대상으로 금융기관이 심사를 거쳐 일괄적으로 취급하는 대출로, 중도금, 잔금 대출 등이 대표적입니다. [오답해설] ① 집단대출은 건설사 보증 형태가 아니며 주택도시기금 대출과 다릅니다. ② 집단대출도 차주별 DSR 규제를 적용받습니다. ③ 집단대출은 주로 시중은행에서 취급하며, 규제지역 여부와 상관없이 시행될 수 있습니다.","news_context":"5대 은행이 디에이치 방배 잔금대출 한도를 늘리며 집단대출 경쟁이 뜨거워지고 있다는 기사가 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12133543","options":["① 개별 차주의 신용도 심사 없이 건설사의 보증만으로 대출이 실행되는 주택도시기금 대출이다.","② 차주별 DSR 규제 적용을 받지 않아 일반 주택담보대출보다 대출 한도가 높게 설정되는 경우가 일반적이다.","③ 시중은행이 아닌 농협, 수협 등 상호금융기관에서 주로 취급하며, 비규제 지역에서만 가능하다.","④ 아파트 분양 시 중도금, 잔금 등을 위해 특정 사업장의 입주 예정자 전원에게 금융기관이 일괄적으로 취급하는 대출이다."]},{"id":2018,"category":"시사","question":"정부가 반도체 세수 등을 활용하여 대규모 미래대응기금을 신설하고 교육교부금을 개편하여 재원을 확보하려 하고 있다. 이러한 미래대응기금 조성 및 재원 마련 방안이 은행 경영에 미칠 수 있는 영향으로 가장 적절한 것은?","answer":"④ 기금 조성을 위한 국채 발행이 증가하여 채권시장 금리가 상승하고 은행의 조달 비용이 증가할 수 있다.","explanation":"대규모 기금 조성을 위해서는 정부의 재원 마련이 필요하며, 이는 국채 발행 확대로 이어져 채권시장 금리를 상승시키고 결과적으로 은행의 자금 조달 비용을 높일 수 있습니다. [오답해설] ① 정부 재정 여건 개선은 유동성 감소와 직접적인 연관이 없으며, 오히려 세수 증가로 인한 여유 자금은 다른 재정 정책에 활용될 수 있습니다. ② 미래대응기금의 투자 대상이 중소기업에 집중된다고 해도, 은행의 대기업 대출 자산 건전성이 직접적으로 악화된다고 보기 어렵습니다. ③ 교육교부금 개편이 지방 교육 재정 축소로 이어질 수는 있으나, 이것이 은행 지방 지점 수익성 악화로 직결된다고 단정하기는 어렵습니다.","news_context":"정부가 반도체 세수 등으로 100조 원 규모의 미래대응기금 신설을 추진하며, 교육교부금 개편을 통해 20조 원 규모의 재정 부담을 절감하려 한다는 기사들이 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12133458","options":["① 정부 재정 여건 개선으로 시중 유동성이 감소하여 예대율 관리가 어려워질 수 있다.","② 미래대응기금의 투자가 주로 중소기업에 집중되어 은행의 대기업 대출 자산 건전성이 악화될 수 있다.","③ 교육교부금 개편으로 지방 교육 재정이 축소되어 은행의 지방 지점 수익성이 크게 악화될 수 있다.","④ 기금 조성을 위한 국채 발행이 증가하여 채권시장 금리가 상승하고 은행의 조달 비용이 증가할 수 있다."]},{"id":2019,"category":"시사","question":"유가 하락으로 7월 생산자물가지수(PPI)가 11개월 만에 하락 전환했다는 뉴스가 있다. 생산자물가지수에 대한 설명 중 틀린 것은?","answer":"① 생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받지 않는다.","explanation":"생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받습니다. [오답해설] ② 생산자물가지수는 생산 비용 변화를 나타내므로, 미래 소비자물가 변동을 예측하는 선행 지표로 활용될 수 있습니다. ③ 생산자물가지수는 국내 생산자가 국내 시장에 공급하는 상품 및 서비스의 가격 변동을 측정합니다. ④ 생산자물가지수 하락은 기업이 상품 및 서비스를 생산하는 데 드는 비용 부담이 줄어드는 것을 의미합니다.","news_context":"유가 하락으로 7월 생산자물가가 하락하며 11개월 만에 방향 전환했다는 기사가 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12132918","options":["① 생산자물가지수는 농산물 및 석유류 등 원자재 가격 변동에 크게 영향을 받지 않는다.","② 생산자물가지수는 미래 소비자물가 변동을 예측하는 선행 지표로 활용될 수 있다.","③ 생산자물가지수는 국내 생산자가 국내 시장에 공급하는 상품 및 서비스의 가격 변동을 측정한다.","④ 생산자물가지수의 하락은 기업의 생산 원가 부담 감소로 이어질 수 있다."]},{"id":2020,"category":"시사","question":"최근 국내 주식시장에서 사이드카가 80회 발동되는 등 시장의 변동성이 커지고 있다는 기사가 있다. 코스피 시장 사이드카 발동 시 나타나는 현상으로 가장 적절한 것은?","answer":"② 현물시장의 프로그램 매매 호가 효력이 5분간 정지된다.","explanation":"코스피 사이드카 발동 시 현물시장 프로그램 매매 호가 효력이 5분간 정지됩니다. [오답해설] ① 선물시장 매매거래가 즉시 전면 중단되는 것은 서킷브레이커의 한 종류입니다. ③ 현물시장의 모든 매매거래가 정지되는 것이 아니라, 프로그램 매매 호가의 효력만 정지됩니다. ④ 사이드카 발동은 가격제한폭 변경과 직접적인 관련이 없습니다.","news_context":"최근 코스피 시장에서 사이드카 발동이 80회에 달하며 시장의 변동성을 보여주었다는 기사가 보도되었습니다.","news_url":"https://www.news2day.co.kr/article/20260821500013","options":["① 선물시장의 매매거래가 즉시 전면 중단된다.","② 현물시장의 프로그램 매매 호가 효력이 5분간 정지된다.","③ 현물시장의 모든 매매거래가 5분간 정지된다.","④ 주식시장의 일일 가격제한폭이 일시적으로 확대된다."]},{"id":68,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
