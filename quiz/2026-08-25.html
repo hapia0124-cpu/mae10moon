@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-25 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-25 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-25 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 원유를 정제하여 얻는 석유화학 산업의 기초 원료로, 플라스틱, 합성섬유 등 다양한 화학제품의 중간 원료로 사용되며 국제유가 변동에 민감하게 반응하는 물질은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 벤젠</li><li>② 나프타</li><li>③ 에탄</li><li>④ LPG</li>
+      </ul>
+      <p><strong>정답:</strong> ② 나프타</p>
+      <p><strong>해설:</strong> 나프타는 원유 정제 과정에서 얻어지는 석유화학 산업의 핵심 기초 원료입니다. [오답해설] ① 벤젠은 나프타를 분해하여 얻는 석유화학 제품 중 하나입니다. ③ 에탄은 천연가스에서 추출되는 석유화학 원료로 나프타와는 다른 종류입니다. ④ LPG는 액화석유가스로 연료로 주로 사용되며, 나프타와는 용도가 다릅니다.</p>
+      <p>관련 시사 뉴스: 나프타는 원유 정제 과정에서 생산되는 석유화학 산업의 기초 원료로, 국제유가 변동에 민감하게 반응합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 특정 대출자산을 기초로 자산유동화증권(ABS)을 발행하고, 다시 이 ABS를 기초자산으로 하여 또 다른 ABS를 발행하는 등 '뱀이 자기 꼬리를 물고 있는' 형상처럼 위험 전이 및 증폭 가능성이 있는 자금 조달 방식을 일컫는 금융용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 메자닌 파이낸싱</li><li>② 그림자 금융</li><li>③ 우로보로스 파이낸싱</li><li>④ 프로젝트 파이낸싱</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 우로보로스 파이낸싱</p>
+      <p><strong>해설:</strong> 우로보로스 파이낸싱은 특정 자산을 기초로 ABS를 발행하고, 그 ABS를 다시 유동화하여 자금을 조달하는 구조를 의미합니다. [오답해설] ① 메자닌 파이낸싱은 부채와 지분 사이의 중간적인 성격을 가지는 투자를 의미합니다. ② 그림자 금융은 은행처럼 예금을 받지는 않지만 대출이나 투자 등 신용 중개 기능을 하는 비은행 금융기관의 활동을 통칭합니다. ④ 프로젝트 파이낸싱은 특정 프로젝트의 현금 흐름을 담보로 자금을 조달하는 방식입니다.</p>
+      <p>관련 시사 뉴스: 우로보로스 파이낸싱은 자산유동화증권을 재유동화하는 방식으로, 위험 전이 및 증폭 가능성이 있는 자금 조달 구조를 의미합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 급격한 금리 인상 등으로 채권 가격이 폭락하여 대규모 손실을 초래하고 시장 전체에 충격을 주는 현상을 지칭하는 용어로 가장 적절한 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스무딩 오퍼레이션</li><li>② 채권발작(Bond Market Turmoil)</li><li>③ 핫머니(Hot Money)</li><li>④ 빅배스(Big Bath)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 채권발작(Bond Market Turmoil)</p>
+      <p><strong>해설:</strong> 채권발작은 금리 급등으로 채권 가격이 폭락하며 시장에 충격을 주는 현상을 의미합니다. [오답해설] ① 스무딩 오퍼레이션은 외환 시장의 급격한 변동을 완화하기 위해 중앙은행이 개입하는 것입니다. ③ 핫머니는 단기적인 이익을 찾아 국경을 넘나드는 투기성 자금을 말합니다. ④ 빅배스는 기업이 부실요소를 한 회계연도에 모두 반영하여 재무제표를 개선하는 것입니다.</p>
+      <p>관련 시사 뉴스: AI가 보내온 ‘채권발작’ 청구서와 미국 국채시장의 동향에 대한 뉴스가 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 은행 예금 인출 및 이체 금액이 26년 만에 최고치를 기록하고, 통장을 깨서 투자하는 현상이 나타나는 등 자금이 특정 금융상품에서 다른 금융상품이나 자산으로 이동하는 현상을 통칭하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 뱅크런(Bank Run)</li><li>② 캐리 트레이드(Carry Trade)</li><li>③ 디레버리징(Deleveraging)</li><li>④ 머니무브(Money Move)</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 머니무브(Money Move)</p>
+      <p><strong>해설:</strong> 머니무브는 고객 자산이 한 금융상품이나 자산에서 다른 금융상품이나 자산으로 이동하는 현상을 말합니다. [오답해설] ① 뱅크런은 은행의 재정 건전성 악화에 대한 우려로 예금자들이 한꺼번에 예금을 인출하는 현상입니다. ② 캐리 트레이드는 저금리 국가에서 자금을 빌려 고금리 국가에 투자하여 수익을 얻는 전략입니다. ③ 디레버리징은 부채를 줄여 재무 건전성을 확보하는 과정입니다.</p>
+      <p>관련 시사 뉴스: 예금 인출과 이체 금액이 26년 만에 최고를 기록하며 통장을 깨서 투자하는 등 금융 시장 내 자금 이동이 활발해지고 있다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 금융위원장이 언급한 이주비대출의 LTV(Loan-to-Value) 산정 기준에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① LTV 산정 시 감정평가액 기준으로 최대 70%까지 대출이 가능합니다.</li><li>② 이주비대출의 LTV는 조합원 분양가를 기준으로 산정됩니다.</li><li>③ LTV 산정 시 재개발·재건축 사업의 사업성을 기준으로 합니다.</li><li>④ 이주비대출은 LTV 규제 대상에서 제외되어 자율적으로 대출 한도가 결정됩니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 이주비대출의 LTV는 조합원 분양가를 기준으로 산정됩니다.</p>
+      <p><strong>해설:</strong> 금융위원장은 이주비대출의 LTV 산정 기준이 조합원 분양가임을 명확히 밝혔습니다. [오답해설] ① 감정평가액 기준은 일반적인 주택담보대출 LTV 산정 방식 중 하나이지만, 이주비대출에 대한 특별 언급 내용과 다릅니다. ③ 사업성은 LTV 산정의 직접적인 기준이 아니라 사업 타당성 평가 시 고려되는 요소입니다. ④ 이주비대출도 LTV 등 금융 규제의 대상이며, 자율적으로 결정되지 않습니다.</p>
+      <p>관련 시사 뉴스: 금융위원장이 이주비대출의 LTV 산정 기준을 조합원 분양가로 제시했다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 직장인 퇴직연금의 '머니무브' 현상이 가속화되는 배경과 가장 밀접한 관련이 있는 퇴직연금 유형은 무엇이며, 그 이유는 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 확정급여형(DB형) 퇴직연금 – 높은 원금 보장으로 안전자산 선호가 강하기 때문</li><li>② 개인형 퇴직연금(IRP) – 연말정산 세액공제 혜택이 가장 크기 때문</li><li>③ 확정기여형(DC형) 퇴직연금 – 가입자가 직접 운용하여 수익률에 민감하게 반응하기 때문</li><li>④ 퇴직보험 – 보험사의 안정적인 자산 운용 능력 때문</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 확정기여형(DC형) 퇴직연금 – 가입자가 직접 운용하여 수익률에 민감하게 반응하기 때문</p>
+      <p><strong>해설:</strong> 확정기여형(DC형) 퇴직연금은 가입자가 직접 운용 상품을 선택하고 그 수익에 따라 최종 수령액이 달라지므로, 시장 금리 변동이나 수익률에 민감하게 반응하여 머니무브가 활발합니다. [오답해설] ① 확정급여형(DB형)은 회사가 운용하며 근로자는 정해진 퇴직금을 받으므로 머니무브와 직접적인 관련성이 낮습니다. ② 개인형 퇴직연금(IRP)도 머니무브의 대상이 될 수 있지만, 주된 이유는 세액공제보다는 적극적인 수익률 추구에 있습니다. ④ 퇴직보험은 퇴직연금 제도의 한 형태였으나 현재는 사실상 확정급여형/확정기여형으로 대체되었고, 보험사의 안정성은 머니무브의 주된 이유가 아닙니다.</p>
+      <p>관련 시사 뉴스: 직장인 퇴직연금이 하루 261억 원씩 이동하며 '머니무브'가 가속화되고 있다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. HUG(주택도시보증공사)의 '전세안심신탁' 제도에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 전세안심신탁은 전세금 보호를 위해 신탁회사가 부동산을 관리하는 제도입니다.</li><li>② 해당 제도가 확대될 경우, 금융권의 PF(프로젝트 파이낸싱) 대출 경쟁 구도가 심화될 수 있습니다.</li><li>③ 전세안심신탁은 주로 아파트와 같은 대규모 주택 사업에 활용되어 PF대출의 위험을 줄입니다.</li><li>④ 이 제도는 부동산 PF 대출 시 신탁 담보를 통해 사업자의 자금조달을 용이하게 할 수 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 전세안심신탁은 주로 아파트와 같은 대규모 주택 사업에 활용되어 PF대출의 위험을 줄입니다.</p>
+      <p><strong>해설:</strong> 전세안심신탁은 주로 오피스텔, 빌라 등 비아파트 전세사기 방지를 위해 도입된 제도이며, 대규모 주택 사업보다는 개별 전세 계약 보호에 초점을 맞춥니다. [오답해설] ① 전세안심신탁은 임차인의 전세보증금을 보호하기 위해 임대인이 부동산을 신탁회사에 맡기는 제도입니다. ② 전세안심신탁의 확대는 신탁 담보를 활용한 PF대출 증가로 이어져 금융권의 PF 대출 경쟁 구도에 영향을 미칠 수 있다는 분석이 있습니다. ④ 신탁을 통해 담보권이 명확해지면 금융기관은 PF 대출 리스크를 줄일 수 있어 사업자의 자금 조달이 수월해질 수 있습니다.</p>
+      <p>관련 시사 뉴스: HUG 전세안심신탁 제도가 금융권 PF 경쟁 구도에 미칠 영향과 PF대출 금리 왜곡 우려에 대한 기사가 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 한국은행 금융통화위원회의 기준금리 결정(인상 또는 동결)이 시중은행 경영 및 가계 대출에 미치는 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기준금리 동결 시 은행의 예대마진이 확대되어 수익성이 개선됩니다.</li><li>② 기준금리 인상 시 은행의 조달 비용이 증가하여 대출 금리가 하락하고 가계의 이자 부담이 줄어듭니다.</li><li>③ 기준금리 인상 시 변동금리 대출 비중이 높은 은행은 건전성 관리에 부담이 커집니다.</li><li>④ 기준금리 동결 시 시중 자금 유동성이 감소하여 가계 대출 수요가 줄어듭니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 기준금리 인상 시 변동금리 대출 비중이 높은 은행은 건전성 관리에 부담이 커집니다.</p>
+      <p><strong>해설:</strong> 기준금리 인상 시 변동금리 대출의 이자 부담이 커져 차주 상환 능력이 약화될 수 있으며, 이는 은행의 부실채권 증가로 이어져 건전성 관리에 부담이 됩니다. [오답해설] ① 기준금리 동결 시 예대마진은 변동될 수 있으나, 일반적으로 금리 동결 자체가 마진 확대로 직결되는 것은 아닙니다. ② 기준금리 인상 시 은행의 조달 비용 증가로 대출 금리가 상승하고 가계의 이자 부담은 가중됩니다. ④ 기준금리 동결은 시중 유동성 감소와 직접적인 관계가 없으며, 대출 수요는 복합적인 요인에 의해 결정됩니다.</p>
+      <p>관련 시사 뉴스: 한국은행의 기준금리 연속 인상 여부 또는 동결 결정에 대한 금융통화위원회 관련 뉴스가 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 미국 재무부가 국채 매입에 1조 달러 활용을 검토한다는 소식이 글로벌 금융시장에 미칠 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국채 매입은 시장에 유동성을 공급하여 장기 금리 하락 압력으로 작용할 수 있습니다.</li><li>② 미국의 국채 매입은 달러 가치 상승을 유도하여 신흥국 통화 가치를 하락시킬 수 있습니다.</li><li>③ 이는 사실상 양적 완화(Quantitative Easing)와 유사한 효과를 내어 경기 부양을 시도할 수 있습니다.</li><li>④ 국채 매입은 투자자들의 위험 선호 심리를 자극하여 주식 등 위험자산 시장에 긍정적 영향을 줄 수 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 미국의 국채 매입은 달러 가치 상승을 유도하여 신흥국 통화 가치를 하락시킬 수 있습니다.</p>
+      <p><strong>해설:</strong> 미국 재무부의 국채 매입은 시장에 달러 유동성을 공급하여 달러 가치를 약화시키는 요인으로 작용할 수 있습니다. [오답해설] ① 국채 매입은 채권 수요를 늘려 채권 가격을 올리고 금리를 낮추는 효과가 있습니다. ③ 중앙은행이 국채를 매입하는 것은 대표적인 양적 완화 정책으로 시장에 유동성을 공급하여 경제 활동을 촉진하는 목적을 가집니다. ④ 금리가 낮아지고 유동성이 풍부해지면 투자자들은 더 높은 수익을 찾아 주식과 같은 위험자산으로 이동할 가능성이 있습니다.</p>
+      <p>관련 시사 뉴스: 미국 재무부가 국채 매입에 1조 달러를 활용하는 방안을 검토하고 있다는 소식이 전해졌습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 미국이 이란에 대한 '경제적 왕따 작전'을 개시하며 제3국까지 제재를 확대하는 정책의 주된 목표는 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 이란의 군사력 강화를 저지하고 핵 프로그램 개발을 막기 위함</li><li>② 이란 경제의 자립을 촉진하고 내부 개혁을 유도하기 위함</li><li>③ 이란을 국제 금융 시스템에서 완전히 고립시켜 경제적 압박을 극대화하기 위함</li><li>④ 이란과의 무역 거래를 합법적인 경로로 유도하여 투명성을 확보하기 위함</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 이란을 국제 금융 시스템에서 완전히 고립시켜 경제적 압박을 극대화하기 위함</p>
+      <p><strong>해설:</strong> 미국의 '경제적 왕따 작전'은 이란과의 모든 경제적 연결고리를 차단하고 국제 금융 시스템에서 이란을 완전히 고립시켜 경제적 압박을 극대화하는 것을 목표로 합니다. [오답해설] ① 군사력 강화 저지는 제재의 간접적인 결과일 수 있으나, '경제적 왕따'라는 표현은 금융 고립에 초점을 맞춥니다. ② 이 정책은 이란 경제의 자립을 저해하고 압박을 가하는 것이 주된 목적입니다. ④ 합법적 거래 유도보다는 제재를 통해 모든 형태의 거래를 어렵게 만드는 것이 목적입니다.</p>
+      <p>관련 시사 뉴스: 미국이 이란에 대한 '경제적 왕따 작전'을 개시하며, 이란과 거래하는 제3국까지 제재를 확대하고 있다는 뉴스가 다수 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-25</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2051,"category":"시사금융용어","question":"원유를 정제하여 얻는 석유화학 산업의 기초 원료로, 플라스틱, 합성섬유 등 다양한 화학제품의 중간 원료로 사용되며 국제유가 변동에 민감하게 반응하는 물질은?","answer":"② 나프타","explanation":"나프타는 원유 정제 과정에서 얻어지는 석유화학 산업의 핵심 기초 원료입니다. [오답해설] ① 벤젠은 나프타를 분해하여 얻는 석유화학 제품 중 하나입니다. ③ 에탄은 천연가스에서 추출되는 석유화학 원료로 나프타와는 다른 종류입니다. ④ LPG는 액화석유가스로 연료로 주로 사용되며, 나프타와는 용도가 다릅니다.","news_context":"나프타는 원유 정제 과정에서 생산되는 석유화학 산업의 기초 원료로, 국제유가 변동에 민감하게 반응합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428387","options":["① 벤젠","② 나프타","③ 에탄","④ LPG"]},{"id":2052,"category":"시사금융용어","question":"특정 대출자산을 기초로 자산유동화증권(ABS)을 발행하고, 다시 이 ABS를 기초자산으로 하여 또 다른 ABS를 발행하는 등 '뱀이 자기 꼬리를 물고 있는' 형상처럼 위험 전이 및 증폭 가능성이 있는 자금 조달 방식을 일컫는 금융용어는?","answer":"③ 우로보로스 파이낸싱","explanation":"우로보로스 파이낸싱은 특정 자산을 기초로 ABS를 발행하고, 그 ABS를 다시 유동화하여 자금을 조달하는 구조를 의미합니다. [오답해설] ① 메자닌 파이낸싱은 부채와 지분 사이의 중간적인 성격을 가지는 투자를 의미합니다. ② 그림자 금융은 은행처럼 예금을 받지는 않지만 대출이나 투자 등 신용 중개 기능을 하는 비은행 금융기관의 활동을 통칭합니다. ④ 프로젝트 파이낸싱은 특정 프로젝트의 현금 흐름을 담보로 자금을 조달하는 방식입니다.","news_context":"우로보로스 파이낸싱은 자산유동화증권을 재유동화하는 방식으로, 위험 전이 및 증폭 가능성이 있는 자금 조달 구조를 의미합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429662","options":["① 메자닌 파이낸싱","② 그림자 금융","③ 우로보로스 파이낸싱","④ 프로젝트 파이낸싱"]},{"id":2053,"category":"금융용어","question":"다음 중 급격한 금리 인상 등으로 채권 가격이 폭락하여 대규모 손실을 초래하고 시장 전체에 충격을 주는 현상을 지칭하는 용어로 가장 적절한 것은?","answer":"② 채권발작(Bond Market Turmoil)","explanation":"채권발작은 금리 급등으로 채권 가격이 폭락하며 시장에 충격을 주는 현상을 의미합니다. [오답해설] ① 스무딩 오퍼레이션은 외환 시장의 급격한 변동을 완화하기 위해 중앙은행이 개입하는 것입니다. ③ 핫머니는 단기적인 이익을 찾아 국경을 넘나드는 투기성 자금을 말합니다. ④ 빅배스는 기업이 부실요소를 한 회계연도에 모두 반영하여 재무제표를 개선하는 것입니다.","news_context":"AI가 보내온 ‘채권발작’ 청구서와 미국 국채시장의 동향에 대한 뉴스가 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12135120","options":["① 스무딩 오퍼레이션","② 채권발작(Bond Market Turmoil)","③ 핫머니(Hot Money)","④ 빅배스(Big Bath)"]},{"id":2054,"category":"금융용어","question":"은행 예금 인출 및 이체 금액이 26년 만에 최고치를 기록하고, 통장을 깨서 투자하는 현상이 나타나는 등 자금이 특정 금융상품에서 다른 금융상품이나 자산으로 이동하는 현상을 통칭하는 용어는?","answer":"④ 머니무브(Money Move)","explanation":"머니무브는 고객 자산이 한 금융상품이나 자산에서 다른 금융상품이나 자산으로 이동하는 현상을 말합니다. [오답해설] ① 뱅크런은 은행의 재정 건전성 악화에 대한 우려로 예금자들이 한꺼번에 예금을 인출하는 현상입니다. ② 캐리 트레이드는 저금리 국가에서 자금을 빌려 고금리 국가에 투자하여 수익을 얻는 전략입니다. ③ 디레버리징은 부채를 줄여 재무 건전성을 확보하는 과정입니다.","news_context":"예금 인출과 이체 금액이 26년 만에 최고를 기록하며 통장을 깨서 투자하는 등 금융 시장 내 자금 이동이 활발해지고 있다는 뉴스입니다.","news_url":"https://www.mk.co.kr/news/economy/12135330","options":["① 뱅크런(Bank Run)","② 캐리 트레이드(Carry Trade)","③ 디레버리징(Deleveraging)","④ 머니무브(Money Move)"]},{"id":2055,"category":"세부지식","question":"금융위원장이 언급한 이주비대출의 LTV(Loan-to-Value) 산정 기준에 대한 설명으로 옳은 것은?","answer":"② 이주비대출의 LTV는 조합원 분양가를 기준으로 산정됩니다.","explanation":"금융위원장은 이주비대출의 LTV 산정 기준이 조합원 분양가임을 명확히 밝혔습니다. [오답해설] ① 감정평가액 기준은 일반적인 주택담보대출 LTV 산정 방식 중 하나이지만, 이주비대출에 대한 특별 언급 내용과 다릅니다. ③ 사업성은 LTV 산정의 직접적인 기준이 아니라 사업 타당성 평가 시 고려되는 요소입니다. ④ 이주비대출도 LTV 등 금융 규제의 대상이며, 자율적으로 결정되지 않습니다.","news_context":"금융위원장이 이주비대출의 LTV 산정 기준을 조합원 분양가로 제시했다는 뉴스입니다.","news_url":"https://www.mk.co.kr/news/economy/12135180","options":["① LTV 산정 시 감정평가액 기준으로 최대 70%까지 대출이 가능합니다.","② 이주비대출의 LTV는 조합원 분양가를 기준으로 산정됩니다.","③ LTV 산정 시 재개발·재건축 사업의 사업성을 기준으로 합니다.","④ 이주비대출은 LTV 규제 대상에서 제외되어 자율적으로 대출 한도가 결정됩니다."]},{"id":2056,"category":"세부지식","question":"직장인 퇴직연금의 '머니무브' 현상이 가속화되는 배경과 가장 밀접한 관련이 있는 퇴직연금 유형은 무엇이며, 그 이유는 무엇인가요?","answer":"③ 확정기여형(DC형) 퇴직연금 – 가입자가 직접 운용하여 수익률에 민감하게 반응하기 때문","explanation":"확정기여형(DC형) 퇴직연금은 가입자가 직접 운용 상품을 선택하고 그 수익에 따라 최종 수령액이 달라지므로, 시장 금리 변동이나 수익률에 민감하게 반응하여 머니무브가 활발합니다. [오답해설] ① 확정급여형(DB형)은 회사가 운용하며 근로자는 정해진 퇴직금을 받으므로 머니무브와 직접적인 관련성이 낮습니다. ② 개인형 퇴직연금(IRP)도 머니무브의 대상이 될 수 있지만, 주된 이유는 세액공제보다는 적극적인 수익률 추구에 있습니다. ④ 퇴직보험은 퇴직연금 제도의 한 형태였으나 현재는 사실상 확정급여형/확정기여형으로 대체되었고, 보험사의 안정성은 머니무브의 주된 이유가 아닙니다.","news_context":"직장인 퇴직연금이 하루 261억 원씩 이동하며 '머니무브'가 가속화되고 있다는 뉴스입니다.","news_url":"https://www.mk.co.kr/news/economy/12134922","options":["① 확정급여형(DB형) 퇴직연금 – 높은 원금 보장으로 안전자산 선호가 강하기 때문","② 개인형 퇴직연금(IRP) – 연말정산 세액공제 혜택이 가장 크기 때문","③ 확정기여형(DC형) 퇴직연금 – 가입자가 직접 운용하여 수익률에 민감하게 반응하기 때문","④ 퇴직보험 – 보험사의 안정적인 자산 운용 능력 때문"]},{"id":2057,"category":"세부지식","question":"HUG(주택도시보증공사)의 '전세안심신탁' 제도에 대한 설명으로 옳지 않은 것은?","answer":"③ 전세안심신탁은 주로 아파트와 같은 대규모 주택 사업에 활용되어 PF대출의 위험을 줄입니다.","explanation":"전세안심신탁은 주로 오피스텔, 빌라 등 비아파트 전세사기 방지를 위해 도입된 제도이며, 대규모 주택 사업보다는 개별 전세 계약 보호에 초점을 맞춥니다. [오답해설] ① 전세안심신탁은 임차인의 전세보증금을 보호하기 위해 임대인이 부동산을 신탁회사에 맡기는 제도입니다. ② 전세안심신탁의 확대는 신탁 담보를 활용한 PF대출 증가로 이어져 금융권의 PF 대출 경쟁 구도에 영향을 미칠 수 있다는 분석이 있습니다. ④ 신탁을 통해 담보권이 명확해지면 금융기관은 PF 대출 리스크를 줄일 수 있어 사업자의 자금 조달이 수월해질 수 있습니다.","news_context":"HUG 전세안심신탁 제도가 금융권 PF 경쟁 구도에 미칠 영향과 PF대출 금리 왜곡 우려에 대한 기사가 있습니다.","news_url":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608241415036410088","options":["① 전세안심신탁은 전세금 보호를 위해 신탁회사가 부동산을 관리하는 제도입니다.","② 해당 제도가 확대될 경우, 금융권의 PF(프로젝트 파이낸싱) 대출 경쟁 구도가 심화될 수 있습니다.","③ 전세안심신탁은 주로 아파트와 같은 대규모 주택 사업에 활용되어 PF대출의 위험을 줄입니다.","④ 이 제도는 부동산 PF 대출 시 신탁 담보를 통해 사업자의 자금조달을 용이하게 할 수 있습니다."]},{"id":2058,"category":"시사","question":"한국은행 금융통화위원회의 기준금리 결정(인상 또는 동결)이 시중은행 경영 및 가계 대출에 미치는 영향으로 옳은 것은?","answer":"③ 기준금리 인상 시 변동금리 대출 비중이 높은 은행은 건전성 관리에 부담이 커집니다.","explanation":"기준금리 인상 시 변동금리 대출의 이자 부담이 커져 차주 상환 능력이 약화될 수 있으며, 이는 은행의 부실채권 증가로 이어져 건전성 관리에 부담이 됩니다. [오답해설] ① 기준금리 동결 시 예대마진은 변동될 수 있으나, 일반적으로 금리 동결 자체가 마진 확대로 직결되는 것은 아닙니다. ② 기준금리 인상 시 은행의 조달 비용 증가로 대출 금리가 상승하고 가계의 이자 부담은 가중됩니다. ④ 기준금리 동결은 시중 유동성 감소와 직접적인 관계가 없으며, 대출 수요는 복합적인 요인에 의해 결정됩니다.","news_context":"한국은행의 기준금리 연속 인상 여부 또는 동결 결정에 대한 금융통화위원회 관련 뉴스가 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12135100","options":["① 기준금리 동결 시 은행의 예대마진이 확대되어 수익성이 개선됩니다.","② 기준금리 인상 시 은행의 조달 비용이 증가하여 대출 금리가 하락하고 가계의 이자 부담이 줄어듭니다.","③ 기준금리 인상 시 변동금리 대출 비중이 높은 은행은 건전성 관리에 부담이 커집니다.","④ 기준금리 동결 시 시중 자금 유동성이 감소하여 가계 대출 수요가 줄어듭니다."]},{"id":2059,"category":"시사","question":"미국 재무부가 국채 매입에 1조 달러 활용을 검토한다는 소식이 글로벌 금융시장에 미칠 영향으로 옳지 않은 것은?","answer":"② 미국의 국채 매입은 달러 가치 상승을 유도하여 신흥국 통화 가치를 하락시킬 수 있습니다.","explanation":"미국 재무부의 국채 매입은 시장에 달러 유동성을 공급하여 달러 가치를 약화시키는 요인으로 작용할 수 있습니다. [오답해설] ① 국채 매입은 채권 수요를 늘려 채권 가격을 올리고 금리를 낮추는 효과가 있습니다. ③ 중앙은행이 국채를 매입하는 것은 대표적인 양적 완화 정책으로 시장에 유동성을 공급하여 경제 활동을 촉진하는 목적을 가집니다. ④ 금리가 낮아지고 유동성이 풍부해지면 투자자들은 더 높은 수익을 찾아 주식과 같은 위험자산으로 이동할 가능성이 있습니다.","news_context":"미국 재무부가 국채 매입에 1조 달러를 활용하는 방안을 검토하고 있다는 소식이 전해졌습니다.","news_url":"","options":["① 국채 매입은 시장에 유동성을 공급하여 장기 금리 하락 압력으로 작용할 수 있습니다.","② 미국의 국채 매입은 달러 가치 상승을 유도하여 신흥국 통화 가치를 하락시킬 수 있습니다.","③ 이는 사실상 양적 완화(Quantitative Easing)와 유사한 효과를 내어 경기 부양을 시도할 수 있습니다.","④ 국채 매입은 투자자들의 위험 선호 심리를 자극하여 주식 등 위험자산 시장에 긍정적 영향을 줄 수 있습니다."]},{"id":2060,"category":"시사","question":"미국이 이란에 대한 '경제적 왕따 작전'을 개시하며 제3국까지 제재를 확대하는 정책의 주된 목표는 무엇인가요?","answer":"③ 이란을 국제 금융 시스템에서 완전히 고립시켜 경제적 압박을 극대화하기 위함","explanation":"미국의 '경제적 왕따 작전'은 이란과의 모든 경제적 연결고리를 차단하고 국제 금융 시스템에서 이란을 완전히 고립시켜 경제적 압박을 극대화하는 것을 목표로 합니다. [오답해설] ① 군사력 강화 저지는 제재의 간접적인 결과일 수 있으나, '경제적 왕따'라는 표현은 금융 고립에 초점을 맞춥니다. ② 이 정책은 이란 경제의 자립을 저해하고 압박을 가하는 것이 주된 목적입니다. ④ 합법적 거래 유도보다는 제재를 통해 모든 형태의 거래를 어렵게 만드는 것이 목적입니다.","news_context":"미국이 이란에 대한 '경제적 왕따 작전'을 개시하며, 이란과 거래하는 제3국까지 제재를 확대하고 있다는 뉴스가 다수 보도되었습니다.","news_url":"https://n.news.naver.com/mnews/article/119/0003124839?sid=104","options":["① 이란의 군사력 강화를 저지하고 핵 프로그램 개발을 막기 위함","② 이란 경제의 자립을 촉진하고 내부 개혁을 유도하기 위함","③ 이란을 국제 금융 시스템에서 완전히 고립시켜 경제적 압박을 극대화하기 위함","④ 이란과의 무역 거래를 합법적인 경로로 유도하여 투명성을 확보하기 위함"]},{"id":71,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
