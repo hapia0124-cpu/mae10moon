@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-27 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-27 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-27 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 양자 컴퓨터가 기존의 가장 빠른 슈퍼컴퓨터로도 합리적인 시간 내에 해결할 수 없는 문제를 풀거나, 특정 계산에서 고전 컴퓨터를 압도적으로 능가하는 시점을 의미하는 금융용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 양자 이점</li><li>② 양자 우위</li><li>③ 양자 얽힘</li><li>④ 양자 보안</li>
+      </ul>
+      <p><strong>정답:</strong> ① 양자 이점</p>
+      <p><strong>해설:</strong> 양자 이점은 양자 컴퓨터가 고전 컴퓨터의 성능을 넘어서 특정 문제를 해결하는 능력을 의미합니다. [오답해설] ② 양자 우위는 양자 이점과 유사하게 사용되기도 하지만, 양자 이점은 특히 유용한 문제를 해결하는 데 중점을 둡니다. ③ 양자 얽힘은 양자 역학의 기본 현상 중 하나로, 양자 컴퓨터의 작동 원리지만 그 자체가 성능의 우위를 뜻하지는 않습니다. ④ 양자 보안은 양자 기술을 활용한 보안 기술로, 양자 컴퓨터의 계산 능력 이점과는 다른 응용 분야입니다.</p>
+      <p>관련 시사 뉴스: 양자 이점은 양자 컴퓨터가 기존의 어떤 슈퍼컴퓨터도 합리적인 시간 내에 해결할 수 없는 문제를 풀 수 있음을 의미하며, 이는 양자 컴퓨팅 기술의 실질적인 우월성을 보여주는 중요한 이정표가 됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 금융 시장에서 긴급한 거래나 정보 전달 시 '가능한 한 빨리' 또는 '즉시'라는 의미로 사용되는 영어 약어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① ESG</li><li>② ADR</li><li>③ ASAP</li><li>④ EOD</li>
+      </ul>
+      <p><strong>정답:</strong> ③ ASAP</p>
+      <p><strong>해설:</strong> ASAP은 'As Soon As Possible'의 약어로, 금융 업무에서 최대한 빠른 시간 내에 처리해달라는 요청에 사용됩니다. [오답해설] ① ESG는 환경(Environmental), 사회(Social), 지배구조(Governance)를 의미하는 투자 원칙입니다. ② ADR은 American Depositary Receipt의 약어로, 외국 기업 주식의 미국 시장 거래를 가능하게 하는 증서입니다. ④ EOD는 End Of Day의 약어로, 그 날 영업 마감 시간을 의미하여 ASAP과 상반되는 개념입니다.</p>
+      <p>관련 시사 뉴스: 금융 시장에서 ASAP은 '가능한 한 빨리'를 의미하며, 이는 지체 없이 즉각적인 조치나 정보 제공을 요구할 때 사용되는 표현입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 국내 특정 산업 또는 시장이 세계적인 흐름이나 기준에서 뒤떨어져 고립되거나 비효율적인 규제 등으로 인해 발전이 저해되는 현상을 의미하는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① K-갈라파고스</li><li>② 넛지 효과</li><li>③ 레몬 마켓</li><li>④ 코리아 디스카운트</li>
+      </ul>
+      <p><strong>정답:</strong> ① K-갈라파고스</p>
+      <p><strong>해설:</strong> K-갈라파고스는 한국 시장이 특정 규제나 환경으로 인해 국제 표준에서 동떨어져 고립되고 경쟁력을 잃는 현상을 의미합니다. [오답해설] ② 넛지 효과는 강압적 지시가 아닌 부드러운 개입으로 사람들의 선택을 유도하는 효과를 말합니다. ③ 레몬 마켓은 정보 비대칭으로 인해 저품질의 상품만 유통되는 시장을 의미합니다. ④ 코리아 디스카운트는 한국 기업의 가치가 지정학적 위험, 불투명한 지배구조 등으로 인해 저평가되는 현상을 말합니다.</p>
+      <p>관련 시사 뉴스: 국내 화장품 산업이 중국 시장 규제 등으로 어려움을 겪는 현상을 'K갈라파고스'로 표현했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 최근 서민들의 '급전 대출'로 불리는 카드론의 평균 금리가 14%를 넘어서며 이용자들의 부담이 커지고 있습니다. 이와 같은 고금리 카드론 추세가 금융기관의 건전성 관리에 미칠 수 있는 주된 영향은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행의 여신 규모 확대</li><li>② 금융기관의 부실채권(NPL) 증가 위험</li><li>③ 금융당국의 규제 완화</li><li>④ 소비자의 신용등급 상향</li>
+      </ul>
+      <p><strong>정답:</strong> ② 금융기관의 부실채권(NPL) 증가 위험</p>
+      <p><strong>해설:</strong> 고금리 카드론은 차주의 채무 상환 능력을 저하시켜 연체율 및 부실채권 증가로 이어질 수 있으며, 이는 금융기관의 건전성을 악화시킬 수 있습니다. [오답해설] ① 고금리 카드론은 차주의 상환 부담을 가중시켜 여신 규모 확대에 부정적인 영향을 줄 수 있습니다. ③ 차주의 상환 부담 증가 및 금융기관 건전성 악화는 금융당국의 규제 강화 압박으로 이어질 수 있습니다. ④ 고금리 대출은 채무 불이행 위험을 높여 소비자의 신용등급 하락 요인이 됩니다.</p>
+      <p>관련 시사 뉴스: 서민 급전 대출인 카드론의 평균 금리가 14%를 넘어서며 이용자 부담이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 네이버와 현대카드의 제휴카드인 '네이버 현대카드 Edition3' 출시와 같이, 특정 브랜드와 신용카드사가 협력하여 해당 브랜드의 고객에게 특화된 혜택을 제공하는 신용카드를 지칭하는 용어는 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 체크카드 (Debit Card)</li><li>② 선불카드 (Prepaid Card)</li><li>③ PLCC (Private Label Credit Card)</li><li>④ 제휴카드 (Affinity Card)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ PLCC (Private Label Credit Card)</p>
+      <p><strong>해설:</strong> PLCC는 특정 브랜드가 신용카드사와 함께 기획하고 운영하며, 해당 브랜드의 로열티 고객에게 집중된 혜택을 제공하는 신용카드입니다. [오답해설] ① 체크카드는 은행 계좌 잔액 내에서만 사용할 수 있는 카드입니다. ② 선불카드는 미리 충전된 금액만큼만 사용할 수 있는 카드입니다. ④ 제휴카드는 신용카드사가 특정 기관과 제휴하여 발행하지만, PLCC처럼 브랜드가 직접 상품 기획과 마케팅에 참여하여 핵심 혜택을 설계하지는 않습니다.</p>
+      <p>관련 시사 뉴스: 네이버와 현대카드가 '네이버 현대카드 Edition3'를 출시하며 파트너십을 강화했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 카카오뱅크 모바일 신분증의 사용처가 은행, 병원, 공항 등으로 확대되며 70만장을 돌파하는 등 디지털 신분증의 활용도가 높아지고 있습니다. 모바일 신분증 도입이 비대면 금융 서비스 확산에 기여하는 핵심적인 이점은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 오프라인 지점 방문 의무화</li><li>② 금융 상품 선택권의 제한</li><li>③ 모든 개인정보의 중앙 집중화</li><li>④ 신원 확인 절차의 간소화 및 편의성 증대</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 신원 확인 절차의 간소화 및 편의성 증대</p>
+      <p><strong>해설:</strong> 모바일 신분증은 비대면 환경에서 신원 확인 절차를 편리하고 안전하게 진행할 수 있게 하여, 비대면 금융 서비스 확대를 가속화하는 데 기여합니다. [오답해설] ① 모바일 신분증은 비대면 서비스 확대로 이어져 오프라인 지점 방문 의무화를 완화합니다. ② 모바일 신분증은 비대면 금융 접근성을 높여 금융 상품 선택권을 확대하는 데 기여합니다. ③ 모바일 신분증은 분산 신원 증명(DID) 기술 등을 활용하여 개인정보의 중앙 집중화를 지양하고 개인이 정보를 관리하는 방향으로 발전합니다.</p>
+      <p>관련 시사 뉴스: 카카오뱅크 모바일 신분증 사용이 70만장을 돌파하며 은행, 병원, 공항 등 다양한 곳에서 활용되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 미국 7월 개인소비지출(PCE) 물가지수가 전년 대비 3.7% 상승하며 예상치를 소폭 웃돌았습니다. 미국 연방준비제도(Fed)가 통화정책 결정 시 주로 참고하는 물가지표인 PCE 물가지수에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① PCE 물가지수가 상승하면 연방준비제도는 보통 긴축적인 통화정책을 유지하거나 강화할 가능성이 높아진다.</li><li>② PCE 물가지수는 소비자들이 지출하는 모든 재화와 서비스의 가격 변동을 포괄적으로 측정한다.</li><li>③ 식료품과 에너지를 제외한 근원 PCE 물가지수는 변동성이 큰 항목을 제외하여 기조적인 물가 흐름을 파악하는 데 유용하다.</li><li>④ 소비자물가지수(CPI)와 달리 주거비 비중이 낮아 변동성이 비교적 적다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 소비자물가지수(CPI)와 달리 주거비 비중이 낮아 변동성이 비교적 적다.</p>
+      <p><strong>해설:</strong> PCE 물가지수는 CPI에 비해 주거비 비중이 낮지만, 의료 서비스 등 다른 서비스 항목의 비중이 높아 CPI보다 변동성이 적다고 단정하기는 어려우며, 오히려 대체 효과를 반영하여 물가 상승 압력을 더 정확하게 반영하는 경향이 있습니다. [오답해설] ① PCE 물가지수가 상승하면 인플레이션 압력이 높아진 것으로 간주되어, 연방준비제도는 물가 안정을 위해 긴축적인 통화정책을 고려하게 됩니다. ② PCE 물가지수는 가계 및 비영리기관의 소비 지출 전반을 포괄적으로 측정합니다. ③ 근원 PCE 물가지수는 변동성이 큰 식료품과 에너지를 제외하여 기조적인 물가 흐름을 파악하는 데 활용됩니다.</p>
+      <p>관련 시사 뉴스: 미국 7월 개인소비지출(PCE) 물가지수가 전년 대비 3.7% 상승하여 예상치를 소폭 웃돌았습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 한국은행 금융통화위원회가 오늘(2026-08-27) 기준금리 인상 여부를 결정합니다. 한국은행 금융통화위원회의 기준금리 결정이 시중 은행의 대출 및 예금 업무에 미치는 영향으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기준금리 인상은 시중 은행의 변동금리 대출 이자 부담을 증가시킨다.</li><li>② 기준금리 인하는 시중 은행의 예금 금리 인하 압력으로 작용할 수 있다.</li><li>③ 기준금리 변동은 은행의 조달 비용에 직접적인 영향을 미쳐 대출 금리 산정에 반영된다.</li><li>④ 기준금리 인상은 은행의 요구불예금 수익률을 직접적으로 높여 은행 수익을 크게 증대시킨다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 기준금리 인상은 은행의 요구불예금 수익률을 직접적으로 높여 은행 수익을 크게 증대시킨다.</p>
+      <p><strong>해설:</strong> 기준금리 인상은 일반적으로 은행의 조달 비용을 높이고 대출 금리 인상을 유도하지만, 요구불예금은 금리가 거의 없어 수익률에 직접적인 영향이 미미하며, 은행 수익 증대와는 직접적인 관련이 없습니다. [오답해설] ① 기준금리 인상은 변동금리 대출의 기준이 되는 금리(코픽스 등)에 영향을 미쳐 대출 이자 부담을 증가시킵니다. ② 기준금리가 인하되면 은행은 자금 조달 비용이 낮아지므로 예금 금리를 인하하여 수익성을 확보하려 할 수 있습니다. ③ 기준금리는 은행 간 초단기 금리에 영향을 미치므로, 은행이 한국은행으로부터 자금을 조달하거나 운용하는 비용에 직접적인 영향을 미칩니다.</p>
+      <p>관련 시사 뉴스: 한국은행 금융통화위원회가 오늘 기준금리 인상 여부를 결정합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 하나은행에서 24억원 규모의 외부인 사기 금융사고가 발생하며 금융권의 내부통제 강화 필요성이 다시 부각되고 있습니다. 이러한 금융사고를 예방하고 고객 자산을 보호하기 위한 은행의 내부통제 방안으로 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 직무 분리 원칙을 철저히 준수하여 특정 직원이 모든 업무를 독점하지 않도록 한다.</li><li>② 정기적인 내부 감사 및 준법 감시 활동을 통해 규정 준수 여부를 확인한다.</li><li>③ 이상 거래 탐지 시스템(FDS)을 고도화하여 의심스러운 거래를 자동으로 감지하고 차단한다.</li><li>④ 효율성을 극대화하기 위해 핵심 업무에 대한 권한을 소수 임원에게 집중시킨다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 효율성을 극대화하기 위해 핵심 업무에 대한 권한을 소수 임원에게 집중시킨다.</p>
+      <p><strong>해설:</strong> 핵심 업무 권한을 소수에게 집중시키는 것은 내부 통제 원칙에 위배되며, 오히려 금융 사고 발생 시 위험을 증대시킬 수 있습니다. [오답해설] ① 직무 분리 원칙은 한 직원이 처음부터 끝까지 모든 업무를 처리하는 것을 방지하여 내부 통제 및 상호 견제를 강화합니다. ② 정기적인 내부 감사와 준법 감시 활동은 금융 사고 발생 가능성을 줄이고 문제가 발생했을 때 신속하게 대응하는 데 필수적입니다. ③ 이상 거래 탐지 시스템(FDS)은 금융 거래의 패턴을 분석하여 비정상적인 거래를 실시간으로 감지하고 피해를 예방하는 데 효과적입니다.</p>
+      <p>관련 시사 뉴스: 하나은행에서 24억원 규모의 금융사고가 발생하여 내부통제 강화의 중요성이 강조되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. "IPO 올인 그만" 벤처업계에서 세컨더리 마켓 활성화 필요성이 제기되면서 M&A를 통한 회수 시장 확대에 대한 목소리가 커지고 있습니다. 벤처 투자의 회수(Exit) 전략 중 M&A(인수합병)가 IPO(기업공개)에 비해 갖는 장점으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 초기 투자자에게 가장 높은 수익률을 항상 보장한다.</li><li>② 대규모 자금 조달을 통해 기업의 시장 가치를 단기간에 급등시킨다.</li><li>③ 피투자기업의 경영권이 유지되며 독립적인 성장이 가능하다.</li><li>④ 투자금 회수 기간을 단축하고 전략적 시너지를 창출할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 투자금 회수 기간을 단축하고 전략적 시너지를 창출할 수 있다.</p>
+      <p><strong>해설:</strong> M&A는 IPO에 비해 상대적으로 짧은 기간 내에 투자금을 회수할 수 있으며, 인수 기업과의 전략적 시너지를 통해 기업 가치를 높일 수 있습니다. [오답해설] ① M&A가 항상 가장 높은 수익률을 보장하는 것은 아니며, IPO가 더 큰 수익을 안겨줄 수도 있습니다. ② 대규모 자금 조달은 주로 IPO의 장점이며, M&A는 매각을 통한 회수에 중점을 둡니다. ③ M&A는 대개 피투자기업의 경영권이 인수 기업으로 넘어가므로 독립적인 경영권 유지가 어렵습니다.</p>
+      <p>관련 시사 뉴스: 벤처업계에서 IPO 외 M&A나 세컨더리 마켓을 통한 투자 회수 확대의 필요성이 제기되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-27</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2083,"category":"시사금융용어","question":"양자 컴퓨터가 기존의 가장 빠른 슈퍼컴퓨터로도 합리적인 시간 내에 해결할 수 없는 문제를 풀거나, 특정 계산에서 고전 컴퓨터를 압도적으로 능가하는 시점을 의미하는 금융용어는?","answer":"① 양자 이점","explanation":"양자 이점은 양자 컴퓨터가 고전 컴퓨터의 성능을 넘어서 특정 문제를 해결하는 능력을 의미합니다. [오답해설] ② 양자 우위는 양자 이점과 유사하게 사용되기도 하지만, 양자 이점은 특히 유용한 문제를 해결하는 데 중점을 둡니다. ③ 양자 얽힘은 양자 역학의 기본 현상 중 하나로, 양자 컴퓨터의 작동 원리지만 그 자체가 성능의 우위를 뜻하지는 않습니다. ④ 양자 보안은 양자 기술을 활용한 보안 기술로, 양자 컴퓨터의 계산 능력 이점과는 다른 응용 분야입니다.","news_context":"양자 이점은 양자 컴퓨터가 기존의 어떤 슈퍼컴퓨터도 합리적인 시간 내에 해결할 수 없는 문제를 풀 수 있음을 의미하며, 이는 양자 컴퓨팅 기술의 실질적인 우월성을 보여주는 중요한 이정표가 됩니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4430434","options":["① 양자 이점","② 양자 우위","③ 양자 얽힘","④ 양자 보안"]},{"id":2084,"category":"시사금융용어","question":"금융 시장에서 긴급한 거래나 정보 전달 시 '가능한 한 빨리' 또는 '즉시'라는 의미로 사용되는 영어 약어는?","answer":"③ ASAP","explanation":"ASAP은 'As Soon As Possible'의 약어로, 금융 업무에서 최대한 빠른 시간 내에 처리해달라는 요청에 사용됩니다. [오답해설] ① ESG는 환경(Environmental), 사회(Social), 지배구조(Governance)를 의미하는 투자 원칙입니다. ② ADR은 American Depositary Receipt의 약어로, 외국 기업 주식의 미국 시장 거래를 가능하게 하는 증서입니다. ④ EOD는 End Of Day의 약어로, 그 날 영업 마감 시간을 의미하여 ASAP과 상반되는 개념입니다.","news_context":"금융 시장에서 ASAP은 '가능한 한 빨리'를 의미하며, 이는 지체 없이 즉각적인 조치나 정보 제공을 요구할 때 사용되는 표현입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431100","options":["① ESG","② ADR","③ ASAP","④ EOD"]},{"id":2085,"category":"금융용어","question":"다음 중 국내 특정 산업 또는 시장이 세계적인 흐름이나 기준에서 뒤떨어져 고립되거나 비효율적인 규제 등으로 인해 발전이 저해되는 현상을 의미하는 용어는?","answer":"① K-갈라파고스","explanation":"K-갈라파고스는 한국 시장이 특정 규제나 환경으로 인해 국제 표준에서 동떨어져 고립되고 경쟁력을 잃는 현상을 의미합니다. [오답해설] ② 넛지 효과는 강압적 지시가 아닌 부드러운 개입으로 사람들의 선택을 유도하는 효과를 말합니다. ③ 레몬 마켓은 정보 비대칭으로 인해 저품질의 상품만 유통되는 시장을 의미합니다. ④ 코리아 디스카운트는 한국 기업의 가치가 지정학적 위험, 불투명한 지배구조 등으로 인해 저평가되는 현상을 말합니다.","news_context":"국내 화장품 산업이 중국 시장 규제 등으로 어려움을 겪는 현상을 'K갈라파고스'로 표현했습니다.","news_url":"","options":["① K-갈라파고스","② 넛지 효과","③ 레몬 마켓","④ 코리아 디스카운트"]},{"id":2086,"category":"세부지식","question":"최근 서민들의 '급전 대출'로 불리는 카드론의 평균 금리가 14%를 넘어서며 이용자들의 부담이 커지고 있습니다. 이와 같은 고금리 카드론 추세가 금융기관의 건전성 관리에 미칠 수 있는 주된 영향은 무엇인가?","answer":"② 금융기관의 부실채권(NPL) 증가 위험","explanation":"고금리 카드론은 차주의 채무 상환 능력을 저하시켜 연체율 및 부실채권 증가로 이어질 수 있으며, 이는 금융기관의 건전성을 악화시킬 수 있습니다. [오답해설] ① 고금리 카드론은 차주의 상환 부담을 가중시켜 여신 규모 확대에 부정적인 영향을 줄 수 있습니다. ③ 차주의 상환 부담 증가 및 금융기관 건전성 악화는 금융당국의 규제 강화 압박으로 이어질 수 있습니다. ④ 고금리 대출은 채무 불이행 위험을 높여 소비자의 신용등급 하락 요인이 됩니다.","news_context":"서민 급전 대출인 카드론의 평균 금리가 14%를 넘어서며 이용자 부담이 커지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12137348","options":["① 은행의 여신 규모 확대","② 금융기관의 부실채권(NPL) 증가 위험","③ 금융당국의 규제 완화","④ 소비자의 신용등급 상향"]},{"id":2087,"category":"세부지식","question":"네이버와 현대카드의 제휴카드인 '네이버 현대카드 Edition3' 출시와 같이, 특정 브랜드와 신용카드사가 협력하여 해당 브랜드의 고객에게 특화된 혜택을 제공하는 신용카드를 지칭하는 용어는 무엇인가?","answer":"③ PLCC (Private Label Credit Card)","explanation":"PLCC는 특정 브랜드가 신용카드사와 함께 기획하고 운영하며, 해당 브랜드의 로열티 고객에게 집중된 혜택을 제공하는 신용카드입니다. [오답해설] ① 체크카드는 은행 계좌 잔액 내에서만 사용할 수 있는 카드입니다. ② 선불카드는 미리 충전된 금액만큼만 사용할 수 있는 카드입니다. ④ 제휴카드는 신용카드사가 특정 기관과 제휴하여 발행하지만, PLCC처럼 브랜드가 직접 상품 기획과 마케팅에 참여하여 핵심 혜택을 설계하지는 않습니다.","news_context":"네이버와 현대카드가 '네이버 현대카드 Edition3'를 출시하며 파트너십을 강화했습니다.","news_url":"https://www.mk.co.kr/news/economy/12136684","options":["① 체크카드 (Debit Card)","② 선불카드 (Prepaid Card)","③ PLCC (Private Label Credit Card)","④ 제휴카드 (Affinity Card)"]},{"id":2088,"category":"세부지식","question":"카카오뱅크 모바일 신분증의 사용처가 은행, 병원, 공항 등으로 확대되며 70만장을 돌파하는 등 디지털 신분증의 활용도가 높아지고 있습니다. 모바일 신분증 도입이 비대면 금융 서비스 확산에 기여하는 핵심적인 이점은 무엇인가?","answer":"④ 신원 확인 절차의 간소화 및 편의성 증대","explanation":"모바일 신분증은 비대면 환경에서 신원 확인 절차를 편리하고 안전하게 진행할 수 있게 하여, 비대면 금융 서비스 확대를 가속화하는 데 기여합니다. [오답해설] ① 모바일 신분증은 비대면 서비스 확대로 이어져 오프라인 지점 방문 의무화를 완화합니다. ② 모바일 신분증은 비대면 금융 접근성을 높여 금융 상품 선택권을 확대하는 데 기여합니다. ③ 모바일 신분증은 분산 신원 증명(DID) 기술 등을 활용하여 개인정보의 중앙 집중화를 지양하고 개인이 정보를 관리하는 방향으로 발전합니다.","news_context":"카카오뱅크 모바일 신분증 사용이 70만장을 돌파하며 은행, 병원, 공항 등 다양한 곳에서 활용되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12136713","options":["① 오프라인 지점 방문 의무화","② 금융 상품 선택권의 제한","③ 모든 개인정보의 중앙 집중화","④ 신원 확인 절차의 간소화 및 편의성 증대"]},{"id":2089,"category":"시사","question":"미국 7월 개인소비지출(PCE) 물가지수가 전년 대비 3.7% 상승하며 예상치를 소폭 웃돌았습니다. 미국 연방준비제도(Fed)가 통화정책 결정 시 주로 참고하는 물가지표인 PCE 물가지수에 대한 설명으로 옳지 않은 것은?","answer":"④ 소비자물가지수(CPI)와 달리 주거비 비중이 낮아 변동성이 비교적 적다.","explanation":"PCE 물가지수는 CPI에 비해 주거비 비중이 낮지만, 의료 서비스 등 다른 서비스 항목의 비중이 높아 CPI보다 변동성이 적다고 단정하기는 어려우며, 오히려 대체 효과를 반영하여 물가 상승 압력을 더 정확하게 반영하는 경향이 있습니다. [오답해설] ① PCE 물가지수가 상승하면 인플레이션 압력이 높아진 것으로 간주되어, 연방준비제도는 물가 안정을 위해 긴축적인 통화정책을 고려하게 됩니다. ② PCE 물가지수는 가계 및 비영리기관의 소비 지출 전반을 포괄적으로 측정합니다. ③ 근원 PCE 물가지수는 변동성이 큰 식료품과 에너지를 제외하여 기조적인 물가 흐름을 파악하는 데 활용됩니다.","news_context":"미국 7월 개인소비지출(PCE) 물가지수가 전년 대비 3.7% 상승하여 예상치를 소폭 웃돌았습니다.","news_url":"","options":["① PCE 물가지수가 상승하면 연방준비제도는 보통 긴축적인 통화정책을 유지하거나 강화할 가능성이 높아진다.","② PCE 물가지수는 소비자들이 지출하는 모든 재화와 서비스의 가격 변동을 포괄적으로 측정한다.","③ 식료품과 에너지를 제외한 근원 PCE 물가지수는 변동성이 큰 항목을 제외하여 기조적인 물가 흐름을 파악하는 데 유용하다.","④ 소비자물가지수(CPI)와 달리 주거비 비중이 낮아 변동성이 비교적 적다."]},{"id":2090,"category":"시사","question":"한국은행 금융통화위원회가 오늘(2026-08-27) 기준금리 인상 여부를 결정합니다. 한국은행 금융통화위원회의 기준금리 결정이 시중 은행의 대출 및 예금 업무에 미치는 영향으로 가장 적절하지 않은 것은?","answer":"④ 기준금리 인상은 은행의 요구불예금 수익률을 직접적으로 높여 은행 수익을 크게 증대시킨다.","explanation":"기준금리 인상은 일반적으로 은행의 조달 비용을 높이고 대출 금리 인상을 유도하지만, 요구불예금은 금리가 거의 없어 수익률에 직접적인 영향이 미미하며, 은행 수익 증대와는 직접적인 관련이 없습니다. [오답해설] ① 기준금리 인상은 변동금리 대출의 기준이 되는 금리(코픽스 등)에 영향을 미쳐 대출 이자 부담을 증가시킵니다. ② 기준금리가 인하되면 은행은 자금 조달 비용이 낮아지므로 예금 금리를 인하하여 수익성을 확보하려 할 수 있습니다. ③ 기준금리는 은행 간 초단기 금리에 영향을 미치므로, 은행이 한국은행으로부터 자금을 조달하거나 운용하는 비용에 직접적인 영향을 미칩니다.","news_context":"한국은행 금융통화위원회가 오늘 기준금리 인상 여부를 결정합니다.","news_url":"https://n.news.naver.com/mnews/article/015/0005325257?sid=101","options":["① 기준금리 인상은 시중 은행의 변동금리 대출 이자 부담을 증가시킨다.","② 기준금리 인하는 시중 은행의 예금 금리 인하 압력으로 작용할 수 있다.","③ 기준금리 변동은 은행의 조달 비용에 직접적인 영향을 미쳐 대출 금리 산정에 반영된다.","④ 기준금리 인상은 은행의 요구불예금 수익률을 직접적으로 높여 은행 수익을 크게 증대시킨다."]},{"id":2091,"category":"시사","question":"최근 하나은행에서 24억원 규모의 외부인 사기 금융사고가 발생하며 금융권의 내부통제 강화 필요성이 다시 부각되고 있습니다. 이러한 금융사고를 예방하고 고객 자산을 보호하기 위한 은행의 내부통제 방안으로 적절하지 않은 것은?","answer":"④ 효율성을 극대화하기 위해 핵심 업무에 대한 권한을 소수 임원에게 집중시킨다.","explanation":"핵심 업무 권한을 소수에게 집중시키는 것은 내부 통제 원칙에 위배되며, 오히려 금융 사고 발생 시 위험을 증대시킬 수 있습니다. [오답해설] ① 직무 분리 원칙은 한 직원이 처음부터 끝까지 모든 업무를 처리하는 것을 방지하여 내부 통제 및 상호 견제를 강화합니다. ② 정기적인 내부 감사와 준법 감시 활동은 금융 사고 발생 가능성을 줄이고 문제가 발생했을 때 신속하게 대응하는 데 필수적입니다. ③ 이상 거래 탐지 시스템(FDS)은 금융 거래의 패턴을 분석하여 비정상적인 거래를 실시간으로 감지하고 피해를 예방하는 데 효과적입니다.","news_context":"하나은행에서 24억원 규모의 금융사고가 발생하여 내부통제 강화의 중요성이 강조되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12137100","options":["① 직무 분리 원칙을 철저히 준수하여 특정 직원이 모든 업무를 독점하지 않도록 한다.","② 정기적인 내부 감사 및 준법 감시 활동을 통해 규정 준수 여부를 확인한다.","③ 이상 거래 탐지 시스템(FDS)을 고도화하여 의심스러운 거래를 자동으로 감지하고 차단한다.","④ 효율성을 극대화하기 위해 핵심 업무에 대한 권한을 소수 임원에게 집중시킨다."]},{"id":2092,"category":"시사","question":"\"IPO 올인 그만\" 벤처업계에서 세컨더리 마켓 활성화 필요성이 제기되면서 M&A를 통한 회수 시장 확대에 대한 목소리가 커지고 있습니다. 벤처 투자의 회수(Exit) 전략 중 M&A(인수합병)가 IPO(기업공개)에 비해 갖는 장점으로 가장 적절한 것은?","answer":"④ 투자금 회수 기간을 단축하고 전략적 시너지를 창출할 수 있다.","explanation":"M&A는 IPO에 비해 상대적으로 짧은 기간 내에 투자금을 회수할 수 있으며, 인수 기업과의 전략적 시너지를 통해 기업 가치를 높일 수 있습니다. [오답해설] ① M&A가 항상 가장 높은 수익률을 보장하는 것은 아니며, IPO가 더 큰 수익을 안겨줄 수도 있습니다. ② 대규모 자금 조달은 주로 IPO의 장점이며, M&A는 매각을 통한 회수에 중점을 둡니다. ③ M&A는 대개 피투자기업의 경영권이 인수 기업으로 넘어가므로 독립적인 경영권 유지가 어렵습니다.","news_context":"벤처업계에서 IPO 외 M&A나 세컨더리 마켓을 통한 투자 회수 확대의 필요성이 제기되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/008/0005405355?sid=101","options":["① 초기 투자자에게 가장 높은 수익률을 항상 보장한다.","② 대규모 자금 조달을 통해 기업의 시장 가치를 단기간에 급등시킨다.","③ 피투자기업의 경영권이 유지되며 독립적인 성장이 가능하다.","④ 투자금 회수 기간을 단축하고 전략적 시너지를 창출할 수 있다."]},{"id":73,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
