@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-28 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-28 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-28 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+기업이 투자은행과 계약하여 자사주 매입에 필요한 자금을 선지급하고, 투자은행이 일정 기간에 걸쳐 주식을 매입하여 기업에 인도하는 방식의 자사주 매입 프로그램은 무엇인가? 주식의 평균 시장가격 대비 할인된 가격으로 매입하여 자본 구조 조정이나 주주 환원을 효과적으로 수행한다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① SPV (Special Purpose Vehicle)</li><li>② ASAP (Accelerated Share Buyback)</li><li>③ ESOP (Employee Stock Ownership Plan)</li><li>④ MBO (Management Buyout)</li>
+      </ul>
+      <p><strong>정답:</strong> ② ASAP (Accelerated Share Buyback)</p>
+      <p><strong>해설:</strong> ASAP은 기업이 투자은행을 통해 자사주를 신속하게 매입하는 프로그램으로, 선지급 후 일정 기간에 걸쳐 주식을 인도받는 방식입니다. [오답해설] ① SPV는 특정 목적을 위해 설립되는 법인으로 자사주 매입 방식과는 다릅니다. ③ ESOP은 직원들이 회사 주식을 소유하게 하는 제도로, 자사주 매입 방식과 목적이 다릅니다. ④ MBO는 기업의 경영진이 해당 기업을 인수하는 것을 의미합니다.</p>
+      <p>관련 시사 뉴스: ASAP(Accelerated Share Buyback)은 기업이 투자은행을 통해 자사주를 신속하게 매입하여 자본 구조 조정 및 주주 환원을 효율적으로 진행하는 프로그램입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 용어로 가장 적절한 것은?
+
+일본 정부가 매년 여름에 발표하는 중장기 경제 재정 운영의 기본 방침으로, 경제개혁과 재정 건전화, 구조 개혁 등 국가의 전반적인 경제 방향을 제시하는 것은 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 아베노믹스</li><li>② 양적완화</li><li>③ 긴축재정</li><li>④ 골태방침</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 골태방침</p>
+      <p><strong>해설:</strong> 골태방침은 일본 정부가 매년 발표하는 중장기 경제 재정 운영의 기본 방침을 의미합니다. [오답해설] ① 아베노믹스는 아베 신조 전 일본 총리의 구체적인 경제 정책을 일컫는 말입니다. ② 양적완화는 중앙은행이 통화 공급을 늘리는 비전통적 통화 정책입니다. ③ 긴축재정은 정부 지출을 줄이거나 세금을 늘려 재정 적자를 축소하려는 정책입니다.</p>
+      <p>관련 시사 뉴스: 골태방침은 일본 정부가 매년 발표하는 중장기 경제 재정 운영의 기본 방침으로, 경제 개혁과 재정 건전화의 큰 틀을 제시합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. “기준금리를 인상하는 '매파적(hawkish)' 정책 기조를 유지하면서도, 향후 추가 인상 속도나 폭에 대한 시장의 불확실성을 줄이고 우려를 완화하는 '비둘기파적(dovish)' 메시지를 동시에 전달하는 통화정책 전략”을 의미하는 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 매파적 인상 (Hawkish Hike)</li><li>② 테이퍼링 (Tapering)</li><li>③ 비둘기파적 인상 (Dovish Hike)</li><li>④ 오퍼레이션 트위스트 (Operation Twist)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 비둘기파적 인상 (Dovish Hike)</p>
+      <p><strong>해설:</strong> 비둘기파적 인상(Dovish Hike)은 금리 인상을 통해 긴축 기조를 유지하면서도, 시장의 금리 인상 우려를 완화하는 메시지를 함께 전달하는 전략입니다. [오답해설] ① 매파적 인상은 금리 인상에 대한 강한 의지를 시장에 전달하는 정책입니다. ② 테이퍼링은 중앙은행이 양적완화로 매입했던 자산의 규모를 점진적으로 축소하는 것입니다. ④ 오퍼레이션 트위스트는 중앙은행이 단기 국채를 매도하고 장기 국채를 매입하여 장기 금리를 낮추는 정책입니다.</p>
+      <p>관련 시사 뉴스: 한국은행이 금리 연속 인상에도 시장에 유화적 메시지를 전달하는 '도비시 하이크' 기조를 보였습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 개인형 퇴직연금(IRP) 제도에 대한 다음 설명 중, 최근 변경된 내용을 포함하여 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① IRP 계좌를 통해 개인이 국채를 직접 매수하는 것이 가능해졌다.</li><li>② IRP 계좌에서는 상장된 개별 주식에 직접 투자할 수 있다.</li><li>③ 해외 채권 직접 투자는 가능하나, 국내 채권 직접 투자는 여전히 불가능하다.</li><li>④ IRP의 예금 상품 편입은 원금 손실 위험이 있어 전면 금지된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① IRP 계좌를 통해 개인이 국채를 직접 매수하는 것이 가능해졌다.</p>
+      <p><strong>해설:</strong> 최근 IRP 제도 변경으로 개인도 계좌를 통해 국채를 직접 매수할 수 있게 되었습니다. [오답해설] ② IRP 계좌에서는 개별 주식에 직접 투자할 수 없습니다. ③ 해외 채권 직접 투자는 여전히 제한적이며, 국내 채권 직접 투자는 가능해졌습니다. ④ IRP는 원금보장 상품인 예금에도 편입이 가능합니다.</p>
+      <p>관련 시사 뉴스: 개인 퇴직연금 가입자들이 국채에 직접 투자할 수 있도록 제도가 변경되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 금융당국이 은행권의 중저신용자 대출 총량규제를 완화하고 비중 확대를 독려하는 주요 목적은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행의 수익성 극대화를 통해 경쟁력을 강화하기 위함이다.</li><li>② 가계부채 총량 관리를 더욱 효과적으로 시행하기 위함이다.</li><li>③ 저신용 서민층의 금융 접근성을 높여 포용적 금융을 실현하기 위함이다.</li><li>④ 고위험 대출 상품 개발을 장려하여 금융 시장 활성화를 도모하기 위함이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 저신용 서민층의 금융 접근성을 높여 포용적 금융을 실현하기 위함이다.</p>
+      <p><strong>해설:</strong> 금융당국의 중저신용자 대출 총량규제 완화는 신용점수가 낮은 서민층의 대출 문턱을 낮춰 금융 접근성을 개선하고 금융 소외를 해소하려는 목적을 가집니다. [오답해설] ① 수익성 극대화는 부수적인 효과일 뿐 주된 목적이 아니며, ② 고위험 대출 상품을 장려하는 것은 아닙니다. ④ 가계부채 총량 관리와는 상반되는 목적을 가집니다.</p>
+      <p>관련 시사 뉴스: 금융당국은 중저신용자 대출 총량규제를 대폭 완화하여 서민들의 돈줄이 막히지 않도록 지원합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 한국은행의 연속적인 기준금리 인상 기조가 국내 은행의 수익성 및 건전성에 미치는 주요 영향은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 예대마진이 축소되어 수익성이 악화될 수 있다.</li><li>② 대출 연체율이 상승하여 은행의 건전성에 부정적인 영향을 줄 수 있다.</li><li>③ 가계 및 기업의 이자 부담이 줄어들어 대출 상환 능력이 개선된다.</li><li>④ 시중 유동성이 증가하여 은행의 자금 조달 비용이 감소한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 대출 연체율이 상승하여 은행의 건전성에 부정적인 영향을 줄 수 있다.</p>
+      <p><strong>해설:</strong> 기준금리 인상은 대출 금리 상승으로 이어져 가계와 기업의 이자 부담을 가중시키고, 이는 연체율 상승으로 이어져 은행의 건전성에 부정적인 영향을 줄 수 있습니다. [오답해설] ① 금리 인상 시 예금 금리보다 대출 금리가 더 빠르게 오르는 경향이 있어 예대마진이 확대될 가능성이 있습니다. ③ 가계 및 기업의 이자 부담이 늘어나 대출 상환 능력은 악화될 수 있습니다. ④ 금리 인상은 시중 유동성을 흡수하며, 자금 조달 비용을 증가시키는 요인이 됩니다.</p>
+      <p>관련 시사 뉴스: 한국은행의 기준금리 연속 인상으로 대출이자가 오르고 영끌족의 이자 부담이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 미국 트럼프 행정부가 수입 반도체에 고율 관세를 검토하고 있다는 소식이 국내 반도체 산업에 가져올 주된 위험 요인은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 기업의 미국 내 생산 시설 투자 압박 및 대미 수출 감소 위험이 커질 것이다.</li><li>② 국내 반도체 기업들의 미국 시장 진출이 더욱 용이해질 것이다.</li><li>③ 글로벌 반도체 공급망이 안정화되어 생산 효율성이 증대될 것이다.</li><li>④ 한국의 반도체 기술력이 국제적으로 더욱 인정받아 경쟁 우위를 확보할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 국내 기업의 미국 내 생산 시설 투자 압박 및 대미 수출 감소 위험이 커질 것이다.</p>
+      <p><strong>해설:</strong> 미국의 고율 관세는 자국 내 생산을 유도하고 수입을 억제하므로, 국내 반도체 기업들은 미국 내 공장 건설 압박을 받거나 미국으로의 수출이 어려워질 수 있습니다. [오답해설] ② 고율 관세는 시장 진출을 어렵게 합니다. ③ 보호무역주의 강화는 공급망 불안정성을 증대시킵니다. ④ 관세 부과와 기술력 인정은 직접적인 인과관계가 없습니다.</p>
+      <p>관련 시사 뉴스: 미국 트럼프 행정부의 수입 반도체 고율 관세 검토는 국내 반도체 기업의 대미 투자 압박으로 작용할 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 중앙은행의 "통화 긴축 정책"과 정부의 "재정 확장 정책"이 동시에 추진될 때 발생할 수 있는 거시경제적 문제점으로 가장 큰 부작용은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기업의 투자 활성화로 고용이 급증하여 경제 성장이 가속화될 것이다.</li><li>② 시중 금리가 하락하여 가계의 이자 부담이 크게 경감될 것이다.</li><li>③ 정부 지출 증가로 인한 물가 상승 압력이 통화 긴축의 효과를 상쇄시킬 수 있다.</li><li>④ 정부 부채가 감소하고 재정 건전성이 크게 개선될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 정부 지출 증가로 인한 물가 상승 압력이 통화 긴축의 효과를 상쇄시킬 수 있다.</p>
+      <p><strong>해설:</strong> 통화 긴축은 물가를 잡으려 하지만 재정 확장은 시중에 돈을 풀어 물가 상승 압력을 가중시켜 두 정책의 효과를 상쇄시키고 혼란을 야기할 수 있습니다. [오답해설] ① 통화 긴축으로 인한 금리 인상은 기업 투자를 위축시킬 수 있습니다. ② 통화 긴축 정책은 시중 금리 상승 압력을 가합니다. ④ 재정 확장 정책은 정부 지출 증가로 이어져 정부 부채를 늘릴 수 있습니다.</p>
+      <p>관련 시사 뉴스: 한국은행의 긴축 통화정책과 정부의 확장 재정정책이 엇박자를 내면서 물가 관리에 대한 우려가 제기되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 고령층 자산 비중이 은행 예금의 상당 부분을 차지하며 '예금 큰손'으로 부상하는 현상이 국내 은행권의 수신 전략에 미칠 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 고령층을 위한 장기적인 고금리 예금 상품 출시가 감소할 것이다.</li><li>② 은행들은 청년층 고객 유치에 집중하고 고령층 고객은 소홀히 할 것이다.</li><li>③ 고령층 고객은 비대면 채널 활용도가 높아 비대면 서비스 중심으로 전환될 것이다.</li><li>④ 시니어 고객의 자산관리 및 상속 증여 컨설팅 서비스가 강화될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 시니어 고객의 자산관리 및 상속 증여 컨설팅 서비스가 강화될 것이다.</p>
+      <p><strong>해설:</strong> 고령층 고객은 자산이 많고 상속 및 증여에 대한 관심이 높아 은행들은 이들을 위한 특화된 자산관리 및 컨설팅 서비스 강화를 통해 수신 경쟁력을 확보하려 할 것입니다. [오답해설] ① 고령층 자금 유치를 위해 고금리 예금 상품을 계속 유지하거나 확대할 수 있습니다. ② 예금 큰손인 고령층 고객은 은행의 핵심 고객층으로 중요성이 더욱 커질 것입니다. ③ 고령층 고객은 대면 서비스를 선호하는 경향이 있어 대면 채널의 중요성이 여전히 높습니다.</p>
+      <p>관련 시사 뉴스: 6070세대가 정기예금의 큰손으로 부상하며 은행권이 이들을 위한 쟁탈전에 돌입했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 저축은행의 순이익은 증가했지만, 기업대출 연체율이 동시에 상승하고 있다는 보도와 관련하여 금융당국이 취할 수 있는 가장 적절한 대응 방안은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 저축은행의 대출 규제를 전면 완화하여 대출을 더욱 확대하도록 유도한다.</li><li>② 금융사의 부실 자산 인수를 위한 배드뱅크 설립을 검토한다.</li><li>③ 대손충당금 적립 기준을 완화하여 저축은행의 건전성 부담을 줄여준다.</li><li>④ 저축은행의 대출 심사 기준 강화 및 리스크 관리 강화를 요구한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 저축은행의 대출 심사 기준 강화 및 리스크 관리 강화를 요구한다.</p>
+      <p><strong>해설:</strong> 연체율 상승은 잠재적인 부실 위험을 내포하므로, 금융당국은 건전성 확보를 위해 저축은행에 대출 심사 강화 및 리스크 관리 역량 확대를 요구하여 부실 확대 가능성을 선제적으로 차단해야 합니다. [오답해설] ① 대출 규제 완화는 연체율을 더욱 높일 수 있습니다. ② 배드뱅크는 이미 발생한 부실채권 처리에 가깝고, 선제적 대응으로는 부적절합니다. ③ 대손충당금 적립 기준 완화는 건전성을 악화시킬 수 있습니다.</p>
+      <p>관련 시사 뉴스: 저축은행의 상반기 순이익이 크게 늘었지만, 기업대출 연체율도 함께 상승하여 건전성 악화에 대한 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-28</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2093,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n기업이 투자은행과 계약하여 자사주 매입에 필요한 자금을 선지급하고, 투자은행이 일정 기간에 걸쳐 주식을 매입하여 기업에 인도하는 방식의 자사주 매입 프로그램은 무엇인가? 주식의 평균 시장가격 대비 할인된 가격으로 매입하여 자본 구조 조정이나 주주 환원을 효과적으로 수행한다.","answer":"② ASAP (Accelerated Share Buyback)","explanation":"ASAP은 기업이 투자은행을 통해 자사주를 신속하게 매입하는 프로그램으로, 선지급 후 일정 기간에 걸쳐 주식을 인도받는 방식입니다. [오답해설] ① SPV는 특정 목적을 위해 설립되는 법인으로 자사주 매입 방식과는 다릅니다. ③ ESOP은 직원들이 회사 주식을 소유하게 하는 제도로, 자사주 매입 방식과 목적이 다릅니다. ④ MBO는 기업의 경영진이 해당 기업을 인수하는 것을 의미합니다.","news_context":"ASAP(Accelerated Share Buyback)은 기업이 투자은행을 통해 자사주를 신속하게 매입하여 자본 구조 조정 및 주주 환원을 효율적으로 진행하는 프로그램입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431100","options":["① SPV (Special Purpose Vehicle)","② ASAP (Accelerated Share Buyback)","③ ESOP (Employee Stock Ownership Plan)","④ MBO (Management Buyout)"]},{"id":2094,"category":"시사금융용어","question":"다음 설명에 해당하는 용어로 가장 적절한 것은?\n\n일본 정부가 매년 여름에 발표하는 중장기 경제 재정 운영의 기본 방침으로, 경제개혁과 재정 건전화, 구조 개혁 등 국가의 전반적인 경제 방향을 제시하는 것은 무엇인가?","answer":"④ 골태방침","explanation":"골태방침은 일본 정부가 매년 발표하는 중장기 경제 재정 운영의 기본 방침을 의미합니다. [오답해설] ① 아베노믹스는 아베 신조 전 일본 총리의 구체적인 경제 정책을 일컫는 말입니다. ② 양적완화는 중앙은행이 통화 공급을 늘리는 비전통적 통화 정책입니다. ③ 긴축재정은 정부 지출을 줄이거나 세금을 늘려 재정 적자를 축소하려는 정책입니다.","news_context":"골태방침은 일본 정부가 매년 발표하는 중장기 경제 재정 운영의 기본 방침으로, 경제 개혁과 재정 건전화의 큰 틀을 제시합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431377","options":["① 아베노믹스","② 양적완화","③ 긴축재정","④ 골태방침"]},{"id":2095,"category":"금융용어","question":"“기준금리를 인상하는 '매파적(hawkish)' 정책 기조를 유지하면서도, 향후 추가 인상 속도나 폭에 대한 시장의 불확실성을 줄이고 우려를 완화하는 '비둘기파적(dovish)' 메시지를 동시에 전달하는 통화정책 전략”을 의미하는 용어는 무엇인가?","answer":"③ 비둘기파적 인상 (Dovish Hike)","explanation":"비둘기파적 인상(Dovish Hike)은 금리 인상을 통해 긴축 기조를 유지하면서도, 시장의 금리 인상 우려를 완화하는 메시지를 함께 전달하는 전략입니다. [오답해설] ① 매파적 인상은 금리 인상에 대한 강한 의지를 시장에 전달하는 정책입니다. ② 테이퍼링은 중앙은행이 양적완화로 매입했던 자산의 규모를 점진적으로 축소하는 것입니다. ④ 오퍼레이션 트위스트는 중앙은행이 단기 국채를 매도하고 장기 국채를 매입하여 장기 금리를 낮추는 정책입니다.","news_context":"한국은행이 금리 연속 인상에도 시장에 유화적 메시지를 전달하는 '도비시 하이크' 기조를 보였습니다.","news_url":"","options":["① 매파적 인상 (Hawkish Hike)","② 테이퍼링 (Tapering)","③ 비둘기파적 인상 (Dovish Hike)","④ 오퍼레이션 트위스트 (Operation Twist)"]},{"id":2096,"category":"세부지식","question":"개인형 퇴직연금(IRP) 제도에 대한 다음 설명 중, 최근 변경된 내용을 포함하여 옳은 것은?","answer":"① IRP 계좌를 통해 개인이 국채를 직접 매수하는 것이 가능해졌다.","explanation":"최근 IRP 제도 변경으로 개인도 계좌를 통해 국채를 직접 매수할 수 있게 되었습니다. [오답해설] ② IRP 계좌에서는 개별 주식에 직접 투자할 수 없습니다. ③ 해외 채권 직접 투자는 여전히 제한적이며, 국내 채권 직접 투자는 가능해졌습니다. ④ IRP는 원금보장 상품인 예금에도 편입이 가능합니다.","news_context":"개인 퇴직연금 가입자들이 국채에 직접 투자할 수 있도록 제도가 변경되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12138165","options":["① IRP 계좌를 통해 개인이 국채를 직접 매수하는 것이 가능해졌다.","② IRP 계좌에서는 상장된 개별 주식에 직접 투자할 수 있다.","③ 해외 채권 직접 투자는 가능하나, 국내 채권 직접 투자는 여전히 불가능하다.","④ IRP의 예금 상품 편입은 원금 손실 위험이 있어 전면 금지된다."]},{"id":2097,"category":"세부지식","question":"금융당국이 은행권의 중저신용자 대출 총량규제를 완화하고 비중 확대를 독려하는 주요 목적은 무엇인가?","answer":"③ 저신용 서민층의 금융 접근성을 높여 포용적 금융을 실현하기 위함이다.","explanation":"금융당국의 중저신용자 대출 총량규제 완화는 신용점수가 낮은 서민층의 대출 문턱을 낮춰 금융 접근성을 개선하고 금융 소외를 해소하려는 목적을 가집니다. [오답해설] ① 수익성 극대화는 부수적인 효과일 뿐 주된 목적이 아니며, ② 고위험 대출 상품을 장려하는 것은 아닙니다. ④ 가계부채 총량 관리와는 상반되는 목적을 가집니다.","news_context":"금융당국은 중저신용자 대출 총량규제를 대폭 완화하여 서민들의 돈줄이 막히지 않도록 지원합니다.","news_url":"https://www.mk.co.kr/news/economy/12138175","options":["① 은행의 수익성 극대화를 통해 경쟁력을 강화하기 위함이다.","② 가계부채 총량 관리를 더욱 효과적으로 시행하기 위함이다.","③ 저신용 서민층의 금융 접근성을 높여 포용적 금융을 실현하기 위함이다.","④ 고위험 대출 상품 개발을 장려하여 금융 시장 활성화를 도모하기 위함이다."]},{"id":2098,"category":"시사","question":"한국은행의 연속적인 기준금리 인상 기조가 국내 은행의 수익성 및 건전성에 미치는 주요 영향은 무엇인가?","answer":"② 대출 연체율이 상승하여 은행의 건전성에 부정적인 영향을 줄 수 있다.","explanation":"기준금리 인상은 대출 금리 상승으로 이어져 가계와 기업의 이자 부담을 가중시키고, 이는 연체율 상승으로 이어져 은행의 건전성에 부정적인 영향을 줄 수 있습니다. [오답해설] ① 금리 인상 시 예금 금리보다 대출 금리가 더 빠르게 오르는 경향이 있어 예대마진이 확대될 가능성이 있습니다. ③ 가계 및 기업의 이자 부담이 늘어나 대출 상환 능력은 악화될 수 있습니다. ④ 금리 인상은 시중 유동성을 흡수하며, 자금 조달 비용을 증가시키는 요인이 됩니다.","news_context":"한국은행의 기준금리 연속 인상으로 대출이자가 오르고 영끌족의 이자 부담이 커지고 있습니다.","news_url":"https://www.bntnews.co.kr/article/view/bnt202608280006","options":["① 은행의 예대마진이 축소되어 수익성이 악화될 수 있다.","② 대출 연체율이 상승하여 은행의 건전성에 부정적인 영향을 줄 수 있다.","③ 가계 및 기업의 이자 부담이 줄어들어 대출 상환 능력이 개선된다.","④ 시중 유동성이 증가하여 은행의 자금 조달 비용이 감소한다."]},{"id":2099,"category":"시사","question":"미국 트럼프 행정부가 수입 반도체에 고율 관세를 검토하고 있다는 소식이 국내 반도체 산업에 가져올 주된 위험 요인은 무엇인가?","answer":"① 국내 기업의 미국 내 생산 시설 투자 압박 및 대미 수출 감소 위험이 커질 것이다.","explanation":"미국의 고율 관세는 자국 내 생산을 유도하고 수입을 억제하므로, 국내 반도체 기업들은 미국 내 공장 건설 압박을 받거나 미국으로의 수출이 어려워질 수 있습니다. [오답해설] ② 고율 관세는 시장 진출을 어렵게 합니다. ③ 보호무역주의 강화는 공급망 불안정성을 증대시킵니다. ④ 관세 부과와 기술력 인정은 직접적인 인과관계가 없습니다.","news_context":"미국 트럼프 행정부의 수입 반도체 고율 관세 검토는 국내 반도체 기업의 대미 투자 압박으로 작용할 수 있습니다.","news_url":"","options":["① 국내 기업의 미국 내 생산 시설 투자 압박 및 대미 수출 감소 위험이 커질 것이다.","② 국내 반도체 기업들의 미국 시장 진출이 더욱 용이해질 것이다.","③ 글로벌 반도체 공급망이 안정화되어 생산 효율성이 증대될 것이다.","④ 한국의 반도체 기술력이 국제적으로 더욱 인정받아 경쟁 우위를 확보할 것이다."]},{"id":2100,"category":"시사","question":"중앙은행의 \"통화 긴축 정책\"과 정부의 \"재정 확장 정책\"이 동시에 추진될 때 발생할 수 있는 거시경제적 문제점으로 가장 큰 부작용은 무엇인가?","answer":"③ 정부 지출 증가로 인한 물가 상승 압력이 통화 긴축의 효과를 상쇄시킬 수 있다.","explanation":"통화 긴축은 물가를 잡으려 하지만 재정 확장은 시중에 돈을 풀어 물가 상승 압력을 가중시켜 두 정책의 효과를 상쇄시키고 혼란을 야기할 수 있습니다. [오답해설] ① 통화 긴축으로 인한 금리 인상은 기업 투자를 위축시킬 수 있습니다. ② 통화 긴축 정책은 시중 금리 상승 압력을 가합니다. ④ 재정 확장 정책은 정부 지출 증가로 이어져 정부 부채를 늘릴 수 있습니다.","news_context":"한국은행의 긴축 통화정책과 정부의 확장 재정정책이 엇박자를 내면서 물가 관리에 대한 우려가 제기되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12138191","options":["① 기업의 투자 활성화로 고용이 급증하여 경제 성장이 가속화될 것이다.","② 시중 금리가 하락하여 가계의 이자 부담이 크게 경감될 것이다.","③ 정부 지출 증가로 인한 물가 상승 압력이 통화 긴축의 효과를 상쇄시킬 수 있다.","④ 정부 부채가 감소하고 재정 건전성이 크게 개선될 것이다."]},{"id":2101,"category":"시사","question":"고령층 자산 비중이 은행 예금의 상당 부분을 차지하며 '예금 큰손'으로 부상하는 현상이 국내 은행권의 수신 전략에 미칠 영향으로 옳은 것은?","answer":"④ 시니어 고객의 자산관리 및 상속 증여 컨설팅 서비스가 강화될 것이다.","explanation":"고령층 고객은 자산이 많고 상속 및 증여에 대한 관심이 높아 은행들은 이들을 위한 특화된 자산관리 및 컨설팅 서비스 강화를 통해 수신 경쟁력을 확보하려 할 것입니다. [오답해설] ① 고령층 자금 유치를 위해 고금리 예금 상품을 계속 유지하거나 확대할 수 있습니다. ② 예금 큰손인 고령층 고객은 은행의 핵심 고객층으로 중요성이 더욱 커질 것입니다. ③ 고령층 고객은 대면 서비스를 선호하는 경향이 있어 대면 채널의 중요성이 여전히 높습니다.","news_context":"6070세대가 정기예금의 큰손으로 부상하며 은행권이 이들을 위한 쟁탈전에 돌입했습니다.","news_url":"https://www.mk.co.kr/news/economy/12137978","options":["① 고령층을 위한 장기적인 고금리 예금 상품 출시가 감소할 것이다.","② 은행들은 청년층 고객 유치에 집중하고 고령층 고객은 소홀히 할 것이다.","③ 고령층 고객은 비대면 채널 활용도가 높아 비대면 서비스 중심으로 전환될 것이다.","④ 시니어 고객의 자산관리 및 상속 증여 컨설팅 서비스가 강화될 것이다."]},{"id":2102,"category":"시사","question":"최근 저축은행의 순이익은 증가했지만, 기업대출 연체율이 동시에 상승하고 있다는 보도와 관련하여 금융당국이 취할 수 있는 가장 적절한 대응 방안은 무엇인가?","answer":"④ 저축은행의 대출 심사 기준 강화 및 리스크 관리 강화를 요구한다.","explanation":"연체율 상승은 잠재적인 부실 위험을 내포하므로, 금융당국은 건전성 확보를 위해 저축은행에 대출 심사 강화 및 리스크 관리 역량 확대를 요구하여 부실 확대 가능성을 선제적으로 차단해야 합니다. [오답해설] ① 대출 규제 완화는 연체율을 더욱 높일 수 있습니다. ② 배드뱅크는 이미 발생한 부실채권 처리에 가깝고, 선제적 대응으로는 부적절합니다. ③ 대손충당금 적립 기준 완화는 건전성을 악화시킬 수 있습니다.","news_context":"저축은행의 상반기 순이익이 크게 늘었지만, 기업대출 연체율도 함께 상승하여 건전성 악화에 대한 우려가 커지고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/018/0006359387?sid=101","options":["① 저축은행의 대출 규제를 전면 완화하여 대출을 더욱 확대하도록 유도한다.","② 금융사의 부실 자산 인수를 위한 배드뱅크 설립을 검토한다.","③ 대손충당금 적립 기준을 완화하여 저축은행의 건전성 부담을 줄여준다.","④ 저축은행의 대출 심사 기준 강화 및 리스크 관리 강화를 요구한다."]},{"id":74,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
