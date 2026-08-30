@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-31 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-08-31 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-08-31 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음은 경제의 구조적 취약점을 개선하고, 균형적인 성장을 추구하며, 외부 충격에 대한 경제의 기초 체력을 강화하는 것을 목표로 하는 거시경제 정책에 대한 설명이다. 단기적인 경기 부양보다는 중장기적인 관점에서 경제 전반의 체질을 튼튼히 하는 것을 비유적으로 표현하는 이 용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 경기 부양책</li><li>② 긴축 재정</li><li>③ 구조 조정</li><li>④ 골태방침</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 골태방침</p>
+      <p><strong>해설:</strong> 골태방침은 단기적인 경기 부양을 넘어 경제의 구조적 취약점을 개선하고 체질을 강화하여 중장기적인 성장 동력을 확보하려는 정책입니다. [오답해설] ① 경기 부양책은 단기적인 경제 활성화를 위해 지출을 늘리거나 금리를 낮추는 등의 정책을 의미합니다. ② 긴축 재정은 정부 지출을 줄이거나 세금을 늘려 재정 건전성을 확보하려는 정책입니다. ③ 구조 조정은 특정 산업이나 기업의 비효율적인 구조를 개편하여 경쟁력을 높이는 것을 의미합니다.</p>
+      <p>관련 시사 뉴스: 경제의 구조적 취약점을 개선하고 균형적 성장을 추구하여 외부 충격에 대한 체질을 강화하는 중장기적 거시경제 정책이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 교통사고 발생 시 객관적인 사고 분석을 위해 도입된 시스템으로, 특히 경미한 교통사고의 경우 시뮬레이션 기술을 활용하여 사고 상황과 상해 정도를 과학적으로 분석함으로써 보험 사기를 방지하고 공정한 보상 판단을 돕는 이 용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 빅데이터 기반 사고 분석</li><li>② 한국형 마디모</li><li>③ AI 기반 보험 심사</li><li>④ 블록체인 기반 보험 이력 관리</li>
+      </ul>
+      <p><strong>정답:</strong> ② 한국형 마디모</p>
+      <p><strong>해설:</strong> 한국형 마디모는 교통사고, 특히 경미한 사고의 경우 시뮬레이션 기술을 활용하여 사고 발생 원인과 상해 정도를 과학적으로 분석하는 시스템입니다. [오답해설] ① 빅데이터 기반 사고 분석은 다양한 사고 데이터를 분석하여 패턴을 찾고 예측하는 넓은 개념입니다. ③ AI 기반 보험 심사는 인공지능이 보험 가입 및 청구 심사를 자동화하는 기술을 의미합니다. ④ 블록체인 기반 보험 이력 관리는 분산원장 기술을 활용하여 보험 관련 정보를 투명하게 기록하고 관리하는 시스템을 지칭합니다.</p>
+      <p>관련 시사 뉴스: 교통사고, 특히 경미한 사고에 대한 과학적이고 객관적인 분석을 위해 시뮬레이션 기술을 활용하여 보험 사기 방지 및 공정한 보상을 돕는 시스템이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. "높은 확률로 발생할 수 있으며 파급력이 크지만, 예상되는 위협임에도 불구하고 간과하거나 무시되어 결국 큰 재앙으로 다가오는 위험"을 뜻하는 금융/경제 용어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 회색 코뿔소</li><li>② 검은 백조</li><li>③ 흰 코끼리</li><li>④ 황금 낙하산</li>
+      </ul>
+      <p><strong>정답:</strong> ① 회색 코뿔소</p>
+      <p><strong>해설:</strong> 회색 코뿔소는 충분히 예측 가능하고 지속적인 경고가 있었음에도 방치되어 큰 위기를 초래하는 위험을 말합니다. ② 검은 백조는 예측 불가능하게 발생하여 엄청난 충격과 파급효과를 가져오는 사건을 의미합니다. ③ 흰 코끼리는 유지 비용이 많이 들고 쓸모없지만 처분하기는 곤란한 애물단지를 비유하는 용어입니다. ④ 황금 낙하산은 기업 인수합병 시 최고경영자가 해고될 경우 거액의 퇴직금이나 보너스를 받을 수 있도록 미리 계약하는 제도입니다.</p>
+      <p>관련 시사 뉴스: 인공지능 거품 붕괴 가능성을 '회색 코뿔소'에 비유하며 다가올 위험에 대한 경고를 다루고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 청년층의 주거 안정과 자산 형성을 지원하기 위한 다양한 금융상품이 출시되고 있습니다. 다음 중 정부가 지원하는 청년 대상 주택 관련 대출 또는 제도에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 연 소득 및 자산 기준을 충족하는 무주택 세대주 청년에게 저금리로 전세 보증금을 지원합니다.</li><li>② 청년우대형 주택청약종합저축은 일반 청약저축보다 높은 이율과 비과세 혜택을 제공하며, 연령 제한이 없습니다.</li><li>③ 청년월세 특별지원사업은 보증금 및 월세 기준을 충족하는 청년에게 월세 일부를 지원하여 주거비 부담을 덜어줍니다.</li><li>④ 버팀목 전세자금대출의 청년 전용 상품은 만 34세 이하의 청년 가구를 대상으로 보증금 한도 및 대출 한도를 상향 지원합니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 청년우대형 주택청약종합저축은 일반 청약저축보다 높은 이율과 비과세 혜택을 제공하며, 연령 제한이 없습니다.</p>
+      <p><strong>해설:</strong> 청년우대형 주택청약종합저축은 만 19세 이상 34세 이하의 청년만 가입할 수 있습니다. ① 청년 전월세 보증금 대출 등의 제도에 대한 설명으로, 저금리 전세 보증금 지원은 청년 주거 안정을 위한 주요 정책입니다. ③ 청년월세 특별지원은 청년층의 주거비 부담 경감을 위한 정부 지원 정책 중 하나입니다. ④ 버팀목 전세자금대출의 청년 전용 상품은 만 34세 이하 청년의 주거 안정 지원을 위해 대출 조건을 완화하여 제공됩니다.</p>
+      <p>관련 시사 뉴스: 청년들을 위한 금융상품과 대출 제도의 내용 및 한도 등을 다루며 관련 제도에 대한 관심이 높아지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 9월부터 시행될 예정인 '월세전환 전세대출' 제도에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 대상 주택은 수도권 아파트로 한정되며, 주택 가격 상한선은 적용되지 않습니다.</li><li>② 대출 한도는 최대 1억 원이며, 임대인의 동의 없이도 전환이 가능합니다.</li><li>③ 이 제도는 기존 월세 계약을 전세 계약으로 전환하도록 유도하여 세입자의 월세 부담을 경감하는 것을 목표로 합니다.</li><li>④ 이자율은 시중 금리보다 높은 수준으로 설정되어, 투기 수요를 억제합니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 이 제도는 기존 월세 계약을 전세 계약으로 전환하도록 유도하여 세입자의 월세 부담을 경감하는 것을 목표로 합니다.</p>
+      <p><strong>해설:</strong> 월세전환 전세대출은 월세 부담을 줄이고 전세로의 전환을 유도하여 서민 주거 안정을 돕는 제도입니다. ① 대상 주택은 수도권뿐만 아니라 지방도 포함될 수 있으며, 주택 가격 상한선 등 여러 조건이 적용됩니다. ② 대출 한도와 전환 조건은 아직 확정되지 않았으나, 일반적으로 임대인의 동의가 필요합니다. ④ 서민 주거 안정을 위한 제도이므로, 시중 금리보다 낮은 이자율을 적용하여 세입자의 부담을 경감할 가능성이 높습니다.</p>
+      <p>관련 시사 뉴스: 월세 세입자의 주거 부담을 덜어주기 위해 월세 계약을 전세로 전환할 수 있도록 지원하는 새로운 제도의 시행을 예고하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. '레버리지 ETF'에 대한 설명 중 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 인버스 ETF와 달리 하락장에서도 수익을 낼 수 없으므로, 상승장에서만 활용됩니다.</li><li>② 기초자산 일일수익률의 2배 등 특정 배율로 추종하도록 설계된 상장지수펀드(ETF)입니다.</li><li>③ 장기 투자 시 기초자산의 움직임과 레버리지 ETF의 수익률 괴리가 발생할 수 있어 유의해야 합니다.</li><li>④ 시장이 특정 방향으로 꾸준히 움직일 때 단기간에 높은 수익을 얻을 수 있는 가능성이 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 인버스 ETF와 달리 하락장에서도 수익을 낼 수 없으므로, 상승장에서만 활용됩니다.</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 기초자산의 상승에 베팅하는 상품이므로, 하락장에서는 손실이 커집니다. 하락장에서 수익을 내려면 인버스 레버리지 ETF를 활용해야 합니다. ② 레버리지 ETF는 기초자산의 일일 변동성을 확대하여 추종하는 방식으로 설계됩니다. ③ 레버리지 ETF는 일일 수익률을 추종하므로, 장기 투자 시 복리 효과 및 롤오버 비용 등으로 인해 기초자산과의 괴리가 커질 수 있습니다. ④ 시장이 강한 추세를 보일 때 단기적인 고수익을 기대할 수 있으나, 변동성이 큰 시장에서는 손실 위험도 증대됩니다.</p>
+      <p>관련 시사 뉴스: 레버리지 ETF와 관련된 이해충돌 의혹이 제기되며 금융상품의 특성과 리스크에 대한 관심이 부각되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 국내 은행의 자본 건전성을 평가하는 주요 지표인 'BIS 자기자본비율'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사/은행경영</p>
+      <ul>
+        <li>① 은행의 대출금 대비 예금액의 비율을 나타내며, 높을수록 유동성이 양호하다고 평가됩니다.</li><li>② 총자산을 총자본으로 나눈 값으로, 은행이 보유한 자산 대비 손실 흡수 능력을 나타냅니다.</li><li>③ 은행의 부채 대비 자기자본의 비율을 의미하며, 낮을수록 재무 건전성이 우수하다고 판단됩니다.</li><li>④ 은행의 자기자본을 위험가중자산으로 나눈 값으로, 금융기관의 건전성을 판단하는 국제적인 기준입니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 은행의 자기자본을 위험가중자산으로 나눈 값으로, 금융기관의 건전성을 판단하는 국제적인 기준입니다.</p>
+      <p><strong>해설:</strong> BIS 자기자본비율은 은행의 자기자본을 위험가중자산으로 나눈 비율로, 은행의 재무 건전성과 잠재적 손실 흡수 능력을 평가하는 핵심 지표입니다. ① 대출금 대비 예금액은 유동성 관련 지표이지만 BIS 비율과는 직접적인 관련이 없습니다. ② 총자산을 총자본으로 나눈 값이 아닌, 자기자본을 위험가중자산으로 나눈 비율입니다. ③ 낮을수록 건전성이 우수하다는 판단은 잘못되었으며, 기준치 이상으로 높을수록 건전성이 양호하다고 평가됩니다.</p>
+      <p>관련 시사 뉴스: 국내 은행들의 BIS 자기자본비율이 개선되며 건전성이 양호한 수준을 유지하고 있다는 소식이 전해지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 잭슨홀 미팅은 세계 주요 중앙은행 총재와 경제학자들이 모여 경제 정책 방향을 논의하는 중요한 자리입니다. 최근 잭슨홀 미팅과 관련된 이슈가 금융시장에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사/금리정책</p>
+      <ul>
+        <li>① 중앙은행 총재의 발언은 향후 금리 인상 가능성을 높여 금융기관의 대출금리 상승 압력을 완화합니다.</li><li>② 중앙은행의 통화정책 방향에 대한 신호를 제공하여 시장의 불확실성을 해소하거나 새로운 변동성을 야기할 수 있습니다.</li><li>③ 비둘기파적 발언은 기준금리 인하 또는 동결 가능성을 시사하여 채권 금리를 상승시키는 요인으로 작용합니다.</li><li>④ 매파적 발언은 통화 긴축 기조를 강화할 것이라는 기대를 높여 주식 시장의 상승세를 부추깁니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 중앙은행의 통화정책 방향에 대한 신호를 제공하여 시장의 불확실성을 해소하거나 새로운 변동성을 야기할 수 있습니다.</p>
+      <p><strong>해설:</strong> 잭슨홀 미팅에서의 발언은 중앙은행의 통화정책 방향에 대한 중요한 신호로 작용하며, 시장의 기대와 상이할 경우 큰 변동성을 야기할 수 있습니다. ① 금리 인상 가능성을 높이면 대출금리 상승 압력을 강화합니다. ③ 비둘기파적 발언(통화 완화)은 기준금리 인하 또는 동결 가능성을 시사하여 채권 금리를 하락시키는 요인으로 작용합니다. ④ 매파적 발언(통화 긴축)은 시장에 부정적으로 작용하여 주식 시장에 하락 압력을 줄 수 있습니다.</p>
+      <p>관련 시사 뉴스: 케빈 워시의 잭슨홀 연설과 관련하여 금리 전망이 뒤집히는 등 중앙은행의 메시지가 금융시장에 큰 영향을 미치고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 금융당국은 고위험 금융상품 판매와 관련하여 '제조사 책임'을 강화하고 은행의 상품 심의 과정에 제조사 참여를 의무화하는 방안을 추진하고 있습니다. 이러한 조치의 배경 및 기대 효과로 가장 적절한 것은?</h2>
+      <p>분류: 시사/금융당국 대응</p>
+      <ul>
+        <li>① 금융상품의 복잡성을 줄여 판매 절차를 간소화하고, 은행의 판매 부담을 경감하기 위함입니다.</li><li>② 은행이 고위험 상품 판매를 중단하고, 모든 상품을 직접 개발하도록 유도하여 경쟁력을 강화하기 위함입니다.</li><li>③ 제조사가 은행의 상품 포트폴리오 다양화에 기여하도록 하여, 소비자 선택의 폭을 넓히기 위함입니다.</li><li>④ 금융소비자 보호를 강화하고, 상품의 설계 단계부터 판매 이후까지 제조사의 책임을 명확히 하여 불완전 판매를 예방하기 위함입니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 금융소비자 보호를 강화하고, 상품의 설계 단계부터 판매 이후까지 제조사의 책임을 명확히 하여 불완전 판매를 예방하기 위함입니다.</p>
+      <p><strong>해설:</strong> 고위험 금융상품 제조사의 책임 강화는 불완전 판매로 인한 소비자 피해를 줄이고, 상품의 위험 요소를 설계 단계부터 면밀히 검토하여 건전한 금융시장 조성을 목표로 합니다. ① 제조사 참여 의무화는 심의 과정을 더 복잡하게 만들 수 있으며, 판매 절차 간소화와는 거리가 있습니다. ② 이 조치는 고위험 상품 판매 중단보다는 판매 과정의 건전성 강화를 목표로 합니다. 은행의 직접 개발 유도가 목적은 아닙니다. ③ 제조사의 참여 의무화는 책임 강화를 위한 것이며, 상품 포트폴리오 다양화보다는 위험 관리와 소비자 보호에 중점을 둡니다.</p>
+      <p>관련 시사 뉴스: 고위험 금융상품에 대한 은행의 심의 과정에 제조사 참여를 의무화하여 상품 제조 단계부터 판매까지 책임을 강화하고 소비자 보호를 증대하려는 금융당국의 움직임을 다루고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 수도권 미분양 주택이 1년 6개월 만에 최대치를 기록하는 등 미분양 문제가 심화되고 있습니다. 이러한 현상이 국내 은행의 경영 및 여신 건전성에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사/여신/은행경영</p>
+      <ul>
+        <li>① 은행의 주택담보대출 수요가 증가하여 여신 부문 수익성이 개선될 것입니다.</li><li>② 건설사 대출 연체율 및 부도 위험이 증가하여 은행의 건전성 악화로 이어질 수 있습니다.</li><li>③ 주택 시장 불안정으로 인해 은행의 PF(프로젝트 파이낸싱) 대출 규모가 확대될 것입니다.</li><li>④ 미분양 주택 감소를 위한 정부의 정책 자금 대출 지원이 줄어들어 은행의 리스크가 완화될 것입니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 건설사 대출 연체율 및 부도 위험이 증가하여 은행의 건전성 악화로 이어질 수 있습니다.</p>
+      <p><strong>해설:</strong> 미분양 주택 증가는 건설사의 현금 흐름을 악화시켜 금융기관으로부터 받은 대출, 특히 PF 대출의 연체율을 높이고 부도 위험을 증가시켜 은행의 건전성을 위협할 수 있습니다. ① 미분양 증가는 주택 시장 침체를 의미하므로, 주택담보대출 수요를 위축시켜 여신 부문 수익성에 부정적인 영향을 미칠 수 있습니다. ③ 주택 시장 불안정 심화는 PF 대출의 부실 위험을 높여 은행이 PF 대출을 보수적으로 운영하게 하므로 규모가 축소될 가능성이 큽니다. ④ 미분양 해소를 위한 정부 정책 자금 대출이 오히려 증가할 수 있으며, 이러한 대출 지원이 줄어들면 건설사의 부담이 커져 은행의 리스크는 더욱 확대될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 수도권 미분양 주택이 최대치를 기록하고 지방 건설사들이 법정관리에 들어가는 등 부동산 시장의 침체가 심화되고 있어, 이는 은행의 대출 건전성에 부정적인 영향을 미칠 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-08-31</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2133,"category":"시사금융용어","question":"다음은 경제의 구조적 취약점을 개선하고, 균형적인 성장을 추구하며, 외부 충격에 대한 경제의 기초 체력을 강화하는 것을 목표로 하는 거시경제 정책에 대한 설명이다. 단기적인 경기 부양보다는 중장기적인 관점에서 경제 전반의 체질을 튼튼히 하는 것을 비유적으로 표현하는 이 용어는 무엇인가?","answer":"④ 골태방침","explanation":"골태방침은 단기적인 경기 부양을 넘어 경제의 구조적 취약점을 개선하고 체질을 강화하여 중장기적인 성장 동력을 확보하려는 정책입니다. [오답해설] ① 경기 부양책은 단기적인 경제 활성화를 위해 지출을 늘리거나 금리를 낮추는 등의 정책을 의미합니다. ② 긴축 재정은 정부 지출을 줄이거나 세금을 늘려 재정 건전성을 확보하려는 정책입니다. ③ 구조 조정은 특정 산업이나 기업의 비효율적인 구조를 개편하여 경쟁력을 높이는 것을 의미합니다.","news_context":"경제의 구조적 취약점을 개선하고 균형적 성장을 추구하여 외부 충격에 대한 체질을 강화하는 중장기적 거시경제 정책이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431377","options":["① 경기 부양책","② 긴축 재정","③ 구조 조정","④ 골태방침"]},{"id":2134,"category":"시사금융용어","question":"교통사고 발생 시 객관적인 사고 분석을 위해 도입된 시스템으로, 특히 경미한 교통사고의 경우 시뮬레이션 기술을 활용하여 사고 상황과 상해 정도를 과학적으로 분석함으로써 보험 사기를 방지하고 공정한 보상 판단을 돕는 이 용어는 무엇인가?","answer":"② 한국형 마디모","explanation":"한국형 마디모는 교통사고, 특히 경미한 사고의 경우 시뮬레이션 기술을 활용하여 사고 발생 원인과 상해 정도를 과학적으로 분석하는 시스템입니다. [오답해설] ① 빅데이터 기반 사고 분석은 다양한 사고 데이터를 분석하여 패턴을 찾고 예측하는 넓은 개념입니다. ③ AI 기반 보험 심사는 인공지능이 보험 가입 및 청구 심사를 자동화하는 기술을 의미합니다. ④ 블록체인 기반 보험 이력 관리는 분산원장 기술을 활용하여 보험 관련 정보를 투명하게 기록하고 관리하는 시스템을 지칭합니다.","news_context":"교통사고, 특히 경미한 사고에 대한 과학적이고 객관적인 분석을 위해 시뮬레이션 기술을 활용하여 보험 사기 방지 및 공정한 보상을 돕는 시스템이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429463","options":["① 빅데이터 기반 사고 분석","② 한국형 마디모","③ AI 기반 보험 심사","④ 블록체인 기반 보험 이력 관리"]},{"id":2135,"category":"금융용어","question":"\"높은 확률로 발생할 수 있으며 파급력이 크지만, 예상되는 위협임에도 불구하고 간과하거나 무시되어 결국 큰 재앙으로 다가오는 위험\"을 뜻하는 금융/경제 용어는 무엇인가요?","answer":"① 회색 코뿔소","explanation":"회색 코뿔소는 충분히 예측 가능하고 지속적인 경고가 있었음에도 방치되어 큰 위기를 초래하는 위험을 말합니다. ② 검은 백조는 예측 불가능하게 발생하여 엄청난 충격과 파급효과를 가져오는 사건을 의미합니다. ③ 흰 코끼리는 유지 비용이 많이 들고 쓸모없지만 처분하기는 곤란한 애물단지를 비유하는 용어입니다. ④ 황금 낙하산은 기업 인수합병 시 최고경영자가 해고될 경우 거액의 퇴직금이나 보너스를 받을 수 있도록 미리 계약하는 제도입니다.","news_context":"인공지능 거품 붕괴 가능성을 '회색 코뿔소'에 비유하며 다가올 위험에 대한 경고를 다루고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/028/0002820857?sid=101","options":["① 회색 코뿔소","② 검은 백조","③ 흰 코끼리","④ 황금 낙하산"]},{"id":2136,"category":"세부지식","question":"청년층의 주거 안정과 자산 형성을 지원하기 위한 다양한 금융상품이 출시되고 있습니다. 다음 중 정부가 지원하는 청년 대상 주택 관련 대출 또는 제도에 대한 설명으로 옳지 않은 것은?","answer":"② 청년우대형 주택청약종합저축은 일반 청약저축보다 높은 이율과 비과세 혜택을 제공하며, 연령 제한이 없습니다.","explanation":"청년우대형 주택청약종합저축은 만 19세 이상 34세 이하의 청년만 가입할 수 있습니다. ① 청년 전월세 보증금 대출 등의 제도에 대한 설명으로, 저금리 전세 보증금 지원은 청년 주거 안정을 위한 주요 정책입니다. ③ 청년월세 특별지원은 청년층의 주거비 부담 경감을 위한 정부 지원 정책 중 하나입니다. ④ 버팀목 전세자금대출의 청년 전용 상품은 만 34세 이하 청년의 주거 안정 지원을 위해 대출 조건을 완화하여 제공됩니다.","news_context":"청년들을 위한 금융상품과 대출 제도의 내용 및 한도 등을 다루며 관련 제도에 대한 관심이 높아지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12140019","options":["① 연 소득 및 자산 기준을 충족하는 무주택 세대주 청년에게 저금리로 전세 보증금을 지원합니다.","② 청년우대형 주택청약종합저축은 일반 청약저축보다 높은 이율과 비과세 혜택을 제공하며, 연령 제한이 없습니다.","③ 청년월세 특별지원사업은 보증금 및 월세 기준을 충족하는 청년에게 월세 일부를 지원하여 주거비 부담을 덜어줍니다.","④ 버팀목 전세자금대출의 청년 전용 상품은 만 34세 이하의 청년 가구를 대상으로 보증금 한도 및 대출 한도를 상향 지원합니다."]},{"id":2137,"category":"세부지식","question":"9월부터 시행될 예정인 '월세전환 전세대출' 제도에 대한 설명으로 가장 적절한 것은?","answer":"③ 이 제도는 기존 월세 계약을 전세 계약으로 전환하도록 유도하여 세입자의 월세 부담을 경감하는 것을 목표로 합니다.","explanation":"월세전환 전세대출은 월세 부담을 줄이고 전세로의 전환을 유도하여 서민 주거 안정을 돕는 제도입니다. ① 대상 주택은 수도권뿐만 아니라 지방도 포함될 수 있으며, 주택 가격 상한선 등 여러 조건이 적용됩니다. ② 대출 한도와 전환 조건은 아직 확정되지 않았으나, 일반적으로 임대인의 동의가 필요합니다. ④ 서민 주거 안정을 위한 제도이므로, 시중 금리보다 낮은 이자율을 적용하여 세입자의 부담을 경감할 가능성이 높습니다.","news_context":"월세 세입자의 주거 부담을 덜어주기 위해 월세 계약을 전세로 전환할 수 있도록 지원하는 새로운 제도의 시행을 예고하고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12139840","options":["① 대상 주택은 수도권 아파트로 한정되며, 주택 가격 상한선은 적용되지 않습니다.","② 대출 한도는 최대 1억 원이며, 임대인의 동의 없이도 전환이 가능합니다.","③ 이 제도는 기존 월세 계약을 전세 계약으로 전환하도록 유도하여 세입자의 월세 부담을 경감하는 것을 목표로 합니다.","④ 이자율은 시중 금리보다 높은 수준으로 설정되어, 투기 수요를 억제합니다."]},{"id":2138,"category":"세부지식","question":"'레버리지 ETF'에 대한 설명 중 옳지 않은 것은?","answer":"① 인버스 ETF와 달리 하락장에서도 수익을 낼 수 없으므로, 상승장에서만 활용됩니다.","explanation":"레버리지 ETF는 기초자산의 상승에 베팅하는 상품이므로, 하락장에서는 손실이 커집니다. 하락장에서 수익을 내려면 인버스 레버리지 ETF를 활용해야 합니다. ② 레버리지 ETF는 기초자산의 일일 변동성을 확대하여 추종하는 방식으로 설계됩니다. ③ 레버리지 ETF는 일일 수익률을 추종하므로, 장기 투자 시 복리 효과 및 롤오버 비용 등으로 인해 기초자산과의 괴리가 커질 수 있습니다. ④ 시장이 강한 추세를 보일 때 단기적인 고수익을 기대할 수 있으나, 변동성이 큰 시장에서는 손실 위험도 증대됩니다.","news_context":"레버리지 ETF와 관련된 이해충돌 의혹이 제기되며 금융상품의 특성과 리스크에 대한 관심이 부각되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/123/0002389271?sid=101","options":["① 인버스 ETF와 달리 하락장에서도 수익을 낼 수 없으므로, 상승장에서만 활용됩니다.","② 기초자산 일일수익률의 2배 등 특정 배율로 추종하도록 설계된 상장지수펀드(ETF)입니다.","③ 장기 투자 시 기초자산의 움직임과 레버리지 ETF의 수익률 괴리가 발생할 수 있어 유의해야 합니다.","④ 시장이 특정 방향으로 꾸준히 움직일 때 단기간에 높은 수익을 얻을 수 있는 가능성이 있습니다."]},{"id":2139,"category":"시사/은행경영","question":"국내 은행의 자본 건전성을 평가하는 주요 지표인 'BIS 자기자본비율'에 대한 설명으로 옳은 것은?","answer":"④ 은행의 자기자본을 위험가중자산으로 나눈 값으로, 금융기관의 건전성을 판단하는 국제적인 기준입니다.","explanation":"BIS 자기자본비율은 은행의 자기자본을 위험가중자산으로 나눈 비율로, 은행의 재무 건전성과 잠재적 손실 흡수 능력을 평가하는 핵심 지표입니다. ① 대출금 대비 예금액은 유동성 관련 지표이지만 BIS 비율과는 직접적인 관련이 없습니다. ② 총자산을 총자본으로 나눈 값이 아닌, 자기자본을 위험가중자산으로 나눈 비율입니다. ③ 낮을수록 건전성이 우수하다는 판단은 잘못되었으며, 기준치 이상으로 높을수록 건전성이 양호하다고 평가됩니다.","news_context":"국내 은행들의 BIS 자기자본비율이 개선되며 건전성이 양호한 수준을 유지하고 있다는 소식이 전해지고 있습니다.","news_url":"http://www.intn.co.kr/news/articleView.html?idxno=2052891","options":["① 은행의 대출금 대비 예금액의 비율을 나타내며, 높을수록 유동성이 양호하다고 평가됩니다.","② 총자산을 총자본으로 나눈 값으로, 은행이 보유한 자산 대비 손실 흡수 능력을 나타냅니다.","③ 은행의 부채 대비 자기자본의 비율을 의미하며, 낮을수록 재무 건전성이 우수하다고 판단됩니다.","④ 은행의 자기자본을 위험가중자산으로 나눈 값으로, 금융기관의 건전성을 판단하는 국제적인 기준입니다."]},{"id":2140,"category":"시사/금리정책","question":"잭슨홀 미팅은 세계 주요 중앙은행 총재와 경제학자들이 모여 경제 정책 방향을 논의하는 중요한 자리입니다. 최근 잭슨홀 미팅과 관련된 이슈가 금융시장에 미치는 영향으로 가장 적절한 것은?","answer":"② 중앙은행의 통화정책 방향에 대한 신호를 제공하여 시장의 불확실성을 해소하거나 새로운 변동성을 야기할 수 있습니다.","explanation":"잭슨홀 미팅에서의 발언은 중앙은행의 통화정책 방향에 대한 중요한 신호로 작용하며, 시장의 기대와 상이할 경우 큰 변동성을 야기할 수 있습니다. ① 금리 인상 가능성을 높이면 대출금리 상승 압력을 강화합니다. ③ 비둘기파적 발언(통화 완화)은 기준금리 인하 또는 동결 가능성을 시사하여 채권 금리를 하락시키는 요인으로 작용합니다. ④ 매파적 발언(통화 긴축)은 시장에 부정적으로 작용하여 주식 시장에 하락 압력을 줄 수 있습니다.","news_context":"케빈 워시의 잭슨홀 연설과 관련하여 금리 전망이 뒤집히는 등 중앙은행의 메시지가 금융시장에 큰 영향을 미치고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12139815","options":["① 중앙은행 총재의 발언은 향후 금리 인상 가능성을 높여 금융기관의 대출금리 상승 압력을 완화합니다.","② 중앙은행의 통화정책 방향에 대한 신호를 제공하여 시장의 불확실성을 해소하거나 새로운 변동성을 야기할 수 있습니다.","③ 비둘기파적 발언은 기준금리 인하 또는 동결 가능성을 시사하여 채권 금리를 상승시키는 요인으로 작용합니다.","④ 매파적 발언은 통화 긴축 기조를 강화할 것이라는 기대를 높여 주식 시장의 상승세를 부추깁니다."]},{"id":2141,"category":"시사/금융당국 대응","question":"최근 금융당국은 고위험 금융상품 판매와 관련하여 '제조사 책임'을 강화하고 은행의 상품 심의 과정에 제조사 참여를 의무화하는 방안을 추진하고 있습니다. 이러한 조치의 배경 및 기대 효과로 가장 적절한 것은?","answer":"④ 금융소비자 보호를 강화하고, 상품의 설계 단계부터 판매 이후까지 제조사의 책임을 명확히 하여 불완전 판매를 예방하기 위함입니다.","explanation":"고위험 금융상품 제조사의 책임 강화는 불완전 판매로 인한 소비자 피해를 줄이고, 상품의 위험 요소를 설계 단계부터 면밀히 검토하여 건전한 금융시장 조성을 목표로 합니다. ① 제조사 참여 의무화는 심의 과정을 더 복잡하게 만들 수 있으며, 판매 절차 간소화와는 거리가 있습니다. ② 이 조치는 고위험 상품 판매 중단보다는 판매 과정의 건전성 강화를 목표로 합니다. 은행의 직접 개발 유도가 목적은 아닙니다. ③ 제조사의 참여 의무화는 책임 강화를 위한 것이며, 상품 포트폴리오 다양화보다는 위험 관리와 소비자 보호에 중점을 둡니다.","news_context":"고위험 금융상품에 대한 은행의 심의 과정에 제조사 참여를 의무화하여 상품 제조 단계부터 판매까지 책임을 강화하고 소비자 보호를 증대하려는 금융당국의 움직임을 다루고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12139722","options":["① 금융상품의 복잡성을 줄여 판매 절차를 간소화하고, 은행의 판매 부담을 경감하기 위함입니다.","② 은행이 고위험 상품 판매를 중단하고, 모든 상품을 직접 개발하도록 유도하여 경쟁력을 강화하기 위함입니다.","③ 제조사가 은행의 상품 포트폴리오 다양화에 기여하도록 하여, 소비자 선택의 폭을 넓히기 위함입니다.","④ 금융소비자 보호를 강화하고, 상품의 설계 단계부터 판매 이후까지 제조사의 책임을 명확히 하여 불완전 판매를 예방하기 위함입니다."]},{"id":2142,"category":"시사/여신/은행경영","question":"최근 수도권 미분양 주택이 1년 6개월 만에 최대치를 기록하는 등 미분양 문제가 심화되고 있습니다. 이러한 현상이 국내 은행의 경영 및 여신 건전성에 미칠 영향으로 가장 적절한 것은?","answer":"② 건설사 대출 연체율 및 부도 위험이 증가하여 은행의 건전성 악화로 이어질 수 있습니다.","explanation":"미분양 주택 증가는 건설사의 현금 흐름을 악화시켜 금융기관으로부터 받은 대출, 특히 PF 대출의 연체율을 높이고 부도 위험을 증가시켜 은행의 건전성을 위협할 수 있습니다. ① 미분양 증가는 주택 시장 침체를 의미하므로, 주택담보대출 수요를 위축시켜 여신 부문 수익성에 부정적인 영향을 미칠 수 있습니다. ③ 주택 시장 불안정 심화는 PF 대출의 부실 위험을 높여 은행이 PF 대출을 보수적으로 운영하게 하므로 규모가 축소될 가능성이 큽니다. ④ 미분양 해소를 위한 정부 정책 자금 대출이 오히려 증가할 수 있으며, 이러한 대출 지원이 줄어들면 건설사의 부담이 커져 은행의 리스크는 더욱 확대될 수 있습니다.","news_context":"수도권 미분양 주택이 최대치를 기록하고 지방 건설사들이 법정관리에 들어가는 등 부동산 시장의 침체가 심화되고 있어, 이는 은행의 대출 건전성에 부정적인 영향을 미칠 수 있습니다.","news_url":"","options":["① 은행의 주택담보대출 수요가 증가하여 여신 부문 수익성이 개선될 것입니다.","② 건설사 대출 연체율 및 부도 위험이 증가하여 은행의 건전성 악화로 이어질 수 있습니다.","③ 주택 시장 불안정으로 인해 은행의 PF(프로젝트 파이낸싱) 대출 규모가 확대될 것입니다.","④ 미분양 주택 감소를 위한 정부의 정책 자금 대출 지원이 줄어들어 은행의 리스크가 완화될 것입니다."]},{"id":77,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
