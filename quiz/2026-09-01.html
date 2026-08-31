@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-01 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-01 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-01 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 회사가 배당금을 지급하기 위해 외부로부터 자금을 차입하는 금융 기법으로, 충분한 내부 현금 흐름 없이 부채를 통해 주주 환원을 하는 것을 의미한다. 이는 지속 가능성이 낮거나 위험한 재무 활동으로 간주되기도 하는데, 다음 중 이러한 현상을 지칭하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 부채 상환 자금 조달</li><li>② 자기자본 조달</li><li>③ 우로보로스 파이낸싱</li><li>④ 배당금 재투자</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 우로보로스 파이낸싱</p>
+      <p><strong>해설:</strong> 정답은 우로보로스 파이낸싱으로, 기업이 배당금을 지급하기 위해 외부에서 자금을 차입하는 것을 의미합니다. [오답해설] ① 부채 상환 자금 조달은 기존 부채를 갚기 위해 새로운 부채를 발행하는 것입니다. ② 자기자본 조달은 주식 발행 등을 통해 자본을 조달하는 것을 말합니다. ④ 배당금 재투자는 주주가 받은 배당금을 다시 해당 기업의 주식을 매입하는 데 사용하는 것입니다.</p>
+      <p>관련 시사 뉴스: 기업이 배당금을 지급하기 위해 부채를 빌리는 것을 의미하며, 내부 현금흐름이 부족한 상황에서 이루어질 때 재무 건전성 악화 우려가 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 중앙은행이나 금융기관이 시장 참여자들의 향후 금리 변동에 대한 기대를 확인하는 과정을 의미한다. 이는 시장의 심리를 파악하고 잠재적인 금리 변화가 시장에 어떻게 반영되고 있는지 평가하는 데 사용된다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 금리 민감도 분석</li><li>② 시장금리 동향</li><li>③ 기준금리 인상</li><li>④ 레이트 체크</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 레이트 체크</p>
+      <p><strong>해설:</strong> 정답은 레이트 체크로, 시장 참여자들의 미래 금리 변동에 대한 기대를 확인하는 과정을 말합니다. [오답해설] ① 금리 민감도 분석은 금리 변화가 특정 자산이나 부채의 가치에 미치는 영향을 평가하는 것입니다. ② 시장금리 동향은 현재 시장에서 형성되는 금리의 전반적인 흐름을 의미합니다. ③ 기준금리 인상은 중앙은행이 정책금리를 실제로 올리는 행위입니다.</p>
+      <p>관련 시사 뉴스: 중앙은행이나 금융기관이 시장 참여자들의 향후 금리 변동에 대한 기대를 확인하는 과정으로, 시장 심리 파악에 중요한 지표가 됩니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 프로젝트 수행을 위해 필요한 자금을 프로젝트 자체의 사업성, 즉 미래 현금흐름을 담보로 조달하는 금융 기법으로, 담보 부동산이 아닌 사업 자체의 현금 흐름에 주로 의존하는 대출을 의미한다. 특히 부동산 개발 사업에서 자주 활용되며, 최근 금리 인상 등으로 인해 리스크가 부각되고 있는 이 금융 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 자산유동화증권 (ABS)</li><li>② 프로젝트 파이낸싱 (PF)</li><li>③ 주택담보대출 (Mortgage Loan)</li><li>④ 기업어음 (CP)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 프로젝트 파이낸싱 (PF)</p>
+      <p><strong>해설:</strong> 프로젝트 파이낸싱은 특정 프로젝트의 사업성을 담보로 자금을 조달하는 금융 기법입니다. [오답해설] ① 자산유동화증권(ABS)은 미래 발생할 현금흐름을 기초로 증권을 발행하는 것입니다. ③ 주택담보대출은 주택을 담보로 제공하고 자금을 빌리는 개인 대출 상품입니다. ④ 기업어음(CP)은 기업이 단기 자금을 조달하기 위해 발행하는 만기 1년 이내의 단기 증권입니다.</p>
+      <p>관련 시사 뉴스: 주택공급 앞두고 한은의 금리인상…연 5% 이상 부동산PF 금리, 주택 착공...</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 금융 소비자가 대출 계약 체결 후 재산 증가, 신용 등급 또는 취업 등 신용 상태가 개선되었을 때, 금융기관에 대출 금리의 인하를 요구할 수 있는 권리를 의미한다. 뉴스에 따르면 많은 신청에도 불구하고 실제 수용률은 낮은 편인데, 이는 금융기관의 심사 기준과 관련이 있다. 이 권리는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 만기 연장 신청권</li><li>② 중도상환 수수료 면제권</li><li>③ 대환대출 신청권</li><li>④ 금리인하 요구권</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 금리인하 요구권</p>
+      <p><strong>해설:</strong> 금리인하 요구권은 차주의 신용 상태가 개선되었을 때 금융기관에 대출 금리 인하를 요청할 수 있는 권리입니다. [오답해설] ① 만기 연장 신청권은 대출 만기 시 상환 기간 연장을 요청하는 권리입니다. ② 중도상환 수수료 면제권은 약정 기간 내 대출 상환 시 발생하는 수수료의 면제를 요청하는 권리입니다. ③ 대환대출 신청권은 기존 대출을 새로운 대출로 갈아타는 것을 의미합니다.</p>
+      <p>관련 시사 뉴스: “대출금리 좀 낮춰주세요” 268만건 몰렸는데…은행이 받아준 건 19.1%</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 뉴스에 따르면 2026년 9월 이전 출생아도 혜택을 받을 수 있는 '우리아이자립펀드'에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택 구입 자금 마련을 목적으로 하며, 부모의 소득 수준에 따라 가입 자격이 결정된다.</li><li>② 만 0세부터 17세까지 자녀 명의로 가입할 수 있으며, 지원금을 직접 받아 운용한다.</li><li>③ 가입 대상 연령이 제한적이지만, 세액공제 등 세제 혜택을 통해 자산 형성을 돕는 제도이다.</li><li>④ 정부가 자녀에게 직접 지원금을 지급하고, 해당 펀드는 자산 형성 지원 목적을 가진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 가입 대상 연령이 제한적이지만, 세액공제 등 세제 혜택을 통해 자산 형성을 돕는 제도이다.</p>
+      <p><strong>해설:</strong> '우리아이자립펀드'는 자녀의 자산 형성을 돕기 위해 세액공제 등의 세제 혜택을 제공하는 제도입니다. [오답해설] ① 우리아이자립펀드는 주택 구입 자금 마련이 주 목적이 아닙니다. ② 이 펀드는 정부가 직접 지원금을 지급하는 형태가 아니며, 세제 혜택을 통해 자산 형성을 돕습니다. ④ 우리아이자립펀드는 정부가 직접 지원금을 지급하는 형태가 아니라 세제 혜택을 통해 자산 형성을 유도합니다.</p>
+      <p>관련 시사 뉴스: 우리아이자립펀드에 稅혜택 준다 ··· 2026년 9월 이전 출생아도 혜택</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. '용돈 좀 번다고 국민연금 깎나'라는 뉴스 제목처럼 논란이 있는 국민연금 감액제도와 관련된 내용으로 가장 거리가 먼 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 일정 소득 이상의 근로소득이 발생할 경우 연금 수령액이 감액될 수 있다.</li><li>② 국민연금의 재정 건전성 확보를 위한 중요한 장치로 기능한다.</li><li>③ 연금 수급자의 은퇴 후 경제 활동 참여를 장려하기 위한 제도이다.</li><li>④ 감액된 연금액은 소득 활동 중단 시 다시 정상 지급된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 연금 수급자의 은퇴 후 경제 활동 참여를 장려하기 위한 제도이다.</p>
+      <p><strong>해설:</strong> 국민연금 감액제도는 일정 소득 이상의 소득이 발생할 경우 연금액을 감액하여 연금 재정의 지속가능성을 확보하려는 목적이 있으며, 은퇴 후 경제활동을 장려하기 위한 제도는 아닙니다. [오답해설] ① 국민연금 감액제도는 일정 소득 기준을 초과하는 근로소득 발생 시 연금액을 감액합니다. ② 이 제도는 국민연금 재정의 지속가능성과 형평성을 위해 도입되었습니다. ④ 감액된 연금은 소득 활동을 중단하거나 기준 소득 이하로 내려갈 경우 다시 정상적으로 지급됩니다.</p>
+      <p>관련 시사 뉴스: “용돈 좀 번다고 국민연금 깎나”…감액제도 없애면 큰일난다는데</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 뉴스에서 '은행도 '외국인 상품' 쏟아내…대출문턱 낮추고, 전용창구 확 늘려'라고 언급된 것처럼, 국내 은행들이 외국인 고객 대상 금융 서비스를 확대하는 주된 배경은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 인구 감소로 인한 새로운 고객층 확보 필요성 증대</li><li>② 정부의 이민 정책 변화에 따른 외국인 우대 조치 의무화</li><li>③ 외국인 투자 유치를 위한 금융당국의 강력한 지시</li><li>④ 저렴한 인건비로 외국인 인력 고용을 통한 비용 절감</li>
+      </ul>
+      <p><strong>정답:</strong> ① 국내 인구 감소로 인한 새로운 고객층 확보 필요성 증대</p>
+      <p><strong>해설:</strong> 국내 인구 감소와 고령화로 인해 은행들은 새로운 성장 동력을 찾고자 외국인 고객층을 적극적으로 유치하고 있습니다. [오답해설] ② 정부의 외국인 우대 조치 의무화보다는 시장 경쟁과 은행의 전략적 판단에 가깝습니다. ③ 외국인 투자 유치는 중요하지만, 은행의 직접적인 대출 및 창구 확대의 주된 지시 요인은 아닙니다. ④ 외국인 고객을 늘리는 것이 은행의 인건비 절감과는 직접적인 관련이 없습니다.</p>
+      <p>관련 시사 뉴스: 은행도 '외국인 상품' 쏟아내…대출문턱 낮추고, 전용창구 확 늘려</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 뉴스에서 '국제유가 상승에 인플레 부각…美 주식·채권 동반 하락'으로 언급된 것처럼, 국제유가 상승으로 인한 인플레이션 압박이 금융 시장에 미칠 수 있는 영향은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 소비 심리 개선에 따른 내수 활성화 기대</li><li>② 기업들의 생산 비용 절감 및 수익성 개선</li><li>③ 중앙은행의 긴축적 통화 정책 기조 강화 가능성</li><li>④ 안전 자산 선호 심리 약화 및 위험 자산 투자 증가</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 중앙은행의 긴축적 통화 정책 기조 강화 가능성</p>
+      <p><strong>해설:</strong> 국제유가 상승은 생산 비용 증가와 소비 물가 상승으로 이어져 인플레이션 압력을 높이며, 이는 중앙은행이 물가 안정을 위해 금리 인상 등 긴축 정책을 강화할 가능성을 높입니다. [오답해설] ① 유가 상승으로 인한 인플레이션은 가계 구매력을 저해하여 소비 심리를 위축시킬 수 있습니다. ② 유가 상승은 기업의 생산 비용을 증가시켜 수익성을 악화시키는 요인으로 작용합니다. ④ 인플레이션 압박과 중앙은행의 긴축 우려는 일반적으로 위험 자산에 대한 투자 심리를 위축시키고 안전 자산 선호를 강화하는 경향이 있습니다.</p>
+      <p>관련 시사 뉴스: 국제유가 상승에 인플레 부각…美 주식·채권 동반 하락</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 뉴스에서 '美재무 "日, 엔화 강세위한 조치할 것" … 9월 BOJ 금리인상에 무게'라고 언급된 것처럼, 일본은행(BOJ)의 엔화 강세 유도 정책이 예상될 때, 국내 금융 시장에 미칠 수 있는 영향은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 일본 기업들의 수출 경쟁력 약화 및 국내 기업의 상대적 반사이익 기대</li><li>② 일본으로의 해외 직접 투자 증가로 인한 자본 유출 가속화</li><li>③ 엔화 강세로 인한 국내 여행객의 일본 여행 비용 감소</li><li>④ 국내 통화 가치 하락 압력 증가 및 원/엔 환율 상승</li>
+      </ul>
+      <p><strong>정답:</strong> ① 일본 기업들의 수출 경쟁력 약화 및 국내 기업의 상대적 반사이익 기대</p>
+      <p><strong>해설:</strong> 엔화 강세는 일본 수출 기업들의 가격 경쟁력을 약화시켜 국내 경쟁 기업들이 상대적으로 반사이익을 얻을 수 있는 요인이 됩니다. [오답해설] ② 엔화 강세는 일본으로의 투자를 매력적이지 않게 만들어 해외 직접 투자를 감소시킬 수 있습니다. ③ 엔화 강세는 국내 원화 대비 엔화 가치가 오르는 것이므로, 일본 여행 비용이 증가하게 됩니다. ④ 엔화 강세는 국내 통화 가치 하락 압력을 완화하고 원/엔 환율은 하락할 가능성이 있습니다.</p>
+      <p>관련 시사 뉴스: 美재무 "日, 엔화 강세위한 조치할 것" … 9월 BOJ 금리인상에 무게</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 뉴스에서 '한일전 2배 점수차로 졌다…금융사 주가 저평가 이유 살펴보니'로 언급된 국내 금융사 주가의 낮은 PBR(주가순자산비율) 현상을 개선하기 위한 방안으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 주주환원 정책 강화 (배당 확대, 자사주 매입 소각 등)</li><li>② 과도한 부동산 프로젝트 파이낸싱(PF) 대출 확대</li><li>③ 새로운 금융 상품 출시 없이 기존 사업 모델 유지</li><li>④ 고위험 자산 투자 비중을 늘려 단기 수익 극대화</li>
+      </ul>
+      <p><strong>정답:</strong> ① 주주환원 정책 강화 (배당 확대, 자사주 매입 소각 등)</p>
+      <p><strong>해설:</strong> 낮은 PBR은 주주가치 저평가로 인식되므로, 배당 확대나 자사주 매입 소각과 같은 주주환원 정책을 강화하는 것이 PBR 개선에 긍정적인 영향을 미칠 수 있습니다. [오답해설] ② 과도한 부동산 PF 대출 확대는 자산 건전성 악화 위험을 높여 PBR에 부정적인 영향을 줄 수 있습니다. ③ 새로운 금융 상품 출시나 사업 모델 혁신 없이는 기업 가치 성장 동력을 확보하기 어렵습니다. ④ 고위험 자산 투자 비중 증가는 단기 수익을 추구할 수 있으나, 리스크를 높여 장기적인 기업 가치와 PBR 개선에 도움이 되지 않을 수 있습니다.</p>
+      <p>관련 시사 뉴스: 한·일 1등 금융사, PBR 2배 격차 왜?</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-01</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2143,"category":"시사금융용어","question":"회사가 배당금을 지급하기 위해 외부로부터 자금을 차입하는 금융 기법으로, 충분한 내부 현금 흐름 없이 부채를 통해 주주 환원을 하는 것을 의미한다. 이는 지속 가능성이 낮거나 위험한 재무 활동으로 간주되기도 하는데, 다음 중 이러한 현상을 지칭하는 용어는?","answer":"③ 우로보로스 파이낸싱","explanation":"정답은 우로보로스 파이낸싱으로, 기업이 배당금을 지급하기 위해 외부에서 자금을 차입하는 것을 의미합니다. [오답해설] ① 부채 상환 자금 조달은 기존 부채를 갚기 위해 새로운 부채를 발행하는 것입니다. ② 자기자본 조달은 주식 발행 등을 통해 자본을 조달하는 것을 말합니다. ④ 배당금 재투자는 주주가 받은 배당금을 다시 해당 기업의 주식을 매입하는 데 사용하는 것입니다.","news_context":"기업이 배당금을 지급하기 위해 부채를 빌리는 것을 의미하며, 내부 현금흐름이 부족한 상황에서 이루어질 때 재무 건전성 악화 우려가 있습니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429662","options":["① 부채 상환 자금 조달","② 자기자본 조달","③ 우로보로스 파이낸싱","④ 배당금 재투자"]},{"id":2144,"category":"시사금융용어","question":"중앙은행이나 금융기관이 시장 참여자들의 향후 금리 변동에 대한 기대를 확인하는 과정을 의미한다. 이는 시장의 심리를 파악하고 잠재적인 금리 변화가 시장에 어떻게 반영되고 있는지 평가하는 데 사용된다.","answer":"④ 레이트 체크","explanation":"정답은 레이트 체크로, 시장 참여자들의 미래 금리 변동에 대한 기대를 확인하는 과정을 말합니다. [오답해설] ① 금리 민감도 분석은 금리 변화가 특정 자산이나 부채의 가치에 미치는 영향을 평가하는 것입니다. ② 시장금리 동향은 현재 시장에서 형성되는 금리의 전반적인 흐름을 의미합니다. ③ 기준금리 인상은 중앙은행이 정책금리를 실제로 올리는 행위입니다.","news_context":"중앙은행이나 금융기관이 시장 참여자들의 향후 금리 변동에 대한 기대를 확인하는 과정으로, 시장 심리 파악에 중요한 지표가 됩니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4428630","options":["① 금리 민감도 분석","② 시장금리 동향","③ 기준금리 인상","④ 레이트 체크"]},{"id":2145,"category":"금융용어","question":"프로젝트 수행을 위해 필요한 자금을 프로젝트 자체의 사업성, 즉 미래 현금흐름을 담보로 조달하는 금융 기법으로, 담보 부동산이 아닌 사업 자체의 현금 흐름에 주로 의존하는 대출을 의미한다. 특히 부동산 개발 사업에서 자주 활용되며, 최근 금리 인상 등으로 인해 리스크가 부각되고 있는 이 금융 용어는 무엇인가?","answer":"② 프로젝트 파이낸싱 (PF)","explanation":"프로젝트 파이낸싱은 특정 프로젝트의 사업성을 담보로 자금을 조달하는 금융 기법입니다. [오답해설] ① 자산유동화증권(ABS)은 미래 발생할 현금흐름을 기초로 증권을 발행하는 것입니다. ③ 주택담보대출은 주택을 담보로 제공하고 자금을 빌리는 개인 대출 상품입니다. ④ 기업어음(CP)은 기업이 단기 자금을 조달하기 위해 발행하는 만기 1년 이내의 단기 증권입니다.","news_context":"주택공급 앞두고 한은의 금리인상…연 5% 이상 부동산PF 금리, 주택 착공...","news_url":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608311421284070989","options":["① 자산유동화증권 (ABS)","② 프로젝트 파이낸싱 (PF)","③ 주택담보대출 (Mortgage Loan)","④ 기업어음 (CP)"]},{"id":2146,"category":"금융용어","question":"금융 소비자가 대출 계약 체결 후 재산 증가, 신용 등급 또는 취업 등 신용 상태가 개선되었을 때, 금융기관에 대출 금리의 인하를 요구할 수 있는 권리를 의미한다. 뉴스에 따르면 많은 신청에도 불구하고 실제 수용률은 낮은 편인데, 이는 금융기관의 심사 기준과 관련이 있다. 이 권리는 무엇인가?","answer":"④ 금리인하 요구권","explanation":"금리인하 요구권은 차주의 신용 상태가 개선되었을 때 금융기관에 대출 금리 인하를 요청할 수 있는 권리입니다. [오답해설] ① 만기 연장 신청권은 대출 만기 시 상환 기간 연장을 요청하는 권리입니다. ② 중도상환 수수료 면제권은 약정 기간 내 대출 상환 시 발생하는 수수료의 면제를 요청하는 권리입니다. ③ 대환대출 신청권은 기존 대출을 새로운 대출로 갈아타는 것을 의미합니다.","news_context":"“대출금리 좀 낮춰주세요” 268만건 몰렸는데…은행이 받아준 건 19.1%","news_url":"https://www.mk.co.kr/news/economy/12140467","options":["① 만기 연장 신청권","② 중도상환 수수료 면제권","③ 대환대출 신청권","④ 금리인하 요구권"]},{"id":2147,"category":"세부지식","question":"뉴스에 따르면 2026년 9월 이전 출생아도 혜택을 받을 수 있는 '우리아이자립펀드'에 대한 설명으로 가장 적절한 것은?","answer":"③ 가입 대상 연령이 제한적이지만, 세액공제 등 세제 혜택을 통해 자산 형성을 돕는 제도이다.","explanation":"'우리아이자립펀드'는 자녀의 자산 형성을 돕기 위해 세액공제 등의 세제 혜택을 제공하는 제도입니다. [오답해설] ① 우리아이자립펀드는 주택 구입 자금 마련이 주 목적이 아닙니다. ② 이 펀드는 정부가 직접 지원금을 지급하는 형태가 아니며, 세제 혜택을 통해 자산 형성을 돕습니다. ④ 우리아이자립펀드는 정부가 직접 지원금을 지급하는 형태가 아니라 세제 혜택을 통해 자산 형성을 유도합니다.","news_context":"우리아이자립펀드에 稅혜택 준다 ··· 2026년 9월 이전 출생아도 혜택","news_url":"https://www.mk.co.kr/news/economy/12140678","options":["① 주택 구입 자금 마련을 목적으로 하며, 부모의 소득 수준에 따라 가입 자격이 결정된다.","② 만 0세부터 17세까지 자녀 명의로 가입할 수 있으며, 지원금을 직접 받아 운용한다.","③ 가입 대상 연령이 제한적이지만, 세액공제 등 세제 혜택을 통해 자산 형성을 돕는 제도이다.","④ 정부가 자녀에게 직접 지원금을 지급하고, 해당 펀드는 자산 형성 지원 목적을 가진다."]},{"id":2148,"category":"세부지식","question":"'용돈 좀 번다고 국민연금 깎나'라는 뉴스 제목처럼 논란이 있는 국민연금 감액제도와 관련된 내용으로 가장 거리가 먼 것은?","answer":"③ 연금 수급자의 은퇴 후 경제 활동 참여를 장려하기 위한 제도이다.","explanation":"국민연금 감액제도는 일정 소득 이상의 소득이 발생할 경우 연금액을 감액하여 연금 재정의 지속가능성을 확보하려는 목적이 있으며, 은퇴 후 경제활동을 장려하기 위한 제도는 아닙니다. [오답해설] ① 국민연금 감액제도는 일정 소득 기준을 초과하는 근로소득 발생 시 연금액을 감액합니다. ② 이 제도는 국민연금 재정의 지속가능성과 형평성을 위해 도입되었습니다. ④ 감액된 연금은 소득 활동을 중단하거나 기준 소득 이하로 내려갈 경우 다시 정상적으로 지급됩니다.","news_context":"“용돈 좀 번다고 국민연금 깎나”…감액제도 없애면 큰일난다는데","news_url":"https://www.mk.co.kr/news/economy/12140419","options":["① 일정 소득 이상의 근로소득이 발생할 경우 연금 수령액이 감액될 수 있다.","② 국민연금의 재정 건전성 확보를 위한 중요한 장치로 기능한다.","③ 연금 수급자의 은퇴 후 경제 활동 참여를 장려하기 위한 제도이다.","④ 감액된 연금액은 소득 활동 중단 시 다시 정상 지급된다."]},{"id":2149,"category":"시사","question":"뉴스에서 '은행도 '외국인 상품' 쏟아내…대출문턱 낮추고, 전용창구 확 늘려'라고 언급된 것처럼, 국내 은행들이 외국인 고객 대상 금융 서비스를 확대하는 주된 배경은 무엇인가?","answer":"① 국내 인구 감소로 인한 새로운 고객층 확보 필요성 증대","explanation":"국내 인구 감소와 고령화로 인해 은행들은 새로운 성장 동력을 찾고자 외국인 고객층을 적극적으로 유치하고 있습니다. [오답해설] ② 정부의 외국인 우대 조치 의무화보다는 시장 경쟁과 은행의 전략적 판단에 가깝습니다. ③ 외국인 투자 유치는 중요하지만, 은행의 직접적인 대출 및 창구 확대의 주된 지시 요인은 아닙니다. ④ 외국인 고객을 늘리는 것이 은행의 인건비 절감과는 직접적인 관련이 없습니다.","news_context":"은행도 '외국인 상품' 쏟아내…대출문턱 낮추고, 전용창구 확 늘려","news_url":"https://www.mk.co.kr/news/economy/12140643","options":["① 국내 인구 감소로 인한 새로운 고객층 확보 필요성 증대","② 정부의 이민 정책 변화에 따른 외국인 우대 조치 의무화","③ 외국인 투자 유치를 위한 금융당국의 강력한 지시","④ 저렴한 인건비로 외국인 인력 고용을 통한 비용 절감"]},{"id":2150,"category":"시사","question":"뉴스에서 '국제유가 상승에 인플레 부각…美 주식·채권 동반 하락'으로 언급된 것처럼, 국제유가 상승으로 인한 인플레이션 압박이 금융 시장에 미칠 수 있는 영향은 무엇인가?","answer":"③ 중앙은행의 긴축적 통화 정책 기조 강화 가능성","explanation":"국제유가 상승은 생산 비용 증가와 소비 물가 상승으로 이어져 인플레이션 압력을 높이며, 이는 중앙은행이 물가 안정을 위해 금리 인상 등 긴축 정책을 강화할 가능성을 높입니다. [오답해설] ① 유가 상승으로 인한 인플레이션은 가계 구매력을 저해하여 소비 심리를 위축시킬 수 있습니다. ② 유가 상승은 기업의 생산 비용을 증가시켜 수익성을 악화시키는 요인으로 작용합니다. ④ 인플레이션 압박과 중앙은행의 긴축 우려는 일반적으로 위험 자산에 대한 투자 심리를 위축시키고 안전 자산 선호를 강화하는 경향이 있습니다.","news_context":"국제유가 상승에 인플레 부각…美 주식·채권 동반 하락","news_url":"","options":["① 소비 심리 개선에 따른 내수 활성화 기대","② 기업들의 생산 비용 절감 및 수익성 개선","③ 중앙은행의 긴축적 통화 정책 기조 강화 가능성","④ 안전 자산 선호 심리 약화 및 위험 자산 투자 증가"]},{"id":2151,"category":"시사","question":"뉴스에서 '美재무 \"日, 엔화 강세위한 조치할 것\" … 9월 BOJ 금리인상에 무게'라고 언급된 것처럼, 일본은행(BOJ)의 엔화 강세 유도 정책이 예상될 때, 국내 금융 시장에 미칠 수 있는 영향은 무엇인가?","answer":"① 일본 기업들의 수출 경쟁력 약화 및 국내 기업의 상대적 반사이익 기대","explanation":"엔화 강세는 일본 수출 기업들의 가격 경쟁력을 약화시켜 국내 경쟁 기업들이 상대적으로 반사이익을 얻을 수 있는 요인이 됩니다. [오답해설] ② 엔화 강세는 일본으로의 투자를 매력적이지 않게 만들어 해외 직접 투자를 감소시킬 수 있습니다. ③ 엔화 강세는 국내 원화 대비 엔화 가치가 오르는 것이므로, 일본 여행 비용이 증가하게 됩니다. ④ 엔화 강세는 국내 통화 가치 하락 압력을 완화하고 원/엔 환율은 하락할 가능성이 있습니다.","news_context":"美재무 \"日, 엔화 강세위한 조치할 것\" … 9월 BOJ 금리인상에 무게","news_url":"https://www.newdaily.co.kr/site/data/html/2026/09/01/2026090100010.html","options":["① 일본 기업들의 수출 경쟁력 약화 및 국내 기업의 상대적 반사이익 기대","② 일본으로의 해외 직접 투자 증가로 인한 자본 유출 가속화","③ 엔화 강세로 인한 국내 여행객의 일본 여행 비용 감소","④ 국내 통화 가치 하락 압력 증가 및 원/엔 환율 상승"]},{"id":2152,"category":"시사","question":"뉴스에서 '한일전 2배 점수차로 졌다…금융사 주가 저평가 이유 살펴보니'로 언급된 국내 금융사 주가의 낮은 PBR(주가순자산비율) 현상을 개선하기 위한 방안으로 가장 적절한 것은?","answer":"① 주주환원 정책 강화 (배당 확대, 자사주 매입 소각 등)","explanation":"낮은 PBR은 주주가치 저평가로 인식되므로, 배당 확대나 자사주 매입 소각과 같은 주주환원 정책을 강화하는 것이 PBR 개선에 긍정적인 영향을 미칠 수 있습니다. [오답해설] ② 과도한 부동산 PF 대출 확대는 자산 건전성 악화 위험을 높여 PBR에 부정적인 영향을 줄 수 있습니다. ③ 새로운 금융 상품 출시나 사업 모델 혁신 없이는 기업 가치 성장 동력을 확보하기 어렵습니다. ④ 고위험 자산 투자 비중 증가는 단기 수익을 추구할 수 있으나, 리스크를 높여 장기적인 기업 가치와 PBR 개선에 도움이 되지 않을 수 있습니다.","news_context":"한·일 1등 금융사, PBR 2배 격차 왜?","news_url":"https://www.mk.co.kr/news/economy/12140570","options":["① 주주환원 정책 강화 (배당 확대, 자사주 매입 소각 등)","② 과도한 부동산 프로젝트 파이낸싱(PF) 대출 확대","③ 새로운 금융 상품 출시 없이 기존 사업 모델 유지","④ 고위험 자산 투자 비중을 늘려 단기 수익 극대화"]},{"id":78,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
