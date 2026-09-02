@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-03 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-03 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-03 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 일본 정부가 매년 발표하는 경제 및 재정 운영과 구조 개혁의 기본 방침을 의미하며, 중장기적 관점에서 재정 건전성 확보 및 경제 성장을 목표로 하는 정책의 큰 틀을 제시하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 아베노믹스</li><li>② 골태방침</li><li>③ 양적완화</li><li>④ 재정준칙</li>
+      </ul>
+      <p><strong>정답:</strong> ② 골태방침</p>
+      <p><strong>해설:</strong> 골태방침은 일본 정부가 매년 발표하는 경제 및 재정 운영, 구조 개혁의 기본 방침을 담은 연례 계획입니다. [오답해설] ① 아베노믹스는 일본의 특정 경제 정책 패키지를 지칭하는 반면, 골태방침은 그 안에서 매년 발표될 수 있는 더 일반적인 연간 계획입니다. ③ 양적완화는 중앙은행의 통화 정책 수단이며, ④ 재정준칙은 국가 재정 건전성 유지를 위한 규범입니다.</p>
+      <p>관련 시사 뉴스: 일본 정부가 매년 여름 발표하는 중장기 경제 재정 운영 및 구조 개혁의 기본 방침을 의미하며, 일본어로 '뼈대 있는 방침'이라는 뜻이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 일정 수준 이상의 고소득을 받거나 관리, 감독, 전문적인 직무를 수행하는 근로자에 대해 근로기준법상 근로시간, 연장근로수당, 휴일근로수당 등의 규정 적용을 제외하는 제도를 의미하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 포괄임금제</li><li>② 유연근무제</li><li>③ 책임근로시간제</li><li>④ 화이트칼라 이그젬션</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 화이트칼라 이그젬션</p>
+      <p><strong>해설:</strong> 화이트칼라 이그젬션은 고소득 또는 특정 직무의 근로자에 대해 근로기준법상 근로시간 및 수당 규정 적용을 제외하는 제도입니다. [오답해설] ① 포괄임금제는 연장근로수당 등을 미리 월급에 포함하여 지급하는 방식이며, ② 유연근무제는 근로시간을 유연하게 조절하는 제도입니다. ③ 책임근로시간제는 업무 성격상 근로시간 측정이 어려운 직종에 대해 노사 합의로 일정 시간을 근로한 것으로 간주하는 제도이나, 화이트칼라 이그젬션은 고소득/특정 직무에 대한 근로기준법 적용 제외라는 점에서 차이가 있습니다.</p>
+      <p>관련 시사 뉴스: 고소득을 받는 사무직 근로자 등 일정 요건을 충족하는 근로자들에게 연장·야간·휴일근로수당 지급 의무를 면제하는 제도를 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. AI(인공지능) 기술을 활용하여 기업의 전반적인 업무 프로세스와 비즈니스 모델을 혁신하는 것을 의미하는 용어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① DX</li><li>② AX</li><li>③ UX</li><li>④ CX</li>
+      </ul>
+      <p><strong>정답:</strong> ② AX</p>
+      <p><strong>해설:</strong> AX는 AI Transformation의 줄임말로, 인공지능 기술을 활용해 기업의 전반적인 혁신을 이루는 것을 의미합니다. [오답해설] ① DX(Digital Transformation)는 디지털 기술을 활용한 전반적인 변화를 의미하지만, AI에 특화된 것은 아닙니다. ③ UX(User Experience)는 사용자 경험을, ④ CX(Customer Experience)는 고객 경험을 의미합니다.</p>
+      <p>관련 시사 뉴스: AX는 AI Transformation의 약자로, 인공지능 기반의 전환을 의미하며, 관련 기업들이 이 변화를 가속화하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 뉴스에서 '달러코인'으로 언급된, 미국 달러화와 같은 특정 법정화폐에 가치가 고정되어 가격 변동성을 최소화하도록 설계된 암호화폐를 무엇이라고 하는가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① CBDC</li><li>② 스테이블코인</li><li>③ 알트코인</li><li>④ 밈코인</li>
+      </ul>
+      <p><strong>정답:</strong> ② 스테이블코인</p>
+      <p><strong>해설:</strong> 스테이블코인은 달러 등 법정화폐에 가치를 연동하여 가격 변동성을 최소화한 암호화폐입니다. [오답해설] ① CBDC(중앙은행 디지털 화폐)는 중앙은행이 발행하는 디지털 화폐로, 민간에서 발행하는 스테이블코인과 다릅니다. ③ 알트코인은 비트코인을 제외한 모든 암호화폐를 총칭하며, ④ 밈코인은 온라인 밈에서 영감을 받아 발행된 암호화폐로 주로 유머와 커뮤니티 성격이 강합니다.</p>
+      <p>관련 시사 뉴스: 글로벌 은행들이 달러코인 연합에 참여하는 가운데 한국은 아직 빈자리라는 지적이 나오고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 하나은행의 CEO 맞춤 퇴직연금 컨설팅 서비스와 관련하여, 확정급여형 퇴직연금(DB)의 주요 특징으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 퇴직급여 수준이 가입자의 운용 성과에 따라 달라진다.</li><li>② 적립금 운용에 대한 책임이 전적으로 근로자에게 있다.</li><li>③ 퇴직 시 받을 급여가 사전에 확정되어 있어 예측 가능하다.</li><li>④ 근로자가 자유롭게 중간 정산 또는 중도 인출할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 퇴직 시 받을 급여가 사전에 확정되어 있어 예측 가능하다.</p>
+      <p><strong>해설:</strong> 확정급여형 퇴직연금(DB)은 근로자가 퇴직 시 받을 급여가 사전에 확정되어 있고, 운용 책임은 사용자에게 있습니다. [오답해설] ①, ②는 확정기여형 퇴직연금(DC)의 특징입니다. ④ 퇴직연금은 원칙적으로 중도 인출이 제한적이며, 특정 사유가 있어야 가능합니다.</p>
+      <p>관련 시사 뉴스: 하나은행은 CEO를 위한 맞춤 퇴직연금 컨설팅 서비스를 출시하여 기업의 퇴직연금 관리를 돕고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 뉴스의 '장병들 원금 100% 얹어줘도 적금 대신 주식?'이라는 제목과 관련하여, 장병내일준비적금에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 병역의무이행 기간 동안 가입 가능한 목돈 마련 지원 상품이다.</li><li>② 은행이 운영하고 정부가 매칭지원금과 이자 지원을 제공한다.</li><li>③ 전역 시 원금에 해당하는 금액의 33%를 정부가 추가로 지원한다.</li><li>④ 이자소득에 대해 비과세 혜택이 적용되어 절세 효과를 누릴 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 전역 시 원금에 해당하는 금액의 33%를 정부가 추가로 지원한다.</p>
+      <p><strong>해설:</strong> 장병내일준비적금은 전역 시 원금의 33%를 정부가 추가 지원하며, 100% 추가 지원은 아닙니다. [오답해설] ①, ②, ④는 장병내일준비적금에 대한 올바른 설명입니다.</p>
+      <p>관련 시사 뉴스: 장병내일준비적금의 높은 혜택에도 불구하고 일부 장병들은 주식 투자에 관심을 보인다는 기사입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 은행의 부실채권이 19조원에 육박하고 지방은행의 충당금 부족 우려가 제기되는 상황에서, 은행의 건전성 지표인 BIS 자기자본비율에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 부실채권 증가는 BIS 자기자본비율을 상승시켜 건전성을 개선한다.</li><li>② 부실채권 증가는 BIS 자기자본비율을 하락시켜 건전성을 악화시킨다.</li><li>③ 부실채권 증가는 BIS 자기자본비율에 직접적인 영향을 주지 않는다.</li><li>④ 부실채권 증가는 충당금 적립을 통해 자기자본 감소를 상쇄한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 부실채권 증가는 BIS 자기자본비율을 하락시켜 건전성을 악화시킨다.</p>
+      <p><strong>해설:</strong> 부실채권 증가는 은행의 자산 건전성을 악화시키고, 손실 흡수 능력 저하로 이어져 BIS 자기자본비율을 하락시킵니다. [오답해설] ① 부실채권 증가는 자기자본비율을 하락시키며 건전성을 악화시킵니다. ③ 부실채권 증가는 자기자본비율에 중요한 영향을 미칩니다. ④ 충당금은 손실에 대비한 것이지만, 과도한 부실채권은 충당금만으로는 감당하기 어려워 자기자본에 부담을 줍니다.</p>
+      <p>관련 시사 뉴스: 은행권 기업 부실채권이 19조원에 육박하며 건전성에 빨간불이 켜졌고, 특히 지방은행의 충당금 부족 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 글로벌 국채금리 급등 현상이 국내 금융 시장 및 은행 경영에 미칠 수 있는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 주택담보대출 등 시장 금리 상승으로 가계의 이자 부담이 가중될 수 있다.</li><li>② 은행의 대출 금리 인상 압력이 커져 대출 수익성이 개선될 수 있다.</li><li>③ 기업의 자금 조달 비용이 증가하여 투자 심리가 위축될 수 있다.</li><li>④ 채권 가격 하락으로 은행이 보유한 채권의 평가 손실이 발생할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 은행의 대출 금리 인상 압력이 커져 대출 수익성이 개선될 수 있다.</p>
+      <p><strong>해설:</strong> 국채금리 급등은 은행의 조달 비용 증가로 이어져 대출 금리 인상 압력으로 작용할 수 있으나, 동시에 기업 및 가계의 대출 수요 감소와 부실 위험 증가로 인해 반드시 수익성 개선으로 이어지지는 않습니다. [오답해설] ① 국채금리 상승은 시중 금리 전반의 상승을 유발하여 가계 대출 이자 부담을 늘립니다. ③ 기업의 자금 조달 비용 상승은 투자 심리를 위축시킬 수 있습니다. ④ 금리 상승은 채권 가격 하락을 의미하므로, 은행 보유 채권의 평가 손실로 이어질 수 있습니다.</p>
+      <p>관련 시사 뉴스: 글로벌 국채금리 '연쇄 쇼크'가 발생하며 시장에 불안감이 커지고, 뉴욕 연은 총재는 국채금리 급등을 강한 경제의 결과로 보았습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 한국은행이 '주요국 외환보유액 순위' 공개를 25년 만에 없앤 것과 관련하여, 외환보유액이 국가 경제에 갖는 의미로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 통화량 조절에만 전적으로 사용되는 자산이다.</li><li>② 국가의 외채 상환 능력과 대외 신인도를 나타내는 중요한 지표이다.</li><li>③ 무역수지 적자를 확대하는 주요 요인으로 작용한다.</li><li>④ 국제 투자 자금을 유치하기 위한 유일한 기준이 된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 국가의 외채 상환 능력과 대외 신인도를 나타내는 중요한 지표이다.</p>
+      <p><strong>해설:</strong> 외환보유액은 유사시 외국에 갚아야 할 돈을 지불할 능력을 보여주며, 국가의 대외 신인도 및 비상 상황 시 환율 안정화 수단으로 활용됩니다. [오답해설] ① 외환보유액은 대외 지급능력 확보가 주된 목적이며, 통화량 조절은 다른 수단을 통해 이루어집니다. ③ 외환보유액은 무역수지 적자를 확대하는 요인이 아니라, 적자 발생 시 시장 안정화에 기여할 수 있습니다. ④ 외환보유액은 국제 투자 자금 유치에 영향을 주지만 유일한 기준은 아닙니다.</p>
+      <p>관련 시사 뉴스: 한국은행이 주요국 외환보유액 순위 공개를 25년 만에 중단하여 그 배경에 관심이 쏠리고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 휘발유·휴대폰 요금 등 물가 상승률이 다시 3%대에 진입한 상황에서, 중앙은행이 물가 안정을 위해 취할 수 있는 일반적인 통화정책 방향은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기준금리 인하를 통한 유동성 공급 확대</li><li>② 국채 매입을 통한 시중 통화량 증가</li><li>③ 기준금리 인상을 통한 시중 통화량 축소</li><li>④ 양적완화를 통한 시장 금리 인하 유도</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 기준금리 인상을 통한 시중 통화량 축소</p>
+      <p><strong>해설:</strong> 물가 상승 시 중앙은행은 기준금리 인상을 통해 시중 유동성을 흡수하고 소비와 투자를 둔화시켜 물가 안정을 도모합니다. [오답해설] ①, ②, ④는 모두 시중에 유동성을 공급하여 통화량을 증가시키고 물가 상승 압력을 높일 수 있는 정책 방향입니다.</p>
+      <p>관련 시사 뉴스: 휘발유, 휴대폰 요금 등 생활 물가가 다시 3%대 상승률을 기록하여 국민 장바구니 물가 부담이 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-03</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2163,"category":"시사금융용어","question":"일본 정부가 매년 발표하는 경제 및 재정 운영과 구조 개혁의 기본 방침을 의미하며, 중장기적 관점에서 재정 건전성 확보 및 경제 성장을 목표로 하는 정책의 큰 틀을 제시하는 용어는?","answer":"② 골태방침","explanation":"골태방침은 일본 정부가 매년 발표하는 경제 및 재정 운영, 구조 개혁의 기본 방침을 담은 연례 계획입니다. [오답해설] ① 아베노믹스는 일본의 특정 경제 정책 패키지를 지칭하는 반면, 골태방침은 그 안에서 매년 발표될 수 있는 더 일반적인 연간 계획입니다. ③ 양적완화는 중앙은행의 통화 정책 수단이며, ④ 재정준칙은 국가 재정 건전성 유지를 위한 규범입니다.","news_context":"일본 정부가 매년 여름 발표하는 중장기 경제 재정 운영 및 구조 개혁의 기본 방침을 의미하며, 일본어로 '뼈대 있는 방침'이라는 뜻이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431377","options":["① 아베노믹스","② 골태방침","③ 양적완화","④ 재정준칙"]},{"id":2164,"category":"시사금융용어","question":"일정 수준 이상의 고소득을 받거나 관리, 감독, 전문적인 직무를 수행하는 근로자에 대해 근로기준법상 근로시간, 연장근로수당, 휴일근로수당 등의 규정 적용을 제외하는 제도를 의미하는 용어는?","answer":"④ 화이트칼라 이그젬션","explanation":"화이트칼라 이그젬션은 고소득 또는 특정 직무의 근로자에 대해 근로기준법상 근로시간 및 수당 규정 적용을 제외하는 제도입니다. [오답해설] ① 포괄임금제는 연장근로수당 등을 미리 월급에 포함하여 지급하는 방식이며, ② 유연근무제는 근로시간을 유연하게 조절하는 제도입니다. ③ 책임근로시간제는 업무 성격상 근로시간 측정이 어려운 직종에 대해 노사 합의로 일정 시간을 근로한 것으로 간주하는 제도이나, 화이트칼라 이그젬션은 고소득/특정 직무에 대한 근로기준법 적용 제외라는 점에서 차이가 있습니다.","news_context":"고소득을 받는 사무직 근로자 등 일정 요건을 충족하는 근로자들에게 연장·야간·휴일근로수당 지급 의무를 면제하는 제도를 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429877","options":["① 포괄임금제","② 유연근무제","③ 책임근로시간제","④ 화이트칼라 이그젬션"]},{"id":2165,"category":"금융용어","question":"AI(인공지능) 기술을 활용하여 기업의 전반적인 업무 프로세스와 비즈니스 모델을 혁신하는 것을 의미하는 용어는 무엇인가요?","answer":"② AX","explanation":"AX는 AI Transformation의 줄임말로, 인공지능 기술을 활용해 기업의 전반적인 혁신을 이루는 것을 의미합니다. [오답해설] ① DX(Digital Transformation)는 디지털 기술을 활용한 전반적인 변화를 의미하지만, AI에 특화된 것은 아닙니다. ③ UX(User Experience)는 사용자 경험을, ④ CX(Customer Experience)는 고객 경험을 의미합니다.","news_context":"AX는 AI Transformation의 약자로, 인공지능 기반의 전환을 의미하며, 관련 기업들이 이 변화를 가속화하고 있습니다.","news_url":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609021257410530382","options":["① DX","② AX","③ UX","④ CX"]},{"id":2166,"category":"금융용어","question":"뉴스에서 '달러코인'으로 언급된, 미국 달러화와 같은 특정 법정화폐에 가치가 고정되어 가격 변동성을 최소화하도록 설계된 암호화폐를 무엇이라고 하는가?","answer":"② 스테이블코인","explanation":"스테이블코인은 달러 등 법정화폐에 가치를 연동하여 가격 변동성을 최소화한 암호화폐입니다. [오답해설] ① CBDC(중앙은행 디지털 화폐)는 중앙은행이 발행하는 디지털 화폐로, 민간에서 발행하는 스테이블코인과 다릅니다. ③ 알트코인은 비트코인을 제외한 모든 암호화폐를 총칭하며, ④ 밈코인은 온라인 밈에서 영감을 받아 발행된 암호화폐로 주로 유머와 커뮤니티 성격이 강합니다.","news_context":"글로벌 은행들이 달러코인 연합에 참여하는 가운데 한국은 아직 빈자리라는 지적이 나오고 있습니다.","news_url":"https://www.decenter.kr/article/20086560?ref=naverdc","options":["① CBDC","② 스테이블코인","③ 알트코인","④ 밈코인"]},{"id":2167,"category":"세부지식","question":"하나은행의 CEO 맞춤 퇴직연금 컨설팅 서비스와 관련하여, 확정급여형 퇴직연금(DB)의 주요 특징으로 옳은 것은?","answer":"③ 퇴직 시 받을 급여가 사전에 확정되어 있어 예측 가능하다.","explanation":"확정급여형 퇴직연금(DB)은 근로자가 퇴직 시 받을 급여가 사전에 확정되어 있고, 운용 책임은 사용자에게 있습니다. [오답해설] ①, ②는 확정기여형 퇴직연금(DC)의 특징입니다. ④ 퇴직연금은 원칙적으로 중도 인출이 제한적이며, 특정 사유가 있어야 가능합니다.","news_context":"하나은행은 CEO를 위한 맞춤 퇴직연금 컨설팅 서비스를 출시하여 기업의 퇴직연금 관리를 돕고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12142527","options":["① 퇴직급여 수준이 가입자의 운용 성과에 따라 달라진다.","② 적립금 운용에 대한 책임이 전적으로 근로자에게 있다.","③ 퇴직 시 받을 급여가 사전에 확정되어 있어 예측 가능하다.","④ 근로자가 자유롭게 중간 정산 또는 중도 인출할 수 있다."]},{"id":2168,"category":"세부지식","question":"뉴스의 '장병들 원금 100% 얹어줘도 적금 대신 주식?'이라는 제목과 관련하여, 장병내일준비적금에 대한 설명으로 옳지 않은 것은?","answer":"③ 전역 시 원금에 해당하는 금액의 33%를 정부가 추가로 지원한다.","explanation":"장병내일준비적금은 전역 시 원금의 33%를 정부가 추가 지원하며, 100% 추가 지원은 아닙니다. [오답해설] ①, ②, ④는 장병내일준비적금에 대한 올바른 설명입니다.","news_context":"장병내일준비적금의 높은 혜택에도 불구하고 일부 장병들은 주식 투자에 관심을 보인다는 기사입니다.","news_url":"https://www.mk.co.kr/news/economy/12142468","options":["① 병역의무이행 기간 동안 가입 가능한 목돈 마련 지원 상품이다.","② 은행이 운영하고 정부가 매칭지원금과 이자 지원을 제공한다.","③ 전역 시 원금에 해당하는 금액의 33%를 정부가 추가로 지원한다.","④ 이자소득에 대해 비과세 혜택이 적용되어 절세 효과를 누릴 수 있다."]},{"id":2169,"category":"시사","question":"은행의 부실채권이 19조원에 육박하고 지방은행의 충당금 부족 우려가 제기되는 상황에서, 은행의 건전성 지표인 BIS 자기자본비율에 미치는 영향으로 가장 적절한 것은?","answer":"② 부실채권 증가는 BIS 자기자본비율을 하락시켜 건전성을 악화시킨다.","explanation":"부실채권 증가는 은행의 자산 건전성을 악화시키고, 손실 흡수 능력 저하로 이어져 BIS 자기자본비율을 하락시킵니다. [오답해설] ① 부실채권 증가는 자기자본비율을 하락시키며 건전성을 악화시킵니다. ③ 부실채권 증가는 자기자본비율에 중요한 영향을 미칩니다. ④ 충당금은 손실에 대비한 것이지만, 과도한 부실채권은 충당금만으로는 감당하기 어려워 자기자본에 부담을 줍니다.","news_context":"은행권 기업 부실채권이 19조원에 육박하며 건전성에 빨간불이 켜졌고, 특히 지방은행의 충당금 부족 우려가 커지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12142525","options":["① 부실채권 증가는 BIS 자기자본비율을 상승시켜 건전성을 개선한다.","② 부실채권 증가는 BIS 자기자본비율을 하락시켜 건전성을 악화시킨다.","③ 부실채권 증가는 BIS 자기자본비율에 직접적인 영향을 주지 않는다.","④ 부실채권 증가는 충당금 적립을 통해 자기자본 감소를 상쇄한다."]},{"id":2170,"category":"시사","question":"최근 글로벌 국채금리 급등 현상이 국내 금융 시장 및 은행 경영에 미칠 수 있는 영향으로 옳지 않은 것은?","answer":"② 은행의 대출 금리 인상 압력이 커져 대출 수익성이 개선될 수 있다.","explanation":"국채금리 급등은 은행의 조달 비용 증가로 이어져 대출 금리 인상 압력으로 작용할 수 있으나, 동시에 기업 및 가계의 대출 수요 감소와 부실 위험 증가로 인해 반드시 수익성 개선으로 이어지지는 않습니다. [오답해설] ① 국채금리 상승은 시중 금리 전반의 상승을 유발하여 가계 대출 이자 부담을 늘립니다. ③ 기업의 자금 조달 비용 상승은 투자 심리를 위축시킬 수 있습니다. ④ 금리 상승은 채권 가격 하락을 의미하므로, 은행 보유 채권의 평가 손실로 이어질 수 있습니다.","news_context":"글로벌 국채금리 '연쇄 쇼크'가 발생하며 시장에 불안감이 커지고, 뉴욕 연은 총재는 국채금리 급등을 강한 경제의 결과로 보았습니다.","news_url":"","options":["① 주택담보대출 등 시장 금리 상승으로 가계의 이자 부담이 가중될 수 있다.","② 은행의 대출 금리 인상 압력이 커져 대출 수익성이 개선될 수 있다.","③ 기업의 자금 조달 비용이 증가하여 투자 심리가 위축될 수 있다.","④ 채권 가격 하락으로 은행이 보유한 채권의 평가 손실이 발생할 수 있다."]},{"id":2171,"category":"시사","question":"한국은행이 '주요국 외환보유액 순위' 공개를 25년 만에 없앤 것과 관련하여, 외환보유액이 국가 경제에 갖는 의미로 옳은 것은?","answer":"② 국가의 외채 상환 능력과 대외 신인도를 나타내는 중요한 지표이다.","explanation":"외환보유액은 유사시 외국에 갚아야 할 돈을 지불할 능력을 보여주며, 국가의 대외 신인도 및 비상 상황 시 환율 안정화 수단으로 활용됩니다. [오답해설] ① 외환보유액은 대외 지급능력 확보가 주된 목적이며, 통화량 조절은 다른 수단을 통해 이루어집니다. ③ 외환보유액은 무역수지 적자를 확대하는 요인이 아니라, 적자 발생 시 시장 안정화에 기여할 수 있습니다. ④ 외환보유액은 국제 투자 자금 유치에 영향을 주지만 유일한 기준은 아닙니다.","news_context":"한국은행이 주요국 외환보유액 순위 공개를 25년 만에 중단하여 그 배경에 관심이 쏠리고 있습니다.","news_url":"https://www.kbmaeil.com/article/20260903500017","options":["① 국내 통화량 조절에만 전적으로 사용되는 자산이다.","② 국가의 외채 상환 능력과 대외 신인도를 나타내는 중요한 지표이다.","③ 무역수지 적자를 확대하는 주요 요인으로 작용한다.","④ 국제 투자 자금을 유치하기 위한 유일한 기준이 된다."]},{"id":2172,"category":"시사","question":"최근 휘발유·휴대폰 요금 등 물가 상승률이 다시 3%대에 진입한 상황에서, 중앙은행이 물가 안정을 위해 취할 수 있는 일반적인 통화정책 방향은?","answer":"③ 기준금리 인상을 통한 시중 통화량 축소","explanation":"물가 상승 시 중앙은행은 기준금리 인상을 통해 시중 유동성을 흡수하고 소비와 투자를 둔화시켜 물가 안정을 도모합니다. [오답해설] ①, ②, ④는 모두 시중에 유동성을 공급하여 통화량을 증가시키고 물가 상승 압력을 높일 수 있는 정책 방향입니다.","news_context":"휘발유, 휴대폰 요금 등 생활 물가가 다시 3%대 상승률을 기록하여 국민 장바구니 물가 부담이 커지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12142629","options":["① 기준금리 인하를 통한 유동성 공급 확대","② 국채 매입을 통한 시중 통화량 증가","③ 기준금리 인상을 통한 시중 통화량 축소","④ 양적완화를 통한 시장 금리 인하 유도"]},{"id":80,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
