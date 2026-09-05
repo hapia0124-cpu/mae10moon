@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-06 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-06 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-06 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 범용 인공지능</li><li>② 개방형 AI</li><li>③ 모두의 AI</li><li>④ 협력적 AI</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 모두의 AI</p>
+      <p><strong>해설:</strong> ‘모두의 AI’는 AI 기술의 대중화와 접근성 확대를 통해 모든 사람이 AI를 활용할 수 있도록 하는 방향성을 의미합니다. [오답해설] ① 범용 인공지능(AGI)은 인간과 유사한 지능을 가진 인공지능을 목표로 하는 개념입니다. ② 개방형 AI는 특정 기업의 이름이거나 오픈소스 AI를 지칭할 수 있습니다. ④ 협력적 AI는 AI와 AI 또는 AI와 인간 간의 협업을 의미합니다.</p>
+      <p>관련 시사 뉴스: 구글이 제시한 개념으로, AI 기술의 대중화와 접근성 확대를 통해 모든 사람이 AI를 활용할 수 있도록 하는 방향성을 의미합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 거주국과 원천지국 간의 소득이나 재산에 대한 이중과세를 방지하고, 투자 촉진 및 조세회피 방지를 위해 양국 간에 체결하는 조세조약을 지칭하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 이중과세방지협정</li><li>② 조세피난처협정</li><li>③ 국제조세조정협정</li><li>④ 관세장벽협정</li>
+      </ul>
+      <p><strong>정답:</strong> ① 이중과세방지협정</p>
+      <p><strong>해설:</strong> 이중과세방지협정은 거주국과 원천지국 간 소득이나 재산에 대한 이중과세를 방지하기 위해 체결하는 조세조약입니다. [오답해설] ② 조세피난처협정은 특정 조세피난처 국가와 관련된 협정을 의미하며 이중과세 방지 목적과는 다릅니다. ③ 국제조세조정협정은 이중과세방지협정보다 더 넓은 범위를 포괄하는 개념입니다. ④ 관세장벽협정은 상품에 부과되는 관세에 대한 협정을 의미합니다.</p>
+      <p>관련 시사 뉴스: 거주국과 원천지국 간의 소득이나 재산에 대한 이중과세를 방지하고 투자 촉진 및 조세회피 방지를 위해 양국 간에 체결하는 조세조약입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 최근 고물가와 취업난으로 인해 20대 사이에서 친구를 만나는 것조차 경제적 부담이 되는 현상을 일컫는 신조어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 프렌드플레이션</li><li>② 런치플레이션</li><li>③ 스튜던트푸어</li><li>④ 욜로플레이션</li>
+      </ul>
+      <p><strong>정답:</strong> ① 프렌드플레이션</p>
+      <p><strong>해설:</strong> 프렌드플레이션은 고물가와 취업난으로 인해 친구를 만나는 데 드는 비용조차 부담이 되는 현상을 의미하는 신조어입니다. [오답해설] ② 런치플레이션은 점심 물가가 크게 오르는 현상을, ③ 스튜던트푸어는 학자금 대출 등으로 경제적 어려움을 겪는 대학생들을, ④ 욜로플레이션은 욜로(YOLO) 생활방식 추구로 인해 물가가 상승하는 현상을 지칭합니다.</p>
+      <p>관련 시사 뉴스: 고물가·취업난에 친구 만나기도 부담스러운 20대 소비시장의 '프렌드플레이션' 현상에 대한 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 정부의 주택담보대출 규제 정책 중 투기지역 및 투기과열지구에서 주택가격 15억 원을 초과하는 아파트에 적용되는 규제 내용은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 주택담보대출이 원천적으로 금지됩니다.</li><li>② LTV(주택담보대출비율)가 50%로 제한됩니다.</li><li>③ 총부채원리금상환비율(DSR)이 40%를 초과할 수 없습니다.</li><li>④ 주택담보대출 한도가 2억 원으로 제한됩니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 주택담보대출이 원천적으로 금지됩니다.</p>
+      <p><strong>해설:</strong> 투기지역 및 투기과열지구에서 15억 원을 초과하는 아파트는 주택담보대출이 원칙적으로 금지됩니다. [오답해설] ② LTV 50% 제한은 다른 규제 구간에 적용될 수 있으며, ③ DSR 40%는 모든 차주에게 적용되는 총량 규제이지만 15억 초과 주택 자체에는 대출이 불가합니다. ④ 대출 한도 2억 원 제한은 특정 상황이나 다른 주택 가격 구간에 해당합니다.</p>
+      <p>관련 시사 뉴스: 15억 원을 넘는 주택에 대한 대출 규제로 인해 생기는 눈에 보이지 않는 경계선에 대한 내용.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 9월부터 확정기여형(DC) 퇴직연금 및 개인형퇴직연금(IRP)에서 국채 투자가 더욱 활성화될 것으로 예상되는 가운데, '국채 풍차' 전략에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 국채 풍차 전략은 만기가 다른 국채를 주기적으로 매입하여 이자 수익을 꾸준히 얻는 방식입니다.</li><li>② 퇴직연금 가입자의 안전자산 투자 선호에 맞춰 안정적인 수익을 추구하는 데 적합한 전략입니다.</li><li>③ 국채 매입 시 시장 금리 변동에 따른 가격 변동 위험은 없으므로 원금 손실 우려가 전혀 없습니다.</li><li>④ 최근 퇴직연금의 원금 비보장 상품 비중이 늘면서, 안정적인 대안으로 국채 투자가 부각되고 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 국채 매입 시 시장 금리 변동에 따른 가격 변동 위험은 없으므로 원금 손실 우려가 전혀 없습니다.</p>
+      <p><strong>해설:</strong> 국채는 국가가 발행하므로 부도 위험이 낮지만, 시장 금리 변동에 따라 국채 가격이 변동할 수 있어 매입 시점에 따라 원금 손실 위험이 존재할 수 있습니다. [오답해설] ① 국채 풍차 전략의 기본적인 개념입니다. ② 국채는 대표적인 안전자산으로 퇴직연금의 안정성을 높이는 데 기여합니다. ④ 최근 퇴직연금 시장의 변화 속에서 국채 투자의 중요성이 커지고 있습니다.</p>
+      <p>관련 시사 뉴스: DC/IRP에서 '국채 풍차' 전략을 통해 노후 자금을 효율적으로 굴리는 방안에 대한 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 뉴스에서 언급된 '현금서비스'에 대한 설명 중, 실제 특성과 가장 거리가 먼 내용은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 신용카드사의 단기 대출 서비스로, 카드 한도 내에서 현금을 즉시 인출할 수 있습니다.</li><li>② 일반적으로 은행의 신용대출보다 금리가 높은 편이며, 연 20%에 육박하는 경우도 많습니다.</li><li>③ 급하게 소액이 필요할 때 유용하게 사용할 수 있으며, 신용점수에 미치는 영향은 거의 없습니다.</li><li>④ 이용 기간이 짧더라도 높은 이자율이 적용되므로 상환 부담이 커질 수 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 급하게 소액이 필요할 때 유용하게 사용할 수 있으며, 신용점수에 미치는 영향은 거의 없습니다.</p>
+      <p><strong>해설:</strong> 현금서비스는 신용카드 사용자의 신용도를 기반으로 하는 단기 대출로, 잦은 이용이나 상환 지연 시 신용점수에 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 현금서비스의 정의와 이용 방식입니다. ② 현금서비스는 은행권 대출보다 고금리가 적용되는 경우가 많습니다. ④ 높은 이자율은 현금서비스의 주요 특징 중 하나입니다.</p>
+      <p>관련 시사 뉴스: 현금서비스 이용 시 높은 이자율이 적용되어 이자 부담이 크다는 문제점을 지적하는 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 금융공기관 지방이전 정책에 대한 논의가 재점화되고 있다. 이 정책의 주요 추진 목적이 아닌 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국가 균형 발전 및 지역 경제 활성화</li><li>② 수도권 과밀 해소 및 국토의 효율적 활용</li><li>③ 금융산업의 글로벌 경쟁력 강화 및 해외 투자 유치 증대</li><li>④ 지방 인재 유출 방지 및 고용 기회 확대</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 금융산업의 글로벌 경쟁력 강화 및 해외 투자 유치 증대</p>
+      <p><strong>해설:</strong> 금융공기관 지방이전 정책의 주된 목적은 국가 균형 발전과 수도권 과밀 해소, 지방 경제 활성화 및 인재 유출 방지에 있습니다. 금융산업의 글로벌 경쟁력 강화나 해외 투자 유치 증대는 지방 이전 자체의 직접적인 목표라기보다는 금융산업 육성 정책의 일환으로 별도로 추진될 수 있는 사항입니다. [오답해설] ①, ②, ④는 모두 금융공기관 지방이전 정책의 주요 추진 목적입니다.</p>
+      <p>관련 시사 뉴스: 금융공기관의 지방 이전에 반대하며 노조가 거리로 나서는 등 정책 추진에 대한 논란이 다시 불거지고 있는 상황.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 한국의 경상수지 흑자 규모가 반도체 호황에 힘입어 역대 최고 수준을 기록하고 있다. 이러한 경제 현상이 국내 은행의 외환 관련 업무에 미치는 가장 직접적인 긍정적 영향은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 원/달러 환율 상승으로 수출 기업의 환차익이 확대된다.</li><li>② 국내 기업들의 대외 투자 증가로 외화 자금 수요가 급증한다.</li><li>③ 외화 유동성이 풍부해져 은행의 외환 관련 업무 수익성이 개선된다.</li><li>④ 은행의 국내 대출 여력이 확대되어 가계 대출 금리가 하락한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 외화 유동성이 풍부해져 은행의 외환 관련 업무 수익성이 개선된다.</p>
+      <p><strong>해설:</strong> 경상수지 흑자 증가는 해외로부터 외화가 국내로 많이 유입됨을 의미하며, 이는 은행의 외화 유동성을 풍부하게 하여 외환 관련 업무(환전, 송금, 외환 파생상품 등)의 수익성 개선에 긍정적인 영향을 미칠 수 있습니다. [오답해설] ① 외화 유입 증가는 일반적으로 원/달러 환율 하락 압력으로 작용합니다. ② 경상수지 흑자가 반드시 대외 투자 증가로 이어지지는 않으며, 자금 수요 급증은 다른 요인에 의해 발생할 수 있습니다. ④ 외화 유동성 증가가 직접적으로 국내 대출 금리 하락으로 이어지는 것은 아니며, 주로 원화 유동성 및 기준금리에 의해 결정됩니다.</p>
+      <p>관련 시사 뉴스: 반도체 호황에 힘입어 한국의 7월 경상수지 흑자 규모가 세계 2위를 기록하며 역대 최고 수준을 달성했다는 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 미국 국채 10년물 금리가 4.8%를 돌파하는 등 글로벌 고금리 기조가 지속될 것이라는 전망이 확산되고 있다. 이러한 현상이 글로벌 금융시장 및 국내 은행에 미치는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 미국 증시에서 기술주를 중심으로 투자 심리가 위축되고 주가 하락 압력이 커질 수 있습니다.</li><li>② 국내 은행의 가계대출 변동금리가 인상 압력을 받아 차주들의 이자 부담이 가중될 수 있습니다.</li><li>③ 안전자산으로 여겨지던 미 국채의 매력이 감소하며 글로벌 자금의 신흥국 유입이 가속화될 수 있습니다.</li><li>④ 은행의 자금 조달 비용이 증가하여 예금 금리 인상 요인으로 작용할 수 있습니다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 안전자산으로 여겨지던 미 국채의 매력이 감소하며 글로벌 자금의 신흥국 유입이 가속화될 수 있습니다.</p>
+      <p><strong>해설:</strong> 미국 국채 금리 상승은 안전자산으로서의 미 국채의 매력을 높여, 오히려 신흥국 시장에서 자금이 이탈하여 미국 국채로 회귀하는 현상(Risk-off)을 유발할 수 있습니다. [오답해설] ① 고금리는 기업의 자금 조달 비용을 높여 특히 성장주인 기술주에 부정적인 영향을 미 미칠 수 있습니다. ② 미국 금리 인상은 국내 시장 금리에 영향을 미쳐 가계대출 변동금리를 상승시킬 수 있습니다. ④ 은행은 시장 금리를 반영하여 예금 금리를 조정하므로 자금 조달 비용 증가는 예금 금리 인상으로 이어질 수 있습니다.</p>
+      <p>관련 시사 뉴스: 미국 국채 금리 급등이 글로벌 금융시장에 미치는 영향과 '안전자산 신화'에 대한 우려를 다루는 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 우리은행이 베트남에 역량을 집중하고 점포를 늘리는 등 동남아시아 시장 공략을 강화하는 주요 전략적 배경으로 보기 어려운 것은 무엇인가요?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 높은 경제 성장률과 젊은 인구 구조를 바탕으로 한 잠재적 금융 수요 확보</li><li>② 현지 진출 한국 기업 및 교민 대상 금융 서비스 확장 및 강화</li><li>③ 국내 금융 시장의 저성장 기조와 포화 상태를 극복하기 위한 새로운 성장 동력 발굴</li><li>④ 베트남 정부의 외국계 은행에 대한 특혜성 규제 완화 정책을 활용하여 단기간에 시장 점유율 확보</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 베트남 정부의 외국계 은행에 대한 특혜성 규제 완화 정책을 활용하여 단기간에 시장 점유율 확보</p>
+      <p><strong>해설:</strong> 베트남을 포함한 동남아 시장은 높은 성장 잠재력과 한국 기업 및 교민 수요를 바탕으로 한 전략적 중요성 때문에 국내 은행들이 진출하고 있습니다. 하지만 베트남 정부가 외국계 은행에 특별히 '특혜성' 규제 완화를 제공하여 단기간에 시장 점유율을 독점적으로 확보하게 하는 경우는 현실적으로 거의 없으며, 점진적인 시장 진입과 경쟁을 통해 성장해야 합니다. [오답해설] ①, ②, ③은 모두 우리은행이 베트남 시장 진출을 강화하는 주요 전략적 배경으로 볼 수 있습니다.</p>
+      <p>관련 시사 뉴스: 우리은행이 베트남에 대한 역량을 집중하고 점포를 확대하는 등 동남아 영업망을 강화하는 전략에 대한 뉴스.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-06</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2203,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?","answer":"③ 모두의 AI","explanation":"‘모두의 AI’는 AI 기술의 대중화와 접근성 확대를 통해 모든 사람이 AI를 활용할 수 있도록 하는 방향성을 의미합니다. [오답해설] ① 범용 인공지능(AGI)은 인간과 유사한 지능을 가진 인공지능을 목표로 하는 개념입니다. ② 개방형 AI는 특정 기업의 이름이거나 오픈소스 AI를 지칭할 수 있습니다. ④ 협력적 AI는 AI와 AI 또는 AI와 인간 간의 협업을 의미합니다.","news_context":"구글이 제시한 개념으로, AI 기술의 대중화와 접근성 확대를 통해 모든 사람이 AI를 활용할 수 있도록 하는 방향성을 의미합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4432740","options":["① 범용 인공지능","② 개방형 AI","③ 모두의 AI","④ 협력적 AI"]},{"id":2204,"category":"시사금융용어","question":"거주국과 원천지국 간의 소득이나 재산에 대한 이중과세를 방지하고, 투자 촉진 및 조세회피 방지를 위해 양국 간에 체결하는 조세조약을 지칭하는 용어는?","answer":"① 이중과세방지협정","explanation":"이중과세방지협정은 거주국과 원천지국 간 소득이나 재산에 대한 이중과세를 방지하기 위해 체결하는 조세조약입니다. [오답해설] ② 조세피난처협정은 특정 조세피난처 국가와 관련된 협정을 의미하며 이중과세 방지 목적과는 다릅니다. ③ 국제조세조정협정은 이중과세방지협정보다 더 넓은 범위를 포괄하는 개념입니다. ④ 관세장벽협정은 상품에 부과되는 관세에 대한 협정을 의미합니다.","news_context":"거주국과 원천지국 간의 소득이나 재산에 대한 이중과세를 방지하고 투자 촉진 및 조세회피 방지를 위해 양국 간에 체결하는 조세조약입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429044","options":["① 이중과세방지협정","② 조세피난처협정","③ 국제조세조정협정","④ 관세장벽협정"]},{"id":2205,"category":"금융용어","question":"최근 고물가와 취업난으로 인해 20대 사이에서 친구를 만나는 것조차 경제적 부담이 되는 현상을 일컫는 신조어는 무엇인가요?","answer":"① 프렌드플레이션","explanation":"프렌드플레이션은 고물가와 취업난으로 인해 친구를 만나는 데 드는 비용조차 부담이 되는 현상을 의미하는 신조어입니다. [오답해설] ② 런치플레이션은 점심 물가가 크게 오르는 현상을, ③ 스튜던트푸어는 학자금 대출 등으로 경제적 어려움을 겪는 대학생들을, ④ 욜로플레이션은 욜로(YOLO) 생활방식 추구로 인해 물가가 상승하는 현상을 지칭합니다.","news_context":"고물가·취업난에 친구 만나기도 부담스러운 20대 소비시장의 '프렌드플레이션' 현상에 대한 뉴스.","news_url":"https://www.mk.co.kr/news/economy/12144764","options":["① 프렌드플레이션","② 런치플레이션","③ 스튜던트푸어","④ 욜로플레이션"]},{"id":2206,"category":"세부지식","question":"정부의 주택담보대출 규제 정책 중 투기지역 및 투기과열지구에서 주택가격 15억 원을 초과하는 아파트에 적용되는 규제 내용은 무엇인가요?","answer":"① 주택담보대출이 원천적으로 금지됩니다.","explanation":"투기지역 및 투기과열지구에서 15억 원을 초과하는 아파트는 주택담보대출이 원칙적으로 금지됩니다. [오답해설] ② LTV 50% 제한은 다른 규제 구간에 적용될 수 있으며, ③ DSR 40%는 모든 차주에게 적용되는 총량 규제이지만 15억 초과 주택 자체에는 대출이 불가합니다. ④ 대출 한도 2억 원 제한은 특정 상황이나 다른 주택 가격 구간에 해당합니다.","news_context":"15억 원을 넘는 주택에 대한 대출 규제로 인해 생기는 눈에 보이지 않는 경계선에 대한 내용.","news_url":"","options":["① 주택담보대출이 원천적으로 금지됩니다.","② LTV(주택담보대출비율)가 50%로 제한됩니다.","③ 총부채원리금상환비율(DSR)이 40%를 초과할 수 없습니다.","④ 주택담보대출 한도가 2억 원으로 제한됩니다."]},{"id":2207,"category":"세부지식","question":"9월부터 확정기여형(DC) 퇴직연금 및 개인형퇴직연금(IRP)에서 국채 투자가 더욱 활성화될 것으로 예상되는 가운데, '국채 풍차' 전략에 대한 설명으로 옳지 않은 것은?","answer":"③ 국채 매입 시 시장 금리 변동에 따른 가격 변동 위험은 없으므로 원금 손실 우려가 전혀 없습니다.","explanation":"국채는 국가가 발행하므로 부도 위험이 낮지만, 시장 금리 변동에 따라 국채 가격이 변동할 수 있어 매입 시점에 따라 원금 손실 위험이 존재할 수 있습니다. [오답해설] ① 국채 풍차 전략의 기본적인 개념입니다. ② 국채는 대표적인 안전자산으로 퇴직연금의 안정성을 높이는 데 기여합니다. ④ 최근 퇴직연금 시장의 변화 속에서 국채 투자의 중요성이 커지고 있습니다.","news_context":"DC/IRP에서 '국채 풍차' 전략을 통해 노후 자금을 효율적으로 굴리는 방안에 대한 뉴스.","news_url":"https://www.mk.co.kr/news/economy/12144851","options":["① 국채 풍차 전략은 만기가 다른 국채를 주기적으로 매입하여 이자 수익을 꾸준히 얻는 방식입니다.","② 퇴직연금 가입자의 안전자산 투자 선호에 맞춰 안정적인 수익을 추구하는 데 적합한 전략입니다.","③ 국채 매입 시 시장 금리 변동에 따른 가격 변동 위험은 없으므로 원금 손실 우려가 전혀 없습니다.","④ 최근 퇴직연금의 원금 비보장 상품 비중이 늘면서, 안정적인 대안으로 국채 투자가 부각되고 있습니다."]},{"id":2208,"category":"세부지식","question":"뉴스에서 언급된 '현금서비스'에 대한 설명 중, 실제 특성과 가장 거리가 먼 내용은 무엇인가요?","answer":"③ 급하게 소액이 필요할 때 유용하게 사용할 수 있으며, 신용점수에 미치는 영향은 거의 없습니다.","explanation":"현금서비스는 신용카드 사용자의 신용도를 기반으로 하는 단기 대출로, 잦은 이용이나 상환 지연 시 신용점수에 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 현금서비스의 정의와 이용 방식입니다. ② 현금서비스는 은행권 대출보다 고금리가 적용되는 경우가 많습니다. ④ 높은 이자율은 현금서비스의 주요 특징 중 하나입니다.","news_context":"현금서비스 이용 시 높은 이자율이 적용되어 이자 부담이 크다는 문제점을 지적하는 뉴스.","news_url":"https://www.mk.co.kr/news/economy/12144987","options":["① 신용카드사의 단기 대출 서비스로, 카드 한도 내에서 현금을 즉시 인출할 수 있습니다.","② 일반적으로 은행의 신용대출보다 금리가 높은 편이며, 연 20%에 육박하는 경우도 많습니다.","③ 급하게 소액이 필요할 때 유용하게 사용할 수 있으며, 신용점수에 미치는 영향은 거의 없습니다.","④ 이용 기간이 짧더라도 높은 이자율이 적용되므로 상환 부담이 커질 수 있습니다."]},{"id":2209,"category":"시사","question":"최근 금융공기관 지방이전 정책에 대한 논의가 재점화되고 있다. 이 정책의 주요 추진 목적이 아닌 것은 무엇인가요?","answer":"③ 금융산업의 글로벌 경쟁력 강화 및 해외 투자 유치 증대","explanation":"금융공기관 지방이전 정책의 주된 목적은 국가 균형 발전과 수도권 과밀 해소, 지방 경제 활성화 및 인재 유출 방지에 있습니다. 금융산업의 글로벌 경쟁력 강화나 해외 투자 유치 증대는 지방 이전 자체의 직접적인 목표라기보다는 금융산업 육성 정책의 일환으로 별도로 추진될 수 있는 사항입니다. [오답해설] ①, ②, ④는 모두 금융공기관 지방이전 정책의 주요 추진 목적입니다.","news_context":"금융공기관의 지방 이전에 반대하며 노조가 거리로 나서는 등 정책 추진에 대한 논란이 다시 불거지고 있는 상황.","news_url":"https://www.mk.co.kr/news/economy/12144977","options":["① 국가 균형 발전 및 지역 경제 활성화","② 수도권 과밀 해소 및 국토의 효율적 활용","③ 금융산업의 글로벌 경쟁력 강화 및 해외 투자 유치 증대","④ 지방 인재 유출 방지 및 고용 기회 확대"]},{"id":2210,"category":"시사","question":"최근 한국의 경상수지 흑자 규모가 반도체 호황에 힘입어 역대 최고 수준을 기록하고 있다. 이러한 경제 현상이 국내 은행의 외환 관련 업무에 미치는 가장 직접적인 긍정적 영향은 무엇인가요?","answer":"③ 외화 유동성이 풍부해져 은행의 외환 관련 업무 수익성이 개선된다.","explanation":"경상수지 흑자 증가는 해외로부터 외화가 국내로 많이 유입됨을 의미하며, 이는 은행의 외화 유동성을 풍부하게 하여 외환 관련 업무(환전, 송금, 외환 파생상품 등)의 수익성 개선에 긍정적인 영향을 미칠 수 있습니다. [오답해설] ① 외화 유입 증가는 일반적으로 원/달러 환율 하락 압력으로 작용합니다. ② 경상수지 흑자가 반드시 대외 투자 증가로 이어지지는 않으며, 자금 수요 급증은 다른 요인에 의해 발생할 수 있습니다. ④ 외화 유동성 증가가 직접적으로 국내 대출 금리 하락으로 이어지는 것은 아니며, 주로 원화 유동성 및 기준금리에 의해 결정됩니다.","news_context":"반도체 호황에 힘입어 한국의 7월 경상수지 흑자 규모가 세계 2위를 기록하며 역대 최고 수준을 달성했다는 뉴스.","news_url":"https://www.mk.co.kr/news/economy/12144800","options":["① 원/달러 환율 상승으로 수출 기업의 환차익이 확대된다.","② 국내 기업들의 대외 투자 증가로 외화 자금 수요가 급증한다.","③ 외화 유동성이 풍부해져 은행의 외환 관련 업무 수익성이 개선된다.","④ 은행의 국내 대출 여력이 확대되어 가계 대출 금리가 하락한다."]},{"id":2211,"category":"시사","question":"최근 미국 국채 10년물 금리가 4.8%를 돌파하는 등 글로벌 고금리 기조가 지속될 것이라는 전망이 확산되고 있다. 이러한 현상이 글로벌 금융시장 및 국내 은행에 미치는 영향으로 옳지 않은 것은?","answer":"③ 안전자산으로 여겨지던 미 국채의 매력이 감소하며 글로벌 자금의 신흥국 유입이 가속화될 수 있습니다.","explanation":"미국 국채 금리 상승은 안전자산으로서의 미 국채의 매력을 높여, 오히려 신흥국 시장에서 자금이 이탈하여 미국 국채로 회귀하는 현상(Risk-off)을 유발할 수 있습니다. [오답해설] ① 고금리는 기업의 자금 조달 비용을 높여 특히 성장주인 기술주에 부정적인 영향을 미 미칠 수 있습니다. ② 미국 금리 인상은 국내 시장 금리에 영향을 미쳐 가계대출 변동금리를 상승시킬 수 있습니다. ④ 은행은 시장 금리를 반영하여 예금 금리를 조정하므로 자금 조달 비용 증가는 예금 금리 인상으로 이어질 수 있습니다.","news_context":"미국 국채 금리 급등이 글로벌 금융시장에 미치는 영향과 '안전자산 신화'에 대한 우려를 다루는 뉴스.","news_url":"https://www.g-enews.com/view.php?ud=202609051944285005fbbec65dfb_1","options":["① 미국 증시에서 기술주를 중심으로 투자 심리가 위축되고 주가 하락 압력이 커질 수 있습니다.","② 국내 은행의 가계대출 변동금리가 인상 압력을 받아 차주들의 이자 부담이 가중될 수 있습니다.","③ 안전자산으로 여겨지던 미 국채의 매력이 감소하며 글로벌 자금의 신흥국 유입이 가속화될 수 있습니다.","④ 은행의 자금 조달 비용이 증가하여 예금 금리 인상 요인으로 작용할 수 있습니다."]},{"id":2212,"category":"시사","question":"우리은행이 베트남에 역량을 집중하고 점포를 늘리는 등 동남아시아 시장 공략을 강화하는 주요 전략적 배경으로 보기 어려운 것은 무엇인가요?","answer":"④ 베트남 정부의 외국계 은행에 대한 특혜성 규제 완화 정책을 활용하여 단기간에 시장 점유율 확보","explanation":"베트남을 포함한 동남아 시장은 높은 성장 잠재력과 한국 기업 및 교민 수요를 바탕으로 한 전략적 중요성 때문에 국내 은행들이 진출하고 있습니다. 하지만 베트남 정부가 외국계 은행에 특별히 '특혜성' 규제 완화를 제공하여 단기간에 시장 점유율을 독점적으로 확보하게 하는 경우는 현실적으로 거의 없으며, 점진적인 시장 진입과 경쟁을 통해 성장해야 합니다. [오답해설] ①, ②, ③은 모두 우리은행이 베트남 시장 진출을 강화하는 주요 전략적 배경으로 볼 수 있습니다.","news_context":"우리은행이 베트남에 대한 역량을 집중하고 점포를 확대하는 등 동남아 영업망을 강화하는 전략에 대한 뉴스.","news_url":"https://www.mk.co.kr/news/economy/12144803","options":["① 높은 경제 성장률과 젊은 인구 구조를 바탕으로 한 잠재적 금융 수요 확보","② 현지 진출 한국 기업 및 교민 대상 금융 서비스 확장 및 강화","③ 국내 금융 시장의 저성장 기조와 포화 상태를 극복하기 위한 새로운 성장 동력 발굴","④ 베트남 정부의 외국계 은행에 대한 특혜성 규제 완화 정책을 활용하여 단기간에 시장 점유율 확보"]},{"id":83,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
