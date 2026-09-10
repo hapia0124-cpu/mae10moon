@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-11 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-11 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-11 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 주로 미국에서 적용되는 제도로, 일정 수준 이상의 급여를 받거나 특정 직무를 수행하는 전문직, 관리직, 행정직 등의 '화이트칼라' 근로자에게 연장근로수당 등 일부 노동법 규정 적용을 면제하는 것을 뜻하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 화이트칼라 이그젬션</li><li>② 블루칼라 이그젬션</li><li>③ 최저임금제</li><li>④ 포괄임금제</li>
+      </ul>
+      <p><strong>정답:</strong> ① 화이트칼라 이그젬션</p>
+      <p><strong>해설:</strong> 화이트칼라 이그젬션은 특정 화이트칼라 직무 종사자에게 연장근로수당 등 일부 노동법 규정 적용을 면제하는 제도입니다. [오답해설] ② 블루칼라 이그젬션은 화이트칼라와 반대되는 개념으로 이그젬션이 적용되지 않는 경우가 많습니다. ③ 최저임금제는 모든 근로자에게 적용되는 최소 임금 기준을 정하는 제도입니다. ④ 포괄임금제는 연장근로수당 등을 미리 산정하여 월 급여에 포함하는 임금 산정 방식입니다.</p>
+      <p>관련 시사 뉴스: 주로 미국에서 특정 전문직·관리직·행정직 근로자에게 연장근로수당 등 일부 노동법 적용을 면제하는 제도를 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. KB금융그룹이 중장기적인 관점에서 그룹의 핵심 성장 동력을 확보하고 미래 가치를 창출하기 위해 추진하는 7가지 핵심 전략 프로젝트를 일컫는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 그린 금융 이니셔티브</li><li>② 디지털 혁신 로드맵</li><li>③ ESG 경영 전략</li><li>④ 7대 시드(SEED) 프로젝트</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 7대 시드(SEED) 프로젝트</p>
+      <p><strong>해설:</strong> 7대 시드(SEED) 프로젝트는 KB금융그룹이 미래 성장을 위해 추진하는 7가지 핵심 전략 프로젝트를 의미합니다. [오답해설] ① 그린 금융 이니셔티브는 환경 관련 금융 활동을 통칭하는 용어입니다. ② 디지털 혁신 로드맵은 디지털 전환을 위한 계획 전반을 의미하며 특정 프로젝트를 지칭하지 않습니다. ③ ESG 경영 전략은 환경, 사회, 지배구조 요소를 고려한 경영 방식을 뜻하는 일반적인 개념입니다.</p>
+      <p>관련 시사 뉴스: KB금융그룹이 중장기적 관점에서 미래 성장 동력 확보를 위해 추진하는 7가지 핵심 프로젝트를 의미한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 설명이 나타내는 경제 용어는? "국가의 외교 및 안보 정책에 경제적 수단을 활용하거나, 경제적 요소가 국제 관계에서 중요한 역할을 하는 현상을 지칭하는 개념."</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 지정학 (Geopolitics)</li><li>② 경제 지리학 (Economic Geography)</li><li>③ 지경학 (Geoeconomics)</li><li>④ 국제 정치경제학 (International Political Economy)</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 지경학 (Geoeconomics)</p>
+      <p><strong>해설:</strong> 지경학은 경제가 국가 간의 권력 투쟁에서 중요한 수단이 되는 현상을 의미합니다. [오답해설] ① 지정학은 지리적 요인이 국제 관계와 정치에 미치는 영향을 연구하는 학문입니다. ② 경제 지리학은 경제 활동의 지리적 분포와 패턴을 연구하는 학문입니다. ④ 국제 정치경제학은 국제 관계와 경제가 상호작용하는 방식을 광범위하게 다루지만, 지경학은 특히 경제적 수단을 통한 국익 추구에 초점을 맞춥니다.</p>
+      <p>관련 시사 뉴스: 국제정세의 변화 속에서 '지경학 위기'와 같은 표현이 등장하며 경제적 요인이 국제 관계에서 핵심적인 역할을 하는 현상을 반영합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 컨벤션(Meeting), 인센티브 관광(Incentive Travel), 국제회의(Convention), 전시회(Exhibition)의 앞 글자를 따서 만들어진 용어로, 고부가가치 관광산업을 의미하는 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스마트 관광 (Smart Tourism)</li><li>② 웰니스 관광 (Wellness Tourism)</li><li>③ 에코 투어리즘 (Eco Tourism)</li><li>④ MICE 산업 (MICE Industry)</li>
+      </ul>
+      <p><strong>정답:</strong> ④ MICE 산업 (MICE Industry)</p>
+      <p><strong>해설:</strong> MICE 산업은 기업 회의, 포상 관광, 컨벤션, 전시회를 아우르는 고부가가치 산업입니다. [오답해설] ① 스마트 관광은 정보통신기술을 활용하여 관광객에게 편리한 서비스를 제공하는 관광입니다. ② 웰니스 관광은 건강 증진과 삶의 질 향상에 초점을 맞춘 관광입니다. ③ 에코 투어리즘은 자연을 보호하고 환경적 지속가능성을 추구하는 관광입니다.</p>
+      <p>관련 시사 뉴스: 두바이가 관광도시를 넘어 비즈니스 수도로 발돋움하며 MICE 경제를 활성화하고 있다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 정부가 코로나19 피해 소상공인을 대상으로 추진하는 '1억 미만 빚 탕감' 제도에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 빚의 원금을 100% 탕감해주며, 상환 기간 제한은 없다.</li><li>② 대상 채무액은 1억원 미만이어야 하며, 자영업자 및 개인사업자는 제외된다.</li><li>③ 채무자가 상환 의지를 보여야 하며, 상환 기간을 연장하거나 이자를 감면받을 수 있다.</li><li>④ 최대 1억원 미만의 채무에 대해 원금의 일부를 감면해 주고, 성실 상환 시 추가 감면 혜택이 주어진다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 최대 1억원 미만의 채무에 대해 원금의 일부를 감면해 주고, 성실 상환 시 추가 감면 혜택이 주어진다.</p>
+      <p><strong>해설:</strong> 코로나19 피해 소상공인 채무 탕감 제도는 1억 원 미만의 채무에 대해 원금의 일부를 감면하고, 성실 상환 시 추가 감면 혜택을 제공합니다. [오답해설] ① 빚의 원금을 100% 탕감하는 것은 아니며, 상환 조건이 있습니다. ② 자영업자 및 개인사업자가 주요 대상입니다. ③ 상환 의지를 보이는 것은 맞지만, '상환 기간을 연장하거나 이자를 감면받을 수 있다'는 내용보다는 원금 감면과 성실 상환 시 추가 감면에 초점이 맞춰져 있습니다.</p>
+      <p>관련 시사 뉴스: 코로나19 피해 소상공인들을 대상으로 1억 미만 빚 탕감 정책이 발표되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 일시적 2주택자 종합부동산세(종부세) 특례에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 기존 주택을 보유한 상태에서 신규 주택을 취득한 경우에 적용된다.</li><li>② 신규 주택 취득일로부터 2년 이내에 기존 주택을 처분해야 한다.</li><li>③ 특례가 적용되면 1주택자 기준으로 종부세가 부과된다.</li><li>④ 기존 주택과 신규 주택 모두 조정대상지역에 소재해야 특례를 받을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 기존 주택과 신규 주택 모두 조정대상지역에 소재해야 특례를 받을 수 있다.</p>
+      <p><strong>해설:</strong> 일시적 2주택 종부세 특례는 신규 주택 취득 후 기존 주택을 일정 기간 내 처분할 경우 1주택자로 간주하는 제도이며, 조정대상지역 여부와 상관없이 적용될 수 있습니다. [오답해설] ① 기존 주택을 보유한 상태에서 신규 주택을 취득한 경우 적용됩니다. ② 신규 주택 취득일로부터 일정 기간(현재 2년) 이내에 기존 주택을 처분해야 합니다. ③ 1주택자 기준으로 종부세가 부과되어 세 부담이 경감됩니다.</p>
+      <p>관련 시사 뉴스: 국세청이 일시적 2주택 종부세 혜택 대상자에게 안내를 진행하고 있다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 뉴스에서 '원금 100% 손실' 가능성이 언급된 ELS(Equity Linked Securities)에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 특정 주가지수나 개별 주식의 가격 등락에 따라 수익률이 결정되는 원금 보장형 금융상품이다.</li><li>② 주식, 채권, 부동산 등 다양한 자산에 분산 투자하여 안정적인 수익을 추구하는 간접투자 상품이다.</li><li>③ 기초자산의 가격이 일정 범위 내에서 움직이면 높은 수익을 얻지만, 범위를 벗어나면 원금 손실이 발생할 수 있는 파생결합증권이다.</li><li>④ 투자 원금의 안정성을 최우선으로 하며, 금리 변동에 따른 수익률 변화가 거의 없는 저위험 상품이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 기초자산의 가격이 일정 범위 내에서 움직이면 높은 수익을 얻지만, 범위를 벗어나면 원금 손실이 발생할 수 있는 파생결합증권이다.</p>
+      <p><strong>해설:</strong> ELS는 기초자산 가격 변동에 따라 수익이 결정되는 파생결합증권으로, 일정 조건을 만족하면 높은 수익을 주지만, 조건을 충족하지 못하면 원금 손실이 발생할 수 있는 구조입니다. [오답해설] ① 원금 보장형이 아닌 상품이 많으며, '원금 보장형'은 ELS의 모든 특징이 아닙니다. ② 이는 ELS의 특징이 아닌 펀드와 유사한 설명입니다. ④ ELS는 기초자산의 변동성에 따라 수익이 결정되므로 금리 변동 외에도 주식 시장 변동에 영향을 크게 받으며, 원금 손실 위험이 있는 중위험·중고위험 상품으로 분류됩니다.</p>
+      <p>관련 시사 뉴스: ELS 상품에 대한 원금 손실 위험이 부각되며 투자자 주의가 요구되고 있다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 미국 연방준비제도(Fed)의 추가 금리 인상이 예상되는 가운데, 이러한 기조가 국내 은행에 미칠 수 있는 영향으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 기준금리 인상 압력으로 작용하여 예대마진 확대에 기여할 수 있다.</li><li>② 기업 및 가계 대출 금리 상승으로 대출 상환 부담이 증가하여 부실채권 위험이 커질 수 있다.</li><li>③ 경기 침체 우려가 커지면서 대출 수요가 위축되고 은행의 여신 성장세가 둔화될 수 있다.</li><li>④ 외국인 자금 이탈을 가속화시켜 국내 외화 유동성 경색을 심화시키고, 은행의 외환 조달 비용을 낮출 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 외국인 자금 이탈을 가속화시켜 국내 외화 유동성 경색을 심화시키고, 은행의 외환 조달 비용을 낮출 수 있다.</p>
+      <p><strong>해설:</strong> Fed의 금리 인상은 국내 외화 자금 이탈을 심화시키고 외화 유동성 경색을 야기하여 은행의 외환 조달 비용을 높이는 요인으로 작용합니다. [오답해설] ① 미 연준의 금리 인상은 한국은행의 기준금리 인상 압력으로 작용하며, 이는 일반적으로 은행의 예대마진에 긍정적인 영향을 줄 수 있습니다. ② 금리 상승은 대출자의 상환 부담을 가중시켜 부실채권 증가 위험을 높입니다. ③ 고금리와 경기 둔화 우려는 대출 수요 감소로 이어져 은행의 여신 성장세를 둔화시킬 수 있습니다.</p>
+      <p>관련 시사 뉴스: 미국 국채금리 급등과 Fed의 금리 인상 확률 증가 소식이 전해지며, 국내외 금융시장의 긴축 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 금융당국이 현장 점검을 강화하고 정책금융 지원을 확대하는 등 관리를 강화하고 있는 프로젝트 파이낸싱(PF) 대출에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 사업주의 신용을 담보로 하여 자금을 조달하는 방식으로, 사업 실패 시 사업주가 모든 책임을 진다.</li><li>② 특정 프로젝트에서 발생할 미래 현금흐름을 상환 재원으로 하는 대출이며, 주로 대규모 사회기반시설 건설 등에 활용된다.</li><li>③ 정부 보증이 100% 수반되어 리스크가 매우 낮으므로, 은행은 별도의 심사 없이 대출을 실행할 수 있다.</li><li>④ 담보가 확보된 자산에 대한 대출로, 사업의 성공 여부와 관계없이 안정적인 회수가 보장된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 특정 프로젝트에서 발생할 미래 현금흐름을 상환 재원으로 하는 대출이며, 주로 대규모 사회기반시설 건설 등에 활용된다.</p>
+      <p><strong>해설:</strong> PF 대출은 담보보다는 프로젝트의 사업성 및 미래 현금흐름을 평가하여 자금을 조달하는 방식이며, 주로 대규모 건설 사업에 사용됩니다. [오답해설] ① 사업주의 신용보다는 프로젝트의 사업성이 주요 평가 대상이며, 사업 실패 시 대주단이 위험을 분담하는 경우가 많습니다. ③ 정부 보증이 100% 수반되는 것은 아니며, 리스크가 높은 편이라 은행은 철저한 심사를 거쳐 대출을 실행합니다. ④ 담보보다는 프로젝트 자체의 현금흐름에 의존하기 때문에 사업 실패 시 회수 위험이 높습니다.</p>
+      <p>관련 시사 뉴스: 금융위원장이 PF 현장 점검을 강화하고 있으며, 정책금융을 통해 인프라 PF 보증을 확대하는 등 PF 시장 관리에 나서고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 역대급 엔저 현상이 장기화될 경우 국내 은행이 직면할 수 있는 상황으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 일본 기업들의 경쟁력 약화로 국내 기업의 수출 대금 결제 관련 외화 수익이 감소할 수 있다.</li><li>② 일본 내 한국 기업의 투자 및 대출 수요가 증가하여 국내 은행의 해외 여신 수익이 확대될 수 있다.</li><li>③ 국내 기업의 수출 경쟁력이 약화되고, 일본으로부터의 수입 비용이 증가하여 환 관련 리스크가 확대될 수 있다.</li><li>④ 엔화 가치 하락으로 외환 관련 손실 가능성이 증가하고, 국내 은행의 일본 관련 대출 자산 건전성이 악화될 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 엔화 가치 하락으로 외환 관련 손실 가능성이 증가하고, 국내 은행의 일본 관련 대출 자산 건전성이 악화될 수 있다.</p>
+      <p><strong>해설:</strong> 엔화 가치 하락은 엔화 자산을 보유한 은행에 외환 환산 손실을 야기할 수 있으며, 일본에 진출한 한국 기업의 사업성이 악화될 경우 관련 대출의 건전성에도 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 엔저로 일본 기업의 가격 경쟁력이 강화되어 국내 기업의 수출 경쟁력이 약화될 수 있습니다. ② 엔저 상황은 일본 내 한국 기업의 비용 부담을 늘려 투자와 대출 수요를 위축시킬 수 있습니다. ③ 국내 기업의 수출 경쟁력은 엔저로 인해 오히려 약화될 수 있으며, 일본으로부터의 수입 비용은 엔화 약세로 인해 감소할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 역대급 엔저 현상이 일본 여행 수요를 폭발시키는 등 경제 전반에 영향을 미치고 있습니다. 또한 ELS와 엔저를 파헤치는 기사도 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-11</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2263,"category":"시사금융용어","question":"주로 미국에서 적용되는 제도로, 일정 수준 이상의 급여를 받거나 특정 직무를 수행하는 전문직, 관리직, 행정직 등의 '화이트칼라' 근로자에게 연장근로수당 등 일부 노동법 규정 적용을 면제하는 것을 뜻하는 용어는?","answer":"① 화이트칼라 이그젬션","explanation":"화이트칼라 이그젬션은 특정 화이트칼라 직무 종사자에게 연장근로수당 등 일부 노동법 규정 적용을 면제하는 제도입니다. [오답해설] ② 블루칼라 이그젬션은 화이트칼라와 반대되는 개념으로 이그젬션이 적용되지 않는 경우가 많습니다. ③ 최저임금제는 모든 근로자에게 적용되는 최소 임금 기준을 정하는 제도입니다. ④ 포괄임금제는 연장근로수당 등을 미리 산정하여 월 급여에 포함하는 임금 산정 방식입니다.","news_context":"주로 미국에서 특정 전문직·관리직·행정직 근로자에게 연장근로수당 등 일부 노동법 적용을 면제하는 제도를 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4429877","options":["① 화이트칼라 이그젬션","② 블루칼라 이그젬션","③ 최저임금제","④ 포괄임금제"]},{"id":2264,"category":"시사금융용어","question":"KB금융그룹이 중장기적인 관점에서 그룹의 핵심 성장 동력을 확보하고 미래 가치를 창출하기 위해 추진하는 7가지 핵심 전략 프로젝트를 일컫는 용어는?","answer":"④ 7대 시드(SEED) 프로젝트","explanation":"7대 시드(SEED) 프로젝트는 KB금융그룹이 미래 성장을 위해 추진하는 7가지 핵심 전략 프로젝트를 의미합니다. [오답해설] ① 그린 금융 이니셔티브는 환경 관련 금융 활동을 통칭하는 용어입니다. ② 디지털 혁신 로드맵은 디지털 전환을 위한 계획 전반을 의미하며 특정 프로젝트를 지칭하지 않습니다. ③ ESG 경영 전략은 환경, 사회, 지배구조 요소를 고려한 경영 방식을 뜻하는 일반적인 개념입니다.","news_context":"KB금융그룹이 중장기적 관점에서 미래 성장 동력 확보를 위해 추진하는 7가지 핵심 프로젝트를 의미한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4430871","options":["① 그린 금융 이니셔티브","② 디지털 혁신 로드맵","③ ESG 경영 전략","④ 7대 시드(SEED) 프로젝트"]},{"id":2265,"category":"금융용어","question":"다음 설명이 나타내는 경제 용어는? \"국가의 외교 및 안보 정책에 경제적 수단을 활용하거나, 경제적 요소가 국제 관계에서 중요한 역할을 하는 현상을 지칭하는 개념.\"","answer":"③ 지경학 (Geoeconomics)","explanation":"지경학은 경제가 국가 간의 권력 투쟁에서 중요한 수단이 되는 현상을 의미합니다. [오답해설] ① 지정학은 지리적 요인이 국제 관계와 정치에 미치는 영향을 연구하는 학문입니다. ② 경제 지리학은 경제 활동의 지리적 분포와 패턴을 연구하는 학문입니다. ④ 국제 정치경제학은 국제 관계와 경제가 상호작용하는 방식을 광범위하게 다루지만, 지경학은 특히 경제적 수단을 통한 국익 추구에 초점을 맞춥니다.","news_context":"국제정세의 변화 속에서 '지경학 위기'와 같은 표현이 등장하며 경제적 요인이 국제 관계에서 핵심적인 역할을 하는 현상을 반영합니다.","news_url":"https://www.yeongnam.com/web/view.php?key=20260910022357950","options":["① 지정학 (Geopolitics)","② 경제 지리학 (Economic Geography)","③ 지경학 (Geoeconomics)","④ 국제 정치경제학 (International Political Economy)"]},{"id":2266,"category":"금융용어","question":"컨벤션(Meeting), 인센티브 관광(Incentive Travel), 국제회의(Convention), 전시회(Exhibition)의 앞 글자를 따서 만들어진 용어로, 고부가가치 관광산업을 의미하는 것은?","answer":"④ MICE 산업 (MICE Industry)","explanation":"MICE 산업은 기업 회의, 포상 관광, 컨벤션, 전시회를 아우르는 고부가가치 산업입니다. [오답해설] ① 스마트 관광은 정보통신기술을 활용하여 관광객에게 편리한 서비스를 제공하는 관광입니다. ② 웰니스 관광은 건강 증진과 삶의 질 향상에 초점을 맞춘 관광입니다. ③ 에코 투어리즘은 자연을 보호하고 환경적 지속가능성을 추구하는 관광입니다.","news_context":"두바이가 관광도시를 넘어 비즈니스 수도로 발돋움하며 MICE 경제를 활성화하고 있다는 뉴스입니다.","news_url":"https://n.news.naver.com/mnews/article/138/0002241004?sid=101","options":["① 스마트 관광 (Smart Tourism)","② 웰니스 관광 (Wellness Tourism)","③ 에코 투어리즘 (Eco Tourism)","④ MICE 산업 (MICE Industry)"]},{"id":2267,"category":"세부지식","question":"정부가 코로나19 피해 소상공인을 대상으로 추진하는 '1억 미만 빚 탕감' 제도에 대한 설명으로 옳은 것은?","answer":"④ 최대 1억원 미만의 채무에 대해 원금의 일부를 감면해 주고, 성실 상환 시 추가 감면 혜택이 주어진다.","explanation":"코로나19 피해 소상공인 채무 탕감 제도는 1억 원 미만의 채무에 대해 원금의 일부를 감면하고, 성실 상환 시 추가 감면 혜택을 제공합니다. [오답해설] ① 빚의 원금을 100% 탕감하는 것은 아니며, 상환 조건이 있습니다. ② 자영업자 및 개인사업자가 주요 대상입니다. ③ 상환 의지를 보이는 것은 맞지만, '상환 기간을 연장하거나 이자를 감면받을 수 있다'는 내용보다는 원금 감면과 성실 상환 시 추가 감면에 초점이 맞춰져 있습니다.","news_context":"코로나19 피해 소상공인들을 대상으로 1억 미만 빚 탕감 정책이 발표되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12149642","options":["① 빚의 원금을 100% 탕감해주며, 상환 기간 제한은 없다.","② 대상 채무액은 1억원 미만이어야 하며, 자영업자 및 개인사업자는 제외된다.","③ 채무자가 상환 의지를 보여야 하며, 상환 기간을 연장하거나 이자를 감면받을 수 있다.","④ 최대 1억원 미만의 채무에 대해 원금의 일부를 감면해 주고, 성실 상환 시 추가 감면 혜택이 주어진다."]},{"id":2268,"category":"세부지식","question":"일시적 2주택자 종합부동산세(종부세) 특례에 대한 설명으로 옳지 않은 것은?","answer":"④ 기존 주택과 신규 주택 모두 조정대상지역에 소재해야 특례를 받을 수 있다.","explanation":"일시적 2주택 종부세 특례는 신규 주택 취득 후 기존 주택을 일정 기간 내 처분할 경우 1주택자로 간주하는 제도이며, 조정대상지역 여부와 상관없이 적용될 수 있습니다. [오답해설] ① 기존 주택을 보유한 상태에서 신규 주택을 취득한 경우 적용됩니다. ② 신규 주택 취득일로부터 일정 기간(현재 2년) 이내에 기존 주택을 처분해야 합니다. ③ 1주택자 기준으로 종부세가 부과되어 세 부담이 경감됩니다.","news_context":"국세청이 일시적 2주택 종부세 혜택 대상자에게 안내를 진행하고 있다는 뉴스입니다.","news_url":"https://www.mk.co.kr/news/economy/12149647","options":["① 기존 주택을 보유한 상태에서 신규 주택을 취득한 경우에 적용된다.","② 신규 주택 취득일로부터 2년 이내에 기존 주택을 처분해야 한다.","③ 특례가 적용되면 1주택자 기준으로 종부세가 부과된다.","④ 기존 주택과 신규 주택 모두 조정대상지역에 소재해야 특례를 받을 수 있다."]},{"id":2269,"category":"세부지식","question":"뉴스에서 '원금 100% 손실' 가능성이 언급된 ELS(Equity Linked Securities)에 대한 설명으로 옳은 것은?","answer":"③ 기초자산의 가격이 일정 범위 내에서 움직이면 높은 수익을 얻지만, 범위를 벗어나면 원금 손실이 발생할 수 있는 파생결합증권이다.","explanation":"ELS는 기초자산 가격 변동에 따라 수익이 결정되는 파생결합증권으로, 일정 조건을 만족하면 높은 수익을 주지만, 조건을 충족하지 못하면 원금 손실이 발생할 수 있는 구조입니다. [오답해설] ① 원금 보장형이 아닌 상품이 많으며, '원금 보장형'은 ELS의 모든 특징이 아닙니다. ② 이는 ELS의 특징이 아닌 펀드와 유사한 설명입니다. ④ ELS는 기초자산의 변동성에 따라 수익이 결정되므로 금리 변동 외에도 주식 시장 변동에 영향을 크게 받으며, 원금 손실 위험이 있는 중위험·중고위험 상품으로 분류됩니다.","news_context":"ELS 상품에 대한 원금 손실 위험이 부각되며 투자자 주의가 요구되고 있다는 뉴스입니다.","news_url":"https://news.ifm.kr/news/articleView.html?idxno=479113","options":["① 특정 주가지수나 개별 주식의 가격 등락에 따라 수익률이 결정되는 원금 보장형 금융상품이다.","② 주식, 채권, 부동산 등 다양한 자산에 분산 투자하여 안정적인 수익을 추구하는 간접투자 상품이다.","③ 기초자산의 가격이 일정 범위 내에서 움직이면 높은 수익을 얻지만, 범위를 벗어나면 원금 손실이 발생할 수 있는 파생결합증권이다.","④ 투자 원금의 안정성을 최우선으로 하며, 금리 변동에 따른 수익률 변화가 거의 없는 저위험 상품이다."]},{"id":2270,"category":"시사","question":"미국 연방준비제도(Fed)의 추가 금리 인상이 예상되는 가운데, 이러한 기조가 국내 은행에 미칠 수 있는 영향으로 가장 적절하지 않은 것은?","answer":"④ 외국인 자금 이탈을 가속화시켜 국내 외화 유동성 경색을 심화시키고, 은행의 외환 조달 비용을 낮출 수 있다.","explanation":"Fed의 금리 인상은 국내 외화 자금 이탈을 심화시키고 외화 유동성 경색을 야기하여 은행의 외환 조달 비용을 높이는 요인으로 작용합니다. [오답해설] ① 미 연준의 금리 인상은 한국은행의 기준금리 인상 압력으로 작용하며, 이는 일반적으로 은행의 예대마진에 긍정적인 영향을 줄 수 있습니다. ② 금리 상승은 대출자의 상환 부담을 가중시켜 부실채권 증가 위험을 높입니다. ③ 고금리와 경기 둔화 우려는 대출 수요 감소로 이어져 은행의 여신 성장세를 둔화시킬 수 있습니다.","news_context":"미국 국채금리 급등과 Fed의 금리 인상 확률 증가 소식이 전해지며, 국내외 금융시장의 긴축 우려가 커지고 있습니다.","news_url":"","options":["① 국내 기준금리 인상 압력으로 작용하여 예대마진 확대에 기여할 수 있다.","② 기업 및 가계 대출 금리 상승으로 대출 상환 부담이 증가하여 부실채권 위험이 커질 수 있다.","③ 경기 침체 우려가 커지면서 대출 수요가 위축되고 은행의 여신 성장세가 둔화될 수 있다.","④ 외국인 자금 이탈을 가속화시켜 국내 외화 유동성 경색을 심화시키고, 은행의 외환 조달 비용을 낮출 수 있다."]},{"id":2271,"category":"시사","question":"금융당국이 현장 점검을 강화하고 정책금융 지원을 확대하는 등 관리를 강화하고 있는 프로젝트 파이낸싱(PF) 대출에 대한 설명으로 옳은 것은?","answer":"② 특정 프로젝트에서 발생할 미래 현금흐름을 상환 재원으로 하는 대출이며, 주로 대규모 사회기반시설 건설 등에 활용된다.","explanation":"PF 대출은 담보보다는 프로젝트의 사업성 및 미래 현금흐름을 평가하여 자금을 조달하는 방식이며, 주로 대규모 건설 사업에 사용됩니다. [오답해설] ① 사업주의 신용보다는 프로젝트의 사업성이 주요 평가 대상이며, 사업 실패 시 대주단이 위험을 분담하는 경우가 많습니다. ③ 정부 보증이 100% 수반되는 것은 아니며, 리스크가 높은 편이라 은행은 철저한 심사를 거쳐 대출을 실행합니다. ④ 담보보다는 프로젝트 자체의 현금흐름에 의존하기 때문에 사업 실패 시 회수 위험이 높습니다.","news_context":"금융위원장이 PF 현장 점검을 강화하고 있으며, 정책금융을 통해 인프라 PF 보증을 확대하는 등 PF 시장 관리에 나서고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12149644","options":["① 사업주의 신용을 담보로 하여 자금을 조달하는 방식으로, 사업 실패 시 사업주가 모든 책임을 진다.","② 특정 프로젝트에서 발생할 미래 현금흐름을 상환 재원으로 하는 대출이며, 주로 대규모 사회기반시설 건설 등에 활용된다.","③ 정부 보증이 100% 수반되어 리스크가 매우 낮으므로, 은행은 별도의 심사 없이 대출을 실행할 수 있다.","④ 담보가 확보된 자산에 대한 대출로, 사업의 성공 여부와 관계없이 안정적인 회수가 보장된다."]},{"id":2272,"category":"시사","question":"역대급 엔저 현상이 장기화될 경우 국내 은행이 직면할 수 있는 상황으로 가장 적절한 것은?","answer":"④ 엔화 가치 하락으로 외환 관련 손실 가능성이 증가하고, 국내 은행의 일본 관련 대출 자산 건전성이 악화될 수 있다.","explanation":"엔화 가치 하락은 엔화 자산을 보유한 은행에 외환 환산 손실을 야기할 수 있으며, 일본에 진출한 한국 기업의 사업성이 악화될 경우 관련 대출의 건전성에도 부정적인 영향을 미칠 수 있습니다. [오답해설] ① 엔저로 일본 기업의 가격 경쟁력이 강화되어 국내 기업의 수출 경쟁력이 약화될 수 있습니다. ② 엔저 상황은 일본 내 한국 기업의 비용 부담을 늘려 투자와 대출 수요를 위축시킬 수 있습니다. ③ 국내 기업의 수출 경쟁력은 엔저로 인해 오히려 약화될 수 있으며, 일본으로부터의 수입 비용은 엔화 약세로 인해 감소할 수 있습니다.","news_context":"역대급 엔저 현상이 일본 여행 수요를 폭발시키는 등 경제 전반에 영향을 미치고 있습니다. 또한 ELS와 엔저를 파헤치는 기사도 있습니다.","news_url":"","options":["① 일본 기업들의 경쟁력 약화로 국내 기업의 수출 대금 결제 관련 외화 수익이 감소할 수 있다.","② 일본 내 한국 기업의 투자 및 대출 수요가 증가하여 국내 은행의 해외 여신 수익이 확대될 수 있다.","③ 국내 기업의 수출 경쟁력이 약화되고, 일본으로부터의 수입 비용이 증가하여 환 관련 리스크가 확대될 수 있다.","④ 엔화 가치 하락으로 외환 관련 손실 가능성이 증가하고, 국내 은행의 일본 관련 대출 자산 건전성이 악화될 수 있다."]},{"id":88,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
