@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-16 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-16 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-16 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. MZ세대가 투자에 적극적으로 뛰어들며 주식, 가상자산 등 다양한 자산에 과감히 투자하는 현상을 일컬어, 기존의 월스트리트에 빗대어 부르는 신조어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 동학개미운동</li><li>② 서학개미</li><li>③ 욜스트리트</li><li>④ 영끌 투자</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 욜스트리트</p>
+      <p><strong>해설:</strong> 욜스트리트는 MZ세대가 '현재를 즐기자(YOLO)'는 가치관을 바탕으로 금융시장에 적극적으로 참여하며 주도하는 현상을 지칭하는 신조어입니다. [오답해설] ① 동학개미운동은 국내 주식 시장에 개인 투자자들이 대거 유입된 현상을 의미하며, 특정 세대에 한정되지 않습니다. ② 서학개미는 국내 투자자들이 해외 주식 시장에 투자하는 현상을 의미합니다. ④ 영끌 투자는 '영혼까지 끌어모아 투자한다'는 의미로, MZ세대가 보이는 투자 방식 중 하나이지만, 특정 세대가 주도하는 금융 시장의 '거리'를 지칭하는 용어는 아닙니다.</p>
+      <p>관련 시사 뉴스: MZ세대가 주식, 가상자산 등 다양한 자산에 과감히 투자하며 금융시장의 주역으로 떠오르는 현상을 기존의 월스트리트에 빗대어 '욜스트리트'라고 부릅니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 일본 금융당국이 디지털 환경 변화에 대응하여 민간 주도로 새로운 금융 시스템을 구축하기 위해 제안한 전략적 개념으로, 클라우드, AI, 빅데이터, 블록체인 등 신기술을 활용하여 금융기관과 핀테크 기업 간 협력을 통한 혁신적인 서비스 개발을 목표로 하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 클라우드 뱅킹</li><li>② 네오클라우드</li><li>③ 오픈 뱅킹</li><li>④ 핀테크 허브</li>
+      </ul>
+      <p><strong>정답:</strong> ② 네오클라우드</p>
+      <p><strong>해설:</strong> 네오클라우드는 일본 금융청이 발표한 새로운 금융 시장 전략으로, 클라우드, AI 등 신기술을 활용해 금융기관과 핀테크의 협력을 통해 혁신적인 금융 서비스를 구축하는 것을 목표로 합니다. [오답해설] ① 클라우드 뱅킹은 클라우드 기술을 활용한 은행 서비스를 의미하며, 일본 금융청의 포괄적인 금융 전략을 지칭하는 용어는 아닙니다. ③ 오픈 뱅킹은 금융 데이터 공유를 통해 다양한 금융 서비스의 상호 운용성을 높이는 개념이지만, 네오클라우드는 클라우드 및 다른 신기술 활용, 민간 주도의 시스템 구축 등 더 넓은 범위의 일본 금융 전략입니다. ④ 핀테크 허브는 핀테크 기업의 성장을 지원하는 특정 지역이나 생태계를 의미하며, 일본 금융 시스템 전반의 혁신 전략과는 거리가 있습니다.</p>
+      <p>관련 시사 뉴스: 일본 금융청이 AI, 빅데이터, 블록체인 등 디지털 환경 변화에 대응하여 민간 주도로 새로운 금융 시스템을 구축하고 혁신적인 서비스를 개발하기 위한 전략적 개념으로 '네오클라우드'를 발표했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 인공지능(AI) 기술의 개발, 배포 및 사용에 있어 윤리적, 법적, 사회적 책임을 확립하고 관리하기 위한 시스템 및 프레임워크를 뜻하며, 'AI 충돌'이나 'AI 멸망론' 등 AI 관련 논의에서 중요하게 다뤄지는 개념은 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① AI 투명성</li><li>② AI 책임론</li><li>③ AI 거버넌스</li><li>④ AI 편향성</li>
+      </ul>
+      <p><strong>정답:</strong> ③ AI 거버넌스</p>
+      <p><strong>해설:</strong> 정답은 ③ AI 거버넌스입니다. AI 거버넌스는 AI 기술의 윤리적, 법적, 사회적 책임을 확립하고 관리하기 위한 시스템을 의미합니다.
+[오답해설] ① AI 투명성은 AI의 작동 원리나 결정 과정을 공개하는 것을 의미합니다. ② AI 책임론은 AI의 오작동이나 잘못된 결정에 대한 법적, 도덕적 책임을 누가 질 것인가에 대한 논의입니다. ④ AI 편향성은 AI 모델이 특정 데이터에 치우쳐 불공정한 결과를 내는 현상을 말합니다.</p>
+      <p>관련 시사 뉴스: 'AI 충돌' 아모데이·젠슨 황…"속도 조절" vs "시장에 맡겨라" 기사를 통해 AI 기술의 통제와 책임에 대한 논의가 있음을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 주식 시장에서 코스피 지수가 일정 기간 동안 특정 범위 내에서 등락을 반복하며 횡보하는 현상을 의미하는 용어로, 투자자들의 피로도를 높이는 주된 요인으로 언급되는 것은 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 블랙 스완</li><li>② 박스피</li><li>③ 서킷브레이커</li><li>④ 밴드왜건 효과</li>
+      </ul>
+      <p><strong>정답:</strong> ② 박스피</p>
+      <p><strong>해설:</strong> 정답은 ② 박스피입니다. 박스피는 코스피 지수가 일정 범위 내에서 등락을 반복하며 횡보하는 현상을 의미합니다.
+[오답해설] ① 블랙 스완은 발생 가능성이 매우 낮지만 일단 발생하면 시장에 엄청난 충격을 주는 사건을 뜻합니다. ③ 서킷브레이커는 주식시장이 과열되거나 급락할 때 시장의 충격을 완화하기 위해 주식 거래를 일시적으로 중단하는 제도입니다. ④ 밴드왜건 효과는 어떤 선택이 유행처럼 번져 다수의 사람들이 그 선택을 따르는 현상을 의미합니다.</p>
+      <p>관련 시사 뉴스: 한달째 '6000 박스피'에 갇힌 증시…호재에 목마르다 기사에서 증시의 횡보 현상을 '박스피'라는 용어로 설명하고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 주택담보대출 변동금리의 기준이 되는 COFIX(코픽스)에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행연합회가 매월 발표하며, 은행 자금조달 비용을 반영한다.</li><li>② COFIX는 잔액기준 COFIX와 신규취급액기준 COFIX로 구분된다.</li><li>③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다.</li><li>④ 은행이 고객으로부터 조달한 자금에 대해 지급하는 이자 및 가산금리 등을 종합적으로 고려하여 산출된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다.</p>
+      <p><strong>해설:</strong> 정답은 ③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다입니다. COFIX는 변동금리 대출의 기준금리로 주로 활용되며, 고정금리 대출의 기준금리는 주로 금융채 금리 등을 사용합니다.
+[오답해설] ① 은행연합회에서 매월 발표하며 은행의 실제 자금조달 비용을 반영합니다. ② COFIX는 잔액기준과 신규취급액기준 외 단기 COFIX 등으로 구분될 수 있습니다. ④ 은행이 고객으로부터 조달한 자금에 대해 지급하는 이자 및 가산금리 등을 종합적으로 고려하여 산출되는 것이 맞습니다.</p>
+      <p>관련 시사 뉴스: 주담대 변동금리 ‘숨고르기’…넉 달 연속 오르던 코픽스 동결 기사를 통해 COFIX가 주담대 변동금리의 기준임을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 은행의 여신 건전성 분류 기준 중 '요주의여신'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 채무자의 경영 내용, 재무 상태 및 미래 현금흐름에 비추어 볼 때 채무상환능력이 현저히 악화되어 손실 발생 가능성이 높은 여신을 말한다.</li><li>② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다.</li><li>③ 채무자의 상환 능력이 불확실하여 담보권을 실행하더라도 손실 발생이 예상되는 여신을 말한다.</li><li>④ 회수 불가능한 채권으로서 은행의 손실로 확정된 여신을 말한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다.</p>
+      <p><strong>해설:</strong> 정답은 ② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다입니다. 요주의여신은 연체 기간이 짧거나 채무상환능력 악화 징후가 보이는 여신으로, 아직 부실은 아니지만 관리 강화가 필요한 상태를 의미합니다.
+[오답해설] ①은 고정 이하 여신 중 회수 가능한 가치보다 채권액이 초과하여 손실이 예상되는 '회수의문' 또는 '추정손실' 여신에 가깝습니다. ③은 고정이하 여신 중 담보권을 실행해도 손실이 예상되는 '회수의문' 여신에 해당합니다. ④는 고정이하 여신 중 가장 심각한 단계로 회수 불가능하여 손실 처리되는 '추정손실' 여신을 의미합니다.</p>
+      <p>관련 시사 뉴스: 2000조 기업대출 덩달아 커진 '부실', 부실채권 15조원 …'잠재적 폭탄' 요주의여신도 16조 달해 기사들을 통해 은행의 여신 건전성 관리가 중요함을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 미국 10년물 국채금리가 '마의 5%'를 돌파하는 등 상승세가 지속될 경우, 한국 경제 및 금융 시장에 미칠 수 있는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 대출금리 상승 압력으로 작용하여 가계 및 기업의 이자 부담이 가중될 수 있다.</li><li>② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다.</li><li>③ 글로벌 유동성 축소 우려로 국내 증시 투자 심리가 위축되고 주식 시장 변동성이 확대될 수 있다.</li><li>④ 한국은행의 기준금리 인상 압박 요인으로 작용할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다.</p>
+      <p><strong>해설:</strong> 정답은 ② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다입니다. 미국 금리 상승은 상대적으로 매력적인 미국 자산으로의 자금 이동을 촉발하여 국내 외국인 투자자 자금 유출을 유발하고, 이는 원/달러 환율 상승(원화 약세) 요인으로 작용합니다.
+[오답해설] ① 미국 국채금리 상승은 국내 시장금리에도 상승 압력으로 작용하여 가계 및 기업의 이자 부담을 늘릴 수 있습니다. ③ 글로벌 자금이 미국으로 쏠리면서 국내 증시 투자 심리가 위축되고 변동성이 확대될 수 있습니다. ④ 미국 금리 상승은 국내 금리 인상 압박 요인으로 작용하여 한국은행이 기준금리 인상을 고려하게 만들 수 있습니다.</p>
+      <p>관련 시사 뉴스: 美 10년물 국채금리 '마의 5%' 뚫렸다 기사를 통해 미국 국채금리 상승이 주요 경제 이슈임을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 정부가 혁신 성장과 일자리 창출을 지원하기 위해 추진하는 '생산적 금융'의 개념 및 목표와 가장 거리가 먼 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기술력 있는 중소기업과 스타트업에 대한 자금 공급을 확대하여 혁신 성장을 지원한다.</li><li>② 미래 성장 동력 확보를 위해 신성장 산업 분야에 대한 투자를 유도한다.</li><li>③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다.</li><li>④ 민간 자본이 생산적인 투자로 이어질 수 있도록 정책금융 지원을 연계한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다.</p>
+      <p><strong>해설:</strong> 정답은 ③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다입니다. 생산적 금융은 자금이 부동산 투기나 단기성 투자와 같은 비생산적인 부문이 아닌, 혁신 성장과 일자리 창출에 기여하는 생산적인 부문으로 흐르도록 유도하는 것을 목표로 합니다.
+[오답해설] ① 생산적 금융은 기술력 있는 중소기업과 스타트업에 대한 자금 공급을 확대하여 혁신 성장을 지원하는 것을 목표로 합니다. ② 미래 성장 동력 확보를 위해 신성장 산업 분야에 대한 투자를 유도하는 것은 생산적 금융의 중요한 목표 중 하나입니다. ④ 민간 자본이 생산적인 투자로 이어질 수 있도록 정책금융 지원을 연계하는 것은 생산적 금융의 주요 전략입니다.</p>
+      <p>관련 시사 뉴스: [포토] 생산적 금융에 272조원 공급 기사를 통해 생산적 금융 정책이 추진되고 있음을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 통화량은 늘었으나 은행의 수시입출식 예금이 역대 최대 감소를 기록하는 등 수신 구조에 변화가 나타나고 있습니다. 이러한 현상이 은행의 수신 활동에 미칠 수 있는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다.</li><li>② 저비용성 예금 감소로 인해 은행의 순이자마진(NIM)이 개선될 수 있다.</li><li>③ 고객들이 장기 예금 상품으로 이동하여 은행의 대출 자산 운용 유연성이 증대된다.</li><li>④ 은행은 단기 자금 조달 의존도를 줄이고 안정적인 장기 조달 비중을 확대할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다.</p>
+      <p><strong>해설:</strong> 정답은 ① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다입니다. 수시입출식 예금은 은행의 핵심 예금이자 저비용성 자금 조달원인데, 이것이 감소하면 은행은 고비용성 자금 조달에 의존해야 하므로 조달 비용이 상승하고 유동성 관리에 부담을 느끼게 됩니다.
+[오답해설] ② 저비용성 예금 감소는 은행의 순이자마진(NIM)을 악화시킬 수 있습니다. ③ 수시입출식 예금 감소는 단기 유동성이 줄어드는 것이므로 대출 자산 운용의 유연성을 떨어뜨릴 수 있습니다. ④ 수시입출식 예금 감소는 단기 자금 조달에 어려움을 가중시키거나 고비용 조달에 의존하게 할 수 있어 안정적인 장기 조달 비중 확대와는 상반된 압력으로 작용합니다.</p>
+      <p>관련 시사 뉴스: 7월 통화량 12.7조 늘었지만…수시입출식 예금은 역대 최대 감소 기사를 통해 은행의 수신 구조 변화를 확인할 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 원화 가치 상승(원/달러 환율 하락)이 국내 물가에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 수출 기업의 가격 경쟁력이 강화되어 수출 물량이 증가한다.</li><li>② 수입품 가격이 상승하여 국내 소비자 물가 상승 압력으로 작용한다.</li><li>③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다.</li><li>④ 외국인 관광객에게 국내 물가가 상대적으로 비싸게 느껴져 관광 수입이 감소할 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다.</p>
+      <p><strong>해설:</strong> 정답은 ③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다입니다. 원화 가치 상승(원/달러 환율 하락)은 달러 대비 원화의 구매력이 높아져 수입품을 더 싸게 들여올 수 있게 하므로 수입 물가를 하락시킵니다.
+[오답해설] ① 수출 기업의 가격 경쟁력은 원화 가치 하락(환율 상승) 시 강화됩니다. ② 수입품 가격은 원화 가치 상승 시 하락하여 국내 소비자 물가 하락 압력으로 작용합니다. ④ 외국인 관광객에게 국내 물가는 원화 가치 상승 시 상대적으로 저렴해지므로 관광 수입이 증가할 가능성이 있습니다.</p>
+      <p>관련 시사 뉴스: 원화값 오르자 … 수입물가 3개월째 하락 기사를 통해 원화 가치 상승이 수입 물가에 영향을 미침을 알 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-16</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2313,"category":"시사금융용어","question":"MZ세대가 투자에 적극적으로 뛰어들며 주식, 가상자산 등 다양한 자산에 과감히 투자하는 현상을 일컬어, 기존의 월스트리트에 빗대어 부르는 신조어는?","answer":"③ 욜스트리트","explanation":"욜스트리트는 MZ세대가 '현재를 즐기자(YOLO)'는 가치관을 바탕으로 금융시장에 적극적으로 참여하며 주도하는 현상을 지칭하는 신조어입니다. [오답해설] ① 동학개미운동은 국내 주식 시장에 개인 투자자들이 대거 유입된 현상을 의미하며, 특정 세대에 한정되지 않습니다. ② 서학개미는 국내 투자자들이 해외 주식 시장에 투자하는 현상을 의미합니다. ④ 영끌 투자는 '영혼까지 끌어모아 투자한다'는 의미로, MZ세대가 보이는 투자 방식 중 하나이지만, 특정 세대가 주도하는 금융 시장의 '거리'를 지칭하는 용어는 아닙니다.","news_context":"MZ세대가 주식, 가상자산 등 다양한 자산에 과감히 투자하며 금융시장의 주역으로 떠오르는 현상을 기존의 월스트리트에 빗대어 '욜스트리트'라고 부릅니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431768","options":["① 동학개미운동","② 서학개미","③ 욜스트리트","④ 영끌 투자"]},{"id":2314,"category":"시사금융용어","question":"일본 금융당국이 디지털 환경 변화에 대응하여 민간 주도로 새로운 금융 시스템을 구축하기 위해 제안한 전략적 개념으로, 클라우드, AI, 빅데이터, 블록체인 등 신기술을 활용하여 금융기관과 핀테크 기업 간 협력을 통한 혁신적인 서비스 개발을 목표로 하는 용어는?","answer":"② 네오클라우드","explanation":"네오클라우드는 일본 금융청이 발표한 새로운 금융 시장 전략으로, 클라우드, AI 등 신기술을 활용해 금융기관과 핀테크의 협력을 통해 혁신적인 금융 서비스를 구축하는 것을 목표로 합니다. [오답해설] ① 클라우드 뱅킹은 클라우드 기술을 활용한 은행 서비스를 의미하며, 일본 금융청의 포괄적인 금융 전략을 지칭하는 용어는 아닙니다. ③ 오픈 뱅킹은 금융 데이터 공유를 통해 다양한 금융 서비스의 상호 운용성을 높이는 개념이지만, 네오클라우드는 클라우드 및 다른 신기술 활용, 민간 주도의 시스템 구축 등 더 넓은 범위의 일본 금융 전략입니다. ④ 핀테크 허브는 핀테크 기업의 성장을 지원하는 특정 지역이나 생태계를 의미하며, 일본 금융 시스템 전반의 혁신 전략과는 거리가 있습니다.","news_context":"일본 금융청이 AI, 빅데이터, 블록체인 등 디지털 환경 변화에 대응하여 민간 주도로 새로운 금융 시스템을 구축하고 혁신적인 서비스를 개발하기 위한 전략적 개념으로 '네오클라우드'를 발표했습니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431567","options":["① 클라우드 뱅킹","② 네오클라우드","③ 오픈 뱅킹","④ 핀테크 허브"]},{"id":2315,"category":"금융용어","question":"인공지능(AI) 기술의 개발, 배포 및 사용에 있어 윤리적, 법적, 사회적 책임을 확립하고 관리하기 위한 시스템 및 프레임워크를 뜻하며, 'AI 충돌'이나 'AI 멸망론' 등 AI 관련 논의에서 중요하게 다뤄지는 개념은 무엇인가요?","answer":"③ AI 거버넌스","explanation":"정답은 ③ AI 거버넌스입니다. AI 거버넌스는 AI 기술의 윤리적, 법적, 사회적 책임을 확립하고 관리하기 위한 시스템을 의미합니다.\n[오답해설] ① AI 투명성은 AI의 작동 원리나 결정 과정을 공개하는 것을 의미합니다. ② AI 책임론은 AI의 오작동이나 잘못된 결정에 대한 법적, 도덕적 책임을 누가 질 것인가에 대한 논의입니다. ④ AI 편향성은 AI 모델이 특정 데이터에 치우쳐 불공정한 결과를 내는 현상을 말합니다.","news_context":"'AI 충돌' 아모데이·젠슨 황…\"속도 조절\" vs \"시장에 맡겨라\" 기사를 통해 AI 기술의 통제와 책임에 대한 논의가 있음을 알 수 있습니다.","news_url":"","options":["① AI 투명성","② AI 책임론","③ AI 거버넌스","④ AI 편향성"]},{"id":2316,"category":"금융용어","question":"주식 시장에서 코스피 지수가 일정 기간 동안 특정 범위 내에서 등락을 반복하며 횡보하는 현상을 의미하는 용어로, 투자자들의 피로도를 높이는 주된 요인으로 언급되는 것은 무엇인가요?","answer":"② 박스피","explanation":"정답은 ② 박스피입니다. 박스피는 코스피 지수가 일정 범위 내에서 등락을 반복하며 횡보하는 현상을 의미합니다.\n[오답해설] ① 블랙 스완은 발생 가능성이 매우 낮지만 일단 발생하면 시장에 엄청난 충격을 주는 사건을 뜻합니다. ③ 서킷브레이커는 주식시장이 과열되거나 급락할 때 시장의 충격을 완화하기 위해 주식 거래를 일시적으로 중단하는 제도입니다. ④ 밴드왜건 효과는 어떤 선택이 유행처럼 번져 다수의 사람들이 그 선택을 따르는 현상을 의미합니다.","news_context":"한달째 '6000 박스피'에 갇힌 증시…호재에 목마르다 기사에서 증시의 횡보 현상을 '박스피'라는 용어로 설명하고 있습니다.","news_url":"","options":["① 블랙 스완","② 박스피","③ 서킷브레이커","④ 밴드왜건 효과"]},{"id":2317,"category":"세부지식","question":"주택담보대출 변동금리의 기준이 되는 COFIX(코픽스)에 대한 설명으로 옳지 않은 것은?","answer":"③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다.","explanation":"정답은 ③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다입니다. COFIX는 변동금리 대출의 기준금리로 주로 활용되며, 고정금리 대출의 기준금리는 주로 금융채 금리 등을 사용합니다.\n[오답해설] ① 은행연합회에서 매월 발표하며 은행의 실제 자금조달 비용을 반영합니다. ② COFIX는 잔액기준과 신규취급액기준 외 단기 COFIX 등으로 구분될 수 있습니다. ④ 은행이 고객으로부터 조달한 자금에 대해 지급하는 이자 및 가산금리 등을 종합적으로 고려하여 산출되는 것이 맞습니다.","news_context":"주담대 변동금리 ‘숨고르기’…넉 달 연속 오르던 코픽스 동결 기사를 통해 COFIX가 주담대 변동금리의 기준임을 알 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12153166","options":["① 은행연합회가 매월 발표하며, 은행 자금조달 비용을 반영한다.","② COFIX는 잔액기준 COFIX와 신규취급액기준 COFIX로 구분된다.","③ 주로 고정금리 대출 상품의 기준금리로 활용되어 금리 변동 위험을 줄인다.","④ 은행이 고객으로부터 조달한 자금에 대해 지급하는 이자 및 가산금리 등을 종합적으로 고려하여 산출된다."]},{"id":2318,"category":"세부지식","question":"은행의 여신 건전성 분류 기준 중 '요주의여신'에 대한 설명으로 옳은 것은?","answer":"② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다.","explanation":"정답은 ② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다입니다. 요주의여신은 연체 기간이 짧거나 채무상환능력 악화 징후가 보이는 여신으로, 아직 부실은 아니지만 관리 강화가 필요한 상태를 의미합니다.\n[오답해설] ①은 고정 이하 여신 중 회수 가능한 가치보다 채권액이 초과하여 손실이 예상되는 '회수의문' 또는 '추정손실' 여신에 가깝습니다. ③은 고정이하 여신 중 담보권을 실행해도 손실이 예상되는 '회수의문' 여신에 해당합니다. ④는 고정이하 여신 중 가장 심각한 단계로 회수 불가능하여 손실 처리되는 '추정손실' 여신을 의미합니다.","news_context":"2000조 기업대출 덩달아 커진 '부실', 부실채권 15조원 …'잠재적 폭탄' 요주의여신도 16조 달해 기사들을 통해 은행의 여신 건전성 관리가 중요함을 알 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12153406","options":["① 채무자의 경영 내용, 재무 상태 및 미래 현금흐름에 비추어 볼 때 채무상환능력이 현저히 악화되어 손실 발생 가능성이 높은 여신을 말한다.","② 현재는 정상적인 채무상환이 이루어지고 있으나, 향후 채무상환능력 악화가 우려되어 특별한 관리가 필요한 여신을 말한다.","③ 채무자의 상환 능력이 불확실하여 담보권을 실행하더라도 손실 발생이 예상되는 여신을 말한다.","④ 회수 불가능한 채권으로서 은행의 손실로 확정된 여신을 말한다."]},{"id":2319,"category":"시사","question":"미국 10년물 국채금리가 '마의 5%'를 돌파하는 등 상승세가 지속될 경우, 한국 경제 및 금융 시장에 미칠 수 있는 영향으로 옳지 않은 것은?","answer":"② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다.","explanation":"정답은 ② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다입니다. 미국 금리 상승은 상대적으로 매력적인 미국 자산으로의 자금 이동을 촉발하여 국내 외국인 투자자 자금 유출을 유발하고, 이는 원/달러 환율 상승(원화 약세) 요인으로 작용합니다.\n[오답해설] ① 미국 국채금리 상승은 국내 시장금리에도 상승 압력으로 작용하여 가계 및 기업의 이자 부담을 늘릴 수 있습니다. ③ 글로벌 자금이 미국으로 쏠리면서 국내 증시 투자 심리가 위축되고 변동성이 확대될 수 있습니다. ④ 미국 금리 상승은 국내 금리 인상 압박 요인으로 작용하여 한국은행이 기준금리 인상을 고려하게 만들 수 있습니다.","news_context":"美 10년물 국채금리 '마의 5%' 뚫렸다 기사를 통해 미국 국채금리 상승이 주요 경제 이슈임을 알 수 있습니다.","news_url":"","options":["① 국내 대출금리 상승 압력으로 작용하여 가계 및 기업의 이자 부담이 가중될 수 있다.","② 외국인 투자자 자금 이탈을 유발하여 원/달러 환율이 하락(원화 강세)할 수 있다.","③ 글로벌 유동성 축소 우려로 국내 증시 투자 심리가 위축되고 주식 시장 변동성이 확대될 수 있다.","④ 한국은행의 기준금리 인상 압박 요인으로 작용할 수 있다."]},{"id":2320,"category":"시사","question":"정부가 혁신 성장과 일자리 창출을 지원하기 위해 추진하는 '생산적 금융'의 개념 및 목표와 가장 거리가 먼 것은?","answer":"③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다.","explanation":"정답은 ③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다입니다. 생산적 금융은 자금이 부동산 투기나 단기성 투자와 같은 비생산적인 부문이 아닌, 혁신 성장과 일자리 창출에 기여하는 생산적인 부문으로 흐르도록 유도하는 것을 목표로 합니다.\n[오답해설] ① 생산적 금융은 기술력 있는 중소기업과 스타트업에 대한 자금 공급을 확대하여 혁신 성장을 지원하는 것을 목표로 합니다. ② 미래 성장 동력 확보를 위해 신성장 산업 분야에 대한 투자를 유도하는 것은 생산적 금융의 중요한 목표 중 하나입니다. ④ 민간 자본이 생산적인 투자로 이어질 수 있도록 정책금융 지원을 연계하는 것은 생산적 금융의 주요 전략입니다.","news_context":"[포토] 생산적 금융에 272조원 공급 기사를 통해 생산적 금융 정책이 추진되고 있음을 알 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12153477","options":["① 기술력 있는 중소기업과 스타트업에 대한 자금 공급을 확대하여 혁신 성장을 지원한다.","② 미래 성장 동력 확보를 위해 신성장 산업 분야에 대한 투자를 유도한다.","③ 자금의 생산적인 흐름을 저해하는 비생산적인 부문으로의 자금 쏠림 현상을 심화시킨다.","④ 민간 자본이 생산적인 투자로 이어질 수 있도록 정책금융 지원을 연계한다."]},{"id":2321,"category":"시사","question":"최근 통화량은 늘었으나 은행의 수시입출식 예금이 역대 최대 감소를 기록하는 등 수신 구조에 변화가 나타나고 있습니다. 이러한 현상이 은행의 수신 활동에 미칠 수 있는 영향으로 가장 적절한 것은?","answer":"① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다.","explanation":"정답은 ① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다입니다. 수시입출식 예금은 은행의 핵심 예금이자 저비용성 자금 조달원인데, 이것이 감소하면 은행은 고비용성 자금 조달에 의존해야 하므로 조달 비용이 상승하고 유동성 관리에 부담을 느끼게 됩니다.\n[오답해설] ② 저비용성 예금 감소는 은행의 순이자마진(NIM)을 악화시킬 수 있습니다. ③ 수시입출식 예금 감소는 단기 유동성이 줄어드는 것이므로 대출 자산 운용의 유연성을 떨어뜨릴 수 있습니다. ④ 수시입출식 예금 감소는 단기 자금 조달에 어려움을 가중시키거나 고비용 조달에 의존하게 할 수 있어 안정적인 장기 조달 비중 확대와는 상반된 압력으로 작용합니다.","news_context":"7월 통화량 12.7조 늘었지만…수시입출식 예금은 역대 최대 감소 기사를 통해 은행의 수신 구조 변화를 확인할 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12153050","options":["① 핵심 예금 감소로 조달 비용이 상승하고 유동성 관리에 부담이 될 수 있다.","② 저비용성 예금 감소로 인해 은행의 순이자마진(NIM)이 개선될 수 있다.","③ 고객들이 장기 예금 상품으로 이동하여 은행의 대출 자산 운용 유연성이 증대된다.","④ 은행은 단기 자금 조달 의존도를 줄이고 안정적인 장기 조달 비중을 확대할 수 있다."]},{"id":2322,"category":"시사","question":"원화 가치 상승(원/달러 환율 하락)이 국내 물가에 미치는 영향으로 가장 적절한 것은?","answer":"③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다.","explanation":"정답은 ③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다입니다. 원화 가치 상승(원/달러 환율 하락)은 달러 대비 원화의 구매력이 높아져 수입품을 더 싸게 들여올 수 있게 하므로 수입 물가를 하락시킵니다.\n[오답해설] ① 수출 기업의 가격 경쟁력은 원화 가치 하락(환율 상승) 시 강화됩니다. ② 수입품 가격은 원화 가치 상승 시 하락하여 국내 소비자 물가 하락 압력으로 작용합니다. ④ 외국인 관광객에게 국내 물가는 원화 가치 상승 시 상대적으로 저렴해지므로 관광 수입이 증가할 가능성이 있습니다.","news_context":"원화값 오르자 … 수입물가 3개월째 하락 기사를 통해 원화 가치 상승이 수입 물가에 영향을 미침을 알 수 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12153424","options":["① 수출 기업의 가격 경쟁력이 강화되어 수출 물량이 증가한다.","② 수입품 가격이 상승하여 국내 소비자 물가 상승 압력으로 작용한다.","③ 해외로부터 들여오는 원자재 및 중간재 가격이 하락하여 수입 물가 하락에 기여한다.","④ 외국인 관광객에게 국내 물가가 상대적으로 비싸게 느껴져 관광 수입이 감소할 수 있다."]},{"id":93,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
