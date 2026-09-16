@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-17 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-17 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-17 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은? 
+
+'현재의 행복을 중시하며 주식 등 투자에 적극적으로 참여하는 젊은 세대를 지칭하는 신조어. 'YOLO(You Only Live Once)'와 'Wall Street'의 합성어로, 특히 빚을 내서 투자하는 '빚투' 성향을 보이기도 합니다.'</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① MZ투자족</li><li>② 동학개미</li><li>③ 욜스트리트</li><li>④ 영끌투자</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 욜스트리트</p>
+      <p><strong>해설:</strong> 욜스트리트는 현재의 행복을 중시하며 주식 등 투자에 적극적으로 참여하는 젊은 세대를 일컫는 신조어입니다. [오답해설] ① MZ투자족은 MZ세대가 투자하는 넓은 의미의 용어이지만, 욜로 라이프스타일과 결부된 '욜스트리트'의 의미를 모두 포함하지는 않습니다. ② 동학개미는 2020년 코로나19 팬데믹 이후 국내 주식시장에 대거 유입된 개인 투자자들을 지칭하는 특정 시기 및 현상에 초점을 맞춘 용어입니다. ④ 영끌투자는 '영혼까지 끌어모아 투자한다'는 의미로, 투자 방식을 묘사하는 말이며 특정 세대나 신조어를 지칭하는 용어는 아닙니다.</p>
+      <p>관련 시사 뉴스: 현재의 행복을 중시하며 주식 등 투자에 적극 참여하는 젊은 세대를 지칭하는 신조어입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 금융용어로 가장 적절한 것은? 
+
+'AI 기술이 특정 전문가나 대기업만이 아닌, 일반 대중, 중소기업, 스타트업 등 누구나 쉽게 접근하고 활용할 수 있도록 확산되는 현상 또는 그러한 환경을 의미합니다.'</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 초거대 AI</li><li>② AI 전환</li><li>③ AI 민주화</li><li>④ 모두의 AI</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 모두의 AI</p>
+      <p><strong>해설:</strong> 모두의 AI는 AI 기술이 특정 전문가나 대기업을 넘어 누구나 쉽게 접근하고 활용할 수 있도록 확산되는 현상을 의미합니다. [오답해설] ① 초거대 AI는 막대한 데이터를 학습해 인간처럼 사고하고 추론하는 대규모 AI 모델을 지칭합니다. ② AI 전환은 기업이나 산업 전반에서 AI 기술을 도입하고 활용하여 비즈니스 모델이나 운영 방식을 변화시키는 과정을 의미합니다. ③ AI 민주화는 AI 기술의 접근성과 활용도를 높여 소수 독점이 아닌 모두가 혜택을 누리게 하는 개념으로 '모두의 AI'와 맥락을 같이하나, 기사에서 제시된 용어는 '모두의 AI'입니다.</p>
+      <p>관련 시사 뉴스: AI 기술이 특정 전문가나 대기업뿐만 아니라 일반 대중과 중소기업도 쉽게 접근하고 활용할 수 있도록 확산되는 현상입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 통화정책에서 물가 안정을 최우선으로 하여 금리 인상이나 통화량 축소 등 긴축적인 정책을 선호하는 입장을 일컫는 용어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 비둘기파</li><li>② 매파</li><li>③ 중립파</li><li>④ 온건파</li>
+      </ul>
+      <p><strong>정답:</strong> ② 매파</p>
+      <p><strong>해설:</strong> 매파는 물가 안정을 위해 긴축 통화정책을 선호하는 입장을 말합니다. [오답해설] ① 비둘기파는 경제 성장과 고용 안정을 중시하며 완화적 통화정책을 선호하는 입장입니다. ③ 중립파는 시장의 흐름을 따르며 특별한 방향성 없이 상황에 맞춰 통화정책을 결정하는 입장입니다. ④ 온건파는 급진적인 정책 변화보다는 점진적이고 신중한 접근을 선호하는 입장을 포괄적으로 이릅니다.</p>
+      <p>관련 시사 뉴스: 美 연준 워시의 매파적 발언과 기준금리 인상 소식이 주요 뉴스에서 반복적으로 언급되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 환율 변동을 이용하여 이익을 얻는 재테크 방식을 일컫는 용어는 무엇인가요?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 스와프 거래</li><li>② 차익거래</li><li>③ 환테크</li><li>④ 헤지 거래</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 환테크</p>
+      <p><strong>해설:</strong> 환테크는 환율 변동을 예측하여 외화 자산에 투자함으로써 수익을 추구하는 재테크 방식입니다. [오답해설] ① 스와프 거래는 서로 다른 종류의 자산이나 부채에서 발생하는 현금 흐름을 일정 기간 동안 교환하기로 약정하는 금융 계약입니다. ② 차익거래는 가격 불균형을 이용하여 위험 없이 수익을 얻는 거래를 의미하며, 환율 차이를 이용할 수도 있지만 더 넓은 개념입니다. ④ 헤지 거래는 환율 변동으로 인한 위험을 회피하기 위해 반대 포지션을 취하는 거래를 말합니다.</p>
+      <p>관련 시사 뉴스: 엔화예금으로 환테크에 나서는 투자자들이 늘고 있다는 뉴스가 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 예금자보호 제도에 대한 설명 중 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 포함하여 보호한다.</li><li>② 예금자보호는 모든 금융기관에 예치된 예금에 대해 무조건 적용된다.</li><li>③ 보호 대상 금융기관이 파산할 경우, 예금자는 즉시 보호 한도 내에서 예금을 돌려받을 수 있다.</li><li>④ 예금자보호 한도는 원금에만 적용되며, 이자는 보호 대상에서 제외된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 포함하여 보호한다.</p>
+      <p><strong>해설:</strong> 우리나라 예금자보호법에 따르면 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 합하여 보호합니다. [오답해설] ② 예금자보호는 예금보험공사가 정한 보호 대상 금융기관(은행, 저축은행, 증권사 등)의 예금에 한하여 적용되며, 모든 금융기관에 무조건 적용되는 것은 아닙니다. ③ 보호 대상 금융기관이 파산할 경우, 예금자는 예금보험공사의 심사 과정을 거쳐 보호 한도 내에서 예금을 지급받게 되며, 이는 즉시 이루어지는 것은 아닙니다. ④ 예금자보호 한도 5천만원은 원금뿐만 아니라 소정의 이자까지 포함한 금액입니다.</p>
+      <p>관련 시사 뉴스: 예금자보호 제도와 관련하여 저축은행의 '쪼개기 예금' 현상에 대한 기사가 언급되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 청년미래적금의 주요 특징으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 만 19세 이상 34세 이하 청년만 가입할 수 있다.</li><li>② 가입 시 소득 기준을 충족해야 한다.</li><li>③ 가입 기간은 무조건 최소 3년 이상으로 설정된다.</li><li>④ 비과세 혜택과 정부 기여금을 지원받을 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 가입 기간은 무조건 최소 3년 이상으로 설정된다.</p>
+      <p><strong>해설:</strong> 청년미래적금의 가입 기간은 일반적으로 2년에서 5년 사이에서 가입자가 선택할 수 있으며, 무조건 최소 3년 이상으로만 설정되는 것은 아닙니다. [오답해설] ① 청년미래적금은 만 19세 이상 34세 이하의 청년을 대상으로 하는 상품입니다. ② 청년미래적금은 가입 시 정해진 소득 기준(예: 총급여 7,500만원 이하, 종합소득 6,300만원 이하 등)을 충족해야 합니다. ④ 청년미래적금은 비과세 혜택과 소득 구간에 따른 정부 기여금 지원이 주요 특징입니다.</p>
+      <p>관련 시사 뉴스: 청년미래적금 2차 모집 소식이 전해져, 청년층 금융 상품에 대한 관심이 높아지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 가업상속공제 제도 개편 논의에서 핵심적으로 다루어지는 사항은 무엇인가요?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 피상속인의 사업 영위 기간 확대</li><li>② 상속인의 자산 보유 한도 축소</li><li>③ 공제 대상 업종의 대폭 제한</li><li>④ 가업상속 시 주식 매각 금지 기간 단축</li>
+      </ul>
+      <p><strong>정답:</strong> ① 피상속인의 사업 영위 기간 확대</p>
+      <p><strong>해설:</strong> 현재 가업상속공제 개편 논의에서는 '30년 경영'과 같이 피상속인의 사업 영위 기간 요건을 강화하는 방안이 핵심적으로 다루어져 공제 대상 축소 우려가 제기되고 있습니다. [오답해설] ② 상속인의 자산 보유 한도 축소는 가업상속공제의 주요 논의 내용은 아닙니다. ③ 공제 대상 업종은 현행법상 제한이 있으나, 대폭적인 제한보다는 공제 문턱의 현실화가 주로 논의됩니다. ④ 가업상속 후 주식 매각 금지 기간(사후 관리 요건)은 현행 제도의 중요한 부분이며, 이를 단축하는 방향의 논의는 활발하지 않습니다.</p>
+      <p>관련 시사 뉴스: 가업상속공제 이대로면 90% 탈락과 같은 헤드라인에서 제도 개편에 대한 우려가 나타났습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 미국 연방준비제도(Fed)의 기준금리 인상이 한국 경제와 금융 시장에 미치는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 한미 간 금리 차 확대 시 외국인 자본 유출 가능성이 증가할 수 있다.</li><li>② 국내 원화 가치 상승 압력으로 작용하여 수출 기업에 유리할 수 있다.</li><li>③ 국내 시중 금리 인상 압력이 가중되어 가계 및 기업의 대출 부담이 증가할 수 있다.</li><li>④ 채권 금리 상승으로 이어져 채권 시장에 부정적인 영향을 미칠 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 국내 원화 가치 상승 압력으로 작용하여 수출 기업에 유리할 수 있다.</p>
+      <p><strong>해설:</strong> 미국 기준금리 인상으로 한미 금리 차이가 확대되면 외국인 자본 유출 우려가 커지고, 원화 가치 하락(환율 상승) 압력이 발생하여 수출 기업에는 단기적으로 유리할 수 있지만, 이는 원화 가치 상승 압력으로 작용하는 것은 아닙니다. [오답해설] ① 한미 금리 차이가 확대되면 더 높은 수익률을 찾아 외국인 자본이 미국으로 이동할 가능성이 커집니다. ③ 국내 시중 은행들도 자본 유출 방지 및 조달 비용 상승으로 인해 대출 금리를 인상할 수 있어 가계와 기업의 대출 부담이 가중됩니다. ④ 기준금리 인상은 일반적으로 시장 금리 전반의 상승을 유도하며, 이는 채권 가격 하락(채권 금리 상승)으로 이어져 채권 시장에 부정적인 영향을 미칠 수 있습니다.</p>
+      <p>관련 시사 뉴스: 미국 연준의 기준금리 인상 결정이 연이어 보도되며 한국 경제에 미칠 영향에 관심이 집중되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 기준금리 인상과 같은 시장 변화가 은행의 수신 환경에 미치는 영향으로 옳은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 기준금리 인상은 은행의 예금 유치 경쟁을 완화시킨다.</li><li>② 은행의 자금 조달 방식에서 은행채 발행 비중이 감소하고 예금 비중이 증가하는 경향을 보인다.</li><li>③ 기준금리 인상기에는 은행이 자금을 조달하기 위해 예금 금리 외에 은행채 발행을 늘릴 유인이 커진다.</li><li>④ 높은 금리로 인해 고객들이 은행에 예치하는 자금이 급격히 늘어나 수신 잔액이 안정적으로 증가한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 기준금리 인상기에는 은행이 자금을 조달하기 위해 예금 금리 외에 은행채 발행을 늘릴 유인이 커진다.</p>
+      <p><strong>해설:</strong> 기준금리가 인상되면 은행은 예금 금리 인상 등으로 조달 비용이 증가하거나, 예금 이탈 우려로 인해 은행채 발행을 통해 자금을 조달하는 비중을 늘릴 유인이 커집니다. [오답해설] ① 기준금리 인상기에는 고객 자금 유치를 위해 은행 간 예금 금리 경쟁이 심화될 수 있습니다. ② 기사에서 보듯이 예금은 줄고 은행채가 늘어나는 등 자금 조달 방식에서 은행채 발행 비중이 증가하는 경향을 보일 수 있습니다. ④ 높은 금리는 고객의 이자 수익을 높이지만, 다른 투자처를 찾거나 기존 대출 상환에 우선순위를 두면서 반드시 은행 수신 잔액이 급격히 늘어나지는 않을 수 있으며, 자금 이탈 우려도 존재합니다.</p>
+      <p>관련 시사 뉴스: 예금은 줄고 은행채는 늘어나는 등 변화한 은행의 수신 환경에 대한 기사가 게재되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 미국 연방준비제도(Fed)의 독립성과 관련된 설명 중 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① Fed의 독립성은 경제 성장률을 최대화하는 통화 정책을 우선적으로 추진하는 데 있다.</li><li>② Fed는 의회의 직접적인 지시를 받아 금리 정책을 결정함으로써 독립성을 유지한다.</li><li>③ Fed의 독립성은 정치적 압력으로부터 자유롭게 물가 안정과 최대 고용이라는 이중 책무를 효과적으로 수행하기 위한 원칙이다.</li><li>④ Fed 의장은 정부의 재정 정책 방향에 맞춰 통화 정책을 조정함으로써 경제 안정에 기여한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ Fed의 독립성은 정치적 압력으로부터 자유롭게 물가 안정과 최대 고용이라는 이중 책무를 효과적으로 수행하기 위한 원칙이다.</p>
+      <p><strong>해설:</strong> Fed의 독립성은 정치적 영향력에서 벗어나 물가 안정과 최대 고용이라는 이중 목표를 달성하기 위한 통화정책을 자율적으로 결정하고 집행할 수 있는 권한을 의미합니다. [오답해설] ① Fed의 목표는 경제 성장률 최대화가 아닌 물가 안정과 최대 고용입니다. ② Fed는 의회의 직접적인 지시를 받는 기관이 아니며, 이러한 지시는 독립성을 침해하는 행위로 간주됩니다. ④ Fed는 정부의 재정 정책과 협력하지만, 통화 정책을 재정 정책에 무조건적으로 맞춰 조정하는 것은 독립성 훼손으로 볼 수 있습니다.</p>
+      <p>관련 시사 뉴스: 워시 의장이 연준의 독립성을 강조하며 물가 안정 달성을 위해 각자의 영역을 지켜야 한다고 발언했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-17</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2323,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은? \n\n'현재의 행복을 중시하며 주식 등 투자에 적극적으로 참여하는 젊은 세대를 지칭하는 신조어. 'YOLO(You Only Live Once)'와 'Wall Street'의 합성어로, 특히 빚을 내서 투자하는 '빚투' 성향을 보이기도 합니다.'","answer":"③ 욜스트리트","explanation":"욜스트리트는 현재의 행복을 중시하며 주식 등 투자에 적극적으로 참여하는 젊은 세대를 일컫는 신조어입니다. [오답해설] ① MZ투자족은 MZ세대가 투자하는 넓은 의미의 용어이지만, 욜로 라이프스타일과 결부된 '욜스트리트'의 의미를 모두 포함하지는 않습니다. ② 동학개미는 2020년 코로나19 팬데믹 이후 국내 주식시장에 대거 유입된 개인 투자자들을 지칭하는 특정 시기 및 현상에 초점을 맞춘 용어입니다. ④ 영끌투자는 '영혼까지 끌어모아 투자한다'는 의미로, 투자 방식을 묘사하는 말이며 특정 세대나 신조어를 지칭하는 용어는 아닙니다.","news_context":"현재의 행복을 중시하며 주식 등 투자에 적극 참여하는 젊은 세대를 지칭하는 신조어입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431768","options":["① MZ투자족","② 동학개미","③ 욜스트리트","④ 영끌투자"]},{"id":2324,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은? \n\n'AI 기술이 특정 전문가나 대기업만이 아닌, 일반 대중, 중소기업, 스타트업 등 누구나 쉽게 접근하고 활용할 수 있도록 확산되는 현상 또는 그러한 환경을 의미합니다.'","answer":"④ 모두의 AI","explanation":"모두의 AI는 AI 기술이 특정 전문가나 대기업을 넘어 누구나 쉽게 접근하고 활용할 수 있도록 확산되는 현상을 의미합니다. [오답해설] ① 초거대 AI는 막대한 데이터를 학습해 인간처럼 사고하고 추론하는 대규모 AI 모델을 지칭합니다. ② AI 전환은 기업이나 산업 전반에서 AI 기술을 도입하고 활용하여 비즈니스 모델이나 운영 방식을 변화시키는 과정을 의미합니다. ③ AI 민주화는 AI 기술의 접근성과 활용도를 높여 소수 독점이 아닌 모두가 혜택을 누리게 하는 개념으로 '모두의 AI'와 맥락을 같이하나, 기사에서 제시된 용어는 '모두의 AI'입니다.","news_context":"AI 기술이 특정 전문가나 대기업뿐만 아니라 일반 대중과 중소기업도 쉽게 접근하고 활용할 수 있도록 확산되는 현상입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4432740","options":["① 초거대 AI","② AI 전환","③ AI 민주화","④ 모두의 AI"]},{"id":2325,"category":"금융용어","question":"통화정책에서 물가 안정을 최우선으로 하여 금리 인상이나 통화량 축소 등 긴축적인 정책을 선호하는 입장을 일컫는 용어는 무엇인가요?","answer":"② 매파","explanation":"매파는 물가 안정을 위해 긴축 통화정책을 선호하는 입장을 말합니다. [오답해설] ① 비둘기파는 경제 성장과 고용 안정을 중시하며 완화적 통화정책을 선호하는 입장입니다. ③ 중립파는 시장의 흐름을 따르며 특별한 방향성 없이 상황에 맞춰 통화정책을 결정하는 입장입니다. ④ 온건파는 급진적인 정책 변화보다는 점진적이고 신중한 접근을 선호하는 입장을 포괄적으로 이릅니다.","news_context":"美 연준 워시의 매파적 발언과 기준금리 인상 소식이 주요 뉴스에서 반복적으로 언급되었습니다.","news_url":"","options":["① 비둘기파","② 매파","③ 중립파","④ 온건파"]},{"id":2326,"category":"금융용어","question":"환율 변동을 이용하여 이익을 얻는 재테크 방식을 일컫는 용어는 무엇인가요?","answer":"③ 환테크","explanation":"환테크는 환율 변동을 예측하여 외화 자산에 투자함으로써 수익을 추구하는 재테크 방식입니다. [오답해설] ① 스와프 거래는 서로 다른 종류의 자산이나 부채에서 발생하는 현금 흐름을 일정 기간 동안 교환하기로 약정하는 금융 계약입니다. ② 차익거래는 가격 불균형을 이용하여 위험 없이 수익을 얻는 거래를 의미하며, 환율 차이를 이용할 수도 있지만 더 넓은 개념입니다. ④ 헤지 거래는 환율 변동으로 인한 위험을 회피하기 위해 반대 포지션을 취하는 거래를 말합니다.","news_context":"엔화예금으로 환테크에 나서는 투자자들이 늘고 있다는 뉴스가 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12154934","options":["① 스와프 거래","② 차익거래","③ 환테크","④ 헤지 거래"]},{"id":2327,"category":"세부지식","question":"예금자보호 제도에 대한 설명 중 옳은 것은?","answer":"① 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 포함하여 보호한다.","explanation":"우리나라 예금자보호법에 따르면 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 합하여 보호합니다. [오답해설] ② 예금자보호는 예금보험공사가 정한 보호 대상 금융기관(은행, 저축은행, 증권사 등)의 예금에 한하여 적용되며, 모든 금융기관에 무조건 적용되는 것은 아닙니다. ③ 보호 대상 금융기관이 파산할 경우, 예금자는 예금보험공사의 심사 과정을 거쳐 보호 한도 내에서 예금을 지급받게 되며, 이는 즉시 이루어지는 것은 아닙니다. ④ 예금자보호 한도 5천만원은 원금뿐만 아니라 소정의 이자까지 포함한 금액입니다.","news_context":"예금자보호 제도와 관련하여 저축은행의 '쪼개기 예금' 현상에 대한 기사가 언급되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12154550","options":["① 예금자 1인당 최고 5천만원까지 원금과 소정의 이자를 포함하여 보호한다.","② 예금자보호는 모든 금융기관에 예치된 예금에 대해 무조건 적용된다.","③ 보호 대상 금융기관이 파산할 경우, 예금자는 즉시 보호 한도 내에서 예금을 돌려받을 수 있다.","④ 예금자보호 한도는 원금에만 적용되며, 이자는 보호 대상에서 제외된다."]},{"id":2328,"category":"세부지식","question":"청년미래적금의 주요 특징으로 옳지 않은 것은?","answer":"③ 가입 기간은 무조건 최소 3년 이상으로 설정된다.","explanation":"청년미래적금의 가입 기간은 일반적으로 2년에서 5년 사이에서 가입자가 선택할 수 있으며, 무조건 최소 3년 이상으로만 설정되는 것은 아닙니다. [오답해설] ① 청년미래적금은 만 19세 이상 34세 이하의 청년을 대상으로 하는 상품입니다. ② 청년미래적금은 가입 시 정해진 소득 기준(예: 총급여 7,500만원 이하, 종합소득 6,300만원 이하 등)을 충족해야 합니다. ④ 청년미래적금은 비과세 혜택과 소득 구간에 따른 정부 기여금 지원이 주요 특징입니다.","news_context":"청년미래적금 2차 모집 소식이 전해져, 청년층 금융 상품에 대한 관심이 높아지고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12154551","options":["① 만 19세 이상 34세 이하 청년만 가입할 수 있다.","② 가입 시 소득 기준을 충족해야 한다.","③ 가입 기간은 무조건 최소 3년 이상으로 설정된다.","④ 비과세 혜택과 정부 기여금을 지원받을 수 있다."]},{"id":2329,"category":"세부지식","question":"가업상속공제 제도 개편 논의에서 핵심적으로 다루어지는 사항은 무엇인가요?","answer":"① 피상속인의 사업 영위 기간 확대","explanation":"현재 가업상속공제 개편 논의에서는 '30년 경영'과 같이 피상속인의 사업 영위 기간 요건을 강화하는 방안이 핵심적으로 다루어져 공제 대상 축소 우려가 제기되고 있습니다. [오답해설] ② 상속인의 자산 보유 한도 축소는 가업상속공제의 주요 논의 내용은 아닙니다. ③ 공제 대상 업종은 현행법상 제한이 있으나, 대폭적인 제한보다는 공제 문턱의 현실화가 주로 논의됩니다. ④ 가업상속 후 주식 매각 금지 기간(사후 관리 요건)은 현행 제도의 중요한 부분이며, 이를 단축하는 방향의 논의는 활발하지 않습니다.","news_context":"가업상속공제 이대로면 90% 탈락과 같은 헤드라인에서 제도 개편에 대한 우려가 나타났습니다.","news_url":"https://www.mk.co.kr/news/economy/12154505","options":["① 피상속인의 사업 영위 기간 확대","② 상속인의 자산 보유 한도 축소","③ 공제 대상 업종의 대폭 제한","④ 가업상속 시 주식 매각 금지 기간 단축"]},{"id":2330,"category":"시사","question":"미국 연방준비제도(Fed)의 기준금리 인상이 한국 경제와 금융 시장에 미치는 영향으로 옳지 않은 것은?","answer":"② 국내 원화 가치 상승 압력으로 작용하여 수출 기업에 유리할 수 있다.","explanation":"미국 기준금리 인상으로 한미 금리 차이가 확대되면 외국인 자본 유출 우려가 커지고, 원화 가치 하락(환율 상승) 압력이 발생하여 수출 기업에는 단기적으로 유리할 수 있지만, 이는 원화 가치 상승 압력으로 작용하는 것은 아닙니다. [오답해설] ① 한미 금리 차이가 확대되면 더 높은 수익률을 찾아 외국인 자본이 미국으로 이동할 가능성이 커집니다. ③ 국내 시중 은행들도 자본 유출 방지 및 조달 비용 상승으로 인해 대출 금리를 인상할 수 있어 가계와 기업의 대출 부담이 가중됩니다. ④ 기준금리 인상은 일반적으로 시장 금리 전반의 상승을 유도하며, 이는 채권 가격 하락(채권 금리 상승)으로 이어져 채권 시장에 부정적인 영향을 미칠 수 있습니다.","news_context":"미국 연준의 기준금리 인상 결정이 연이어 보도되며 한국 경제에 미칠 영향에 관심이 집중되고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/023/0003998932?sid=101","options":["① 한미 간 금리 차 확대 시 외국인 자본 유출 가능성이 증가할 수 있다.","② 국내 원화 가치 상승 압력으로 작용하여 수출 기업에 유리할 수 있다.","③ 국내 시중 금리 인상 압력이 가중되어 가계 및 기업의 대출 부담이 증가할 수 있다.","④ 채권 금리 상승으로 이어져 채권 시장에 부정적인 영향을 미칠 수 있다."]},{"id":2331,"category":"시사","question":"최근 기준금리 인상과 같은 시장 변화가 은행의 수신 환경에 미치는 영향으로 옳은 것은?","answer":"③ 기준금리 인상기에는 은행이 자금을 조달하기 위해 예금 금리 외에 은행채 발행을 늘릴 유인이 커진다.","explanation":"기준금리가 인상되면 은행은 예금 금리 인상 등으로 조달 비용이 증가하거나, 예금 이탈 우려로 인해 은행채 발행을 통해 자금을 조달하는 비중을 늘릴 유인이 커집니다. [오답해설] ① 기준금리 인상기에는 고객 자금 유치를 위해 은행 간 예금 금리 경쟁이 심화될 수 있습니다. ② 기사에서 보듯이 예금은 줄고 은행채가 늘어나는 등 자금 조달 방식에서 은행채 발행 비중이 증가하는 경향을 보일 수 있습니다. ④ 높은 금리는 고객의 이자 수익을 높이지만, 다른 투자처를 찾거나 기존 대출 상환에 우선순위를 두면서 반드시 은행 수신 잔액이 급격히 늘어나지는 않을 수 있으며, 자금 이탈 우려도 존재합니다.","news_context":"예금은 줄고 은행채는 늘어나는 등 변화한 은행의 수신 환경에 대한 기사가 게재되었습니다.","news_url":"https://www.news2day.co.kr/article/20260916500227","options":["① 기준금리 인상은 은행의 예금 유치 경쟁을 완화시킨다.","② 은행의 자금 조달 방식에서 은행채 발행 비중이 감소하고 예금 비중이 증가하는 경향을 보인다.","③ 기준금리 인상기에는 은행이 자금을 조달하기 위해 예금 금리 외에 은행채 발행을 늘릴 유인이 커진다.","④ 높은 금리로 인해 고객들이 은행에 예치하는 자금이 급격히 늘어나 수신 잔액이 안정적으로 증가한다."]},{"id":2332,"category":"시사","question":"미국 연방준비제도(Fed)의 독립성과 관련된 설명 중 가장 적절한 것은?","answer":"③ Fed의 독립성은 정치적 압력으로부터 자유롭게 물가 안정과 최대 고용이라는 이중 책무를 효과적으로 수행하기 위한 원칙이다.","explanation":"Fed의 독립성은 정치적 영향력에서 벗어나 물가 안정과 최대 고용이라는 이중 목표를 달성하기 위한 통화정책을 자율적으로 결정하고 집행할 수 있는 권한을 의미합니다. [오답해설] ① Fed의 목표는 경제 성장률 최대화가 아닌 물가 안정과 최대 고용입니다. ② Fed는 의회의 직접적인 지시를 받는 기관이 아니며, 이러한 지시는 독립성을 침해하는 행위로 간주됩니다. ④ Fed는 정부의 재정 정책과 협력하지만, 통화 정책을 재정 정책에 무조건적으로 맞춰 조정하는 것은 독립성 훼손으로 볼 수 있습니다.","news_context":"워시 의장이 연준의 독립성을 강조하며 물가 안정 달성을 위해 각자의 영역을 지켜야 한다고 발언했습니다.","news_url":"","options":["① Fed의 독립성은 경제 성장률을 최대화하는 통화 정책을 우선적으로 추진하는 데 있다.","② Fed는 의회의 직접적인 지시를 받아 금리 정책을 결정함으로써 독립성을 유지한다.","③ Fed의 독립성은 정치적 압력으로부터 자유롭게 물가 안정과 최대 고용이라는 이중 책무를 효과적으로 수행하기 위한 원칙이다.","④ Fed 의장은 정부의 재정 정책 방향에 맞춰 통화 정책을 조정함으로써 경제 안정에 기여한다."]},{"id":94,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
