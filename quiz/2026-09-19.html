@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-19 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-19 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-19 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 다음 설명에 해당하는 금융용어로 가장 적절한 것은?
+
+'인생은 한 번뿐'이라는 의미를 담아 주식이나 가상화폐 등 위험 자산에 공격적으로 투자하는 경향을 보이는 2030세대를 지칭하며, 뉴욕 금융가의 '월스트리트(Wall Street)'에서 파생된 신조어입니다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 빚투족</li><li>② 폰지스트리트</li><li>③ 욜스트리트</li><li>④ 그린스마트족</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 욜스트리트</p>
+      <p><strong>해설:</strong> 욜스트리트는 'You Only Live Once'의 약어인 YOLO와 월스트리트의 합성어로, 공격적으로 투자하는 2030세대를 지칭하는 신조어입니다. [오답해설] ① 빚투족은 빚을 내어 투자하는 사람들을 지칭하는 용어입니다. ② 폰지스트리트는 특정 용어가 아니며, 폰지 사기는 투자 사기의 한 형태입니다. ④ 그린스마트족은 친환경 소비 및 스마트 기술 활용에 적극적인 사람들을 의미합니다.</p>
+      <p>관련 시사 뉴스: 욜스트리트는 'You Only Live Once'의 약어인 'YOLO'와 뉴욕 금융가의 '월스트리트(Wall Street)'를 합성한 신조어로, 주식이나 가상화폐 등에 공격적으로 투자하는 2030세대를 지칭합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 다음 설명에 해당하는 금융 법안으로 가장 적절한 것은?
+
+미국이 개발도상국에 대한 대출 및 자금 지원의 투명성을 높이고, 특히 중국의 대규모 인프라 대출 프로젝트 조건을 국제적으로 공시하도록 요구하여 개발도상국의 '부채 함정'을 막으려는 목적으로 제정된 법안입니다.</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 클래리티법(CLARITY Act)</li><li>② 볼커 룰(Volcker Rule)</li><li>③ 다비드-프랭크법(Dodd-Frank Act)</li><li>④ 마그니츠키법(Magnitsky Act)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 클래리티법(CLARITY Act)</p>
+      <p><strong>해설:</strong> 클래리티법은 미국이 개발도상국에 대한 대출 투명성을 높이고 중국의 '부채 함정' 외교를 견제하기 위해 제정한 법률입니다. [오답해설] ② 볼커 룰은 은행의 자기계정 거래를 제한하는 미국의 금융 규제입니다. ③ 다비드-프랭크법은 2008년 금융 위기 이후 금융 시스템 개혁을 위해 제정된 미국의 법안입니다. ④ 마그니츠키법은 인권 침해 및 부패 행위에 연루된 외국인에게 제재를 가하는 미국의 법률입니다.</p>
+      <p>관련 시사 뉴스: 클래리티법은 미국이 개발도상국에 대한 대출 및 자금 지원의 투명성을 높여 중국의 대규모 인프라 대출 프로젝트 조건을 국제적으로 공시하도록 요구하며 개발도상국의 부채 함정을 막기 위한 법률입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 유튜브 등 소셜 미디어 플랫폼에서 금융 상품, 투자 정보, 투자 전략 등을 추천하거나 홍보하는 인플루언서를 지칭하는 용어로 가장 적절한 것은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 피크 인플루언서</li><li>② 핀테크 인플루언서</li><li>③ 핀플루언서</li><li>④ 사이버 투자 조언가</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 핀플루언서</p>
+      <p><strong>해설:</strong> 핀플루언서는 금융(Finance)과 인플루언서(Influencer)의 합성어로, 소셜 미디어에서 금융 관련 정보를 제공하거나 영향력을 행사하는 사람들을 일컫습니다. [오답해설] ① 피크 인플루언서는 특정 분야에서 정점을 찍은 인플루언서를 의미하며 금융에 한정되지 않습니다. ② 핀테크 인플루언서는 핀테크 기술 관련 인플루언서를 의미하지만, 금융 상품 추천 등의 행위를 직접 지칭하지는 않습니다. ④ 사이버 투자 조언가는 제도권 금융기관에서 제공하는 온라인 투자 자문 서비스를 연상케 하는 포괄적인 용어로, 개인의 소셜 미디어 활동을 지칭하기에는 부적절합니다.</p>
+      <p>관련 시사 뉴스: 유튜브에서 종목 추천을 믿고 손실을 본 사례와 관련하여 '핀플루언서' 규제 사각지대 문제가 언급되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 금융거래 이력이 부족하거나 표준 신용평가 방식으로는 신용도를 정확히 파악하기 어려운 중·저신용자 등을 위해, 통신료 납부 내역, 온라인 쇼핑 정보, 공공요금 납부 내역 등 비금융 데이터를 활용하여 신용도를 평가하는 방식을 일컫는 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 비정형 신용평가</li><li>② 사회적 신용평가</li><li>③ 맞춤형 신용평가</li><li>④ 대안신용평가</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 대안신용평가</p>
+      <p><strong>해설:</strong> 대안신용평가는 금융 이력이 부족한 금융 취약 계층의 신용도를 정밀하게 평가하기 위해 비금융 정보를 활용하는 새로운 평가 방식입니다. [오답해설] ① 비정형 신용평가는 일반적인 용어가 아니며, 비정형 데이터는 활용될 수 있으나 평가 방식 자체를 의미하지는 않습니다. ② 사회적 신용평가는 신용평가의 사회적 영향이나 사회적 가치 측면을 강조하는 용어로 사용될 수 있으나, 비금융 데이터 활용 방식을 직접적으로 의미하지는 않습니다. ③ 맞춤형 신용평가는 개별 고객에게 특화된 평가 방식을 의미할 수 있으나, 비금융 데이터 활용이라는 핵심적인 내용을 포괄하기는 어렵습니다.</p>
+      <p>관련 시사 뉴스: SBI저축은행이 카카오페이, KCB와 협력하여 대안신용평가 기반 중·저신용자 금융서비스를 강화한다는 내용입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 다음 중 레버리지 ETF(상장지수펀드)에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 추종하는 기초지수의 일별 수익률을 양(+)의 배수로 추종하도록 설계된 상품이다.</li><li>② 기초지수가 상승할 때 일반 ETF보다 더 큰 수익을 기대할 수 있으나, 하락 시 손실도 커진다.</li><li>③ 장기투자 시 기초지수와 레버리지 ETF 간의 수익률 괴리가 발생할 수 있어 주의가 필요하다.</li><li>④ 높은 변동성에도 불구하고 장기투자 시 원금 손실 위험이 적다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 높은 변동성에도 불구하고 장기투자 시 원금 손실 위험이 적다.</p>
+      <p><strong>해설:</strong> 레버리지 ETF는 일별 수익률을 기준으로 운용되므로, 장기투자 시 복리 효과와 변동성 누적으로 인해 원금 손실 위험이 커질 수 있습니다. [오답해설] ① 레버리지 ETF는 기초지수의 일별 수익률을 2배 등으로 추종하며, 인버스 ETF와는 반대 방향입니다. ② 기초지수 상승 시 더 큰 수익을 추구하지만, 반대로 기초지수 하락 시에는 더 큰 손실을 입을 수 있는 고위험·고수익 상품입니다. ③ 레버리지 ETF는 일별 수익률에 복리가 적용되기 때문에, 시장의 변동성이 클 경우 기초지수의 장기 수익률과 괴리가 발생하여 투자자가 예상치 못한 손실을 입을 수 있습니다.</p>
+      <p>관련 시사 뉴스: 레버리지 ETF의 정책적 결정과 투자 시 유의사항에 대한 논의가 이루어지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 다음 중 은행 등 금융기관의 불공정 영업 행위인 '꺾기'에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 금융소비자보호법 등 관련 법규에서 금지하는 불법 행위이다.</li><li>② 대출을 실행하는 조건으로 대출자의 의사에 반하여 예적금 가입을 강요하는 행위를 의미한다.</li><li>③ 주로 자금 조달에 어려움을 겪는 중소기업 대출 과정에서 발생하기 쉽다.</li><li>④ 금융기관의 건전한 여신 확대 및 고객 서비스 증진을 위해 권장되는 마케팅 전략이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 금융기관의 건전한 여신 확대 및 고객 서비스 증진을 위해 권장되는 마케팅 전략이다.</p>
+      <p><strong>해설:</strong> '꺾기'는 고객의 자기결정권을 침해하고 금융상품 선택권을 제한하는 불공정 행위로, 금융당국으로부터 엄격히 규제되며 권장되지 않습니다. [오답해설] ① 꺾기는 대출과 다른 금융상품의 끼워팔기로, 금융소비자보호법 등에서 금지하는 불법 행위입니다. ② 대출을 받으려는 고객에게 예·적금이나 펀드 등 다른 상품 가입을 사실상 강요하는 행위를 의미합니다. ③ 주로 담보가 부족하거나 신용도가 낮은 중소기업이 대출을 받기 위해 어쩔 수 없이 추가 상품에 가입하게 되는 경우가 많습니다.</p>
+      <p>관련 시사 뉴스: 중소기업을 대상으로 한 '꺾기 의심거래'가 상반기에 7조 원 규모에 달했다는 내용입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 최근 금융당국이 집값 25억 원 이상, LTV(주택담보대출비율) 40% 초과 주택담보대출에 대해 은행의 위험가중치를 최대 4배까지 높이는 방안을 검토하는 이유로 가장 적절한 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 고액 대출자의 자산 증식을 장려하여 경제 활성화를 도모하기 위함이다.</li><li>② 은행의 대출 심사를 완화하여 부동산 시장에 유동성을 공급하기 위함이다.</li><li>③ 은행의 주택담보대출 자산 건전성 관리를 강화하고 부동산 시장의 리스크를 줄이기 위함이다.</li><li>④ 투기 세력을 근절하고 주택 가격 하락을 유도하여 서민 주거 안정을 꾀하기 위함이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행의 주택담보대출 자산 건전성 관리를 강화하고 부동산 시장의 리스크를 줄이기 위함이다.</p>
+      <p><strong>해설:</strong> 위험가중치를 높이는 것은 은행이 해당 대출에 대해 더 많은 자본금을 보유해야 함을 의미하며, 이는 은행의 건전성 관리를 강화하고 고위험 대출을 억제하여 부동산 시장의 잠재적 리스크를 관리하려는 목적입니다. [오답해설] ① 고액 대출자의 자산 증식 장려와는 관련이 없으며, 오히려 대출을 억제하는 효과가 있습니다. ② 대출 심사를 강화하고 위험가중치를 높이는 것은 대출을 완화하는 것이 아니라 제한하는 조치입니다. ④ 정책의 목적은 은행의 리스크 관리 및 금융 시스템 안정화에 있으며, 직접적으로 주택 가격 하락을 유도하는 것이 주된 목적은 아닙니다.</p>
+      <p>관련 시사 뉴스: 집값 25억 원 이상, LTV 40% 초과 주택담보대출에 대한 위험가중치를 높이는 방안이 단독 보도되었습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 전 세계적으로 기준금리 인상 기조가 확산되고 있는 가운데, 이러한 금리 인상이 은행의 경영 및 수익성에 미치는 영향에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 예대마진이 확대되어 은행의 수익성이 개선될 가능성이 있다.</li><li>② 대출 금리 상승으로 가계 및 기업의 대출 상환 부담이 가중되어 대출 연체율이 상승할 수 있다.</li><li>③ 은행의 채권 보유 자산 가치가 하락하여 자본 건전성에 부담을 줄 수 있다.</li><li>④ 예금 금리 인상 경쟁으로 은행의 자금 조달 비용이 감소하여 수익성이 증대된다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 예금 금리 인상 경쟁으로 은행의 자금 조달 비용이 감소하여 수익성이 증대된다.</p>
+      <p><strong>해설:</strong> 예금 금리 인상은 은행의 자금 조달 비용을 증가시켜 수익성을 악화시키는 요인이 됩니다. [오답해설] ① 기준금리 인상 시 대출 금리가 예금 금리보다 빠르게 인상될 경우 예대마진이 확대되어 수익성이 개선될 수 있습니다. ② 대출 금리 상승은 차주의 이자 부담을 늘려 연체율 증가와 부실 채권 발생 가능성을 높입니다. ③ 금리 인상은 시장 금리를 상승시켜 은행이 보유한 채권의 평가 가치를 하락시키고, 이는 은행의 자기자본 감소로 이어져 건전성에 부정적인 영향을 줄 수 있습니다.</p>
+      <p>관련 시사 뉴스: 일본 기준금리 인상, 미국 연준의 금리 인상 공포, 가계대출 금리 상승 등의 뉴스가 보도되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 최근 '시니어 자산 맡아서 관리'하는 은행 신탁수익이 1년 새 2배 증가했다는 소식은 은행 산업에 중요한 변화를 시사합니다. 이러한 현상이 은행의 경영 전략에 미치는 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 전통적인 예대마진 중심의 수익 구조를 강화하는 계기가 된다.</li><li>② 고령화 사회의 진전과 함께 비이자수익 증대의 핵심 동력으로 부상할 가능성이 크다.</li><li>③ 시니어 고객의 금융 이해도가 낮으므로, 저위험 예금 상품 판매에 집중해야 한다.</li><li>④ 신탁 상품은 복잡하여 젊은 세대에게만 적합하며 시니어 고객에게는 부적합하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 고령화 사회의 진전과 함께 비이자수익 증대의 핵심 동력으로 부상할 가능성이 크다.</p>
+      <p><strong>해설:</strong> 고령화 사회에서 은퇴 후 자산관리 및 상속·증여 설계 등 시니어 고객의 수요가 증가함에 따라, 신탁은 은행의 비이자수익을 확대하고 고객과의 장기적인 관계를 구축하는 중요한 수단이 됩니다. [오답해설] ① 신탁 수익 증가는 이자 수익이 아닌 비이자 수익 증대를 의미하며, 전통적인 예대마진 의존도를 낮추는 효과가 있습니다. ③ 시니어 고객의 다양한 자산관리 수요에 맞춰 맞춤형 신탁 상품 개발이 필요하며, 단순히 저위험 예금에만 집중하는 것은 시니어 자산관리 시장의 잠재력을 놓치는 것입니다. ④ 신탁은 자산 승계, 치매 예방 등 다양한 형태로 고령층에게 유용한 자산관리 수단이며, 특정 연령대에만 적합한 것은 아닙니다.</p>
+      <p>관련 시사 뉴스: '시니어 자산 맡아서 관리'하는 은행 신탁수익이 1년 새 2배 증가했다는 뉴스입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 보이스피싱 피해가 증가하면서 농협 등 은행들이 대포통장 피해를 줄이기 위한 노력을 강화하고 있습니다. 은행의 대포통장 및 보이스피싱 방지 노력에 대한 설명으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 고객의 통장 개설 절차를 간소화하여 금융 서비스 접근성을 높여야 한다.</li><li>② 대포통장은 주로 온라인 금융거래에서만 사용되므로 오프라인 심사는 완화해도 무방하다.</li><li>③ 은행은 고객의 통장 개설 목적을 면밀히 심사하고 의심 거래를 모니터링하여 대포통장 발생을 억제해야 한다.</li><li>④ 보이스피싱 예방은 전적으로 개인의 주의에 달려 있으므로 은행의 책임은 크지 않다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행은 고객의 통장 개설 목적을 면밀히 심사하고 의심 거래를 모니터링하여 대포통장 발생을 억제해야 한다.</p>
+      <p><strong>해설:</strong> 은행은 금융사기 예방을 위해 통장 개설 심사를 강화하고, 이상 금융거래 탐지 시스템(FDS) 등을 활용하여 의심스러운 거래를 실시간으로 모니터링하며, 피해 발생 시 신속한 지급 정지 등 다양한 노력을 기울여야 합니다. [오답해설] ① 대포통장 개설을 막기 위해 통장 개설 절차를 강화하고 심사를 면밀히 하는 것이 중요하며, 간소화할 경우 대포통장 위험이 커집니다. ② 대포통장은 온/오프라인 모두에서 활용될 수 있으며, 오프라인을 통한 대포통장 개설 및 자금 인출도 여전히 중요한 문제입니다. ④ 보이스피싱 예방은 금융당국, 금융기관, 통신사, 그리고 개인의 협력이 필수적이며, 은행은 금융 시스템의 핵심 주체로서 큰 책임과 역할을 가집니다.</p>
+      <p>관련 시사 뉴스: 농협이 보이스피싱 돈줄인 대포통장 피해를 40% 줄였다는 소식과 대포폰 규제 피해 사례가 언급되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-19</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2343,"category":"시사금융용어","question":"다음 설명에 해당하는 금융용어로 가장 적절한 것은?\n\n'인생은 한 번뿐'이라는 의미를 담아 주식이나 가상화폐 등 위험 자산에 공격적으로 투자하는 경향을 보이는 2030세대를 지칭하며, 뉴욕 금융가의 '월스트리트(Wall Street)'에서 파생된 신조어입니다.","answer":"③ 욜스트리트","explanation":"욜스트리트는 'You Only Live Once'의 약어인 YOLO와 월스트리트의 합성어로, 공격적으로 투자하는 2030세대를 지칭하는 신조어입니다. [오답해설] ① 빚투족은 빚을 내어 투자하는 사람들을 지칭하는 용어입니다. ② 폰지스트리트는 특정 용어가 아니며, 폰지 사기는 투자 사기의 한 형태입니다. ④ 그린스마트족은 친환경 소비 및 스마트 기술 활용에 적극적인 사람들을 의미합니다.","news_context":"욜스트리트는 'You Only Live Once'의 약어인 'YOLO'와 뉴욕 금융가의 '월스트리트(Wall Street)'를 합성한 신조어로, 주식이나 가상화폐 등에 공격적으로 투자하는 2030세대를 지칭합니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4431768","options":["① 빚투족","② 폰지스트리트","③ 욜스트리트","④ 그린스마트족"]},{"id":2344,"category":"시사금융용어","question":"다음 설명에 해당하는 금융 법안으로 가장 적절한 것은?\n\n미국이 개발도상국에 대한 대출 및 자금 지원의 투명성을 높이고, 특히 중국의 대규모 인프라 대출 프로젝트 조건을 국제적으로 공시하도록 요구하여 개발도상국의 '부채 함정'을 막으려는 목적으로 제정된 법안입니다.","answer":"① 클래리티법(CLARITY Act)","explanation":"클래리티법은 미국이 개발도상국에 대한 대출 투명성을 높이고 중국의 '부채 함정' 외교를 견제하기 위해 제정한 법률입니다. [오답해설] ② 볼커 룰은 은행의 자기계정 거래를 제한하는 미국의 금융 규제입니다. ③ 다비드-프랭크법은 2008년 금융 위기 이후 금융 시스템 개혁을 위해 제정된 미국의 법안입니다. ④ 마그니츠키법은 인권 침해 및 부패 행위에 연루된 외국인에게 제재를 가하는 미국의 법률입니다.","news_context":"클래리티법은 미국이 개발도상국에 대한 대출 및 자금 지원의 투명성을 높여 중국의 대규모 인프라 대출 프로젝트 조건을 국제적으로 공시하도록 요구하며 개발도상국의 부채 함정을 막기 위한 법률입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4433983","options":["① 클래리티법(CLARITY Act)","② 볼커 룰(Volcker Rule)","③ 다비드-프랭크법(Dodd-Frank Act)","④ 마그니츠키법(Magnitsky Act)"]},{"id":2345,"category":"금융용어","question":"다음 중 유튜브 등 소셜 미디어 플랫폼에서 금융 상품, 투자 정보, 투자 전략 등을 추천하거나 홍보하는 인플루언서를 지칭하는 용어로 가장 적절한 것은?","answer":"③ 핀플루언서","explanation":"핀플루언서는 금융(Finance)과 인플루언서(Influencer)의 합성어로, 소셜 미디어에서 금융 관련 정보를 제공하거나 영향력을 행사하는 사람들을 일컫습니다. [오답해설] ① 피크 인플루언서는 특정 분야에서 정점을 찍은 인플루언서를 의미하며 금융에 한정되지 않습니다. ② 핀테크 인플루언서는 핀테크 기술 관련 인플루언서를 의미하지만, 금융 상품 추천 등의 행위를 직접 지칭하지는 않습니다. ④ 사이버 투자 조언가는 제도권 금융기관에서 제공하는 온라인 투자 자문 서비스를 연상케 하는 포괄적인 용어로, 개인의 소셜 미디어 활동을 지칭하기에는 부적절합니다.","news_context":"유튜브에서 종목 추천을 믿고 손실을 본 사례와 관련하여 '핀플루언서' 규제 사각지대 문제가 언급되었습니다.","news_url":"https://n.news.naver.com/mnews/article/018/0006372351?sid=101","options":["① 피크 인플루언서","② 핀테크 인플루언서","③ 핀플루언서","④ 사이버 투자 조언가"]},{"id":2346,"category":"금융용어","question":"금융거래 이력이 부족하거나 표준 신용평가 방식으로는 신용도를 정확히 파악하기 어려운 중·저신용자 등을 위해, 통신료 납부 내역, 온라인 쇼핑 정보, 공공요금 납부 내역 등 비금융 데이터를 활용하여 신용도를 평가하는 방식을 일컫는 용어는?","answer":"④ 대안신용평가","explanation":"대안신용평가는 금융 이력이 부족한 금융 취약 계층의 신용도를 정밀하게 평가하기 위해 비금융 정보를 활용하는 새로운 평가 방식입니다. [오답해설] ① 비정형 신용평가는 일반적인 용어가 아니며, 비정형 데이터는 활용될 수 있으나 평가 방식 자체를 의미하지는 않습니다. ② 사회적 신용평가는 신용평가의 사회적 영향이나 사회적 가치 측면을 강조하는 용어로 사용될 수 있으나, 비금융 데이터 활용 방식을 직접적으로 의미하지는 않습니다. ③ 맞춤형 신용평가는 개별 고객에게 특화된 평가 방식을 의미할 수 있으나, 비금융 데이터 활용이라는 핵심적인 내용을 포괄하기는 어렵습니다.","news_context":"SBI저축은행이 카카오페이, KCB와 협력하여 대안신용평가 기반 중·저신용자 금융서비스를 강화한다는 내용입니다.","news_url":"http://www.bizwnews.com/news/articleView.html?idxno=146852","options":["① 비정형 신용평가","② 사회적 신용평가","③ 맞춤형 신용평가","④ 대안신용평가"]},{"id":2347,"category":"세부지식","question":"다음 중 레버리지 ETF(상장지수펀드)에 대한 설명으로 옳지 않은 것은?","answer":"④ 높은 변동성에도 불구하고 장기투자 시 원금 손실 위험이 적다.","explanation":"레버리지 ETF는 일별 수익률을 기준으로 운용되므로, 장기투자 시 복리 효과와 변동성 누적으로 인해 원금 손실 위험이 커질 수 있습니다. [오답해설] ① 레버리지 ETF는 기초지수의 일별 수익률을 2배 등으로 추종하며, 인버스 ETF와는 반대 방향입니다. ② 기초지수 상승 시 더 큰 수익을 추구하지만, 반대로 기초지수 하락 시에는 더 큰 손실을 입을 수 있는 고위험·고수익 상품입니다. ③ 레버리지 ETF는 일별 수익률에 복리가 적용되기 때문에, 시장의 변동성이 클 경우 기초지수의 장기 수익률과 괴리가 발생하여 투자자가 예상치 못한 손실을 입을 수 있습니다.","news_context":"레버리지 ETF의 정책적 결정과 투자 시 유의사항에 대한 논의가 이루어지고 있습니다.","news_url":"http://www.enewstoday.co.kr/news/articleView.html?idxno=2472455","options":["① 추종하는 기초지수의 일별 수익률을 양(+)의 배수로 추종하도록 설계된 상품이다.","② 기초지수가 상승할 때 일반 ETF보다 더 큰 수익을 기대할 수 있으나, 하락 시 손실도 커진다.","③ 장기투자 시 기초지수와 레버리지 ETF 간의 수익률 괴리가 발생할 수 있어 주의가 필요하다.","④ 높은 변동성에도 불구하고 장기투자 시 원금 손실 위험이 적다."]},{"id":2348,"category":"세부지식","question":"다음 중 은행 등 금융기관의 불공정 영업 행위인 '꺾기'에 대한 설명으로 옳지 않은 것은?","answer":"④ 금융기관의 건전한 여신 확대 및 고객 서비스 증진을 위해 권장되는 마케팅 전략이다.","explanation":"'꺾기'는 고객의 자기결정권을 침해하고 금융상품 선택권을 제한하는 불공정 행위로, 금융당국으로부터 엄격히 규제되며 권장되지 않습니다. [오답해설] ① 꺾기는 대출과 다른 금융상품의 끼워팔기로, 금융소비자보호법 등에서 금지하는 불법 행위입니다. ② 대출을 받으려는 고객에게 예·적금이나 펀드 등 다른 상품 가입을 사실상 강요하는 행위를 의미합니다. ③ 주로 담보가 부족하거나 신용도가 낮은 중소기업이 대출을 받기 위해 어쩔 수 없이 추가 상품에 가입하게 되는 경우가 많습니다.","news_context":"중소기업을 대상으로 한 '꺾기 의심거래'가 상반기에 7조 원 규모에 달했다는 내용입니다.","news_url":"https://www.mk.co.kr/news/economy/12156554","options":["① 금융소비자보호법 등 관련 법규에서 금지하는 불법 행위이다.","② 대출을 실행하는 조건으로 대출자의 의사에 반하여 예적금 가입을 강요하는 행위를 의미한다.","③ 주로 자금 조달에 어려움을 겪는 중소기업 대출 과정에서 발생하기 쉽다.","④ 금융기관의 건전한 여신 확대 및 고객 서비스 증진을 위해 권장되는 마케팅 전략이다."]},{"id":2349,"category":"세부지식","question":"최근 금융당국이 집값 25억 원 이상, LTV(주택담보대출비율) 40% 초과 주택담보대출에 대해 은행의 위험가중치를 최대 4배까지 높이는 방안을 검토하는 이유로 가장 적절한 것은?","answer":"③ 은행의 주택담보대출 자산 건전성 관리를 강화하고 부동산 시장의 리스크를 줄이기 위함이다.","explanation":"위험가중치를 높이는 것은 은행이 해당 대출에 대해 더 많은 자본금을 보유해야 함을 의미하며, 이는 은행의 건전성 관리를 강화하고 고위험 대출을 억제하여 부동산 시장의 잠재적 리스크를 관리하려는 목적입니다. [오답해설] ① 고액 대출자의 자산 증식 장려와는 관련이 없으며, 오히려 대출을 억제하는 효과가 있습니다. ② 대출 심사를 강화하고 위험가중치를 높이는 것은 대출을 완화하는 것이 아니라 제한하는 조치입니다. ④ 정책의 목적은 은행의 리스크 관리 및 금융 시스템 안정화에 있으며, 직접적으로 주택 가격 하락을 유도하는 것이 주된 목적은 아닙니다.","news_context":"집값 25억 원 이상, LTV 40% 초과 주택담보대출에 대한 위험가중치를 높이는 방안이 단독 보도되었습니다.","news_url":"https://www.mk.co.kr/news/economy/12156251","options":["① 고액 대출자의 자산 증식을 장려하여 경제 활성화를 도모하기 위함이다.","② 은행의 대출 심사를 완화하여 부동산 시장에 유동성을 공급하기 위함이다.","③ 은행의 주택담보대출 자산 건전성 관리를 강화하고 부동산 시장의 리스크를 줄이기 위함이다.","④ 투기 세력을 근절하고 주택 가격 하락을 유도하여 서민 주거 안정을 꾀하기 위함이다."]},{"id":2350,"category":"시사","question":"최근 전 세계적으로 기준금리 인상 기조가 확산되고 있는 가운데, 이러한 금리 인상이 은행의 경영 및 수익성에 미치는 영향에 대한 설명으로 옳지 않은 것은?","answer":"④ 예금 금리 인상 경쟁으로 은행의 자금 조달 비용이 감소하여 수익성이 증대된다.","explanation":"예금 금리 인상은 은행의 자금 조달 비용을 증가시켜 수익성을 악화시키는 요인이 됩니다. [오답해설] ① 기준금리 인상 시 대출 금리가 예금 금리보다 빠르게 인상될 경우 예대마진이 확대되어 수익성이 개선될 수 있습니다. ② 대출 금리 상승은 차주의 이자 부담을 늘려 연체율 증가와 부실 채권 발생 가능성을 높입니다. ③ 금리 인상은 시장 금리를 상승시켜 은행이 보유한 채권의 평가 가치를 하락시키고, 이는 은행의 자기자본 감소로 이어져 건전성에 부정적인 영향을 줄 수 있습니다.","news_context":"일본 기준금리 인상, 미국 연준의 금리 인상 공포, 가계대출 금리 상승 등의 뉴스가 보도되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12156742","options":["① 예대마진이 확대되어 은행의 수익성이 개선될 가능성이 있다.","② 대출 금리 상승으로 가계 및 기업의 대출 상환 부담이 가중되어 대출 연체율이 상승할 수 있다.","③ 은행의 채권 보유 자산 가치가 하락하여 자본 건전성에 부담을 줄 수 있다.","④ 예금 금리 인상 경쟁으로 은행의 자금 조달 비용이 감소하여 수익성이 증대된다."]},{"id":2351,"category":"시사","question":"최근 '시니어 자산 맡아서 관리'하는 은행 신탁수익이 1년 새 2배 증가했다는 소식은 은행 산업에 중요한 변화를 시사합니다. 이러한 현상이 은행의 경영 전략에 미치는 영향으로 가장 적절한 것은?","answer":"② 고령화 사회의 진전과 함께 비이자수익 증대의 핵심 동력으로 부상할 가능성이 크다.","explanation":"고령화 사회에서 은퇴 후 자산관리 및 상속·증여 설계 등 시니어 고객의 수요가 증가함에 따라, 신탁은 은행의 비이자수익을 확대하고 고객과의 장기적인 관계를 구축하는 중요한 수단이 됩니다. [오답해설] ① 신탁 수익 증가는 이자 수익이 아닌 비이자 수익 증대를 의미하며, 전통적인 예대마진 의존도를 낮추는 효과가 있습니다. ③ 시니어 고객의 다양한 자산관리 수요에 맞춰 맞춤형 신탁 상품 개발이 필요하며, 단순히 저위험 예금에만 집중하는 것은 시니어 자산관리 시장의 잠재력을 놓치는 것입니다. ④ 신탁은 자산 승계, 치매 예방 등 다양한 형태로 고령층에게 유용한 자산관리 수단이며, 특정 연령대에만 적합한 것은 아닙니다.","news_context":"'시니어 자산 맡아서 관리'하는 은행 신탁수익이 1년 새 2배 증가했다는 뉴스입니다.","news_url":"","options":["① 은행의 전통적인 예대마진 중심의 수익 구조를 강화하는 계기가 된다.","② 고령화 사회의 진전과 함께 비이자수익 증대의 핵심 동력으로 부상할 가능성이 크다.","③ 시니어 고객의 금융 이해도가 낮으므로, 저위험 예금 상품 판매에 집중해야 한다.","④ 신탁 상품은 복잡하여 젊은 세대에게만 적합하며 시니어 고객에게는 부적합하다."]},{"id":2352,"category":"시사","question":"최근 보이스피싱 피해가 증가하면서 농협 등 은행들이 대포통장 피해를 줄이기 위한 노력을 강화하고 있습니다. 은행의 대포통장 및 보이스피싱 방지 노력에 대한 설명으로 가장 적절한 것은?","answer":"③ 은행은 고객의 통장 개설 목적을 면밀히 심사하고 의심 거래를 모니터링하여 대포통장 발생을 억제해야 한다.","explanation":"은행은 금융사기 예방을 위해 통장 개설 심사를 강화하고, 이상 금융거래 탐지 시스템(FDS) 등을 활용하여 의심스러운 거래를 실시간으로 모니터링하며, 피해 발생 시 신속한 지급 정지 등 다양한 노력을 기울여야 합니다. [오답해설] ① 대포통장 개설을 막기 위해 통장 개설 절차를 강화하고 심사를 면밀히 하는 것이 중요하며, 간소화할 경우 대포통장 위험이 커집니다. ② 대포통장은 온/오프라인 모두에서 활용될 수 있으며, 오프라인을 통한 대포통장 개설 및 자금 인출도 여전히 중요한 문제입니다. ④ 보이스피싱 예방은 금융당국, 금융기관, 통신사, 그리고 개인의 협력이 필수적이며, 은행은 금융 시스템의 핵심 주체로서 큰 책임과 역할을 가집니다.","news_context":"농협이 보이스피싱 돈줄인 대포통장 피해를 40% 줄였다는 소식과 대포폰 규제 피해 사례가 언급되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12156518","options":["① 고객의 통장 개설 절차를 간소화하여 금융 서비스 접근성을 높여야 한다.","② 대포통장은 주로 온라인 금융거래에서만 사용되므로 오프라인 심사는 완화해도 무방하다.","③ 은행은 고객의 통장 개설 목적을 면밀히 심사하고 의심 거래를 모니터링하여 대포통장 발생을 억제해야 한다.","④ 보이스피싱 예방은 전적으로 개인의 주의에 달려 있으므로 은행의 책임은 크지 않다."]},{"id":96,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
