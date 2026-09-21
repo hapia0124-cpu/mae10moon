@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-22 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-22 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-22 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 플랫폼 기업이 사용자와 공급자를 유치하기 위해 초기에 좋은 서비스를 제공하다가, 독점적 지위를 확보한 후 서비스 품질을 저하시키고 수수료를 인상하여 이익을 극대화하는 현상을 일컫는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 락인 효과</li><li>② 네트워크 효과</li><li>③ 엔시티피케이션</li><li>④ 승자독식</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 엔시티피케이션</p>
+      <p><strong>해설:</strong> 엔시티피케이션은 플랫폼 기업이 독점적 지위를 얻은 후 서비스 품질을 떨어뜨리고 수익을 극대화하는 현상을 의미합니다. [오답해설] ① 락인 효과는 소비자가 특정 서비스에 익숙해져 다른 서비스로 전환하기 어려운 현상을 말합니다. ② 네트워크 효과는 특정 상품이나 서비스의 가치가 그것을 이용하는 사람의 수에 따라 증가하는 현상을 말합니다. ④ 승자독식은 경쟁 시장에서 소수의 기업이 대부분의 시장 점유율을 차지하는 현상을 말합니다.</p>
+      <p>관련 시사 뉴스: 플랫폼 기업이 독점적 지위를 확보하면 서비스 품질을 저하시키고 수수료를 올려 이익을 극대화하는 현상을 일컫는 '엔시티피케이션'은 '망사용료'와 유사한 맥락으로 볼 수 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 전세사기로부터 임차인의 보증금을 보호하기 위해 집주인(위탁자)이 주택의 소유권을 신탁회사에 이전하고, 신탁회사가 신탁 등기 사실을 임차인에게 고지하여 임차인의 손해를 방지하는 사업을 무엇이라고 하는가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 주택자금보증제도</li><li>② 역전세 반환보증</li><li>③ 부동산 에스크로 제도</li><li>④ 전월세 안심신탁사업</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 전월세 안심신탁사업</p>
+      <p><strong>해설:</strong> 전월세 안심신탁사업은 전세사기 피해를 예방하기 위해 집주인이 주택 소유권을 신탁회사에 이전하여 임차인의 보증금을 보호하는 제도입니다. [오답해설] ① 주택자금보증제도는 주택 구매 및 전세 자금 대출 등에 대한 보증을 제공하는 제도입니다. ② 역전세 반환보증은 역전세로 인해 임대인이 보증금을 돌려주지 못할 경우 임차인의 보증금 반환을 보증하는 제도입니다. ③ 부동산 에스크로 제도는 부동산 거래에서 제3자가 중립적인 입장에서 계약 이행을 관리하는 제도입니다.</p>
+      <p>관련 시사 뉴스: 전월세 안심신탁사업은 집주인이 주택 소유권을 신탁회사에 이전하고, 신탁회사가 전월세 계약 시 신탁 등기된 사실을 임차인에게 고지하여 보증금 보호를 강화하는 전세사기 예방 대책입니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 법정 인가 없이 불특정 다수로부터 자금을 조달하는 행위로, 고수익을 미끼로 원금 보장 약속 등을 내세워 투자자를 유인하는 불법 행위를 지칭하는 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 유사수신행위</li><li>② 다단계판매</li><li>③ 폰지사기</li><li>④ 피라미드판매</li>
+      </ul>
+      <p><strong>정답:</strong> ① 유사수신행위</p>
+      <p><strong>해설:</strong> 유사수신행위는 인허가 없이 불특정 다수로부터 자금을 조달하는 불법 행위 전반을 의미합니다. [오답해설] ② 다단계판매는 상품 판매 방식 중 하나로, 합법적인 경우가 많으며 직접적인 자금 조달 행위 자체를 지칭하는 것은 아닙니다. ③ 폰지사기는 유사수신행위의 한 형태로, 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 사기입니다. ④ 피라미드판매는 다단계판매와 유사하게 상품 판매 조직을 확장하는 방식의 불법 행위입니다.</p>
+      <p>관련 시사 뉴스: 금감원이 “친구 데려오면 수익금 더 드려요”와 같은 문구에 유사수신 주의보를 발령했습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 대출금이 3개월 이상 연체된 부실채권을 뜻하는 '고정이하여신'이 전체 여신에서 차지하는 비중을 나타내는 지표로, 은행의 자산 건전성을 평가하는 데 중요한 역할을 하는 것은 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 예대율</li><li>② 고정이하여신비율</li><li>③ BIS자기자본비율</li><li>④ 유동성비율</li>
+      </ul>
+      <p><strong>정답:</strong> ② 고정이하여신비율</p>
+      <p><strong>해설:</strong> 고정이하여신비율은 은행의 자산 건전성을 나타내는 핵심 지표 중 하나입니다. [오답해설] ① 예대율은 예금 잔액에 대한 대출 잔액의 비율을 나타냅니다. ③ BIS자기자본비율은 은행의 재무 건전성을 측정하는 지표로, 자기자본을 위험가중자산으로 나눈 값입니다. ④ 유동성비율은 단기 부채를 상환할 수 있는 유동자산의 능력을 나타냅니다.</p>
+      <p>관련 시사 뉴스: 대기업 연체율이 1년 새 2.6배 증가하는 등 은행권에 부실 경고등이 켜졌습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 은행이 가계대출의 건전성을 관리하고 금융당국의 총량 규제에 맞춰 대출 공급을 조절하는 과정에서 대출 한도가 빠르게 소진될 때 발생할 수 있는 현상은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 대출 금리가 즉시 인하되어 대출 수요가 급증한다.</li><li>② 금융당국은 대출 한도 규제를 즉시 완화한다.</li><li>③ 은행들이 일시적으로 신규 대출 접수를 중단할 수 있다.</li><li>④ 은행은 대출 수요 감소를 위해 홍보를 강화한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 은행들이 일시적으로 신규 대출 접수를 중단할 수 있다.</p>
+      <p><strong>해설:</strong> 대출 한도가 소진되면 은행은 대출 목표 달성을 위해 신규 대출 접수를 일시적으로 중단하거나 대출 조건을 강화할 수 있습니다. [오답해설] ① 대출 한도 소진은 대출 수요가 높음을 의미하므로 금리가 인하될 가능성은 낮습니다. ② 금융당국은 건전성 관리 차원에서 규제를 유지하거나 강화할 수 있습니다. ④ 대출 수요가 높아서 한도가 소진되는 상황이므로, 수요 감소를 위한 홍보 강화는 적절하지 않습니다.</p>
+      <p>관련 시사 뉴스: 대출이 풀린 지 한 달도 안 되어 5대 은행의 대출 한도가 바닥을 보이고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 은행 대출 시 우대금리를 적용받기 위한 조건 중 하나인 '급여이체' 실적 인정 기준에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 은행들은 급여이체 인정 기준을 내부적으로 정하며, 단순 계좌 이체만으로는 인정되지 않는 경우가 많다.</li><li>② 급여이체는 일정 금액 이상이 정기적으로 특정 코드를 통해 이체되어야 우대금리 조건으로 인정될 수 있다.</li><li>③ 급여이체 인정 여부는 은행별로 상이하므로, 대출 신청 전에 반드시 확인해야 한다.</li><li>④ 급여이체가 아닌 다른 형태로 매월 일정한 수입이 발생하면 은행은 급여이체와 동일하게 우대금리를 적용한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 급여이체가 아닌 다른 형태로 매월 일정한 수입이 발생하면 은행은 급여이체와 동일하게 우대금리를 적용한다.</p>
+      <p><strong>해설:</strong> 은행은 급여이체 여부를 확인하는 자체적인 기준을 가지고 있으며, 이는 단순히 월급이 입금되는 것과 다를 수 있습니다. [오답해설] ① 은행은 급여이체 인정을 위한 자체적인 기준을 가지고 있으며, 이는 단순히 계좌 이체와 다를 수 있습니다. ② 많은 은행에서 급여이체는 일정 금액 이상이 주기적으로 특정 급여 코드(예: 급여, 상여 등)로 입금될 때 인정합니다. ③ 각 은행의 급여이체 인정 기준은 다를 수 있으므로, 우대금리를 적용받기 위해서는 반드시 사전에 확인해야 합니다.</p>
+      <p>관련 시사 뉴스: 월급이 꼬박꼬박 들어왔음에도 대출금리가 깎이지 않는 경우가 발생하여 급여이체 인정 기준에 대한 논란이 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 금융당국이 청년층의 자산 형성 및 경제적 자립을 지원하기 위해 추진하는 정책이 아닌 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 청년도약계좌, 청년희망적금 등 청년의 자산 형성을 돕는 정책</li><li>② 청년 고액 자산가의 상속세 절감 및 해외 투자 활성화를 위한 특례 제도</li><li>③ 청년 전월세 보증금 대출, 주택드림 청년통장 등 주거 안정을 위한 정책</li><li>④ 청년 창업자금 대출, 햇살론유스 등 저소득·저신용 청년 대상 정책</li>
+      </ul>
+      <p><strong>정답:</strong> ② 청년 고액 자산가의 상속세 절감 및 해외 투자 활성화를 위한 특례 제도</p>
+      <p><strong>해설:</strong> 금융당국의 청년 지원 정책은 주로 자산 형성, 주거 안정, 취업 및 창업 지원, 서민금융 지원 등 경제적 자립 기반 마련에 초점을 맞추고 있습니다. [오답해설] ① 청년도약계좌와 청년희망적금은 청년의 목돈 마련을 돕는 대표적인 자산 형성 지원 정책입니다. ③ 청년 전월세 보증금 대출과 주택드림 청년통장은 청년층의 주거비 부담을 덜어주기 위한 주거 안정 지원 정책입니다. ④ 청년 창업자금 대출과 햇살론유스는 저소득·저신용 청년이 안정적인 경제활동을 할 수 있도록 지원하는 정책입니다.</p>
+      <p>관련 시사 뉴스: 금융위원회가 내년 청년 지원 예산 2.1조 원을 투입하여 '요람에서 취업·독립까지' 청년 지원 정책을 추진합니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 최근 국내 은행의 연체율이 다시 상승하고 대기업 대출 연체율도 높은 수준을 기록하고 있다. 이러한 연체율 상승이 은행 경영에 미치는 주된 영향은 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 대손충당금 적립 부담을 감소시켜 수익성 개선에 기여한다.</li><li>② 은행의 자산 건전성 지표를 악화시켜 추가 대출 여력을 확대시킨다.</li><li>③ 금융당국의 건전성 규제 강화로 이어져 여신 심사 기준이 강화될 수 있다.</li><li>④ 은행의 위험회피 성향을 약화시켜 고위험·고수익 대출 상품 출시를 촉진한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 금융당국의 건전성 규제 강화로 이어져 여신 심사 기준이 강화될 수 있다.</p>
+      <p><strong>해설:</strong> 연체율 상승은 은행의 자산 건전성을 악화시키고, 이에 대응하여 금융당국은 건전성 감독을 강화할 가능성이 높으며, 은행은 대출 심사 기준을 더욱 엄격하게 적용할 수 있습니다. [오답해설] ① 연체율 상승은 부실채권 증가로 이어져 은행의 대손충당금 적립 부담을 증가시키고 수익성을 저해합니다. ② 자산 건전성 지표 악화는 은행의 대외 신뢰도 하락 및 자본 건전성 저하로 이어져 대출 여력을 축소시킬 수 있습니다. ④ 연체율 상승은 은행의 위험회피 성향을 강화시켜 오히려 고위험 대출을 줄이는 방향으로 정책을 변경할 가능성이 큽니다.</p>
+      <p>관련 시사 뉴스: 은행 연체율이 다시 상승하여 7월 0.63%를 기록했고, 특히 대기업 연체율이 5년 만에 최고 수준을 나타내 은행권의 부실 우려가 커지고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 우리나라가 역대급 경상수지 흑자를 기록하고 있음에도 불구하고 국민들의 체감경기가 팍팍하다는 뉴스가 많다. 이러한 괴리가 발생하는 주요 원인으로 가장 타당한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 수입 물가 하락으로 인해 국내 상품 가격이 동반 하락하여 소비 심리가 위축되었기 때문이다.</li><li>② 정부의 재정 지출이 지나치게 확대되어 민간 부문의 투자 여력이 감소했기 때문이다.</li><li>③ 해외 투자 자금 유출이 급증하여 국내 시장의 유동성이 부족해졌기 때문이다.</li><li>④ 경상수지 흑자가 주로 수출 대기업의 실적 개선에 집중되어 가계 소득 증대로 이어지지 못했기 때문이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 경상수지 흑자가 주로 수출 대기업의 실적 개선에 집중되어 가계 소득 증대로 이어지지 못했기 때문이다.</p>
+      <p><strong>해설:</strong> 경상수지 흑자가 특정 산업이나 대기업 위주로 발생하고 그 성과가 가계 소득으로 충분히 분배되지 않을 때, 국민들의 체감 경기와 통계상 경제 지표 사이에 괴리가 발생할 수 있습니다. [오답해설] ① 수입 물가 하락은 소비 심리 개선에 긍정적인 영향을 미칠 수 있습니다. ② 정부의 재정 지출 확대는 일반적으로 경기 부양 효과를 기대합니다. ③ 해외 투자 자금 유출은 유동성을 감소시키지만, 경상수지 흑자는 외화 유입을 의미하므로 직접적인 괴리 원인으로 보기 어렵습니다.</p>
+      <p>관련 시사 뉴스: 역대급 경상수지 흑자에도 불구하고 국민들의 체감경기가 팍팍한 이유에 대한 분석이 나오고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 미국 연방준비제도(Fed) 등 주요국 중앙은행이 금리 인상 기조를 유지하거나 추가 인상 가능성을 시사하고 있다. 이러한 글로벌 고금리 환경이 국내 금융시장에 미칠 수 있는 영향으로 옳지 않은 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 국내 시장금리 상승 압력으로 작용하여 은행의 대출금리가 인상될 수 있다.</li><li>② 투자자들의 안전자산 선호 심리가 강화되어 주식 시장의 변동성이 확대될 수 있다.</li><li>③ 가계 및 기업의 이자 부담이 증가하여 소비와 투자가 위축될 수 있다.</li><li>④ 원화 강세 현상이 심화되어 수출 기업의 가격 경쟁력이 향상될 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 원화 강세 현상이 심화되어 수출 기업의 가격 경쟁력이 향상될 수 있다.</p>
+      <p><strong>해설:</strong> 글로벌 고금리 환경은 자본 유출 우려를 키워 국내 금리 인상 압박으로 이어지고, 이는 대출 부담 증가와 투자 위축을 야기하며, 달러 강세에 따라 원화 약세 현상이 나타날 수 있습니다. [오답해설] ① 주요국의 금리 인상은 국내 금리에도 상승 압력을 가해 은행 대출 금리 인상으로 이어질 수 있습니다. ② 고금리 환경에서는 위험 자산에 대한 투자 매력이 감소하여 주식 시장의 변동성이 확대되고 안전 자산 선호 심리가 강화됩니다. ③ 금리 인상은 대출 이자 부담을 가중시켜 가계와 기업의 소비 및 투자 심리를 위축시킬 수 있습니다.</p>
+      <p>관련 시사 뉴스: “미·일 금리 더 간다 … 포트폴리오 재구성할 때”라는 전망과 함께 미국 연준의 금리 인상 가능성이 지속적으로 언급되고 있습니다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-22</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2383,"category":"시사금융용어","question":"플랫폼 기업이 사용자와 공급자를 유치하기 위해 초기에 좋은 서비스를 제공하다가, 독점적 지위를 확보한 후 서비스 품질을 저하시키고 수수료를 인상하여 이익을 극대화하는 현상을 일컫는 용어는?","answer":"③ 엔시티피케이션","explanation":"엔시티피케이션은 플랫폼 기업이 독점적 지위를 얻은 후 서비스 품질을 떨어뜨리고 수익을 극대화하는 현상을 의미합니다. [오답해설] ① 락인 효과는 소비자가 특정 서비스에 익숙해져 다른 서비스로 전환하기 어려운 현상을 말합니다. ② 네트워크 효과는 특정 상품이나 서비스의 가치가 그것을 이용하는 사람의 수에 따라 증가하는 현상을 말합니다. ④ 승자독식은 경쟁 시장에서 소수의 기업이 대부분의 시장 점유율을 차지하는 현상을 말합니다.","news_context":"플랫폼 기업이 독점적 지위를 확보하면 서비스 품질을 저하시키고 수수료를 올려 이익을 극대화하는 현상을 일컫는 '엔시티피케이션'은 '망사용료'와 유사한 맥락으로 볼 수 있습니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4435812","options":["① 락인 효과","② 네트워크 효과","③ 엔시티피케이션","④ 승자독식"]},{"id":2384,"category":"시사금융용어","question":"전세사기로부터 임차인의 보증금을 보호하기 위해 집주인(위탁자)이 주택의 소유권을 신탁회사에 이전하고, 신탁회사가 신탁 등기 사실을 임차인에게 고지하여 임차인의 손해를 방지하는 사업을 무엇이라고 하는가?","answer":"④ 전월세 안심신탁사업","explanation":"전월세 안심신탁사업은 전세사기 피해를 예방하기 위해 집주인이 주택 소유권을 신탁회사에 이전하여 임차인의 보증금을 보호하는 제도입니다. [오답해설] ① 주택자금보증제도는 주택 구매 및 전세 자금 대출 등에 대한 보증을 제공하는 제도입니다. ② 역전세 반환보증은 역전세로 인해 임대인이 보증금을 돌려주지 못할 경우 임차인의 보증금 반환을 보증하는 제도입니다. ③ 부동산 에스크로 제도는 부동산 거래에서 제3자가 중립적인 입장에서 계약 이행을 관리하는 제도입니다.","news_context":"전월세 안심신탁사업은 집주인이 주택 소유권을 신탁회사에 이전하고, 신탁회사가 전월세 계약 시 신탁 등기된 사실을 임차인에게 고지하여 보증금 보호를 강화하는 전세사기 예방 대책입니다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4434188","options":["① 주택자금보증제도","② 역전세 반환보증","③ 부동산 에스크로 제도","④ 전월세 안심신탁사업"]},{"id":2385,"category":"금융용어","question":"법정 인가 없이 불특정 다수로부터 자금을 조달하는 행위로, 고수익을 미끼로 원금 보장 약속 등을 내세워 투자자를 유인하는 불법 행위를 지칭하는 용어는 무엇인가?","answer":"① 유사수신행위","explanation":"유사수신행위는 인허가 없이 불특정 다수로부터 자금을 조달하는 불법 행위 전반을 의미합니다. [오답해설] ② 다단계판매는 상품 판매 방식 중 하나로, 합법적인 경우가 많으며 직접적인 자금 조달 행위 자체를 지칭하는 것은 아닙니다. ③ 폰지사기는 유사수신행위의 한 형태로, 신규 투자자의 돈으로 기존 투자자에게 수익을 지급하는 방식의 사기입니다. ④ 피라미드판매는 다단계판매와 유사하게 상품 판매 조직을 확장하는 방식의 불법 행위입니다.","news_context":"금감원이 “친구 데려오면 수익금 더 드려요”와 같은 문구에 유사수신 주의보를 발령했습니다.","news_url":"https://www.mk.co.kr/news/economy/12157943","options":["① 유사수신행위","② 다단계판매","③ 폰지사기","④ 피라미드판매"]},{"id":2386,"category":"금융용어","question":"대출금이 3개월 이상 연체된 부실채권을 뜻하는 '고정이하여신'이 전체 여신에서 차지하는 비중을 나타내는 지표로, 은행의 자산 건전성을 평가하는 데 중요한 역할을 하는 것은 무엇인가?","answer":"② 고정이하여신비율","explanation":"고정이하여신비율은 은행의 자산 건전성을 나타내는 핵심 지표 중 하나입니다. [오답해설] ① 예대율은 예금 잔액에 대한 대출 잔액의 비율을 나타냅니다. ③ BIS자기자본비율은 은행의 재무 건전성을 측정하는 지표로, 자기자본을 위험가중자산으로 나눈 값입니다. ④ 유동성비율은 단기 부채를 상환할 수 있는 유동자산의 능력을 나타냅니다.","news_context":"대기업 연체율이 1년 새 2.6배 증가하는 등 은행권에 부실 경고등이 켜졌습니다.","news_url":"https://n.news.naver.com/mnews/article/123/0002390651?sid=101","options":["① 예대율","② 고정이하여신비율","③ BIS자기자본비율","④ 유동성비율"]},{"id":2387,"category":"세부지식","question":"은행이 가계대출의 건전성을 관리하고 금융당국의 총량 규제에 맞춰 대출 공급을 조절하는 과정에서 대출 한도가 빠르게 소진될 때 발생할 수 있는 현상은 무엇인가?","answer":"③ 은행들이 일시적으로 신규 대출 접수를 중단할 수 있다.","explanation":"대출 한도가 소진되면 은행은 대출 목표 달성을 위해 신규 대출 접수를 일시적으로 중단하거나 대출 조건을 강화할 수 있습니다. [오답해설] ① 대출 한도 소진은 대출 수요가 높음을 의미하므로 금리가 인하될 가능성은 낮습니다. ② 금융당국은 건전성 관리 차원에서 규제를 유지하거나 강화할 수 있습니다. ④ 대출 수요가 높아서 한도가 소진되는 상황이므로, 수요 감소를 위한 홍보 강화는 적절하지 않습니다.","news_context":"대출이 풀린 지 한 달도 안 되어 5대 은행의 대출 한도가 바닥을 보이고 있습니다.","news_url":"","options":["① 대출 금리가 즉시 인하되어 대출 수요가 급증한다.","② 금융당국은 대출 한도 규제를 즉시 완화한다.","③ 은행들이 일시적으로 신규 대출 접수를 중단할 수 있다.","④ 은행은 대출 수요 감소를 위해 홍보를 강화한다."]},{"id":2388,"category":"세부지식","question":"은행 대출 시 우대금리를 적용받기 위한 조건 중 하나인 '급여이체' 실적 인정 기준에 대한 설명으로 옳지 않은 것은?","answer":"④ 급여이체가 아닌 다른 형태로 매월 일정한 수입이 발생하면 은행은 급여이체와 동일하게 우대금리를 적용한다.","explanation":"은행은 급여이체 여부를 확인하는 자체적인 기준을 가지고 있으며, 이는 단순히 월급이 입금되는 것과 다를 수 있습니다. [오답해설] ① 은행은 급여이체 인정을 위한 자체적인 기준을 가지고 있으며, 이는 단순히 계좌 이체와 다를 수 있습니다. ② 많은 은행에서 급여이체는 일정 금액 이상이 주기적으로 특정 급여 코드(예: 급여, 상여 등)로 입금될 때 인정합니다. ③ 각 은행의 급여이체 인정 기준은 다를 수 있으므로, 우대금리를 적용받기 위해서는 반드시 사전에 확인해야 합니다.","news_context":"월급이 꼬박꼬박 들어왔음에도 대출금리가 깎이지 않는 경우가 발생하여 급여이체 인정 기준에 대한 논란이 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12158603","options":["① 은행들은 급여이체 인정 기준을 내부적으로 정하며, 단순 계좌 이체만으로는 인정되지 않는 경우가 많다.","② 급여이체는 일정 금액 이상이 정기적으로 특정 코드를 통해 이체되어야 우대금리 조건으로 인정될 수 있다.","③ 급여이체 인정 여부는 은행별로 상이하므로, 대출 신청 전에 반드시 확인해야 한다.","④ 급여이체가 아닌 다른 형태로 매월 일정한 수입이 발생하면 은행은 급여이체와 동일하게 우대금리를 적용한다."]},{"id":2389,"category":"세부지식","question":"금융당국이 청년층의 자산 형성 및 경제적 자립을 지원하기 위해 추진하는 정책이 아닌 것은?","answer":"② 청년 고액 자산가의 상속세 절감 및 해외 투자 활성화를 위한 특례 제도","explanation":"금융당국의 청년 지원 정책은 주로 자산 형성, 주거 안정, 취업 및 창업 지원, 서민금융 지원 등 경제적 자립 기반 마련에 초점을 맞추고 있습니다. [오답해설] ① 청년도약계좌와 청년희망적금은 청년의 목돈 마련을 돕는 대표적인 자산 형성 지원 정책입니다. ③ 청년 전월세 보증금 대출과 주택드림 청년통장은 청년층의 주거비 부담을 덜어주기 위한 주거 안정 지원 정책입니다. ④ 청년 창업자금 대출과 햇살론유스는 저소득·저신용 청년이 안정적인 경제활동을 할 수 있도록 지원하는 정책입니다.","news_context":"금융위원회가 내년 청년 지원 예산 2.1조 원을 투입하여 '요람에서 취업·독립까지' 청년 지원 정책을 추진합니다.","news_url":"https://www.mk.co.kr/news/economy/12158032","options":["① 청년도약계좌, 청년희망적금 등 청년의 자산 형성을 돕는 정책","② 청년 고액 자산가의 상속세 절감 및 해외 투자 활성화를 위한 특례 제도","③ 청년 전월세 보증금 대출, 주택드림 청년통장 등 주거 안정을 위한 정책","④ 청년 창업자금 대출, 햇살론유스 등 저소득·저신용 청년 대상 정책"]},{"id":2390,"category":"시사","question":"최근 국내 은행의 연체율이 다시 상승하고 대기업 대출 연체율도 높은 수준을 기록하고 있다. 이러한 연체율 상승이 은행 경영에 미치는 주된 영향은 무엇인가?","answer":"③ 금융당국의 건전성 규제 강화로 이어져 여신 심사 기준이 강화될 수 있다.","explanation":"연체율 상승은 은행의 자산 건전성을 악화시키고, 이에 대응하여 금융당국은 건전성 감독을 강화할 가능성이 높으며, 은행은 대출 심사 기준을 더욱 엄격하게 적용할 수 있습니다. [오답해설] ① 연체율 상승은 부실채권 증가로 이어져 은행의 대손충당금 적립 부담을 증가시키고 수익성을 저해합니다. ② 자산 건전성 지표 악화는 은행의 대외 신뢰도 하락 및 자본 건전성 저하로 이어져 대출 여력을 축소시킬 수 있습니다. ④ 연체율 상승은 은행의 위험회피 성향을 강화시켜 오히려 고위험 대출을 줄이는 방향으로 정책을 변경할 가능성이 큽니다.","news_context":"은행 연체율이 다시 상승하여 7월 0.63%를 기록했고, 특히 대기업 연체율이 5년 만에 최고 수준을 나타내 은행권의 부실 우려가 커지고 있습니다.","news_url":"https://n.news.naver.com/mnews/article/018/0006374002?sid=101","options":["① 은행의 대손충당금 적립 부담을 감소시켜 수익성 개선에 기여한다.","② 은행의 자산 건전성 지표를 악화시켜 추가 대출 여력을 확대시킨다.","③ 금융당국의 건전성 규제 강화로 이어져 여신 심사 기준이 강화될 수 있다.","④ 은행의 위험회피 성향을 약화시켜 고위험·고수익 대출 상품 출시를 촉진한다."]},{"id":2391,"category":"시사","question":"우리나라가 역대급 경상수지 흑자를 기록하고 있음에도 불구하고 국민들의 체감경기가 팍팍하다는 뉴스가 많다. 이러한 괴리가 발생하는 주요 원인으로 가장 타당한 것은?","answer":"④ 경상수지 흑자가 주로 수출 대기업의 실적 개선에 집중되어 가계 소득 증대로 이어지지 못했기 때문이다.","explanation":"경상수지 흑자가 특정 산업이나 대기업 위주로 발생하고 그 성과가 가계 소득으로 충분히 분배되지 않을 때, 국민들의 체감 경기와 통계상 경제 지표 사이에 괴리가 발생할 수 있습니다. [오답해설] ① 수입 물가 하락은 소비 심리 개선에 긍정적인 영향을 미칠 수 있습니다. ② 정부의 재정 지출 확대는 일반적으로 경기 부양 효과를 기대합니다. ③ 해외 투자 자금 유출은 유동성을 감소시키지만, 경상수지 흑자는 외화 유입을 의미하므로 직접적인 괴리 원인으로 보기 어렵습니다.","news_context":"역대급 경상수지 흑자에도 불구하고 국민들의 체감경기가 팍팍한 이유에 대한 분석이 나오고 있습니다.","news_url":"","options":["① 수입 물가 하락으로 인해 국내 상품 가격이 동반 하락하여 소비 심리가 위축되었기 때문이다.","② 정부의 재정 지출이 지나치게 확대되어 민간 부문의 투자 여력이 감소했기 때문이다.","③ 해외 투자 자금 유출이 급증하여 국내 시장의 유동성이 부족해졌기 때문이다.","④ 경상수지 흑자가 주로 수출 대기업의 실적 개선에 집중되어 가계 소득 증대로 이어지지 못했기 때문이다."]},{"id":2392,"category":"시사","question":"최근 미국 연방준비제도(Fed) 등 주요국 중앙은행이 금리 인상 기조를 유지하거나 추가 인상 가능성을 시사하고 있다. 이러한 글로벌 고금리 환경이 국내 금융시장에 미칠 수 있는 영향으로 옳지 않은 것은?","answer":"④ 원화 강세 현상이 심화되어 수출 기업의 가격 경쟁력이 향상될 수 있다.","explanation":"글로벌 고금리 환경은 자본 유출 우려를 키워 국내 금리 인상 압박으로 이어지고, 이는 대출 부담 증가와 투자 위축을 야기하며, 달러 강세에 따라 원화 약세 현상이 나타날 수 있습니다. [오답해설] ① 주요국의 금리 인상은 국내 금리에도 상승 압력을 가해 은행 대출 금리 인상으로 이어질 수 있습니다. ② 고금리 환경에서는 위험 자산에 대한 투자 매력이 감소하여 주식 시장의 변동성이 확대되고 안전 자산 선호 심리가 강화됩니다. ③ 금리 인상은 대출 이자 부담을 가중시켜 가계와 기업의 소비 및 투자 심리를 위축시킬 수 있습니다.","news_context":"“미·일 금리 더 간다 … 포트폴리오 재구성할 때”라는 전망과 함께 미국 연준의 금리 인상 가능성이 지속적으로 언급되고 있습니다.","news_url":"https://www.mk.co.kr/news/economy/12158584","options":["① 국내 시장금리 상승 압력으로 작용하여 은행의 대출금리가 인상될 수 있다.","② 투자자들의 안전자산 선호 심리가 강화되어 주식 시장의 변동성이 확대될 수 있다.","③ 가계 및 기업의 이자 부담이 증가하여 소비와 투자가 위축될 수 있다.","④ 원화 강세 현상이 심화되어 수출 기업의 가격 경쟁력이 향상될 수 있다."]},{"id":99,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
