@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-29 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-29 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-29 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. 로봇 자동화를 통해 업무 프로세스를 혁신하는 개념으로, 기존의 RPA(로봇 프로세스 자동화)를 넘어 인공지능(AI)을 결합하여 로봇의 자율성과 지능을 높이고 기업의 생산성과 효율성을 극대화하는 용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 디지털 전환(DX)</li><li>② 로봇전환(RX)</li><li>③ 하이퍼오토메이션</li><li>④ 로봇 프로세스 자동화(RPA)</li>
+      </ul>
+      <p><strong>정답:</strong> ② 로봇전환(RX)</p>
+      <p><strong>해설:</strong> 로봇전환(RX)은 AI와 결합하여 로봇의 자율성과 지능을 높여 기업의 생산성과 효율성을 극대화하는 개념입니다. [오답해설] ① 디지털 전환(DX)은 디지털 기술을 활용한 전반적인 비즈니스 혁신을 의미하며, 로봇전환은 그 하위 또는 밀접한 관련 개념입니다. ③ 하이퍼오토메이션은 다양한 기술을 결합하여 자동화의 범위를 확장하는 개념으로, 로봇전환은 이러한 하이퍼오토메이션의 핵심 요소 중 하나지만 동일한 개념은 아닙니다. ④ 로봇 프로세스 자동화(RPA)는 반복적인 규칙 기반 업무를 소프트웨어 로봇으로 자동화하는 것으로, 로봇전환(RX)은 RPA를 넘어서는 차세대 개념입니다.</p>
+      <p>관련 시사 뉴스: 로봇전환(RX)은 기존 RPA를 넘어 AI와 결합하여 로봇의 자율성과 지능을 높여 기업의 생산성과 효율성을 극대화하는 혁신적인 개념이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 온라인 플랫폼이 사용자에게서 가치를 추출하고 플랫폼 자체의 가치를 떨어뜨리는 일련의 과정을 의미하며, 사용자-기업-광고주 순으로 가치를 이동시켜 수익을 극대화하면서 결국 플랫폼의 질이 저하되는 현상을 일컫는 용어는 무엇인가?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 쉐도우 피싱</li><li>② 다크 패턴</li><li>③ 플라이휠 효과</li><li>④ 엔시티피케이션</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 엔시티피케이션</p>
+      <p><strong>해설:</strong> 엔시티피케이션은 플랫폼이 사용자에게서 가치를 추출하여 플랫폼의 질이 저하되는 현상을 의미합니다. [오답해설] ① 쉐도우 피싱은 피싱 공격의 한 형태로, 특정 웹사이트나 서비스를 모방하여 사용자 정보를 탈취하는 수법을 말합니다. ② 다크 패턴은 사용자의 비합리적인 의사결정을 유도하는 인터페이스 디자인 기법을 의미합니다. ③ 플라이휠 효과는 초기에 작은 노력이 쌓여 거대한 동력을 얻는 것을 비유하는 용어로, 비즈니스 성장의 선순환 구조를 설명할 때 주로 사용됩니다.</p>
+      <p>관련 시사 뉴스: 엔시티피케이션은 온라인 플랫폼이 수익 극대화를 위해 사용자에게서 가치를 추출하고 플랫폼의 질을 의도적으로 저하시키는 현상을 일컫는 용어이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 천연자원이 풍부한 국가가 오히려 경제 발전에 어려움을 겪는 현상을 일컫는 경제학 용어는?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 보이지 않는 손</li><li>② 파킨슨의 법칙</li><li>③ 자원의 저주</li><li>④ 멜서스의 함정</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 자원의 저주</p>
+      <p><strong>해설:</strong> 자원의 저주는 천연자원이 풍부한 국가가 다른 산업 발전이나 효율적인 지배구조 구축에 실패하여 경제 성장이 둔화되거나 부패가 심화되는 현상을 의미합니다. [오답해설] ① 보이지 않는 손은 시장에서 각자의 이익을 추구하는 행위가 사회 전체의 이익으로 이어진다는 애덤 스미스의 개념입니다. ② 파킨슨의 법칙은 공무원 수가 업무량과 관계없이 계속 늘어나는 현상을 설명합니다. ④ 멜서스의 함정은 인구는 기하급수적으로 증가하는 반면 식량은 산술급수적으로 증가하여 결국 인류가 빈곤에 시달릴 것이라는 이론입니다.</p>
+      <p>관련 시사 뉴스: "석유 한 방울 안 나는 게 다행?"…'자원의 저주' 뭐길래</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 초고속 컴퓨터와 네트워크를 이용하여 매우 짧은 시간 안에 대량의 주문을 체결하여 미세한 가격 변동에서 이익을 얻는 거래 기법은?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>① 퀀트 투자</li><li>② 프로그램 매매</li><li>③ 알고리즘 트레이딩</li><li>④ 고빈도매매</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 고빈도매매</p>
+      <p><strong>해설:</strong> 고빈도매매(HFT, High-Frequency Trading)는 초고속 매매 시스템을 활용하여 시장의 미세한 가격 불균형을 포착해 대량의 거래를 순간적으로 처리하여 이익을 추구하는 기법입니다. [오답해설] ① 퀀트 투자는 수학적 모델과 통계 분석을 통해 투자 전략을 수립하는 것으로, 고빈도매매보다 더 넓은 범위의 투자 접근 방식입니다. ② 프로그램 매매는 바스켓 매매 등 컴퓨터 프로그램으로 다수의 종목을 일괄 매매하는 것으로, 고빈도매매처럼 초단기적인 차익 실현에 초점을 맞추지 않습니다. ③ 알고리즘 트레이딩은 미리 설정된 규칙과 알고리즘에 따라 자동으로 주식 등을 매매하는 것으로, 고빈도매매는 알고리즘 트레이딩의 한 종류이지만 속도에 훨씬 더 중점을 둡니다.</p>
+      <p>관련 시사 뉴스: 금융위 "고빈도매매, 시장 변동성 키워…적절한 규율 검토 중"</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. '우선주 ETF'에 대한 설명으로 옳은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 일반적으로 보통주보다 의결권이 강하다.</li><li>② 보통주와 동일한 배당률을 제공하지만, 청산 시 잔여재산 분배 우선권은 없다.</li><li>③ 보통주보다 높은 배당 수익률을 기대할 수 있으나, 주가 상승 여력은 제한적일 수 있다.</li><li>④ 우선주는 상장폐지 위험이 없어 보통주보다 안정성이 매우 높다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 보통주보다 높은 배당 수익률을 기대할 수 있으나, 주가 상승 여력은 제한적일 수 있다.</p>
+      <p><strong>해설:</strong> 우선주는 보통주보다 배당률이 높거나 정해진 배당을 먼저 받을 권리가 있지만, 일반적으로 의결권이 없으며 주가 상승폭은 보통주에 비해 제한적인 경향이 있습니다. [오답해설] ① 우선주는 보통 의결권이 없습니다. ② 우선주는 보통주보다 배당률이 높고, 회사 청산 시 잔여재산 분배에 대한 우선권이 있습니다. ④ 우선주도 상장폐지 위험에서 자유롭지 않으며, 회사의 재정 상태에 따라 보통주와 함께 상장폐지될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 그래도 高배당 매력…'우선주 ETF' 속속 등장</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 유언대용신탁에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 위탁자가 살아있을 때 계약하고, 사망 후에 수익자에게 재산이 지급되는 신탁이다.</li><li>② 치매 등 위탁자의 의사결정 능력 저하 시, 신탁계약에 따라 재산이 관리될 수 있다.</li><li>③ 유언 검정 절차를 거치지 않아도 되므로, 신속하고 유연하게 재산을 배분할 수 있다.</li><li>④ 일반적인 유언과 달리, 유언자가 사망한 후에도 신탁계약의 내용 변경이 가능하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 일반적인 유언과 달리, 유언자가 사망한 후에도 신탁계약의 내용 변경이 가능하다.</p>
+      <p><strong>해설:</strong> 유언대용신탁은 위탁자가 살아있을 때 계약을 체결하고 사망 시 수익자에게 재산이 지급되도록 설계되는 신탁으로, 위탁자 사망 후에는 계약 내용 변경이 불가능합니다. [오답해설] ① 유언대용신탁의 기본적인 정의입니다. ② 위탁자의 생전 의사결정 능력 저하 시에도 신탁 재산을 안정적으로 관리할 수 있는 장점이 있습니다. ③ 유언대용신탁은 사적 계약이므로 법원의 유언 검정 절차를 생략할 수 있어 재산 배분이 신속합니다.</p>
+      <p>관련 시사 뉴스: 2년만에 15배…신한銀 유언대용신탁 날았다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 주택금융공사의 보금자리론 소득기준 개선이 '결혼 페널티' 완화에 기여하는 주요 내용은 무엇인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 독신 가구의 소득 기준을 신혼부부와 동일하게 상향 조정한다.</li><li>② 결혼 여부와 관계없이 모든 무주택 가구에 대해 소득 기준을 단일화한다.</li><li>③ 부부 합산 소득 적용 시 소득의 일정 부분을 공제하여 실질 소득 기준을 낮춘다.</li><li>④ 신혼부부의 경우 부부 합산 소득 기준을 기존보다 상향 조정하여 대출 한도 및 가능성을 높인다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 신혼부부의 경우 부부 합산 소득 기준을 기존보다 상향 조정하여 대출 한도 및 가능성을 높인다.</p>
+      <p><strong>해설:</strong> 보금자리론 소득기준 개선은 신혼부부 등에게 기존보다 높은 부부 합산 소득 기준을 적용하여 주택 구매 대출 접근성을 높이는 방식으로 '결혼 페널티'를 완화합니다. [오답해설] ① 독신 가구의 소득 기준을 신혼부부와 동일하게 상향 조정하는 것은 결혼 페널티 완화와 직접적인 관련이 없습니다. ② 모든 무주택 가구에 대해 소득 기준을 단일화하는 것은 '결혼 페널티'를 직접적으로 해결하는 방법은 아닙니다. ③ 소득의 일정 부분을 공제하는 방식은 소득 기준을 낮추는 다른 방식이지만, 뉴스에서 언급된 '결혼 페널티 완화'의 맥락에서는 신혼부부 대상의 소득 기준 상향 조정이 더 핵심적인 내용입니다.</p>
+      <p>관련 시사 뉴스: “결혼페널티 없앤다”…HF, 보금자리론 소득기준 개선</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 은행 영업시간 30분 단축 조치가 은행의 영업 전략 및 고객 서비스에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 은행 간 영업시간 경쟁 심화로 점포 운영시간이 전반적으로 확대될 것이다.</li><li>② 고객들이 비대면 채널을 더 적극적으로 활용하게 되어 디지털 전환이 가속화될 것이다.</li><li>③ 고령층 등 디지털 취약계층의 대면 금융 서비스 접근성이 현저히 개선될 것이다.</li><li>④ 은행의 고정비용 절감 효과가 미미하여 수익성 개선에 큰 도움이 되지 않을 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 고객들이 비대면 채널을 더 적극적으로 활용하게 되어 디지털 전환이 가속화될 것이다.</p>
+      <p><strong>해설:</strong> 은행 영업시간 단축은 고객들이 비대면 채널을 더 적극적으로 이용하도록 유도하여 은행의 디지털 전환을 가속화할 것입니다. [오답해설] ① 영업시간 단축은 경쟁 심화보다는 효율성을 추구하는 방향이며, 전반적인 영업시간 확대는 현 상황에서 예상하기 어렵습니다. ③ 대면 서비스 시간이 줄어들어 고령층 등 디지털 취약계층의 금융 서비스 접근성은 오히려 저해될 수 있습니다. ④ 영업시간 단축은 점포 운영 및 인건비 등 고정비용 절감에 기여하여 수익성 개선에 긍정적인 영향을 미칠 수 있습니다.</p>
+      <p>관련 시사 뉴스: 은행 영업시간 30분 단축 … 내년 4월부터 9시반 연다</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 미국채 금리 상승이 국내 금융시장에 미치는 영향에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 국내 기준금리 인상 압력을 높여 가계와 기업의 대출 금리 상승을 유발할 수 있다.</li><li>② 외국인 자금 유출 가능성을 높여 국내 주식 및 채권 시장의 변동성을 확대시킬 수 있다.</li><li>③ 원/달러 환율 상승 압력으로 작용하여 원화 가치 하락에 영향을 미 줄 수 있다.</li><li>④ 국내 은행의 예대마진 축소로 이어져 수익성 악화 요인으로 작용한다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 국내 은행의 예대마진 축소로 이어져 수익성 악화 요인으로 작용한다.</p>
+      <p><strong>해설:</strong> 미국채 금리 상승은 국내 금리 인상 압력을 높이고 외국인 자금 유출, 원/달러 환율 상승 등 국내 금융시장에 부정적인 영향을 미칠 수 있으나, 일반적으로 국내 기준금리 인상은 은행의 대출 금리 상승으로 이어져 예대마진을 확대시키고 수익성 개선에 기여할 수 있습니다. [오답해설] ① 미국채 금리 상승은 한국은행의 금리 인상 결정에 영향을 미쳐 국내 대출 금리를 올릴 수 있습니다. ② 미국 금리가 높아지면 투자자들은 더 높은 수익을 찾아 미국으로 자금을 이동시킬 수 있어 국내 금융시장에서 자금이 유출될 수 있습니다. ③ 미국 금리 상승은 달러 강세를 유발하여 상대적으로 원화 가치를 하락시키고 원/달러 환율이 상승할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 유가와 국채수익률 상승에 눌린 美증시…나스닥 1.2%↓</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 최근 정부가 발표한 코로나 채무조정 및 '새도약기금' 등의 빚 탕감 정책이 금융권에 미칠 수 있는 영향으로 가장 거리가 먼 것은?</h2>
+      <p>분류: 시사상식</p>
+      <ul>
+        <li>① 성실 상환자들의 상대적 박탈감으로 인해 향후 대출 상환 의지가 저해될 수 있다.</li><li>② 채무자의 도덕적 해이를 유발하여 장기적으로 금융 건전성에 부정적인 영향을 미칠 수 있다.</li><li>③ 금융기관의 부실채권 정리 부담을 완화하여 금융 시스템 안정에 기여할 수 있다.</li><li>④ 은행 등 금융기관의 대손충당금 추가 적립 부담이 증가하여 건전성 지표에 영향을 줄 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 금융기관의 부실채권 정리 부담을 완화하여 금융 시스템 안정에 기여할 수 있다.</p>
+      <p><strong>해설:</strong> 정부의 채무조정 및 빚 탕감 정책은 단기적으로 금융기관의 부실채권 정리 부담을 완화하는 긍정적 측면이 있지만, 장기적으로는 도덕적 해이와 성실 상환자와의 형평성 문제, 금융 건전성 악화 가능성 등 다양한 부정적 영향을 고려해야 합니다. [오답해설] ① 이미 빚을 성실히 갚아온 사람들은 채무조정을 받는 사람들과 비교하여 상대적 박탈감을 느끼고, 이는 향후 대출 상환에 대한 의지를 약화시킬 수 있습니다. ② 빚을 갚지 않아도 된다는 인식이 확산되면 채무자들이 의도적으로 빚을 상환하지 않으려는 도덕적 해이가 발생할 수 있으며, 이는 금융기관의 건전성을 장기적으로 위협할 수 있습니다. ④ 채무조정 및 빚 탕감은 금융기관이 대출금 회수를 포기하거나 손실을 감수해야 하므로, 이에 대비한 대손충당금 추가 적립 부담으로 이어질 수 있습니다.</p>
+      <p>관련 시사 뉴스: [단독] 22만명은 갚았는데…코로나 때 빚 채무조정 나선 정부</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-29</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2455,"category":"시사금융용어","question":"로봇 자동화를 통해 업무 프로세스를 혁신하는 개념으로, 기존의 RPA(로봇 프로세스 자동화)를 넘어 인공지능(AI)을 결합하여 로봇의 자율성과 지능을 높이고 기업의 생산성과 효율성을 극대화하는 용어는 무엇인가?","answer":"② 로봇전환(RX)","explanation":"로봇전환(RX)은 AI와 결합하여 로봇의 자율성과 지능을 높여 기업의 생산성과 효율성을 극대화하는 개념입니다. [오답해설] ① 디지털 전환(DX)은 디지털 기술을 활용한 전반적인 비즈니스 혁신을 의미하며, 로봇전환은 그 하위 또는 밀접한 관련 개념입니다. ③ 하이퍼오토메이션은 다양한 기술을 결합하여 자동화의 범위를 확장하는 개념으로, 로봇전환은 이러한 하이퍼오토메이션의 핵심 요소 중 하나지만 동일한 개념은 아닙니다. ④ 로봇 프로세스 자동화(RPA)는 반복적인 규칙 기반 업무를 소프트웨어 로봇으로 자동화하는 것으로, 로봇전환(RX)은 RPA를 넘어서는 차세대 개념입니다.","news_context":"로봇전환(RX)은 기존 RPA를 넘어 AI와 결합하여 로봇의 자율성과 지능을 높여 기업의 생산성과 효율성을 극대화하는 혁신적인 개념이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4434370","options":["① 디지털 전환(DX)","② 로봇전환(RX)","③ 하이퍼오토메이션","④ 로봇 프로세스 자동화(RPA)"]},{"id":2456,"category":"시사금융용어","question":"온라인 플랫폼이 사용자에게서 가치를 추출하고 플랫폼 자체의 가치를 떨어뜨리는 일련의 과정을 의미하며, 사용자-기업-광고주 순으로 가치를 이동시켜 수익을 극대화하면서 결국 플랫폼의 질이 저하되는 현상을 일컫는 용어는 무엇인가?","answer":"④ 엔시티피케이션","explanation":"엔시티피케이션은 플랫폼이 사용자에게서 가치를 추출하여 플랫폼의 질이 저하되는 현상을 의미합니다. [오답해설] ① 쉐도우 피싱은 피싱 공격의 한 형태로, 특정 웹사이트나 서비스를 모방하여 사용자 정보를 탈취하는 수법을 말합니다. ② 다크 패턴은 사용자의 비합리적인 의사결정을 유도하는 인터페이스 디자인 기법을 의미합니다. ③ 플라이휠 효과는 초기에 작은 노력이 쌓여 거대한 동력을 얻는 것을 비유하는 용어로, 비즈니스 성장의 선순환 구조를 설명할 때 주로 사용됩니다.","news_context":"엔시티피케이션은 온라인 플랫폼이 수익 극대화를 위해 사용자에게서 가치를 추출하고 플랫폼의 질을 의도적으로 저하시키는 현상을 일컫는 용어이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4435812","options":["① 쉐도우 피싱","② 다크 패턴","③ 플라이휠 효과","④ 엔시티피케이션"]},{"id":2457,"category":"금융용어","question":"천연자원이 풍부한 국가가 오히려 경제 발전에 어려움을 겪는 현상을 일컫는 경제학 용어는?","answer":"③ 자원의 저주","explanation":"자원의 저주는 천연자원이 풍부한 국가가 다른 산업 발전이나 효율적인 지배구조 구축에 실패하여 경제 성장이 둔화되거나 부패가 심화되는 현상을 의미합니다. [오답해설] ① 보이지 않는 손은 시장에서 각자의 이익을 추구하는 행위가 사회 전체의 이익으로 이어진다는 애덤 스미스의 개념입니다. ② 파킨슨의 법칙은 공무원 수가 업무량과 관계없이 계속 늘어나는 현상을 설명합니다. ④ 멜서스의 함정은 인구는 기하급수적으로 증가하는 반면 식량은 산술급수적으로 증가하여 결국 인류가 빈곤에 시달릴 것이라는 이론입니다.","news_context":"\"석유 한 방울 안 나는 게 다행?\"…'자원의 저주' 뭐길래","news_url":"","options":["① 보이지 않는 손","② 파킨슨의 법칙","③ 자원의 저주","④ 멜서스의 함정"]},{"id":2458,"category":"금융용어","question":"초고속 컴퓨터와 네트워크를 이용하여 매우 짧은 시간 안에 대량의 주문을 체결하여 미세한 가격 변동에서 이익을 얻는 거래 기법은?","answer":"④ 고빈도매매","explanation":"고빈도매매(HFT, High-Frequency Trading)는 초고속 매매 시스템을 활용하여 시장의 미세한 가격 불균형을 포착해 대량의 거래를 순간적으로 처리하여 이익을 추구하는 기법입니다. [오답해설] ① 퀀트 투자는 수학적 모델과 통계 분석을 통해 투자 전략을 수립하는 것으로, 고빈도매매보다 더 넓은 범위의 투자 접근 방식입니다. ② 프로그램 매매는 바스켓 매매 등 컴퓨터 프로그램으로 다수의 종목을 일괄 매매하는 것으로, 고빈도매매처럼 초단기적인 차익 실현에 초점을 맞추지 않습니다. ③ 알고리즘 트레이딩은 미리 설정된 규칙과 알고리즘에 따라 자동으로 주식 등을 매매하는 것으로, 고빈도매매는 알고리즘 트레이딩의 한 종류이지만 속도에 훨씬 더 중점을 둡니다.","news_context":"금융위 \"고빈도매매, 시장 변동성 키워…적절한 규율 검토 중\"","news_url":"http://www.newsroad.co.kr/news/articleView.html?idxno=64973","options":["① 퀀트 투자","② 프로그램 매매","③ 알고리즘 트레이딩","④ 고빈도매매"]},{"id":2459,"category":"세부지식","question":"'우선주 ETF'에 대한 설명으로 옳은 것은?","answer":"③ 보통주보다 높은 배당 수익률을 기대할 수 있으나, 주가 상승 여력은 제한적일 수 있다.","explanation":"우선주는 보통주보다 배당률이 높거나 정해진 배당을 먼저 받을 권리가 있지만, 일반적으로 의결권이 없으며 주가 상승폭은 보통주에 비해 제한적인 경향이 있습니다. [오답해설] ① 우선주는 보통 의결권이 없습니다. ② 우선주는 보통주보다 배당률이 높고, 회사 청산 시 잔여재산 분배에 대한 우선권이 있습니다. ④ 우선주도 상장폐지 위험에서 자유롭지 않으며, 회사의 재정 상태에 따라 보통주와 함께 상장폐지될 수 있습니다.","news_context":"그래도 高배당 매력…'우선주 ETF' 속속 등장","news_url":"","options":["① 일반적으로 보통주보다 의결권이 강하다.","② 보통주와 동일한 배당률을 제공하지만, 청산 시 잔여재산 분배 우선권은 없다.","③ 보통주보다 높은 배당 수익률을 기대할 수 있으나, 주가 상승 여력은 제한적일 수 있다.","④ 우선주는 상장폐지 위험이 없어 보통주보다 안정성이 매우 높다."]},{"id":2460,"category":"세부지식","question":"유언대용신탁에 대한 설명으로 옳지 않은 것은?","answer":"④ 일반적인 유언과 달리, 유언자가 사망한 후에도 신탁계약의 내용 변경이 가능하다.","explanation":"유언대용신탁은 위탁자가 살아있을 때 계약을 체결하고 사망 시 수익자에게 재산이 지급되도록 설계되는 신탁으로, 위탁자 사망 후에는 계약 내용 변경이 불가능합니다. [오답해설] ① 유언대용신탁의 기본적인 정의입니다. ② 위탁자의 생전 의사결정 능력 저하 시에도 신탁 재산을 안정적으로 관리할 수 있는 장점이 있습니다. ③ 유언대용신탁은 사적 계약이므로 법원의 유언 검정 절차를 생략할 수 있어 재산 배분이 신속합니다.","news_context":"2년만에 15배…신한銀 유언대용신탁 날았다","news_url":"https://www.mk.co.kr/news/economy/12162888","options":["① 위탁자가 살아있을 때 계약하고, 사망 후에 수익자에게 재산이 지급되는 신탁이다.","② 치매 등 위탁자의 의사결정 능력 저하 시, 신탁계약에 따라 재산이 관리될 수 있다.","③ 유언 검정 절차를 거치지 않아도 되므로, 신속하고 유연하게 재산을 배분할 수 있다.","④ 일반적인 유언과 달리, 유언자가 사망한 후에도 신탁계약의 내용 변경이 가능하다."]},{"id":2461,"category":"세부지식","question":"주택금융공사의 보금자리론 소득기준 개선이 '결혼 페널티' 완화에 기여하는 주요 내용은 무엇인가?","answer":"④ 신혼부부의 경우 부부 합산 소득 기준을 기존보다 상향 조정하여 대출 한도 및 가능성을 높인다.","explanation":"보금자리론 소득기준 개선은 신혼부부 등에게 기존보다 높은 부부 합산 소득 기준을 적용하여 주택 구매 대출 접근성을 높이는 방식으로 '결혼 페널티'를 완화합니다. [오답해설] ① 독신 가구의 소득 기준을 신혼부부와 동일하게 상향 조정하는 것은 결혼 페널티 완화와 직접적인 관련이 없습니다. ② 모든 무주택 가구에 대해 소득 기준을 단일화하는 것은 '결혼 페널티'를 직접적으로 해결하는 방법은 아닙니다. ③ 소득의 일정 부분을 공제하는 방식은 소득 기준을 낮추는 다른 방식이지만, 뉴스에서 언급된 '결혼 페널티 완화'의 맥락에서는 신혼부부 대상의 소득 기준 상향 조정이 더 핵심적인 내용입니다.","news_context":"“결혼페널티 없앤다”…HF, 보금자리론 소득기준 개선","news_url":"https://www.mk.co.kr/news/economy/12162745","options":["① 독신 가구의 소득 기준을 신혼부부와 동일하게 상향 조정한다.","② 결혼 여부와 관계없이 모든 무주택 가구에 대해 소득 기준을 단일화한다.","③ 부부 합산 소득 적용 시 소득의 일정 부분을 공제하여 실질 소득 기준을 낮춘다.","④ 신혼부부의 경우 부부 합산 소득 기준을 기존보다 상향 조정하여 대출 한도 및 가능성을 높인다."]},{"id":2462,"category":"시사상식","question":"은행 영업시간 30분 단축 조치가 은행의 영업 전략 및 고객 서비스에 미칠 영향으로 가장 적절한 것은?","answer":"② 고객들이 비대면 채널을 더 적극적으로 활용하게 되어 디지털 전환이 가속화될 것이다.","explanation":"은행 영업시간 단축은 고객들이 비대면 채널을 더 적극적으로 이용하도록 유도하여 은행의 디지털 전환을 가속화할 것입니다. [오답해설] ① 영업시간 단축은 경쟁 심화보다는 효율성을 추구하는 방향이며, 전반적인 영업시간 확대는 현 상황에서 예상하기 어렵습니다. ③ 대면 서비스 시간이 줄어들어 고령층 등 디지털 취약계층의 금융 서비스 접근성은 오히려 저해될 수 있습니다. ④ 영업시간 단축은 점포 운영 및 인건비 등 고정비용 절감에 기여하여 수익성 개선에 긍정적인 영향을 미칠 수 있습니다.","news_context":"은행 영업시간 30분 단축 … 내년 4월부터 9시반 연다","news_url":"https://www.mk.co.kr/news/economy/12163037","options":["① 은행 간 영업시간 경쟁 심화로 점포 운영시간이 전반적으로 확대될 것이다.","② 고객들이 비대면 채널을 더 적극적으로 활용하게 되어 디지털 전환이 가속화될 것이다.","③ 고령층 등 디지털 취약계층의 대면 금융 서비스 접근성이 현저히 개선될 것이다.","④ 은행의 고정비용 절감 효과가 미미하여 수익성 개선에 큰 도움이 되지 않을 것이다."]},{"id":2463,"category":"시사상식","question":"미국채 금리 상승이 국내 금융시장에 미치는 영향에 대한 설명으로 옳지 않은 것은?","answer":"④ 국내 은행의 예대마진 축소로 이어져 수익성 악화 요인으로 작용한다.","explanation":"미국채 금리 상승은 국내 금리 인상 압력을 높이고 외국인 자금 유출, 원/달러 환율 상승 등 국내 금융시장에 부정적인 영향을 미칠 수 있으나, 일반적으로 국내 기준금리 인상은 은행의 대출 금리 상승으로 이어져 예대마진을 확대시키고 수익성 개선에 기여할 수 있습니다. [오답해설] ① 미국채 금리 상승은 한국은행의 금리 인상 결정에 영향을 미쳐 국내 대출 금리를 올릴 수 있습니다. ② 미국 금리가 높아지면 투자자들은 더 높은 수익을 찾아 미국으로 자금을 이동시킬 수 있어 국내 금융시장에서 자금이 유출될 수 있습니다. ③ 미국 금리 상승은 달러 강세를 유발하여 상대적으로 원화 가치를 하락시키고 원/달러 환율이 상승할 수 있습니다.","news_context":"유가와 국채수익률 상승에 눌린 美증시…나스닥 1.2%↓","news_url":"","options":["① 국내 기준금리 인상 압력을 높여 가계와 기업의 대출 금리 상승을 유발할 수 있다.","② 외국인 자금 유출 가능성을 높여 국내 주식 및 채권 시장의 변동성을 확대시킬 수 있다.","③ 원/달러 환율 상승 압력으로 작용하여 원화 가치 하락에 영향을 미 줄 수 있다.","④ 국내 은행의 예대마진 축소로 이어져 수익성 악화 요인으로 작용한다."]},{"id":2464,"category":"시사상식","question":"최근 정부가 발표한 코로나 채무조정 및 '새도약기금' 등의 빚 탕감 정책이 금융권에 미칠 수 있는 영향으로 가장 거리가 먼 것은?","answer":"③ 금융기관의 부실채권 정리 부담을 완화하여 금융 시스템 안정에 기여할 수 있다.","explanation":"정부의 채무조정 및 빚 탕감 정책은 단기적으로 금융기관의 부실채권 정리 부담을 완화하는 긍정적 측면이 있지만, 장기적으로는 도덕적 해이와 성실 상환자와의 형평성 문제, 금융 건전성 악화 가능성 등 다양한 부정적 영향을 고려해야 합니다. [오답해설] ① 이미 빚을 성실히 갚아온 사람들은 채무조정을 받는 사람들과 비교하여 상대적 박탈감을 느끼고, 이는 향후 대출 상환에 대한 의지를 약화시킬 수 있습니다. ② 빚을 갚지 않아도 된다는 인식이 확산되면 채무자들이 의도적으로 빚을 상환하지 않으려는 도덕적 해이가 발생할 수 있으며, 이는 금융기관의 건전성을 장기적으로 위협할 수 있습니다. ④ 채무조정 및 빚 탕감은 금융기관이 대출금 회수를 포기하거나 손실을 감수해야 하므로, 이에 대비한 대손충당금 추가 적립 부담으로 이어질 수 있습니다.","news_context":"[단독] 22만명은 갚았는데…코로나 때 빚 채무조정 나선 정부","news_url":"https://www.mk.co.kr/news/economy/12163011","options":["① 성실 상환자들의 상대적 박탈감으로 인해 향후 대출 상환 의지가 저해될 수 있다.","② 채무자의 도덕적 해이를 유발하여 장기적으로 금융 건전성에 부정적인 영향을 미칠 수 있다.","③ 금융기관의 부실채권 정리 부담을 완화하여 금융 시스템 안정에 기여할 수 있다.","④ 은행 등 금융기관의 대손충당금 추가 적립 부담이 증가하여 건전성 지표에 영향을 줄 수 있다."]},{"id":105,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
