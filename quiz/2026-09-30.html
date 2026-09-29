@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-30 금융 시사 상식 퀴즈 10문제 해설 - 매십문 💰</title>
+<meta name="description" content="2026-09-30 자 경제 뉴스를 바탕으로 출제된 매십문 금융 상식 퀴즈 10문항과 상세 오답 해설입니다. 매일 퀴즈를 풀며 금융권 취업 필기를 완벽하게 대비하세요.">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#5bc8f5;--sky-dark:#3aa8d8;--pink:#ff6eb4;--pink-dark:#d94f96;
+  --yellow:#ffd700;--yellow-dark:#e6a800;--cream:#fff8e7;--navy:#1a1a6e;
+  --purple:#8b5cf6;--green:#22c55e;--green-dark:#16a34a;--red:#ef4444;--white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--sky);font-family:'Press Start 2P',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:2rem;}
+.wrap{max-width:640px;margin:0 auto;padding:1rem;}
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;}
+.cloud{position:absolute;background:white;}
+.cloud::before,.cloud::after{content:'';position:absolute;background:white;}
+.c1{width:48px;height:16px;top:12%;left:5%;animation:cloudMove 18s linear infinite;}
+.c1::before{width:24px;height:16px;top:-12px;left:8px;}
+.c1::after{width:16px;height:12px;top:-8px;left:24px;}
+.c2{width:96px;height:24px;top:8%;left:55%;animation:cloudMove 26s linear infinite 4s;}
+.c2::before{width:48px;height:24px;top:-18px;left:16px;}
+.c2::after{width:32px;height:16px;top:-10px;left:52px;}
+.c3{width:140px;height:32px;top:18%;left:20%;animation:cloudMove 35s linear infinite 10s;}
+.c3::before{width:72px;height:32px;top:-24px;left:24px;}
+.c3::after{width:48px;height:20px;top:-14px;left:72px;}
+@keyframes cloudMove{0%{transform:translateX(-200px)}100%{transform:translateX(110vw)}}
+.content{position:relative;z-index:1;}
+.title-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;text-align:center;position:relative;}
+.title-card::before{content:'';position:absolute;top:-6px;left:-6px;right:-6px;bottom:-6px;border:3px solid var(--pink);pointer-events:none;}
+.title-main{font-family:'Black Han Sans',sans-serif;font-size:clamp(3rem,12vw,5rem);color:#5bc8f5;-webkit-text-stroke:4px var(--navy);text-shadow:6px 6px 0 var(--navy);line-height:1.2;margin-bottom:0.5rem;letter-spacing:4px;}
+.title-sub{font-size:0.45rem;color:var(--purple);letter-spacing:1px;}
+.date-badge{display:inline-block;margin-top:0.8rem;background:var(--navy);color:var(--yellow);border:3px solid var(--yellow);padding:4px 12px;font-size:0.5rem;}
+.progress-wrap{background:var(--navy);border:4px solid #000;height:24px;margin-bottom:1.5rem;position:relative;box-shadow:4px 4px 0 #000;}
+.progress-bar{height:100%;background:var(--yellow);transition:width 0.3s steps(8);}
+.progress-label{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.5rem;color:var(--navy);}
+.quiz-card{background:var(--cream);border:4px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:1.5rem;margin-bottom:1.5rem;animation:popIn 0.2s steps(4) forwards;}
+@keyframes popIn{0%{transform:scale(0.95);opacity:0}100%{transform:scale(1);opacity:1}}
+.category-tag{display:inline-block;padding:0.4rem 0.8rem;font-size:0.6rem;margin-bottom:1rem;border:3px solid;}
+.tag-금융용어{background:var(--yellow);color:var(--navy);border-color:var(--yellow-dark);}
+.tag-시사{background:var(--green);color:white;border-color:var(--green-dark);}
+.tag-세부지식{background:var(--purple);color:white;border-color:#6d28d9;}
+.tag-default{background:var(--pink);color:white;border-color:var(--pink-dark);}
+.question-text{font-family:'Noto Sans KR',sans-serif;font-size:0.95rem;line-height:1.8;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.options{display:flex;flex-direction:column;gap:0.8rem;}
+.option{background:var(--white);border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem 1rem;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);text-align:left;width:100%;transition:transform 0.1s steps(2),box-shadow 0.1s steps(2);display:flex;align-items:center;line-height:1.5;}
+.option:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);background:var(--yellow);}
+.option:active:not(:disabled){transform:translate(4px,4px);box-shadow:0 0 0 var(--navy);}
+.option.correct{background:var(--green)!important;color:white!important;border-color:var(--green-dark)!important;box-shadow:4px 4px 0 var(--green-dark)!important;animation:correctFlash 0.3s steps(2) 2;}
+.option.wrong{background:var(--red)!important;color:white!important;border-color:#b91c1c!important;box-shadow:4px 4px 0 #b91c1c!important;animation:wrongShake 0.3s steps(3);}
+.option:disabled{cursor:default;}
+@keyframes correctFlash{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes wrongShake{0%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}100%{transform:translateX(0)}}
+.explanation{display:none;background:var(--navy);color:var(--cream);border:4px solid #000;padding:1.2rem;margin-top:1rem;font-family:'Noto Sans KR',sans-serif;font-size:0.82rem;line-height:1.8;}
+.explanation.show{display:block;}
+.exp-label{font-family:'Press Start 2P',monospace;font-size:0.5rem;color:var(--yellow);margin-bottom:0.8rem;}
+.news-ctx{margin-top:0.8rem;padding:0.6rem;background:rgba(255,255,255,0.1);border-left:4px solid var(--yellow);font-size:0.78rem;color:var(--cream);}
+.news-link{color:var(--yellow);text-decoration:underline;}
+.nav-buttons{display:flex;gap:0.8rem;margin-top:0.5rem;}
+.btn{flex:1;background:var(--pink);color:white;border:4px solid var(--navy);box-shadow:4px 4px 0 var(--navy);padding:0.8rem;font-family:'Press Start 2P',monospace;font-size:0.6rem;cursor:pointer;display:none;}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy);}
+.result-card{background:var(--cream);border:6px solid var(--navy);box-shadow:8px 8px 0 var(--navy);padding:2rem;text-align:center;display:none;animation:popIn 0.3s steps(4);}
+.result-card.show{display:block;}
+.result-title{font-family:'Noto Sans KR',sans-serif;font-size:1.2rem;font-weight:900;color:var(--navy);text-shadow:2px 2px 0 var(--pink);margin-bottom:1rem;line-height:2;}
+.result-score{font-size:3rem;color:var(--yellow);text-shadow:4px 4px 0 var(--yellow-dark),8px 8px 0 #000;margin-bottom:0.5rem;display:block;}
+.result-total{font-size:0.5rem;color:var(--navy);margin-bottom:1.5rem;}
+.btn-main{background:var(--navy);color:var(--yellow);border:4px solid var(--yellow);box-shadow:4px 4px 0 #000;padding:1rem 2rem;font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;margin-top:1rem;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000;}
+.stars{position:fixed;pointer-events:none;z-index:999;}
+.coin-item{position:absolute;width:24px;height:24px;background:var(--yellow);border:3px solid var(--yellow-dark);display:flex;align-items:center;justify-content:center;font-size:0.5rem;color:var(--navy);animation:coinUp 0.7s steps(8) forwards;box-shadow:2px 2px 0 #000;}
+.coin-item::before{content:'₩';font-size:0.55rem;font-weight:900;}
+@keyframes coinUp{0%{opacity:1;transform:translateY(0) scaleX(1);}25%{transform:translateY(-30px) scaleX(0.3);}50%{transform:translateY(-60px) scaleX(1);}75%{transform:translateY(-80px) scaleX(0.3);}100%{opacity:0;transform:translateY(-100px) scaleX(1);}}
+.score-popup{position:fixed;font-size:0.7rem;pointer-events:none;z-index:1000;animation:popUp 0.8s steps(8) forwards;}
+@keyframes popUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+</style>
+</head>
+<body>
+
+<div style="display:none !important;" id="seoContentArea">
+  <h1>2026-09-30 매십문 금융 상식 퀴즈 10문항 전체 보기 및 해설</h1>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q1. KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 위해 추진하는 대규모 투자 프로젝트로, 'KDB 넥스트라운드 인프라', '미래 인프라 펀드', '국내 인프라 대출채권 재구조화'의 세 가지 축으로 구성된 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① SOC 투자 펀드</li><li>② 인프라 채권 담보부 증권</li><li>③ 3대 메가프로젝트</li><li>④ 뉴딜 펀드</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 3대 메가프로젝트</p>
+      <p><strong>해설:</strong> 정답 해설: '3대 메가프로젝트'는 KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 위해 추진하는 대규모 투자 프로젝트입니다. [오답해설] ① SOC 투자 펀드는 사회간접자본에 투자하는 일반적인 펀드를 의미하며, 특정 프로젝트의 명칭이 아닙니다. ② 인프라 채권 담보부 증권은 인프라 관련 채권을 담보로 발행하는 유동화 증권의 일종입니다. ④ 뉴딜 펀드는 정부 주도로 녹색/디지털 뉴딜 관련 분야에 투자하는 펀드를 총칭하며, KDB의 특정 인프라 프로젝트를 지칭하지 않습니다.</p>
+      <p>관련 시사 뉴스: KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 목적으로 추진하는 대규모 프로젝트가 바로 '3대 메가프로젝트'이다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q2. 국내 외환시장의 심도와 효율성을 높이고 환율 변동성을 완화하기 위해 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용할 수 있도록 하는 제도의 핵심 기관을 지칭하는 용어는?</h2>
+      <p>분류: 시사금융용어</p>
+      <ul>
+        <li>① 해외원화업무취급기관(RFI-K)</li><li>② 외국환은행</li><li>③ NDF 참여기관</li><li>④ 역외 원화 차액결제선물환 시장</li>
+      </ul>
+      <p><strong>정답:</strong> ① 해외원화업무취급기관(RFI-K)</p>
+      <p><strong>해설:</strong> 정답 해설: 해외원화업무취급기관(RFI-K)은 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용함으로써 국내 외환시장의 심도와 효율성을 높이는 역할을 합니다. [오답해설] ② 외국환은행은 국내에서 외국환 업무를 취급하는 은행을 통칭하는 일반적인 용어입니다. ③ NDF 참여기관은 역외 NDF 시장에 참여하는 기관을 의미하며, 국내 외환시장에 직접 참여하는 RFI-K와는 다릅니다. ④ 역외 원화 차액결제선물환 시장은 RFI-K가 국내로 흡수하고자 하는 대상 시장이며, 기관 자체를 지칭하는 용어가 아닙니다.</p>
+      <p>관련 시사 뉴스: 국내 외환시장의 구조 개선 방안 중 하나로 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용할 수 있게 하는 기관을 '해외원화업무취급기관(RFI-K)'이라고 한다.</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q3. 다음 중 부동산, 채권, 상품 등 실물자산의 소유권을 블록체인 상의 토큰 형태로 발행하여 유동성을 확보하고 거래 효율성을 높이는 금융 방식을 의미하는 용어는 무엇인가?</h2>
+      <p>분류: 금융용어</p>
+      <ul>
+        <li>④ 중앙은행 디지털 화폐 (CBDC)</li><li>② 탈중앙화 금융 (DeFi)</li><li>① 실물자산 토큰화 (RWA)</li><li>③ 대체 불가능 토큰 (NFT)</li>
+      </ul>
+      <p><strong>정답:</strong> ① 실물자산 토큰화 (RWA)</p>
+      <p><strong>해설:</strong> RWA(Real World Assets)는 실물자산을 블록체인 기반의 토큰 형태로 발행하는 것으로, 자산의 유동성을 높이고 거래 방식을 혁신하는 개념입니다. [오답해설] ② 탈중앙화 금융(DeFi)은 중개인 없이 블록체인 기술을 활용한 금융 서비스를 통칭하며, 실물자산 토큰화와는 다른 개념입니다. ③ 대체 불가능 토큰(NFT)은 고유한 가치를 가지는 디지털 자산으로, 실물자산의 소유권과는 직접적인 관련이 적습니다. ④ 중앙은행 디지털 화폐(CBDC)는 중앙은행이 발행하는 디지털 형태의 법정 화폐로, 실물자산 토큰화와는 목적이 다릅니다.</p>
+      <p>관련 시사 뉴스: "국채 맞아?" 30일 만에 싹쓸이…RWA 1위 꿰찬 블랙록의 무서운 야심</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q4. 뉴스에 언급된 '하루 1만명씩 만들었다…1000만명 몰린 이 통장'은 케이뱅크에서 제공하는 '플러스박스'와 같은 파킹통장 유형으로 큰 인기를 얻고 있습니다. 파킹통장에 대한 설명으로 옳지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>① 수시 입출금이 자유롭고, 하루만 맡겨도 이자가 붙는 상품이다.</li><li>④ 예금자보호법에 따라 원리금을 합산하여 1인당 5억 원까지 보호받을 수 있다.</li><li>② 일반 입출금통장보다 높은 금리를 제공하지만, 정기예금보다는 낮은 것이 일반적이다.</li><li>③ 단기간 예치하거나 언제든지 자금을 인출할 가능성이 있는 여윳돈을 보관하기에 유리하다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 예금자보호법에 따라 원리금을 합산하여 1인당 5억 원까지 보호받을 수 있다.</p>
+      <p><strong>해설:</strong> 예금자보호법에 따라 금융상품의 원리금 합산 1인당 보호 한도는 5천만원입니다. [오답해설] ① 파킹통장은 수시 입출금이 가능하며 단 하루만 맡겨도 이자가 붙는 장점이 있습니다. ② 파킹통장은 일반 입출금통장보다 금리가 높지만, 정기예금보다는 낮은 것이 일반적입니다. ③ 파킹통장은 언제든 자금 인출이 필요한 여윳돈을 보관하기에 적합한 상품입니다.</p>
+      <p>관련 시사 뉴스: 하루 1만명씩 만들었다…1000만명 몰린 '이 통장' 뭐길래</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q5. 정부가 추진하는 200조 원대 '미래대응기금'은 주로 어떤 목적을 위해 조성되는 것인가?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>③ 중소기업의 해외 진출을 지원하고 수출 경쟁력을 강화하기 위한 정책 자금 마련.</li><li>① 급증하는 지방채 상환을 지원하고 지방정부의 재정 자율성을 강화하기 위함.</li><li>② 기후변화 대응, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대한 재정적 대응을 위함.</li><li>④ 고령층의 안정적인 노후생활을 보장하기 위한 국민연금 기금의 투자 수익률 제고.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 기후변화 대응, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대한 재정적 대응을 위함.</p>
+      <p><strong>해설:</strong> 미래대응기금은 기후변화, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대비하기 위한 재정적 준비를 목적으로 합니다. [오답해설] ① 지방채 상환 및 지방정부 재정 자율성 강화는 다른 지방재정 정책의 목적입니다. ③ 중소기업 해외 진출 지원은 수출 관련 정책 기금의 목적입니다. ④ 국민연금 기금 운용은 연금 당국의 역할입니다.</p>
+      <p>관련 시사 뉴스: 200조원대 ‘미래대응기금’에 지자체는 ‘반발’ ...“지방몫 오히려 줄어든다”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q6. 최근 미국 장기 국채금리가 2002년 이후 최고치를 기록하며 급등하고 있다. 이러한 현상이 글로벌 금융시장에 미칠 영향으로 가장 적절하지 않은 것은?</h2>
+      <p>분류: 세부지식</p>
+      <ul>
+        <li>④ 투자자들이 미국 국채에 대한 신뢰를 잃어 대규모 자금 이탈 현상이 발생한다.</li><li>① 전 세계적인 달러 강세 심화를 부추겨 신흥국 통화가치 하락 압력이 커진다.</li><li>③ 주식 등 위험자산에 대한 투자 매력이 감소하여 안전자산 선호 심리가 강해진다.</li><li>② 미국 기업들의 자금 조달 비용이 증가하여 투자 및 고용 위축으로 이어질 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ④ 투자자들이 미국 국채에 대한 신뢰를 잃어 대규모 자금 이탈 현상이 발생한다.</p>
+      <p><strong>해설:</strong> 미국 국채는 여전히 세계에서 가장 안전한 자산으로 인식되며, 금리 상승은 오히려 자금 유입을 유도할 수 있습니다. [오답해설] ① 미국 국채금리 상승은 달러 강세를 유발하고, 자본 유출로 신흥국 통화가치 하락 압력을 높입니다. ② 기업의 자금 조달 비용 증가는 투자를 위축시키고 고용에도 부정적인 영향을 미칩니다. ③ 채권금리 상승은 채권 투자 매력을 높여 주식 등 위험자산에서 안전자산으로 자금 이동을 유발할 수 있습니다.</p>
+      <p>관련 시사 뉴스: 美 30년물국채 수익률 5.609%…2002년 이후 최고치</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q7. 뉴스에서 언급된 '은행자금 대이동' 현상 중 "여윳돈은 예금 → 적금, 대출은 가계 → 기업"으로의 이동이 국내 은행의 경영에 미칠 영향으로 가장 적절한 것은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>④ 가계 대출 감소는 은행의 리스크 관리 부담을 완화하여 신용평가에 긍정적으로 작용한다.</li><li>② 가계 대출보다 기업 대출의 수익성이 높아 은행의 총자산순이익률(ROA)이 상승할 것이다.</li><li>① 기업 대출 증가로 은행의 건전성 지표가 전반적으로 개선될 것이다.</li><li>③ 고금리 적금 상품 판매 증가는 은행의 자금 조달 비용을 높일 수 있다.</li>
+      </ul>
+      <p><strong>정답:</strong> ③ 고금리 적금 상품 판매 증가는 은행의 자금 조달 비용을 높일 수 있다.</p>
+      <p><strong>해설:</strong> 여윳돈이 금리가 낮은 예금에서 높은 적금으로 이동하면 은행의 전체 자금 조달 비용이 증가하여 수익성에 부정적인 영향을 미 미칠 수 있습니다. [오답해설] ① 기업 대출은 가계 대출보다 부실화 가능성이 높아 건전성 지표에 항상 긍정적이지만은 않습니다. ② 기업 대출의 수익성은 산업의 종류와 기업의 신용도에 따라 다양하며, 무조건 가계 대출보다 높다고 단정하기 어렵습니다. ④ 가계 대출 감소 자체는 리스크 완화 요인이 될 수 있지만, 그만큼 수익성이 감소할 수도 있어 무조건 신용평가에 긍정적이라고 보기는 어렵습니다.</p>
+      <p>관련 시사 뉴스: 은행자금 대이동… 여윳돈은 예금 → 적금, 대출은 가계 → 기업</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q8. 금융당국이 '최저생계비 250만원 압류 방지' 제도를 개선함에 따라, 앞으로 채무자는 법원 판결문 없이도 압류된 최저생계비를 돌려받을 수 있게 된다. 이 제도 개선으로 인해 주로 해소될 것으로 기대되는 문제는 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>① 은행의 복잡한 압류 해제 절차.</li><li>② 채무자의 최저생활 보장 어려움.</li><li>④ 채권자의 채권 회수 지연.</li><li>③ 법원의 과도한 업무 부담.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 채무자의 최저생활 보장 어려움.</p>
+      <p><strong>해설:</strong> 법원 판결문 없이도 최저생계비를 돌려받을 수 있게 함으로써, 압류로 인해 생활고를 겪는 취약 채무자들의 최저생활을 신속하게 보장하려는 목적입니다. [오답해설] ① 은행의 압류 해제 절차 간소화는 부수적인 효과일 수 있으나, 주된 목적은 채무자 보호입니다. ③ 법원의 업무 부담 경감 역시 부수적인 효과로 볼 수 있습니다. ④ 채권자의 채권 회수 지연은 이 제도의 직접적인 해소 목표는 아닙니다.</p>
+      <p>관련 시사 뉴스: “은행이 가져간 최저생계비 250만원…내일부터 판결문 없이 돌려받는다”</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q9. 8월 기업들의 직접금융 조달 감소와 CP 및 단기채 발행 축소 현상이 국내 은행의 기업 대출 수요에 미칠 영향은?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>④ 직접금융 시장의 금리가 상승하여 은행 대출 상품의 금리 경쟁력이 상대적으로 약화될 것이다.</li><li>③ CP 및 단기채 발행 감소는 은행의 유동성 관리에 부담을 주어 대출 심사를 강화하게 할 것이다.</li><li>① 기업들이 자금 조달처를 은행 대출로 전환할 가능성이 커져 은행의 기업 대출 수요가 증가할 수 있다.</li><li>② 직접금융 시장의 위축은 기업들의 전반적인 투자 활동을 감소시켜 은행의 대출 수요도 동반 감소할 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ① 기업들이 자금 조달처를 은행 대출로 전환할 가능성이 커져 은행의 기업 대출 수요가 증가할 수 있다.</p>
+      <p><strong>해설:</strong> 직접금융 시장(주식, 채권 발행 등)에서 자금 조달이 어려워지면 기업들은 간접금융 시장인 은행 대출로 눈을 돌릴 가능성이 높아집니다. [오답해설] ② 기업의 직접금융 조달 감소가 반드시 전반적인 투자 활동 감소로 이어지는 것은 아니며, 다른 자금 조달처를 찾을 수 있습니다. ③ CP 및 단기채 발행 감소는 은행의 유동성 관리보다는 기업의 자금 조달 문제에 더 직접적으로 관련됩니다. ④ 직접금융 시장의 위축은 대출 시장으로 수요가 이동하여 은행 대출의 금리 경쟁력이 오히려 부각될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 8월 기업 직접금융 조달 38% 감소…CP·단기채도 15%↓</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q10. 오픈AI의 AI 에이전트 출시 등 AI 기술 발전이 금융권의 디지털 전환 전략에 가져올 주요 변화는 무엇인가?</h2>
+      <p>분류: 시사</p>
+      <ul>
+        <li>④ 고객 정보 유출 및 시스템 해킹 위험이 증가하여 금융 보안 문제가 심화될 것이다.</li><li>① AI 시스템 구축 비용 증가로 디지털 전환 투자에 대한 금융사의 부담이 가중될 것이다.</li><li>③ AI 기술의 발달로 금융사의 인력 감축이 불가피하여 고용 안정성이 위협받을 수 있다.</li><li>② 대출 심사, 투자 자문 등 핵심 업무의 자동화 및 효율성 증대가 가속화될 것이다.</li>
+      </ul>
+      <p><strong>정답:</strong> ② 대출 심사, 투자 자문 등 핵심 업무의 자동화 및 효율성 증대가 가속화될 것이다.</p>
+      <p><strong>해설:</strong> AI 기술은 대량의 데이터를 분석하여 대출 심사의 정확도를 높이고, 고객 맞춤형 투자 자문을 제공하며, 반복적인 업무를 자동화하여 금융 업무의 효율성을 크게 향상시킬 수 있습니다. [오답해설] ① AI 시스템 구축 비용은 초기 부담이 될 수 있지만, 장기적으로는 효율성 증대를 통해 비용 절감 효과를 가져올 수 있어 디지털 전환의 중요한 동인이 됩니다. ③ AI 도입으로 인한 인력 재배치는 예상되지만, 새로운 직무 창출 등 긍정적인 측면도 있어 고용 안정성 위협으로만 단정하기는 어렵습니다. ④ AI 기술 자체는 보안 위험을 높이는 것이 아니라, 오히려 AI 기반의 보안 시스템을 통해 위협을 감지하고 대응하는 데 활용될 수 있습니다.</p>
+      <p>관련 시사 뉴스: 오픈AI, 24시간 AI 에이전트 닷츠 출시…메타 뮤즈에 맞불</p>
+    </article>
+  
+    <article style="margin-bottom: 20px;">
+      <h2>Q11. undefined</h2>
+      <p>분류: undefined</p>
+      <ul>
+        
+      </ul>
+      <p><strong>정답:</strong> undefined</p>
+      <p><strong>해설:</strong> </p>
+      
+    </article>
+  
+</div>
+
+<div class="bg">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+</div>
+<div class="wrap content">
+  <div class="title-card">
+    <div class="title-main">매십문</div>
+    <div class="title-sub">DAILY FINANCE QUIZ CHALLENGE</div>
+    <div class="date-badge">2026-09-30</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+    <div class="progress-label" id="progressLabel">0/10</div>
+  </div>
+  <div id="quizArea"></div>
+  <div class="result-card" id="resultCard">
+    <div class="result-title">🎉 오늘의 매십문 완료!</div>
+    <span class="result-score" id="resultScore">0</span>
+    <div class="result-total">/ 10문제</div>
+    <a href="https://mae10moon.com" class="btn-main">매십문에서 더 풀기 ▶</a>
+  </div>
+</div>
+<div class="stars" id="stars"></div>
+<script>
+var quizzes = [{"id":2465,"category":"시사금융용어","question":"KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 위해 추진하는 대규모 투자 프로젝트로, 'KDB 넥스트라운드 인프라', '미래 인프라 펀드', '국내 인프라 대출채권 재구조화'의 세 가지 축으로 구성된 용어는?","answer":"③ 3대 메가프로젝트","explanation":"정답 해설: '3대 메가프로젝트'는 KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 위해 추진하는 대규모 투자 프로젝트입니다. [오답해설] ① SOC 투자 펀드는 사회간접자본에 투자하는 일반적인 펀드를 의미하며, 특정 프로젝트의 명칭이 아닙니다. ② 인프라 채권 담보부 증권은 인프라 관련 채권을 담보로 발행하는 유동화 증권의 일종입니다. ④ 뉴딜 펀드는 정부 주도로 녹색/디지털 뉴딜 관련 분야에 투자하는 펀드를 총칭하며, KDB의 특정 인프라 프로젝트를 지칭하지 않습니다.","news_context":"KDB산업은행이 국내 기관 투자자의 대체투자 역량 강화 및 국내 인프라 투자를 목적으로 추진하는 대규모 프로젝트가 바로 '3대 메가프로젝트'이다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4433194","options":["① SOC 투자 펀드","② 인프라 채권 담보부 증권","③ 3대 메가프로젝트","④ 뉴딜 펀드"]},{"id":2466,"category":"시사금융용어","question":"국내 외환시장의 심도와 효율성을 높이고 환율 변동성을 완화하기 위해 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용할 수 있도록 하는 제도의 핵심 기관을 지칭하는 용어는?","answer":"① 해외원화업무취급기관(RFI-K)","explanation":"정답 해설: 해외원화업무취급기관(RFI-K)은 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용함으로써 국내 외환시장의 심도와 효율성을 높이는 역할을 합니다. [오답해설] ② 외국환은행은 국내에서 외국환 업무를 취급하는 은행을 통칭하는 일반적인 용어입니다. ③ NDF 참여기관은 역외 NDF 시장에 참여하는 기관을 의미하며, 국내 외환시장에 직접 참여하는 RFI-K와는 다릅니다. ④ 역외 원화 차액결제선물환 시장은 RFI-K가 국내로 흡수하고자 하는 대상 시장이며, 기관 자체를 지칭하는 용어가 아닙니다.","news_context":"국내 외환시장의 구조 개선 방안 중 하나로 해외 금융기관이 국내 외환시장에 직접 참여하여 원화를 조달하고 운용할 수 있게 하는 기관을 '해외원화업무취급기관(RFI-K)'이라고 한다.","news_url":"https://news.einfomax.co.kr/news/articleView.html?idxno=4436784","options":["① 해외원화업무취급기관(RFI-K)","② 외국환은행","③ NDF 참여기관","④ 역외 원화 차액결제선물환 시장"]},{"id":2467,"category":"금융용어","question":"다음 중 부동산, 채권, 상품 등 실물자산의 소유권을 블록체인 상의 토큰 형태로 발행하여 유동성을 확보하고 거래 효율성을 높이는 금융 방식을 의미하는 용어는 무엇인가?","answer":"① 실물자산 토큰화 (RWA)","explanation":"RWA(Real World Assets)는 실물자산을 블록체인 기반의 토큰 형태로 발행하는 것으로, 자산의 유동성을 높이고 거래 방식을 혁신하는 개념입니다. [오답해설] ② 탈중앙화 금융(DeFi)은 중개인 없이 블록체인 기술을 활용한 금융 서비스를 통칭하며, 실물자산 토큰화와는 다른 개념입니다. ③ 대체 불가능 토큰(NFT)은 고유한 가치를 가지는 디지털 자산으로, 실물자산의 소유권과는 직접적인 관련이 적습니다. ④ 중앙은행 디지털 화폐(CBDC)는 중앙은행이 발행하는 디지털 형태의 법정 화폐로, 실물자산 토큰화와는 목적이 다릅니다.","news_context":"\"국채 맞아?\" 30일 만에 싹쓸이…RWA 1위 꿰찬 블랙록의 무서운 야심","news_url":"https://www.pinpointnews.co.kr/news/articleView.html?idxno=491205","options":["④ 중앙은행 디지털 화폐 (CBDC)","② 탈중앙화 금융 (DeFi)","① 실물자산 토큰화 (RWA)","③ 대체 불가능 토큰 (NFT)"]},{"id":2468,"category":"세부지식","question":"뉴스에 언급된 '하루 1만명씩 만들었다…1000만명 몰린 이 통장'은 케이뱅크에서 제공하는 '플러스박스'와 같은 파킹통장 유형으로 큰 인기를 얻고 있습니다. 파킹통장에 대한 설명으로 옳지 않은 것은?","answer":"④ 예금자보호법에 따라 원리금을 합산하여 1인당 5억 원까지 보호받을 수 있다.","explanation":"예금자보호법에 따라 금융상품의 원리금 합산 1인당 보호 한도는 5천만원입니다. [오답해설] ① 파킹통장은 수시 입출금이 가능하며 단 하루만 맡겨도 이자가 붙는 장점이 있습니다. ② 파킹통장은 일반 입출금통장보다 금리가 높지만, 정기예금보다는 낮은 것이 일반적입니다. ③ 파킹통장은 언제든 자금 인출이 필요한 여윳돈을 보관하기에 적합한 상품입니다.","news_context":"하루 1만명씩 만들었다…1000만명 몰린 '이 통장' 뭐길래","news_url":"","options":["① 수시 입출금이 자유롭고, 하루만 맡겨도 이자가 붙는 상품이다.","④ 예금자보호법에 따라 원리금을 합산하여 1인당 5억 원까지 보호받을 수 있다.","② 일반 입출금통장보다 높은 금리를 제공하지만, 정기예금보다는 낮은 것이 일반적이다.","③ 단기간 예치하거나 언제든지 자금을 인출할 가능성이 있는 여윳돈을 보관하기에 유리하다."]},{"id":2469,"category":"세부지식","question":"정부가 추진하는 200조 원대 '미래대응기금'은 주로 어떤 목적을 위해 조성되는 것인가?","answer":"② 기후변화 대응, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대한 재정적 대응을 위함.","explanation":"미래대응기금은 기후변화, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대비하기 위한 재정적 준비를 목적으로 합니다. [오답해설] ① 지방채 상환 및 지방정부 재정 자율성 강화는 다른 지방재정 정책의 목적입니다. ③ 중소기업 해외 진출 지원은 수출 관련 정책 기금의 목적입니다. ④ 국민연금 기금 운용은 연금 당국의 역할입니다.","news_context":"200조원대 ‘미래대응기금’에 지자체는 ‘반발’ ...“지방몫 오히려 줄어든다”","news_url":"https://www.mk.co.kr/news/economy/12163852","options":["③ 중소기업의 해외 진출을 지원하고 수출 경쟁력을 강화하기 위한 정책 자금 마련.","① 급증하는 지방채 상환을 지원하고 지방정부의 재정 자율성을 강화하기 위함.","② 기후변화 대응, 인구구조 변화, 디지털 전환 등 미래 사회 구조 변화에 대한 재정적 대응을 위함.","④ 고령층의 안정적인 노후생활을 보장하기 위한 국민연금 기금의 투자 수익률 제고."]},{"id":2470,"category":"세부지식","question":"최근 미국 장기 국채금리가 2002년 이후 최고치를 기록하며 급등하고 있다. 이러한 현상이 글로벌 금융시장에 미칠 영향으로 가장 적절하지 않은 것은?","answer":"④ 투자자들이 미국 국채에 대한 신뢰를 잃어 대규모 자금 이탈 현상이 발생한다.","explanation":"미국 국채는 여전히 세계에서 가장 안전한 자산으로 인식되며, 금리 상승은 오히려 자금 유입을 유도할 수 있습니다. [오답해설] ① 미국 국채금리 상승은 달러 강세를 유발하고, 자본 유출로 신흥국 통화가치 하락 압력을 높입니다. ② 기업의 자금 조달 비용 증가는 투자를 위축시키고 고용에도 부정적인 영향을 미칩니다. ③ 채권금리 상승은 채권 투자 매력을 높여 주식 등 위험자산에서 안전자산으로 자금 이동을 유발할 수 있습니다.","news_context":"美 30년물국채 수익률 5.609%…2002년 이후 최고치","news_url":"","options":["④ 투자자들이 미국 국채에 대한 신뢰를 잃어 대규모 자금 이탈 현상이 발생한다.","① 전 세계적인 달러 강세 심화를 부추겨 신흥국 통화가치 하락 압력이 커진다.","③ 주식 등 위험자산에 대한 투자 매력이 감소하여 안전자산 선호 심리가 강해진다.","② 미국 기업들의 자금 조달 비용이 증가하여 투자 및 고용 위축으로 이어질 수 있다."]},{"id":2471,"category":"시사","question":"뉴스에서 언급된 '은행자금 대이동' 현상 중 \"여윳돈은 예금 → 적금, 대출은 가계 → 기업\"으로의 이동이 국내 은행의 경영에 미칠 영향으로 가장 적절한 것은?","answer":"③ 고금리 적금 상품 판매 증가는 은행의 자금 조달 비용을 높일 수 있다.","explanation":"여윳돈이 금리가 낮은 예금에서 높은 적금으로 이동하면 은행의 전체 자금 조달 비용이 증가하여 수익성에 부정적인 영향을 미 미칠 수 있습니다. [오답해설] ① 기업 대출은 가계 대출보다 부실화 가능성이 높아 건전성 지표에 항상 긍정적이지만은 않습니다. ② 기업 대출의 수익성은 산업의 종류와 기업의 신용도에 따라 다양하며, 무조건 가계 대출보다 높다고 단정하기 어렵습니다. ④ 가계 대출 감소 자체는 리스크 완화 요인이 될 수 있지만, 그만큼 수익성이 감소할 수도 있어 무조건 신용평가에 긍정적이라고 보기는 어렵습니다.","news_context":"은행자금 대이동… 여윳돈은 예금 → 적금, 대출은 가계 → 기업","news_url":"https://www.mk.co.kr/news/economy/12163882","options":["④ 가계 대출 감소는 은행의 리스크 관리 부담을 완화하여 신용평가에 긍정적으로 작용한다.","② 가계 대출보다 기업 대출의 수익성이 높아 은행의 총자산순이익률(ROA)이 상승할 것이다.","① 기업 대출 증가로 은행의 건전성 지표가 전반적으로 개선될 것이다.","③ 고금리 적금 상품 판매 증가는 은행의 자금 조달 비용을 높일 수 있다."]},{"id":2472,"category":"시사","question":"금융당국이 '최저생계비 250만원 압류 방지' 제도를 개선함에 따라, 앞으로 채무자는 법원 판결문 없이도 압류된 최저생계비를 돌려받을 수 있게 된다. 이 제도 개선으로 인해 주로 해소될 것으로 기대되는 문제는 무엇인가?","answer":"② 채무자의 최저생활 보장 어려움.","explanation":"법원 판결문 없이도 최저생계비를 돌려받을 수 있게 함으로써, 압류로 인해 생활고를 겪는 취약 채무자들의 최저생활을 신속하게 보장하려는 목적입니다. [오답해설] ① 은행의 압류 해제 절차 간소화는 부수적인 효과일 수 있으나, 주된 목적은 채무자 보호입니다. ③ 법원의 업무 부담 경감 역시 부수적인 효과로 볼 수 있습니다. ④ 채권자의 채권 회수 지연은 이 제도의 직접적인 해소 목표는 아닙니다.","news_context":"“은행이 가져간 최저생계비 250만원…내일부터 판결문 없이 돌려받는다”","news_url":"https://www.mk.co.kr/news/economy/12163562","options":["① 은행의 복잡한 압류 해제 절차.","② 채무자의 최저생활 보장 어려움.","④ 채권자의 채권 회수 지연.","③ 법원의 과도한 업무 부담."]},{"id":2473,"category":"시사","question":"8월 기업들의 직접금융 조달 감소와 CP 및 단기채 발행 축소 현상이 국내 은행의 기업 대출 수요에 미칠 영향은?","answer":"① 기업들이 자금 조달처를 은행 대출로 전환할 가능성이 커져 은행의 기업 대출 수요가 증가할 수 있다.","explanation":"직접금융 시장(주식, 채권 발행 등)에서 자금 조달이 어려워지면 기업들은 간접금융 시장인 은행 대출로 눈을 돌릴 가능성이 높아집니다. [오답해설] ② 기업의 직접금융 조달 감소가 반드시 전반적인 투자 활동 감소로 이어지는 것은 아니며, 다른 자금 조달처를 찾을 수 있습니다. ③ CP 및 단기채 발행 감소는 은행의 유동성 관리보다는 기업의 자금 조달 문제에 더 직접적으로 관련됩니다. ④ 직접금융 시장의 위축은 대출 시장으로 수요가 이동하여 은행 대출의 금리 경쟁력이 오히려 부각될 수 있습니다.","news_context":"8월 기업 직접금융 조달 38% 감소…CP·단기채도 15%↓","news_url":"","options":["④ 직접금융 시장의 금리가 상승하여 은행 대출 상품의 금리 경쟁력이 상대적으로 약화될 것이다.","③ CP 및 단기채 발행 감소는 은행의 유동성 관리에 부담을 주어 대출 심사를 강화하게 할 것이다.","① 기업들이 자금 조달처를 은행 대출로 전환할 가능성이 커져 은행의 기업 대출 수요가 증가할 수 있다.","② 직접금융 시장의 위축은 기업들의 전반적인 투자 활동을 감소시켜 은행의 대출 수요도 동반 감소할 것이다."]},{"id":2474,"category":"시사","question":"오픈AI의 AI 에이전트 출시 등 AI 기술 발전이 금융권의 디지털 전환 전략에 가져올 주요 변화는 무엇인가?","answer":"② 대출 심사, 투자 자문 등 핵심 업무의 자동화 및 효율성 증대가 가속화될 것이다.","explanation":"AI 기술은 대량의 데이터를 분석하여 대출 심사의 정확도를 높이고, 고객 맞춤형 투자 자문을 제공하며, 반복적인 업무를 자동화하여 금융 업무의 효율성을 크게 향상시킬 수 있습니다. [오답해설] ① AI 시스템 구축 비용은 초기 부담이 될 수 있지만, 장기적으로는 효율성 증대를 통해 비용 절감 효과를 가져올 수 있어 디지털 전환의 중요한 동인이 됩니다. ③ AI 도입으로 인한 인력 재배치는 예상되지만, 새로운 직무 창출 등 긍정적인 측면도 있어 고용 안정성 위협으로만 단정하기는 어렵습니다. ④ AI 기술 자체는 보안 위험을 높이는 것이 아니라, 오히려 AI 기반의 보안 시스템을 통해 위협을 감지하고 대응하는 데 활용될 수 있습니다.","news_context":"오픈AI, 24시간 AI 에이전트 닷츠 출시…메타 뮤즈에 맞불","news_url":"","options":["④ 고객 정보 유출 및 시스템 해킹 위험이 증가하여 금융 보안 문제가 심화될 것이다.","① AI 시스템 구축 비용 증가로 디지털 전환 투자에 대한 금융사의 부담이 가중될 것이다.","③ AI 기술의 발달로 금융사의 인력 감축이 불가피하여 고용 안정성이 위협받을 수 있다.","② 대출 심사, 투자 자문 등 핵심 업무의 자동화 및 효율성 증대가 가속화될 것이다."]},{"id":106,"news_context":"","news_url":"","options":[]}];
+var current = 0;
+var score = 0;
+var answered = false;
+var audioCtx = null;
+
+function getTagClass(cat) {
+  if (cat === '금융용어') return 'tag-금융용어';
+  if (cat === '시사') return 'tag-시사';
+  if (cat === '세부지식') return 'tag-세부지식';
+  return 'tag-default';
+}
+
+function render() {
+  if (current >= quizzes.length) { showResult(); return; }
+  var q = quizzes[current];
+  var pct = (current / quizzes.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = current + '/' + quizzes.length;
+  var optHtml = '';
+  for (var i = 0; i < q.options.length; i++) {
+    optHtml += '<button class="option" onclick="selectOpt(this,' + i + ')">' + q.options[i] + '</button>';
+  }
+  var expParts = (q.explanation || '').split('[오답해설]');
+  var expHtml = expParts.length === 2
+    ? expParts[0].trim() + '<br><br><strong>[오답해설]</strong><br>' + expParts[1].trim()
+    : (q.explanation || '');
+  var newsHtml = '';
+  if (q.news_context) {
+    newsHtml = '<div class="news-ctx">📰 ' + q.news_context;
+    if (q.news_url) newsHtml += ' <a href="' + q.news_url + '" target="_blank" class="news-link">[원문]</a>';
+    newsHtml += '</div>';
+  }
+  document.getElementById('quizArea').innerHTML =
+    '<div class="quiz-card">' +
+    '<span class="category-tag ' + getTagClass(q.category) + '">' + q.category + '</span>' +
+    '<div class="question-text">' + q.question + '</div>' +
+    '<div class="options" id="opts">' + optHtml + '</div>' +
+    '<div class="explanation" id="exp">' +
+    '<div class="exp-label">📖 EXPLANATION</div>' +
+    expHtml + newsHtml +
+    '</div>' +
+    '</div>' +
+    '<div class="nav-buttons">' +
+    '<button class="btn btn-next" id="nextBtn" onclick="nextQ()">' +
+    (current === quizzes.length - 1 ? 'RESULT ▶' : 'NEXT ▶') +
+    '</button></div>';
+  answered = false;
+}
+
+function selectOpt(el, idx) {
+  if (answered) return;
+  answered = true;
+  var q = quizzes[current];
+  var opts = document.querySelectorAll('.option');
+  var getNum = function(s) { var m = s.match(/[①②③④]/); return m ? m[0] : ''; };
+  var selNum = getNum(el.textContent);
+  var ansNum = getNum(q.answer);
+  var isCorrect = selNum && ansNum && selNum === ansNum;
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = true;
+    if (getNum(opts[i].textContent) === ansNum) opts[i].classList.add('correct');
+    else if (opts[i] === el && !isCorrect) opts[i].classList.add('wrong');
+  }
+  if (isCorrect) score++;
+  var rect = el.getBoundingClientRect();
+  spawnCoins(rect.left + rect.width/2, rect.top + rect.height/2, isCorrect);
+  showScorePopup(isCorrect);
+  playBeep(isCorrect);
+  document.getElementById('exp').classList.add('show');
+  document.getElementById('nextBtn').style.display = 'block';
+}
+
+function nextQ() { current++; render(); }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('progressBar').style.width = '100%';
+  document.getElementById('progressLabel').textContent = quizzes.length + '/' + quizzes.length;
+  var r = document.getElementById('resultCard');
+  r.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+}
+
+function spawnCoins(x, y, correct) {
+  if (!correct) return;
+  var stars = document.getElementById('stars');
+  for (var i = 0; i < 5; i++) {
+    var coin = document.createElement('div');
+    coin.className = 'coin-item';
+    coin.style.left = (x - 12 + (Math.random()-0.5)*60) + 'px';
+    coin.style.top = (y - 12) + 'px';
+    coin.style.animationDelay = (i * 0.06) + 's';
+    stars.appendChild(coin);
+    setTimeout(function(c){ stars.removeChild(c); }, 800, coin);
+  }
+}
+
+function showScorePopup(correct) {
+  var popup = document.createElement('div');
+  popup.className = 'score-popup';
+  popup.style.left = '50%';
+  popup.style.top = '40%';
+  popup.style.color = correct ? 'var(--yellow)' : 'var(--red)';
+  popup.textContent = correct ? '+1 !' : 'MISS!';
+  document.body.appendChild(popup);
+  setTimeout(function(){ document.body.removeChild(popup); }, 800);
+}
+
+function playBeep(correct) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = 'square';
+    if (correct) {
+      osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+    } else {
+      osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, audioCtx.currentTime + 0.15);
+    }
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch(e) {}
+}
+
+document.addEventListener('click', function() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}, { once: true });
+
+render();
+</script>
+</body>
+</html>
